@@ -1,0 +1,21 @@
+{
+  "texts": [
+    { "id": "r01", "title": "Reader: Noa's coffee", "level": "U4", "kind": "reading", "names": ["נועה", "תל", "אביב"], "lines": [
+      { "text": "נוֹעָה סְטוּדֶנְטִית. הִיא מִתֵּל אָבִיב.", "tr": "Nóa studéntit. hi mi-tel avív.", "en": "Noa is a student. She's from Tel Aviv." },
+      { "text": "כָּל יוֹם הִיא הוֹלֶכֶת לָאוּנִיבֶרְסִיטָה.", "tr": "kol yom hi holékhet la-universíta.", "en": "Every day she goes to the university." },
+      { "text": "הִיא אוֹהֶבֶת קָפֶה מְאוֹד, אֲבָל בְּלִי סֻכָּר.", "tr": "hi ohévet kafé me'ód, avál bli sukár.", "en": "She loves coffee very much, but without sugar." },
+      { "text": "הַיּוֹם אֵין קָפֶה בָּאוּנִיבֶרְסִיטָה!", "tr": "ha-yóm en kafé ba-universíta!", "en": "Today there's no coffee at the university!" },
+      { "text": "נוֹעָה שׁוֹתָה תֵּה. הַתֵּה בְּסֵדֶר, אֲבָל זֶה לֹא קָפֶה.", "tr": "Nóa shotá te. ha-té be-séder, avál ze lo kafé.", "en": "Noa drinks tea. The tea is OK, but it's not coffee." },
+      { "text": "מָה לַעֲשׂוֹת? סְלִיחָה, אֲבָל הִיא לֹא שְׂמֵחָה.", "tr": "ma la'asót? slikhá, avál hi lo smekhá.", "en": "What can you do? Sorry, but she's not happy." }
+    ], "verified": false },
+    { "id": "r02", "title": "Reader: Savta's house", "level": "U8", "kind": "reading", "names": ["חיפה"], "lines": [
+      { "text": "הַבַּיִת שֶׁל סַבְתָּא וְסַבָּא בְּחֵיפָה.", "tr": "ha-báyit shel sávta ve-sába be-kháyfa.", "en": "Grandma and Grandpa's house is in Haifa." },
+      { "text": "הַבַּיִת גָּדוֹל וְיָפֶה, וְיֵשׁ חֶדֶר קָטָן לְיַד הַדֶּלֶת.", "tr": "ha-báyit gadól ve-yafé, ve-yésh khéder katán le-yád ha-délet.", "en": "The house is big and beautiful, and there's a small room next to the door." },
+      { "text": "כָּל יוֹם שִׁשִּׁי כָּל הַמִּשְׁפָּחָה בָּאָה.", "tr": "kol yom shishí kol ha-mishpakhá ba'á.", "en": "Every Friday the whole family comes." },
+      { "text": "סַבְתָּא עוֹשָׂה אֹכֶל טוֹב מְאוֹד, וְגַם עוּגָה.", "tr": "sávta osá ókhel tov me'ód, ve-gám ugá.", "en": "Grandma makes very good food, and cake too." },
+      { "text": "סַבָּא מְדַבֵּר עַל חֵיפָה וְעַל הַיָּם.", "tr": "sába medabér al kháyfa ve-ál ha-yám.", "en": "Grandpa talks about Haifa and about the sea." },
+      { "text": "הַיְּלָדִים שׁוֹתִים מַיִם, וְהַגְּדוֹלִים שׁוֹתִים קָפֶה.", "tr": "ha-yeladím shotím máyim, ve-ha-gdolím shotím kafé.", "en": "The kids drink water, and the grown-ups drink coffee." },
+      { "text": "אֲנִי אוֹהֵב מְאוֹד אֶת הַבַּיִת שֶׁל סַבְתָּא.", "tr": "aní ohév me'ód et ha-báyit shel sávta.", "en": "I really love Grandma's house." }
+    ], "verified": false }
+  ]
+}

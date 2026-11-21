@@ -1,7 +1,7 @@
 # Polyglot: a free, research-backed language app for iPhone
 
-A home-screen web app (PWA) for learning Arabic (Levantine + MSA) and Latin (Classical) now, with Hebrew, Mandarin,
-Tamil, Ancient Greek and Sanskrit to come. It costs $0 forever: no server, no accounts, no paid APIs. Your progress stays on your phone.
+A home-screen web app (PWA) for learning Arabic (Levantine + MSA), Hebrew (Modern → Biblical) and Latin (Classical) now,
+with Mandarin, Tamil, Ancient Greek and Sanskrit to come. It costs $0 forever: no server, no accounts, no paid APIs. Your progress stays on your phone.
 
 **Live app:** https://venudhanabal744.github.io/languageLearner/
 
@@ -9,7 +9,8 @@ What it does differently from tap-the-word apps:
 - **Production first.** You see English and *say* (and optionally type) the Arabic, inside a sentence.
 - **Speaking every session.** Even a 5-minute session includes shadowing with record-and-compare.
 - **Input you can read.** Each text shows the share of words you already know; extensive reading is picked at ≥90–95%.
-- **Sound training (HVPT)** for ص/س, ح/ه, ع/ء, ق/ك, ط/ت.
+- **Sound training (HVPT)** for Arabic ص/س, ح/ه, ع/ء, ق/ك, ط/ت and Hebrew kh/h, r/kh, k/kh.
+- **Arabic ↔ Hebrew root links** (k-t-b / k-t-v, s-l-m / sh-l-m…) and Latin ↔ Greek ↔ Sanskrit ↔ Spanish cognates.
 - **FSRS spaced repetition**, frequency-ordered vocabulary, short explicit grammar followed by sentence drills, and 4/3/2 fluency once you know ~80 words.
 - **Honest metrics:** words known, real-text coverage, minutes spoken and listened, true retention. No streaks or XP.
 - **Conversation session:** copies a prompt for your own Claude chat; you paste the mistakes back and they become cards.
@@ -17,8 +18,9 @@ What it does differently from tap-the-word apps:
 The research behind each feature, with evidence levels, is in the app under *Library → Why it works* (source:
 `public/packs/shared/research.json`) and in [PLAN.md](PLAN.md).
 
-## Turn on Latin
-Settings → Languages → set **Latin** to *active*. Sessions then split your time between Arabic and Latin.
+## Turn languages on and off
+Settings → Languages: set each language to *active*, *maintenance* (reviews only, ≤2 min/day) or *queued*. The app
+recommends one living language plus at most one classical language active at a time.
 
 ## Install on your iPhone
 1. Open the live app link in **Safari**.

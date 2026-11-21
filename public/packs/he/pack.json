@@ -1,0 +1,140 @@
+{
+  "id": "he",
+  "name": "Hebrew (Modern, with a bridge to Biblical)",
+  "version": "0.1.0",
+  "dir": "rtl",
+  "tts": "he",
+  "ttsNote": "Built-in voice: Carmit (standard Israeli Hebrew). One talker only; add a friend's voice in Library → Sounds for real variety.",
+  "chat": { "name": "everyday Modern Israeli Hebrew (write with niqqud on new or hard words)", "translit": true },
+  "vowelToggle": { "label": "Niqqud (vowel points)", "strip": "֑-ׇֽֿׁׂׅׄ" },
+  "normalize": {
+    "strip": "֑-ׇֽֿׁׂׅׄ",
+    "map": { "ך": "כ", "ם": "מ", "ן": "נ", "ף": "פ", "ץ": "צ" }
+  },
+  "clitics": {
+    "prefixes": ["ו", "ה", "ב", "ל", "מ", "ש", "כ", "וה", "וב", "ול", "ומ", "וש", "שה", "שב", "של", "מה", "כש", "לכש", "בה", "לה", "כה"],
+    "suffixes": ["י", "ך", "ו", "ה", "נו", "כם", "כן", "הם", "הן", "ים", "ות", "ית", "ת", "תי", "תם", "תן", "יו", "יה", "ינו"]
+  },
+  "translit": { "name": "Israeli romanisation: kh = ח/כ (as in 'Bach'), ts = צ, ' = a break (א/ע); the accented vowel is stressed" },
+  "frequency": {
+    "file": "frequency.txt",
+    "source": "FrequencyWords by Hermit Dave (OpenSubtitles 2018, Hebrew), CC BY-SA 4.0",
+    "note": "Subtitle Hebrew is everyday spoken-style Modern Hebrew, so this estimates coverage of conversation and TV."
+  },
+  "includes": ["units/u01-04.json", "units/u05-08.json", "units/u09-12.json", "units/readers.json"],
+  "notes": [
+    { "title": "Modern first, Biblical later", "body": [
+      "This pack teaches **Modern Israeli Hebrew** for speaking, listening, reading and writing. Unit 12 is a bridge to **Biblical Hebrew**: the vav-consecutive (וַיֹּאמֶר 'and he said'), older word order, and Genesis 1:1–5 in the original.",
+      "Modern and Biblical Hebrew share the alphabet, roots and most core vocabulary, so nothing you learn now is wasted."
+    ]},
+    { "title": "Your Arabic helps (and vice versa)", "body": [
+      "Hebrew and Arabic are sister Semitic languages. Most roots line up with regular sound correspondences: Arabic **s** often = Hebrew **sh** (salām / shalom, samiʕa / shama 'hear'), Arabic **ḍ/ṣ** = Hebrew **ts** (ʔarḍ / erets 'land'), Arabic **th** = Hebrew **sh** (thalātha / shalosh 'three').",
+      "Words with a shared root show a 🔗 link to the Arabic word. The root-and-pattern idea you learned in Arabic Unit 5 works the same way here (binyanim and mishkalim)."
+    ]},
+    { "title": "ח and כ sound the same", "body": [
+      "In standard Israeli Hebrew, ח and כ (without a dot) are both pronounced kh as in 'Bach', and א and ע are both a soft catch or silent. The spelling preserves older sounds that Arabic still has (ح ḥ, ع ʕ), and many Mizrahi speakers still pronounce them.",
+      "So the sound training here practises the contrasts that matter for understanding Israelis: kh vs h, the uvular r vs kh, and k vs kh."
+    ]},
+    { "title": "Niqqud on and off", "body": [
+      "Learners' texts add vowel points (niqqud); Israeli newspapers, signs and phones don't. Keep niqqud on at first, then switch it off in Settings to practise real reading. Unpointed spelling uses ו and י as vowel letters (ktiv male), so words look slightly different: שָׁלוֹם → שלום, סִפְרִיָּה → ספרייה."
+    ]},
+    { "title": "Typing Hebrew on iPhone", "body": [
+      "Settings → General → Keyboard → Keyboards → Add New Keyboard → Hebrew (free). Typed answers are matched without niqqud, and final letters (ם ן ך ף ץ) are treated like their normal forms."
+    ]},
+    { "title": "Unverified content", "body": [
+      "All sentences and vowel pointing were written by Claude and are marked unverified. Niqqud in particular is easy to get slightly wrong. Tap ⚑ Flag error on anything suspicious."
+    ]}
+  ],
+  "scriptLessons": [
+    { "id": "s1", "title": "Letters 1: א ב ג ד ה ו", "note": "Hebrew is written right to left, with consonants only; vowels are optional dots and dashes (niqqud). Letters don't join.", "letters": [
+      { "id": "alef", "char": "א", "name": "álef", "tr": "' / silent", "sound": "Silent or a soft catch; carries a vowel. (Arabic ا / ء)", "connects": false, "ex": { "text": "אַבָּא", "tr": "ába", "en": "dad" } },
+      { "id": "bet", "char": "בּ ב", "name": "bet / vet", "tr": "b / v", "sound": "With a dot inside: b. Without: v.", "connects": false, "ex": { "text": "בַּיִת", "tr": "báyit", "en": "house" } },
+      { "id": "gimel", "char": "ג", "name": "gímel", "tr": "g", "sound": "Hard g as in 'go'.", "connects": false, "ex": { "text": "גַּם", "tr": "gam", "en": "also" } },
+      { "id": "dalet", "char": "ד", "name": "dálet", "tr": "d", "sound": "d.", "connects": false, "ex": { "text": "דֶּלֶת", "tr": "délet", "en": "door" } },
+      { "id": "he", "char": "ה", "name": "hey", "tr": "h", "sound": "Light h; often silent at the end of a word, where it marks a vowel (-a / -e).", "connects": false, "ex": { "text": "הוּא", "tr": "hu", "en": "he" } },
+      { "id": "vav", "char": "ו", "name": "vav", "tr": "v / o / u", "sound": "v, or the vowels o (וֹ) and u (וּ). Also the word 'and' (וְ-) attached to the next word.", "connects": false, "ex": { "text": "וְגַם", "tr": "ve-gam", "en": "and also" } }
+    ]},
+    { "id": "s2", "title": "Letters 2: ז ח ט י כ ך ל", "note": "Five letters have a special final form at the end of a word. The first one is ך (final khaf).", "letters": [
+      { "id": "zayin", "char": "ז", "name": "záyin", "tr": "z", "sound": "z.", "connects": false, "ex": { "text": "זֶה", "tr": "ze", "en": "this (m)" } },
+      { "id": "khet", "char": "ח", "name": "khet", "tr": "kh", "sound": "kh as in 'Bach' (originally pharyngeal ḥ, like Arabic ح).", "connects": false, "ex": { "text": "חָבֵר", "tr": "khavér", "en": "friend" } },
+      { "id": "tet", "char": "ט", "name": "tet", "tr": "t", "sound": "t (originally emphatic, like Arabic ط).", "connects": false, "ex": { "text": "טוֹב", "tr": "tov", "en": "good" } },
+      { "id": "yod", "char": "י", "name": "yud", "tr": "y / i", "sound": "y, or the vowel i / e. The smallest letter.", "connects": false, "ex": { "text": "יוֹם", "tr": "yom", "en": "day" } },
+      { "id": "kaf", "char": "כּ כ ך", "name": "kaf / khaf", "tr": "k / kh", "sound": "With a dot: k. Without: kh (same sound as ח). ך is the final form.", "connects": false, "ex": { "text": "כֵּן", "tr": "ken", "en": "yes" } },
+      { "id": "lamed", "char": "ל", "name": "lámed", "tr": "l", "sound": "l. The tallest letter. Also the prefix 'to' (לְ-).", "connects": false, "ex": { "text": "לֹא", "tr": "lo", "en": "no" } }
+    ]},
+    { "id": "s3", "title": "Letters 3: מ ם נ ן ס ע", "note": "Two more final forms: ם (final mem) and ן (final nun).", "letters": [
+      { "id": "mem", "char": "מ ם", "name": "mem", "tr": "m", "sound": "m. ם at the end of a word. Also the prefix 'from' (מִ-).", "connects": false, "ex": { "text": "מַיִם", "tr": "máyim", "en": "water" } },
+      { "id": "nun", "char": "נ ן", "name": "nun", "tr": "n", "sound": "n. ן at the end of a word.", "connects": false, "ex": { "text": "נָכוֹן", "tr": "nakhón", "en": "right, correct" } },
+      { "id": "samekh", "char": "ס", "name": "sámekh", "tr": "s", "sound": "s.", "connects": false, "ex": { "text": "סֵפֶר", "tr": "séfer", "en": "book" } },
+      { "id": "ayin", "char": "ע", "name": "áyin", "tr": "' / silent", "sound": "Silent or a soft catch in most Israeli speech (originally ʕ, like Arabic ع).", "connects": false, "ex": { "text": "עִבְרִית", "tr": "ivrít", "en": "Hebrew" } }
+    ]},
+    { "id": "s4", "title": "Letters 4: פ ף צ ץ ק ר ש ת", "note": "The last two final forms: ף and ץ. ש has two sounds, marked by a dot on the right (sh) or left (s).", "letters": [
+      { "id": "pe", "char": "פּ פ ף", "name": "pey / fey", "tr": "p / f", "sound": "With a dot: p. Without: f. ף is final.", "connects": false, "ex": { "text": "פֹּה", "tr": "po", "en": "here" } },
+      { "id": "tsadi", "char": "צ ץ", "name": "tsádi", "tr": "ts", "sound": "ts as in 'cats' (originally emphatic ṣ, like Arabic ص). ץ is final.", "connects": false, "ex": { "text": "צָרִיךְ", "tr": "tsaríkh", "en": "need(s)" } },
+      { "id": "qof", "char": "ק", "name": "kuf", "tr": "k", "sound": "k: same sound as כּ (originally q, like Arabic ق).", "connects": false, "ex": { "text": "קָטָן", "tr": "katán", "en": "small" } },
+      { "id": "resh", "char": "ר", "name": "resh", "tr": "r", "sound": "Uvular r in the back of the throat, like French or German r (a voiced kh).", "connects": false, "ex": { "text": "רֹאשׁ", "tr": "rosh", "en": "head" } },
+      { "id": "shin", "char": "שׁ שׂ", "name": "shin / sin", "tr": "sh / s", "sound": "Dot on the right: sh. Dot on the left: s.", "connects": false, "ex": { "text": "שָׁלוֹם", "tr": "shalóm", "en": "hello, peace" } },
+      { "id": "tav", "char": "ת", "name": "tav", "tr": "t", "sound": "t. Often marks feminine words (-et, -it, -ut).", "connects": false, "ex": { "text": "תּוֹדָה", "tr": "todá", "en": "thanks" } }
+    ]},
+    { "id": "s5", "title": "Niqqud: the vowel points", "note": "Most Hebrew you'll see has no niqqud, so learn the points but don't depend on them. Toggle niqqud in Settings.", "letters": [
+      { "id": "n-a", "char": "בַ בָ", "name": "pátakh, kamats", "tr": "a", "sound": "A line (pátakh) or a small T (kamats) under the letter: a.", "connects": false, "ex": { "text": "בָּא", "tr": "ba", "en": "comes (m)" } },
+      { "id": "n-e", "char": "בֶ בֵ", "name": "segól, tseré", "tr": "e", "sound": "Three dots (segól) or two dots side by side (tseré) under the letter: e.", "connects": false, "ex": { "text": "בֵּן", "tr": "ben", "en": "son" } },
+      { "id": "n-i", "char": "בִ", "name": "khírik", "tr": "i", "sound": "One dot under the letter (often followed by י): i.", "connects": false, "ex": { "text": "מִי", "tr": "mi", "en": "who" } },
+      { "id": "n-o", "char": "בֹ וֹ", "name": "khólam", "tr": "o", "sound": "A dot above the top left, or וֹ: o.", "connects": false, "ex": { "text": "טוֹב", "tr": "tov", "en": "good" } },
+      { "id": "n-u", "char": "בֻ וּ", "name": "kubúts, shurúk", "tr": "u", "sound": "Three slanted dots (kubúts) or וּ (shurúk): u.", "connects": false, "ex": { "text": "הוּא", "tr": "hu", "en": "he" } },
+      { "id": "n-shva", "char": "בְ", "name": "shva", "tr": "e / –", "sound": "Two dots stacked under the letter: a short e, or no vowel at all.", "connects": false, "ex": { "text": "בְּסֵדֶר", "tr": "be-séder", "en": "OK" } },
+      { "id": "n-dagesh", "char": "בּ כּ פּ", "name": "dagésh", "tr": "b k p", "sound": "A dot inside ב כ פ makes them hard (b, k, p). Without it: v, kh, f.", "connects": false, "ex": { "text": "כֶּלֶב", "tr": "kélev", "en": "dog" } }
+    ]}
+  ],
+  "contrasts": [
+    { "id": "kh-h", "title": "ח/כ kh vs ה h", "a": { "label": "ה", "desc": "h: a breath" }, "b": { "label": "ח", "desc": "kh: friction at the back" },
+      "note": "ח and כ sound the same (kh); ה is a plain h.", "items": [
+      { "id": "hen", "text": "הֵן", "tr": "hen", "en": "they (f)", "side": "a" }, { "id": "khen", "text": "חֵן", "tr": "khen", "en": "charm, grace", "side": "b" },
+      { "id": "halam", "text": "הָלַם", "tr": "halám", "en": "struck", "side": "a" }, { "id": "khalam", "text": "חָלַם", "tr": "khalám", "en": "dreamed", "side": "b" },
+      { "id": "harag", "text": "הָרַג", "tr": "harág", "en": "killed", "side": "a" }, { "id": "kharag", "text": "חָרַג", "tr": "kharág", "en": "deviated", "side": "b" },
+      { "id": "hed", "text": "הֵד", "tr": "hed", "en": "echo", "side": "a" }, { "id": "khad", "text": "חַד", "tr": "khad", "en": "sharp", "side": "b" }
+    ]},
+    { "id": "r-kh", "title": "ר r vs ח/כ kh", "a": { "label": "ר", "desc": "uvular r: voiced" }, "b": { "label": "ח", "desc": "kh: voiceless" },
+      "note": "Both are made at the back of the throat; r has voice (buzz), kh doesn't.", "items": [
+      { "id": "ram", "text": "רָם", "tr": "ram", "en": "high", "side": "a" }, { "id": "kham", "text": "חַם", "tr": "kham", "en": "hot", "side": "b" },
+      { "id": "rov", "text": "רוֹב", "tr": "rov", "en": "majority", "side": "a" }, { "id": "khov", "text": "חוֹב", "tr": "khov", "en": "debt", "side": "b" },
+      { "id": "ratsa", "text": "רָצָה", "tr": "ratsá", "en": "wanted", "side": "a" }, { "id": "khatsa", "text": "חָצָה", "tr": "khatsá", "en": "crossed", "side": "b" },
+      { "id": "rav", "text": "רַב", "tr": "rav", "en": "rabbi; much", "side": "a" }, { "id": "khav", "text": "חָב", "tr": "khav", "en": "owes", "side": "b" }
+    ]},
+    { "id": "k-kh", "title": "כּ/ק k vs ח/כ kh", "a": { "label": "ק", "desc": "k: a full stop" }, "b": { "label": "ח", "desc": "kh: continuous friction" },
+      "items": [
+      { "id": "kaf", "text": "כַּף", "tr": "kaf", "en": "spoon", "side": "a" }, { "id": "khaf", "text": "חַף", "tr": "khaf", "en": "innocent", "side": "b" },
+      { "id": "kad", "text": "כַּד", "tr": "kad", "en": "jug", "side": "a" }, { "id": "khad2", "text": "חַד", "tr": "khad", "en": "sharp", "side": "b" },
+      { "id": "kol", "text": "קוֹל", "tr": "kol", "en": "voice", "side": "a" }, { "id": "khol", "text": "חוֹל", "tr": "khol", "en": "sand", "side": "b" },
+      { "id": "kam", "text": "קָם", "tr": "kam", "en": "got up", "side": "a" }, { "id": "kham2", "text": "חַם", "tr": "kham", "en": "hot", "side": "b" }
+    ]}
+  ],
+  "speaking": [
+    { "id": "p-intro", "level": "U1", "en": "Introduce yourself: name, where you're from, how you are.", "hints": ["shalóm, shmi …", "aní mi-amérika", "aní be-séder"], "fluency": true },
+    { "id": "p-study", "level": "U2", "en": "Say what you study, where, and which languages you speak.", "hints": ["aní lomed refu'á", "aní medabér …"] },
+    { "id": "p-order", "level": "U3", "en": "Order a drink and something to eat, and ask the price.", "hints": ["aní rotsé …", "bevakashá", "kamá ze ole?"] },
+    { "id": "p-day", "level": "U4", "en": "Describe what you do every day.", "hints": ["kol yom …", "akhshav …"], "fluency": true },
+    { "id": "p-yesterday", "level": "U6", "en": "Tell what you did yesterday, in order.", "hints": ["etmól …", "akhár kakh …"], "fluency": true },
+    { "id": "p-family", "level": "U7", "en": "Describe your family: who, how old, where they live.", "hints": ["yesh li akh ve-akhót", "hu ben …", "hem garím be-…"], "fluency": true },
+    { "id": "p-shop", "level": "U8", "en": "Ask the price of three things at the shuk and bargain.", "hints": ["kamá ze?", "yakár midáy!", "ulay …?"] },
+    { "id": "p-doctor", "level": "U9", "en": "Tell a doctor what hurts and since when.", "hints": ["ko'év li ha-rosh", "yesh li khom", "me-etmól"], "fluency": true },
+    { "id": "p-directions", "level": "U10", "en": "Give directions from your dorm to the library.", "hints": ["tel'ékh yashár", "yamína", "smóla"] },
+    { "id": "p-plans", "level": "U11", "en": "Say what you will do this weekend and what you need to do.", "hints": ["be-sof ha-shavúa …", "aní tsaríkh …", "ulay …"], "fluency": true },
+    { "id": "p-why", "level": "U11", "en": "Explain why you're learning Hebrew and Arabic together.", "hints": ["ki …", "ha-shorashím …"] },
+    { "id": "p-genesis", "level": "U12", "en": "Read Genesis 1:3 aloud, then retell verses 1–5 in Modern Hebrew.", "hints": ["Elohím amár: …", "ve-hayá or"] }
+  ],
+  "scenarios": [
+    { "id": "sc-hillel", "title": "Meeting at Hillel", "setup": "You meet an Israeli grad student at a Hopkins Hillel event.", "you": "a freshman", "partner": "Noa, an Israeli grad student", "grammar": ["pronouns", "present tense"] },
+    { "id": "sc-cafe", "title": "Café in Tel Aviv", "setup": "Order coffee and a pastry; ask what's good.", "you": "a customer", "partner": "a chatty barista", "grammar": ["rotsé", "yesh / ein"] },
+    { "id": "sc-shuk", "title": "Machane Yehuda shuk", "setup": "Buy fruit and spices in Jerusalem and haggle a little.", "you": "a shopper", "partner": "a loud, friendly vendor", "grammar": ["numbers", "kamá"] },
+    { "id": "sc-shabbat", "title": "Shabbat dinner", "setup": "A host family asks about your family and studies.", "you": "a guest", "partner": "the host's grandmother", "grammar": ["shel + suffixes", "family words"] },
+    { "id": "sc-doctor", "title": "At the clinic (kupat kholim)", "setup": "You have a headache and fever since yesterday.", "you": "a patient", "partner": "a doctor", "grammar": ["ko'év li", "since when"] },
+    { "id": "sc-taxi", "title": "Taxi to the airport", "setup": "Take a taxi from your hotel to Ben Gurion airport and agree on the meter.", "you": "a passenger", "partner": "a taxi driver with opinions", "grammar": ["prepositions", "imperative"] },
+    { "id": "sc-weekend", "title": "Weekend plans", "setup": "A friend calls to plan Friday and Shabbat.", "you": "yourself", "partner": "a friend from Haifa", "grammar": ["future", "tsaríkh / yakhól"] },
+    { "id": "sc-yesterday", "title": "What did you do yesterday?", "setup": "Your roommate asks about your day.", "you": "yourself", "partner": "your roommate", "grammar": ["past tense"] }
+  ],
+  "units": [],
+  "words": [],
+  "grammar": [],
+  "texts": []
+}

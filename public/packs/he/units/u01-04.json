@@ -1,0 +1,237 @@
+{
+  "units": [
+    { "id": "u01", "title": "1 · שָׁלוֹם!", "goal": "Greet people, say who you are, ask how someone is.", "items": [
+      "script:s1", "word:shalom", "word:ani", "word:ata", "word:at", "word:hu", "word:hi", "word:anakhnu", "grammar:pronouns", "word:shlomkha", "word:beseder", "word:tov", "word:meod",
+      "word:toda", "word:bevakasha", "word:ken", "word:lo", "grammar:nocopula", "word:ma", "word:mi", "word:shmi", "word:meeifo", "word:naim", "word:boker", "word:slikha", "word:lehitraot", "text:d01" ] },
+    { "id": "u02", "title": "2 · Studies and languages", "goal": "Say where you are, what you study, which languages you speak.", "items": [
+      "script:s2", "word:eifo", "word:po", "word:sham", "word:bayit", "word:ir", "word:universita", "word:student", "word:lomed", "grammar:present4", "word:refua", "word:medaber",
+      "word:amerika", "word:amerikai", "word:safa", "word:ivrit", "word:anglit", "word:sfaradit", "word:aravit", "grammar:gender", "word:ze", "word:zot", "word:yafe", "word:harbe", "word:ktsat", "word:gam", "word:aval", "text:d02" ] },
+    { "id": "u03", "title": "3 · Want, have, there is", "goal": "Order food and drink; say what you want and have.", "items": [
+      "script:s3", "word:rotse", "word:kafe", "word:te", "word:mayim", "grammar:rotse", "word:yesh", "word:ein", "word:li", "grammar:yeshli", "word:okhel", "word:lekhem", "word:uga",
+      "word:khalav", "word:sukar", "word:im", "word:bli", "word:o", "word:kama", "word:ole", "word:shekel", "word:raev", "word:tsame", "word:beteavon", "text:d03" ] },
+    { "id": "u04", "title": "4 · What I do", "goal": "Talk about everyday actions; ask questions.", "items": [
+      "script:s4", "word:yodea", "word:ohev", "word:shote", "word:okhel-v", "word:mevin", "grammar:binyan-preview", "word:holekh", "word:ba", "word:ose", "word:oved", "word:avoda",
+      "word:akhshav", "word:kol", "word:yom", "word:tamid", "word:lifamim", "word:sameakh", "grammar:questions", "word:lama", "word:eikh", "word:matai", "word:ki", "word:kashe", "word:nakhon", "text:d04" ] }
+  ],
+  "words": [
+    { "id": "shalom", "text": "שָׁלוֹם", "tr": "shalóm", "en": "hello; goodbye; peace", "pos": "interj", "root": "sh-l-m", "ex": { "text": "שָׁלוֹם, אֲנִי וֵנוּ.", "tr": "shalóm, aní Venu.", "en": "Hi, I'm Venu." }, "verified": false },
+    { "id": "ani", "text": "אֲנִי", "tr": "aní", "en": "I", "pos": "pron", "cognates": { "ar": "ʔana" }, "ex": { "text": "אֲנִי בְּסֵדֶר.", "tr": "aní be-séder.", "en": "I'm OK." }, "verified": false },
+    { "id": "ata", "text": "אַתָּה", "tr": "atá", "en": "you (to a man)", "pos": "pron", "cognates": { "ar": "ʔanta" }, "ex": { "text": "וְאַתָּה?", "tr": "ve-atá?", "en": "And you?" }, "verified": false },
+    { "id": "at", "text": "אַתְּ", "tr": "at", "en": "you (to a woman)", "pos": "pron", "cognates": { "ar": "ʔanti" }, "ex": { "text": "מֵאֵיפֹה אַתְּ?", "tr": "me-éfo at?", "en": "Where are you (f) from?" }, "verified": false },
+    { "id": "hu", "text": "הוּא", "tr": "hu", "en": "he; it (m)", "pos": "pron", "cognates": { "ar": "huwa" }, "ex": { "text": "הוּא מִיְּרוּשָׁלַיִם.", "tr": "hu mi-yerushaláyim.", "en": "He's from Jerusalem." }, "verified": false },
+    { "id": "hi", "text": "הִיא", "tr": "hi", "en": "she; it (f)", "pos": "pron", "cognates": { "ar": "hiya" }, "ex": { "text": "הִיא מִתֵּל אָבִיב.", "tr": "hi mi-tel avív.", "en": "She's from Tel Aviv." }, "verified": false },
+    { "id": "anakhnu", "text": "אֲנַחְנוּ", "tr": "anákhnu", "en": "we", "pos": "pron", "cognates": { "ar": "naḥnu" }, "ex": { "text": "אֲנַחְנוּ חֲבֵרִים.", "tr": "anákhnu khaverím.", "en": "We're friends." }, "verified": false },
+    { "id": "shlomkha", "text": "שְׁלוֹמְךָ", "tr": "shlomkhá", "en": "(ma shlomkhá?) how are you? (to a man; to a woman: shloméKH)", "pos": "phrase", "root": "sh-l-m", "forms": ["שלומך", "שְׁלוֹמֵךְ"], "ex": { "text": "מָה שְׁלוֹמְךָ?", "tr": "ma shlomkhá?", "en": "How are you?" }, "verified": false },
+    { "id": "beseder", "text": "בְּסֵדֶר", "tr": "be-séder", "en": "OK, fine (lit. in order)", "pos": "adv", "forms": ["סדר"], "ex": { "text": "הַכֹּל בְּסֵדֶר.", "tr": "ha-kól be-séder.", "en": "Everything's fine." }, "verified": false },
+    { "id": "tov", "text": "טוֹב", "tr": "tov", "en": "good; OK (f. tová)", "pos": "adj", "forms": ["טובה", "טובים", "טובות"], "ex": { "text": "בֹּקֶר טוֹב!", "tr": "bóker tov!", "en": "Good morning!" }, "verified": false },
+    { "id": "meod", "text": "מְאוֹד", "tr": "me'ód", "en": "very", "pos": "adv", "ex": { "text": "טוֹב מְאוֹד.", "tr": "tov me'ód.", "en": "Very good." }, "verified": false },
+    { "id": "toda", "text": "תּוֹדָה", "tr": "todá", "en": "thank you", "pos": "interj", "forms": ["תודה רבה"], "ex": { "text": "תּוֹדָה רַבָּה!", "tr": "todá rabá!", "en": "Thanks a lot!" }, "verified": false },
+    { "id": "bevakasha", "text": "בְּבַקָּשָׁה", "tr": "bevakashá", "en": "please; you're welcome; here you go", "pos": "interj", "ex": { "text": "קָפֶה, בְּבַקָּשָׁה.", "tr": "kafé, bevakashá.", "en": "A coffee, please." }, "verified": false },
+    { "id": "ken", "text": "כֵּן", "tr": "ken", "en": "yes", "pos": "interj", "ex": { "text": "כֵּן, אֲנִי בְּסֵדֶר.", "tr": "ken, aní be-séder.", "en": "Yes, I'm fine." }, "verified": false },
+    { "id": "lo", "text": "לֹא", "tr": "lo", "en": "no; not", "pos": "neg", "cognates": { "ar": "lā (MSA)" }, "ex": { "text": "לֹא, תּוֹדָה.", "tr": "lo, todá.", "en": "No, thanks." }, "verified": false },
+    { "id": "ma", "text": "מָה", "tr": "ma", "en": "what", "pos": "q", "cognates": { "ar": "mā (MSA)" }, "ex": { "text": "מָה זֶה?", "tr": "ma ze?", "en": "What's this?" }, "verified": false },
+    { "id": "mi", "text": "מִי", "tr": "mi", "en": "who", "pos": "q", "ex": { "text": "מִי אַתָּה?", "tr": "mi atá?", "en": "Who are you?" }, "verified": false },
+    { "id": "shmi", "text": "שְׁמִי", "tr": "shmi", "en": "my name (is) (shem = name)", "pos": "noun", "root": "sh-m", "forms": ["שם", "שמך", "שמו"], "cognates": { "ar": "ismi" }, "ex": { "text": "שְׁמִי וֵנוּ.", "tr": "shmi Venu.", "en": "My name is Venu." }, "verified": false },
+    { "id": "meeifo", "text": "מֵאֵיפֹה", "tr": "me-éfo", "en": "from where", "pos": "q", "ex": { "text": "מֵאֵיפֹה אַתָּה?", "tr": "me-éfo atá?", "en": "Where are you from?" }, "verified": false },
+    { "id": "naim", "text": "נָעִים מְאוֹד", "tr": "na'ím me'ód", "en": "nice to meet you (lit. very pleasant)", "pos": "phrase", "forms": ["נעים"], "cognates": { "ar": "naʕīm (pleasant)" }, "ex": { "text": "שָׁלוֹם, נָעִים מְאוֹד!", "tr": "shalóm, na'ím me'ód!", "en": "Hi, nice to meet you!" }, "verified": false },
+    { "id": "boker", "text": "בֹּקֶר", "tr": "bóker", "en": "morning", "pos": "noun", "forms": ["בבוקר"], "ex": { "text": "בֹּקֶר טוֹב, אַבָּא!", "tr": "bóker tov, ába!", "en": "Good morning, Dad!" }, "verified": false },
+    { "id": "slikha", "text": "סְלִיחָה", "tr": "slikhá", "en": "sorry; excuse me", "pos": "interj", "ex": { "text": "סְלִיחָה, מָה?", "tr": "slikhá, ma?", "en": "Sorry, what?" }, "verified": false },
+    { "id": "lehitraot", "text": "לְהִתְרָאוֹת", "tr": "lehitra'ót", "en": "see you, goodbye", "forms": ["נתראה"], "pos": "interj", "ex": { "text": "תּוֹדָה, לְהִתְרָאוֹת!", "tr": "todá, lehitra'ót!", "en": "Thanks, see you!" }, "verified": false },
+
+    { "id": "eifo", "text": "אֵיפֹה", "tr": "éfo", "en": "where", "pos": "q", "ex": { "text": "אֵיפֹה הַבַּיִת?", "tr": "éfo ha-báyit?", "en": "Where's the house?" }, "verified": false },
+    { "id": "po", "text": "פֹּה", "tr": "po", "en": "here", "pos": "adv", "ex": { "text": "אֲנִי פֹּה.", "tr": "aní po.", "en": "I'm here." }, "verified": false },
+    { "id": "sham", "text": "שָׁם", "tr": "sham", "en": "there", "pos": "adv", "ex": { "text": "הָאוּנִיבֶרְסִיטָה שָׁם.", "tr": "ha-universíta sham.", "en": "The university is there." }, "verified": false },
+    { "id": "bayit", "text": "בַּיִת", "tr": "báyit", "en": "house, home", "pos": "noun", "forms": ["הבית", "בבית", "ביתי"], "cognates": { "ar": "bēt" }, "ex": { "text": "אֲנִי בַּבַּיִת.", "tr": "aní ba-báyit.", "en": "I'm at home." }, "verified": false },
+    { "id": "ir", "text": "עִיר", "tr": "ir", "en": "city (f.)", "pos": "noun", "forms": ["ערים"], "ex": { "text": "בַּלְטִימוֹר עִיר גְּדוֹלָה.", "tr": "báltimor ir gdolá.", "en": "Baltimore is a big city." }, "verified": false },
+    { "id": "universita", "text": "אוּנִיבֶרְסִיטָה", "tr": "universíta", "en": "university", "pos": "noun", "ex": { "text": "אֲנִי בָּאוּנִיבֶרְסִיטָה.", "tr": "aní ba-universíta.", "en": "I'm at the university." }, "verified": false },
+    { "id": "student", "text": "סְטוּדֶנְט", "tr": "studént", "en": "(university) student (f. studéntit)", "pos": "noun", "forms": ["סטודנטית", "סטודנטים"], "ex": { "text": "אֲנִי סְטוּדֶנְט בְּהוֹפְּקִינְס.", "tr": "aní studént be-hópkins.", "en": "I'm a student at Hopkins." }, "verified": false },
+    { "id": "lomed", "text": "לוֹמֵד", "tr": "loméd", "en": "learns, studies (f. lomédet, pl. lomdím)", "pos": "verb", "root": "l-m-d", "forms": ["למדתי", "למד", "ללמוד", "ללמד", "לומדת", "לומדים", "לומדות"], "ex": { "text": "אֲנִי לוֹמֵד עִבְרִית.", "tr": "aní loméd ivrít.", "en": "I'm learning Hebrew." }, "verified": false },
+    { "id": "refua", "text": "רְפוּאָה", "tr": "refu'á", "en": "medicine (the field)", "pos": "noun", "root": "r-f-ʔ", "forms": ["רפואה"], "ex": { "text": "הִיא לוֹמֶדֶת רְפוּאָה.", "tr": "hi lomédet refu'á.", "en": "She studies medicine." }, "verified": false },
+    { "id": "medaber", "text": "מְדַבֵּר", "tr": "medabér", "en": "speaks (f. medabéret, pl. medabrím)", "pos": "verb", "root": "d-b-r", "forms": ["מדברת", "מדברים", "מדברות"], "ex": { "text": "אַתָּה מְדַבֵּר עִבְרִית?", "tr": "atá medabér ivrít?", "en": "Do you speak Hebrew?" }, "verified": false },
+    {"id": "safa", "text": "שָׂפָה", "tr": "safá", "en": "language; lip (pl. safót)", "pos": "noun", "forms": ["שפות", "השפה"], "ex": {"text": "אֲנִי אוֹהֵב שָׂפוֹת.", "tr": "aní ohév safót.", "en": "I love languages."}, "verified": false},
+    { "id": "amerika", "text": "אָמֶרִיקָה", "tr": "amérika", "en": "America", "pos": "noun", "forms": ["אמריקה"], "ex": { "text": "אֲנִי מֵאָמֶרִיקָה.", "tr": "aní me-amérika.", "en": "I'm from America." }, "verified": false },
+    { "id": "amerikai", "text": "אָמֶרִיקָאִי", "tr": "amerika'í", "en": "American (f. amerika'ít)", "pos": "adj", "forms": ["אמריקאית", "אמריקאים"], "ex": { "text": "הִיא אָמֶרִיקָאִית.", "tr": "hi amerika'ít.", "en": "She's American." }, "verified": false },
+    { "id": "ivrit", "text": "עִבְרִית", "tr": "ivrít", "en": "Hebrew (language)", "pos": "noun", "forms": ["בעברית"], "ex": { "text": "אֲנִי מְדַבֵּר קְצָת עִבְרִית.", "tr": "aní medabér ktsat ivrít.", "en": "I speak a little Hebrew." }, "verified": false },
+    { "id": "anglit", "text": "אַנְגְּלִית", "tr": "anglít", "en": "English (language)", "pos": "noun", "ex": { "text": "אַתְּ מְדַבֶּרֶת אַנְגְּלִית?", "tr": "at medabéret anglít?", "en": "Do you speak English?" }, "verified": false },
+    { "id": "sfaradit", "text": "סְפָרַדִּית", "tr": "sfaradít", "en": "Spanish (language)", "pos": "noun", "ex": { "text": "אֲנִי מְדַבֵּר סְפָרַדִּית.", "tr": "aní medabér sfaradít.", "en": "I speak Spanish." }, "verified": false },
+    { "id": "aravit", "text": "עֲרָבִית", "tr": "aravít", "en": "Arabic (language)", "pos": "noun", "root": "ʕ-r-v", "cognates": { "ar": "ʕarabi" }, "ex": { "text": "אֲנִי לוֹמֵד גַּם עֲרָבִית.", "tr": "aní loméd gam aravít.", "en": "I'm also learning Arabic." }, "verified": false },
+    { "id": "ze", "text": "זֶה", "tr": "ze", "en": "this; it (m)", "pos": "dem", "ex": { "text": "זֶה טוֹב.", "tr": "ze tov.", "en": "It's good." }, "verified": false },
+    { "id": "zot", "text": "זֹאת", "tr": "zot", "en": "this (f)", "pos": "dem", "forms": ["זו"], "ex": { "text": "זֹאת עִיר יָפָה.", "tr": "zot ir yafá.", "en": "This is a beautiful city." }, "verified": false },
+    { "id": "yafe", "text": "יָפֶה", "tr": "yafé", "en": "beautiful, nice (f. yafá)", "pos": "adj", "forms": ["יפה", "יפים", "יפות"], "ex": { "text": "הַבַּיִת יָפֶה.", "tr": "ha-báyit yafé.", "en": "The house is beautiful." }, "verified": false },
+    { "id": "harbe", "text": "הַרְבֵּה", "tr": "harbé", "en": "a lot, many", "pos": "adv", "ex": { "text": "תּוֹדָה הַרְבֵּה!", "tr": "todá harbé!", "en": "Thanks a lot!" }, "verified": false },
+    { "id": "ktsat", "text": "קְצָת", "tr": "ktsat", "en": "a little", "pos": "adv", "ex": { "text": "רַק קְצָת.", "tr": "rak ktsat.", "en": "Just a little." }, "verified": false },
+    { "id": "gam", "text": "גַּם", "tr": "gam", "en": "also, too", "pos": "adv", "ex": { "text": "גַּם אֲנִי!", "tr": "gam aní!", "en": "Me too!" }, "verified": false },
+    { "id": "aval", "text": "אֲבָל", "tr": "avál", "en": "but", "pos": "conj", "ex": { "text": "אֲנִי מְדַבֵּר סְפָרַדִּית, אֲבָל לֹא עִבְרִית.", "tr": "aní medabér sfaradít, avál lo ivrít.", "en": "I speak Spanish, but not Hebrew." }, "verified": false },
+
+    { "id": "rotse", "text": "רוֹצֶה", "tr": "rotsé", "en": "wants (f. rotsá, pl. rotsím)", "pos": "verb", "root": "r-ts-h", "forms": ["רוצה", "רוצים", "רוצות"], "ex": { "text": "אֲנִי רוֹצֶה קָפֶה.", "tr": "aní rotsé kafé.", "en": "I want a coffee." }, "verified": false },
+    { "id": "kafe", "text": "קָפֶה", "tr": "kafé", "en": "coffee; café", "pos": "noun", "ex": { "text": "קָפֶה הָפוּךְ, בְּבַקָּשָׁה.", "tr": "kafé hafúkh, bevakashá.", "en": "A latte ('upside-down coffee'), please." }, "verified": false },
+    { "id": "te", "text": "תֵּה", "tr": "te", "en": "tea", "pos": "noun", "ex": { "text": "אַתָּה רוֹצֶה תֵּה?", "tr": "atá rotsé te?", "en": "Do you want tea?" }, "verified": false },
+    { "id": "mayim", "text": "מַיִם", "tr": "máyim", "en": "water (plural noun)", "pos": "noun", "forms": ["מים"], "cognates": { "ar": "mayy / māʔ" }, "ex": { "text": "מַיִם, בְּבַקָּשָׁה.", "tr": "máyim, bevakashá.", "en": "Water, please." }, "verified": false },
+    { "id": "yesh", "text": "יֵשׁ", "tr": "yesh", "en": "there is / are", "pos": "particle", "ex": { "text": "יֵשׁ קָפֶה?", "tr": "yesh kafé?", "en": "Is there coffee?" }, "verified": false },
+    { "id": "ein", "text": "אֵין", "tr": "en", "en": "there isn't / aren't", "pos": "particle", "ex": { "text": "אֵין לֶחֶם.", "tr": "en lékhem.", "en": "There's no bread." }, "verified": false },
+    { "id": "li", "text": "לִי", "tr": "li", "en": "to me / for me (lekhá, lakh, lo, la, lánu…)", "pos": "prep", "forms": ["לך", "לו", "לה", "לנו", "לכם", "להם"], "ex": { "text": "יֵשׁ לִי שְׁאֵלָה.", "tr": "yesh li she'elá.", "en": "I have a question." }, "verified": false },
+    { "id": "okhel", "text": "אֹכֶל", "tr": "ókhel", "en": "food", "pos": "noun", "root": "ʔ-k-l", "forms": ["האוכל"], "ex": { "text": "הָאֹכֶל פֹּה טוֹב.", "tr": "ha-ókhel po tov.", "en": "The food here is good." }, "verified": false },
+    { "id": "lekhem", "text": "לֶחֶם", "tr": "lékhem", "en": "bread", "pos": "noun", "root": "l-ḥ-m", "cognates": { "ar": "laḥm (= meat!)" }, "ex": { "text": "יֵשׁ לֶחֶם?", "tr": "yesh lékhem?", "en": "Is there bread?" }, "verified": false },
+    { "id": "uga", "text": "עוּגָה", "tr": "ugá", "en": "cake", "pos": "noun", "forms": ["עוגות"], "ex": { "text": "הָעוּגָה טְעִימָה.", "tr": "ha-ugá te'imá.", "en": "The cake is tasty." }, "verified": false },
+    { "id": "khalav", "text": "חָלָב", "tr": "khaláv", "en": "milk", "pos": "noun", "root": "ḥ-l-v", "cognates": { "ar": "ḥalīb" }, "ex": { "text": "קָפֶה עִם חָלָב.", "tr": "kafé im khaláv.", "en": "Coffee with milk." }, "verified": false },
+    { "id": "sukar", "text": "סֻכָּר", "tr": "sukár", "en": "sugar", "pos": "noun", "cognates": { "ar": "sukkar", "es": "azúcar" }, "ex": { "text": "תֵּה בְּלִי סֻכָּר.", "tr": "te bli sukár.", "en": "Tea without sugar." }, "verified": false },
+    { "id": "im", "text": "עִם", "tr": "im", "en": "with", "pos": "prep", "cognates": { "ar": "maʕ" }, "ex": { "text": "אֲנִי פֹּה עִם חָבֵר.", "tr": "aní po im khavér.", "en": "I'm here with a friend." }, "verified": false },
+    { "id": "bli", "text": "בְּלִי", "tr": "bli", "en": "without", "pos": "prep", "cognates": { "ar": "bala" }, "ex": { "text": "קָפֶה בְּלִי סֻכָּר.", "tr": "kafé bli sukár.", "en": "Coffee without sugar." }, "verified": false },
+    { "id": "o", "text": "אוֹ", "tr": "o", "en": "or", "pos": "conj", "ex": { "text": "קָפֶה אוֹ תֵּה?", "tr": "kafé o te?", "en": "Coffee or tea?" }, "verified": false },
+    { "id": "kama", "text": "כַּמָּה", "tr": "káma", "en": "how much, how many; some", "pos": "q", "cognates": { "ar": "kam" }, "ex": { "text": "כַּמָּה זֶה?", "tr": "káma ze?", "en": "How much is it?" }, "verified": false },
+    { "id": "ole", "text": "עוֹלֶה", "tr": "olé", "en": "costs; goes up (f. olá)", "pos": "verb", "forms": ["עולה", "עולים"], "ex": { "text": "כַּמָּה זֶה עוֹלֶה?", "tr": "káma ze olé?", "en": "How much does it cost?" }, "verified": false },
+    { "id": "shekel", "text": "שֶׁקֶל", "tr": "shékel", "en": "shekel (pl. shkalím)", "pos": "noun", "forms": ["שקלים", "ש״ח"], "ex": { "text": "זֶה עוֹלֶה עֶשֶׂר שְׁקָלִים.", "tr": "ze olé éser shkalím.", "en": "It costs ten shekels." }, "verified": false },
+    { "id": "raev", "text": "רָעֵב", "tr": "ra'év", "en": "hungry (f. re'evá)", "pos": "adj", "forms": ["רעבה"], "ex": { "text": "אֲנִי רָעֵב!", "tr": "aní ra'év!", "en": "I'm hungry!" }, "verified": false },
+    { "id": "tsame", "text": "צָמֵא", "tr": "tsamé", "en": "thirsty (f. tsme'á)", "pos": "adj", "forms": ["צמאה"], "ex": { "text": "אַתָּה צָמֵא?", "tr": "atá tsamé?", "en": "Are you thirsty?" }, "verified": false },
+    { "id": "beteavon", "text": "בְּתֵאָבוֹן", "tr": "be-te'avón", "en": "bon appétit", "pos": "interj", "ex": { "text": "בְּתֵאָבוֹן!", "tr": "be-te'avón!", "en": "Enjoy your meal!" }, "verified": false },
+
+    { "id": "yodea", "text": "יוֹדֵעַ", "tr": "yodé'a", "en": "knows (f. yodá'at, pl. yod'ím)", "pos": "verb", "root": "y-d-ʕ", "forms": ["יודע", "יודעת", "יודעים", "יודעות"], "ex": { "text": "אֲנִי לֹא יוֹדֵעַ.", "tr": "aní lo yodé'a.", "en": "I don't know." }, "verified": false },
+    { "id": "ohev", "text": "אוֹהֵב", "tr": "ohév", "en": "loves, likes (f. ohévet)", "pos": "verb", "root": "ʔ-h-v", "forms": ["אוהבת", "אוהבים", "אוהבות"], "ex": { "text": "אֲנִי אוֹהֵב קָפֶה.", "tr": "aní ohév kafé.", "en": "I love coffee." }, "verified": false },
+    { "id": "shote", "text": "שׁוֹתֶה", "tr": "shoté", "en": "drinks (f. shotá)", "pos": "verb", "root": "sh-t-h", "forms": ["שותה", "שותים", "שותות"], "ex": { "text": "אֲנִי שׁוֹתֶה תֵּה כָּל יוֹם.", "tr": "aní shoté te kol yom.", "en": "I drink tea every day." }, "verified": false },
+    { "id": "okhel-v", "text": "אוֹכֵל", "tr": "okhél", "en": "eats (f. okhélet)", "pos": "verb", "root": "ʔ-k-l", "forms": ["אוכלת", "אוכלים", "אוכלות"], "cognates": { "ar": "bākul (ʔ-k-l)" }, "ex": { "text": "הִיא אוֹכֶלֶת עוּגָה.", "tr": "hi okhélet ugá.", "en": "She's eating cake." }, "verified": false },
+    { "id": "mevin", "text": "מֵבִין", "tr": "mevín", "en": "understands (f. mevína)", "pos": "verb", "root": "b-y-n", "forms": ["מבינה", "מבינים", "מבינות"], "ex": { "text": "סְלִיחָה, אֲנִי לֹא מֵבִין.", "tr": "slikhá, aní lo mevín.", "en": "Sorry, I don't understand." }, "verified": false },
+    { "id": "holekh", "text": "הוֹלֵךְ", "tr": "holékh", "en": "goes, walks (f. holékhet)", "pos": "verb", "root": "h-l-kh", "forms": ["הולך", "הולכת", "הולכים", "הולכות"], "ex": { "text": "אֲנִי הוֹלֵךְ לָאוּנִיבֶרְסִיטָה.", "tr": "aní holékh la-universíta.", "en": "I'm going to the university." }, "verified": false },
+    { "id": "ba", "text": "בָּא", "tr": "ba", "en": "comes (f. bá'a, pl. ba'ím)", "pos": "verb", "root": "b-w-ʔ", "forms": ["באה", "באים", "באות"], "ex": { "text": "אַתָּה בָּא?", "tr": "atá ba?", "en": "Are you coming?" }, "verified": false },
+    { "id": "ose", "text": "עוֹשֶׂה", "tr": "osé", "en": "does, makes (f. osá)", "pos": "verb", "root": "ʕ-s-h", "forms": ["עושה", "עושים", "עושות"], "ex": { "text": "מָה אַתָּה עוֹשֶׂה?", "tr": "ma atá osé?", "en": "What are you doing?" }, "verified": false },
+    { "id": "oved", "text": "עוֹבֵד", "tr": "ovéd", "en": "works (f. ovédet)", "pos": "verb", "root": "ʕ-b-d", "forms": ["עובדת", "עובדים", "עובדות"], "cognates": { "ar": "ʕabd (servant)" }, "ex": { "text": "אַבָּא עוֹבֵד בְּבֵית חוֹלִים.", "tr": "ába ovéd be-vét kholím.", "en": "Dad works in a hospital." }, "verified": false },
+    { "id": "avoda", "text": "עֲבוֹדָה", "tr": "avodá", "en": "work, job; homework", "pos": "noun", "root": "ʕ-b-d", "forms": ["העבודה"], "ex": { "text": "יֵשׁ לִי הַרְבֵּה עֲבוֹדָה.", "tr": "yesh li harbé avodá.", "en": "I have a lot of work." }, "verified": false },
+    { "id": "akhshav", "text": "עַכְשָׁיו", "tr": "akhsháv", "en": "now", "pos": "adv", "ex": { "text": "אֵיפֹה אַתָּה עַכְשָׁיו?", "tr": "éfo atá akhsháv?", "en": "Where are you now?" }, "verified": false },
+    { "id": "kol", "text": "כָּל", "tr": "kol", "en": "every; all (ha-kól = everything)", "pos": "quant", "forms": ["הכל", "הכול"], "cognates": { "ar": "kill / kull" }, "ex": { "text": "כָּל הַסְּטוּדֶנְטִים פֹּה.", "tr": "kol ha-studéntim po.", "en": "All the students are here." }, "verified": false },
+    { "id": "yom", "text": "יוֹם", "tr": "yom", "en": "day (ha-yóm = today)", "pos": "noun", "forms": ["היום", "ימים"], "cognates": { "ar": "yōm" }, "ex": { "text": "מָה אַתָּה עוֹשֶׂה הַיּוֹם?", "tr": "ma atá osé ha-yóm?", "en": "What are you doing today?" }, "verified": false },
+    { "id": "tamid", "text": "תָּמִיד", "tr": "tamíd", "en": "always", "pos": "adv", "ex": { "text": "הִיא תָּמִיד עוֹבֶדֶת.", "tr": "hi tamíd ovédet.", "en": "She's always working." }, "verified": false },
+    { "id": "lifamim", "text": "לִפְעָמִים", "tr": "lif'amím", "en": "sometimes", "pos": "adv", "ex": { "text": "לִפְעָמִים אֲנִי שׁוֹתֶה תֵּה.", "tr": "lif'amím aní shoté te.", "en": "Sometimes I drink tea." }, "verified": false },
+    {"id": "sameakh", "text": "שָׂמֵחַ", "tr": "saméakh", "en": "happy, glad (f. smekhá)", "pos": "adj", "forms": ["שמח", "שמחה", "שמחים"], "ex": {"text": "אֲנִי שָׂמֵחַ מְאוֹד!", "tr": "aní saméakh me'ód!", "en": "I'm very happy!"}, "verified": false},
+    { "id": "lama", "text": "לָמָּה", "tr": "láma", "en": "why", "pos": "q", "cognates": { "ar": "limādhā (MSA)" }, "ex": { "text": "לָמָּה אַתָּה לוֹמֵד עִבְרִית?", "tr": "láma atá loméd ivrít?", "en": "Why are you learning Hebrew?" }, "verified": false },
+    { "id": "eikh", "text": "אֵיךְ", "tr": "ekh", "en": "how", "pos": "q", "ex": { "text": "אֵיךְ אוֹמְרִים אֶת זֶה בְּעִבְרִית?", "tr": "ekh omrím et ze be-ivrít?", "en": "How do you say this in Hebrew?" }, "verified": false },
+    { "id": "matai", "text": "מָתַי", "tr": "matáy", "en": "when", "pos": "q", "cognates": { "ar": "matā (MSA)" }, "ex": { "text": "מָתַי אַתָּה בָּא?", "tr": "matáy atá ba?", "en": "When are you coming?" }, "verified": false },
+    { "id": "ki", "text": "כִּי", "tr": "ki", "en": "because; that", "pos": "conj", "ex": { "text": "אֲנִי לוֹמֵד עִבְרִית כִּי אֲנִי אוֹהֵב שָׂפוֹת.", "tr": "aní loméd ivrít ki aní ohév safót.", "en": "I'm learning Hebrew because I love languages." }, "verified": false },
+    { "id": "kashe", "text": "קָשֶׁה", "tr": "kashé", "en": "hard, difficult (f. kashá)", "pos": "adj", "forms": ["קשה"], "ex": { "text": "עִבְרִית לֹא קָשָׁה.", "tr": "ivrít lo kashá.", "en": "Hebrew isn't hard." }, "verified": false },
+    { "id": "nakhon", "text": "נָכוֹן", "tr": "nakhón", "en": "right, correct; true", "pos": "adj", "ex": { "text": "כֵּן, נָכוֹן!", "tr": "ken, nakhón!", "en": "Yes, right!" }, "verified": false }
+  ],
+  "grammar": [
+    { "id": "pronouns", "title": "Personal pronouns", "body": [
+      "**aní** I · **atá** you (m) · **at** you (f) · **hu** he · **hi** she · **anákhnu** we · **atém** you (pl m) · **atén** you (pl f) · **hem** they (m) · **hen** they (f).",
+      "Compare Arabic: ʔana, ʔanta, ʔanti, huwa, hiya, naḥnu. Same Semitic family resemblance, as with gender in 'you'."
+    ], "examples": [
+      { "text": "אֲנִי וֵנוּ, וְאַתְּ?", "tr": "aní Venu, ve-át?", "en": "I'm Venu, and you (f)?" },
+      { "text": "הֵם סְטוּדֶנְטִים.", "tr": "hem studéntim.", "en": "They're students." }
+    ], "drills": [
+      { "id": "pr1", "prompt": "Say: I'm Venu.", "answer": "אֲנִי וֵנוּ.", "tr": "aní Venu." },
+      { "id": "pr2", "prompt": "Ask a woman: and you?", "answer": "וְאַתְּ?", "tr": "ve-át?" },
+      { "id": "pr3", "prompt": "Say: She's from Tel Aviv.", "answer": "הִיא מִתֵּל אָבִיב.", "tr": "hi mi-tel avív." },
+      { "id": "pr4", "prompt": "Say: We're friends.", "answer": "אֲנַחְנוּ חֲבֵרִים.", "tr": "anákhnu khaverím." }
+    ], "verified": false },
+    { "id": "nocopula", "title": "No 'is/are' in the present", "concept": "copula-zero", "body": [
+      "Like Arabic, Hebrew has no present-tense 'to be': **aní be-séder** = I (am) OK; **hu mi-yerushaláyim** = he (is) from Jerusalem.",
+      "The past (hayá 'was') comes in Unit 6."
+    ], "examples": [
+      { "text": "הַבַּיִת יָפֶה.", "tr": "ha-báyit yafé.", "en": "The house is beautiful." }
+    ], "drills": [
+      { "id": "nc1", "prompt": "Say: I'm OK, thanks.", "answer": "אֲנִי בְּסֵדֶר, תּוֹדָה.", "tr": "aní be-séder, todá." },
+      { "id": "nc2", "prompt": "Ask a man: Where are you from?", "answer": "מֵאֵיפֹה אַתָּה?", "tr": "me-éfo atá?" },
+      { "id": "nc3", "prompt": "Say: Very good.", "answer": "טוֹב מְאוֹד.", "tr": "tov me'ód." }
+    ], "verified": false },
+    { "id": "present4", "title": "Present tense: four forms", "body": [
+      "The Hebrew present has no persons, just **gender and number**: **loméd** (m sg) · **lomédet** (f sg) · **lomdím** (m pl) · **lomdót** (f pl). The pronoun tells you who.",
+      "**aní loméd** (a man speaking) / **aní lomédet** (a woman speaking). Negate with **lo**: aní lo loméd."
+    ], "examples": [
+      { "text": "הוּא לוֹמֵד רְפוּאָה, וְהִיא לוֹמֶדֶת עִבְרִית.", "tr": "hu loméd refu'á, ve-hí lomédet ivrít.", "en": "He studies medicine, and she studies Hebrew." }
+    ], "drills": [
+      { "id": "p41", "prompt": "Say (as a man): I'm learning Hebrew.", "answer": "אֲנִי לוֹמֵד עִבְרִית.", "tr": "aní loméd ivrít." },
+      { "id": "p42", "prompt": "Ask a woman: Do you speak English?", "answer": "אַתְּ מְדַבֶּרֶת אַנְגְּלִית?", "tr": "at medabéret anglít?" },
+      { "id": "p43", "prompt": "Say: They (m) study medicine.", "answer": "הֵם לוֹמְדִים רְפוּאָה.", "tr": "hem lomdím refu'á." },
+      { "id": "p44", "prompt": "Say: I don't speak Hebrew.", "answer": "אֲנִי לֹא מְדַבֵּר עִבְרִית.", "tr": "aní lo medabér ivrít." }
+    ], "verified": false },
+    { "id": "gender", "title": "Masculine and feminine", "concept": "gender", "body": [
+      "Feminine nouns and adjectives usually end in **-a** (ה-) or **-t** (-et, -it): studént → **studéntit**, yafé → **yafá**, amerika'í → **amerika'ít**.",
+      "Adjectives follow the noun and agree: **ir yafá** (a beautiful city: ir is feminine even without an ending), **báyit yafé**."
+    ], "examples": [
+      { "text": "הוּא אָמֶרִיקָאִי וְהִיא אָמֶרִיקָאִית.", "tr": "hu amerika'í ve-hí amerika'ít.", "en": "He's American and she's American." }
+    ], "drills": [
+      { "id": "gd1", "prompt": "Say: She's a student.", "answer": "הִיא סְטוּדֶנְטִית.", "tr": "hi studéntit." },
+      { "id": "gd2", "prompt": "Say: This is a beautiful city.", "answer": "זֹאת עִיר יָפָה.", "tr": "zot ir yafá." },
+      { "id": "gd3", "prompt": "Say: The house is beautiful.", "answer": "הַבַּיִת יָפֶה.", "tr": "ha-báyit yafé." }
+    ], "verified": false },
+    { "id": "rotse", "title": "rotsé: want", "body": [
+      "**rotsé / rotsá / rotsím / rotsót** + a noun: **aní rotsé kafé**. + an infinitive (le-…): **aní rotsé lishtót** = I want to drink.",
+      "Polite ordering: **efshár kafé?** (Unit 11) or just **kafé, bevakashá**."
+    ], "examples": [
+      { "text": "מָה אַתְּ רוֹצָה?", "tr": "ma at rotsá?", "en": "What do you (f) want?" }
+    ], "drills": [
+      { "id": "rt1", "prompt": "Say (as a man): I want coffee, please.", "answer": "אֲנִי רוֹצֶה קָפֶה, בְּבַקָּשָׁה.", "tr": "aní rotsé kafé, bevakashá." },
+      { "id": "rt2", "prompt": "Ask a man: Do you want tea?", "answer": "אַתָּה רוֹצֶה תֵּה?", "tr": "atá rotsé te?" },
+      { "id": "rt3", "prompt": "Ask a woman: What do you want?", "answer": "מָה אַתְּ רוֹצָה?", "tr": "ma at rotsá?" }
+    ], "verified": false },
+    { "id": "yeshli", "title": "yesh li: 'I have'", "body": [
+      "Hebrew has no verb 'have'. It says **yesh li** = there is to me. Negative: **en li** = I don't have.",
+      "Same idea as Levantine **ʕindi** (at me), but with 'to': li, lekhá, lakh, lo, la, lánu, lakhém, lahém."
+    ], "examples": [
+      { "text": "יֵשׁ לִי שְׁאֵלָה.", "tr": "yesh li she'elá.", "en": "I have a question." },
+      { "text": "אֵין לִי זְמַן.", "tr": "en li zman.", "en": "I don't have time." }
+    ], "drills": [
+      { "id": "yl1", "prompt": "Say: I have a lot of work.", "answer": "יֵשׁ לִי הַרְבֵּה עֲבוֹדָה.", "tr": "yesh li harbé avodá." },
+      { "id": "yl2", "prompt": "Ask: Is there bread?", "answer": "יֵשׁ לֶחֶם?", "tr": "yesh lékhem?" },
+      { "id": "yl3", "prompt": "Say: There's no sugar.", "answer": "אֵין סֻכָּר.", "tr": "en sukár." },
+      { "id": "yl4", "prompt": "Ask a man: Do you have water?", "answer": "יֵשׁ לְךָ מַיִם?", "tr": "yesh lekhá máyim?" }
+    ], "verified": false },
+    { "id": "binyan-preview", "title": "Verb patterns (binyanim): a first look", "concept": "root-pattern", "body": [
+      "Every verb is a root in a pattern (**binyan**). In the present: **pa'al** CoCeC: loméd, ohév, yodé'a; **pi'el** meCaCeC: medabér; **hif'il** meCiC: mevín.",
+      "Same idea as Arabic verb forms (wazn). You don't need the names yet; just notice the shapes."
+    ], "examples": [
+      { "text": "אֲנִי מֵבִין, אֲבָל לֹא מְדַבֵּר.", "tr": "aní mevín, avál lo medabér.", "en": "I understand, but I don't speak." }
+    ], "drills": [
+      { "id": "bn1", "prompt": "Say: Sorry, I don't understand.", "answer": "סְלִיחָה, אֲנִי לֹא מֵבִין.", "tr": "slikhá, aní lo mevín." },
+      { "id": "bn2", "prompt": "Say: I drink tea every day.", "answer": "אֲנִי שׁוֹתֶה תֵּה כָּל יוֹם.", "tr": "aní shoté te kol yom." },
+      { "id": "bn3", "prompt": "Ask a man: What are you doing?", "answer": "מָה אַתָּה עוֹשֶׂה?", "tr": "ma atá osé?" }
+    ], "verified": false },
+    { "id": "questions", "title": "Asking questions", "body": [
+      "**ma** what · **mi** who · **éfo** where · **me-éfo** from where · **le-án** to where · **ekh** how · **láma** why · **matáy** when · **káma** how much.",
+      "Yes/no questions: just raise your voice: **atá ba?** = are you coming?"
+    ], "examples": [
+      { "text": "לָמָּה אַתָּה לוֹמֵד עֲרָבִית?", "tr": "láma atá loméd aravít?", "en": "Why are you learning Arabic?" }
+    ], "drills": [
+      { "id": "qs1", "prompt": "Ask a man: When are you coming?", "answer": "מָתַי אַתָּה בָּא?", "tr": "matáy atá ba?" },
+      { "id": "qs2", "prompt": "Ask: How much is it?", "answer": "כַּמָּה זֶה?", "tr": "káma ze?" },
+      { "id": "qs3", "prompt": "Ask: How do you say this in Hebrew?", "answer": "אֵיךְ אוֹמְרִים אֶת זֶה בְּעִבְרִית?", "tr": "ekh omrím et ze be-ivrít?" }
+    ], "verified": false }
+  ],
+  "texts": [
+    { "id": "d01", "title": "Meeting at Hillel", "level": "U1", "kind": "dialogue", "names": ["נועה", "ונו", "תל", "אביב", "אמריקה"], "lines": [
+      { "sp": "Noa", "text": "שָׁלוֹם! מָה שְׁלוֹמְךָ?", "tr": "shalóm! ma shlomkhá?", "en": "Hi! How are you?" },
+      { "sp": "Venu", "text": "שָׁלוֹם! אֲנִי בְּסֵדֶר, תּוֹדָה. וּמָה שְׁלוֹמֵךְ?", "tr": "shalóm! aní be-séder, todá. u-má shloméKH?", "en": "Hi! I'm fine, thanks. And how are you?" },
+      { "sp": "Noa", "text": "טוֹב מְאוֹד. אֲנִי נוֹעָה. וּמִי אַתָּה?", "tr": "tov me'ód. aní Nóa. u-mí atá?", "en": "Very good. I'm Noa. And who are you?" },
+      { "sp": "Venu", "text": "שְׁמִי וֵנוּ.", "tr": "shmi Venu.", "en": "My name is Venu." },
+      { "sp": "Noa", "text": "מֵאֵיפֹה אַתָּה?", "tr": "me-éfo atá?", "en": "Where are you from?" },
+      { "sp": "Venu", "text": "אֲנִי מֵאָמֶרִיקָה. וְאַתְּ?", "tr": "aní me-amérika. ve-át?", "en": "I'm from America. And you?" },
+      { "sp": "Noa", "text": "אֲנִי מִתֵּל אָבִיב. נָעִים מְאוֹד!", "tr": "aní mi-tel avív. na'ím me'ód!", "en": "I'm from Tel Aviv. Nice to meet you!" },
+      { "sp": "Venu", "text": "נָעִים מְאוֹד. לְהִתְרָאוֹת!", "tr": "na'ím me'ód. lehitra'ót!", "en": "Nice to meet you. See you!" }
+    ], "verified": false },
+    { "id": "d02", "title": "What do you study?", "level": "U2", "kind": "dialogue", "names": ["הופקינס"], "lines": [
+      { "sp": "Noa", "text": "אַתָּה סְטוּדֶנְט פֹּה?", "tr": "atá studént po?", "en": "Are you a student here?" },
+      { "sp": "Venu", "text": "כֵּן, אֲנִי סְטוּדֶנְט בְּהוֹפְּקִינְס.", "tr": "ken, aní studént be-hópkins.", "en": "Yes, I'm a student at Hopkins." },
+      { "sp": "Noa", "text": "מָה אַתָּה לוֹמֵד?", "tr": "ma atá loméd?", "en": "What do you study?" },
+      { "sp": "Venu", "text": "אֲנִי לוֹמֵד רְפוּאָה. וְגַם עִבְרִית וַעֲרָבִית!", "tr": "aní loméd refu'á. ve-gám ivrít va-aravít!", "en": "I study medicine. And Hebrew and Arabic too!" },
+      { "sp": "Noa", "text": "אַתָּה מְדַבֵּר עִבְרִית?", "tr": "atá medabér ivrít?", "en": "Do you speak Hebrew?" },
+      { "sp": "Venu", "text": "קְצָת. אֲנִי מְדַבֵּר אַנְגְּלִית וּסְפָרַדִּית.", "tr": "ktsat. aní medabér anglít u-sfaradít.", "en": "A little. I speak English and Spanish." },
+      { "sp": "Noa", "text": "יָפֶה מְאוֹד! גַּם אֲנִי מְדַבֶּרֶת סְפָרַדִּית, אֲבָל קְצָת.", "tr": "yafé me'ód! gam aní medabéret sfaradít, avál ktsat.", "en": "Very nice! I speak Spanish too, but a little." }
+    ], "verified": false },
+    { "id": "d03", "title": "At a café in Tel Aviv", "level": "U3", "kind": "dialogue", "lines": [
+      { "sp": "Barista", "text": "שָׁלוֹם! מָה אַתָּה רוֹצֶה?", "tr": "shalóm! ma atá rotsé?", "en": "Hi! What would you like?" },
+      { "sp": "You", "text": "אֲנִי רוֹצֶה קָפֶה, בְּבַקָּשָׁה.", "tr": "aní rotsé kafé, bevakashá.", "en": "I'd like a coffee, please." },
+      { "sp": "Barista", "text": "עִם חָלָב אוֹ בְּלִי?", "tr": "im khaláv o bli?", "en": "With milk or without?" },
+      { "sp": "You", "text": "עִם חָלָב, בְּלִי סֻכָּר. יֵשׁ עוּגָה?", "tr": "im khaláv, bli sukár. yesh ugá?", "en": "With milk, no sugar. Is there cake?" },
+      { "sp": "Barista", "text": "יֵשׁ. אַתָּה רָעֵב?", "tr": "yesh. atá ra'év?", "en": "There is. Are you hungry?" },
+      { "sp": "You", "text": "כֵּן, מְאוֹד! כַּמָּה זֶה עוֹלֶה?", "tr": "ken, me'ód! káma ze olé?", "en": "Yes, very! How much is it?" },
+      { "sp": "Barista", "text": "שְׁלוֹשִׁים שְׁקָלִים. בְּתֵאָבוֹן!", "tr": "shloshím shkalím. be-te'avón!", "en": "Thirty shekels. Enjoy!" },
+      { "sp": "You", "text": "תּוֹדָה רַבָּה!", "tr": "todá rabá!", "en": "Thanks a lot!" }
+    ], "verified": false },
+    { "id": "d04", "title": "My day", "level": "U4", "kind": "reading", "names": ["ונו", "הופקינס"], "lines": [
+      { "text": "אֲנִי וֵנוּ, סְטוּדֶנְט בְּהוֹפְּקִינְס.", "tr": "aní Venu, studént be-hópkins.", "en": "I'm Venu, a student at Hopkins." },
+      { "text": "כָּל יוֹם אֲנִי הוֹלֵךְ לָאוּנִיבֶרְסִיטָה.", "tr": "kol yom aní holékh la-universíta.", "en": "Every day I go to the university." },
+      { "text": "אֲנִי לוֹמֵד רְפוּאָה, וְגַם עִבְרִית.", "tr": "aní loméd refu'á, ve-gám ivrít.", "en": "I study medicine, and Hebrew too." },
+      { "text": "אֲנִי אוֹהֵב עִבְרִית, אֲבָל לִפְעָמִים זֶה קָשֶׁה.", "tr": "aní ohév ivrít, avál lif'amím ze kashé.", "en": "I love Hebrew, but sometimes it's hard." },
+      { "text": "אֲנִי שׁוֹתֶה הַרְבֵּה קָפֶה, כִּי יֵשׁ לִי הַרְבֵּה עֲבוֹדָה.", "tr": "aní shoté harbé kafé, ki yesh li harbé avodá.", "en": "I drink a lot of coffee, because I have a lot of work." },
+      { "text": "עַכְשָׁיו אֲנִי לוֹמֵד. לְהִתְרָאוֹת!", "tr": "akhsháv aní loméd. lehitra'ót!", "en": "Right now I'm studying. See you!" }
+    ], "verified": false }
+  ]
+}

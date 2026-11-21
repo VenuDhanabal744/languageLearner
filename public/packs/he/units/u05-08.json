@@ -1,0 +1,231 @@
+{
+  "units": [
+    { "id": "u05", "title": "5 · Roots and patterns", "goal": "See roots inside words, and connect them to Arabic.", "items": [
+      "script:s5", "grammar:roots", "word:katav", "word:mikhtav", "word:ktovet", "word:sefer", "word:sofer", "word:sifriya", "word:sipur", "word:mispar", "grammar:patterns",
+      "word:talmid", "word:more", "word:beitsefer", "word:kita", "word:shiur", "word:mivkhan", "word:sheela", "word:tshuva", "word:patuakh", "word:mafteakh", "word:misrad", "text:d05" ] },
+    { "id": "u06", "title": "6 · Yesterday", "goal": "Say what you did; times of day.", "items": [
+      "word:halakhti", "word:akhalti", "word:shatiti", "word:asiti", "grammar:past", "word:dibarti", "word:raiti", "word:amar", "word:gamarti", "word:yashanti", "word:kamti",
+      "word:haya", "grammar:haya", "word:etmol", "word:makhar", "word:erev", "word:laila", "word:shaa", "word:zman", "word:akharkakh", "word:lifnei", "word:akharei", "word:od", "text:d06" ] },
+    { "id": "u07", "title": "7 · Family", "goal": "Describe your family; say whose things are whose.", "items": [
+      "word:mishpakha", "word:ima", "word:aba", "word:akh", "word:akhot", "word:ben", "word:bat", "grammar:shel", "word:shel", "word:sheli", "word:yeled", "word:khaver",
+      "word:saba", "word:savta", "grammar:smikhut", "word:gadol", "word:katan", "word:gar", "word:nasui", "word:shana", "word:benkama", "text:d07" ] },
+    { "id": "u08", "title": "8 · Numbers and the shuk", "goal": "Count, ask prices, bargain politely.", "items": [
+      "word:ekhad", "word:shtayim", "word:shalosh", "word:arba", "word:khamesh", "grammar:numbers", "word:shesh", "word:sheva", "word:shmone", "word:tesha", "word:eser",
+      "word:kesef", "word:yakar", "word:midai", "word:zol", "grammar:article", "word:kaniti", "word:shuk", "word:khanut", "word:perot", "word:yerakot", "word:rak", "text:d08" ] }
+  ],
+  "words": [
+    { "id": "katav", "text": "כָּתַב", "tr": "katáv", "en": "wrote (katávti = I wrote; kotév = writes)", "pos": "verb", "root": "k-t-v", "forms": ["כתבתי", "כתבת", "כתבה", "כותב", "כותבת", "כתבנו"], "cognates": { "ar": "katab" }, "ex": { "text": "כָּתַבְתִּי מִכְתָּב לְאִמָּא.", "tr": "katávti mikhtáv le-íma.", "en": "I wrote a letter to Mom." }, "verified": false },
+    { "id": "mikhtav", "text": "מִכְתָּב", "tr": "mikhtáv", "en": "letter (mail)", "pos": "noun", "root": "k-t-v", "pattern": "miCCaC", "forms": ["מכתבים"], "cognates": { "ar": "maktūb (letter)" }, "ex": { "text": "יֵשׁ לְךָ מִכְתָּב.", "tr": "yesh lekhá mikhtáv.", "en": "You have a letter." }, "verified": false },
+    { "id": "ktovet", "text": "כְּתֹבֶת", "tr": "któvet", "en": "address", "pos": "noun", "root": "k-t-v", "forms": ["כתובת"], "ex": { "text": "מָה הַכְּתֹבֶת שֶׁלְּךָ?", "tr": "ma ha-któvet shelkhá?", "en": "What's your address?" }, "verified": false },
+    { "id": "sefer", "text": "סֵפֶר", "tr": "séfer", "en": "book (pl. sfarím)", "pos": "noun", "root": "s-f-r", "forms": ["ספרים", "הספר"], "cognates": { "ar": "sifr (book, MSA)" }, "ex": { "text": "זֶה סֵפֶר בְּעִבְרִית.", "tr": "ze séfer be-ivrít.", "en": "This is a book in Hebrew." }, "verified": false },
+    { "id": "sofer", "text": "סוֹפֵר", "tr": "sofér", "en": "writer, author (f. soféret)", "pos": "noun", "root": "s-f-r", "pattern": "CoCeC", "forms": ["סופרת"], "ex": { "text": "הוּא סוֹפֵר יִשְׂרְאֵלִי.", "tr": "hu sofér yisre'elí.", "en": "He's an Israeli writer." }, "verified": false },
+    { "id": "sifriya", "text": "סִפְרִיָּה", "tr": "sifriyá", "en": "library", "pos": "noun", "root": "s-f-r", "forms": ["ספרייה", "ספריה"], "ex": { "text": "אֵיפֹה הַסִּפְרִיָּה?", "tr": "éfo ha-sifriyá?", "en": "Where's the library?" }, "verified": false },
+    { "id": "sipur", "text": "סִפּוּר", "tr": "sipúr", "en": "story", "pos": "noun", "root": "s-f-r", "forms": ["סיפור", "סיפורים"], "ex": { "text": "זֶה סִפּוּר יָפֶה.", "tr": "ze sipúr yafé.", "en": "It's a nice story." }, "verified": false },
+    { "id": "mispar", "text": "מִסְפָּר", "tr": "mispár", "en": "number", "pos": "noun", "root": "s-f-r", "pattern": "miCCaC", "forms": ["מספרים"], "ex": { "text": "מָה הַמִּסְפָּר שֶׁלְּךָ?", "tr": "ma ha-mispár shelkhá?", "en": "What's your number?" }, "verified": false },
+    { "id": "talmid", "text": "תַּלְמִיד", "tr": "talmíd", "en": "pupil, student (f. talmidá)", "pos": "noun", "root": "l-m-d", "forms": ["תלמידה", "תלמידים"], "cognates": { "ar": "tilmīdh (borrowed from Aramaic)" }, "ex": { "text": "הוּא תַּלְמִיד טוֹב.", "tr": "hu talmíd tov.", "en": "He's a good pupil." }, "verified": false },
+    { "id": "more", "text": "מוֹרֶה", "tr": "moré", "en": "teacher (f. morá)", "pos": "noun", "root": "y-r-h", "forms": ["מורה", "מורים"], "ex": { "text": "הַמּוֹרָה שֶׁלִּי מֵחֵיפָה.", "tr": "ha-morá shelí me-kháyfa.", "en": "My teacher is from Haifa." }, "verified": false },
+    { "id": "beitsefer", "text": "בֵּית סֵפֶר", "tr": "bet séfer", "en": "school (lit. house of book)", "pos": "noun", "forms": ["בית ספר", "בבית"], "ex": { "text": "אֲחוֹתִי בְּבֵית סֵפֶר.", "tr": "akhotí be-vét séfer.", "en": "My sister is at school." }, "verified": false },
+    { "id": "kita", "text": "כִּתָּה", "tr": "kitá", "en": "class, classroom", "pos": "noun", "forms": ["כיתה"], "ex": { "text": "הַכִּתָּה גְּדוֹלָה.", "tr": "ha-kitá gdolá.", "en": "The class is big." }, "verified": false },
+    { "id": "shiur", "text": "שִׁעוּר", "tr": "shi'úr", "en": "lesson, class", "pos": "noun", "forms": ["שיעור", "שיעורים"], "ex": { "text": "יֵשׁ לִי שִׁעוּר עִבְרִית הַיּוֹם.", "tr": "yesh li shi'úr ivrít ha-yóm.", "en": "I have a Hebrew class today." }, "verified": false },
+    { "id": "mivkhan", "text": "מִבְחָן", "tr": "mivkhán", "en": "exam, test", "pos": "noun", "root": "b-ḥ-n", "pattern": "miCCaC", "forms": ["מבחנים"], "ex": { "text": "יֵשׁ לִי מִבְחָן מָחָר.", "tr": "yesh li mivkhán makhár.", "en": "I have an exam tomorrow." }, "verified": false },
+    { "id": "sheela", "text": "שְׁאֵלָה", "tr": "she'elá", "en": "question", "pos": "noun", "root": "sh-ʔ-l", "forms": ["שאלות"], "cognates": { "ar": "suʔāl (s-ʔ-l)" }, "ex": { "text": "יֵשׁ לִי שְׁאֵלָה.", "tr": "yesh li she'elá.", "en": "I have a question." }, "verified": false },
+    { "id": "tshuva", "text": "תְּשׁוּבָה", "tr": "tshuvá", "en": "answer", "pos": "noun", "forms": ["תשובות"], "ex": { "text": "אֲנִי לֹא יוֹדֵעַ אֶת הַתְּשׁוּבָה.", "tr": "aní lo yodé'a et ha-tshuvá.", "en": "I don't know the answer." }, "verified": false },
+    { "id": "patuakh", "text": "פָּתוּחַ", "tr": "patú'akh", "en": "open (f. ptukhá)", "pos": "adj", "root": "p-t-ḥ", "pattern": "CaCuC", "forms": ["פתוח", "פתוחה"], "cognates": { "ar": "maftūḥ" }, "ex": { "text": "הַסִּפְרִיָּה פְּתוּחָה עַכְשָׁיו.", "tr": "ha-sifriyá ptukhá akhsháv.", "en": "The library is open now." }, "verified": false },
+    { "id": "mafteakh", "text": "מַפְתֵּחַ", "tr": "mafté'akh", "en": "key", "pos": "noun", "root": "p-t-ḥ", "forms": ["מפתח"], "cognates": { "ar": "miftāḥ" }, "ex": { "text": "אֵיפֹה הַמַּפְתֵּחַ?", "tr": "éfo ha-mafté'akh?", "en": "Where's the key?" }, "verified": false },
+    { "id": "misrad", "text": "מִשְׂרָד", "tr": "misrád", "en": "office", "pos": "noun", "pattern": "miCCaC", "forms": ["משרדים"], "ex": { "text": "הַמּוֹרֶה בַּמִּשְׂרָד.", "tr": "ha-moré ba-misrád.", "en": "The teacher is in the office." }, "verified": false },
+
+    { "id": "halakhti", "text": "הָלַכְתִּי", "tr": "halákhti", "en": "I went (halákh = he went)", "pos": "verb", "root": "h-l-kh", "forms": ["הלך", "הלכה", "הלכנו", "הלכת"], "ex": { "text": "הָלַכְתִּי לַשּׁוּק אֶתְמוֹל.", "tr": "halákhti la-shúk etmól.", "en": "I went to the market yesterday." }, "verified": false },
+    { "id": "akhalti", "text": "אָכַלְתִּי", "tr": "akhálti", "en": "I ate", "pos": "verb", "root": "ʔ-k-l", "forms": ["אכל", "אכלה", "אכלנו"], "ex": { "text": "אָכַלְתִּי לֶחֶם.", "tr": "akhálti lékhem.", "en": "I ate bread." }, "verified": false },
+    { "id": "shatiti", "text": "שָׁתִיתִי", "tr": "shatíti", "en": "I drank", "pos": "verb", "root": "sh-t-h", "forms": ["שתה", "שתתה", "שתינו"], "ex": { "text": "שָׁתִיתִי קָפֶה בַּבֹּקֶר.", "tr": "shatíti kafé ba-bóker.", "en": "I drank coffee in the morning." }, "verified": false },
+    { "id": "asiti", "text": "עָשִׂיתִי", "tr": "asíti", "en": "I did, I made", "pos": "verb", "root": "ʕ-s-h", "forms": ["עשה", "עשתה", "עשית", "עשינו"], "ex": { "text": "מָה עָשִׂיתָ הַיּוֹם?", "tr": "ma asíta ha-yóm?", "en": "What did you do today?" }, "verified": false },
+    { "id": "dibarti", "text": "דִּבַּרְתִּי", "tr": "dibárti", "en": "I spoke, talked", "pos": "verb", "root": "d-b-r", "forms": ["דיבר", "דיברה", "דיברנו", "דברתי"], "ex": { "text": "דִּבַּרְתִּי עִם אִמָּא.", "tr": "dibárti im íma.", "en": "I talked with Mom." }, "verified": false },
+    { "id": "raiti", "text": "רָאִיתִי", "tr": "ra'íti", "en": "I saw (ra'á = he saw)", "pos": "verb", "root": "r-ʔ-h", "forms": ["ראה", "ראתה", "ראינו"], "ex": { "text": "רָאִיתִי אֶת נוֹעָה בָּאוּנִיבֶרְסִיטָה.", "tr": "ra'íti et Nóa ba-universíta.", "en": "I saw Noa at the university." }, "verified": false },
+    { "id": "amar", "text": "אָמַר", "tr": "amár", "en": "said (omér = says; amárti = I said)", "pos": "verb", "root": "ʔ-m-r", "forms": ["אמרתי", "אמרה", "אומר", "אומרת", "אומרים"], "cognates": { "ar": "ʔamara (ordered)" }, "ex": { "text": "מָה הוּא אָמַר?", "tr": "ma hu amár?", "en": "What did he say?" }, "verified": false },
+    { "id": "gamarti", "text": "גָּמַרְתִּי", "tr": "gamárti", "en": "I finished", "pos": "verb", "root": "g-m-r", "forms": ["גמר", "גמרנו"], "ex": { "text": "גָּמַרְתִּי אֶת הָעֲבוֹדָה.", "tr": "gamárti et ha-avodá.", "en": "I finished the work." }, "verified": false },
+    { "id": "yashanti", "text": "יָשַׁנְתִּי", "tr": "yashánti", "en": "I slept (yashén = sleeps)", "pos": "verb", "root": "y-sh-n", "forms": ["ישן", "ישנה"], "ex": { "text": "יָשַׁנְתִּי טוֹב.", "tr": "yashánti tov.", "en": "I slept well." }, "verified": false },
+    { "id": "kamti", "text": "קַמְתִּי", "tr": "kámti", "en": "I got up (kam = got up)", "pos": "verb", "root": "q-w-m", "forms": ["קם", "קמה"], "cognates": { "ar": "qāma (q-w-m)" }, "ex": { "text": "קַמְתִּי בַּבֹּקֶר.", "tr": "kámti ba-bóker.", "en": "I got up in the morning." }, "verified": false },
+    { "id": "haya", "text": "הָיָה", "tr": "hayá", "en": "was (hayíti = I was; haytá = she was)", "pos": "verb", "root": "h-y-h", "forms": ["הייתי", "היתה", "הייתה", "היינו", "היו"], "ex": { "text": "הָיִיתִי בַּבַּיִת.", "tr": "hayíti ba-báyit.", "en": "I was at home." }, "verified": false },
+    { "id": "etmol", "text": "אֶתְמוֹל", "tr": "etmól", "en": "yesterday", "pos": "adv", "ex": { "text": "אֶתְמוֹל הָיָה לִי שִׁעוּר.", "tr": "etmól hayá li shi'úr.", "en": "Yesterday I had a class." }, "verified": false },
+    { "id": "makhar", "text": "מָחָר", "tr": "makhár", "en": "tomorrow", "pos": "adv", "ex": { "text": "לְהִתְרָאוֹת מָחָר!", "tr": "lehitra'ót makhár!", "en": "See you tomorrow!" }, "verified": false },
+    { "id": "erev", "text": "עֶרֶב", "tr": "érev", "en": "evening (érev tov = good evening)", "pos": "noun", "forms": ["בערב"], "ex": { "text": "עֶרֶב טוֹב!", "tr": "érev tov!", "en": "Good evening!" }, "verified": false },
+    { "id": "laila", "text": "לַיְלָה", "tr": "láyla", "en": "night (láyla tov = good night)", "pos": "noun", "forms": ["בלילה", "לילות"], "cognates": { "ar": "lēl / layla" }, "ex": { "text": "לַיְלָה טוֹב!", "tr": "láyla tov!", "en": "Good night!" }, "verified": false },
+    { "id": "shaa", "text": "שָׁעָה", "tr": "sha'á", "en": "hour; o'clock", "pos": "noun", "forms": ["שעות", "השעה"], "cognates": { "ar": "sāʕa" }, "ex": { "text": "מָה הַשָּׁעָה?", "tr": "ma ha-sha'á?", "en": "What time is it?" }, "verified": false },
+    { "id": "zman", "text": "זְמַן", "tr": "zman", "en": "time", "pos": "noun", "forms": ["הזמן"], "cognates": { "ar": "zamān" }, "ex": { "text": "אֵין לִי זְמַן.", "tr": "en li zman.", "en": "I don't have time." }, "verified": false },
+    { "id": "akharkakh", "text": "אַחַר כָּךְ", "tr": "akhár kakh", "en": "afterwards, later", "pos": "adv", "ex": { "text": "אָכַלְתִּי, וְאַחַר כָּךְ יָשַׁנְתִּי.", "tr": "akhálti, ve-akhár kakh yashánti.", "en": "I ate, and afterwards I slept." }, "verified": false },
+    { "id": "lifnei", "text": "לִפְנֵי", "tr": "lifné", "en": "before; ago", "pos": "prep", "ex": { "text": "לִפְנֵי הַשִּׁעוּר אֲנִי שׁוֹתֶה קָפֶה.", "tr": "lifné ha-shi'úr aní shoté kafé.", "en": "Before class I drink coffee." }, "verified": false },
+    { "id": "akharei", "text": "אַחֲרֵי", "tr": "akharé", "en": "after", "pos": "prep", "ex": { "text": "אַחֲרֵי הַשִּׁעוּר אֲנִי הוֹלֵךְ הַבַּיְתָה.", "tr": "akharé ha-shi'úr aní holékh ha-báyta.", "en": "After class I go home." }, "verified": false },
+    { "id": "od", "text": "עוֹד", "tr": "od", "en": "still; more (od lo = not yet)", "pos": "adv", "ex": { "text": "עוֹד לֹא גָּמַרְתִּי.", "tr": "od lo gamárti.", "en": "I haven't finished yet." }, "verified": false },
+
+    { "id": "mishpakha", "text": "מִשְׁפָּחָה", "tr": "mishpakhá", "en": "family", "pos": "noun", "forms": ["משפחה", "המשפחה"], "ex": { "text": "הַמִּשְׁפָּחָה שֶׁלִּי לֹא גְּדוֹלָה.", "tr": "ha-mishpakhá shelí lo gdolá.", "en": "My family isn't big." }, "verified": false },
+    { "id": "ima", "text": "אִמָּא", "tr": "íma", "en": "mom (em = mother, formal)", "pos": "noun", "forms": ["אמא", "אם"], "cognates": { "ar": "imm" }, "ex": { "text": "אִמָּא שֶׁלִּי רוֹפְאָה.", "tr": "íma shelí rof'á.", "en": "My mom is a doctor." }, "verified": false },
+    { "id": "aba", "text": "אַבָּא", "tr": "ába", "en": "dad (av = father, formal)", "pos": "noun", "forms": ["אבא", "אב"], "cognates": { "ar": "ʔab / bayy" }, "ex": { "text": "אַבָּא עוֹבֵד בְּמִשְׂרָד.", "tr": "ába ovéd be-misrád.", "en": "Dad works in an office." }, "verified": false },
+    { "id": "akh", "text": "אָח", "tr": "akh", "en": "brother (akhí = my brother; pl. akhím)", "pos": "noun", "forms": ["אחי", "אחים"], "cognates": { "ar": "ʔakh" }, "ex": { "text": "יֵשׁ לִי אָח אֶחָד.", "tr": "yesh li akh ekhád.", "en": "I have one brother." }, "verified": false },
+    { "id": "akhot", "text": "אָחוֹת", "tr": "akhót", "en": "sister; nurse (akhotí = my sister)", "pos": "noun", "forms": ["אחותי", "אחיות"], "cognates": { "ar": "ʔukht" }, "ex": { "text": "אֲחוֹתִי קְטַנָּה.", "tr": "akhotí ktaná.", "en": "My sister is little." }, "verified": false },
+    { "id": "ben", "text": "בֵּן", "tr": "ben", "en": "son (pl. baním)", "pos": "noun", "forms": ["בנים", "בנו"], "cognates": { "ar": "ibn" }, "ex": { "text": "הַבֵּן שֶׁלָּהּ סְטוּדֶנְט.", "tr": "ha-bén shelá studént.", "en": "Her son is a student." }, "verified": false },
+    { "id": "bat", "text": "בַּת", "tr": "bat", "en": "daughter (pl. banót)", "pos": "noun", "forms": ["בנות", "בתו"], "cognates": { "ar": "bint" }, "ex": { "text": "הַבַּת שֶׁלּוֹ בְּבֵית סֵפֶר.", "tr": "ha-bát sheló be-vét séfer.", "en": "His daughter is at school." }, "verified": false },
+    { "id": "shel", "text": "שֶׁל", "tr": "shel", "en": "of, belonging to", "pos": "prep", "ex": { "text": "זֶה הַבַּיִת שֶׁל נוֹעָה.", "tr": "ze ha-báyit shel Nóa.", "en": "This is Noa's house." }, "verified": false },
+    { "id": "sheli", "text": "שֶׁלִּי", "tr": "shelí", "en": "my, mine (shelkhá your m, shelákh your f, sheló his, shelá her, shelánu our)", "pos": "pron", "forms": ["שלך", "שלו", "שלה", "שלנו", "שלכם", "שלהם"], "ex": { "text": "זֶה הַסֵּפֶר שֶׁלִּי.", "tr": "ze ha-séfer shelí.", "en": "This is my book." }, "verified": false },
+    { "id": "yeled", "text": "יֶלֶד", "tr": "yéled", "en": "child, boy (f. yaldá; pl. yeladím)", "pos": "noun", "root": "y-l-d", "forms": ["ילדה", "ילדים", "ילדות"], "cognates": { "ar": "walad (w-l-d)" }, "ex": { "text": "יֵשׁ לָהֶם שְׁלוֹשָׁה יְלָדִים.", "tr": "yesh lahém shloshá yeladím.", "en": "They have three children." }, "verified": false },
+    { "id": "khaver", "text": "חָבֵר", "tr": "khavér", "en": "friend (f. khaverá; also boyfriend/girlfriend)", "pos": "noun", "forms": ["חברה", "חברים", "חברות"], "ex": { "text": "הוּא חָבֵר שֶׁלִּי.", "tr": "hu khavér shelí.", "en": "He's a friend of mine." }, "verified": false },
+    { "id": "saba", "text": "סַבָּא", "tr": "sába", "en": "grandpa", "pos": "noun", "forms": ["סבא"], "ex": { "text": "סַבָּא גָּר בְּחֵיפָה.", "tr": "sába gar be-kháyfa.", "en": "Grandpa lives in Haifa." }, "verified": false },
+    { "id": "savta", "text": "סַבְתָּא", "tr": "sávta", "en": "grandma", "pos": "noun", "forms": ["סבתא"], "ex": { "text": "סַבְתָּא אוֹהֶבֶת קָפֶה.", "tr": "sávta ohévet kafé.", "en": "Grandma loves coffee." }, "verified": false },
+    { "id": "gadol", "text": "גָּדוֹל", "tr": "gadól", "en": "big; older (f. gdolá)", "pos": "adj", "forms": ["גדולה", "גדולים", "גדולות"], "ex": { "text": "הַבַּיִת גָּדוֹל.", "tr": "ha-báyit gadól.", "en": "The house is big." }, "verified": false },
+    { "id": "katan", "text": "קָטָן", "tr": "katán", "en": "small; younger (f. ktaná)", "pos": "adj", "forms": ["קטנה", "קטנים", "קטנות"], "ex": { "text": "הַמִּשְׂרָד קָטָן.", "tr": "ha-misrád katán.", "en": "The office is small." }, "verified": false },
+    { "id": "gar", "text": "גָּר", "tr": "gar", "en": "lives (resides) (f. gára, pl. garím)", "pos": "verb", "root": "g-w-r", "forms": ["גרה", "גרים", "גרות"], "ex": { "text": "אֵיפֹה אַתָּה גָּר?", "tr": "éfo atá gar?", "en": "Where do you live?" }, "verified": false },
+    { "id": "nasui", "text": "נָשׂוּי", "tr": "nasú'i", "en": "married (f. nesu'á)", "pos": "adj", "forms": ["נשואה", "נשואים"], "ex": { "text": "אָחִי נָשׂוּי.", "tr": "akhí nasú'i.", "en": "My brother is married." }, "verified": false },
+    { "id": "shana", "text": "שָׁנָה", "tr": "shaná", "en": "year (pl. shaním)", "pos": "noun", "forms": ["שנים", "השנה"], "cognates": { "ar": "sine / sana" }, "ex": { "text": "אֲנִי בֶּן תְּשַׁע עֶשְׂרֵה שָׁנָה.", "tr": "aní ben tsha esré shaná.", "en": "I'm nineteen years old." }, "verified": false },
+    { "id": "benkama", "text": "בֶּן כַּמָּה", "tr": "ben káma", "en": "how old (to a male; to a female: bat káma)", "pos": "phrase", "ex": { "text": "בֶּן כַּמָּה אַתָּה?", "tr": "ben káma atá?", "en": "How old are you?" }, "verified": false },
+
+    { "id": "ekhad", "text": "אֶחָד", "tr": "ekhád", "en": "one (f. akhát)", "pos": "num", "forms": ["אחת"], "cognates": { "ar": "wāḥad / ʔaḥad" }, "ex": { "text": "קָפֶה אֶחָד, בְּבַקָּשָׁה.", "tr": "kafé ekhád, bevakashá.", "en": "One coffee, please." }, "verified": false },
+    { "id": "shtayim", "text": "שְׁתַּיִם", "tr": "shtáyim", "en": "two (counting; m. shnáyim, before nouns shtey / shney)", "pos": "num", "forms": ["שניים", "שני", "שתי"], "cognates": { "ar": "tnēn / ithnān" }, "ex": { "text": "שְׁנֵי קָפֶה, בְּבַקָּשָׁה.", "tr": "shne kafé, bevakashá.", "en": "Two coffees, please." }, "verified": false },
+    { "id": "shalosh", "text": "שָׁלוֹשׁ", "tr": "shalósh", "en": "three (with masc. nouns: shloshá)", "pos": "num", "forms": ["שלושה"], "cognates": { "ar": "tlēte / thalātha" }, "ex": { "text": "יֵשׁ לִי שָׁלוֹשׁ שְׁאֵלוֹת.", "tr": "yesh li shalósh she'elót.", "en": "I have three questions." }, "verified": false },
+    { "id": "arba", "text": "אַרְבַּע", "tr": "árba", "en": "four (m. arba'á)", "pos": "num", "forms": ["ארבעה"], "cognates": { "ar": "ʔarbʕa" }, "ex": { "text": "הַשָּׁעָה אַרְבַּע.", "tr": "ha-sha'á árba.", "en": "It's four o'clock." }, "verified": false },
+    { "id": "khamesh", "text": "חָמֵשׁ", "tr": "khámesh", "en": "five (m. khamishá)", "pos": "num", "forms": ["חמישה"], "cognates": { "ar": "khamse" }, "ex": { "text": "רַק חָמֵשׁ דַּקּוֹת.", "tr": "rak khámesh dakót.", "en": "Just five minutes." }, "verified": false },
+    { "id": "shesh", "text": "שֵׁשׁ", "tr": "shesh", "en": "six (m. shishá)", "pos": "num", "forms": ["שישה"], "cognates": { "ar": "sitte" }, "ex": { "text": "אֲנִי קָם בְּשֵׁשׁ.", "tr": "aní kam be-shésh.", "en": "I get up at six." }, "verified": false },
+    { "id": "sheva", "text": "שֶׁבַע", "tr": "shéva", "en": "seven (m. shiv'á)", "pos": "num", "forms": ["שבעה"], "cognates": { "ar": "sabʕa" }, "ex": { "text": "יֵשׁ שִׁבְעָה יָמִים בְּשָׁבוּעַ.", "tr": "yesh shiv'á yamím be-shavú'a.", "en": "There are seven days in a week." }, "verified": false },
+    { "id": "shmone", "text": "שְׁמוֹנֶה", "tr": "shmóne", "en": "eight (m. shmoná)", "pos": "num", "forms": ["שמונה"], "cognates": { "ar": "tmēne" }, "ex": { "text": "הַשִּׁעוּר בִּשְׁמוֹנֶה.", "tr": "ha-shi'úr bi-shmóne.", "en": "The class is at eight." }, "verified": false },
+    { "id": "tesha", "text": "תֵּשַׁע", "tr": "tésha", "en": "nine (m. tish'á)", "pos": "num", "forms": ["תשעה"], "cognates": { "ar": "tisʕa" }, "ex": { "text": "זֶה עוֹלֶה תֵּשַׁע שְׁקָלִים.", "tr": "ze olé tésha shkalím.", "en": "It costs nine shekels." }, "verified": false },
+    { "id": "eser", "text": "עֶשֶׂר", "tr": "éser", "en": "ten (m. asará)", "pos": "num", "forms": ["עשרה"], "cognates": { "ar": "ʕashara" }, "ex": { "text": "עֶשֶׂר שְׁקָלִים? יָקָר!", "tr": "éser shkalím? yakár!", "en": "Ten shekels? Expensive!" }, "verified": false },
+    { "id": "kesef", "text": "כֶּסֶף", "tr": "késef", "en": "money; silver", "pos": "noun", "forms": ["הכסף"], "ex": { "text": "אֵין לִי כֶּסֶף.", "tr": "en li késef.", "en": "I don't have money." }, "verified": false },
+    { "id": "yakar", "text": "יָקָר", "tr": "yakár", "en": "expensive; dear (f. yekará)", "pos": "adj", "forms": ["יקרה", "יקרים"], "ex": { "text": "זֶה יָקָר מִדַּי.", "tr": "ze yakár midáy.", "en": "It's too expensive." }, "verified": false },
+    {"id": "midai", "text": "מִדַּי", "tr": "midáy", "en": "too (much)", "pos": "adv", "ex": {"text": "זֶה יָקָר מִדַּי!", "tr": "ze yakár midáy!", "en": "It's too expensive!"}, "verified": false},
+    { "id": "zol", "text": "זוֹל", "tr": "zol", "en": "cheap (f. zolá)", "pos": "adj", "forms": ["זולה", "זולים"], "ex": { "text": "הַפֵּרוֹת פֹּה זוֹלִים.", "tr": "ha-perót po zolím.", "en": "The fruit here is cheap." }, "verified": false },
+    { "id": "kaniti", "text": "קָנִיתִי", "tr": "kaníti", "en": "I bought (koné = buys)", "pos": "verb", "root": "q-n-h", "forms": ["קנה", "קנתה", "קונה", "קונים"], "ex": { "text": "קָנִיתִי סֵפֶר.", "tr": "kaníti séfer.", "en": "I bought a book." }, "verified": false },
+    { "id": "shuk", "text": "שׁוּק", "tr": "shuk", "en": "market, souk", "pos": "noun", "forms": ["השוק"], "cognates": { "ar": "sūʔ" }, "ex": { "text": "הַשּׁוּק גָּדוֹל.", "tr": "ha-shúk gadól.", "en": "The market is big." }, "verified": false },
+    { "id": "khanut", "text": "חֲנוּת", "tr": "khanút", "en": "shop, store", "pos": "noun", "forms": ["חנויות"], "cognates": { "ar": "ḥānūt (MSA)" }, "ex": { "text": "יֵשׁ חֲנוּת קְרוֹבָה?", "tr": "yesh khanút krová?", "en": "Is there a shop nearby?" }, "verified": false },
+    { "id": "perot", "text": "פֵּרוֹת", "tr": "perót", "en": "fruit (sg. prí)", "pos": "noun", "forms": ["פרי"], "ex": { "text": "אֲנִי קוֹנֶה פֵּרוֹת בַּשּׁוּק.", "tr": "aní koné perót ba-shúk.", "en": "I buy fruit at the market." }, "verified": false },
+    { "id": "yerakot", "text": "יְרָקוֹת", "tr": "yerakót", "en": "vegetables", "pos": "noun", "forms": ["ירק"], "ex": { "text": "הַיְּרָקוֹת טְרִיִּים.", "tr": "ha-yerakót triyím.", "en": "The vegetables are fresh." }, "verified": false },
+    { "id": "rak", "text": "רַק", "tr": "rak", "en": "only, just", "pos": "adv", "ex": { "text": "רַק רֶגַע!", "tr": "rak réga!", "en": "Just a moment!" }, "verified": false }
+  ],
+  "grammar": [
+    { "id": "roots", "title": "Roots: the same idea as Arabic", "concept": "root-pattern", "body": [
+      "Hebrew words are built on 3-consonant roots, exactly like Arabic. **k-t-v** = writing: katáv (wrote), mikhtáv (letter), któvet (address). Arabic k-t-b: katab, maktūb, kitāb.",
+      "**s-f-r** = book/telling/counting: séfer (book), sofér (writer), sifriyá (library), sipúr (story), mispár (number).",
+      "Regular correspondences help you guess: Hebrew **sh** ↔ Arabic **s** (shalóm / salām), Hebrew **v** after a vowel ↔ Arabic **b** (katáv / katab)."
+    ], "examples": [
+      { "text": "הַסּוֹפֵר כָּתַב סֵפֶר בַּסִּפְרִיָּה.", "tr": "ha-sofér katáv séfer ba-sifriyá.", "en": "The writer wrote a book in the library." }
+    ], "drills": [
+      { "id": "ro1", "prompt": "What is the root of מִכְתָּב (letter)?", "answer": "כ-ת-ב", "tr": "k-t-v" },
+      { "id": "ro2", "prompt": "What is the root of סִפְרִיָּה (library)?", "answer": "ס-פ-ר", "tr": "s-f-r" },
+      { "id": "ro3", "prompt": "What is the root of מַפְתֵּחַ (key)?", "answer": "פ-ת-ח", "tr": "p-t-kh" },
+      { "id": "ro4", "prompt": "Which Arabic word shares the root of תַּלְמִיד?", "answer": "تلميذ", "tr": "tilmīdh" }
+    ], "verified": false },
+    { "id": "patterns", "title": "Patterns (mishkalim)", "concept": "root-pattern", "body": [
+      "**miCCaC** often = a place or thing: mikhtáv (letter), misrád (office), mivkhán (exam), mispár (number). Compare Arabic maCCaC: maktab.",
+      "**CoCeC** = the one who does it: sofér (writer), moré (teacher), shomér (guard). Arabic CāCiC: kātib.",
+      "**CaCuC** = done to it: patú'akh (opened, open), katúv (written). Arabic maCCūC: maftūḥ, maktūb.",
+      "**maCCeaC** = a tool: mafté'akh (key). Arabic miCCāC: miftāḥ."
+    ], "examples": [
+      { "text": "הַמַּפְתֵּחַ בַּמִּשְׂרָד, וְהַדֶּלֶת פְּתוּחָה.", "tr": "ha-mafté'akh ba-misrád, ve-ha-délet ptukhá.", "en": "The key is in the office, and the door is open." }
+    ], "drills": [
+      { "id": "pa1", "prompt": "Hebrew 'writer' (from s-f-r):", "answer": "סוֹפֵר", "tr": "sofér" },
+      { "id": "pa2", "prompt": "Hebrew 'letter' (from k-t-v):", "answer": "מִכְתָּב", "tr": "mikhtáv" },
+      { "id": "pa3", "prompt": "Hebrew 'open' (from p-t-kh):", "answer": "פָּתוּחַ", "tr": "patú'akh" },
+      { "id": "pa4", "prompt": "Hebrew 'key' (from p-t-kh):", "answer": "מַפְתֵּחַ", "tr": "mafté'akh" }
+    ], "verified": false },
+    { "id": "past", "title": "Past tense: endings", "concept": "aspect", "body": [
+      "Past = stem + person ending: **-ti** I · **-ta** you (m) · **-t** you (f) · (none) he · **-a** she · **-nu** we · **-tem/-ten** you (pl) · **-u** they. katáv → **katávti** I wrote, **katvá** she wrote.",
+      "Same shape as Arabic (katab-t, katab-na). Negate with **lo**: lo katávti."
+    ], "examples": [
+      { "text": "הָלַכְתִּי לָאוּנִיבֶרְסִיטָה וְרָאִיתִי אֶת נוֹעָה.", "tr": "halákhti la-universíta ve-ra'íti et Nóa.", "en": "I went to the university and saw Noa." }
+    ], "drills": [
+      { "id": "ps1", "prompt": "Say: I went to the market yesterday.", "answer": "הָלַכְתִּי לַשּׁוּק אֶתְמוֹל.", "tr": "halákhti la-shúk etmól." },
+      { "id": "ps2", "prompt": "Ask a man: What did you do today?", "answer": "מָה עָשִׂיתָ הַיּוֹם?", "tr": "ma asíta ha-yóm?" },
+      { "id": "ps3", "prompt": "Say: I ate, and afterwards I slept.", "answer": "אָכַלְתִּי, וְאַחַר כָּךְ יָשַׁנְתִּי.", "tr": "akhálti, ve-akhár kakh yashánti." },
+      { "id": "ps4", "prompt": "Say: I haven't finished yet.", "answer": "עוֹד לֹא גָּמַרְתִּי.", "tr": "od lo gamárti." }
+    ], "verified": false },
+    { "id": "haya", "title": "hayá: 'was' (and 'had')", "concept": "copula-zero", "body": [
+      "The present has no 'is', but the past does: **hayíti** I was · **hayíta / hayít** you were · **hayá** he was · **haytá** she was · **hayínu** we were · **hayú** they were.",
+      "'Had' = **hayá li** (there was to me): hayá li shi'úr = I had a class."
+    ], "examples": [
+      { "text": "אֶתְמוֹל הָיִיתִי בַּסִּפְרִיָּה.", "tr": "etmól hayíti ba-sifriyá.", "en": "Yesterday I was at the library." }
+    ], "drills": [
+      { "id": "hy1", "prompt": "Say: I was at home.", "answer": "הָיִיתִי בַּבַּיִת.", "tr": "hayíti ba-báyit." },
+      { "id": "hy2", "prompt": "Say: Yesterday I had a class.", "answer": "אֶתְמוֹל הָיָה לִי שִׁעוּר.", "tr": "etmól hayá li shi'úr." },
+      { "id": "hy3", "prompt": "Say: There was no time.", "answer": "לֹא הָיָה זְמַן.", "tr": "lo hayá zman." }
+    ], "verified": false },
+    { "id": "shel", "title": "Whose: shel and possessive endings", "body": [
+      "Everyday Hebrew says **ha-séfer shelí** = the book of mine: shelí, shelkhá, shelákh, shelό, shelá, shelánu, shelakhém, shelahém.",
+      "Family words often take a short ending instead: **akhí** (my brother), **akhotí** (my sister), **bití** (my daughter): like Arabic ʔakhi, ʔukhti."
+    ], "examples": [
+      { "text": "זֹאת הַמִּשְׁפָּחָה שֶׁלִּי.", "tr": "zot ha-mishpakhá shelí.", "en": "This is my family." }
+    ], "drills": [
+      { "id": "sh1", "prompt": "Say: my book", "answer": "הַסֵּפֶר שֶׁלִּי", "tr": "ha-séfer shelí" },
+      { "id": "sh2", "prompt": "Say: your (m) house", "answer": "הַבַּיִת שֶׁלְּךָ", "tr": "ha-báyit shelkhá" },
+      { "id": "sh3", "prompt": "Say: my sister", "answer": "אֲחוֹתִי", "tr": "akhotí" },
+      { "id": "sh4", "prompt": "Say: This is Noa's house.", "answer": "זֶה הַבַּיִת שֶׁל נוֹעָה.", "tr": "ze ha-báyit shel Nóa." }
+    ], "verified": false },
+    { "id": "smikhut", "title": "X of Y: smikhut", "concept": "construct", "body": [
+      "Two nouns side by side = 'X of Y': **bet séfer** (house of book = school), **bet kholím** (house of sick people = hospital). Just like Arabic iḍāfa (bēt Layla).",
+      "The first noun changes shape and never takes ha-: báyit → **bet**; words in -a → **-at**: ugá → **ugát shokolád** (chocolate cake). 'The' goes on the second noun: **bet ha-séfer** = the school."
+    ], "examples": [
+      { "text": "אִמָּא שֶׁלִּי עוֹבֶדֶת בְּבֵית חוֹלִים.", "tr": "íma shelí ovédet be-vét kholím.", "en": "My mom works in a hospital." }
+    ], "drills": [
+      { "id": "sm1", "prompt": "Say: school (house of book)", "answer": "בֵּית סֵפֶר", "tr": "bet séfer" },
+      { "id": "sm2", "prompt": "Say: the school", "answer": "בֵּית הַסֵּפֶר", "tr": "bet ha-séfer" },
+      { "id": "sm3", "prompt": "Say: hospital (house of the sick)", "answer": "בֵּית חוֹלִים", "tr": "bet kholím" }
+    ], "verified": false },
+    { "id": "numbers", "title": "Numbers 1–10", "body": [
+      "Counting uses the forms you learned: **akhát, shtáyim, shalósh, árba, khámesh, shesh, shéva, shmóne, tésha, éser**. These also go with feminine nouns: shalósh she'elót.",
+      "Masculine nouns take longer forms: **shloshá yeladím, arba'á sfarím**. Many Israelis mix them up in speech, so don't stress about it yet. 'Two' before a noun: **shney** (m) / **shtey** (f)."
+    ], "examples": [
+      { "text": "יֵשׁ לִי שָׁלוֹשׁ שְׁאֵלוֹת וּשְׁנֵי סְפָרִים.", "tr": "yesh li shalósh she'elót u-shné sfarím.", "en": "I have three questions and two books." }
+    ], "drills": [
+      { "id": "nm1", "prompt": "Say: two coffees", "answer": "שְׁנֵי קָפֶה", "tr": "shne kafé" },
+      { "id": "nm2", "prompt": "Say: It costs ten shekels.", "answer": "זֶה עוֹלֶה עֶשֶׂר שְׁקָלִים.", "tr": "ze olé éser shkalím." },
+      { "id": "nm3", "prompt": "Say: It's four o'clock.", "answer": "הַשָּׁעָה אַרְבַּע.", "tr": "ha-sha'á árba." }
+    ], "verified": false },
+    { "id": "article", "title": "ha- 'the' and adjective agreement", "concept": "definiteness", "body": [
+      "'The' is the prefix **ha-**: ha-báyit, ha-shúk. After b-, l-, k- it merges: **ba-báyit** (in the house), **la-shúk** (to the market).",
+      "Adjectives copy ha-: **ha-báyit ha-gadól** = the big house. Without ha- on the adjective it's a sentence: **ha-báyit gadól** = the house is big. Exactly like Arabic il-bēt il-kbīr / il-bēt kbīr."
+    ], "examples": [
+      { "text": "הַשּׁוּק הַגָּדוֹל זוֹל.", "tr": "ha-shúk ha-gadól zol.", "en": "The big market is cheap." }
+    ], "drills": [
+      { "id": "ar1", "prompt": "Say: the big house", "answer": "הַבַּיִת הַגָּדוֹל", "tr": "ha-báyit ha-gadól" },
+      { "id": "ar2", "prompt": "Say: The house is big.", "answer": "הַבַּיִת גָּדוֹל.", "tr": "ha-báyit gadól." },
+      { "id": "ar3", "prompt": "Say: in the market", "answer": "בַּשּׁוּק", "tr": "ba-shúk" }
+    ], "verified": false }
+  ],
+  "texts": [
+    { "id": "d05", "title": "In the library", "level": "U5", "kind": "dialogue", "lines": [
+      { "sp": "You", "text": "סְלִיחָה, הַסִּפְרִיָּה פְּתוּחָה?", "tr": "slikhá, ha-sifriyá ptukhá?", "en": "Excuse me, is the library open?" },
+      { "sp": "Librarian", "text": "כֵּן, הִיא פְּתוּחָה כָּל יוֹם. מָה אַתָּה צָרִיךְ?", "tr": "ken, hi ptukhá kol yom. ma atá tsaríkh?", "en": "Yes, it's open every day. What do you need?" },
+      { "sp": "You", "text": "אֲנִי רוֹצֶה סֵפֶר בְּעִבְרִית לַשִּׁעוּר.", "tr": "aní rotsé séfer be-ivrít la-shi'úr.", "en": "I want a book in Hebrew for class." },
+      { "sp": "Librarian", "text": "יֵשׁ הַרְבֵּה סְפָרִים שָׁם. מִי הַמּוֹרֶה?", "tr": "yesh harbé sfarím sham. mi ha-moré?", "en": "There are lots of books there. Who's the teacher?" },
+      { "sp": "You", "text": "הַמּוֹרָה מֵחֵיפָה. הִיא גַּם סוֹפֶרֶת!", "tr": "ha-morá me-kháyfa. hi gam soféret!", "en": "The teacher is from Haifa. She's also a writer!" },
+      { "sp": "Librarian", "text": "יֵשׁ לְךָ מִבְחָן?", "tr": "yesh lekhá mivkhán?", "en": "Do you have an exam?" },
+      { "sp": "You", "text": "כֵּן, מָחָר. וְעוֹד שְׁאֵלָה: אֵיפֹה הַמִּשְׂרָד?", "tr": "ken, makhár. ve-ód she'elá: éfo ha-misrád?", "en": "Yes, tomorrow. And another question: where's the office?" },
+      { "sp": "Librarian", "text": "שָׁם. בְּהַצְלָחָה!", "tr": "sham. be-hatslakhá!", "en": "There. Good luck!" }
+    ], "verified": false },
+    { "id": "d06", "title": "What did you do yesterday?", "level": "U6", "kind": "dialogue", "names": ["נועה"], "lines": [
+      { "sp": "Noa", "text": "מָה עָשִׂיתָ אֶתְמוֹל?", "tr": "ma asíta etmól?", "en": "What did you do yesterday?" },
+      { "sp": "Venu", "text": "קַמְתִּי בַּבֹּקֶר וְהָלַכְתִּי לָאוּנִיבֶרְסִיטָה.", "tr": "kámti ba-bóker ve-halákhti la-universíta.", "en": "I got up in the morning and went to the university." },
+      { "sp": "Noa", "text": "וּמָה אָכַלְתָּ?", "tr": "u-má akhálta?", "en": "And what did you eat?" },
+      { "sp": "Venu", "text": "אָכַלְתִּי לֶחֶם וְשָׁתִיתִי קָפֶה. לֹא הָיָה זְמַן.", "tr": "akhálti lékhem ve-shatíti kafé. lo hayá zman.", "en": "I ate bread and drank coffee. There was no time." },
+      { "sp": "Noa", "text": "וְאַחֲרֵי הַשִּׁעוּר?", "tr": "ve-akharé ha-shi'úr?", "en": "And after class?" },
+      { "sp": "Venu", "text": "דִּבַּרְתִּי עִם אִמָּא, וּבָעֶרֶב לָמַדְתִּי קְצָת.", "tr": "dibárti im íma, u-va-érev lamádti ktsat.", "en": "I talked with Mom, and in the evening I studied a bit." },
+      { "sp": "Noa", "text": "וְעַכְשָׁיו?", "tr": "ve-akhsháv?", "en": "And now?" },
+      { "sp": "Venu", "text": "עַכְשָׁיו עוֹד יֵשׁ לִי עֲבוֹדָה. אַחַר כָּךְ לַיְלָה טוֹב!", "tr": "akhsháv od yesh li avodá. akhár kakh láyla tov!", "en": "Now I still have work. Afterwards, good night!" }
+    ], "verified": false },
+    { "id": "d07", "title": "My family", "level": "U7", "kind": "reading", "names": ["חיפה"], "lines": [
+      { "text": "הַמִּשְׁפָּחָה שֶׁלִּי לֹא גְּדוֹלָה.", "tr": "ha-mishpakhá shelí lo gdolá.", "en": "My family isn't big." },
+      { "text": "יֵשׁ לִי אָח אֶחָד וְאָחוֹת אַחַת.", "tr": "yesh li akh ekhád ve-akhót akhát.", "en": "I have one brother and one sister." },
+      { "text": "אָחִי גָּדוֹל, הוּא נָשׂוּי וְיֵשׁ לוֹ יֶלֶד קָטָן.", "tr": "akhí gadól, hu nasú'i ve-yésh lo yéled katán.", "en": "My brother is older; he's married and has a little boy." },
+      { "text": "אֲחוֹתִי קְטַנָּה, הִיא בְּבֵית סֵפֶר.", "tr": "akhotí ktaná, hi be-vét séfer.", "en": "My sister is younger; she's in school." },
+      { "text": "אִמָּא שֶׁלִּי רוֹפְאָה, וְאַבָּא עוֹבֵד בְּמִשְׂרָד.", "tr": "íma shelí rof'á, ve-ába ovéd be-misrád.", "en": "My mom is a doctor, and Dad works in an office." },
+      { "text": "סַבָּא וְסַבְתָּא גָּרִים בְּחֵיפָה.", "tr": "sába ve-sávta garím be-kháyfa.", "en": "Grandpa and Grandma live in Haifa." },
+      { "text": "אֲנִי אוֹהֵב מְאוֹד אֶת הַמִּשְׁפָּחָה שֶׁלִּי.", "tr": "aní ohév me'ód et ha-mishpakhá shelí.", "en": "I love my family very much." }
+    ], "verified": false },
+    { "id": "d08", "title": "At the shuk", "level": "U8", "kind": "dialogue", "lines": [
+      { "sp": "You", "text": "שָׁלוֹם, כַּמָּה זֶה?", "tr": "shalóm, káma ze?", "en": "Hi, how much is this?" },
+      { "sp": "Vendor", "text": "עֶשֶׂר שְׁקָלִים!", "tr": "éser shkalím!", "en": "Ten shekels!" },
+      { "sp": "You", "text": "עֶשֶׂר? יָקָר מִדַּי!", "tr": "éser? yakár midáy!", "en": "Ten? Too expensive!" },
+      { "sp": "Vendor", "text": "לֹא יָקָר! זֶה טוֹב מְאוֹד.", "tr": "lo yakár! ze tov me'ód.", "en": "Not expensive! It's very good." },
+      { "sp": "You", "text": "אֲנִי רוֹצֶה שְׁתַּיִם. שֶׁבַע כָּל אַחַת?", "tr": "aní rotsé shtáyim. shéva kol akhát?", "en": "I want two. Seven each?" },
+      { "sp": "Vendor", "text": "לֹא, תֵּשַׁע.", "tr": "lo, tésha.", "en": "No, nine." },
+      { "sp": "You", "text": "טוֹב, שְׁמוֹנֶה?", "tr": "tov, shmóne?", "en": "OK, eight?" },
+      { "sp": "Vendor", "text": "יַאללָה, בְּסֵדֶר. רַק בִּשְׁבִילְךָ!", "tr": "yálla, be-séder. rak bishvilkhá!", "en": "Yalla, OK. Only for you!" },
+      { "sp": "You", "text": "תּוֹדָה רַבָּה!", "tr": "todá rabá!", "en": "Thanks a lot!" }
+    ], "verified": false }
+  ]
+}

@@ -183,6 +183,76 @@ try {
   await page.getByRole('button', { name: /Settings/ }).last().click()
   await page.getByText('Show vowel marks').click()
 
+  // ---- Hebrew: activate (Latin to maintenance), session, reader, links, HVPT ----
+  await page.getByRole('button', { name: /Settings/ }).last().click()
+  await btn(/Choose active/).click()
+  await page.locator('.row', { hasText: 'Latin' }).locator('select').selectOption('maintenance')
+  await page.locator('.row', { hasText: 'Hebrew' }).locator('select').selectOption('active')
+  await page.getByRole('button', { name: /Today/ }).last().click()
+  check('Hebrew card appears on Today', await page.getByText('Hebrew (Modern, with a bridge to Biblical)').first().waitFor({ timeout: 8000 }).then(() => true, () => false))
+  check('Latin listed as maintenance', await visible(page.getByText(/Maintenance \(reviews only/)))
+  await btn(/^30\s*min/).click()
+  await page.getByText('New material').first().waitFor()
+  const plan3 = await page.locator('.plan').innerText()
+  check('30-min plan: Arabic + Hebrew active', plan3.includes('Arabic') && plan3.includes('Hebrew'))
+  await btn('Start', true).click()
+  let hsteps = 0, sawHeScript = false
+  while (hsteps++ < 220) {
+    if (await visible(btn('Back to Today'))) break
+    try {
+      if (await visible(btn('Got it →'))) {
+        if (!sawHeScript && await visible(page.getByText('Letters 1: א ב ג ד ה ו'))) { await shot('16-hebrew-letters'); sawHeScript = true }
+        await btn('Got it →').click({ timeout: 3000 }); continue
+      }
+      if (await visible(btn('Show answer'))) { await btn('Show answer').click({ timeout: 3000 }); await page.locator('.grade.good').click({ timeout: 3000 }); continue }
+      if (await visible(btn('Next →'))) { await btn('Next →').click({ timeout: 3000 }); continue }
+      if (await visible(btn('Done →'))) { await btn('Done →').click({ timeout: 3000 }); continue }
+      if (await visible(btn(/Finished reading/))) { await btn(/Finished reading/).click({ timeout: 3000 }); continue }
+      if (await visible(btn('▶︎ Start')) || await visible(page.locator('.rec'))) { await btn('Skip this part').click({ timeout: 3000 }); continue }
+    } catch (e) { console.log('  (retrying step: ' + e.message.split('\n')[0] + ')') }
+    await page.waitForTimeout(250)
+  }
+  check('Arabic + Hebrew session runs to the end', await visible(btn('Back to Today')), `${hsteps} steps`)
+  check('Hebrew script lesson shown', sawHeScript)
+  await btn('Back to Today').click()
+  await page.getByRole('button', { name: /Library/ }).last().click()
+  await btn('Hebrew', true).click()
+  await btn('Readers').click()
+  await page.getByRole('button', { name: /Genesis 1:1/ }).click()
+  await page.locator('.reader').waitFor()
+  const heDir2 = await page.locator('.line .tl-he').first().evaluate(el => getComputedStyle(el).direction)
+  check('Hebrew reader renders right-to-left', heDir2 === 'rtl', heDir2)
+  const heOrder = await page.locator('.line .tl-he').first().evaluate(el => {
+    const t = el.querySelectorAll('.tok'); return t[0].getBoundingClientRect().left > t[1].getBoundingClientRect().left ? 'first word on the right' : 'WRONG ORDER'
+  })
+  check('first Hebrew word is on the right', heOrder !== 'WRONG ORDER', heOrder)
+  await shot('17-hebrew-genesis')
+  await page.getByRole('button', { name: /Settings/ }).last().click()
+  await page.getByText('Show vowel marks').click()
+  await page.getByRole('button', { name: /Library/ }).last().click()
+  await btn('Hebrew', true).click()
+  await btn('Readers').click()
+  await page.getByRole('button', { name: /Genesis 1:1/ }).click()
+  const unpointed = await page.locator('.line .tl-he').first().innerText()
+  check('niqqud toggle hides vowel points', !/[ְ-ּׁׂ]/.test(unpointed), unpointed.slice(0, 20))
+  await shot('18-hebrew-no-niqqud')
+  await page.getByRole('button', { name: /Settings/ }).last().click()
+  await page.getByText('Show vowel marks').click()
+  // cross-language root link shown on a Hebrew word
+  await page.getByRole('button', { name: /Library/ }).last().click()
+  await btn('Hebrew', true).click()
+  await btn('Words', true).click()
+  await page.getByRole('button', { name: /wrote/ }).first().click()
+  check('Hebrew word shows its Arabic root link', await page.getByText(/Arabic/).first().waitFor({ timeout: 5000 }).then(() => true, () => false))
+  await shot('19-hebrew-arabic-link')
+  await page.getByRole('button', { name: /Library/ }).last().click()
+  await btn('Hebrew', true).click()
+  await btn('Sounds (HVPT)').click()
+  await page.getByRole('button', { name: /r vs/ }).click()
+  await btn('▶︎ Start').click()
+  await page.locator('.choice').first().click()
+  check('Hebrew HVPT trial gives feedback', await page.getByText(/Right|Not quite/).first().waitFor({ timeout: 5000 }).then(() => true, () => false))
+
   // ---- dark mode + manifest ----
   await page.emulateMedia({ colorScheme: 'dark' })
   await page.getByRole('button', { name: /Today/ }).last().click()

@@ -11,6 +11,9 @@ online on 2026-11-20, and "to verify" means it must be confirmed before that sou
 | UI | [Preact](https://preactjs.com), [idb](https://github.com/jakearchibald/idb) | MIT / ISC | npm |
 | Arabic frequency ranks (`public/packs/ar/frequency.txt`, top 20,000) | [FrequencyWords](https://github.com/hermitdave/FrequencyWords) by Hermit Dave, from OpenSubtitles 2018 | CC BY-SA 4.0 (content), MIT (code) | checked (repo README + LICENSE) |
 | Arabic pack text (words, sentences, dialogues, readers, grammar notes) | Written for this app by Claude (Anthropic) for Venu | CC BY-SA 4.0 (this repo) | **all marked `verified: false`** |
+| Hebrew frequency ranks (`public/packs/he/frequency.txt`, top 20,000) | FrequencyWords by Hermit Dave, from OpenSubtitles 2018 | CC BY-SA 4.0 | checked |
+| Hebrew pack text (words, dialogues, readers, grammar notes, niqqud) | Written for this app by Claude (Anthropic) | CC BY-SA 4.0 (this repo) | **all marked `verified: false`** |
+| Hebrew Bible passage | Genesis 1:1–5, Masoretic text (e.g. Westminster Leningrad Codex, public domain), pointed, without cantillation | Public domain | typed from the standard text; check against a WLC copy |
 | Latin pack text (words, readers, dialogues, grammar notes) | Written for this app by Claude (Anthropic); method inspired by Ørberg, but no Ørberg text used | CC BY-SA 4.0 (this repo) | **all marked `verified: false`** |
 | Latin authentic passages | Caesar, *De Bello Gallico* 1.1 (opening); *Biblia Sacra Vulgata*, Genesis 1:1–5; a simplified retelling of Phaedrus 1.1 | Public domain (ancient texts; retelling CC BY-SA 4.0) | text typed from standard editions; check against Perseus |
 | Audio | On-device iOS voices via the Web Speech API (Latin borrows the Italian voice); your own recordings | n/a (nothing distributed) | — |

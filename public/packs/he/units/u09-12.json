@@ -1,0 +1,240 @@
+{
+  "units": [
+    { "id": "u09", "title": "9 · At the doctor", "goal": "Say what hurts; understand basic clinic questions.", "items": [
+      "word:rofe", "word:khole", "word:ayef", "word:koev", "word:rosh", "grammar:koevli", "word:beten", "word:yad", "word:regel", "word:ayin", "word:lev", "word:khom", "word:meaz",
+      "word:trufa", "word:beitmerkakhat", "grammar:negation", "word:beaya", "word:beitkholim", "word:kupatkholim", "word:dam", "word:lakhats", "word:bari", "word:refuashlema", "text:d09" ] },
+    { "id": "u10", "title": "10 · Getting around", "goal": "Ask for and give directions; take a taxi.", "items": [
+      "word:rekhov", "word:mekhonit", "word:monit", "word:otobus", "grammar:prepositions", "word:al", "word:el", "word:leyad", "word:mul", "word:yamina", "word:smola", "word:yashar",
+      "word:karov", "word:rakhok", "grammar:imperative", "word:lekh", "word:bo", "word:kakh", "word:sdeteufa", "word:malon", "word:yam", "word:delet", "word:kheder", "word:higati", "text:d10" ] },
+    { "id": "u11", "title": "11 · Plans", "goal": "Talk about the future; what you need to, can, and may do.", "items": [
+      "word:elekh", "grammar:future", "word:lalekhet", "word:tsarikh", "word:yakhol", "word:efshar", "grammar:modals", "word:ulay", "word:im-if", "word:bezrat", "word:paam",
+      "word:shavua", "word:khodesh", "word:sofshavua", "word:shishi", "word:shabat", "word:khufsha", "word:asuk", "word:panui", "word:pgisha", "word:betakh", "word:nesia", "word:anashim", "word:matkhil", "word:shaket", "text:d11" ] },
+    { "id": "u12", "title": "12 · Bridge to Biblical Hebrew", "goal": "Read Genesis 1:1–5 in the original and map it onto Modern Hebrew.", "items": [
+      "text:m01", "grammar:biblical", "word:bereshit", "word:bara", "word:elohim", "word:et", "word:shamayim", "word:eretz", "word:tohu", "word:khoshekh", "word:panim", "word:tehom",
+      "word:ruakh", "word:rikhef", "word:or", "grammar:vav", "word:vayomer", "word:yehi", "word:vayar", "word:bein", "word:vayavdel", "word:kara", "text:b01" ] }
+  ],
+  "words": [
+    { "id": "rofe", "text": "רוֹפֵא", "tr": "rofé", "en": "doctor (f. rof'á)", "pos": "noun", "root": "r-f-ʔ", "forms": ["רופאה", "רופאים"], "ex": { "text": "אֲנִי צָרִיךְ לָלֶכֶת לָרוֹפֵא.", "tr": "aní tsaríkh lalékhet la-rofé.", "en": "I need to go to the doctor." }, "verified": false },
+    { "id": "khole", "text": "חוֹלֶה", "tr": "kholé", "en": "sick; a patient (f. kholá; pl. kholím)", "pos": "adj", "forms": ["חולה", "חולים"], "ex": { "text": "אֲנִי חוֹלֶה הַיּוֹם.", "tr": "aní kholé ha-yóm.", "en": "I'm sick today." }, "verified": false },
+    { "id": "ayef", "text": "עָיֵף", "tr": "ayéf", "en": "tired (f. ayefá)", "pos": "adj", "forms": ["עייף", "עייפה"], "ex": { "text": "אֲנִי עָיֵף מְאוֹד.", "tr": "aní ayéf me'ód.", "en": "I'm very tired." }, "verified": false },
+    { "id": "koev", "text": "כּוֹאֵב", "tr": "ko'év", "en": "hurts (ko'év li = it hurts me; f. ko'évet)", "pos": "verb", "forms": ["כואבת", "כואבים"], "ex": { "text": "כּוֹאֵב לִי הָרֹאשׁ.", "tr": "ko'év li ha-rósh.", "en": "My head hurts." }, "verified": false },
+    { "id": "rosh", "text": "רֹאשׁ", "tr": "rosh", "en": "head", "pos": "noun", "root": "r-ʔ-sh", "forms": ["ראש", "הראש"], "cognates": { "ar": "rās" }, "ex": { "text": "יֵשׁ לִי כְּאֵב רֹאשׁ.", "tr": "yesh li ke'év rosh.", "en": "I have a headache." }, "verified": false },
+    { "id": "beten", "text": "בֶּטֶן", "tr": "béten", "en": "stomach, belly", "pos": "noun", "forms": ["הבטן"], "cognates": { "ar": "baṭn" }, "ex": { "text": "כּוֹאֶבֶת לִי הַבֶּטֶן.", "tr": "ko'évet li ha-béten.", "en": "My stomach hurts." }, "verified": false },
+    { "id": "yad", "text": "יָד", "tr": "yad", "en": "hand, arm (f.)", "pos": "noun", "forms": ["היד", "ידיים"], "cognates": { "ar": "ʔīd / yad" }, "ex": { "text": "כּוֹאֶבֶת לִי הַיָּד.", "tr": "ko'évet li ha-yád.", "en": "My hand hurts." }, "verified": false },
+    { "id": "regel", "text": "רֶגֶל", "tr": "régel", "en": "leg, foot (f.)", "pos": "noun", "forms": ["הרגל", "רגליים"], "cognates": { "ar": "rijl (MSA)" }, "ex": { "text": "כּוֹאֶבֶת לִי הָרֶגֶל.", "tr": "ko'évet li ha-régel.", "en": "My leg hurts." }, "verified": false },
+    { "id": "ayin", "text": "עַיִן", "tr": "áyin", "en": "eye (f.; pl. eynáyim)", "pos": "noun", "forms": ["עיניים", "העין"], "cognates": { "ar": "ʕēn" }, "ex": { "text": "הָעַיִן אֲדֻמָּה.", "tr": "ha-áyin adumá.", "en": "The eye is red." }, "verified": false },
+    { "id": "lev", "text": "לֵב", "tr": "lev", "en": "heart", "pos": "noun", "forms": ["הלב"], "cognates": { "ar": "lubb (core, MSA)" }, "ex": { "text": "הַלֵּב בְּסֵדֶר.", "tr": "ha-lév be-séder.", "en": "The heart is fine." }, "verified": false },
+    { "id": "khom", "text": "חֹם", "tr": "khom", "en": "fever; heat", "pos": "noun", "root": "ḥ-m-m", "forms": ["חום"], "cognates": { "ar": "ḥumma (fever, MSA)" }, "ex": { "text": "יֵשׁ לִי חֹם מֵאֶתְמוֹל.", "tr": "yesh li khom me-etmól.", "en": "I've had a fever since yesterday." }, "verified": false },
+    { "id": "meaz", "text": "מֵאָז", "tr": "me'áz", "en": "since (then)", "pos": "adv", "ex": { "text": "מֵאָז מָתַי?", "tr": "me'áz matáy?", "en": "Since when?" }, "verified": false },
+    { "id": "trufa", "text": "תְּרוּפָה", "tr": "trufá", "en": "medicine (a drug)", "pos": "noun", "root": "r-f-ʔ", "forms": ["תרופות"], "ex": { "text": "קַח אֶת הַתְּרוּפָה הַזֹּאת.", "tr": "kakh et ha-trufá ha-zót.", "en": "Take this medicine." }, "verified": false },
+    {"id": "beaya", "text": "בְּעָיָה", "tr": "be'ayá", "en": "problem (en be'ayá = no problem)", "pos": "noun", "forms": ["בעיות"], "ex": {"text": "אֵין בְּעָיָה!", "tr": "en be'ayá!", "en": "No problem!"}, "verified": false},
+    { "id": "beitmerkakhat", "text": "בֵּית מִרְקַחַת", "tr": "bet mirkákhat", "en": "pharmacy", "pos": "noun", "forms": ["מרקחת"], "ex": { "text": "יֵשׁ בֵּית מִרְקַחַת קָרוֹב?", "tr": "yesh bet mirkákhat karóv?", "en": "Is there a pharmacy nearby?" }, "verified": false },
+    { "id": "beitkholim", "text": "בֵּית חוֹלִים", "tr": "bet kholím", "en": "hospital (lit. house of the sick)", "pos": "noun", "ex": { "text": "אִמָּא עוֹבֶדֶת בְּבֵית חוֹלִים.", "tr": "íma ovédet be-vét kholím.", "en": "Mom works in a hospital." }, "verified": false },
+    { "id": "kupatkholim", "text": "קֻפַּת חוֹלִים", "tr": "kupát kholím", "en": "health clinic / HMO (Israeli health fund)", "pos": "noun", "forms": ["קופת"], "ex": { "text": "יֵשׁ לִי תּוֹר בְּקֻפַּת חוֹלִים.", "tr": "yesh li tor be-kupát kholím.", "en": "I have an appointment at the clinic." }, "verified": false },
+    { "id": "dam", "text": "דָּם", "tr": "dam", "en": "blood", "pos": "noun", "forms": ["הדם"], "cognates": { "ar": "damm" }, "ex": { "text": "צָרִיךְ בְּדִיקַת דָּם.", "tr": "tsaríkh bdikát dam.", "en": "A blood test is needed." }, "verified": false },
+    { "id": "lakhats", "text": "לַחַץ", "tr": "lákhats", "en": "pressure; stress (lákhats dam = blood pressure)", "pos": "noun", "forms": ["לחץ"], "ex": { "text": "לַחַץ הַדָּם תַּקִּין.", "tr": "lákhats ha-dám takín.", "en": "Your blood pressure is normal." }, "verified": false },
+    { "id": "bari", "text": "בָּרִיא", "tr": "barí", "en": "healthy (f. bri'á)", "pos": "adj", "forms": ["בריאה", "בריאים"], "ex": { "text": "אַתָּה בָּרִיא, אֵין בְּעָיָה.", "tr": "atá barí, en be'ayá.", "en": "You're healthy, no problem." }, "verified": false },
+    { "id": "refuashlema", "text": "רְפוּאָה שְׁלֵמָה", "tr": "refu'á shlemá", "en": "get well soon (lit. a complete healing)", "pos": "phrase", "root": "sh-l-m", "forms": ["שלמה"], "ex": { "text": "רְפוּאָה שְׁלֵמָה!", "tr": "refu'á shlemá!", "en": "Get well soon!" }, "verified": false },
+
+    { "id": "rekhov", "text": "רְחוֹב", "tr": "rekhóv", "en": "street", "pos": "noun", "forms": ["הרחוב", "רחובות"], "ex": { "text": "הַבַּיִת שֶׁלִּי בָּרְחוֹב הַזֶּה.", "tr": "ha-báyit shelí ba-rekhóv ha-zé.", "en": "My house is on this street." }, "verified": false },
+    { "id": "mekhonit", "text": "מְכוֹנִית", "tr": "mekhonít", "en": "car (colloquial: o'tó)", "pos": "noun", "forms": ["אוטו", "מכוניות"], "ex": { "text": "אֵין לִי מְכוֹנִית.", "tr": "en li mekhonít.", "en": "I don't have a car." }, "verified": false },
+    { "id": "monit", "text": "מוֹנִית", "tr": "monít", "en": "taxi", "pos": "noun", "forms": ["מוניות"], "ex": { "text": "אֲנִי לוֹקֵחַ מוֹנִית.", "tr": "aní loké'akh monít.", "en": "I'm taking a taxi." }, "verified": false },
+    { "id": "otobus", "text": "אוֹטוֹבּוּס", "tr": "ótobus", "en": "bus", "pos": "noun", "forms": ["האוטובוס"], "ex": { "text": "הָאוֹטוֹבּוּס רָחוֹק.", "tr": "ha-ótobus rakhók.", "en": "The bus is far." }, "verified": false },
+    { "id": "al", "text": "עַל", "tr": "al", "en": "on; about", "pos": "prep", "cognates": { "ar": "ʕala" }, "ex": { "text": "הַסֵּפֶר עַל הַשֻּׁלְחָן.", "tr": "ha-séfer al ha-shulkhán.", "en": "The book is on the table." }, "verified": false },
+    { "id": "el", "text": "אֶל", "tr": "el", "en": "to, toward (formal; everyday: le-)", "pos": "prep", "ex": { "text": "בּוֹא אֵלַי!", "tr": "bo eláy!", "en": "Come to me!" }, "verified": false },
+    { "id": "leyad", "text": "לְיַד", "tr": "le-yád", "en": "next to (lit. at the hand of)", "pos": "prep", "ex": { "text": "בֵּית הַמִּרְקַחַת לְיַד בֵּית הַחוֹלִים.", "tr": "bet ha-mirkákhat le-yád bet ha-kholím.", "en": "The pharmacy is next to the hospital." }, "verified": false },
+    { "id": "mul", "text": "מוּל", "tr": "mul", "en": "opposite, facing", "pos": "prep", "ex": { "text": "הַמָּלוֹן מוּל הַיָּם.", "tr": "ha-malón mul ha-yám.", "en": "The hotel is opposite the sea." }, "verified": false },
+    { "id": "yamina", "text": "יָמִינָה", "tr": "yamína", "en": "to the right (yamín = right)", "pos": "adv", "forms": ["ימין"], "cognates": { "ar": "yamīn" }, "ex": { "text": "תִּפְנֶה יָמִינָה.", "tr": "tifné yamína.", "en": "Turn right." }, "verified": false },
+    { "id": "smola", "text": "שְׂמֹאלָה", "tr": "smóla", "en": "to the left (smol = left)", "pos": "adv", "forms": ["שמאל", "שמאלה"], "cognates": { "ar": "shmāl" }, "ex": { "text": "הַסִּפְרִיָּה מִשְּׂמֹאל.", "tr": "ha-sifriyá mi-smól.", "en": "The library is on the left." }, "verified": false },
+    { "id": "yashar", "text": "יָשָׁר", "tr": "yashár", "en": "straight (ahead)", "pos": "adv", "ex": { "text": "לֵךְ יָשָׁר.", "tr": "lekh yashár.", "en": "Go straight." }, "verified": false },
+    { "id": "karov", "text": "קָרוֹב", "tr": "karóv", "en": "near, close (f. krová)", "pos": "adj", "root": "q-r-v", "forms": ["קרובה", "קרובים"], "cognates": { "ar": "ʔarīb (q-r-b)" }, "ex": { "text": "הָאוּנִיבֶרְסִיטָה קְרוֹבָה.", "tr": "ha-universíta krová.", "en": "The university is close." }, "verified": false },
+    { "id": "rakhok", "text": "רָחוֹק", "tr": "rakhók", "en": "far (f. rekhoká)", "pos": "adj", "forms": ["רחוקה"], "ex": { "text": "זֶה רָחוֹק?", "tr": "ze rakhók?", "en": "Is it far?" }, "verified": false },
+    { "id": "lekh", "text": "לֵךְ", "tr": "lekh", "en": "go! (to a man; f. lekhí; colloquial telékh)", "pos": "verb", "root": "h-l-kh", "forms": ["לכי", "תלך"], "ex": { "text": "לֵךְ יָשָׁר וְאַחַר כָּךְ יָמִינָה.", "tr": "lekh yashár ve-akhár kakh yamína.", "en": "Go straight and then right." }, "verified": false },
+    { "id": "bo", "text": "בּוֹא", "tr": "bo", "en": "come! (to a man; f. bó'i)", "pos": "verb", "forms": ["בואי", "בואו"], "ex": { "text": "בּוֹא הֵנָּה!", "tr": "bo héna!", "en": "Come here!" }, "verified": false },
+    { "id": "kakh", "text": "קַח", "tr": "kakh", "en": "take! (to a man; f. kkhí)", "pos": "verb", "root": "l-q-ḥ", "forms": ["קחי", "לוקח", "לוקחת"], "ex": { "text": "קַח מוֹנִית.", "tr": "kakh monít.", "en": "Take a taxi." }, "verified": false },
+    { "id": "sdeteufa", "text": "שְׂדֵה תְּעוּפָה", "tr": "sde te'ufá", "en": "airport (lit. field of flight)", "pos": "noun", "forms": ["תעופה"], "ex": { "text": "אֲנִי צָרִיךְ לְשְׂדֵה הַתְּעוּפָה.", "tr": "aní tsaríkh li-sdé ha-te'ufá.", "en": "I need to get to the airport." }, "verified": false },
+    { "id": "malon", "text": "מָלוֹן", "tr": "malón", "en": "hotel", "pos": "noun", "forms": ["המלון"], "ex": { "text": "הַמָּלוֹן לְיַד הַשּׁוּק.", "tr": "ha-malón le-yád ha-shúk.", "en": "The hotel is next to the market." }, "verified": false },
+    { "id": "yam", "text": "יָם", "tr": "yam", "en": "sea", "pos": "noun", "forms": ["הים"], "cognates": { "ar": "yamm (MSA)" }, "ex": { "text": "תֵּל אָבִיב עַל הַיָּם.", "tr": "tel avív al ha-yám.", "en": "Tel Aviv is on the sea." }, "verified": false },
+    { "id": "delet", "text": "דֶּלֶת", "tr": "délet", "en": "door", "pos": "noun", "forms": ["הדלת"], "ex": { "text": "הַדֶּלֶת פְּתוּחָה.", "tr": "ha-délet ptukhá.", "en": "The door is open." }, "verified": false },
+    { "id": "kheder", "text": "חֶדֶר", "tr": "khéder", "en": "room", "pos": "noun", "forms": ["החדר", "חדרים"], "ex": { "text": "הַחֶדֶר שֶׁלִּי קָטָן.", "tr": "ha-khéder shelí katán.", "en": "My room is small." }, "verified": false },
+    { "id": "higati", "text": "הִגַּעְתִּי", "tr": "higáti", "en": "I arrived (higía = he arrived)", "pos": "verb", "forms": ["הגיע", "הגענו", "הגעת"], "ex": { "text": "הִגַּעְתִּי לַמָּלוֹן.", "tr": "higáti la-malón.", "en": "I arrived at the hotel." }, "verified": false },
+
+    { "id": "elekh", "text": "אֵלֵךְ", "tr": "elékh", "en": "I will go (telékh you will go, yelékh he will go, nelékh we will go)", "pos": "verb", "root": "h-l-kh", "forms": ["ילך", "נלך", "תלכי"], "ex": { "text": "אֵלֵךְ לַשּׁוּק מָחָר.", "tr": "elékh la-shúk makhár.", "en": "I'll go to the market tomorrow." }, "verified": false },
+    { "id": "lalekhet", "text": "לָלֶכֶת", "tr": "lalékhet", "en": "to go (infinitive)", "pos": "verb", "root": "h-l-kh", "ex": { "text": "אֲנִי רוֹצֶה לָלֶכֶת הַבַּיְתָה.", "tr": "aní rotsé lalékhet ha-báyta.", "en": "I want to go home." }, "verified": false },
+    { "id": "tsarikh", "text": "צָרִיךְ", "tr": "tsaríkh", "en": "need(s), must (f. tsrikhá)", "pos": "verb", "forms": ["צריכה", "צריכים"], "ex": { "text": "אֲנִי צָרִיךְ לִלְמֹד הַיּוֹם.", "tr": "aní tsaríkh lilmód ha-yóm.", "en": "I need to study today." }, "verified": false },
+    { "id": "yakhol", "text": "יָכוֹל", "tr": "yakhól", "en": "can, able (f. yekholá)", "pos": "verb", "forms": ["יכולה", "יכולים"], "ex": { "text": "אֲנִי לֹא יָכוֹל לָבוֹא הַיּוֹם.", "tr": "aní lo yakhól lavó ha-yóm.", "en": "I can't come today." }, "verified": false },
+    { "id": "efshar", "text": "אֶפְשָׁר", "tr": "efshár", "en": "possible; may I…? (polite requests)", "pos": "particle", "ex": { "text": "אֶפְשָׁר קָפֶה, בְּבַקָּשָׁה?", "tr": "efshár kafé, bevakashá?", "en": "Could I have a coffee, please?" }, "verified": false },
+    { "id": "ulay", "text": "אוּלַי", "tr": "uláy", "en": "maybe", "pos": "adv", "ex": { "text": "אוּלַי אֵלֵךְ לַשּׁוּק.", "tr": "uláy elékh la-shúk.", "en": "Maybe I'll go to the market." }, "verified": false },
+    { "id": "im-if", "text": "אִם", "tr": "im", "en": "if", "pos": "conj", "ex": { "text": "אִם יֵשׁ לְךָ זְמַן, בּוֹא!", "tr": "im yesh lekhá zman, bo!", "en": "If you have time, come!" }, "verified": false },
+    { "id": "bezrat", "text": "בְּעֶזְרַת הַשֵּׁם", "tr": "be-ezrát ha-shém", "en": "God willing (lit. with God's help) (≈ inshalla)", "pos": "phrase", "forms": ["בעזרת", "בע״ה"], "ex": { "text": "נִתְרָאֶה מָחָר, בְּעֶזְרַת הַשֵּׁם.", "tr": "nitra'é makhár, be-ezrát ha-shém.", "en": "See you tomorrow, God willing." }, "verified": false },
+    { "id": "paam", "text": "פַּעַם", "tr": "pá'am", "en": "time (occurrence), once (pá'am ha-ba'á = next time)", "pos": "noun", "forms": ["פעמים"], "ex": { "text": "עוֹד פַּעַם, בְּבַקָּשָׁה.", "tr": "od pá'am, bevakashá.", "en": "Once more, please." }, "verified": false },
+    { "id": "shavua", "text": "שָׁבוּעַ", "tr": "shavú'a", "en": "week", "pos": "noun", "root": "sh-b-ʕ", "forms": ["שבוע", "השבוע", "שבועות"], "cognates": { "ar": "sabʕa (seven) / ʔusbūʕ (week)" }, "ex": { "text": "יֵשׁ לִי מִבְחָן כָּל שָׁבוּעַ.", "tr": "yesh li mivkhán kol shavú'a.", "en": "I have an exam every week." }, "verified": false },
+    { "id": "khodesh", "text": "חֹדֶשׁ", "tr": "khódesh", "en": "month", "pos": "noun", "forms": ["חודש", "חודשים"], "ex": { "text": "בְּעוֹד חֹדֶשׁ אֲנִי טָס לְיִשְׂרָאֵל.", "tr": "be-ód khódesh aní tas le-yisra'él.", "en": "In a month I'm flying to Israel." }, "verified": false },
+    { "id": "sofshavua", "text": "סוֹף שָׁבוּעַ", "tr": "sof shavú'a", "en": "weekend (lit. end of week)", "pos": "noun", "forms": ["סוף"], "ex": { "text": "מָה אַתָּה עוֹשֶׂה בְּסוֹף הַשָּׁבוּעַ?", "tr": "ma atá osé be-sóf ha-shavú'a?", "en": "What are you doing this weekend?" }, "verified": false },
+    { "id": "shishi", "text": "יוֹם שִׁשִּׁי", "tr": "yom shishí", "en": "Friday (lit. sixth day)", "pos": "noun", "forms": ["שישי"], "ex": { "text": "בְּיוֹם שִׁשִּׁי אֲנִי פָּנוּי.", "tr": "be-yóm shishí aní panúy.", "en": "On Friday I'm free." }, "verified": false },
+    { "id": "shabat", "text": "שַׁבָּת", "tr": "shabát", "en": "Saturday; Shabbat", "pos": "noun", "forms": ["בשבת"], "cognates": { "ar": "is-sabt" }, "ex": { "text": "שַׁבָּת שָׁלוֹם!", "tr": "shabát shalóm!", "en": "Shabbat shalom!" }, "verified": false },
+    { "id": "khufsha", "text": "חֻפְשָׁה", "tr": "khufshá", "en": "vacation, holiday", "pos": "noun", "forms": ["חופשה"], "ex": { "text": "מָחָר יֵשׁ לִי חֻפְשָׁה!", "tr": "makhár yesh li khufshá!", "en": "Tomorrow I'm on vacation!" }, "verified": false },
+    { "id": "asuk", "text": "עָסוּק", "tr": "asúk", "en": "busy (f. asuká)", "pos": "adj", "forms": ["עסוקה", "עסוקים"], "ex": { "text": "אֲנִי עָסוּק מְאוֹד הַשָּׁבוּעַ.", "tr": "aní asúk me'ód ha-shavú'a.", "en": "I'm very busy this week." }, "verified": false },
+    { "id": "panui", "text": "פָּנוּי", "tr": "panúy", "en": "free, available (f. pnuyá)", "pos": "adj", "forms": ["פנויה"], "ex": { "text": "אַתָּה פָּנוּי מָחָר?", "tr": "atá panúy makhár?", "en": "Are you free tomorrow?" }, "verified": false },
+    { "id": "pgisha", "text": "פְּגִישָׁה", "tr": "pgishá", "en": "meeting, appointment", "pos": "noun", "forms": ["פגישות"], "ex": { "text": "יֵשׁ לִי פְּגִישָׁה עִם הַמּוֹרָה.", "tr": "yesh li pgishá im ha-morá.", "en": "I have a meeting with the teacher." }, "verified": false },
+    { "id": "betakh", "text": "בֶּטַח", "tr": "bétakh", "en": "sure, of course", "pos": "adv", "ex": { "text": "בֶּטַח, אֵין בְּעָיָה!", "tr": "bétakh, en be'ayá!", "en": "Sure, no problem!" }, "verified": false },
+    { "id": "nesia", "text": "נְסִיעָה", "tr": "nesi'á", "en": "trip, ride", "pos": "noun", "forms": ["נסיעות"], "ex": { "text": "נְסִיעָה טוֹבָה!", "tr": "nesi'á tová!", "en": "Have a good trip!" }, "verified": false },
+    {"id": "anashim", "text": "אֲנָשִׁים", "tr": "anashím", "en": "people (sg. adám / ish)", "pos": "noun", "forms": ["האנשים"], "ex": {"text": "יֵשׁ פֹּה הַרְבֵּה אֲנָשִׁים.", "tr": "yesh po harbé anashím.", "en": "There are a lot of people here."}, "verified": false},
+    {"id": "matkhil", "text": "מַתְחִיל", "tr": "matkhíl", "en": "begins, starts (f. matkhilá)", "pos": "verb", "forms": ["מתחילה", "מתחילים", "התחיל"], "ex": {"text": "הַשִּׁעוּר מַתְחִיל בִּשְׁמוֹנֶה.", "tr": "ha-shi'úr matkhíl bi-shmóne.", "en": "The class starts at eight."}, "verified": false},
+    {"id": "shaket", "text": "שָׁקֵט", "tr": "shakét", "en": "quiet (f. shketá)", "pos": "adj", "forms": ["שקטה", "שקט"], "ex": {"text": "הַסִּפְרִיָּה שְׁקֵטָה.", "tr": "ha-sifriyá shketá.", "en": "The library is quiet."}, "verified": false},
+
+    { "id": "bereshit", "text": "בְּרֵאשִׁית", "tr": "bereshít", "en": "in the beginning (also the Hebrew name of Genesis)", "pos": "adv", "root": "r-ʔ-sh", "ex": { "text": "בְּרֵאשִׁית בָּרָא אֱלֹהִים", "tr": "bereshít bará elohím", "en": "In the beginning God created" }, "verified": false },
+    { "id": "bara", "text": "בָּרָא", "tr": "bará", "en": "created (from nothing; only God is the subject)", "pos": "verb", "root": "b-r-ʔ", "forms": ["ברא"], "ex": { "text": "אֱלֹהִים בָּרָא אֶת הָעוֹלָם.", "tr": "elohím bará et ha-olám.", "en": "God created the world." }, "verified": false },
+    { "id": "elohim", "text": "אֱלֹהִים", "tr": "elohím", "en": "God (grammatically plural form)", "pos": "noun", "forms": ["אלוהים"], "cognates": { "ar": "ʔilāh / allāh" }, "ex": { "text": "וַיֹּאמֶר אֱלֹהִים", "tr": "va-yómer elohím", "en": "And God said" }, "verified": false },
+    { "id": "et", "text": "אֵת", "tr": "et", "en": "(marks a definite direct object; untranslated)", "pos": "particle", "forms": ["את"], "ex": { "text": "רָאִיתִי אֶת הַסֵּפֶר.", "tr": "ra'íti et ha-séfer.", "en": "I saw the book." }, "verified": false },
+    { "id": "shamayim", "text": "שָׁמַיִם", "tr": "shamáyim", "en": "sky, heaven(s)", "pos": "noun", "forms": ["השמים", "שמיים"], "cognates": { "ar": "samāʔ (MSA)" }, "ex": { "text": "הַשָּׁמַיִם כְּחֻלִּים.", "tr": "ha-shamáyim kkhulím.", "en": "The sky is blue." }, "verified": false },
+    { "id": "eretz", "text": "אֶרֶץ", "tr": "érets", "en": "land, earth, country (ha-árets = Israel, colloquially)", "pos": "noun", "forms": ["הארץ", "ארץ"], "cognates": { "ar": "ʔarḍ (MSA)" }, "ex": { "text": "אֲנִי אוֹהֵב אֶת הָאָרֶץ.", "tr": "aní ohév et ha-árets.", "en": "I love the country." }, "verified": false },
+    { "id": "tohu", "text": "תֹהוּ וָבֹהוּ", "tr": "tóhu va-vóhu", "en": "formless and empty; (modern) total chaos", "pos": "phrase", "forms": ["תהו", "ובהו", "בהו"], "ex": { "text": "הַחֶדֶר שֶׁלְּךָ תֹהוּ וָבֹהוּ!", "tr": "ha-khéder shelkhá tóhu va-vóhu!", "en": "Your room is total chaos!" }, "verified": false },
+    { "id": "khoshekh", "text": "חֹשֶׁךְ", "tr": "khóshekh", "en": "darkness, dark", "pos": "noun", "forms": ["חושך", "החושך"], "ex": { "text": "בַּלַּיְלָה יֵשׁ חֹשֶׁךְ.", "tr": "ba-láyla yesh khóshekh.", "en": "At night it's dark." }, "verified": false },
+    { "id": "panim", "text": "פָּנִים", "tr": "paním", "en": "face (plural form; pney = face of)", "pos": "noun", "forms": ["פני"], "ex": { "text": "יֵשׁ לָהּ פָּנִים יָפוֹת.", "tr": "yesh la paním yafót.", "en": "She has a beautiful face." }, "verified": false },
+    { "id": "tehom", "text": "תְּהוֹם", "tr": "tehóm", "en": "abyss, the deep", "pos": "noun", "forms": ["תהום"], "ex": { "text": "חֹשֶׁךְ עַל פְּנֵי תְהוֹם", "tr": "khóshekh al pne tehóm", "en": "darkness over the face of the deep" }, "verified": false },
+    { "id": "ruakh", "text": "רוּחַ", "tr": "rú'akh", "en": "wind; spirit (f.)", "pos": "noun", "forms": ["רוח"], "cognates": { "ar": "rūḥ" }, "ex": { "text": "יֵשׁ רוּחַ חֲזָקָה הַיּוֹם.", "tr": "yesh rú'akh khazaká ha-yóm.", "en": "There's a strong wind today." }, "verified": false },
+    { "id": "rikhef", "text": "רִחֵף", "tr": "rikhéf", "en": "hovered (merakhéfet = hovering, f.)", "pos": "verb", "forms": ["מרחפת", "מרחף"], "ex": { "text": "הָרוּחַ מְרַחֶפֶת עַל הַמַּיִם.", "tr": "ha-rú'akh merakhéfet al ha-máyim.", "en": "The wind hovers over the water." }, "verified": false },
+    { "id": "or", "text": "אוֹר", "tr": "or", "en": "light", "pos": "noun", "forms": ["האור"], "ex": { "text": "יֵשׁ אוֹר בַּחֶדֶר.", "tr": "yesh or ba-khéder.", "en": "There's light in the room." }, "verified": false },
+    { "id": "vayomer", "text": "וַיֹּאמֶר", "tr": "va-yómer", "en": "and he said (Biblical: vav + future form = past)", "pos": "verb", "root": "ʔ-m-r", "ex": { "text": "וַיֹּאמֶר אֱלֹהִים יְהִי אוֹר", "tr": "va-yómer elohím yehí or", "en": "And God said, let there be light" }, "verified": false },
+    { "id": "yehi", "text": "יְהִי", "tr": "yehí", "en": "let there be (va-yehí = and there was)", "pos": "verb", "root": "h-y-h", "forms": ["ויהי"], "ex": { "text": "יְהִי אוֹר", "tr": "yehí or", "en": "Let there be light" }, "verified": false },
+    { "id": "vayar", "text": "וַיַּרְא", "tr": "va-yár", "en": "and he saw (Biblical)", "pos": "verb", "root": "r-ʔ-h", "forms": ["וירא"], "ex": { "text": "וַיַּרְא אֱלֹהִים אֶת הָאוֹר כִּי טוֹב", "tr": "va-yár elohím et ha-ór ki tov", "en": "And God saw the light, that it was good" }, "verified": false },
+    { "id": "bein", "text": "בֵּין", "tr": "ben", "en": "between (ben… u-ven… = between… and…)", "pos": "prep", "forms": ["ובין"], "cognates": { "ar": "bayna (MSA)" }, "ex": { "text": "הַבַּיִת בֵּין הַשּׁוּק וְהַיָּם.", "tr": "ha-báyit ben ha-shúk ve-ha-yám.", "en": "The house is between the market and the sea." }, "verified": false },
+    { "id": "vayavdel", "text": "וַיַּבְדֵּל", "tr": "va-yavdél", "en": "and he separated (modern hivdíl = separated)", "pos": "verb", "root": "b-d-l", "forms": ["הבדיל", "הבדל"], "ex": { "text": "וַיַּבְדֵּל בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ", "tr": "va-yavdél ben ha-ór u-ven ha-khóshekh", "en": "and he separated the light from the darkness" }, "verified": false },
+    { "id": "kara", "text": "קָרָא", "tr": "kará", "en": "called; read (koré = reads)", "pos": "verb", "root": "q-r-ʔ", "forms": ["קורא", "קוראת", "קראתי", "ויקרא", "יקרא"], "cognates": { "ar": "qaraʔa (read)" }, "ex": { "text": "קָרָאתִי סֵפֶר טוֹב.", "tr": "karáti séfer tov.", "en": "I read a good book." }, "verified": false }
+  ],
+  "grammar": [
+    { "id": "koevli", "title": "ko'év li: 'it hurts (to) me'", "concept": "dative", "body": [
+      "Hebrew says **ko'év li ha-rósh** = (it) hurts to me the head. The body part is the subject; the verb agrees with it: **ko'évet li ha-béten** (béten is feminine).",
+      "Same 'to me' construction as Latin **caput mihi dolet**. Arabic uses an object ending instead: rāsi byūjaʕni."
+    ], "examples": [
+      { "text": "כּוֹאֵב לִי הָרֹאשׁ וְיֵשׁ לִי חֹם.", "tr": "ko'év li ha-rósh ve-yésh li khom.", "en": "My head hurts and I have a fever." }
+    ], "drills": [
+      { "id": "kl1", "prompt": "Say: My head hurts.", "answer": "כּוֹאֵב לִי הָרֹאשׁ.", "tr": "ko'év li ha-rósh." },
+      { "id": "kl2", "prompt": "Say: My stomach hurts.", "answer": "כּוֹאֶבֶת לִי הַבֶּטֶן.", "tr": "ko'évet li ha-béten." },
+      { "id": "kl3", "prompt": "Say: I've had a fever since yesterday.", "answer": "יֵשׁ לִי חֹם מֵאֶתְמוֹל.", "tr": "yesh li khom me-etmól." },
+      { "id": "kl4", "prompt": "Ask a man: Where does it hurt you?", "answer": "אֵיפֹה כּוֹאֵב לְךָ?", "tr": "éfo ko'év lekhá?" }
+    ], "verified": false },
+    { "id": "negation", "title": "lo vs en", "body": [
+      "**lo** negates verbs, adjectives and most things: aní lo yodé'a, ze lo rakhók.",
+      "**en** is the negative of **yesh**: en li zman (I don't have time), en be'ayá (no problem). Formal Hebrew also uses en + pronoun ending for 'is not': **enéni** (I am not), but in speech people just say **aní lo**."
+    ], "examples": [
+      { "text": "אֲנִי לֹא חוֹלֶה, אֲבָל אֵין לִי כֹּחַ.", "tr": "aní lo kholé, avál en li kó'akh.", "en": "I'm not sick, but I have no energy." }
+    ], "drills": [
+      { "id": "ng1", "prompt": "Say: I'm not sick.", "answer": "אֲנִי לֹא חוֹלֶה.", "tr": "aní lo kholé." },
+      { "id": "ng2", "prompt": "Say: I don't have a fever.", "answer": "אֵין לִי חֹם.", "tr": "en li khom." },
+      { "id": "ng3", "prompt": "Say: No problem.", "answer": "אֵין בְּעָיָה.", "tr": "en be'ayá." }
+    ], "verified": false },
+    { "id": "prepositions", "title": "Prepositions with endings", "body": [
+      "Prepositions take the same endings as nouns: **im** → **ití** (with me), itkhá, itákh, itó, itá, itánu. **al** → **aláy** (on me), alékha… **el** → **eláy** (to me).",
+      "Place words: **al** on · **le-yád** next to · **mul** opposite · **lifné** in front of / before · **akharé** after · **ben** between."
+    ], "examples": [
+      { "text": "בּוֹא אִתִּי לַשּׁוּק!", "tr": "bo ití la-shúk!", "en": "Come with me to the market!" }
+    ], "drills": [
+      { "id": "pp1", "prompt": "Say: with me", "answer": "אִתִּי", "tr": "ití" },
+      { "id": "pp2", "prompt": "Say: The hotel is next to the market.", "answer": "הַמָּלוֹן לְיַד הַשּׁוּק.", "tr": "ha-malón le-yád ha-shúk." },
+      { "id": "pp3", "prompt": "Say: The book is on the table.", "answer": "הַסֵּפֶר עַל הַשֻּׁלְחָן.", "tr": "ha-séfer al ha-shulkhán." }
+    ], "verified": false },
+    { "id": "imperative", "title": "Commands", "body": [
+      "Short imperatives: **lekh!** go · **bo!** come · **kakh!** take · **tagíd!** say/tell. To a woman add **-i**: lekhí, bó'i, kkhí; to a group **-u**: lekhú, bó'u.",
+      "In everyday speech Israelis often use the future as a softer command: **telékh yashár** (you'll go straight). Don't…! = **al** + future: **al telékh!** don't go!"
+    ], "examples": [
+      { "text": "לֵךְ יָשָׁר, וְאַחַר כָּךְ שְׂמֹאלָה.", "tr": "lekh yashár, ve-akhár kakh smóla.", "en": "Go straight, then left." }
+    ], "drills": [
+      { "id": "im1", "prompt": "Tell a man: Go straight.", "answer": "לֵךְ יָשָׁר.", "tr": "lekh yashár." },
+      { "id": "im2", "prompt": "Tell a man: Take a taxi.", "answer": "קַח מוֹנִית.", "tr": "kakh monít." },
+      { "id": "im3", "prompt": "Tell a man: Come here!", "answer": "בּוֹא הֵנָּה!", "tr": "bo héna!" },
+      { "id": "im4", "prompt": "Tell a man: Don't go!", "answer": "אַל תֵּלֵךְ!", "tr": "al telékh!" }
+    ], "verified": false },
+    { "id": "future", "title": "Future tense: prefixes", "concept": "aspect", "body": [
+      "The future adds prefixes (like the Arabic imperfect): **e-** I · **ti-** you (m), she · **ti-…-i** you (f) · **yi-** he · **ni-** we · **ti-…-u** you (pl) · **yi-…-u** they. katáv → **ekhtóv, tikhtóv, yikhtóv, nikhtóv**.",
+      "Compare Arabic aktubu, taktubu, yaktubu, naktubu: the same Semitic system. halákh → **elékh, telékh, yelékh, nelékh**."
+    ], "examples": [
+      { "text": "מָחָר אֵלֵךְ לַסִּפְרִיָּה וְאֶכְתֹּב מִכְתָּב.", "tr": "makhár elékh la-sifriyá ve-ekhtóv mikhtáv.", "en": "Tomorrow I'll go to the library and write a letter." }
+    ], "drills": [
+      { "id": "fu1", "prompt": "Say: I'll go to the market tomorrow.", "answer": "אֵלֵךְ לַשּׁוּק מָחָר.", "tr": "elékh la-shúk makhár." },
+      { "id": "fu2", "prompt": "Say: We'll go together.", "answer": "נֵלֵךְ בְּיַחַד.", "tr": "nelékh be-yákhad." },
+      { "id": "fu3", "prompt": "Say: I'll write a letter.", "answer": "אֶכְתֹּב מִכְתָּב.", "tr": "ekhtóv mikhtáv." }
+    ], "verified": false },
+    { "id": "modals", "title": "need / can / may + infinitive", "concept": "subjunctive", "body": [
+      "**tsaríkh** (need), **yakhól** (can), **rotsé** (want), **efshár** (possible) + an infinitive in **l-**: **lilmód** to study, **lalékhet** to go, **lavó** to come, **lishtót** to drink.",
+      "Levantine drops the b- in the same spot (lāzim rūḥ); Hebrew uses the infinitive."
+    ], "examples": [
+      { "text": "אֲנִי צָרִיךְ לִלְמֹד, אֲבָל אֲנִי רוֹצֶה לָלֶכֶת לַיָּם.", "tr": "aní tsaríkh lilmód, avál aní rotsé lalékhet la-yám.", "en": "I need to study, but I want to go to the beach." }
+    ], "drills": [
+      { "id": "md1", "prompt": "Say: I need to study today.", "answer": "אֲנִי צָרִיךְ לִלְמֹד הַיּוֹם.", "tr": "aní tsaríkh lilmód ha-yóm." },
+      { "id": "md2", "prompt": "Say: I can't come today.", "answer": "אֲנִי לֹא יָכוֹל לָבוֹא הַיּוֹם.", "tr": "aní lo yakhól lavó ha-yóm." },
+      { "id": "md3", "prompt": "Ask politely: Could I have a coffee, please?", "answer": "אֶפְשָׁר קָפֶה, בְּבַקָּשָׁה?", "tr": "efshár kafé, bevakashá?" },
+      { "id": "md4", "prompt": "Say: I want to go home.", "answer": "אֲנִי רוֹצֶה לָלֶכֶת הַבַּיְתָה.", "tr": "aní rotsé lalékhet ha-báyta." }
+    ], "verified": false },
+    { "id": "biblical", "title": "Biblical vs Modern Hebrew", "body": [
+      "Same alphabet, roots and most core words: yom, láyla, or, máyim, érets, tov, ki. You can already read much of Genesis 1.",
+      "Differences: Biblical prose usually puts the **verb first** (bará elohím: created God); it marks definite objects with **et** (Modern does too); it has no **shel** (it uses construct chains); and it tells stories with the **vav-consecutive** (next lesson).",
+      "Pronunciation: Israelis read the Bible with Modern pronunciation; scholarly reconstructions differ (pharyngeal ḥ, ʕ like Arabic)."
+    ], "examples": [
+      { "text": "בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ", "tr": "bereshít bará elohím et ha-shamáyim ve-ét ha-árets", "en": "In the beginning God created the heavens and the earth" }
+    ], "drills": [
+      { "id": "bb1", "prompt": "Biblical word for 'in the beginning':", "answer": "בְּרֵאשִׁית", "tr": "bereshít" },
+      { "id": "bb2", "prompt": "What does אֵת mark?", "answer": "אֵת", "tr": "et: the definite direct object" },
+      { "id": "bb3", "prompt": "Say: Let there be light.", "answer": "יְהִי אוֹר", "tr": "yehí or" }
+    ], "verified": false },
+    { "id": "vav", "title": "The vav-consecutive: וַיֹּאמֶר", "concept": "aspect", "body": [
+      "Biblical narrative uses **va-** + the *future* form to mean the *past*: **va-yómer** = and he said (Modern: ve-hu amár); **va-yár** = and he saw; **va-yehí** = and there was.",
+      "Spot it by the **וַ** with a dagesh in the next letter: וַיֹּאמֶר, וַיַּרְא. Once you know it, most Biblical stories open up."
+    ], "examples": [
+      { "text": "וַיֹּאמֶר אֱלֹהִים יְהִי אוֹר וַיְהִי אוֹר", "tr": "va-yómer elohím yehí or va-yehí or", "en": "And God said, let there be light, and there was light" }
+    ], "drills": [
+      { "id": "vv1", "prompt": "Biblical 'and he said':", "answer": "וַיֹּאמֶר", "tr": "va-yómer" },
+      { "id": "vv2", "prompt": "Biblical 'and he saw':", "answer": "וַיַּרְא", "tr": "va-yár" },
+      { "id": "vv3", "prompt": "Modern Hebrew for וַיֹּאמֶר:", "answer": "וְהוּא אָמַר", "tr": "ve-hú amár" }
+    ], "verified": false }
+  ],
+  "texts": [
+    { "id": "d09", "title": "At the clinic", "level": "U9", "kind": "dialogue", "lines": [
+      { "sp": "Doctor", "text": "שָׁלוֹם, מָה כּוֹאֵב לְךָ?", "tr": "shalóm, ma ko'év lekhá?", "en": "Hello, what hurts?" },
+      { "sp": "You", "text": "כּוֹאֵב לִי הָרֹאשׁ, וְיֵשׁ לִי חֹם.", "tr": "ko'év li ha-rósh, ve-yésh li khom.", "en": "My head hurts, and I have a fever." },
+      { "sp": "Doctor", "text": "מֵאָז מָתַי?", "tr": "me'áz matáy?", "en": "Since when?" },
+      { "sp": "You", "text": "מֵאֶתְמוֹל. וַאֲנִי עָיֵף מְאוֹד.", "tr": "me-etmól. va-aní ayéf me'ód.", "en": "Since yesterday. And I'm very tired." },
+      { "sp": "Doctor", "text": "כּוֹאֶבֶת לְךָ הַבֶּטֶן?", "tr": "ko'évet lekhá ha-béten?", "en": "Does your stomach hurt?" },
+      { "sp": "You", "text": "לֹא, הַבֶּטֶן בְּסֵדֶר.", "tr": "lo, ha-béten be-séder.", "en": "No, my stomach is fine." },
+      { "sp": "Doctor", "text": "לַחַץ הַדָּם בְּסֵדֶר, וְהַלֵּב בְּסֵדֶר. אַתָּה בָּרִיא.", "tr": "lákhats ha-dám be-séder, ve-ha-lév be-séder. atá barí.", "en": "Your blood pressure is fine, and your heart is fine. You're healthy." },
+      { "sp": "Doctor", "text": "קַח אֶת הַתְּרוּפָה הַזֹּאת מִבֵּית הַמִּרְקַחַת.", "tr": "kakh et ha-trufá ha-zót mi-bét ha-mirkákhat.", "en": "Get this medicine from the pharmacy." },
+      { "sp": "You", "text": "תּוֹדָה רַבָּה.", "tr": "todá rabá.", "en": "Thank you very much." },
+      { "sp": "Doctor", "text": "רְפוּאָה שְׁלֵמָה!", "tr": "refu'á shlemá!", "en": "Get well soon!" }
+    ], "verified": false },
+    { "id": "d10", "title": "Taxi to the hotel", "level": "U10", "kind": "dialogue", "lines": [
+      { "sp": "You", "text": "שָׁלוֹם, לַמָּלוֹן לְיַד הַיָּם, בְּבַקָּשָׁה.", "tr": "shalóm, la-malón le-yád ha-yám, bevakashá.", "en": "Hi, to the hotel by the sea, please." },
+      { "sp": "Driver", "text": "בֶּטַח. זֶה לֹא רָחוֹק.", "tr": "bétakh. ze lo rakhók.", "en": "Sure. It's not far." },
+      { "sp": "You", "text": "כַּמָּה זֶה עוֹלֶה?", "tr": "káma ze olé?", "en": "How much does it cost?" },
+      { "sp": "Driver", "text": "לְפִי הַמּוֹנֶה.", "tr": "lefí ha-moné.", "en": "By the meter." },
+      { "sp": "Driver", "text": "מֵאֵיפֹה אַתָּה? אַתָּה מְדַבֵּר עִבְרִית טוֹב!", "tr": "me-éfo atá? atá medabér ivrít tov!", "en": "Where are you from? You speak Hebrew well!" },
+      { "sp": "You", "text": "מֵאָמֶרִיקָה. אֲנִי לוֹמֵד עִבְרִית בָּאוּנִיבֶרְסִיטָה.", "tr": "me-amérika. aní loméd ivrít ba-universíta.", "en": "From America. I'm learning Hebrew at the university." },
+      { "sp": "Driver", "text": "הִגַּעְנוּ. הַמָּלוֹן מוּל הַיָּם, הַדֶּלֶת מִשְּׂמֹאל.", "tr": "higánu. ha-malón mul ha-yám, ha-délet mi-smól.", "en": "We're here. The hotel is opposite the sea, the door is on the left." },
+      { "sp": "You", "text": "תּוֹדָה! לְהִתְרָאוֹת.", "tr": "todá! lehitra'ót.", "en": "Thanks! Bye." }
+    ], "verified": false },
+    { "id": "d11", "title": "Weekend plans", "level": "U11", "kind": "dialogue", "names": ["חיפה", "ירושלים", "ישראל"], "lines": [
+      { "sp": "Noa", "text": "מָה אַתָּה עוֹשֶׂה בְּסוֹף הַשָּׁבוּעַ?", "tr": "ma atá osé be-sóf ha-shavú'a?", "en": "What are you doing this weekend?" },
+      { "sp": "Venu", "text": "עוֹד לֹא יוֹדֵעַ. אוּלַי אֵלֵךְ לַשּׁוּק. לָמָּה?", "tr": "od lo yodé'a. uláy elékh la-shúk. láma?", "en": "Don't know yet. Maybe I'll go to the market. Why?" },
+      { "sp": "Noa", "text": "אִם אַתָּה פָּנוּי בְּיוֹם שִׁשִּׁי, בּוֹא לְאֲרוּחַת שַׁבָּת!", "tr": "im atá panúy be-yóm shishí, bo le-arukhát shabát!", "en": "If you're free on Friday, come to Shabbat dinner!" },
+      { "sp": "Venu", "text": "בֶּטַח! אֲבָל אֲנִי צָרִיךְ לִלְמֹד בַּבֹּקֶר. יֵשׁ לִי מִבְחָן.", "tr": "bétakh! avál aní tsaríkh lilmód ba-bóker. yesh li mivkhán.", "en": "Sure! But I need to study in the morning. I have an exam." },
+      { "sp": "Noa", "text": "אֵין בְּעָיָה. אֶפְשָׁר לָבוֹא בָּעֶרֶב.", "tr": "en be'ayá. efshár lavó ba-érev.", "en": "No problem. You can come in the evening." },
+      { "sp": "Venu", "text": "מְעֻלֶּה. וּבְעוֹד חֹדֶשׁ אֲנִי טָס לְיִשְׂרָאֵל!", "tr": "me'ulé. u-ve-ód khódesh aní tas le-yisra'él!", "en": "Great. And in a month I'm flying to Israel!" },
+      { "sp": "Noa", "text": "וָואוּ! נְסִיעָה טוֹבָה!", "tr": "váu! nesi'á tová!", "en": "Wow! Have a good trip!" },
+      { "sp": "Venu", "text": "תּוֹדָה! נִתְרָאֶה בְּשִׁשִּׁי, בְּעֶזְרַת הַשֵּׁם.", "tr": "todá! nitra'é be-shishí, be-ezrát ha-shém.", "en": "Thanks! See you Friday, God willing." }
+    ], "verified": false },
+    { "id": "m01", "title": "Reading: Jerusalem", "level": "U12", "kind": "reading", "names": ["ירושלים", "יפו", "תל", "אביב", "היסטוריה"], "lines": [
+      { "text": "יְרוּשָׁלַיִם הִיא עִיר גְּדוֹלָה וְיָפָה.", "tr": "yerushaláyim hi ir gdolá ve-yafá.", "en": "Jerusalem is a big and beautiful city." },
+      { "text": "זֹאת עִיר מְאוֹד יְשָׁנָה, עִם הַרְבֵּה הִיסְטוֹרְיָה.", "tr": "zot ir me'ód yeshaná, im harbé histórya.", "en": "It is a very old city, with a lot of history." },
+      { "text": "בָּעִיר יֵשׁ שׁוּק גָּדוֹל, וְהַרְבֵּה אֲנָשִׁים קוֹנִים שָׁם פֵּרוֹת וִירָקוֹת.", "tr": "ba-ír yesh shuk gadól, ve-harbé anashím koním sham perót vi-yrakót.", "en": "In the city there's a big market, and many people buy fruit and vegetables there." },
+      { "text": "אֲנָשִׁים מְדַבְּרִים שָׁם עִבְרִית, עֲרָבִית, אַנְגְּלִית, וְעוֹד הַרְבֵּה שָׂפוֹת.", "tr": "anashím medabrím sham ivrít, aravít, anglít, ve-ód harbé safót.", "en": "People there speak Hebrew, Arabic, English, and many more languages." },
+      { "text": "בְּיוֹם שִׁשִּׁי בָּעֶרֶב מַתְחִילָה שַׁבָּת, וְהָעִיר שְׁקֵטָה.", "tr": "be-yóm shishí ba-érev matkhilá shabát, ve-ha-ír shketá.", "en": "On Friday evening Shabbat begins, and the city is quiet." }
+    ], "verified": false },
+    { "id": "b01", "title": "Genesis 1:1–5 (Biblical Hebrew)", "level": "U12", "kind": "authentic", "source": "Genesis 1:1–5, Masoretic text (public domain), with vowel points and without cantillation marks.", "lines": [
+      { "text": "בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ׃", "tr": "bereshít bará elohím et ha-shamáyim ve-ét ha-árets.", "en": "In the beginning God created the heavens and the earth." },
+      { "text": "וְהָאָרֶץ הָיְתָה תֹהוּ וָבֹהוּ וְחֹשֶׁךְ עַל־פְּנֵי תְהוֹם וְרוּחַ אֱלֹהִים מְרַחֶפֶת עַל־פְּנֵי הַמָּיִם׃", "tr": "ve-ha-árets haytá tóhu va-vóhu ve-khóshekh al-pné tehóm ve-rú'akh elohím merakhéfet al-pné ha-máyim.", "en": "The earth was formless and empty, darkness was over the face of the deep, and the spirit of God hovered over the face of the waters." },
+      { "text": "וַיֹּאמֶר אֱלֹהִים יְהִי אוֹר וַיְהִי־אוֹר׃", "tr": "va-yómer elohím yehí or va-yehí-or.", "en": "And God said, let there be light, and there was light." },
+      { "text": "וַיַּרְא אֱלֹהִים אֶת־הָאוֹר כִּי־טוֹב וַיַּבְדֵּל אֱלֹהִים בֵּין הָאוֹר וּבֵין הַחֹשֶׁךְ׃", "tr": "va-yár elohím et-ha-ór ki-tóv va-yavdél elohím ben ha-ór u-vén ha-khóshekh.", "en": "And God saw the light, that it was good, and God separated the light from the darkness." },
+      { "text": "וַיִּקְרָא אֱלֹהִים לָאוֹר יוֹם וְלַחֹשֶׁךְ קָרָא לָיְלָה וַיְהִי־עֶרֶב וַיְהִי־בֹקֶר יוֹם אֶחָד׃", "tr": "va-yikrá elohím la-ór yom ve-la-khóshekh kará láyla va-yehí-érev va-yehí-vóker yom ekhád.", "en": "God called the light Day, and the darkness he called Night. And there was evening and there was morning, one day." }
+    ], "verified": false }
+  ]
+}

@@ -6,11 +6,12 @@ export interface CoverageResult { total: number; known: number; ratio: number; u
 /** % of running tokens in a text that are words you have learned (Nation: aim 95–98% for extensive reading). */
 export function textCoverage(pack: Pack, text: Pick<Text, 'lines' | 'names'>, learnedIds: Iterable<string>): CoverageResult {
   const lex = buildLexicon(pack, learnedIds)
-  const names = new Set((text.names ?? []).map(n => normalize(pack, n)))
+  // names are skipped even with prefixes attached (Hebrew מִתֵּל = mi + Tel)
+  const namesLex = new Map((text.names ?? []).map(n => [normalize(pack, n), '__name'] as [string, string]))
   let total = 0, known = 0
   const unknown: string[] = []
   for (const line of text.lines) for (const tok of tokenize(line.text)) {
-    if (/^\p{N}+$/u.test(tok) || names.has(normalize(pack, tok))) continue
+    if (/^\p{N}+$/u.test(tok) || (namesLex.size && lookup(pack, namesLex, tok))) continue
     total++
     if (lookup(pack, lex, tok)) known++
     else unknown.push(tok)

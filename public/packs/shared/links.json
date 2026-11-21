@@ -561,5 +561,423 @@
         "en": "Spanish descendant"
       }
     ]
+  },
+  {
+    "id": "root-lmd",
+    "type": "root",
+    "note": "Learning: Hebrew l-m-d; Arabic borrowed tilmīdh 'pupil' from Aramaic",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "تلميذ",
+        "tr": "tilmīdh",
+        "en": "pupil"
+      },
+      {
+        "lang": "he",
+        "text": "למד",
+        "tr": "l-m-d",
+        "en": "learn: lamád, talmíd"
+      }
+    ]
+  },
+  {
+    "id": "root-yld",
+    "type": "root",
+    "note": "Child / birth (Arabic w ↔ Hebrew y at the start of roots)",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "ولد",
+        "tr": "walad",
+        "en": "boy, child"
+      },
+      {
+        "lang": "he",
+        "text": "ילד",
+        "tr": "y-l-d",
+        "en": "yéled, child"
+      }
+    ]
+  },
+  {
+    "id": "root-mlk",
+    "type": "root",
+    "note": "King",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "ملك",
+        "tr": "malik",
+        "en": "king"
+      },
+      {
+        "lang": "he",
+        "text": "מלך",
+        "tr": "m-l-kh",
+        "en": "mélekh, king"
+      }
+    ]
+  },
+  {
+    "id": "root-klb",
+    "type": "root",
+    "note": "Dog",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "كلب",
+        "tr": "kalb",
+        "en": "dog"
+      },
+      {
+        "lang": "he",
+        "text": "כלב",
+        "tr": "k-l-v",
+        "en": "kélev, dog"
+      }
+    ]
+  },
+  {
+    "id": "root-smʕ",
+    "type": "root",
+    "note": "Hear (Arabic s ↔ Hebrew sh)",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "سمع",
+        "tr": "s-m-ʕ",
+        "en": "hear"
+      },
+      {
+        "lang": "he",
+        "text": "שמע",
+        "tr": "sh-m-ʕ",
+        "en": "hear: shamá, Shema"
+      }
+    ]
+  },
+  {
+    "id": "root-rʔs",
+    "type": "root",
+    "note": "Head",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "راس",
+        "tr": "r-ʔ-s",
+        "en": "rās, head"
+      },
+      {
+        "lang": "he",
+        "text": "ראש",
+        "tr": "r-ʔ-sh",
+        "en": "rosh, head"
+      }
+    ]
+  },
+  {
+    "id": "root-ʔmr",
+    "type": "root",
+    "note": "Say vs command",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "أمر",
+        "tr": "ʔ-m-r",
+        "en": "ʔamara, to order"
+      },
+      {
+        "lang": "he",
+        "text": "אמר",
+        "tr": "ʔ-m-r",
+        "en": "amár, to say"
+      }
+    ]
+  },
+  {
+    "id": "root-snh",
+    "type": "root",
+    "note": "Year",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "سنة",
+        "tr": "sana",
+        "en": "year"
+      },
+      {
+        "lang": "he",
+        "text": "שנה",
+        "tr": "shaná",
+        "en": "year"
+      }
+    ]
+  },
+  {
+    "id": "root-lyl",
+    "type": "root",
+    "note": "Night",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "ليل",
+        "tr": "lēl",
+        "en": "night"
+      },
+      {
+        "lang": "he",
+        "text": "לילה",
+        "tr": "láyla",
+        "en": "night"
+      }
+    ]
+  },
+  {
+    "id": "root-lḥm",
+    "type": "root",
+    "note": "Bread vs meat: same root, different staple food",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "لحم",
+        "tr": "l-ḥ-m",
+        "en": "laḥm, meat"
+      },
+      {
+        "lang": "he",
+        "text": "לחם",
+        "tr": "l-ḥ-m",
+        "en": "lékhem, bread"
+      }
+    ]
+  },
+  {
+    "id": "root-ʕbd",
+    "type": "root",
+    "note": "Serve / work",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "عبد",
+        "tr": "ʕ-b-d",
+        "en": "ʕabd, servant"
+      },
+      {
+        "lang": "he",
+        "text": "עבד",
+        "tr": "ʕ-b-d",
+        "en": "ovéd, works; avodá, work"
+      }
+    ]
+  },
+  {
+    "id": "root-sʔl",
+    "type": "root",
+    "note": "Ask",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "سأل",
+        "tr": "s-ʔ-l",
+        "en": "saʔala, ask; suʔāl, question"
+      },
+      {
+        "lang": "he",
+        "text": "שאל",
+        "tr": "sh-ʔ-l",
+        "en": "sha'ál, ask; she'elá, question"
+      }
+    ]
+  },
+  {
+    "id": "root-qrb",
+    "type": "root",
+    "note": "Near",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "قريب",
+        "tr": "q-r-b",
+        "en": "ʔarīb, near"
+      },
+      {
+        "lang": "he",
+        "text": "קרוב",
+        "tr": "q-r-v",
+        "en": "karóv, near"
+      }
+    ]
+  },
+  {
+    "id": "root-qrʔ",
+    "type": "root",
+    "note": "Read / call",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "قرأ",
+        "tr": "q-r-ʔ",
+        "en": "qaraʔa, read"
+      },
+      {
+        "lang": "he",
+        "text": "קרא",
+        "tr": "q-r-ʔ",
+        "en": "kará, read / call"
+      }
+    ]
+  },
+  {
+    "id": "root-qwm",
+    "type": "root",
+    "note": "Rise",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "قام",
+        "tr": "q-w-m",
+        "en": "qāma, rose"
+      },
+      {
+        "lang": "he",
+        "text": "קם",
+        "tr": "q-w-m",
+        "en": "kam, got up"
+      }
+    ]
+  },
+  {
+    "id": "root-rwḥ",
+    "type": "root",
+    "note": "Wind / spirit",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "روح",
+        "tr": "rūḥ",
+        "en": "spirit, soul"
+      },
+      {
+        "lang": "he",
+        "text": "רוח",
+        "tr": "rú'akh",
+        "en": "wind, spirit"
+      }
+    ]
+  },
+  {
+    "id": "root-ʔrḍ",
+    "type": "root",
+    "note": "Land (Arabic ḍ ↔ Hebrew ts)",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "أرض",
+        "tr": "ʔarḍ",
+        "en": "earth"
+      },
+      {
+        "lang": "he",
+        "text": "ארץ",
+        "tr": "érets",
+        "en": "land"
+      }
+    ]
+  },
+  {
+    "id": "root-ʔlh",
+    "type": "root",
+    "note": "God",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "إله",
+        "tr": "ʔilāh",
+        "en": "god"
+      },
+      {
+        "lang": "he",
+        "text": "אלוהים",
+        "tr": "elohím",
+        "en": "God"
+      }
+    ]
+  },
+  {
+    "id": "root-ʔḥ",
+    "type": "root",
+    "note": "Brother / sister",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "أخ",
+        "tr": "ʔakh",
+        "en": "brother"
+      },
+      {
+        "lang": "he",
+        "text": "אח",
+        "tr": "akh",
+        "en": "brother"
+      }
+    ]
+  },
+  {
+    "id": "root-ʔḥd",
+    "type": "root",
+    "note": "One",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "أحد",
+        "tr": "ʔaḥad",
+        "en": "one"
+      },
+      {
+        "lang": "he",
+        "text": "אחד",
+        "tr": "ekhád",
+        "en": "one"
+      }
+    ]
+  },
+  {
+    "id": "root-zmn",
+    "type": "root",
+    "note": "Time",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "زمان",
+        "tr": "zamān",
+        "en": "time"
+      },
+      {
+        "lang": "he",
+        "text": "זמן",
+        "tr": "zman",
+        "en": "time"
+      }
+    ]
+  },
+  {
+    "id": "root-swq",
+    "type": "root",
+    "note": "Market",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "سوق",
+        "tr": "sūʔ",
+        "en": "market"
+      },
+      {
+        "lang": "he",
+        "text": "שוק",
+        "tr": "shuk",
+        "en": "market"
+      }
+    ]
   }
 ]
