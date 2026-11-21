@@ -19,8 +19,8 @@ readable errors. The TypeScript source of truth is `src/packs/types.ts`.
   "tts": "he",                        // BCP-47 prefix for picking an iPhone voice
   "ttsNote": "Built-in voice: Carmit (Modern Hebrew).",
   "defaultVariety": "modern", "varieties": { "modern": "Modern Hebrew", "biblical": "Biblical Hebrew" },
-  "vowelToggle": { "label": "Niqqud", "strip": "\\u0591-\\u05C7" },  // character class hidden when vowels are off; add "nfd": true for precomposed marks like Latin ā
-  "normalize": { "strip": "\\u0591-\\u05C7", "map": { "ך": "כ" } },  // for matching typed answers and coverage ("nfd": true as above)
+  "vowelToggle": { "label": "Niqqud", "strip": "\u0591-\u05C7" },  // character class hidden when vowels are off; add "nfd": true for precomposed marks like Latin ā
+  "normalize": { "strip": "\u0591-\u05C7", "map": { "ך": "כ" } },  // for matching typed answers and coverage ("nfd": true as above)
   "clitics": { "prefixes": ["ו", "ה", "ב", "ל", "מ", "ש"], "suffixes": [] },
   // inflecting languages: "enclitics": ["que"], "stems": true indexes word stems so endings are recognised (see la/pack.json)
   "translit": { "name": "Simplified romanisation" },
