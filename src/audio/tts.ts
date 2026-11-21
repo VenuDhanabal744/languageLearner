@@ -41,3 +41,10 @@ export function speak(text: string, lang: string, o: SpeakOpts = {}): Promise<nu
     speechSynthesis.speak(u)
   })
 }
+
+/** True when playback ended too fast to have read the text: some browser/voice pairs (Chrome on Mac + Carmit)
+ *  "speak" Hebrew in ~0.5 s whatever its length. Real Carmit speech measured ~11 letters/s (unvowelled Hebrew is dense), so flag above ~16. */
+export function playedTooFast(text: string, seconds: number, rate = 0.9): boolean {
+  const letters = (text.match(/\p{L}/gu) ?? []).length
+  return letters >= 8 && seconds > 0 && seconds < letters * 0.06 / rate
+}

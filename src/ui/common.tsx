@@ -5,7 +5,7 @@ import type { World } from '../logic'
 import { logEvent } from '../logic'
 import type { Pack } from '../packs/types'
 import { stripVowels, respell } from '../engine/text'
-import { speak, voicesFor } from '../audio/tts'
+import { speak, voicesFor, playedTooFast } from '../audio/tts'
 import { startRecording, playBlob, type ActiveRecording, type Recording } from '../audio/recorder'
 import { addFlag } from '../store/db'
 
@@ -30,17 +30,23 @@ export function T({ pack, text, big, className }: { pack: Pack; text: string; bi
 
 export function Speak({ pack, text, label = '▶︎', rate, onDone }: { pack: Pack; text: string; label?: string; rate?: number; onDone?: (s: number) => void }) {
   const [busy, setBusy] = useState(false)
-  const has = voicesFor(pack.tts).length > 0
-  return (
+  const [broken, setBroken] = useState(0)
+  const voice = voicesFor(pack.tts)[0]
+  const has = !!voice
+  return (<>
     <button class="btn speak" aria-label={`Play audio`} disabled={busy} title={has ? '' : 'No voice installed for this language'}
       onClick={async () => {
         setBusy(true)
         const secs = await speak(respell(pack, text), pack.tts, { rate })
         setBusy(false)
-        if (secs > 0) logEvent({ lang: pack.id, type: 'listen', seconds: secs })
-        onDone?.(secs)
+        const bad = playedTooFast(text, secs, rate)
+        setBroken(bad ? secs : 0)
+        if (secs > 0 && !bad) logEvent({ lang: pack.id, type: 'listen', seconds: secs })
+        onDone?.(bad ? 0 : secs)
       }}>{busy ? '…' : label}{!has && <small> (no voice)</small>}</button>
-  )
+    {broken > 0 && <p class="warn small">That finished in {broken.toFixed(1)} s, too fast to be the whole sentence, so this browser's {voice?.name ?? ''} voice can't read this script.
+      This is a known problem with Hebrew in Chrome-based browsers on Mac; Safari and iPhone use a different speech engine, so try there. If it happens on iPhone: Settings → Accessibility → Spoken Content → Voices → download the voice again.</p>}
+  </>)
 }
 
 export function Flag({ lang, refId, text }: { lang: string; refId: string; text?: string }) {

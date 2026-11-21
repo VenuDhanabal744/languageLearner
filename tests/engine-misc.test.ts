@@ -79,3 +79,21 @@ describe('metrics', () => {
     expect(m.daily).toHaveLength(14)
   })
 })
+
+describe('broken-voice detection', async () => {
+  const { playedTooFast } = await import('../src/audio/tts')
+  it('flags Hebrew that "played" in half a second (Chrome on Mac + Carmit)', () => {
+    expect(playedTooFast('שָׁלוֹם, אֲנִי וֶנוּ.', 0.5)).toBe(true)
+    expect(playedTooFast('שלום, שמי ונו ואני גר בבולטימור.', 0.52)).toBe(true)
+  })
+  it('accepts real speech timings measured on the same Mac', () => {
+    expect(playedTooFast('שלום, שמי ונו ואני גר בבולטימור.', 2.38)).toBe(false)
+    expect(playedTooFast('Hi, I am Venu.', 1.63)).toBe(false)
+    expect(playedTooFast('مرحبا، اسمي فينو.', 2.5)).toBe(false)
+    expect(playedTooFast('Ciao, mi chiamo Venu.', 2.24)).toBe(false)
+  })
+  it('ignores single words and failed playback', () => {
+    expect(playedTooFast('שָׁלוֹם', 0.3)).toBe(false)
+    expect(playedTooFast('שלום, שמי ונו ואני גר', 0)).toBe(false)
+  })
+})
