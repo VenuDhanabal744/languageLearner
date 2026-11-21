@@ -1,0 +1,9 @@
+[
+  { "id": "ar", "name": "Arabic (Levantine + MSA)", "native": "العربية", "kind": "living", "status": "available", "path": "packs/ar" },
+  { "id": "he", "name": "Hebrew (Modern → Biblical)", "native": "עברית", "kind": "living", "status": "planned" },
+  { "id": "zh", "name": "Mandarin (Simplified)", "native": "中文", "kind": "living", "status": "planned" },
+  { "id": "ta", "name": "Tamil (spoken first)", "native": "தமிழ்", "kind": "living", "status": "planned" },
+  { "id": "la", "name": "Latin (Classical)", "native": "Lingua Latina", "kind": "classical", "status": "planned" },
+  { "id": "grc", "name": "Ancient Greek (Attic)", "native": "Ἑλληνική", "kind": "classical", "status": "planned" },
+  { "id": "sa", "name": "Sanskrit", "native": "संस्कृतम्", "kind": "classical", "status": "planned" }
+]

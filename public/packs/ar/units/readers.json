@@ -1,0 +1,48 @@
+{
+  "texts": [
+    { "id": "r01", "title": "Reader: Layla's coffee", "level": "U4", "v": "lev", "kind": "reading", "names": ["ليلى"], "lines": [
+      { "text": "ليلى طالْبة. هِيِّ مِن الشّام.", "tr": "Layla ṭālbe. hiyye min ish-Shām.", "en": "Layla is a student. She's from Damascus." },
+      { "text": "كِل يَوم بِتروح عالجامْعة.", "tr": "kill yōm btrūḥ ʕal-jāmʕa.", "en": "Every day she goes to the university." },
+      { "text": "بِتحِبّ القَهوة كْتير، بَس بَلا سُكَّر.", "tr": "btḥibb il-ʔahwe ktīr, bass bala sukkar.", "en": "She loves coffee a lot, but without sugar." },
+      { "text": "اليوم ما في قَهوة بِالجامْعة!", "tr": "il-yōm mā fī ʔahwe bil-jāmʕa!", "en": "Today there's no coffee at the university!" },
+      { "text": "ليلى بِتِشرَب شاي. الشّاي مْنيح، بَس مِش قَهوة.", "tr": "Layla btishrab shāy. ish-shāy mnīḥ, bass mish ʔahwe.", "en": "Layla drinks tea. The tea is fine, but it's not coffee." },
+      { "text": "يَعني، مَعلِيش.", "tr": "yaʕni, maʕlēsh.", "en": "Oh well, never mind." }
+    ], "verified": false },
+    { "id": "r02", "title": "Reader: The exam", "level": "U6", "v": "lev", "kind": "reading", "names": ["فينو"], "lines": [
+      { "text": "مْبارِح كان عِند فينو اِمتِحان.", "tr": "mbāriḥ kān ʕind Venu imtiḥān.", "en": "Yesterday Venu had an exam." },
+      { "text": "صِحي الصُّبح، وشِرِب قَهوة، ورَاح عالجامْعة.", "tr": "ṣiḥi iṣ-ṣubḥ, w shirib ʔahwe, w rāḥ ʕal-jāmʕa.", "en": "He woke up in the morning, drank coffee and went to the university." },
+      { "text": "الاِمتِحان كان صَعب شْوَي.", "tr": "il-imtiḥān kān ṣaʕb shwayy.", "en": "The exam was a bit hard." },
+      { "text": "في سُؤال ما عِرِف جَوابو.", "tr": "fī suʔāl mā ʕirif jawābo.", "en": "There was a question he didn't know the answer to." },
+      { "text": "بَعد الاِمتِحان، حَكى مَع المُدَرِّس.", "tr": "baʕd il-imtiḥān, ḥaka maʕ il-mudarris.", "en": "After the exam, he talked with the teacher." },
+      { "text": "المُدَرِّس قال: عادي، كان مْنيح!", "tr": "il-mudarris ʔāl: ʕādi, kān mnīḥ!", "en": "The teacher said: it's fine, it was good!" },
+      { "text": "بِاللَّيل، فينو نام كْتير مْنيح.", "tr": "bil-lēl, Venu nām ktīr mnīḥ.", "en": "At night, Venu slept very well." }
+    ], "verified": false },
+    { "id": "r03", "title": "Reader: Teta's house", "level": "U8", "v": "lev", "kind": "reading", "lines": [
+      { "text": "بَيت تيتا وجِدّو بِالشّام.", "tr": "bēt Tēta w Jiddo bish-Shām.", "en": "Grandma and Grandpa's house is in Damascus." },
+      { "text": "البَيت قَديم وكْبير، وفي أوضة زْغيرة فوق.", "tr": "il-bēt ʔadīm w kbīr, w fī ʔūḍa zghīre fōʔ.", "en": "The house is old and big, and there's a small room upstairs." },
+      { "text": "كِل يَوم الجُمعة، كِل العيلة بِتِجي.", "tr": "kill yōm il-jimʕa, kill il-ʕēle btiji.", "en": "Every Friday, the whole family comes." },
+      { "text": "تيتا بِتعمِل أَكِل طَيِّب كْتير.", "tr": "Tēta btaʕmel ʔakil ṭayyib ktīr.", "en": "Grandma makes very tasty food." },
+      { "text": "جِدّو بيِحكي عَن الشّام القَديمة.", "tr": "Jiddo byiḥki ʕan ish-Shām il-ʔadīme.", "en": "Grandpa talks about old Damascus." },
+      { "text": "الوْلاد بيِشربو عَصير، والكْبار بيِشربو قَهوة.", "tr": "il-wlād byishrabu ʕaṣīr, wil-kbār byishrabu ʔahwe.", "en": "The kids drink juice, and the grown-ups drink coffee." },
+      { "text": "بحِبّ بَيت تيتا كْتير.", "tr": "bḥibb bēt Tēta ktīr.", "en": "I love Grandma's house a lot." }
+    ], "verified": false },
+    { "id": "r04", "title": "Reader: At the hospital", "level": "U9", "v": "lev", "kind": "reading", "names": ["سارة"], "lines": [
+      { "text": "سارة حَكيمة بِالمُستَشفى.", "tr": "Sāra ḥakīme bil-mustashfa.", "en": "Sara is a doctor at the hospital." },
+      { "text": "اليوم في مَرضى كْتير.", "tr": "il-yōm fī marḍa ktīr.", "en": "Today there are a lot of patients." },
+      { "text": "واحِد عِندو وَجَع راس، ووحدة إيدا بِتوجَعا.", "tr": "wāḥad ʕindo wajaʕ rās, w waḥde ʔīda btūjaʕa.", "en": "One has a headache, and one's hand hurts." },
+      { "text": "وَلَد زْغير عِندو حَرارة مِن مْبارِح.", "tr": "walad zghīr ʕindo ḥarāra min mbāriḥ.", "en": "A little boy has had a fever since yesterday." },
+      { "text": "سارة بِتشوف الضَّغط والقَلب.", "tr": "Sāra btshūf iḍ-ḍaghṭ wil-ʔalb.", "en": "Sara checks blood pressure and heart." },
+      { "text": "بِتعطي دَوا، وبِتقول: سَلامتَك!", "tr": "btaʕṭi dawa, w btʔūl: salāmtak!", "en": "She gives medicine and says: get well soon!" },
+      { "text": "بِالمَسا، سارة تَعبانة كْتير، بَس مَبسوطة.", "tr": "bil-masa, Sāra taʕbāne ktīr, bass mabsūṭa.", "en": "In the evening, Sara is very tired, but happy." }
+    ], "verified": false },
+    { "id": "r05", "title": "Reader: A trip to Beirut", "level": "U11", "v": "lev", "kind": "reading", "names": ["بيروت", "فينو", "رامي"], "lines": [
+      { "text": "بَعد شَهر، فينو رَح يسافِر عَلى بيروت.", "tr": "baʕd shahr, Venu raḥ ysāfir ʕala Bēirūt.", "en": "In a month, Venu will travel to Beirut." },
+      { "text": "رَح ياخُد تَكسي مِن المَطار عالأوتيل.", "tr": "raḥ yākhud taksi min il-maṭār ʕal-ʔōtēl.", "en": "He'll take a taxi from the airport to the hotel." },
+      { "text": "الأوتيل قَريب مِن البَحر.", "tr": "il-ʔōtēl ʔarīb min il-baḥr.", "en": "The hotel is close to the sea." },
+      { "text": "صاحْبو رامي ساكِن هونيك.", "tr": "ṣāḥbo Rāmi sākin hōnīk.", "en": "His friend Rami lives there." },
+      { "text": "رَح يِشربو قَهوة، ويِحكو عَرَبي كْتير.", "tr": "raḥ yishrabu ʔahwe, w yiḥku ʕarabi ktīr.", "en": "They'll drink coffee and speak a lot of Arabic." },
+      { "text": "فينو لازِم يِدرُس قَبل السَّفَر.", "tr": "Venu lāzim yidrus ʔabl is-safar.", "en": "Venu has to study before the trip." },
+      { "text": "بِدّو يِفهَم كِل شي، إن شاء الله!", "tr": "biddo yifham kill shī, inshalla!", "en": "He wants to understand everything, hopefully!" }
+    ], "verified": false }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "units": [
+    { "id": "u01", "title": "1 · Hello, I'm…", "goal": "Greet people, say who you are, ask how someone is.", "items": [
+      "script:s1", "word:marhaba", "word:ahlan", "word:ana", "word:inta", "word:inti", "word:kifak", "word:kifik", "word:mnih", "word:hamdilla",
+      "grammar:pronouns", "word:ismi", "word:shu", "word:min-who", "word:mnen", "word:min", "word:huwwe", "word:hiyye", "grammar:nocopula",
+      "word:ya", "word:e", "word:laa", "word:shukran", "word:afwan", "word:tsharrafna", "word:yalla", "word:masalame", "text:d01" ] },
+    { "id": "u02", "title": "2 · Where I'm from, what I study", "goal": "Say where you're from and what you study; describe things.", "items": [
+      "script:s2", "word:wen", "word:hon", "word:honik", "word:bet", "word:jamaa", "word:talib", "word:badrus", "word:tibb", "grammar:gender",
+      "word:amerka", "word:amerkani", "word:arabi", "word:inglizi", "word:isbani", "word:suri", "word:libnan", "grammar:nisba", "word:lugha", "word:madine", "word:hilu",
+      "word:ktir", "word:shwayy", "word:kaman", "word:bass", "word:mish", "text:d02" ] },
+    { "id": "u03", "title": "3 · Want, have, there is", "goal": "Order food and drink; say what you want and have.", "items": [
+      "script:s3", "word:bidd", "word:ahwe", "word:shay", "word:mayy", "grammar:bidd", "word:lawsamaht", "word:maa", "word:sukkar", "word:bala", "word:walla",
+      "word:indi", "grammar:ind", "word:fi", "word:ma-neg", "word:mishkle", "word:khibz", "word:akl", "word:asir", "grammar:fi", "word:hada", "word:hay", "word:kam", "word:addesh",
+      "word:shi", "word:atshan", "word:juan", "word:tayyib", "word:sahten", "word:mabsut", "text:d03" ] },
+    { "id": "u04", "title": "4 · What I do", "goal": "Talk about daily actions in the present; ask questions.", "items": [
+      "script:s4", "word:baarif", "word:bhibb", "word:bishrab", "word:bakul", "grammar:present", "word:bahki", "word:bifham", "word:bruh", "word:biji", "word:baamel",
+      "word:am", "word:halla", "word:shughl", "word:kill", "word:yom", "grammar:questions", "word:lesh", "word:kif", "word:emta", "word:lainno", "word:saab",
+      "word:mazbut", "word:maalesh", "word:yaani", "text:d04" ] }
+  ],
+  "words": [
+    { "id": "marhaba", "text": "مَرحَبا", "tr": "marḥaba", "en": "hello", "pos": "interj", "ex": { "text": "مَرحَبا، أَنا فينو.", "tr": "marḥaba, ʔana Venu.", "en": "Hello, I'm Venu." }, "verified": false },
+    { "id": "ahlan", "text": "أَهلا", "tr": "ʔahlan", "en": "hi / welcome", "pos": "interj", "forms": ["سهلا", "أهلين"], "ex": { "text": "أَهلا وسَهلا!", "tr": "ʔahlan w sahlan!", "en": "Welcome!" }, "verified": false },
+    { "id": "ana", "text": "أَنا", "tr": "ʔana", "en": "I", "pos": "pron", "ex": { "text": "أَنا مْنيح.", "tr": "ʔana mnīḥ.", "en": "I'm fine." }, "verified": false },
+    { "id": "inta", "text": "إنتَ", "tr": "inta", "en": "you (to a man)", "pos": "pron", "msa": { "text": "أَنتَ", "tr": "ʔanta" }, "ex": { "text": "وإنتَ، كِيفَك؟", "tr": "w inta, kīfak?", "en": "And you, how are you?" }, "verified": false },
+    { "id": "inti", "text": "إنتِ", "tr": "inti", "en": "you (to a woman)", "pos": "pron", "msa": { "text": "أَنتِ", "tr": "ʔanti" }, "ex": { "text": "وإنتِ، كِيفِك؟", "tr": "w inti, kīfik?", "en": "And you (f), how are you?" }, "verified": false },
+    { "id": "kifak", "text": "كِيفَك", "tr": "kīfak", "en": "how are you? (to a man)", "pos": "phrase", "msa": { "text": "كَيفَ حالُكَ", "tr": "kayfa ḥāluka" }, "ex": { "text": "مَرحَبا، كِيفَك؟", "tr": "marḥaba, kīfak?", "en": "Hi, how are you?" }, "verified": false },
+    { "id": "kifik", "text": "كِيفِك", "tr": "kīfik", "en": "how are you? (to a woman)", "pos": "phrase", "msa": { "text": "كَيفَ حالُكِ", "tr": "kayfa ḥāluki" }, "ex": { "text": "أَهلا ليلى، كِيفِك؟", "tr": "ʔahlan Layla, kīfik?", "en": "Hi Layla, how are you?" }, "verified": false },
+    { "id": "mnih", "text": "مْنيح", "tr": "mnīḥ", "en": "good, fine (m); f: mnīḥa", "pos": "adj", "forms": ["منيحة", "منيحين"], "msa": { "text": "جَيِّد", "tr": "jayyid" }, "ex": { "text": "أَنا مْنيح، الحَمدِلله.", "tr": "ʔana mnīḥ, il-ḥamdilla.", "en": "I'm fine, thank God." }, "verified": false },
+    { "id": "hamdilla", "text": "الحَمدِلله", "tr": "il-ḥamdilla", "en": "thank God (the usual answer to 'how are you')", "pos": "phrase", "forms": ["الحمد لله"], "ex": { "text": "مْنيحة، الحَمدِلله، وإنتَ؟", "tr": "mnīḥa, il-ḥamdilla, w inta?", "en": "Fine, thank God, and you?" }, "verified": false },
+    { "id": "ismi", "text": "اِسمي", "tr": "ismi", "en": "my name (ismak = your name, m; ismik = f)", "pos": "noun", "root": "s-m-w", "forms": ["اسمك", "اسمو", "اسما", "اسم"], "ex": { "text": "اِسمي فينو.", "tr": "ismi Venu.", "en": "My name is Venu." }, "verified": false },
+    { "id": "shu", "text": "شو", "tr": "shū", "en": "what", "pos": "q", "msa": { "text": "ماذا", "tr": "mādhā" }, "ex": { "text": "شو اِسمَك؟", "tr": "shū ismak?", "en": "What's your name?" }, "verified": false },
+    { "id": "min-who", "text": "مين", "tr": "mīn", "en": "who", "pos": "q", "msa": { "text": "مَن", "tr": "man" }, "ex": { "text": "مين إنتِ؟", "tr": "mīn inti?", "en": "Who are you (f)?" }, "verified": false },
+    { "id": "mnen", "text": "مْنين", "tr": "mnēn", "en": "from where", "pos": "q", "msa": { "text": "مِن أَين", "tr": "min ʔayna" }, "ex": { "text": "إنتَ مْنين؟", "tr": "inta mnēn?", "en": "Where are you from?" }, "verified": false },
+    { "id": "min", "text": "مِن", "tr": "min", "en": "from", "pos": "prep", "ex": { "text": "أَنا مِن أَميركا.", "tr": "ʔana min ʔamērka.", "en": "I'm from America." }, "verified": false },
+    { "id": "huwwe", "text": "هُوِّ", "tr": "huwwe", "en": "he", "pos": "pron", "msa": { "text": "هُوَ", "tr": "huwa" }, "ex": { "text": "هُوِّ مِن لُبنان.", "tr": "huwwe min Libnān.", "en": "He's from Lebanon." }, "verified": false },
+    { "id": "hiyye", "text": "هِيِّ", "tr": "hiyye", "en": "she", "pos": "pron", "msa": { "text": "هِيَ", "tr": "hiya" }, "ex": { "text": "هِيِّ مِن سوريا.", "tr": "hiyye min Sūrya.", "en": "She's from Syria." }, "verified": false },
+    { "id": "e", "text": "إي", "tr": "ʔē", "en": "yes", "pos": "interj", "forms": ["ايه"], "msa": { "text": "نَعَم", "tr": "naʕam" }, "ex": { "text": "إي، أَنا مْنيح.", "tr": "ʔē, ʔana mnīḥ.", "en": "Yes, I'm fine." }, "verified": false },
+    { "id": "laa", "text": "لأ", "tr": "laʔ", "en": "no", "pos": "interj", "msa": { "text": "لا", "tr": "lā" }, "ex": { "text": "لأ، شُكرًا.", "tr": "laʔ, shukran.", "en": "No, thanks." }, "verified": false },
+    { "id": "shukran", "text": "شُكرًا", "tr": "shukran", "en": "thank you", "pos": "interj", "root": "sh-k-r", "ex": { "text": "شُكرًا كْتير!", "tr": "shukran ktīr!", "en": "Thanks a lot!" }, "verified": false },
+    { "id": "afwan", "text": "عَفوًا", "tr": "ʕafwan", "en": "you're welcome / excuse me", "pos": "interj", "ex": { "text": "شُكرًا! عَفوًا.", "tr": "shukran! ʕafwan.", "en": "Thanks! You're welcome." }, "verified": false },
+    { "id": "tsharrafna", "text": "تْشَرَّفنا", "tr": "tsharrafna", "en": "nice to meet you", "pos": "phrase", "root": "sh-r-f", "ex": { "text": "أَهلا، تْشَرَّفنا!", "tr": "ʔahlan, tsharrafna!", "en": "Hi, nice to meet you!" }, "verified": false },
+    { "id": "yalla", "text": "يَلّا", "tr": "yalla", "en": "come on / let's go / OK then", "pos": "interj", "ex": { "text": "يَلّا، مَع السَّلامة!", "tr": "yalla, maʕ is-salāme!", "en": "OK then, bye!" }, "verified": false },
+    {"id": "ya", "text": "يا", "tr": "yā", "en": "(calling someone: O…, hey…)", "pos": "particle", "ex": {"text": "يا ليلى، وين إنتِ؟", "tr": "yā Layla, wēn inti?", "en": "Layla, where are you?"}, "verified": false},
+    { "id": "masalame", "text": "مَع السَّلامة", "tr": "maʕ is-salāme", "en": "goodbye (lit. with safety)", "pos": "phrase", "root": "s-l-m", "ex": { "text": "شُكرًا، مَع السَّلامة.", "tr": "shukran, maʕ is-salāme.", "en": "Thanks, goodbye." }, "verified": false },
+
+    { "id": "wen", "text": "وين", "tr": "wēn", "en": "where", "pos": "q", "msa": { "text": "أَين", "tr": "ʔayna" }, "ex": { "text": "وين الجامْعة؟", "tr": "wēn il-jāmʕa?", "en": "Where's the university?" }, "verified": false },
+    { "id": "hon", "text": "هون", "tr": "hōn", "en": "here", "pos": "adv", "msa": { "text": "هُنا", "tr": "hunā" }, "ex": { "text": "أَنا هون.", "tr": "ʔana hōn.", "en": "I'm here." }, "verified": false },
+    { "id": "honik", "text": "هونيك", "tr": "hōnīk", "en": "there", "pos": "adv", "msa": { "text": "هُناك", "tr": "hunāka" }, "ex": { "text": "الجامْعة هونيك.", "tr": "il-jāmʕa hōnīk.", "en": "The university is over there." }, "verified": false },
+    { "id": "bet", "text": "بَيت", "tr": "bēt", "en": "house, home", "pos": "noun", "root": "b-y-t", "ex": { "text": "بَيتي هون.", "tr": "bēti hōn.", "en": "My house is here." }, "verified": false },
+    { "id": "jamaa", "text": "جامْعة", "tr": "jāmʕa", "en": "university", "pos": "noun", "root": "j-m-ʕ", "ex": { "text": "أَنا بالجامْعة هَلَّق.", "tr": "ʔana bil-jāmʕa hallaʔ.", "en": "I'm at the university now." }, "verified": false },
+    { "id": "talib", "text": "طالِب", "tr": "ṭālib", "en": "student (m); f: ṭālbe", "pos": "noun", "root": "ṭ-l-b", "pattern": "CāCiC", "forms": ["طالبة", "طلاب"], "ex": { "text": "أَنا طالِب بِجامْعة هوبكنز.", "tr": "ʔana ṭālib b-jāmʕit Hopkins.", "en": "I'm a student at Hopkins University." }, "verified": false },
+    { "id": "badrus", "text": "بَدرُس", "tr": "badrus", "en": "I study (btidrus = you study, m)", "pos": "verb", "root": "d-r-s", "forms": ["درست", "يدرس", "تدرس", "ادرس", "يدرسون", "تدرسُ", "بتدرس", "بتدرسي", "بيدرس", "مندرس"], "msa": { "text": "أَدرُسُ", "tr": "ʔadrusu" }, "ex": { "text": "بَدرُس طِبّ.", "tr": "badrus ṭibb.", "en": "I study medicine." }, "verified": false },
+    { "id": "tibb", "text": "طِبّ", "tr": "ṭibb", "en": "medicine (the field)", "pos": "noun", "root": "ṭ-b-b", "ex": { "text": "هِيِّ طالْبة طِبّ.", "tr": "hiyye ṭālbit ṭibb.", "en": "She's a medical student." }, "verified": false },
+    { "id": "amerka", "text": "أَميركا", "tr": "ʔamērka", "en": "America", "pos": "noun", "forms": ["أمريكا"], "ex": { "text": "إنتِ مِن أَميركا؟", "tr": "inti min ʔamērka?", "en": "Are you (f) from America?" }, "verified": false },
+    { "id": "amerkani", "text": "أَميركاني", "tr": "ʔamērkāni", "en": "American (m); f: ʔamērkāniyye", "pos": "adj", "forms": ["أميركانية", "أمريكي", "أمريكية"], "ex": { "text": "هِيِّ أَميركانية.", "tr": "hiyye ʔamērkāniyye.", "en": "She's American." }, "verified": false },
+    { "id": "arabi", "text": "عَرَبي", "tr": "ʕarabi", "en": "Arabic; Arab", "pos": "adj", "root": "ʕ-r-b", "forms": ["عربية", "العربي"], "ex": { "text": "بَدرُس عَرَبي.", "tr": "badrus ʕarabi.", "en": "I study Arabic." }, "verified": false },
+    { "id": "inglizi", "text": "إنكليزي", "tr": "inglīzi", "en": "English", "pos": "adj", "forms": ["انجليزي", "انكليزية"], "ex": { "text": "بْتِحكي إنكليزي؟", "tr": "btiḥki inglīzi?", "en": "Do you speak English?" }, "verified": false },
+    { "id": "isbani", "text": "إسباني", "tr": "isbāni", "en": "Spanish", "pos": "adj", "forms": ["اسبانية"], "ex": { "text": "بَحكي إسباني كَمان.", "tr": "baḥki isbāni kamān.", "en": "I speak Spanish too." }, "verified": false },
+    {"id": "suri", "text": "سوري", "tr": "sūri", "en": "Syrian (f: sūriyye)", "pos": "adj", "forms": ["سورية", "سوريا"], "ex": {"text": "المُدَرِّس سوري.", "tr": "il-mudarris sūri.", "en": "The teacher is Syrian."}, "verified": false},
+    {"id": "libnan", "text": "لُبنان", "tr": "Libnān", "en": "Lebanon (libnāni = Lebanese)", "pos": "noun", "forms": ["لبناني", "لبنانية"], "ex": {"text": "هُوِّ مِن لُبنان.", "tr": "huwwe min Libnān.", "en": "He's from Lebanon."}, "verified": false},
+    { "id": "lugha", "text": "لُغة", "tr": "lugha", "en": "language", "pos": "noun", "forms": ["لغات"], "ex": { "text": "العَرَبي لُغة حِلوة.", "tr": "il-ʕarabi lugha ḥilwe.", "en": "Arabic is a beautiful language." }, "verified": false },
+    { "id": "madine", "text": "مَدينة", "tr": "madīne", "en": "city", "pos": "noun", "forms": ["مدن"], "ex": { "text": "بالتيمور مَدينة كْبيرة.", "tr": "Baltimore madīne kbīre.", "en": "Baltimore is a big city." }, "verified": false },
+    { "id": "hilu", "text": "حِلو", "tr": "ḥilu", "en": "nice, pretty, sweet (f: ḥilwe)", "pos": "adj", "forms": ["حلوة", "حلوين"], "msa": { "text": "جَميل", "tr": "jamīl" }, "ex": { "text": "الشّام مَدينة حِلوة.", "tr": "ish-Shām madīne ḥilwe.", "en": "Damascus is a beautiful city." }, "verified": false },
+    { "id": "ktir", "text": "كْتير", "tr": "ktīr", "en": "very; a lot", "pos": "adv", "msa": { "text": "كَثير", "tr": "kathīr", "note": "'very' in MSA is jiddan جِدًّا" }, "ex": { "text": "بحِبّ الشّام كْتير.", "tr": "bḥibb ish-Shām ktīr.", "en": "I love Damascus a lot." }, "verified": false },
+    { "id": "shwayy", "text": "شْوَي", "tr": "shwayy", "en": "a little", "pos": "adv", "forms": ["شوية"], "msa": { "text": "قَليلًا", "tr": "qalīlan" }, "ex": { "text": "بَحكي عَرَبي شْوَي.", "tr": "baḥki ʕarabi shwayy.", "en": "I speak a little Arabic." }, "verified": false },
+    { "id": "kaman", "text": "كَمان", "tr": "kamān", "en": "also, too; more", "pos": "adv", "msa": { "text": "أَيضًا", "tr": "ʔayḍan" }, "ex": { "text": "وأَنا كَمان!", "tr": "w ʔana kamān!", "en": "Me too!" }, "verified": false },
+    { "id": "bass", "text": "بَس", "tr": "bass", "en": "but; only; enough", "pos": "conj", "msa": { "text": "لٰكِن", "tr": "lākin" }, "ex": { "text": "بَحكي إسباني، بَس مِش عَرَبي.", "tr": "baḥki isbāni, bass mish ʕarabi.", "en": "I speak Spanish, but not Arabic." }, "verified": false },
+    { "id": "mish", "text": "مِش", "tr": "mish", "en": "not (before nouns/adjectives)", "pos": "neg", "msa": { "text": "لَيسَ", "tr": "laysa" }, "ex": { "text": "أَنا مِش أَميركاني.", "tr": "ʔana mish ʔamērkāni.", "en": "I'm not American." }, "verified": false },
+
+    { "id": "bidd", "text": "بِدّي", "tr": "biddi", "en": "I want (biddak you m, biddik you f, biddo he, bidda she)", "pos": "verb-like", "forms": ["بدك", "بدّك", "بدِّك", "بدو", "بدا", "بدنا", "بدكن", "بدهن"], "msa": { "text": "أُريدُ", "tr": "ʔurīdu" }, "ex": { "text": "بِدّي قَهوة، لَو سَمَحت.", "tr": "biddi ʔahwe, law samaḥt.", "en": "I'd like coffee, please." }, "verified": false },
+    { "id": "ahwe", "text": "قَهوة", "tr": "ʔahwe", "en": "coffee", "pos": "noun", "ex": { "text": "القَهوة طَيِّبة.", "tr": "il-ʔahwe ṭayybe.", "en": "The coffee is good." }, "verified": false },
+    { "id": "shay", "text": "شاي", "tr": "shāy", "en": "tea", "pos": "noun", "ex": { "text": "بِدَّك شاي؟", "tr": "biddak shāy?", "en": "Do you want tea?" }, "verified": false },
+    { "id": "mayy", "text": "مَي", "tr": "mayy", "en": "water", "pos": "noun", "forms": ["مي"], "msa": { "text": "ماء", "tr": "māʔ" }, "ex": { "text": "بِدّي مَي، لَو سَمَحت.", "tr": "biddi mayy, law samaḥt.", "en": "I'd like water, please." }, "verified": false },
+    { "id": "lawsamaht", "text": "لَو سَمَحت", "tr": "law samaḥt", "en": "please (to a man; to a woman: law samaḥti)", "pos": "phrase", "forms": ["سمحتي"], "msa": { "text": "مِن فَضلِكَ", "tr": "min faḍlika" }, "ex": { "text": "شاي، لَو سَمَحت.", "tr": "shāy, law samaḥt.", "en": "Tea, please." }, "verified": false },
+    { "id": "maa", "text": "مَع", "tr": "maʕ", "en": "with", "pos": "prep", "ex": { "text": "شاي مَع سُكَّر.", "tr": "shāy maʕ sukkar.", "en": "Tea with sugar." }, "verified": false },
+    { "id": "sukkar", "text": "سُكَّر", "tr": "sukkar", "en": "sugar", "pos": "noun", "ex": { "text": "بِدَّك سُكَّر؟", "tr": "biddak sukkar?", "en": "Do you want sugar?" }, "note": "Spanish azúcar comes from Arabic as-sukkar.", "verified": false },
+    { "id": "bala", "text": "بَلا", "tr": "bala", "en": "without", "pos": "prep", "msa": { "text": "بِدونِ", "tr": "bidūni" }, "ex": { "text": "قَهوة بَلا سُكَّر.", "tr": "ʔahwe bala sukkar.", "en": "Coffee without sugar." }, "verified": false },
+    { "id": "walla", "text": "وَلّا", "tr": "walla", "en": "or (in questions)", "pos": "conj", "msa": { "text": "أَم", "tr": "ʔam" }, "ex": { "text": "شاي وَلّا قَهوة؟", "tr": "shāy walla ʔahwe?", "en": "Tea or coffee?" }, "verified": false },
+    { "id": "indi", "text": "عِندي", "tr": "ʕindi", "en": "I have (ʕindak you m, ʕindik you f, ʕindo he)", "pos": "prep", "forms": ["عندك", "عندِك", "عندو", "عندا", "عندنا", "عندكن", "عندهن", "عند"], "msa": { "text": "لَدَيَّ", "tr": "ladayya" }, "ex": { "text": "عِندي سُؤال.", "tr": "ʕindi suʔāl.", "en": "I have a question." }, "verified": false },
+    { "id": "fi", "text": "في", "tr": "fī", "en": "there is; in", "pos": "particle", "ex": { "text": "في قَهوة؟", "tr": "fī ʔahwe?", "en": "Is there coffee?" }, "verified": false },
+    { "id": "ma-neg", "text": "ما", "tr": "mā", "en": "not (before verbs, fī, ʕind-, bidd-)", "pos": "neg", "ex": { "text": "ما في خِبز.", "tr": "mā fī khibz.", "en": "There's no bread." }, "verified": false },
+    {"id": "mishkle", "text": "مُشكِلة", "tr": "mishkle", "en": "problem", "pos": "noun", "forms": ["مشاكل"], "ex": {"text": "ما في مُشكِلة.", "tr": "mā fī mishkle.", "en": "No problem."}, "verified": false},
+    { "id": "khibz", "text": "خِبز", "tr": "khibz", "en": "bread", "pos": "noun", "ex": { "text": "بِدّي خِبز.", "tr": "biddi khibz.", "en": "I want bread." }, "verified": false },
+    { "id": "akl", "text": "أَكِل", "tr": "ʔakil", "en": "food", "pos": "noun", "root": "ʔ-k-l", "forms": ["أكل"], "msa": { "text": "طَعام", "tr": "ṭaʕām" }, "ex": { "text": "الأَكِل هون طَيِّب.", "tr": "il-ʔakil hōn ṭayyib.", "en": "The food here is good." }, "verified": false },
+    { "id": "asir", "text": "عَصير", "tr": "ʕaṣīr", "en": "juice", "pos": "noun", "ex": { "text": "بِدّي عَصير.", "tr": "biddi ʕaṣīr.", "en": "I want juice." }, "verified": false },
+    { "id": "hada", "text": "هادا", "tr": "hāda", "en": "this (m)", "pos": "dem", "forms": ["هاد"], "msa": { "text": "هٰذا", "tr": "hādhā" }, "ex": { "text": "شو هادا؟", "tr": "shū hāda?", "en": "What's this?" }, "verified": false },
+    { "id": "hay", "text": "هاي", "tr": "hāy", "en": "this (f)", "pos": "dem", "forms": ["هيدي"], "msa": { "text": "هٰذِهِ", "tr": "hādhihi" }, "ex": { "text": "هاي قَهوة طَيِّبة.", "tr": "hāy ʔahwe ṭayybe.", "en": "This is good coffee." }, "verified": false },
+    { "id": "kam", "text": "كَم", "tr": "kam", "en": "how many; a few", "pos": "q", "ex": { "text": "كَم طالِب في؟", "tr": "kam ṭālib fī?", "en": "How many students are there?" }, "verified": false },
+    { "id": "addesh", "text": "قَدّيش", "tr": "ʔaddēsh", "en": "how much", "pos": "q", "msa": { "text": "كَم", "tr": "kam" }, "ex": { "text": "قَدّيش هادا؟", "tr": "ʔaddēsh hāda?", "en": "How much is this?" }, "verified": false },
+    { "id": "shi", "text": "شي", "tr": "shī", "en": "something; any", "pos": "noun", "msa": { "text": "شَيء", "tr": "shayʔ" }, "ex": { "text": "بِدَّك شي؟", "tr": "biddak shī?", "en": "Do you want anything?" }, "verified": false },
+    { "id": "atshan", "text": "عَطشان", "tr": "ʕaṭshān", "en": "thirsty (f: ʕaṭshāne)", "pos": "adj", "forms": ["عطشانة"], "ex": { "text": "أَنا عَطشان.", "tr": "ʔana ʕaṭshān.", "en": "I'm thirsty." }, "verified": false },
+    { "id": "juan", "text": "جوعان", "tr": "jūʕān", "en": "hungry (f: jūʕāne)", "pos": "adj", "forms": ["جوعانة"], "ex": { "text": "إنتِ جوعانة؟", "tr": "inti jūʕāne?", "en": "Are you (f) hungry?" }, "verified": false },
+    { "id": "tayyib", "text": "طَيِّب", "tr": "ṭayyib", "en": "tasty, good; OK", "pos": "adj", "forms": ["طيبة"], "ex": { "text": "طَيِّب، يَلّا.", "tr": "ṭayyib, yalla.", "en": "OK, let's go." }, "verified": false },
+    { "id": "sahten", "text": "صَحتين", "tr": "ṣaḥtēn", "en": "bon appétit / enjoy (lit. two healths)", "pos": "phrase", "ex": { "text": "صَحتين!", "tr": "ṣaḥtēn!", "en": "Enjoy your meal!" }, "verified": false },
+    { "id": "mabsut", "text": "مَبسوط", "tr": "mabsūṭ", "en": "happy, pleased (f: mabsūṭa)", "pos": "adj", "forms": ["مبسوطة"], "ex": { "text": "أَنا مَبسوط هون.", "tr": "ʔana mabsūṭ hōn.", "en": "I'm happy here." }, "verified": false },
+
+    { "id": "baarif", "text": "بَعرِف", "tr": "baʕrif", "en": "I know", "pos": "verb", "root": "ʕ-r-f", "forms": ["يعرف", "تعرف", "عرف", "عرفت", "بتعرف", "بتعرفي", "بيعرف", "منعرف", "بعرفش"], "msa": { "text": "أَعرِفُ", "tr": "ʔaʕrifu" }, "ex": { "text": "ما بَعرِف.", "tr": "mā baʕrif.", "en": "I don't know." }, "verified": false },
+    { "id": "bhibb", "text": "بحِبّ", "tr": "bḥibb", "en": "I like, I love", "pos": "verb", "root": "ḥ-b-b", "forms": ["بتحب", "بتحبي", "بيحب", "منحب"], "msa": { "text": "أُحِبُّ", "tr": "ʔuḥibbu" }, "ex": { "text": "بحِبّ القَهوة.", "tr": "bḥibb il-ʔahwe.", "en": "I love coffee." }, "verified": false },
+    { "id": "bishrab", "text": "بِشرَب", "tr": "bishrab", "en": "I drink", "pos": "verb", "root": "sh-r-b", "forms": ["نشرب", "يشرب", "تشرب", "اشرب", "يشربو", "بتشرب", "بتشربي", "بيشرب", "منشرب"], "msa": { "text": "أَشرَبُ", "tr": "ʔashrabu" }, "ex": { "text": "بِشرَب شاي كِل يَوم.", "tr": "bishrab shāy kill yōm.", "en": "I drink tea every day." }, "verified": false },
+    { "id": "bakul", "text": "باكُل", "tr": "bākul", "en": "I eat", "pos": "verb", "root": "ʔ-k-l", "forms": ["بتاكل", "بتاكلي", "بياكل", "مناكل"], "msa": { "text": "آكُلُ", "tr": "ʔākulu" }, "ex": { "text": "باكُل خِبز.", "tr": "bākul khibz.", "en": "I eat bread." }, "verified": false },
+    { "id": "bahki", "text": "بَحكي", "tr": "baḥki", "en": "I speak, I talk", "pos": "verb", "root": "ḥ-k-y", "forms": ["تحكي", "يحكي", "احكي", "يحكو", "يتكلم", "يتكلمون", "تتكلم", "بتحكي", "بيحكي", "منحكي"], "msa": { "text": "أَتَكَلَّمُ", "tr": "ʔatakallamu" }, "ex": { "text": "بَحكي إسباني.", "tr": "baḥki isbāni.", "en": "I speak Spanish." }, "verified": false },
+    { "id": "bifham", "text": "بِفهَم", "tr": "bifham", "en": "I understand", "pos": "verb", "root": "f-h-m", "forms": ["يفهم", "افهم", "تفهم", "يفهمون", "بتفهم", "بتفهمي", "بيفهم", "فهمت"], "msa": { "text": "أَفهَمُ", "tr": "ʔafhamu" }, "ex": { "text": "بِفهَم شْوَي.", "tr": "bifham shwayy.", "en": "I understand a little." }, "verified": false },
+    { "id": "bruh", "text": "بْروح", "tr": "brūḥ", "en": "I go", "pos": "verb", "root": "r-w-ḥ", "forms": ["تروح", "يروح", "نروح", "بتروح", "بتروحي", "بيروح", "منروح", "روح"], "msa": { "text": "أَذهَبُ", "tr": "ʔadhhabu" }, "ex": { "text": "بْروح عالجامْعة.", "tr": "brūḥ ʕal-jāmʕa.", "en": "I go to the university." }, "verified": false },
+    { "id": "biji", "text": "بِجي", "tr": "bijī", "en": "I come", "pos": "verb", "root": "j-y-ʔ", "forms": ["اجي", "تجي", "يجي", "تعا", "بتجي", "بيجي", "منجي", "جيت"], "msa": { "text": "آتي", "tr": "ʔātī" }, "ex": { "text": "بِجي بُكرا.", "tr": "bijī bukra.", "en": "I'll come tomorrow." }, "verified": false },
+    { "id": "baamel", "text": "بَعمِل", "tr": "baʕmel", "en": "I do, I make", "pos": "verb", "root": "ʕ-m-l", "forms": ["تعمل", "يعمل", "نعمل", "اعمل", "بتعمل", "بتعملي", "بيعمل", "منعمل"], "msa": { "text": "أَعمَلُ", "tr": "ʔaʕmalu" }, "ex": { "text": "شو بْتَعمِل؟", "tr": "shū btaʕmel?", "en": "What are you doing?" }, "verified": false },
+    { "id": "am", "text": "عَم", "tr": "ʕam", "en": "(in progress: 'am …-ing')", "pos": "particle", "ex": { "text": "عَم بَدرُس هَلَّق.", "tr": "ʕam badrus hallaʔ.", "en": "I'm studying right now." }, "verified": false },
+    { "id": "halla", "text": "هَلَّق", "tr": "hallaʔ", "en": "now", "pos": "adv", "forms": ["هلأ"], "msa": { "text": "الآن", "tr": "al-ʔān" }, "ex": { "text": "وين إنتَ هَلَّق؟", "tr": "wēn inta hallaʔ?", "en": "Where are you now?" }, "verified": false },
+    { "id": "shughl", "text": "شُغل", "tr": "shughl", "en": "work, job", "pos": "noun", "root": "sh-gh-l", "msa": { "text": "عَمَل", "tr": "ʕamal" }, "ex": { "text": "عِندي شُغل كْتير.", "tr": "ʕindi shughl ktīr.", "en": "I have a lot of work." }, "verified": false },
+    { "id": "kill", "text": "كِل", "tr": "kill", "en": "every; all", "pos": "quant", "forms": ["كل"], "msa": { "text": "كُلّ", "tr": "kull" }, "ex": { "text": "كِل الطُّلّاب هون.", "tr": "kill iṭ-ṭullāb hōn.", "en": "All the students are here." }, "verified": false },
+    { "id": "yom", "text": "يَوم", "tr": "yōm", "en": "day", "pos": "noun", "forms": ["اليوم", "أيام"], "ex": { "text": "كِل يَوم بَدرُس.", "tr": "kill yōm badrus.", "en": "I study every day." }, "verified": false },
+    { "id": "lesh", "text": "لَيش", "tr": "lēsh", "en": "why", "pos": "q", "msa": { "text": "لِماذا", "tr": "limādhā" }, "ex": { "text": "لَيش بْتِدرُس عَرَبي؟", "tr": "lēsh btidrus ʕarabi?", "en": "Why do you study Arabic?" }, "verified": false },
+    { "id": "kif", "text": "كيف", "tr": "kīf", "en": "how", "pos": "q", "msa": { "text": "كَيفَ", "tr": "kayfa" }, "ex": { "text": "كيف بْتِحكي هَيك؟", "tr": "kīf btiḥki hēk?", "en": "How do you say it like that?" }, "verified": false },
+    { "id": "emta", "text": "إيمتى", "tr": "ʔēmta", "en": "when (question)", "pos": "q", "msa": { "text": "مَتى", "tr": "matā" }, "ex": { "text": "إيمتى بْتِجي؟", "tr": "ʔēmta btiji?", "en": "When are you coming?" }, "verified": false },
+    { "id": "lainno", "text": "لَإنّو", "tr": "laʔinno", "en": "because", "pos": "conj", "forms": ["لأنو", "لانو"], "msa": { "text": "لِأَنَّ", "tr": "liʔanna" }, "ex": { "text": "بَدرُس عَرَبي لَإنّو بحِبّ اللُّغة.", "tr": "badrus ʕarabi laʔinno bḥibb il-lugha.", "en": "I study Arabic because I love the language." }, "verified": false },
+    { "id": "saab", "text": "صَعب", "tr": "ṣaʕb", "en": "difficult (f: ṣaʕbe)", "pos": "adj", "forms": ["صعبة"], "msa": { "text": "صَعب", "tr": "ṣaʕb" }, "ex": { "text": "العَرَبي مِش صَعب كْتير.", "tr": "il-ʕarabi mish ṣaʕb ktīr.", "en": "Arabic isn't very hard." }, "verified": false },
+    { "id": "mazbut", "text": "مَزبوط", "tr": "mazbūṭ", "en": "right, correct", "pos": "adj", "forms": ["مظبوط"], "ex": { "text": "إي، مَزبوط!", "tr": "ʔē, mazbūṭ!", "en": "Yes, exactly!" }, "verified": false },
+    { "id": "maalesh", "text": "مَعلِيش", "tr": "maʕlēsh", "en": "never mind; sorry; it's OK", "pos": "interj", "forms": ["معليه"], "ex": { "text": "مَعلِيش، ما بِفهَم.", "tr": "maʕlēsh, mā bifham.", "en": "Sorry, I don't understand." }, "verified": false },
+    { "id": "yaani", "text": "يَعني", "tr": "yaʕni", "en": "I mean; so; kind of", "pos": "interj", "ex": { "text": "يَعني، مْنيح.", "tr": "yaʕni, mnīḥ.", "en": "So-so, fine." }, "verified": false }
+  ],
+  "grammar": [
+    { "id": "pronouns", "title": "Personal pronouns", "body": [
+      "Levantine pronouns: **ʔana** I · **inta** you (m) · **inti** you (f) · **huwwe** he · **hiyye** she · **niḥna** we · **intu** you (pl) · **hinne** they.",
+      "Arabic always distinguishes 'you' to a man vs a woman, so verbs and adjectives change too (kīfak / kīfik)."
+    ], "examples": [
+      { "text": "أَنا فينو، وإنتِ؟", "tr": "ʔana Venu, w inti?", "en": "I'm Venu, and you (f)?" },
+      { "text": "نِحنا طُلّاب.", "tr": "niḥna ṭullāb.", "en": "We're students." },
+      { "text": "هِنّي مِن لُبنان.", "tr": "hinne min Libnān.", "en": "They're from Lebanon." }
+    ], "drills": [
+      { "id": "pr1", "prompt": "Say: I'm Venu.", "answer": "أَنا فينو.", "tr": "ʔana Venu." },
+      { "id": "pr2", "prompt": "Ask a woman: and you?", "answer": "وإنتِ؟", "tr": "w inti?" },
+      { "id": "pr3", "prompt": "Say: He's from Lebanon.", "answer": "هُوِّ مِن لُبنان.", "tr": "huwwe min Libnān." },
+      { "id": "pr4", "prompt": "Say: We're from America.", "answer": "نِحنا مِن أَميركا.", "tr": "niḥna min ʔamērka." }
+    ], "verified": false },
+    { "id": "nocopula", "title": "No 'is/are' in the present", "concept": "copula-zero", "body": [
+      "Arabic doesn't say 'am / is / are' in the present. Just put the two parts side by side: **ʔana mnīḥ** = I (am) fine; **huwwe min Libnān** = he (is) from Lebanon.",
+      "You'll meet the past 'was' (kān) in Unit 6."
+    ], "examples": [
+      { "text": "أَنا مْنيح.", "tr": "ʔana mnīḥ.", "en": "I'm fine." },
+      { "text": "هِيِّ مِن سوريا.", "tr": "hiyye min Sūrya.", "en": "She's from Syria." }
+    ], "drills": [
+      { "id": "nc1", "prompt": "Say: I'm fine, thank God.", "answer": "أَنا مْنيح، الحَمدِلله.", "tr": "ʔana mnīḥ, il-ḥamdilla." },
+      { "id": "nc2", "prompt": "Say: She's from Syria.", "answer": "هِيِّ مِن سوريا.", "tr": "hiyye min Sūrya." },
+      { "id": "nc3", "prompt": "Ask a man: Where are you from?", "answer": "إنتَ مْنين؟", "tr": "inta mnēn?" }
+    ], "verified": false },
+    { "id": "gender", "title": "Masculine and feminine", "concept": "gender", "body": [
+      "Most feminine nouns and adjectives end in **ـة** (said -a or -e): ṭālib → ṭālbe, mnīḥ → mnīḥa.",
+      "Adjectives follow the noun and agree with it: **madīne ḥilwe** (a beautiful city: madīne is feminine)."
+    ], "examples": [
+      { "text": "هُوِّ طالِب، وهِيِّ طالْبة.", "tr": "huwwe ṭālib, w hiyye ṭālbe.", "en": "He's a student and she's a student." },
+      { "text": "المَدينة حِلوة.", "tr": "il-madīne ḥilwe.", "en": "The city is beautiful." }
+    ], "drills": [
+      { "id": "gd1", "prompt": "Say: She's a student.", "answer": "هِيِّ طالْبة.", "tr": "hiyye ṭālbe." },
+      { "id": "gd2", "prompt": "Say: The city is beautiful.", "answer": "المَدينة حِلوة.", "tr": "il-madīne ḥilwe." },
+      { "id": "gd3", "prompt": "Say (as a woman): I'm fine.", "answer": "أَنا مْنيحة.", "tr": "ʔana mnīḥa." }
+    ], "verified": false },
+    { "id": "nisba", "title": "Nationality adjectives: -i / -iyye", "body": [
+      "Add **-i** to a place to make 'from there': Libnān → libnāni, Sūrya → sūri, ʕarab → ʕarabi. The feminine is **-iyye**: libnāniyye.",
+      "Same idea as Spanish -ano/-ana, and it's where English 'Iraqi, Yemeni' come from."
+    ], "examples": [
+      { "text": "هُوِّ لِبناني.", "tr": "huwwe libnāni.", "en": "He's Lebanese." },
+      { "text": "هِيِّ أَميركانية.", "tr": "hiyye ʔamērkāniyye.", "en": "She's American." }
+    ], "drills": [
+      { "id": "ns1", "prompt": "Say: He's Lebanese.", "answer": "هُوِّ لِبناني.", "tr": "huwwe libnāni." },
+      { "id": "ns2", "prompt": "Say: She's Syrian.", "answer": "هِيِّ سورية.", "tr": "hiyye sūriyye." },
+      { "id": "ns3", "prompt": "Say: I'm not American (m).", "answer": "أَنا مِش أَميركاني.", "tr": "ʔana mish ʔamērkāni." }
+    ], "verified": false },
+    { "id": "bidd", "title": "bidd- 'want'", "body": [
+      "'Want' is **bidd-** plus a possessive ending: biddi (I), biddak (you m), biddik (you f), biddo (he), bidda (she), biddna (we), biddkon (you pl), biddhon (they).",
+      "Negate with **mā**: mā biddi = I don't want. Followed by a verb, the verb loses its b-: biddi rūḥ = I want to go (Unit 11)."
+    ], "examples": [
+      { "text": "بِدّي قَهوة.", "tr": "biddi ʔahwe.", "en": "I want coffee." },
+      { "text": "شو بِدِّك؟", "tr": "shū biddik?", "en": "What do you (f) want?" },
+      { "text": "ما بِدّي شي، شُكرًا.", "tr": "mā biddi shī, shukran.", "en": "I don't want anything, thanks." }
+    ], "drills": [
+      { "id": "bd1", "prompt": "Say: I'd like coffee, please (to a man).", "answer": "بِدّي قَهوة، لَو سَمَحت.", "tr": "biddi ʔahwe, law samaḥt." },
+      { "id": "bd2", "prompt": "Ask a man: Do you want tea?", "answer": "بِدَّك شاي؟", "tr": "biddak shāy?" },
+      { "id": "bd3", "prompt": "Say: She wants water.", "answer": "بِدّا مَي.", "tr": "bidda mayy." },
+      { "id": "bd4", "prompt": "Say: I don't want sugar.", "answer": "ما بِدّي سُكَّر.", "tr": "mā biddi sukkar." }
+    ], "verified": false },
+    { "id": "ind", "title": "ʕind- 'have'", "body": [
+      "'Have' is the preposition **ʕind** ('at') + an ending: ʕindi, ʕindak, ʕindik, ʕindo, ʕinda, ʕinna, ʕindkon, ʕindhon. Literally 'at me (is) a question'.",
+      "Negate with mā: **mā ʕindi** = I don't have."
+    ], "examples": [
+      { "text": "عِندي سُؤال.", "tr": "ʕindi suʔāl.", "en": "I have a question." },
+      { "text": "ما عِندي شُغل اليوم.", "tr": "mā ʕindi shughl il-yōm.", "en": "I don't have work today." }
+    ], "drills": [
+      { "id": "in1", "prompt": "Say: I have a lot of work.", "answer": "عِندي شُغل كْتير.", "tr": "ʕindi shughl ktīr." },
+      { "id": "in2", "prompt": "Ask a woman: Do you have tea?", "answer": "عِندِك شاي؟", "tr": "ʕindik shāy?" },
+      { "id": "in3", "prompt": "Say: I don't have bread.", "answer": "ما عِندي خِبز.", "tr": "mā ʕindi khibz." }
+    ], "verified": false },
+    { "id": "fi", "title": "fī 'there is' / mā fī 'there isn't'", "body": [
+      "**fī** = there is / there are. Question: just raise your voice: fī ʔahwe? = Is there coffee?",
+      "**mā fī** = there isn't. You'll hear 'mā fī mishkle': no problem."
+    ], "examples": [
+      { "text": "في شاي وقَهوة.", "tr": "fī shāy w ʔahwe.", "en": "There's tea and coffee." },
+      { "text": "ما في مُشكِلة.", "tr": "mā fī mishkle.", "en": "No problem." }
+    ], "drills": [
+      { "id": "fi1", "prompt": "Ask: Is there sugar?", "answer": "في سُكَّر؟", "tr": "fī sukkar?" },
+      { "id": "fi2", "prompt": "Say: There's no bread.", "answer": "ما في خِبز.", "tr": "mā fī khibz." },
+      { "id": "fi3", "prompt": "Say: There's tea or coffee.", "answer": "في شاي وَلّا قَهوة.", "tr": "fī shāy walla ʔahwe." }
+    ], "verified": false },
+    { "id": "present", "title": "Present tense: b- + verb", "concept": "aspect", "body": [
+      "Levantine present = **b-** + a person prefix + stem. For ʕ-r-f 'know': **baʕrif** I · **btaʕrif** you (m) · **btaʕrfi** you (f) · **byaʕrif** he · **btaʕrif** she · **mnaʕrif** we · **btaʕrfu** you (pl) · **byaʕrfu** they.",
+      "Put **ʕam** in front for 'right now': ʕam badrus = I'm studying (at the moment).",
+      "Negate with **mā**: mā baʕrif = I don't know."
+    ], "examples": [
+      { "text": "بِشرَب قَهوة كِل يَوم.", "tr": "bishrab ʔahwe kill yōm.", "en": "I drink coffee every day." },
+      { "text": "عَم بَدرُس هَلَّق.", "tr": "ʕam badrus hallaʔ.", "en": "I'm studying now." },
+      { "text": "هُوِّ بيِحكي عَرَبي.", "tr": "huwwe byiḥki ʕarabi.", "en": "He speaks Arabic." }
+    ], "drills": [
+      { "id": "pt1", "prompt": "Say: I drink coffee every day.", "answer": "بِشرَب قَهوة كِل يَوم.", "tr": "bishrab ʔahwe kill yōm." },
+      { "id": "pt2", "prompt": "Ask a man: Do you speak Arabic?", "answer": "بْتِحكي عَرَبي؟", "tr": "btiḥki ʕarabi?" },
+      { "id": "pt3", "prompt": "Say: We go to the university.", "answer": "مْنروح عالجامْعة.", "tr": "mnrūḥ ʕal-jāmʕa." },
+      { "id": "pt4", "prompt": "Say: I don't understand.", "answer": "ما بِفهَم.", "tr": "mā bifham." },
+      { "id": "pt5", "prompt": "Say: I'm studying right now.", "answer": "عَم بَدرُس هَلَّق.", "tr": "ʕam badrus hallaʔ." }
+    ], "verified": false },
+    { "id": "questions", "title": "Asking questions", "body": [
+      "Question words: **shū** what · **mīn** who · **wēn** where · **mnēn** from where · **kīf** how · **lēsh** why · **ʔēmta** when · **ʔaddēsh** how much · **kam** how many.",
+      "They can go first or last: **shū btaʕmel?** or **btaʕmel shū?** Yes/no questions just use rising intonation."
+    ], "examples": [
+      { "text": "لَيش بْتِدرُس طِبّ؟", "tr": "lēsh btidrus ṭibb?", "en": "Why do you study medicine?" },
+      { "text": "إنتِ مْنين؟", "tr": "inti mnēn?", "en": "Where are you (f) from?" }
+    ], "drills": [
+      { "id": "qs1", "prompt": "Ask a man: What are you doing?", "answer": "شو بْتَعمِل؟", "tr": "shū btaʕmel?" },
+      { "id": "qs2", "prompt": "Ask: When are you (m) coming?", "answer": "إيمتى بْتِجي؟", "tr": "ʔēmta btiji?" },
+      { "id": "qs3", "prompt": "Ask: How much is this?", "answer": "قَدّيش هادا؟", "tr": "ʔaddēsh hāda?" },
+      { "id": "qs4", "prompt": "Ask a man: Why do you study Arabic?", "answer": "لَيش بْتِدرُس عَرَبي؟", "tr": "lēsh btidrus ʕarabi?" }
+    ], "verified": false }
+  ],
+  "texts": [
+    { "id": "d01", "title": "Meeting at the conversation table", "level": "U1", "v": "lev", "kind": "dialogue", "names": ["فينو", "ليلى", "الشام", "أميركا"], "lines": [
+      { "sp": "Venu", "text": "مَرحَبا!", "tr": "marḥaba!", "en": "Hello!" },
+      { "sp": "Layla", "text": "أَهلا! أَنا ليلى. شو اِسمَك؟", "tr": "ʔahlan! ʔana Layla. shū ismak?", "en": "Hi! I'm Layla. What's your name?" },
+      { "sp": "Venu", "text": "اِسمي فينو. إنتِ مْنين؟", "tr": "ismi Venu. inti mnēn?", "en": "My name's Venu. Where are you from?" },
+      { "sp": "Layla", "text": "أَنا مِن الشّام. وإنتَ؟", "tr": "ʔana min ish-Shām. w inta?", "en": "I'm from Damascus. And you?" },
+      { "sp": "Venu", "text": "أَنا مِن أَميركا. تْشَرَّفنا!", "tr": "ʔana min ʔamērka. tsharrafna!", "en": "I'm from America. Nice to meet you!" },
+      { "sp": "Layla", "text": "أَهلا وسَهلا. كِيفَك؟", "tr": "ʔahlan w sahlan. kīfak?", "en": "Welcome. How are you?" },
+      { "sp": "Venu", "text": "مْنيح، الحَمدِلله. وإنتِ، كِيفِك؟", "tr": "mnīḥ, il-ḥamdilla. w inti, kīfik?", "en": "Fine, thank God. And you, how are you?" },
+      { "sp": "Layla", "text": "مْنيحة، شُكرًا. يَلّا، مَع السَّلامة!", "tr": "mnīḥa, shukran. yalla, maʕ is-salāme!", "en": "Fine, thanks. OK, bye!" }
+    ], "verified": false },
+    { "id": "d02", "title": "What do you study?", "level": "U2", "v": "lev", "kind": "dialogue", "names": ["هوبكنز", "فينو", "ليلى"], "lines": [
+      { "sp": "Venu", "text": "إنتِ طالْبة هون؟", "tr": "inti ṭālbe hōn?", "en": "Are you a student here?" },
+      { "sp": "Layla", "text": "إي، أَنا طالْبة بِجامْعة هوبكنز.", "tr": "ʔē, ʔana ṭālbe b-jāmʕit Hopkins.", "en": "Yes, I'm a student at Hopkins." },
+      { "sp": "Venu", "text": "شو بْتِدرُسي؟", "tr": "shū btidrusi?", "en": "What do you study?" },
+      { "sp": "Layla", "text": "بَدرُس طِبّ. وإنتَ؟", "tr": "badrus ṭibb. w inta?", "en": "I study medicine. And you?" },
+      { "sp": "Venu", "text": "وأَنا كَمان! بَس بَدرُس عَرَبي كَمان.", "tr": "w ʔana kamān! bass badrus ʕarabi kamān.", "en": "Me too! But I study Arabic too." },
+      { "sp": "Layla", "text": "بْتِحكي عَرَبي؟", "tr": "btiḥki ʕarabi?", "en": "Do you speak Arabic?" },
+      { "sp": "Venu", "text": "شْوَي. بَحكي إسباني وإنكليزي.", "tr": "shwayy. baḥki isbāni w inglīzi.", "en": "A little. I speak Spanish and English." },
+      { "sp": "Layla", "text": "كْتير حِلو!", "tr": "ktīr ḥilu!", "en": "Very nice!" }
+    ], "verified": false },
+    { "id": "d03", "title": "At the café", "level": "U3", "v": "lev", "kind": "dialogue", "lines": [
+      { "sp": "Waiter", "text": "أَهلا وسَهلا! شو بِدَّك؟", "tr": "ʔahlan w sahlan! shū biddak?", "en": "Welcome! What would you like?" },
+      { "sp": "You", "text": "بِدّي قَهوة، لَو سَمَحت.", "tr": "biddi ʔahwe, law samaḥt.", "en": "I'd like a coffee, please." },
+      { "sp": "Waiter", "text": "مَع سُكَّر وَلّا بَلا؟", "tr": "maʕ sukkar walla bala?", "en": "With sugar or without?" },
+      { "sp": "You", "text": "بَلا سُكَّر. في خِبز؟", "tr": "bala sukkar. fī khibz?", "en": "Without sugar. Is there bread?" },
+      { "sp": "Waiter", "text": "لأ، ما في خِبز اليوم. بَس في عَصير.", "tr": "laʔ, mā fī khibz il-yōm. bass fī ʕaṣīr.", "en": "No, there's no bread today. But there's juice." },
+      { "sp": "You", "text": "طَيِّب، وعَصير كَمان. قَدّيش هادا؟", "tr": "ṭayyib, w ʕaṣīr kamān. ʔaddēsh hāda?", "en": "OK, and a juice too. How much is that?" },
+      { "sp": "Waiter", "text": "ما في مُشكِلة، بَعدين. صَحتين!", "tr": "mā fī mishkle, baʕdēn. ṣaḥtēn!", "en": "No problem, later. Enjoy!" }
+    ], "verified": false },
+    { "id": "d04", "title": "My day", "level": "U4", "v": "lev", "kind": "reading", "names": ["فينو", "هوبكنز"], "lines": [
+      { "text": "أَنا فينو، طالِب بِجامْعة هوبكنز.", "tr": "ʔana Venu, ṭālib b-jāmʕit Hopkins.", "en": "I'm Venu, a student at Hopkins." },
+      { "text": "كِل يَوم بْروح عالجامْعة.", "tr": "kill yōm brūḥ ʕal-jāmʕa.", "en": "Every day I go to the university." },
+      { "text": "بَدرُس طِبّ، وبَدرُس عَرَبي كَمان.", "tr": "badrus ṭibb, w badrus ʕarabi kamān.", "en": "I study medicine, and I study Arabic too." },
+      { "text": "بحِبّ العَرَبي كْتير، بَس شْوَي صَعب.", "tr": "bḥibb il-ʕarabi ktīr, bass shwayy ṣaʕb.", "en": "I love Arabic a lot, but it's a bit hard." },
+      { "text": "بِشرَب قَهوة كْتير، لَإنّو عِندي شُغل كْتير.", "tr": "bishrab ʔahwe ktīr, laʔinno ʕindi shughl ktīr.", "en": "I drink a lot of coffee, because I have a lot of work." },
+      { "text": "هَلَّق عَم بَدرُس. يَلّا، مَع السَّلامة!", "tr": "hallaʔ ʕam badrus. yalla, maʕ is-salāme!", "en": "Right now I'm studying. OK, bye!" }
+    ], "verified": false }
+  ]
+}

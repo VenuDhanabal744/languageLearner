@@ -1,0 +1,14 @@
+[
+  { "id": "root-ktb", "type": "root", "note": "Writing", "items": [ { "lang": "ar", "text": "كتب", "tr": "k-t-b", "en": "write" }, { "lang": "he", "text": "כתב", "tr": "k-t-v", "en": "write" } ] },
+  { "id": "root-slm", "type": "root", "note": "Peace / wholeness", "items": [ { "lang": "ar", "text": "سلم", "tr": "s-l-m", "en": "peace: salām, maʕ is-salāme" }, { "lang": "he", "text": "שלם", "tr": "sh-l-m", "en": "peace: shalom, shalem" } ] },
+  { "id": "root-drs", "type": "root", "note": "Study / seek", "items": [ { "lang": "ar", "text": "درس", "tr": "d-r-s", "en": "study: madrase 'school'" }, { "lang": "he", "text": "דרש", "tr": "d-r-sh", "en": "seek, expound: midrash" } ] },
+  { "id": "bayt", "type": "cognate", "note": "House", "items": [ { "lang": "ar", "text": "بيت", "tr": "bēt", "en": "house" }, { "lang": "he", "text": "בית", "tr": "bayit", "en": "house" } ] },
+  { "id": "root-ywm", "type": "cognate", "note": "Day", "items": [ { "lang": "ar", "text": "يوم", "tr": "yōm", "en": "day" }, { "lang": "he", "text": "יום", "tr": "yom", "en": "day" } ] },
+  { "id": "root-ʕyn", "type": "cognate", "note": "Eye / spring", "items": [ { "lang": "ar", "text": "عين", "tr": "ʕēn", "en": "eye" }, { "lang": "he", "text": "עין", "tr": "ʕayin", "en": "eye" } ] },
+  { "id": "root-kll", "type": "cognate", "note": "All / every", "items": [ { "lang": "ar", "text": "كل", "tr": "kill", "en": "all, every" }, { "lang": "he", "text": "כל", "tr": "kol", "en": "all, every" } ] },
+  { "id": "root-bn", "type": "cognate", "note": "Son", "items": [ { "lang": "ar", "text": "ابن", "tr": "ibn", "en": "son" }, { "lang": "he", "text": "בן", "tr": "ben", "en": "son" } ] },
+  { "id": "root-ʔkl", "type": "root", "note": "Eat", "items": [ { "lang": "ar", "text": "أكل", "tr": "ʔ-k-l", "en": "eat" }, { "lang": "he", "text": "אכל", "tr": "ʔ-k-l", "en": "eat" } ] },
+  { "id": "root-ftḥ", "type": "root", "note": "Open", "items": [ { "lang": "ar", "text": "فتح", "tr": "f-t-ḥ", "en": "open" }, { "lang": "he", "text": "פתח", "tr": "p-t-ḥ", "en": "open" } ] },
+  { "id": "root-ʕlm", "type": "root", "note": "Know / world", "items": [ { "lang": "ar", "text": "علم", "tr": "ʕ-l-m", "en": "know: ʕilm 'science', ʕālam 'world'" }, { "lang": "he", "text": "עולם", "tr": "ʕ-l-m", "en": "olam 'world, eternity'" } ] },
+  { "id": "num-3", "type": "cognate", "note": "Three", "items": [ { "lang": "ar", "text": "تلاتة", "tr": "tlēte", "en": "three" }, { "lang": "he", "text": "שלוש", "tr": "shalosh", "en": "three" } ] }
+]

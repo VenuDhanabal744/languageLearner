@@ -1,0 +1,167 @@
+{
+  "id": "ar",
+  "name": "Arabic: Levantine (Shami) for speaking, MSA for reading",
+  "version": "0.1.0",
+  "dir": "rtl",
+  "tts": "ar",
+  "ttsNote": "The built-in iOS Arabic voice speaks MSA. Levantine lines are read with MSA sounds (e.g. ق as q, not the glottal stop Shami speakers use), so treat dialect audio as an approximation. Use 'Add a speaker' to record a native speaker.",
+  "defaultVariety": "lev",
+  "varieties": { "lev": "Levantine (Shami)", "msa": "Modern Standard Arabic" },
+  "vowelToggle": { "label": "Harakat (vowel marks)", "strip": "ً-ٰٟ" },
+  "normalize": {
+    "strip": "ً-ٰٟـ",
+    "map": { "أ": "ا", "إ": "ا", "آ": "ا", "ٱ": "ا", "ى": "ي", "ة": "ه", "ؤ": "و", "ئ": "ي" }
+  },
+  "clitics": {
+    "prefixes": ["و", "ف", "ب", "ل", "ال", "وال", "بال", "فال", "لل", "عال", "ع", "وب", "ول", "ما"],
+    "suffixes": ["ي", "ا", "ك", "ه", "ها", "نا", "كن", "كم", "هن", "هم", "و", "ني", "ات", "ين", "ون"]
+  },
+  "translit": { "name": "Simplified: ʔ = glottal stop, ʕ = ʿayn, ḥ ṣ ḍ ṭ ẓ = emphatic/pharyngeal, ā ī ū ē ō = long vowels" },
+  "frequency": {
+    "file": "frequency.txt",
+    "source": "FrequencyWords by Hermit Dave (OpenSubtitles 2018, Arabic), CC BY-SA 4.0",
+    "note": "Subtitle Arabic is mostly MSA with some dialect, so this estimates coverage of MSA-leaning real text."
+  },
+  "includes": ["units/u01-04.json", "units/u05-08.json", "units/u09-12.json", "units/readers.json"],
+  "notes": [
+    { "title": "Why Levantine + MSA (diglossia)", "body": [
+      "Arabic speakers talk in a dialect and read/write in Modern Standard Arabic (MSA). Speaking MSA in a café sounds like quoting Shakespeare at a barista.",
+      "This pack teaches **Levantine (Shami: Damascus/Beirut)** for speaking and listening from day 1, and **MSA** for reading from Unit 10. Words show their MSA form when it differs, so the two grow together.",
+      "Everything you write in Arabic script transfers: the alphabet, roots and most vocabulary are shared."
+    ]},
+    { "title": "ق in Shami", "body": [
+      "City Levantine pronounces ق (q) as a glottal stop ʔ: قهوة is ʔahwe, قلب is ʔalb. MSA keeps q. Transliteration here follows Shami pronunciation; the built-in voice will still say q."
+    ]},
+    { "title": "Typing Arabic on iPhone", "body": [
+      "Settings → General → Keyboard → Keyboards → Add New Keyboard → Arabic (free). Switch with the globe key. You can also use the keyboard's dictation microphone to speak an answer instead of typing."
+    ]},
+    { "title": "Unverified content", "body": [
+      "All Levantine sentences in this pack were written by Claude and are marked unverified. Levantine varies by city and family. If something looks wrong, tap 'Flag' on it; flags are saved and included in your backup so they can be fixed in the pack later."
+    ]}
+  ],
+  "scriptLessons": [
+    { "id": "s1", "title": "Letters 1: ا ب ت ث ن ي", "note": "Arabic is written right to left. Most letters join to the next one; the dots are what tell ب ت ث ن ي apart in the middle of a word.", "letters": [
+      { "id": "alif", "char": "ا", "name": "alif", "tr": "ā / a", "sound": "Long 'a' (father), or a seat for a vowel at the start of a word. Never joins to the next letter.", "connects": false, "ex": { "text": "بابا", "tr": "bāba", "en": "dad" } },
+      { "id": "ba", "char": "ب", "name": "bāʔ", "tr": "b", "sound": "b as in 'bed'. One dot below.", "connects": true, "ex": { "text": "بَيت", "tr": "bēt", "en": "house" } },
+      { "id": "ta", "char": "ت", "name": "tāʔ", "tr": "t", "sound": "Light t (tongue on teeth). Two dots above.", "connects": true, "ex": { "text": "تين", "tr": "tīn", "en": "figs" } },
+      { "id": "tha", "char": "ث", "name": "thāʔ", "tr": "th (often t/s in Shami)", "sound": "MSA: 'th' in 'think'. Shami usually says t or s. Three dots above.", "connects": true, "ex": { "text": "تَلاتة", "tr": "tlēte", "en": "three (Shami spells with ت; MSA ثلاثة)" } },
+      { "id": "nun", "char": "ن", "name": "nūn", "tr": "n", "sound": "n. One dot above; deep bowl at the end of a word.", "connects": true, "ex": { "text": "نِحنا", "tr": "niḥna", "en": "we" } },
+      { "id": "ya", "char": "ي", "name": "yāʔ", "tr": "y / ī / ē", "sound": "y as in 'yes', or long ī / ē. Two dots below.", "connects": true, "ex": { "text": "إيد", "tr": "ʔīd", "en": "hand" } }
+    ]},
+    { "id": "s2", "title": "Letters 2: ج ح خ", "note": "Same shape, different dots. ح is the most important new sound: a breathy h squeezed from the throat.", "letters": [
+      { "id": "jim", "char": "ج", "name": "jīm", "tr": "j", "sound": "Shami: like the s in 'measure' (zh). MSA: j as in 'jam'. Dot below.", "connects": true, "ex": { "text": "جامْعة", "tr": "jāmʕa", "en": "university" } },
+      { "id": "ha2", "char": "ح", "name": "ḥāʔ", "tr": "ḥ", "sound": "Pharyngeal h: tighten your throat as if fogging a cold window hard. No dot. Not the same as ه.", "connects": true, "ex": { "text": "حَكيم", "tr": "ḥakīm", "en": "doctor" } },
+      { "id": "kha", "char": "خ", "name": "khāʔ", "tr": "kh", "sound": "Like Spanish j in 'jamón' or German 'Bach'. Dot above.", "connects": true, "ex": { "text": "خِبز", "tr": "khibz", "en": "bread" } }
+    ]},
+    { "id": "s3", "title": "Letters 3: د ذ ر ز و", "note": "These five never join to the following letter, so words often have gaps.", "letters": [
+      { "id": "dal", "char": "د", "name": "dāl", "tr": "d", "sound": "Light d.", "connects": false, "ex": { "text": "دَرس", "tr": "dars", "en": "lesson" } },
+      { "id": "dhal", "char": "ذ", "name": "dhāl", "tr": "dh (often d/z in Shami)", "sound": "MSA: 'th' in 'this'. Shami usually d or z.", "connects": false, "ex": { "text": "هادا", "tr": "hāda", "en": "this (Shami spells with د; MSA هذا)" } },
+      { "id": "ra", "char": "ر", "name": "rāʔ", "tr": "r", "sound": "Tapped r, like Spanish 'pero'.", "connects": false, "ex": { "text": "راس", "tr": "rās", "en": "head" } },
+      { "id": "zay", "char": "ز", "name": "zāy", "tr": "z", "sound": "z as in 'zoo'.", "connects": false, "ex": { "text": "زْغير", "tr": "zghīr", "en": "small" } },
+      { "id": "waw", "char": "و", "name": "wāw", "tr": "w / ū / ō", "sound": "w, or long ū / ō. Also the word 'and', written joined to the next word.", "connects": false, "ex": { "text": "وين", "tr": "wēn", "en": "where" } }
+    ]},
+    { "id": "s4", "title": "Letters 4: س ش ص ض", "note": "ص and ض are emphatic: say them with the back of the tongue raised; they darken the vowels next to them.", "letters": [
+      { "id": "sin", "char": "س", "name": "sīn", "tr": "s", "sound": "Plain s.", "connects": true, "ex": { "text": "سوق", "tr": "sūʔ", "en": "market" } },
+      { "id": "shin", "char": "ش", "name": "shīn", "tr": "sh", "sound": "sh as in 'ship'.", "connects": true, "ex": { "text": "شو", "tr": "shū", "en": "what" } },
+      { "id": "sad", "char": "ص", "name": "ṣād", "tr": "ṣ", "sound": "Emphatic s: tongue back, lips slightly rounded; the vowel after it sounds deeper ('saw' rather than 'sat').", "connects": true, "ex": { "text": "صاحِب", "tr": "ṣāḥib", "en": "friend" } },
+      { "id": "dad", "char": "ض", "name": "ḍād", "tr": "ḍ", "sound": "Emphatic d. Arabic is called 'the language of ḍād'.", "connects": true, "ex": { "text": "مَريض", "tr": "marīḍ", "en": "sick" } }
+    ]},
+    { "id": "s5", "title": "Letters 5: ط ظ ع غ", "note": "ع (ʿayn) is a voiced squeeze in the throat: the hardest sound for English speakers, and essential.", "letters": [
+      { "id": "ta2", "char": "ط", "name": "ṭāʔ", "tr": "ṭ", "sound": "Emphatic t.", "connects": true, "ex": { "text": "طالِب", "tr": "ṭālib", "en": "student" } },
+      { "id": "za2", "char": "ظ", "name": "ẓāʔ", "tr": "ẓ", "sound": "Emphatic z (MSA: emphatic 'th' of 'this').", "connects": true, "ex": { "text": "ظَرف", "tr": "ẓarf", "en": "envelope" } },
+      { "id": "ayn", "char": "ع", "name": "ʕayn", "tr": "ʕ", "sound": "Tighten the throat like gagging slightly, then voice through it. Not a vowel and not a glottal stop.", "connects": true, "ex": { "text": "عَرَبي", "tr": "ʕarabi", "en": "Arabic" } },
+      { "id": "ghayn", "char": "غ", "name": "ghayn", "tr": "gh", "sound": "Gargled r, like French 'r' in 'Paris'.", "connects": true, "ex": { "text": "غالي", "tr": "ghāli", "en": "expensive" } }
+    ]},
+    { "id": "s6", "title": "Letters 6: ف ق ك ل", "note": "Remember ق is a glottal stop in city Shami, but q in MSA.", "letters": [
+      { "id": "fa", "char": "ف", "name": "fāʔ", "tr": "f", "sound": "f. One dot above.", "connects": true, "ex": { "text": "فاضي", "tr": "fāḍi", "en": "free (not busy)" } },
+      { "id": "qaf", "char": "ق", "name": "qāf", "tr": "q / ʔ", "sound": "MSA: q from deep in the throat. Shami: glottal stop (the catch in 'uh-oh').", "connects": true, "ex": { "text": "قَهوة", "tr": "ʔahwe", "en": "coffee" } },
+      { "id": "kaf", "char": "ك", "name": "kāf", "tr": "k", "sound": "k.", "connects": true, "ex": { "text": "كْتاب", "tr": "ktāb", "en": "book" } },
+      { "id": "lam", "char": "ل", "name": "lām", "tr": "l", "sound": "Light l. ل + ا is written as one shape: لا.", "connects": true, "ex": { "text": "لَيل", "tr": "lēl", "en": "night" } }
+    ]},
+    { "id": "s7", "title": "Letters 7: م ه ة ء + vowel marks", "note": "Short vowels are usually not written; learners' texts add them as small marks (harakat). Toggle them in Settings.", "letters": [
+      { "id": "mim", "char": "م", "name": "mīm", "tr": "m", "sound": "m.", "connects": true, "ex": { "text": "مَي", "tr": "mayy", "en": "water" } },
+      { "id": "ha", "char": "ه", "name": "hāʔ", "tr": "h", "sound": "Ordinary breathy h, as in 'hat'. Lighter than ح.", "connects": true, "ex": { "text": "هون", "tr": "hōn", "en": "here" } },
+      { "id": "tamarbuta", "char": "ة", "name": "tāʔ marbūṭa", "tr": "-a / -e (-it)", "sound": "Feminine ending, said -a or -e; becomes -it before a possessor (jāmʕit Hopkins).", "connects": false, "ex": { "text": "سَيّارة", "tr": "sayyāra", "en": "car" } },
+      { "id": "hamza", "char": "ء", "name": "hamza", "tr": "ʔ", "sound": "Glottal stop. Often sits on a seat: أ إ ؤ ئ.", "connects": false, "ex": { "text": "أَهلا", "tr": "ʔahlan", "en": "hi" } },
+      { "id": "fatha", "char": "بَ", "name": "fatḥa", "tr": "a", "sound": "Short a: a small stroke above.", "connects": true, "ex": { "text": "كَتَب", "tr": "katab", "en": "he wrote" } },
+      { "id": "kasra", "char": "بِ", "name": "kasra", "tr": "i", "sound": "Short i: a stroke below.", "connects": true, "ex": { "text": "بِنت", "tr": "bint", "en": "girl" } },
+      { "id": "damma", "char": "بُ", "name": "ḍamma", "tr": "u", "sound": "Short u: a small و above.", "connects": true, "ex": { "text": "بُكرا", "tr": "bukra", "en": "tomorrow" } },
+      { "id": "sukun", "char": "بْ", "name": "sukūn", "tr": "(no vowel)", "sound": "Small circle: no vowel after this consonant.", "connects": true, "ex": { "text": "خِبْز", "tr": "khibz", "en": "bread" } },
+      { "id": "shadda", "char": "بّ", "name": "shadda", "tr": "doubled", "sound": "Doubles the consonant: hold it longer.", "connects": true, "ex": { "text": "بِحِبّ", "tr": "bḥibb", "en": "I love/like" } }
+    ]}
+  ],
+  "contrasts": [
+    { "id": "sin-sad", "title": "س s vs ص ṣ (emphatic)", "a": { "label": "س", "desc": "plain s, bright vowel" }, "b": { "label": "ص", "desc": "emphatic ṣ, darker vowel" },
+      "note": "Listen to the vowel next to the consonant: emphatics make it sound deeper.", "items": [
+      { "id": "sayf", "text": "سَيف", "tr": "sayf", "en": "sword", "side": "a" }, { "id": "sayf2", "text": "صَيف", "tr": "ṣayf", "en": "summer", "side": "b" },
+      { "id": "sara", "text": "سارَ", "tr": "sāra", "en": "he walked", "side": "a" }, { "id": "sara2", "text": "صارَ", "tr": "ṣāra", "en": "it became", "side": "b" },
+      { "id": "sadd", "text": "سَدّ", "tr": "sadd", "en": "dam", "side": "a" }, { "id": "sadd2", "text": "صَدّ", "tr": "ṣadd", "en": "repelled", "side": "b" },
+      { "id": "nasr", "text": "نَسر", "tr": "nasr", "en": "eagle", "side": "a" }, { "id": "nasr2", "text": "نَصر", "tr": "naṣr", "en": "victory", "side": "b" },
+      { "id": "sabr", "text": "سَبر", "tr": "sabr", "en": "probing", "side": "a" }, { "id": "sabr2", "text": "صَبر", "tr": "ṣabr", "en": "patience", "side": "b" },
+      { "id": "salb", "text": "سَلْب", "tr": "salb", "en": "robbery", "side": "a" }, { "id": "salb2", "text": "صُلْب", "tr": "ṣulb", "en": "solid / spine", "side": "b" }
+    ]},
+    { "id": "ha-hha", "title": "ه h vs ح ḥ (pharyngeal)", "a": { "label": "ه", "desc": "ordinary h" }, "b": { "label": "ح", "desc": "pharyngeal ḥ, tight throat" },
+      "items": [
+      { "id": "haram", "text": "هَرَم", "tr": "haram", "en": "pyramid", "side": "a" }, { "id": "haram2", "text": "حَرَم", "tr": "ḥaram", "en": "sanctuary", "side": "b" },
+      { "id": "hal", "text": "هال", "tr": "hāl", "en": "cardamom", "side": "a" }, { "id": "hal2", "text": "حال", "tr": "ḥāl", "en": "condition", "side": "b" },
+      { "id": "nahr", "text": "نَهر", "tr": "nahr", "en": "river", "side": "a" }, { "id": "nahr2", "text": "نَحر", "tr": "naḥr", "en": "throat (slaughter)", "side": "b" },
+      { "id": "fahm", "text": "فَهم", "tr": "fahm", "en": "understanding", "side": "a" }, { "id": "fahm2", "text": "فَحم", "tr": "faḥm", "en": "coal", "side": "b" },
+      { "id": "hazz", "text": "هَزّ", "tr": "hazz", "en": "shaking", "side": "a" }, { "id": "hazz2", "text": "حَزّ", "tr": "ḥazz", "en": "notch / cut", "side": "b" }
+    ]},
+    { "id": "ayn-hamza", "title": "ع ʕ vs ء ʔ (glottal stop)", "a": { "label": "ء", "desc": "glottal stop: a clean catch" }, "b": { "label": "ع", "desc": "ʿayn: voiced throat squeeze" },
+      "items": [
+      { "id": "amal", "text": "أَمَل", "tr": "ʔamal", "en": "hope", "side": "a" }, { "id": "amal2", "text": "عَمَل", "tr": "ʕamal", "en": "work", "side": "b" },
+      { "id": "ard", "text": "أَرض", "tr": "ʔarḍ", "en": "earth", "side": "a" }, { "id": "ard2", "text": "عَرض", "tr": "ʕarḍ", "en": "offer / width", "side": "b" },
+      { "id": "saal", "text": "سَأَلَ", "tr": "saʔala", "en": "he asked", "side": "a" }, { "id": "saal2", "text": "سَعَلَ", "tr": "saʕala", "en": "he coughed", "side": "b" },
+      { "id": "ayna", "text": "أَين", "tr": "ʔayna", "en": "where (MSA)", "side": "a" }, { "id": "ayna2", "text": "عَين", "tr": "ʕayn", "en": "eye", "side": "b" },
+      { "id": "alam", "text": "أَلَم", "tr": "ʔalam", "en": "pain", "side": "a" }, { "id": "alam2", "text": "عَلَم", "tr": "ʕalam", "en": "flag", "side": "b" }
+    ]},
+    { "id": "kaf-qaf", "title": "ك k vs ق q (MSA)", "a": { "label": "ك", "desc": "k, front of the mouth" }, "b": { "label": "ق", "desc": "q, far back in the throat" },
+      "note": "This is an MSA contrast (the built-in voice is MSA). In city Shami, ق becomes a glottal stop.", "items": [
+      { "id": "kalb", "text": "كَلب", "tr": "kalb", "en": "dog", "side": "a" }, { "id": "kalb2", "text": "قَلب", "tr": "qalb", "en": "heart", "side": "b" },
+      { "id": "kala", "text": "كالَ", "tr": "kāla", "en": "he measured", "side": "a" }, { "id": "kala2", "text": "قالَ", "tr": "qāla", "en": "he said", "side": "b" },
+      { "id": "kadar", "text": "كَدَر", "tr": "kadar", "en": "gloom", "side": "a" }, { "id": "kadar2", "text": "قَدَر", "tr": "qadar", "en": "fate", "side": "b" },
+      { "id": "kitab", "text": "كِتاب", "tr": "kitāb", "en": "book", "side": "a" }, { "id": "kitab2", "text": "قِطار", "tr": "qiṭār", "en": "train", "side": "b" }
+    ]},
+    { "id": "ta-tta", "title": "ت t vs ط ṭ (emphatic)", "a": { "label": "ت", "desc": "plain t" }, "b": { "label": "ط", "desc": "emphatic ṭ, darker vowel" },
+      "items": [
+      { "id": "tin", "text": "تين", "tr": "tīn", "en": "figs", "side": "a" }, { "id": "tin2", "text": "طين", "tr": "ṭīn", "en": "mud", "side": "b" },
+      { "id": "taba", "text": "تابَ", "tr": "tāba", "en": "he repented", "side": "a" }, { "id": "taba2", "text": "طابَ", "tr": "ṭāba", "en": "it was good", "side": "b" },
+      { "id": "tub", "text": "تُوب", "tr": "tūb", "en": "repent! (imperative)", "side": "a" }, { "id": "tub2", "text": "طُوب", "tr": "ṭūb", "en": "bricks", "side": "b" },
+      { "id": "tall", "text": "تَلّ", "tr": "tall", "en": "hill", "side": "a" }, { "id": "tall2", "text": "طَلّ", "tr": "ṭall", "en": "dew", "side": "b" }
+    ]}
+  ],
+  "speaking": [
+    { "id": "p-intro", "level": "U1", "en": "Introduce yourself: your name, where you're from, and what you study.", "hints": ["ʔana ismi …", "ʔana min ʔamērka", "badrus ṭibb"], "fluency": true },
+    { "id": "p-feel", "level": "U1", "en": "Greet a friend, ask how they are, answer how you are.", "hints": ["marḥaba", "kīfak?", "mnīḥ, il-ḥamdilla"] },
+    { "id": "p-want", "level": "U3", "en": "Order something to drink and to eat, politely.", "hints": ["law samaḥt", "biddi …", "ʔaddēsh?"] },
+    { "id": "p-day", "level": "U4", "en": "Say three things you do every day.", "hints": ["kill yōm", "badrus", "bishrab ʔahwe"], "fluency": true },
+    { "id": "p-likes", "level": "U4", "en": "Say what you like and don't like.", "hints": ["bḥibb …", "mā bḥibb …"] },
+    { "id": "p-yesterday", "level": "U6", "en": "Tell what you did yesterday, in order.", "hints": ["mbāriḥ", "riḥt …", "baʕdēn …"], "fluency": true },
+    { "id": "p-family", "level": "U7", "en": "Describe your family: who, how old, where they live.", "hints": ["ʕindi ʔakh w ʔukht", "ʕumro …"], "fluency": true },
+    { "id": "p-friend", "level": "U7", "en": "Describe a friend: name, where from, what they study.", "hints": ["ṣāḥbi / ṣāḥibti", "huwwe / hiyye"] },
+    { "id": "p-shop", "level": "U8", "en": "Ask the price of three things and say if they are expensive or cheap.", "hints": ["ʔaddēsh hāda?", "ghāli", "rkhīṣ"] },
+    { "id": "p-doctor", "level": "U9", "en": "Tell a doctor what hurts and since when.", "hints": ["rāsi byūjaʕni", "min mbāriḥ", "ʕindi ḥarāra"], "fluency": true },
+    { "id": "p-directions", "level": "U10", "en": "Give directions from your dorm to the library.", "hints": ["rūḥ dighri", "baʕdēn yamīn", "ʔarīb"] },
+    { "id": "p-plans", "level": "U11", "en": "Say what you will do this weekend and what you must do.", "hints": ["raḥ …", "lāzim …", "mumkin …"], "fluency": true },
+    { "id": "p-why", "level": "U11", "en": "Explain why you are learning Arabic.", "hints": ["biddi …", "laʔinno …"] },
+    { "id": "p-city", "level": "U10", "en": "Describe your city or campus: big or small, what's there.", "hints": ["fī …", "mā fī …", "ktīr"] },
+    { "id": "p-msa", "level": "U12", "en": "Read the MSA reading aloud, then retell it in Levantine.", "hints": ["Change laysa → mish, ʔurīd → biddi"] }
+  ],
+  "scenarios": [
+    { "id": "sc-meet", "title": "Meeting a classmate", "setup": "First day of an Arabic conversation table at Johns Hopkins.", "you": "a new student", "partner": "a Syrian graduate student", "grammar": ["pronouns", "no copula"] },
+    { "id": "sc-cafe", "title": "At a café in Damascus", "setup": "You want coffee and something to eat; ask prices.", "you": "a customer", "partner": "the waiter", "grammar": ["bidd-", "fī / mā fī"] },
+    { "id": "sc-taxi", "title": "Taking a taxi", "setup": "You need to get from the hotel to the old market and agree on a price.", "you": "a passenger", "partner": "a talkative taxi driver", "grammar": ["prepositions", "imperative"] },
+    { "id": "sc-family", "title": "Talking about family", "setup": "Your Lebanese friend's mother asks about your family.", "you": "a guest", "partner": "your friend's mother (Teta-style, curious)", "grammar": ["possessive suffixes", "ʕand-"] },
+    { "id": "sc-doctor", "title": "At the clinic", "setup": "You feel sick: headache and fever since yesterday.", "you": "a patient", "partner": "a doctor", "grammar": ["object suffixes", "since when"] },
+    { "id": "sc-souk", "title": "Shopping in the souk", "setup": "Buy a scarf and some spices; bargain a little.", "you": "a shopper", "partner": "a shopkeeper", "grammar": ["numbers", "adjective agreement"] },
+    { "id": "sc-weekend", "title": "Weekend plans", "setup": "A friend calls to make plans for Friday.", "you": "yourself", "partner": "a friend from Beirut", "grammar": ["raḥ (future)", "lāzim / mumkin"] },
+    { "id": "sc-yesterday", "title": "What did you do yesterday?", "setup": "Your roommate asks about your day.", "you": "yourself", "partner": "your roommate", "grammar": ["past tense"] },
+    { "id": "sc-directions", "title": "Lost in the city", "setup": "Ask a passer-by how to get to the hospital.", "you": "a lost visitor", "partner": "a helpful passer-by", "grammar": ["imperative", "prepositions"] },
+    { "id": "sc-study", "title": "Explaining your studies", "setup": "A curious uncle asks what biomedical engineering is and why you want to be a doctor.", "you": "a pre-med BME student", "partner": "a curious uncle", "grammar": ["present tense", "laʔinno (because)"] }
+  ],
+  "units": [],
+  "words": [],
+  "grammar": [],
+  "texts": []
+}

@@ -1,0 +1,265 @@
+{
+  "units": [
+    { "id": "u09", "title": "9 · At the doctor", "goal": "Say what hurts, understand basic clinic questions.", "items": [
+      "word:hakim", "word:marid", "word:taban", "word:waja", "word:byujani", "grammar:objects", "word:ras", "word:batn", "word:id", "word:ijr", "word:en", "word:alb",
+      "word:harara", "word:dawa", "word:saydaliyye", "grammar:negation", "word:mustashfa", "word:sahha", "word:salamtak", "word:damm", "word:daght", "word:nafas", "text:d09" ] },
+    { "id": "u10", "title": "10 · Getting around", "goal": "Ask for and give directions; take a taxi.", "items": [
+      "word:shari", "word:sayyara", "word:taksi", "word:bas", "grammar:prepositions", "word:ala", "word:yamin", "word:shmal", "word:dighri", "word:arib", "word:baid",
+      "grammar:imperative", "word:matar", "word:otel", "word:bahr", "word:fo", "word:taht", "word:iddam", "word:wara", "word:jamii", "word:janb", "word:bab", "word:uda", "word:mashi", "word:wsilt", "text:d10" ] },
+    { "id": "u11", "title": "11 · Plans", "goal": "Talk about the future, what you must and can do.", "items": [
+      "word:rah", "word:bukra-plan", "grammar:future", "word:lazim", "word:mumkin", "word:biadar", "grammar:modals", "word:iza", "word:yimkin", "word:inshalla",
+      "word:marra", "word:usbu", "word:shahr", "word:jumaa", "word:sabt", "word:ahad", "word:ute", "word:mashghul", "word:fadi", "word:mawid", "word:duhr", "word:tabaan", "word:akid", "word:safar", "text:d11" ] },
+    { "id": "u12", "title": "12 · Bridge to MSA reading", "goal": "Read simple Modern Standard Arabic and map it onto what you already speak.", "items": [
+      "grammar:msa-map", "word:laysa", "word:sawfa", "word:jiddan", "word:nahnu", "word:hum", "word:dhahaba", "grammar:msa-verbs", "word:lam", "word:lan", "word:alladhi",
+      "word:anna", "word:ila", "word:an", "word:aw", "text:m01", "word:balad", "word:asima", "word:sukkan", "word:tarikh", "word:qadim", "word:jadid", "word:akhbar", "word:qara", "word:fusha", "word:shami", "word:nas", "word:lahja", "word:mithl", "word:masri", "text:m02", "text:m03" ] }
+  ],
+  "words": [
+    { "id": "hakim", "text": "حَكيم", "tr": "ḥakīm", "en": "doctor (f: ḥakīme)", "pos": "noun", "forms": ["حكيمة", "دكتور", "دكتورة"], "msa": { "text": "طَبيب", "tr": "ṭabīb" }, "ex": { "text": "لازِم روح عَند الحَكيم.", "tr": "lāzim rūḥ ʕand il-ḥakīm.", "en": "I have to go to the doctor." }, "verified": false },
+    { "id": "marid", "text": "مَريض", "tr": "marīḍ", "en": "sick; a patient (f: marīḍa)", "pos": "adj", "root": "m-r-ḍ", "forms": ["مريضة", "مرضى"], "ex": { "text": "أَنا مَريض اليوم.", "tr": "ʔana marīḍ il-yōm.", "en": "I'm sick today." }, "verified": false },
+    { "id": "taban", "text": "تَعبان", "tr": "taʕbān", "en": "tired; unwell (f: taʕbāne)", "pos": "adj", "forms": ["تعبانة"], "ex": { "text": "أَنا تَعبان شْوَي.", "tr": "ʔana taʕbān shwayy.", "en": "I'm a bit tired." }, "verified": false },
+    { "id": "waja", "text": "وَجَع", "tr": "wajaʕ", "en": "pain, ache", "pos": "noun", "root": "w-j-ʕ", "forms": ["الوجع"], "msa": { "text": "أَلَم", "tr": "ʔalam" }, "ex": { "text": "عِندي وَجَع راس.", "tr": "ʕindi wajaʕ rās.", "en": "I have a headache." }, "verified": false },
+    { "id": "byujani", "text": "بيوجَعني", "tr": "byūjaʕni", "en": "it hurts me (btūjaʕni for a feminine noun)", "pos": "verb", "root": "w-j-ʕ", "forms": ["بتوجعا", "بيوجعا", "بتوجعني", "بيوجعك", "بيوجعو"], "ex": { "text": "راسي بيوجَعني.", "tr": "rāsi byūjaʕni.", "en": "My head hurts." }, "verified": false },
+    { "id": "ras", "text": "راس", "tr": "rās", "en": "head", "pos": "noun", "forms": ["راسي", "راسك", "رأس"], "ex": { "text": "عِندي وَجَع بِراسي.", "tr": "ʕindi wajaʕ b-rāsi.", "en": "I have pain in my head." }, "verified": false },
+    { "id": "batn", "text": "بَطن", "tr": "baṭn", "en": "stomach, belly", "pos": "noun", "forms": ["بطني", "بطنك"], "ex": { "text": "بَطني بيوجَعني.", "tr": "baṭni byūjaʕni.", "en": "My stomach hurts." }, "verified": false },
+    { "id": "id", "text": "إيد", "tr": "ʔīd", "en": "hand; arm", "pos": "noun", "forms": ["ايدي", "ايدك", "يد"], "msa": { "text": "يَد", "tr": "yad" }, "ex": { "text": "إيدي بِتوجَعني.", "tr": "ʔīdi btūjaʕni.", "en": "My hand hurts." }, "verified": false },
+    { "id": "ijr", "text": "إجر", "tr": "ʔijr", "en": "leg; foot", "pos": "noun", "forms": ["اجري", "اجرك"], "msa": { "text": "رِجل", "tr": "rijl" }, "ex": { "text": "إجري بِتوجَعني.", "tr": "ʔijri btūjaʕni.", "en": "My leg hurts." }, "verified": false },
+    { "id": "en", "text": "عَين", "tr": "ʕēn", "en": "eye (pl. ʕyūn)", "pos": "noun", "forms": ["عيني", "عيون"], "ex": { "text": "عَيني حَمرا.", "tr": "ʕēni ḥamra.", "en": "My eye is red." }, "verified": false },
+    { "id": "alb", "text": "قَلب", "tr": "ʔalb", "en": "heart", "pos": "noun", "forms": ["قلبي", "القلب"], "note": "Shami ʔalb, MSA qalb: the same word with ق → ʔ.", "ex": { "text": "القَلب مْنيح.", "tr": "il-ʔalb mnīḥ.", "en": "The heart is fine." }, "verified": false },
+    { "id": "harara", "text": "حَرارة", "tr": "ḥarāra", "en": "fever; temperature; heat", "pos": "noun", "root": "ḥ-r-r", "forms": ["الحرارة"], "ex": { "text": "عِندي حَرارة مِن مْبارِح.", "tr": "ʕindi ḥarāra min mbāriḥ.", "en": "I've had a fever since yesterday." }, "verified": false },
+    { "id": "dawa", "text": "دَوا", "tr": "dawa", "en": "medicine (a drug)", "pos": "noun", "forms": ["الدوا", "دواء", "أدوية"], "msa": { "text": "دَواء", "tr": "dawāʔ" }, "ex": { "text": "خود هادا الدَّوا.", "tr": "khūd hāda id-dawa.", "en": "Take this medicine." }, "verified": false },
+    { "id": "saydaliyye", "text": "صَيدَلية", "tr": "ṣaydaliyye", "en": "pharmacy", "pos": "noun", "forms": ["الصيدلية"], "ex": { "text": "في صَيدَلية قَريبة؟", "tr": "fī ṣaydaliyye ʔarībe?", "en": "Is there a pharmacy nearby?" }, "verified": false },
+    { "id": "mustashfa", "text": "مُستَشفى", "tr": "mustashfa", "en": "hospital", "pos": "noun", "root": "sh-f-y", "forms": ["المستشفى"], "ex": { "text": "إمّي بِتشتِغل بِالمُستَشفى.", "tr": "immi btishtighil bil-mustashfa.", "en": "My mom works at the hospital." }, "verified": false },
+    { "id": "sahha", "text": "صِحّة", "tr": "ṣiḥḥa", "en": "health", "pos": "noun", "forms": ["الصحة"], "ex": { "text": "الصِّحّة أَهَمّ شي.", "tr": "iṣ-ṣiḥḥa ʔahamm shī.", "en": "Health is the most important thing." }, "verified": false },
+    { "id": "salamtak", "text": "سَلامتَك", "tr": "salāmtak", "en": "get well soon (to a man; to a woman: salāmtik)", "pos": "phrase", "root": "s-l-m", "forms": ["سلامتك", "سلامتِك"], "ex": { "text": "سَلامتَك! إن شاء الله مْنيح.", "tr": "salāmtak! inshalla mnīḥ.", "en": "Get well soon! Hopefully it's nothing." }, "verified": false },
+    { "id": "damm", "text": "دَم", "tr": "damm", "en": "blood", "pos": "noun", "forms": ["الدم"], "ex": { "text": "لازِم نِعمِل تَحليل دَم.", "tr": "lāzim niʕmel taḥlīl damm.", "en": "We need to do a blood test." }, "verified": false },
+    { "id": "daght", "text": "ضَغط", "tr": "ḍaghṭ", "en": "(blood) pressure; pressure", "pos": "noun", "forms": ["الضغط"], "ex": { "text": "الضَّغط عادي.", "tr": "iḍ-ḍaghṭ ʕādi.", "en": "Your blood pressure is normal." }, "verified": false },
+    { "id": "nafas", "text": "نَفَس", "tr": "nafas", "en": "breath", "pos": "noun", "forms": ["النفس"], "ex": { "text": "خود نَفَس.", "tr": "khūd nafas.", "en": "Take a breath." }, "verified": false },
+
+    { "id": "shari", "text": "شارِع", "tr": "shāriʕ", "en": "street", "pos": "noun", "forms": ["الشارع", "شوارع"], "ex": { "text": "بَيتي بِهادا الشّارِع.", "tr": "bēti b-hāda sh-shāriʕ.", "en": "My house is on this street." }, "verified": false },
+    { "id": "sayyara", "text": "سَيّارة", "tr": "sayyāra", "en": "car", "pos": "noun", "forms": ["السيارة", "سيارتي"], "ex": { "text": "ما عِندي سَيّارة.", "tr": "mā ʕindi sayyāra.", "en": "I don't have a car." }, "verified": false },
+    { "id": "taksi", "text": "تَكسي", "tr": "taksi", "en": "taxi", "pos": "noun", "forms": ["تاكسي"], "ex": { "text": "باخُد تَكسي.", "tr": "bākhud taksi.", "en": "I'll take a taxi." }, "verified": false },
+    { "id": "bas", "text": "باص", "tr": "bāṣ", "en": "bus", "pos": "noun", "forms": ["الباص"], "ex": { "text": "الباص بْعيد.", "tr": "il-bāṣ bʕīd.", "en": "The bus is far." }, "verified": false },
+    { "id": "ala", "text": "عَلى", "tr": "ʕala / ʕa-", "en": "on; to (often shortened to ʕa-)", "pos": "prep", "forms": ["ع"], "ex": { "text": "الكْتاب عَلى المَكتَب.", "tr": "il-ktāb ʕala l-maktab.", "en": "The book is on the desk." }, "verified": false },
+    { "id": "yamin", "text": "يَمين", "tr": "yamīn", "en": "right (direction)", "pos": "adv", "forms": ["اليمين"], "ex": { "text": "روح يَمين.", "tr": "rūḥ yamīn.", "en": "Go right." }, "verified": false },
+    { "id": "shmal", "text": "شْمال", "tr": "shmāl", "en": "left (direction)", "pos": "adv", "forms": ["الشمال", "يسار"], "msa": { "text": "يَسار", "tr": "yasār" }, "ex": { "text": "المَكتَبة عَلى الشْمال.", "tr": "il-maktabe ʕa sh-shmāl.", "en": "The library is on the left." }, "verified": false },
+    { "id": "dighri", "text": "دُغري", "tr": "dighri", "en": "straight ahead", "pos": "adv", "ex": { "text": "روح دُغري.", "tr": "rūḥ dighri.", "en": "Go straight." }, "verified": false },
+    { "id": "arib", "text": "قَريب", "tr": "ʔarīb", "en": "near, close (f: ʔarībe)", "pos": "adj", "forms": ["قريبة"], "ex": { "text": "الجامْعة قَريبة.", "tr": "il-jāmʕa ʔarībe.", "en": "The university is close." }, "verified": false },
+    { "id": "baid", "text": "بْعيد", "tr": "bʕīd", "en": "far (f: bʕīde)", "pos": "adj", "forms": ["بعيدة"], "ex": { "text": "المَطار بْعيد؟", "tr": "il-maṭār bʕīd?", "en": "Is the airport far?" }, "verified": false },
+    { "id": "matar", "text": "مَطار", "tr": "maṭār", "en": "airport", "pos": "noun", "root": "ṭ-y-r", "forms": ["المطار"], "ex": { "text": "بِدّي روح عالمَطار.", "tr": "biddi rūḥ ʕal-maṭār.", "en": "I want to go to the airport." }, "verified": false },
+    { "id": "otel", "text": "أوتيل", "tr": "ʔōtēl", "en": "hotel", "pos": "noun", "forms": ["الأوتيل", "فندق"], "msa": { "text": "فُندُق", "tr": "funduq" }, "ex": { "text": "الأوتيل جَنب السّوق.", "tr": "il-ʔōtēl janb is-sūʔ.", "en": "The hotel is next to the market." }, "verified": false },
+    {"id": "bahr", "text": "بَحر", "tr": "baḥr", "en": "sea", "pos": "noun", "forms": ["البحر"], "ex": {"text": "بيروت عَلى البَحر.", "tr": "Bēirūt ʕal-baḥr.", "en": "Beirut is on the sea."}, "verified": false},
+    { "id": "fo", "text": "فوق", "tr": "fōʔ", "en": "up; above; upstairs", "pos": "adv", "ex": { "text": "المَكتَب فوق.", "tr": "il-maktab fōʔ.", "en": "The office is upstairs." }, "verified": false },
+    { "id": "taht", "text": "تَحت", "tr": "taḥt", "en": "down; under; downstairs", "pos": "adv", "ex": { "text": "المِفتاح تَحت الكْتاب.", "tr": "il-miftāḥ taḥt il-ktāb.", "en": "The key is under the book." }, "verified": false },
+    { "id": "iddam", "text": "قِدّام", "tr": "ʔiddām", "en": "in front of", "pos": "prep", "ex": { "text": "أَنا قِدّام الباب.", "tr": "ʔana ʔiddām il-bāb.", "en": "I'm in front of the door." }, "verified": false },
+    { "id": "wara", "text": "وَرا", "tr": "wara", "en": "behind", "pos": "prep", "ex": { "text": "المَطعَم وَرا الجامْعة.", "tr": "il-maṭʕam wara l-jāmʕa.", "en": "The restaurant is behind the university." }, "verified": false },
+    {"id": "jamii", "text": "جامِع", "tr": "jāmiʕ", "en": "mosque (big, Friday mosque)", "pos": "noun", "root": "j-m-ʕ", "forms": ["الجامع"], "ex": {"text": "السّوق وَرا الجامِع.", "tr": "is-sūʔ wara l-jāmiʕ.", "en": "The market is behind the mosque."}, "verified": false},
+    { "id": "janb", "text": "جَنب", "tr": "janb", "en": "next to", "pos": "prep", "forms": ["جنبي"], "ex": { "text": "الصَّيدَلية جَنب المُستَشفى.", "tr": "iṣ-ṣaydaliyye janb il-mustashfa.", "en": "The pharmacy is next to the hospital." }, "verified": false },
+    { "id": "bab", "text": "باب", "tr": "bāb", "en": "door; gate", "pos": "noun", "forms": ["الباب"], "ex": { "text": "الباب مَفتوح.", "tr": "il-bāb maftūḥ.", "en": "The door is open." }, "verified": false },
+    { "id": "uda", "text": "أوضة", "tr": "ʔūḍa", "en": "room", "pos": "noun", "forms": ["أوضتي", "غرفة"], "msa": { "text": "غُرفة", "tr": "ghurfa" }, "ex": { "text": "أوضْتي زْغيرة.", "tr": "ʔūḍti zghīre.", "en": "My room is small." }, "verified": false },
+    { "id": "mashi", "text": "ماشي", "tr": "māshi", "en": "walking; OK, fine", "pos": "adj", "forms": ["ماشية"], "ex": { "text": "ماشي، يَلّا!", "tr": "māshi, yalla!", "en": "OK, let's go!" }, "verified": false },
+    { "id": "wsilt", "text": "وْصِلت", "tr": "wṣilt", "en": "I arrived (wiṣil = he arrived)", "pos": "verb", "root": "w-ṣ-l", "forms": ["وصل", "وصلنا", "وصلت"], "ex": { "text": "وْصِلت عالأوتيل.", "tr": "wṣilt ʕal-ʔōtēl.", "en": "I arrived at the hotel." }, "verified": false },
+
+    { "id": "rah", "text": "رَح", "tr": "raḥ", "en": "will (future; followed by a verb without b-)", "pos": "particle", "forms": ["رح"], "msa": { "text": "سَوفَ", "tr": "sawfa" }, "ex": { "text": "رَح روح بُكرا.", "tr": "raḥ rūḥ bukra.", "en": "I'll go tomorrow." }, "verified": false },
+    { "id": "bukra-plan", "text": "بَعد بُكرا", "tr": "baʕd bukra", "en": "the day after tomorrow", "pos": "adv", "ex": { "text": "عِندي اِمتِحان بَعد بُكرا.", "tr": "ʕindi imtiḥān baʕd bukra.", "en": "I have an exam the day after tomorrow." }, "verified": false },
+    { "id": "lazim", "text": "لازِم", "tr": "lāzim", "en": "must, have to", "pos": "particle", "msa": { "text": "يَجِبُ", "tr": "yajibu" }, "ex": { "text": "لازِم إدرُس اليوم.", "tr": "lāzim idrus il-yōm.", "en": "I have to study today." }, "verified": false },
+    { "id": "mumkin", "text": "مُمكِن", "tr": "mumkin", "en": "possible; could (polite requests)", "pos": "particle", "ex": { "text": "مُمكِن قَهوة، لَو سَمَحت؟", "tr": "mumkin ʔahwe, law samaḥt?", "en": "Could I have a coffee, please?" }, "verified": false },
+    { "id": "biadar", "text": "بِقدَر", "tr": "biʔdar", "en": "I can", "pos": "verb", "root": "q-d-r", "forms": ["بتقدر", "بتقدري", "بيقدر", "قدرت"], "msa": { "text": "أَستَطيعُ", "tr": "ʔastaṭīʕu" }, "ex": { "text": "ما بِقدَر إجي اليوم.", "tr": "mā biʔdar ʔiji il-yōm.", "en": "I can't come today." }, "verified": false },
+    { "id": "iza", "text": "إذا", "tr": "ʔiza", "en": "if", "pos": "conj", "ex": { "text": "إذا عِندَك وَقت، تَعا.", "tr": "ʔiza ʕindak waʔt, taʕa.", "en": "If you have time, come." }, "verified": false },
+    { "id": "yimkin", "text": "يِمكِن", "tr": "yimkin", "en": "maybe", "pos": "adv", "ex": { "text": "يِمكِن روح عالسّوق.", "tr": "yimkin rūḥ ʕas-sūʔ.", "en": "Maybe I'll go to the market." }, "verified": false },
+    { "id": "inshalla", "text": "إن شاء الله", "tr": "inshalla", "en": "hopefully; God willing", "pos": "phrase", "forms": ["انشالله"], "ex": { "text": "بْشوفَك بُكرا، إن شاء الله.", "tr": "bshūfak bukra, inshalla.", "en": "See you tomorrow, hopefully." }, "verified": false },
+    { "id": "marra", "text": "مَرّة", "tr": "marra", "en": "a time, once (marrtēn = twice)", "pos": "noun", "forms": ["مرات", "مرتين"], "ex": { "text": "كَمان مَرّة، لَو سَمَحت.", "tr": "kamān marra, law samaḥt.", "en": "Once more, please." }, "verified": false },
+    { "id": "usbu", "text": "أُسبوع", "tr": "ʔisbūʕ", "en": "week", "pos": "noun", "forms": ["الأسبوع", "اسابيع"], "ex": { "text": "عِندي اِمتِحان كِل أُسبوع.", "tr": "ʕindi imtiḥān kill ʔisbūʕ.", "en": "I have an exam every week." }, "verified": false },
+    { "id": "shahr", "text": "شَهر", "tr": "shahr", "en": "month", "pos": "noun", "forms": ["الشهر", "أشهر", "شهور"], "ex": { "text": "رَح سافِر بَعد شَهر.", "tr": "raḥ sāfir baʕd shahr.", "en": "I'll travel in a month." }, "verified": false },
+    { "id": "jumaa", "text": "الجُمعة", "tr": "il-jimʕa", "en": "Friday", "pos": "noun", "forms": ["جمعة"], "ex": { "text": "شو بْتَعمِل يَوم الجُمعة؟", "tr": "shū btaʕmel yōm il-jimʕa?", "en": "What are you doing on Friday?" }, "verified": false },
+    { "id": "sabt", "text": "السَّبت", "tr": "is-sabt", "en": "Saturday", "pos": "noun", "forms": ["سبت"], "ex": { "text": "يَوم السَّبت فاضي.", "tr": "yōm is-sabt fāḍi.", "en": "I'm free on Saturday." }, "verified": false },
+    { "id": "ahad", "text": "الأَحَد", "tr": "il-ʔaḥad", "en": "Sunday", "pos": "noun", "forms": ["أحد"], "ex": { "text": "يَوم الأَحَد بَدرُس.", "tr": "yōm il-ʔaḥad badrus.", "en": "On Sunday I study." }, "verified": false },
+    { "id": "ute", "text": "عُطلة", "tr": "ʕuṭle", "en": "holiday, day off", "pos": "noun", "forms": ["العطلة"], "ex": { "text": "بُكرا عُطلة!", "tr": "bukra ʕuṭle!", "en": "Tomorrow is a day off!" }, "verified": false },
+    { "id": "mashghul", "text": "مَشغول", "tr": "mashghūl", "en": "busy (f: mashghūle)", "pos": "adj", "root": "sh-gh-l", "pattern": "maCCūC", "forms": ["مشغولة"], "ex": { "text": "أَنا مَشغول كْتير هالأُسبوع.", "tr": "ʔana mashghūl ktīr hal-ʔisbūʕ.", "en": "I'm very busy this week." }, "verified": false },
+    { "id": "fadi", "text": "فاضي", "tr": "fāḍi", "en": "free (not busy); empty", "pos": "adj", "forms": ["فاضية"], "ex": { "text": "إنتَ فاضي بُكرا؟", "tr": "inta fāḍi bukra?", "en": "Are you free tomorrow?" }, "verified": false },
+    { "id": "mawid", "text": "مَوعِد", "tr": "mawʕid", "en": "appointment", "pos": "noun", "root": "w-ʕ-d", "pattern": "maCCiC", "forms": ["موعد", "مواعيد"], "ex": { "text": "عِندي مَوعِد مَع الحَكيم.", "tr": "ʕindi mawʕid maʕ il-ḥakīm.", "en": "I have an appointment with the doctor." }, "verified": false },
+    {"id": "duhr", "text": "الضُّهر", "tr": "iḍ-ḍuhr", "en": "noon (baʕd iḍ-ḍuhr = afternoon)", "pos": "noun", "forms": ["ضهر", "الظهر"], "ex": {"text": "بْشوفَك بَعد الضُّهر.", "tr": "bshūfak baʕd iḍ-ḍuhr.", "en": "See you in the afternoon."}, "verified": false},
+    { "id": "tabaan", "text": "طَبعًا", "tr": "ṭabʕan", "en": "of course", "pos": "adv", "ex": { "text": "طَبعًا، ما في مُشكِلة.", "tr": "ṭabʕan, mā fī mishkle.", "en": "Of course, no problem." }, "verified": false },
+    { "id": "akid", "text": "أَكيد", "tr": "ʔakīd", "en": "sure, definitely", "pos": "adv", "ex": { "text": "أَكيد رَح إجي!", "tr": "ʔakīd raḥ ʔiji!", "en": "I'll definitely come!" }, "verified": false },
+    { "id": "safar", "text": "سَفَر", "tr": "safar", "en": "travel (sāfar = he travelled)", "pos": "noun", "root": "s-f-r", "forms": ["يسافر", "تسافر", "سافر", "سافرت", "سافِر"], "ex": { "text": "بحِبّ السَّفَر.", "tr": "bḥibb is-safar.", "en": "I love travelling." }, "verified": false },
+
+    { "id": "laysa", "text": "لَيسَ", "tr": "laysa", "en": "is not (MSA; Shami: mish)", "pos": "neg", "v": "msa", "forms": ["لست", "ليست"], "ex": { "text": "هٰذا لَيسَ صَعبًا.", "tr": "hādhā laysa ṣaʕban.", "en": "This is not difficult." }, "verified": false },
+    { "id": "sawfa", "text": "سَوفَ", "tr": "sawfa", "en": "will (MSA future; also prefix sa-)", "pos": "particle", "v": "msa", "ex": { "text": "سَوفَ أَذهَبُ إِلى الجامِعة.", "tr": "sawfa ʔadhhabu ʔilā l-jāmiʕa.", "en": "I will go to the university." }, "verified": false },
+    { "id": "jiddan", "text": "جِدًّا", "tr": "jiddan", "en": "very (MSA; Shami: ktīr)", "pos": "adv", "v": "msa", "ex": { "text": "المَدينة جَميلة جِدًّا.", "tr": "al-madīna jamīla jiddan.", "en": "The city is very beautiful." }, "verified": false },
+    { "id": "nahnu", "text": "نَحنُ", "tr": "naḥnu", "en": "we (MSA; Shami: niḥna)", "pos": "pron", "v": "msa", "forms": ["نحنا"], "ex": { "text": "نَحنُ طُلّاب.", "tr": "naḥnu ṭullāb.", "en": "We are students." }, "verified": false },
+    { "id": "hum", "text": "هُم", "tr": "hum", "en": "they (MSA; Shami: hinne)", "pos": "pron", "v": "msa", "forms": ["هنّي"], "ex": { "text": "هُم مِن لُبنان.", "tr": "hum min lubnān.", "en": "They are from Lebanon." }, "verified": false },
+    { "id": "dhahaba", "text": "ذَهَبَ", "tr": "dhahaba", "en": "he went (MSA; Shami: rāḥ)", "pos": "verb", "v": "msa", "root": "dh-h-b", "forms": ["تذهب", "يذهبون", "تذهبُ", "ذهبت", "يذهب", "أذهب"], "ex": { "text": "ذَهَبَ الطّالِبُ إِلى المَكتَبة.", "tr": "dhahaba ṭ-ṭālibu ʔilā l-maktaba.", "en": "The student went to the library." }, "verified": false },
+    { "id": "lam", "text": "لَم", "tr": "lam", "en": "did not (MSA; + present-form verb)", "pos": "neg", "v": "msa", "ex": { "text": "لَم أَذهَب أَمسِ.", "tr": "lam ʔadhhab ʔamsi.", "en": "I didn't go yesterday." }, "verified": false },
+    { "id": "lan", "text": "لَن", "tr": "lan", "en": "will not (MSA)", "pos": "neg", "v": "msa", "ex": { "text": "لَن أَذهَبَ غَدًا.", "tr": "lan ʔadhhaba ghadan.", "en": "I will not go tomorrow." }, "verified": false },
+    { "id": "alladhi", "text": "الَّذي", "tr": "alladhī", "en": "who, which, that (MSA; Shami: illi)", "pos": "rel", "v": "msa", "forms": ["التي", "الذين", "اللي"], "ex": { "text": "الطّالِبُ الَّذي يَدرُسُ الطِّبَّ.", "tr": "aṭ-ṭālibu lladhī yadrusu ṭ-ṭibba.", "en": "The student who studies medicine." }, "verified": false },
+    { "id": "anna", "text": "أَنَّ", "tr": "ʔanna", "en": "that (MSA: 'I know that…')", "pos": "conj", "v": "msa", "forms": ["إن", "إنو"], "ex": { "text": "أَعرِفُ أَنَّ العَرَبيّة جَميلة.", "tr": "ʔaʕrifu ʔanna l-ʕarabiyya jamīla.", "en": "I know that Arabic is beautiful." }, "verified": false },
+    { "id": "ila", "text": "إِلى", "tr": "ʔilā", "en": "to (MSA; Shami: ʕa- / la-)", "pos": "prep", "v": "msa", "ex": { "text": "ذَهَبتُ إِلى السّوق.", "tr": "dhahabtu ʔilā s-sūq.", "en": "I went to the market." }, "verified": false },
+    { "id": "an", "text": "عَن", "tr": "ʕan", "en": "about; from", "pos": "prep", "ex": { "text": "كِتاب عَن التّاريخ.", "tr": "kitāb ʕan at-tārīkh.", "en": "A book about history." }, "verified": false },
+    { "id": "aw", "text": "أَو", "tr": "ʔaw", "en": "or (statements)", "pos": "conj", "ex": { "text": "شاي أَو قَهوة.", "tr": "shāy ʔaw qahwa.", "en": "Tea or coffee." }, "verified": false },
+    { "id": "balad", "text": "بَلَد", "tr": "balad", "en": "country; town (pl. bilād, buldān)", "pos": "noun", "forms": ["البلد", "بلاد", "بلدي"], "ex": { "text": "لُبنانُ بَلَدٌ صَغير.", "tr": "lubnānu baladun ṣaghīr.", "en": "Lebanon is a small country." }, "verified": false },
+    { "id": "asima", "text": "عاصِمة", "tr": "ʕāṣima", "en": "capital city", "pos": "noun", "forms": ["العاصمة"], "ex": { "text": "دِمَشقُ عاصِمةُ سوريا.", "tr": "dimashqu ʕāṣimatu sūriyā.", "en": "Damascus is the capital of Syria." }, "verified": false },
+    { "id": "sukkan", "text": "سُكّان", "tr": "sukkān", "en": "inhabitants, population", "pos": "noun", "root": "s-k-n", "forms": ["السكان"], "ex": { "text": "سُكّانُ المَدينة كَثيرون.", "tr": "sukkānu l-madīna kathīrūn.", "en": "The city has many inhabitants." }, "verified": false },
+    { "id": "tarikh", "text": "تاريخ", "tr": "tārīkh", "en": "history; date", "pos": "noun", "forms": ["التاريخ"], "ex": { "text": "أُحِبُّ التّاريخَ.", "tr": "ʔuḥibbu t-tārīkha.", "en": "I love history." }, "verified": false },
+    { "id": "qadim", "text": "قَديم", "tr": "qadīm (Shami ʔadīm)", "en": "old, ancient (f: qadīma)", "pos": "adj", "forms": ["قديمة"], "ex": { "text": "هٰذِهِ مَدينة قَديمة.", "tr": "hādhihi madīna qadīma.", "en": "This is an ancient city." }, "verified": false },
+    { "id": "jadid", "text": "جَديد", "tr": "jadīd", "en": "new (f: jadīda)", "pos": "adj", "forms": ["جديدة"], "ex": { "text": "عِندي كْتاب جَديد.", "tr": "ʕindi ktāb jdīd.", "en": "I have a new book." }, "verified": false },
+    {"id": "qara", "text": "قَرَأَ", "tr": "qaraʔa", "en": "he read (Shami ʔara, biʔra = I read)", "pos": "verb", "v": "msa", "root": "q-r-ʔ", "forms": ["قرأت", "يقرأ", "يقرؤون", "أقرأ", "بقرا", "قريت"], "ex": {"text": "قَرَأتُ الكِتابَ.", "tr": "qaraʔtu l-kitāba.", "en": "I read the book."}, "verified": false},
+    {"id": "fusha", "text": "الفُصحى", "tr": "al-fuṣḥā", "en": "MSA, formal Arabic", "pos": "noun", "forms": ["فصحى"], "ex": {"text": "الأَخبار بِالفُصحى.", "tr": "il-ʔakhbār bil-fuṣḥa.", "en": "The news is in MSA."}, "verified": false},
+    {"id": "shami", "text": "شامي", "tr": "shāmi", "en": "Damascene; Levantine (f: shāmiyye)", "pos": "adj", "forms": ["الشامية", "شامية", "الشام"], "ex": {"text": "بَحكي عَرَبي شامي.", "tr": "baḥki ʕarabi shāmi.", "en": "I speak Shami Arabic."}, "verified": false},
+    {"id": "nas", "text": "ناس", "tr": "nās", "en": "people", "pos": "noun", "forms": ["الناس"], "ex": {"text": "النّاس هون مْنيحين.", "tr": "in-nās hōn mnīḥīn.", "en": "People here are nice."}, "verified": false},
+    {"id": "lahja", "text": "لَهجة", "tr": "lahje", "en": "dialect, accent (pl. lahajāt)", "pos": "noun", "forms": ["لهجات"], "ex": {"text": "اللَّهجة الشّامية حِلوة.", "tr": "il-lahje sh-shāmiyye ḥilwe.", "en": "The Shami dialect is lovely."}, "verified": false},
+    {"id": "mithl", "text": "مِتل", "tr": "mitl", "en": "like, similar to (MSA mithla)", "pos": "prep", "forms": ["مثل"], "ex": {"text": "مِتل القَهوة.", "tr": "mitl il-ʔahwe.", "en": "Like coffee."}, "verified": false},
+    {"id": "masri", "text": "مَصري", "tr": "maṣri", "en": "Egyptian (f: maṣriyye)", "pos": "adj", "forms": ["المصرية", "مصرية", "مصر"], "ex": {"text": "هِيِّ مَصرية.", "tr": "hiyye maṣriyye.", "en": "She's Egyptian."}, "verified": false},
+    { "id": "akhbar", "text": "أَخبار", "tr": "ʔakhbār", "en": "news (sg. khabar)", "pos": "noun", "forms": ["الأخبار", "خبر"], "ex": { "text": "شو الأَخبار؟", "tr": "shū l-ʔakhbār?", "en": "What's new? (lit. what's the news)" }, "verified": false }
+  ],
+  "grammar": [
+    { "id": "objects", "title": "Me, you, him: endings on verbs", "body": [
+      "Object pronouns attach to verbs: **-ni** me · **-ak** you (m) · **-ik** you (f) · **-o** him · **-a** her · **-na** us · **-kon** you (pl) · **-hon** them.",
+      "**byūjaʕni** = it hurts me · **shiftak** = I saw you · **bḥibbo** = I love him / it."
+    ], "examples": [
+      { "text": "راسي بيوجَعني.", "tr": "rāsi byūjaʕni.", "en": "My head hurts (me)." },
+      { "text": "شِفتا مْبارِح.", "tr": "shifta mbāriḥ.", "en": "I saw her yesterday." }
+    ], "drills": [
+      { "id": "ob1", "prompt": "Say: My stomach hurts.", "answer": "بَطني بيوجَعني.", "tr": "baṭni byūjaʕni." },
+      { "id": "ob2", "prompt": "Say: I saw him at the university.", "answer": "شِفتو بِالجامْعة.", "tr": "shifto bil-jāmʕa." },
+      { "id": "ob3", "prompt": "Say: I love it (m).", "answer": "بحِبّو.", "tr": "bḥibbo." }
+    ], "verified": false },
+    { "id": "negation", "title": "mā vs mish", "body": [
+      "**mā** negates verbs and the verb-like words fī, ʕind-, bidd-: mā baʕrif, mā fī, mā ʕindi, mā biddi.",
+      "**mish** negates everything else: nouns, adjectives, participles, places: mish marīḍ, mish hōn, mish ṭālib. (In Beirut you'll also hear mish + b-verb.)"
+    ], "examples": [
+      { "text": "مِش مَريض، بَس تَعبان.", "tr": "mish marīḍ, bass taʕbān.", "en": "Not sick, just tired." },
+      { "text": "ما عِندي حَرارة.", "tr": "mā ʕindi ḥarāra.", "en": "I don't have a fever." }
+    ], "drills": [
+      { "id": "ng1", "prompt": "Say: I'm not sick.", "answer": "أَنا مِش مَريض.", "tr": "ʔana mish marīḍ." },
+      { "id": "ng2", "prompt": "Say: I don't have a fever.", "answer": "ما عِندي حَرارة.", "tr": "mā ʕindi ḥarāra." },
+      { "id": "ng3", "prompt": "Say: The pharmacy isn't far.", "answer": "الصَّيدَلية مِش بْعيدة.", "tr": "iṣ-ṣaydaliyye mish bʕīde." },
+      { "id": "ng4", "prompt": "Say: I don't understand.", "answer": "ما بِفهَم.", "tr": "mā bifham." }
+    ], "verified": false },
+    { "id": "prepositions", "title": "Prepositions of place", "body": [
+      "**b-** in/at (bil-bēt) · **ʕa-** to/on (ʕal-jāmʕa) · **min** from · **maʕ** with · **ʕind** at someone's place (ʕind il-ḥakīm) · **janb** next to · **ʔiddām** in front of · **wara** behind · **fōʔ** above · **taḥt** under.",
+      "b- and ʕa- join il-: **b + il-bēt → bil-bēt**, **ʕa + il-jāmʕa → ʕal-jāmʕa**."
+    ], "examples": [
+      { "text": "الصَّيدَلية جَنب المُستَشفى.", "tr": "iṣ-ṣaydaliyye janb il-mustashfa.", "en": "The pharmacy is next to the hospital." },
+      { "text": "رِحت عالسّوق مَع صاحْبي.", "tr": "riḥt ʕas-sūʔ maʕ ṣāḥbi.", "en": "I went to the market with my friend." }
+    ], "drills": [
+      { "id": "pp1", "prompt": "Say: I'm at home.", "answer": "أَنا بِالبَيت.", "tr": "ʔana bil-bēt." },
+      { "id": "pp2", "prompt": "Say: I go to the university.", "answer": "بْروح عالجامْعة.", "tr": "brūḥ ʕal-jāmʕa." },
+      { "id": "pp3", "prompt": "Say: The key is under the book.", "answer": "المِفتاح تَحت الكْتاب.", "tr": "il-miftāḥ taḥt il-ktāb." },
+      { "id": "pp4", "prompt": "Say: The hotel is next to the market.", "answer": "الأوتيل جَنب السّوق.", "tr": "il-ʔōtēl janb is-sūʔ." }
+    ], "verified": false },
+    { "id": "imperative", "title": "Commands", "body": [
+      "Take the 'you' present form and drop **b-t-**: btrūḥ → **rūḥ!** go! · btiḥki → **ḥki!** speak! · btākhud → **khūd!** take!",
+      "To a woman add **-i** (rūḥi, khidi), to a group **-u** (rūḥu). Don't…! = **lā** + t-form: lā trūḥ = don't go."
+    ], "examples": [
+      { "text": "روح دُغري، وبَعدين يَمين.", "tr": "rūḥ dighri, w baʕdēn yamīn.", "en": "Go straight, then right." },
+      { "text": "خِدي الدَّوا.", "tr": "khidi id-dawa.", "en": "Take (f) the medicine." }
+    ], "drills": [
+      { "id": "im1", "prompt": "Tell a man: Go straight.", "answer": "روح دُغري.", "tr": "rūḥ dighri." },
+      { "id": "im2", "prompt": "Tell a man: Take a taxi.", "answer": "خود تَكسي.", "tr": "khūd taksi." },
+      { "id": "im3", "prompt": "Tell a woman: Speak Arabic!", "answer": "اِحكي عَرَبي!", "tr": "iḥki ʕarabi!" },
+      { "id": "im4", "prompt": "Tell a man: Don't go!", "answer": "لا تْروح!", "tr": "lā trūḥ!" }
+    ], "verified": false },
+    { "id": "future", "title": "Future: raḥ + verb (no b-)", "body": [
+      "Put **raḥ** before the verb and drop the b-: **raḥ rūḥ** I'll go · **raḥ trūḥ** you'll go · **raḥ yrūḥ** he'll go · **raḥ nrūḥ** we'll go.",
+      "You'll also hear **ḥa-** in some areas. Negate with **mā raḥ**: mā raḥ rūḥ = I won't go."
+    ], "examples": [
+      { "text": "رَح إدرُس بِالمَكتَبة بُكرا.", "tr": "raḥ idrus bil-maktabe bukra.", "en": "I'll study in the library tomorrow." },
+      { "text": "ما رَح إجي يَوم الجُمعة.", "tr": "mā raḥ ʔiji yōm il-jimʕa.", "en": "I won't come on Friday." }
+    ], "drills": [
+      { "id": "fu1", "prompt": "Say: I'll go tomorrow.", "answer": "رَح روح بُكرا.", "tr": "raḥ rūḥ bukra." },
+      { "id": "fu2", "prompt": "Say: I won't come on Friday.", "answer": "ما رَح إجي يَوم الجُمعة.", "tr": "mā raḥ ʔiji yōm il-jimʕa." },
+      { "id": "fu3", "prompt": "Ask a man: What will you do on Saturday?", "answer": "شو رَح تَعمِل يَوم السَّبت؟", "tr": "shū raḥ taʕmel yōm is-sabt?" }
+    ], "verified": false },
+    { "id": "modals", "title": "must / can / want + bare verb", "concept": "subjunctive", "body": [
+      "After **lāzim** (must), **mumkin** (could), **biʔdar** (I can), **bidd-** (want), and **raḥ**, the verb has no b-: lāzim **rūḥ**, biddi **ʔiʕrif**, biʔdar **ʔiji**.",
+      "The person prefix stays: lāzim **trūḥ** (you must go), lāzim **yrūḥ** (he must go)."
+    ], "examples": [
+      { "text": "لازِم إدرُس، عِندي اِمتِحان.", "tr": "lāzim idrus, ʕindi imtiḥān.", "en": "I have to study, I have an exam." },
+      { "text": "مُمكِن تِحكي شْوَي شْوَي؟", "tr": "mumkin tiḥki shwayy shwayy?", "en": "Could you speak slowly?" }
+    ], "drills": [
+      { "id": "md1", "prompt": "Say: I have to study today.", "answer": "لازِم إدرُس اليوم.", "tr": "lāzim idrus il-yōm." },
+      { "id": "md2", "prompt": "Ask a man politely: Could you speak slowly?", "answer": "مُمكِن تِحكي شْوَي شْوَي؟", "tr": "mumkin tiḥki shwayy shwayy?" },
+      { "id": "md3", "prompt": "Say: I can't come today.", "answer": "ما بِقدَر إجي اليوم.", "tr": "mā biʔdar ʔiji il-yōm." },
+      { "id": "md4", "prompt": "Say: I want to go to the airport.", "answer": "بِدّي روح عالمَطار.", "tr": "biddi rūḥ ʕal-maṭār." }
+    ], "verified": false },
+    { "id": "msa-map", "title": "Shami → MSA: the main swaps", "body": [
+      "You already know most MSA words: roots and nouns are largely shared. The big differences are small function words:",
+      "mish → **laysa** · mā (verb) → **lā / lam** · biddi → **ʔurīdu** · shū → **mādhā** · wēn → **ʔayna** · hallaʔ → **al-ʔāna** · ktīr → **jiddan / kathīr** · raḥ → **sawfa / sa-** · hāda / hāy → **hādhā / hādhihi** · illi → **alladhī** · niḥna → **naḥnu** · hinne → **hum**.",
+      "Pronunciation: MSA says ق as q, ث as th, ذ as dh, and ج as j."
+    ], "examples": [
+      { "text": "أُريدُ أَن أَذهَبَ إِلى المَكتَبة.", "tr": "ʔurīdu ʔan ʔadhhaba ʔilā l-maktaba.", "en": "I want to go to the library. (Shami: biddi rūḥ ʕal-maktabe.)" }
+    ], "drills": [
+      { "id": "mm1", "prompt": "MSA for Shami 'mish ṣaʕb' (not hard):", "answer": "لَيسَ صَعبًا", "tr": "laysa ṣaʕban" },
+      { "id": "mm2", "prompt": "MSA for Shami 'wēn' (where):", "answer": "أَينَ", "tr": "ʔayna" },
+      { "id": "mm3", "prompt": "MSA for Shami 'hallaʔ' (now):", "answer": "الآن", "tr": "al-ʔāna" },
+      { "id": "mm4", "prompt": "MSA for Shami 'biddi' (I want):", "answer": "أُريدُ", "tr": "ʔurīdu" },
+      { "id": "mm5", "prompt": "MSA for Shami 'shū' (what, before a verb):", "answer": "ماذا", "tr": "mādhā" }
+    ], "verified": false },
+    { "id": "msa-verbs", "title": "MSA verbs: no b-, final -u", "concept": "aspect", "body": [
+      "MSA present has no b-, and formal reading adds a final -u: **ʔaktubu** I write · **taktubu** you write · **yaktubu** he writes · **naktubu** we write. Compare Shami baktob, btiktob, byiktob, mniktob.",
+      "Negation: **lā yaktubu** he doesn't write · **lam yaktub** he didn't write · **lan yaktuba** he won't write · future **sa-yaktubu / sawfa yaktubu**."
+    ], "examples": [
+      { "text": "يَدرُسُ الطّالِبُ الطِّبَّ.", "tr": "yadrusu ṭ-ṭālibu ṭ-ṭibba.", "en": "The student studies medicine." },
+      { "text": "لَم يَذهَب إِلى الجامِعة.", "tr": "lam yadhhab ʔilā l-jāmiʕa.", "en": "He didn't go to the university." }
+    ], "drills": [
+      { "id": "mv1", "prompt": "MSA: He studies (d-r-s).", "answer": "يَدرُسُ", "tr": "yadrusu" },
+      { "id": "mv2", "prompt": "MSA: He didn't go.", "answer": "لَم يَذهَب", "tr": "lam yadhhab" },
+      { "id": "mv3", "prompt": "MSA: I will go (with sawfa).", "answer": "سَوفَ أَذهَبُ", "tr": "sawfa ʔadhhabu" }
+    ], "verified": false }
+  ],
+  "texts": [
+    { "id": "d09", "title": "At the clinic", "level": "U9", "v": "lev", "kind": "dialogue", "lines": [
+      { "sp": "Doctor", "text": "أَهلا، شو بيوجَعَك؟", "tr": "ʔahlan, shū byūjaʕak?", "en": "Hello, what's hurting you?" },
+      { "sp": "You", "text": "راسي بيوجَعني، وعِندي حَرارة.", "tr": "rāsi byūjaʕni, w ʕindi ḥarāra.", "en": "My head hurts, and I have a fever." },
+      { "sp": "Doctor", "text": "مِن إيمتى؟", "tr": "min ʔēmta?", "en": "Since when?" },
+      { "sp": "You", "text": "مِن مْبارِح. وأَنا تَعبان كْتير.", "tr": "min mbāriḥ. w ʔana taʕbān ktīr.", "en": "Since yesterday. And I'm very tired." },
+      { "sp": "Doctor", "text": "بَطنَك بيوجَعَك؟", "tr": "baṭnak byūjaʕak?", "en": "Does your stomach hurt?" },
+      { "sp": "You", "text": "لأ، بَطني مْنيح.", "tr": "laʔ, baṭni mnīḥ.", "en": "No, my stomach is fine." },
+      { "sp": "Doctor", "text": "الضَّغط عادي، والقَلب مْنيح. خود نَفَس.", "tr": "iḍ-ḍaghṭ ʕādi, wil-ʔalb mnīḥ. khūd nafas.", "en": "Your blood pressure is normal and your heart is fine. Take a breath." },
+      { "sp": "Doctor", "text": "مِش شي كْبير. خود هادا الدَّوا مِن الصَّيدَلية.", "tr": "mish shī kbīr. khūd hāda id-dawa min iṣ-ṣaydaliyye.", "en": "It's nothing serious. Get this medicine from the pharmacy." },
+      { "sp": "You", "text": "شُكرًا كْتير.", "tr": "shukran ktīr.", "en": "Thank you very much." },
+      { "sp": "Doctor", "text": "سَلامتَك!", "tr": "salāmtak!", "en": "Get well soon!" }
+    ], "verified": false },
+    { "id": "d10", "title": "Taxi to the market", "level": "U10", "v": "lev", "kind": "dialogue", "lines": [
+      { "sp": "You", "text": "مَرحَبا، بِدّي روح عالسّوق، لَو سَمَحت.", "tr": "marḥaba, biddi rūḥ ʕas-sūʔ, law samaḥt.", "en": "Hi, I'd like to go to the market, please." },
+      { "sp": "Driver", "text": "أَهلا! السّوق مِش بْعيد. يَلّا.", "tr": "ʔahlan! is-sūʔ mish bʕīd. yalla.", "en": "Hi! The market isn't far. Let's go." },
+      { "sp": "You", "text": "قَدّيش؟", "tr": "ʔaddēsh?", "en": "How much?" },
+      { "sp": "Driver", "text": "عَشرة.", "tr": "ʕashara.", "en": "Ten." },
+      { "sp": "You", "text": "طَيِّب، ماشي.", "tr": "ṭayyib, māshi.", "en": "OK, fine." },
+      { "sp": "Driver", "text": "إنتَ مْنين؟ بْتِحكي عَرَبي مْنيح!", "tr": "inta mnēn? btiḥki ʕarabi mnīḥ!", "en": "Where are you from? You speak Arabic well!" },
+      { "sp": "You", "text": "مِن أَميركا. بَدرُس عَرَبي بِالجامْعة.", "tr": "min ʔamērka. badrus ʕarabi bil-jāmʕa.", "en": "From America. I study Arabic at the university." },
+      { "sp": "Driver", "text": "هون السّوق. الباب قِدّامَك، ورا الجامِع.", "tr": "hōn is-sūʔ. il-bāb ʔiddāmak, wara l-jāmiʕ.", "en": "Here's the market. The gate is in front of you, behind the mosque." },
+      { "sp": "You", "text": "شُكرًا! مَع السَّلامة.", "tr": "shukran! maʕ is-salāme.", "en": "Thanks! Goodbye." }
+    ], "verified": false },
+    { "id": "d11", "title": "Weekend plans", "level": "U11", "v": "lev", "kind": "dialogue", "names": ["بيروت"], "lines": [
+      { "sp": "Rami", "text": "شو رَح تَعمِل يَوم الجُمعة؟", "tr": "shū raḥ taʕmel yōm il-jimʕa?", "en": "What are you doing on Friday?" },
+      { "sp": "Venu", "text": "ما بَعرِف. يِمكِن روح عالسّوق. لَيش؟", "tr": "mā baʕrif. yimkin rūḥ ʕas-sūʔ. lēsh?", "en": "I don't know. Maybe I'll go to the market. Why?" },
+      { "sp": "Rami", "text": "إذا فاضي، تَعا نِشرَب قَهوة.", "tr": "ʔiza fāḍi, taʕa nishrab ʔahwe.", "en": "If you're free, come have a coffee." },
+      { "sp": "Venu", "text": "أَكيد! بَس لازِم إدرُس الصُّبح. عِندي اِمتِحان يَوم الأَحَد.", "tr": "ʔakīd! bass lāzim idrus iṣ-ṣubḥ. ʕindi imtiḥān yōm il-ʔaḥad.", "en": "Definitely! But I have to study in the morning. I have an exam on Sunday." },
+      { "sp": "Rami", "text": "ماشي، بَعد الضُّهر؟", "tr": "māshi, baʕd iḍ-ḍuhr?", "en": "OK, in the afternoon?" },
+      { "sp": "Venu", "text": "طَبعًا. وبَعد شَهر رَح سافِر عَلى بيروت!", "tr": "ṭabʕan. w baʕd shahr raḥ sāfir ʕala Bēirūt!", "en": "Of course. And in a month I'm travelling to Beirut!" },
+      { "sp": "Rami", "text": "يا سَلام! رَح تِحكي عَرَبي كْتير هونيك.", "tr": "yā salām! raḥ tiḥki ʕarabi ktīr hōnīk.", "en": "Wow! You'll speak a lot of Arabic there." },
+      { "sp": "Venu", "text": "إن شاء الله! يَلّا، بْشوفَك الجُمعة.", "tr": "inshalla! yalla, bshūfak il-jimʕa.", "en": "Hopefully! OK, see you Friday." }
+    ], "verified": false },
+    { "id": "m01", "title": "MSA reading: Damascus", "level": "U12", "v": "msa", "kind": "reading", "names": ["دمشق", "سوريا"], "lines": [
+      { "text": "دِمَشقُ عاصِمةُ سوريا.", "tr": "dimashqu ʕāṣimatu sūriyā.", "en": "Damascus is the capital of Syria." },
+      { "text": "هِيَ مَدينة قَديمة جِدًّا وجَميلة.", "tr": "hiya madīna qadīma jiddan wa-jamīla.", "en": "It is a very old and beautiful city." },
+      { "text": "في المَدينة سوق كَبير ومَطاعِم كَثيرة.", "tr": "fī l-madīna sūq kabīr wa-maṭāʕim kathīra.", "en": "In the city there is a big market and many restaurants." },
+      { "text": "سُكّانُ دِمَشقَ يَتَكَلَّمونَ العَرَبيّة الشّاميّة.", "tr": "sukkānu dimashqa yatakallamūna l-ʕarabiyya sh-shāmiyya.", "en": "The people of Damascus speak Shami Arabic." },
+      { "text": "ولٰكِنَّهُم يَقرَؤونَ الأَخبارَ بِالفُصحى.", "tr": "wa-lākinnahum yaqraʔūna l-ʔakhbāra bil-fuṣḥā.", "en": "But they read the news in MSA (fuṣḥā)." }
+    ], "verified": false },
+    { "id": "m02", "title": "MSA reading: A student's day", "level": "U12", "v": "msa", "kind": "reading", "names": ["ليلى"], "lines": [
+      { "text": "لَيلى طالِبة في الجامِعة.", "tr": "laylā ṭāliba fī l-jāmiʕa.", "en": "Layla is a student at the university." },
+      { "text": "هِيَ تَدرُسُ الطِّبَّ.", "tr": "hiya tadrusu ṭ-ṭibba.", "en": "She studies medicine." },
+      { "text": "كُلَّ يَوم تَذهَبُ إِلى المَكتَبة.", "tr": "kulla yawm tadhhabu ʔilā l-maktaba.", "en": "Every day she goes to the library." },
+      { "text": "أَمسِ لَم تَذهَب، لِأَنَّها كانَت مَريضة.", "tr": "ʔamsi lam tadhhab, liʔannahā kānat marīḍa.", "en": "Yesterday she didn't go, because she was sick." },
+      { "text": "سَوفَ تَذهَبُ غَدًا، إن شاء الله.", "tr": "sawfa tadhhabu ghadan, in shāʔa llāh.", "en": "She will go tomorrow, God willing." }
+    ], "verified": false },
+    { "id": "m03", "title": "MSA reading: The Arabic language", "level": "U12", "v": "msa", "kind": "reading", "lines": [
+      { "text": "العَرَبيّة لُغة كَبيرة في العالَم.", "tr": "al-ʕarabiyya lugha kabīra fī l-ʕālam.", "en": "Arabic is a big language in the world." },
+      { "text": "لِلعَرَبيّة تاريخ قَديم.", "tr": "lil-ʕarabiyya tārīkh qadīm.", "en": "Arabic has an ancient history." },
+      { "text": "النّاسُ يَتَكَلَّمونَ لَهَجات كَثيرة، مِثلَ الشّاميّة والمِصريّة.", "tr": "an-nāsu yatakallamūna lahajāt kathīra, mithla sh-shāmiyya wal-miṣriyya.", "en": "People speak many dialects, like Shami and Egyptian." },
+      { "text": "ولٰكِنَّ الكُتُبَ والأَخبارَ بِالفُصحى.", "tr": "wa-lākinna l-kutuba wal-ʔakhbāra bil-fuṣḥā.", "en": "But books and news are in MSA." },
+      { "text": "الطّالِبُ الَّذي يَعرِفُ الاِثنَتَينِ يَفهَمُ كُلَّ شَيء.", "tr": "aṭ-ṭālibu lladhī yaʕrifu l-ithnatayni yafhamu kulla shayʔ.", "en": "The student who knows both understands everything." }
+    ], "verified": false }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "units": [
+    { "id": "u05", "title": "5 · Roots and patterns", "goal": "See the three-letter root inside words and guess new ones from patterns.", "items": [
+      "script:s5", "grammar:roots", "word:katab", "word:ktab", "word:maktab", "word:maktabe", "word:katib", "word:maktub", "grammar:patterns",
+      "word:dars", "word:madrase", "word:mudarris", "word:mallem", "word:ilm", "word:alam", "word:fatah", "word:maftuh", "word:miftah",
+      "word:mashrub", "word:matam", "word:sual", "word:jawab", "word:saff", "word:imtihan", "word:bittawfiq", "text:d05" ] },
+    { "id": "u06", "title": "6 · Yesterday", "goal": "Say what you did; talk about times of day.", "items": [
+      "script:s6", "word:riht", "word:akalt", "word:shribt", "word:amilt", "grammar:past", "word:hakeit", "word:baul", "word:shift", "word:nimt", "word:sihit",
+      "word:mbareh", "word:bukra", "word:subh", "word:masa", "word:lel", "word:kan", "grammar:kan", "word:saa", "word:waat", "word:badein", "word:abl", "word:baad",
+      "word:lissa", "word:khalas", "text:d06" ] },
+    { "id": "u07", "title": "7 · Family", "goal": "Describe your family and say whose things are whose.", "items": [
+      "script:s7", "word:ahl", "word:imm", "word:bayy", "word:akh", "word:ukht", "grammar:possessive", "word:ibn", "word:bint", "word:joz", "word:mart",
+      "word:sahib", "word:ele", "word:walad", "grammar:idafa", "word:kbir", "word:zghir", "word:umr", "word:sine", "word:teta", "word:jiddo", "word:sakin", "word:mitjawwez", "text:d07" ] },
+    { "id": "u08", "title": "8 · Numbers and shopping", "goal": "Count, ask prices, bargain politely.", "items": [
+      "word:wahad", "word:tnen", "word:tlete", "word:arbaa", "word:khamse", "grammar:numbers", "word:sitte", "word:sabaa", "word:tmene", "word:tisaa", "word:ashara",
+      "word:lira", "word:masari", "word:ghali", "word:rkhis", "grammar:article", "word:shtaret", "word:suu", "word:dikkan", "word:hek", "word:bakhud", "word:baati", "word:adi", "text:d08" ] }
+  ],
+  "words": [
+    { "id": "katab", "text": "كَتَب", "tr": "katab", "en": "he wrote (katabt = I wrote)", "pos": "verb", "root": "k-t-b", "pattern": "CaCaC", "forms": ["كتبت", "بكتب", "بيكتب", "بتكتب", "كتبنا"], "ex": { "text": "كَتَبت رِسالة لِليلى.", "tr": "katabt risāle la-Layla.", "en": "I wrote a letter to Layla." }, "verified": false },
+    { "id": "ktab", "text": "كْتاب", "tr": "ktāb", "en": "book (pl. kutub)", "pos": "noun", "root": "k-t-b", "pattern": "CiCāC", "forms": ["الكتاب", "كتابي"], "msa": { "text": "كِتاب", "tr": "kitāb" }, "ex": { "text": "هادا كْتاب عَرَبي.", "tr": "hāda ktāb ʕarabi.", "en": "This is an Arabic book." }, "verified": false },
+    { "id": "maktab", "text": "مَكتَب", "tr": "maktab", "en": "office; desk (place of writing)", "pos": "noun", "root": "k-t-b", "pattern": "maCCaC", "ex": { "text": "المُدَرِّس بِمَكتَبو.", "tr": "il-mudarris b-maktabo.", "en": "The teacher is in his office." }, "verified": false },
+    { "id": "maktabe", "text": "مَكتَبة", "tr": "maktabe", "en": "library; bookshop", "pos": "noun", "root": "k-t-b", "pattern": "maCCaCa", "ex": { "text": "وين المَكتَبة؟", "tr": "wēn il-maktabe?", "en": "Where's the library?" }, "verified": false },
+    { "id": "katib", "text": "كاتِب", "tr": "kātib", "en": "writer (one who writes)", "pos": "noun", "root": "k-t-b", "pattern": "CāCiC", "forms": ["كاتبة"], "ex": { "text": "هُوِّ كاتِب سوري.", "tr": "huwwe kātib sūri.", "en": "He's a Syrian writer." }, "verified": false },
+    { "id": "maktub", "text": "مَكتوب", "tr": "maktūb", "en": "written; a letter; fate ('it is written')", "pos": "adj", "root": "k-t-b", "pattern": "maCCūC", "ex": { "text": "شو مَكتوب هون؟", "tr": "shū maktūb hōn?", "en": "What's written here?" }, "verified": false },
+    { "id": "dars", "text": "دَرس", "tr": "dars", "en": "lesson (pl. drūs)", "pos": "noun", "root": "d-r-s", "forms": ["الدرس", "دروس"], "ex": { "text": "الدَّرس اليوم صَعب.", "tr": "id-dars il-yōm ṣaʕb.", "en": "Today's lesson is hard." }, "verified": false },
+    { "id": "madrase", "text": "مَدرَسة", "tr": "madrase", "en": "school (place of studying)", "pos": "noun", "root": "d-r-s", "pattern": "maCCaCa", "ex": { "text": "أُختي بِالمَدرَسة.", "tr": "ʔukhti bil-madrase.", "en": "My sister is at school." }, "verified": false },
+    { "id": "mudarris", "text": "مُدَرِّس", "tr": "mudarris", "en": "teacher (one who teaches)", "pos": "noun", "root": "d-r-s", "pattern": "muCaCCiC", "forms": ["المدرس", "مدرّسة"], "ex": { "text": "المُدَرِّس كْتير مْنيح.", "tr": "il-mudarris ktīr mnīḥ.", "en": "The teacher is very good." }, "verified": false },
+    { "id": "mallem", "text": "مْعَلِّم", "tr": "mʕallem", "en": "teacher; master; boss", "pos": "noun", "root": "ʕ-l-m", "pattern": "muCaCCiC", "forms": ["معلمة", "المعلم"], "msa": { "text": "مُعَلِّم", "tr": "muʕallim" }, "ex": { "text": "إمّي مْعَلِّمة.", "tr": "immi mʕallme.", "en": "My mother is a teacher." }, "verified": false },
+    { "id": "ilm", "text": "عِلم", "tr": "ʕilm", "en": "science, knowledge (pl. ʕulūm)", "pos": "noun", "root": "ʕ-l-m", "forms": ["علوم"], "ex": { "text": "بحِبّ العِلم.", "tr": "bḥibb il-ʕilm.", "en": "I love science." }, "verified": false },
+    { "id": "alam", "text": "عالَم", "tr": "ʕālam", "en": "world; people", "pos": "noun", "root": "ʕ-l-m", "forms": ["العالم"], "ex": { "text": "العَرَبي لُغة كْبيرة بِالعالَم.", "tr": "il-ʕarabi lugha kbīre bil-ʕālam.", "en": "Arabic is a big language in the world." }, "verified": false },
+    { "id": "fatah", "text": "فَتَح", "tr": "fataḥ", "en": "he opened (fataḥt = I opened)", "pos": "verb", "root": "f-t-ḥ", "forms": ["فتحت", "بفتح", "افتح"], "ex": { "text": "فَتَحت الكْتاب.", "tr": "fataḥt il-ktāb.", "en": "I opened the book." }, "verified": false },
+    { "id": "maftuh", "text": "مَفتوح", "tr": "maftūḥ", "en": "open (opened)", "pos": "adj", "root": "f-t-ḥ", "pattern": "maCCūC", "forms": ["مفتوحة"], "ex": { "text": "المَكتَبة مَفتوحة هَلَّق.", "tr": "il-maktabe maftūḥa hallaʔ.", "en": "The library is open now." }, "verified": false },
+    { "id": "miftah", "text": "مِفتاح", "tr": "miftāḥ", "en": "key (tool for opening)", "pos": "noun", "root": "f-t-ḥ", "pattern": "miCCāC", "forms": ["المفتاح"], "ex": { "text": "وين المِفتاح؟", "tr": "wēn il-miftāḥ?", "en": "Where's the key?" }, "verified": false },
+    { "id": "mashrub", "text": "مَشروب", "tr": "mashrūb", "en": "a drink (something drunk)", "pos": "noun", "root": "sh-r-b", "pattern": "maCCūC", "forms": ["مشروبات"], "ex": { "text": "شو بِدَّك مَشروب؟", "tr": "shū biddak mashrūb?", "en": "What would you like to drink?" }, "verified": false },
+    { "id": "matam", "text": "مَطعَم", "tr": "maṭʕam", "en": "restaurant (place of eating)", "pos": "noun", "root": "ṭ-ʕ-m", "pattern": "maCCaC", "forms": ["مطاعم", "المطعم"], "ex": { "text": "في مَطعَم طَيِّب هون.", "tr": "fī maṭʕam ṭayyib hōn.", "en": "There's a good restaurant here." }, "verified": false },
+    { "id": "sual", "text": "سُؤال", "tr": "suʔāl", "en": "question", "pos": "noun", "root": "s-ʔ-l", "forms": ["سؤالي", "أسئلة"], "ex": { "text": "عِندي سُؤال.", "tr": "ʕindi suʔāl.", "en": "I have a question." }, "verified": false },
+    { "id": "jawab", "text": "جَواب", "tr": "jawāb", "en": "answer", "pos": "noun", "forms": ["الجواب"], "ex": { "text": "ما بَعرِف الجَواب.", "tr": "mā baʕrif il-jawāb.", "en": "I don't know the answer." }, "verified": false },
+    { "id": "saff", "text": "صَفّ", "tr": "ṣaff", "en": "class (lesson; also row)", "pos": "noun", "forms": ["الصف"], "ex": { "text": "عِندي صَفّ عَرَبي اليوم.", "tr": "ʕindi ṣaff ʕarabi il-yōm.", "en": "I have Arabic class today." }, "verified": false },
+    { "id": "imtihan", "text": "اِمتِحان", "tr": "imtiḥān", "en": "exam", "pos": "noun", "forms": ["الامتحان"], "ex": { "text": "عِندي اِمتِحان بُكرا.", "tr": "ʕindi imtiḥān bukra.", "en": "I have an exam tomorrow." }, "verified": false },
+    {"id": "bittawfiq", "text": "بِالتَّوفيق", "tr": "bit-tawfīʔ", "en": "good luck", "pos": "phrase", "forms": ["توفيق"], "ex": {"text": "عِندَك اِمتِحان؟ بِالتَّوفيق!", "tr": "ʕindak imtiḥān? bit-tawfīʔ!", "en": "You have an exam? Good luck!"}, "verified": false},
+
+    { "id": "riht", "text": "رِحت", "tr": "riḥt", "en": "I went (rāḥ = he went)", "pos": "verb", "root": "r-w-ḥ", "forms": ["راح", "راحت", "رحنا", "رحتي"], "msa": { "text": "ذَهَبتُ", "tr": "dhahabtu" }, "ex": { "text": "رِحت عالسّوق مْبارِح.", "tr": "riḥt ʕas-sūʔ mbāriḥ.", "en": "I went to the market yesterday." }, "verified": false },
+    { "id": "akalt", "text": "أَكَلت", "tr": "ʔakalt", "en": "I ate", "pos": "verb", "root": "ʔ-k-l", "forms": ["أكلنا", "أكلتي"], "ex": { "text": "أَكَلت بِالمَطعَم.", "tr": "ʔakalt bil-maṭʕam.", "en": "I ate at the restaurant." }, "verified": false },
+    { "id": "shribt", "text": "شْرِبت", "tr": "shribt", "en": "I drank", "pos": "verb", "root": "sh-r-b", "forms": ["شرب", "شربنا"], "ex": { "text": "شْرِبت قَهوة الصُّبح.", "tr": "shribt ʔahwe iṣ-ṣubḥ.", "en": "I drank coffee in the morning." }, "verified": false },
+    { "id": "amilt", "text": "عْمِلت", "tr": "ʕmilt", "en": "I did, I made", "pos": "verb", "root": "ʕ-m-l", "forms": ["عملتي", "عملنا"], "ex": { "text": "شو عْمِلت اليوم؟", "tr": "shū ʕmilt il-yōm?", "en": "What did you do today?" }, "verified": false },
+    { "id": "hakeit", "text": "حَكيت", "tr": "ḥakēt", "en": "I spoke, I talked", "pos": "verb", "root": "ḥ-k-y", "forms": ["حكى", "حكينا", "حكيتي"], "ex": { "text": "حَكيت مَع إمّي.", "tr": "ḥakēt maʕ immi.", "en": "I talked with my mother." }, "verified": false },
+    {"id": "baul", "text": "بْقول", "tr": "bʔūl", "en": "I say (ʔāl = he said)", "pos": "verb", "root": "q-w-l", "forms": ["قال", "قالت", "بتقول", "بيقول", "قلت", "قلتلك"], "ex": {"text": "شو قال المُدَرِّس؟", "tr": "shū ʔāl il-mudarris?", "en": "What did the teacher say?"}, "verified": false},
+    { "id": "shift", "text": "شِفت", "tr": "shift", "en": "I saw (shāf = he saw)", "pos": "verb", "root": "sh-w-f", "forms": ["بشوفك", "بشوف", "شوف", "يشوف", "بتشوف", "شاف", "شافت", "شفنا", "شفتي"], "msa": { "text": "رَأَيتُ", "tr": "raʔaytu" }, "ex": { "text": "شِفت ليلى بِالجامْعة.", "tr": "shift Layla bil-jāmʕa.", "en": "I saw Layla at the university." }, "verified": false },
+    { "id": "nimt", "text": "نِمت", "tr": "nimt", "en": "I slept", "pos": "verb", "root": "n-w-m", "forms": ["نام", "نامت", "بنام"], "ex": { "text": "نِمت مْنيح.", "tr": "nimt mnīḥ.", "en": "I slept well." }, "verified": false },
+    { "id": "sihit", "text": "صِحيت", "tr": "ṣḥīt", "en": "I woke up", "pos": "verb", "root": "ṣ-ḥ-y", "forms": ["صحي", "بصحى"], "ex": { "text": "صِحيت الصُّبح.", "tr": "ṣḥīt iṣ-ṣubḥ.", "en": "I woke up in the morning." }, "verified": false },
+    { "id": "mbareh", "text": "مْبارِح", "tr": "mbāriḥ", "en": "yesterday", "pos": "adv", "msa": { "text": "أَمس", "tr": "ʔams" }, "ex": { "text": "مْبارِح كان عِندي صَفّ.", "tr": "mbāriḥ kān ʕindi ṣaff.", "en": "Yesterday I had class." }, "verified": false },
+    { "id": "bukra", "text": "بُكرا", "tr": "bukra", "en": "tomorrow", "pos": "adv", "msa": { "text": "غَدًا", "tr": "ghadan" }, "ex": { "text": "بْشوفَك بُكرا.", "tr": "bshūfak bukra.", "en": "See you tomorrow." }, "verified": false },
+    { "id": "subh", "text": "الصُّبح", "tr": "iṣ-ṣubḥ", "en": "(in) the morning", "pos": "noun", "forms": ["صبح"], "msa": { "text": "الصَّباح", "tr": "aṣ-ṣabāḥ" }, "ex": { "text": "بِشرَب قَهوة الصُّبح.", "tr": "bishrab ʔahwe iṣ-ṣubḥ.", "en": "I drink coffee in the morning." }, "verified": false },
+    { "id": "masa", "text": "المَسا", "tr": "il-masa", "en": "(in) the evening", "pos": "noun", "forms": ["مسا", "مساء"], "ex": { "text": "بَدرُس بِالمَسا.", "tr": "badrus bil-masa.", "en": "I study in the evening." }, "verified": false },
+    { "id": "lel", "text": "لَيل", "tr": "lēl", "en": "night", "pos": "noun", "forms": ["الليل"], "ex": { "text": "بَدرُس بِاللَّيل.", "tr": "badrus bil-lēl.", "en": "I study at night." }, "verified": false },
+    { "id": "kan", "text": "كان", "tr": "kān", "en": "was (kint = I was; kānit = she was)", "pos": "verb", "root": "k-w-n", "forms": ["كنت", "كانت", "كنا", "كانو"], "ex": { "text": "كِنت بِالبَيت.", "tr": "kint bil-bēt.", "en": "I was at home." }, "verified": false },
+    { "id": "saa", "text": "ساعة", "tr": "sāʕa", "en": "hour; o'clock; watch", "pos": "noun", "forms": ["الساعة", "ساعات"], "ex": { "text": "قَدّيش السّاعة؟", "tr": "ʔaddēsh is-sāʕa?", "en": "What time is it?" }, "verified": false },
+    { "id": "waat", "text": "وَقت", "tr": "waʔt", "en": "time", "pos": "noun", "forms": ["الوقت"], "ex": { "text": "ما عِندي وَقت.", "tr": "mā ʕindi waʔt.", "en": "I don't have time." }, "verified": false },
+    { "id": "badein", "text": "بَعدين", "tr": "baʕdēn", "en": "later; then", "pos": "adv", "ex": { "text": "أَكَلت، وبَعدين نِمت.", "tr": "ʔakalt, w baʕdēn nimt.", "en": "I ate, and then I slept." }, "verified": false },
+    { "id": "abl", "text": "قَبل", "tr": "ʔabl", "en": "before", "pos": "prep", "ex": { "text": "قَبل الصَّفّ بِشرَب قَهوة.", "tr": "ʔabl iṣ-ṣaff bishrab ʔahwe.", "en": "Before class I drink coffee." }, "verified": false },
+    { "id": "baad", "text": "بَعد", "tr": "baʕd", "en": "after", "pos": "prep", "ex": { "text": "بَعد الصَّفّ بْروح عالبَيت.", "tr": "baʕd iṣ-ṣaff brūḥ ʕal-bēt.", "en": "After class I go home." }, "verified": false },
+    { "id": "lissa", "text": "لِسّا", "tr": "lissa", "en": "still; (with mā) not yet", "pos": "adv", "forms": ["لسه"], "ex": { "text": "لِسّا عِندي شُغل.", "tr": "lissa ʕindi shughl.", "en": "I still have work." }, "verified": false },
+    { "id": "khalas", "text": "خَلَص", "tr": "khalaṣ", "en": "that's it; enough; finished", "pos": "interj", "forms": ["خلصت"], "ex": { "text": "خَلَص، يَلّا!", "tr": "khalaṣ, yalla!", "en": "That's it, let's go!" }, "verified": false },
+
+    { "id": "ahl", "text": "أَهل", "tr": "ʔahl", "en": "family, parents", "pos": "noun", "forms": ["أهلي", "أهلك"], "ex": { "text": "أَهلي بِأَميركا.", "tr": "ʔahli b-ʔamērka.", "en": "My parents are in America." }, "verified": false },
+    { "id": "imm", "text": "إمّي", "tr": "immi", "en": "my mother (imm = mother)", "pos": "noun", "forms": ["إم", "امك", "امو", "اما"], "msa": { "text": "أُمّي", "tr": "ʔummī" }, "ex": { "text": "إمّي حَكيمة.", "tr": "immi ḥakīme.", "en": "My mother is a doctor." }, "verified": false },
+    { "id": "bayy", "text": "بَيّي", "tr": "bayyi", "en": "my father (bayy = father)", "pos": "noun", "forms": ["بي", "بيك", "بيو", "أبوي"], "msa": { "text": "أَبي", "tr": "ʔabī" }, "ex": { "text": "بَيّي عِندو شُغل كْتير.", "tr": "bayyi ʕindo shughl ktīr.", "en": "My father has a lot of work." }, "verified": false },
+    { "id": "akh", "text": "أَخ", "tr": "ʔakh", "en": "brother (my brother: khayyi / ʔakhi)", "pos": "noun", "forms": ["أخي", "خيي", "أخوك", "إخوة"], "ex": { "text": "عِندي أَخ واحِد.", "tr": "ʕindi ʔakh wāḥad.", "en": "I have one brother." }, "verified": false },
+    { "id": "ukht", "text": "أُخت", "tr": "ʔukht", "en": "sister", "pos": "noun", "forms": ["أختي", "أختك", "خواتي"], "ex": { "text": "أُختي زْغيرة.", "tr": "ʔukhti zghīre.", "en": "My sister is young." }, "verified": false },
+    { "id": "ibn", "text": "اِبن", "tr": "ibn", "en": "son", "pos": "noun", "forms": ["ابني", "ابنو"], "ex": { "text": "اِبنا طالِب.", "tr": "ibna ṭālib.", "en": "Her son is a student." }, "verified": false },
+    { "id": "bint", "text": "بِنت", "tr": "bint", "en": "girl; daughter", "pos": "noun", "forms": ["بنتي", "بنات"], "ex": { "text": "بِنتو بِالمَدرَسة.", "tr": "binto bil-madrase.", "en": "His daughter is at school." }, "verified": false },
+    { "id": "joz", "text": "جوز", "tr": "jōz", "en": "husband (also: pair)", "pos": "noun", "forms": ["جوزا", "جوزي"], "msa": { "text": "زَوج", "tr": "zawj" }, "ex": { "text": "جوزا لِبناني.", "tr": "jōza libnāni.", "en": "Her husband is Lebanese." }, "verified": false },
+    { "id": "mart", "text": "مَرة", "tr": "mara", "en": "woman; wife (his wife: marto)", "pos": "noun", "forms": ["مرتو", "مرتي"], "msa": { "text": "زَوجة", "tr": "zawja" }, "ex": { "text": "مَرتو سورية.", "tr": "marto sūriyye.", "en": "His wife is Syrian." }, "verified": false },
+    { "id": "sahib", "text": "صاحِب", "tr": "ṣāḥib", "en": "friend (f: ṣāḥbe; pl. ṣḥāb)", "pos": "noun", "root": "ṣ-ḥ-b", "forms": ["صاحبي", "صاحبة", "صاحبتي", "صحاب"], "msa": { "text": "صَديق", "tr": "ṣadīq" }, "ex": { "text": "صاحْبي مِن لُبنان.", "tr": "ṣāḥbi min Libnān.", "en": "My friend is from Lebanon." }, "verified": false },
+    { "id": "ele", "text": "عيلة", "tr": "ʕēle", "en": "family", "pos": "noun", "forms": ["عيلتي", "عيلتك", "عيلتنا"], "msa": { "text": "عائِلة", "tr": "ʕāʔila" }, "ex": { "text": "عيلْتي مِش كْبيرة.", "tr": "ʕēlti mish kbīre.", "en": "My family isn't big." }, "verified": false },
+    { "id": "walad", "text": "وَلَد", "tr": "walad", "en": "boy; child (pl. wlād)", "pos": "noun", "forms": ["ولاد", "أولاد"], "ex": { "text": "عِندا تْلات وْلاد.", "tr": "ʕinda tlat wlād.", "en": "She has three children." }, "verified": false },
+    { "id": "kbir", "text": "كْبير", "tr": "kbīr", "en": "big; old (f: kbīre)", "pos": "adj", "forms": ["الكبار", "كبار", "كبيرة", "الكبير"], "msa": { "text": "كَبير", "tr": "kabīr" }, "ex": { "text": "البَيت كْبير.", "tr": "il-bēt kbīr.", "en": "The house is big." }, "verified": false },
+    { "id": "zghir", "text": "زْغير", "tr": "zghīr", "en": "small; young (f: zghīre)", "pos": "adj", "forms": ["زغيرة", "صغير"], "msa": { "text": "صَغير", "tr": "ṣaghīr" }, "ex": { "text": "المَكتَب زْغير.", "tr": "il-maktab zghīr.", "en": "The office is small." }, "verified": false },
+    { "id": "umr", "text": "عُمر", "tr": "ʕumr", "en": "age; life (ʕumri = my age)", "pos": "noun", "forms": ["عمري", "عمرك", "عمرو", "عمرا"], "ex": { "text": "قَدّيش عُمرَك؟", "tr": "ʔaddēsh ʕumrak?", "en": "How old are you?" }, "verified": false },
+    { "id": "sine", "text": "سِنة", "tr": "sine", "en": "year (pl. snīn)", "pos": "noun", "forms": ["سنين", "السنة"], "msa": { "text": "سَنة", "tr": "sana" }, "ex": { "text": "عُمري تِسعتَعشر سِنة.", "tr": "ʕumri tisʕtaʕsh sine.", "en": "I'm nineteen years old." }, "verified": false },
+    { "id": "teta", "text": "تيتا", "tr": "tēta", "en": "grandma", "pos": "noun", "ex": { "text": "تيتا بِتحِبّ القَهوة.", "tr": "tēta btḥibb il-ʔahwe.", "en": "Grandma loves coffee." }, "verified": false },
+    { "id": "jiddo", "text": "جِدّو", "tr": "jiddo", "en": "grandpa", "pos": "noun", "ex": { "text": "جِدّو ساكِن بِالشّام.", "tr": "jiddo sākin bish-Shām.", "en": "Grandpa lives in Damascus." }, "verified": false },
+    { "id": "sakin", "text": "ساكِن", "tr": "sākin", "en": "living (residing) somewhere (f: sākne)", "pos": "adj", "root": "s-k-n", "pattern": "CāCiC", "forms": ["ساكنة", "ساكنين"], "ex": { "text": "وين ساكِن؟", "tr": "wēn sākin?", "en": "Where do you (m) live?" }, "verified": false },
+    { "id": "mitjawwez", "text": "مِتجَوِّز", "tr": "mitjawwez", "en": "married (f: mitjawwze)", "pos": "adj", "forms": ["متجوزة", "متزوج"], "ex": { "text": "أَخي مِتجَوِّز.", "tr": "ʔakhi mitjawwez.", "en": "My brother is married." }, "verified": false },
+
+    { "id": "wahad", "text": "واحِد", "tr": "wāḥad", "en": "one (f: waḥde)", "pos": "num", "forms": ["وحدة", "الواحد"], "ex": { "text": "بِدّي واحِد، لَو سَمَحت.", "tr": "biddi wāḥad, law samaḥt.", "en": "I'd like one, please." }, "verified": false },
+    { "id": "tnen", "text": "تْنين", "tr": "tnēn", "en": "two", "pos": "num", "forms": ["اتنين", "اثنان"], "ex": { "text": "بِدّي تْنين قَهوة.", "tr": "biddi tnēn ʔahwe.", "en": "I'd like two coffees." }, "verified": false },
+    { "id": "tlete", "text": "تْلاتة", "tr": "tlēte", "en": "three (before a noun: tlat)", "pos": "num", "forms": ["تلات", "ثلاثة"], "ex": { "text": "عِندي تْلات صُفوف اليوم.", "tr": "ʕindi tlat ṣfūf il-yōm.", "en": "I have three classes today." }, "verified": false },
+    { "id": "arbaa", "text": "أَربعة", "tr": "ʔarbʕa", "en": "four (before a noun: ʔarbaʕ)", "pos": "num", "forms": ["اربع"], "ex": { "text": "السّاعة أَربعة.", "tr": "is-sāʕa ʔarbʕa.", "en": "It's four o'clock." }, "verified": false },
+    { "id": "khamse", "text": "خَمسة", "tr": "khamse", "en": "five (before a noun: khams)", "pos": "num", "forms": ["خمس"], "ex": { "text": "خَمس دَقايق بَس.", "tr": "khams daʔāyeʔ bass.", "en": "Just five minutes." }, "verified": false },
+    { "id": "sitte", "text": "سِتّة", "tr": "sitte", "en": "six (before a noun: sitt)", "pos": "num", "forms": ["ست"], "ex": { "text": "بِصحى السّاعة سِتّة.", "tr": "biṣḥa is-sāʕa sitte.", "en": "I wake up at six." }, "verified": false },
+    { "id": "sabaa", "text": "سَبعة", "tr": "sabʕa", "en": "seven (before a noun: sabaʕ)", "pos": "num", "forms": ["سبع"], "ex": { "text": "في سَبع أَيّام بِالأُسبوع.", "tr": "fī sabaʕ ʔiyyām bil-ʔisbūʕ.", "en": "There are seven days in a week." }, "verified": false },
+    { "id": "tmene", "text": "تْمانية", "tr": "tmēne", "en": "eight (before a noun: tman)", "pos": "num", "forms": ["تمان", "ثمانية"], "ex": { "text": "الصَّفّ السّاعة تْمانية.", "tr": "iṣ-ṣaff is-sāʕa tmēne.", "en": "Class is at eight." }, "verified": false },
+    { "id": "tisaa", "text": "تِسعة", "tr": "tisʕa", "en": "nine (before a noun: tisaʕ)", "pos": "num", "forms": ["تسع"], "ex": { "text": "هادا بْتِسعة.", "tr": "hāda b-tisʕa.", "en": "This one is nine." }, "verified": false },
+    { "id": "ashara", "text": "عَشرة", "tr": "ʕashara", "en": "ten (before a noun: ʕashr)", "pos": "num", "forms": ["عشر"], "ex": { "text": "عَشرة لِيرات؟ غالي!", "tr": "ʕashr līrāt? ghāli!", "en": "Ten pounds? Expensive!" }, "verified": false },
+    { "id": "lira", "text": "لِيرة", "tr": "līra", "en": "pound, lira (pl. līrāt)", "pos": "noun", "forms": ["ليرات"], "ex": { "text": "هادا بْخَمس لِيرات.", "tr": "hāda b-khams līrāt.", "en": "This is five pounds." }, "verified": false },
+    { "id": "masari", "text": "مَصاري", "tr": "maṣāri", "en": "money", "pos": "noun", "msa": { "text": "نُقود", "tr": "nuqūd" }, "ex": { "text": "ما مَعي مَصاري.", "tr": "mā maʕi maṣāri.", "en": "I don't have money on me." }, "verified": false },
+    { "id": "ghali", "text": "غالي", "tr": "ghāli", "en": "expensive; dear (f: ghālye)", "pos": "adj", "forms": ["غالية"], "ex": { "text": "هادا غالي كْتير.", "tr": "hāda ghāli ktīr.", "en": "This is very expensive." }, "verified": false },
+    { "id": "rkhis", "text": "رْخيص", "tr": "rkhīṣ", "en": "cheap (f: rkhīṣa)", "pos": "adj", "forms": ["رخيصة"], "ex": { "text": "الأَكِل هون رْخيص.", "tr": "il-ʔakil hōn rkhīṣ.", "en": "The food here is cheap." }, "verified": false },
+    { "id": "shtaret", "text": "اِشتَرَيت", "tr": "shtarēt", "en": "I bought (bishtiri = I buy)", "pos": "verb", "root": "sh-r-y", "forms": ["بشتري", "اشترى", "اشترت"], "ex": { "text": "اِشتَرَيت كْتاب.", "tr": "shtarēt ktāb.", "en": "I bought a book." }, "verified": false },
+    { "id": "suu", "text": "سوق", "tr": "sūʔ", "en": "market, souk", "pos": "noun", "forms": ["السوق", "أسواق"], "ex": { "text": "السّوق كْبير.", "tr": "is-sūʔ kbīr.", "en": "The market is big." }, "verified": false },
+    { "id": "dikkan", "text": "دِكّان", "tr": "dikkēn", "en": "small shop", "pos": "noun", "forms": ["الدكان", "دكانة"], "ex": { "text": "في دِكّان قَريب.", "tr": "fī dikkēn ʔarīb.", "en": "There's a shop nearby." }, "verified": false },
+    { "id": "hek", "text": "هَيك", "tr": "hēk", "en": "like this; so", "pos": "adv", "ex": { "text": "مْنيح هَيك.", "tr": "mnīḥ hēk.", "en": "It's good like this." }, "verified": false },
+    { "id": "bakhud", "text": "باخُد", "tr": "bākhud", "en": "I take (khidt = I took)", "pos": "verb", "root": "ʔ-kh-dh", "forms": ["ياخد", "تاخد", "ياخذ", "بتاخد", "بياخد", "خدت", "خود"], "msa": { "text": "آخُذُ", "tr": "ʔākhudhu" }, "ex": { "text": "باخُد هادا.", "tr": "bākhud hāda.", "en": "I'll take this one." }, "verified": false },
+    {"id": "baati", "text": "بَعطي", "tr": "baʕṭi", "en": "I give (ʕaṭēt = I gave)", "pos": "verb", "forms": ["بتعطي", "بيعطي", "عطيت", "عطيني", "أعطى"], "ex": {"text": "عطيني واحِد، لَو سَمَحت.", "tr": "ʕṭīni wāḥad, law samaḥt.", "en": "Give me one, please."}, "verified": false},
+    { "id": "adi", "text": "عادي", "tr": "ʕādi", "en": "normal; it's fine; no big deal", "pos": "adj", "forms": ["عادية"], "ex": { "text": "عادي، ما في مُشكِلة.", "tr": "ʕādi, mā fī mishkle.", "en": "It's fine, no problem." }, "verified": false }
+  ],
+  "grammar": [
+    { "id": "roots", "title": "The root: three consonants, one idea", "concept": "root-pattern", "body": [
+      "Most Arabic words are built on a **root** of three consonants. **k-t-b** means writing: katab 'he wrote', ktāb 'book', maktab 'office', maktabe 'library', kātib 'writer', maktūb 'written'.",
+      "To find the root, remove prefixes (ma-, mu-, b-, il-), suffixes, and long vowels (ā, ī, ū). What's left is usually the root. This also unlocks Hebrew: כתב k-t-v is the same root."
+    ], "examples": [
+      { "text": "الكاتِب كَتَب كْتاب بِالمَكتَبة.", "tr": "il-kātib katab ktāb bil-maktabe.", "en": "The writer wrote a book in the library." }
+    ], "drills": [
+      { "id": "rt1", "prompt": "What is the root of مَكتَبة (library)?", "answer": "ك-ت-ب", "tr": "k-t-b" },
+      { "id": "rt2", "prompt": "What is the root of مَدرَسة (school)?", "answer": "د-ر-س", "tr": "d-r-s" },
+      { "id": "rt3", "prompt": "What is the root of مِفتاح (key)?", "answer": "ف-ت-ح", "tr": "f-t-ḥ" },
+      { "id": "rt4", "prompt": "What is the root of مَشروب (a drink)?", "answer": "ش-ر-ب", "tr": "sh-r-b" }
+    ], "verified": false },
+    { "id": "patterns", "title": "Patterns: the shape gives the meaning", "concept": "root-pattern", "body": [
+      "Write C for each root consonant. Common patterns:",
+      "**CāCiC** = the one who does it: kātib (writer), ṭālib (student, 'one who seeks'), sākin (resident).",
+      "**maCCaC(a)** = the place where it happens: maktab, maktabe, madrase, maṭʕam (restaurant, from ṭ-ʕ-m 'taste/eat').",
+      "**maCCūC** = the thing it was done to: maktūb (written), maftūḥ (opened), mashrūb (drunk → a drink).",
+      "**miCCāC** = the tool for it: miftāḥ (key, from f-t-ḥ 'open')."
+    ], "examples": [
+      { "text": "المِفتاح بِالمَكتَب، والباب مَفتوح.", "tr": "il-miftāḥ bil-maktab, wil-bāb maftūḥ.", "en": "The key is in the office, and the door is open." }
+    ], "drills": [
+      { "id": "pa1", "prompt": "Make 'one who writes' from k-t-b.", "answer": "كاتِب", "tr": "kātib" },
+      { "id": "pa2", "prompt": "Make 'place of studying' from d-r-s.", "answer": "مَدرَسة", "tr": "madrase" },
+      { "id": "pa3", "prompt": "Make 'opened' from f-t-ḥ.", "answer": "مَفتوح", "tr": "maftūḥ" },
+      { "id": "pa4", "prompt": "Make 'tool for opening' from f-t-ḥ.", "answer": "مِفتاح", "tr": "miftāḥ" },
+      { "id": "pa5", "prompt": "Make 'place of eating' from ṭ-ʕ-m.", "answer": "مَطعَم", "tr": "maṭʕam" }
+    ], "verified": false },
+    { "id": "past", "title": "Past tense: endings after the verb", "concept": "aspect", "body": [
+      "The past adds endings: **katab-t** I wrote · **katab-t** you (m) · **katab-ti** you (f) · **katab** he · **katb-it** she · **katab-na** we · **katab-tu** you (pl) · **katab-u** they.",
+      "Hollow verbs shorten the vowel with -t: rāḥ 'he went' → **riḥt** 'I went'; shāf → **shift** 'I saw'; nām → **nimt**.",
+      "Negate with mā: **mā katabt** = I didn't write."
+    ], "examples": [
+      { "text": "رِحت عالجامْعة وشِفت ليلى.", "tr": "riḥt ʕal-jāmʕa w shift Layla.", "en": "I went to the university and saw Layla." },
+      { "text": "هِيِّ كَتبِت رِسالة.", "tr": "hiyye katbit risāle.", "en": "She wrote a letter." }
+    ], "drills": [
+      { "id": "ps1", "prompt": "Say: I went to the market yesterday.", "answer": "رِحت عالسّوق مْبارِح.", "tr": "riḥt ʕas-sūʔ mbāriḥ." },
+      { "id": "ps2", "prompt": "Ask a man: What did you do today?", "answer": "شو عْمِلت اليوم؟", "tr": "shū ʕmilt il-yōm?" },
+      { "id": "ps3", "prompt": "Say: I ate and then I slept.", "answer": "أَكَلت وبَعدين نِمت.", "tr": "ʔakalt w baʕdēn nimt." },
+      { "id": "ps4", "prompt": "Say: I didn't see him.", "answer": "ما شِفتو.", "tr": "mā shifto." },
+      { "id": "ps5", "prompt": "Say: We talked with grandma.", "answer": "حَكينا مَع تيتا.", "tr": "ḥakēna maʕ tēta." }
+    ], "verified": false },
+    { "id": "kan", "title": "kān: 'was' (and 'used to')", "concept": "copula-zero", "body": [
+      "The present has no 'is', but the past does: **kint** I was · **kint** you (m) · **kinti** you (f) · **kān** he · **kānit** she · **kinna** we · **kāno** they.",
+      "**kān fī** = there was. **kān + b-verb** = used to: kint badrus bil-lēl = I used to study at night."
+    ], "examples": [
+      { "text": "كِنت بِالبَيت مْبارِح.", "tr": "kint bil-bēt mbāriḥ.", "en": "I was at home yesterday." },
+      { "text": "كان في قَهوة طَيِّبة.", "tr": "kān fī ʔahwe ṭayybe.", "en": "There was good coffee." }
+    ], "drills": [
+      { "id": "kn1", "prompt": "Say: I was at the university yesterday.", "answer": "كِنت بِالجامْعة مْبارِح.", "tr": "kint bil-jāmʕa mbāriḥ." },
+      { "id": "kn2", "prompt": "Say: She was happy.", "answer": "كانِت مَبسوطة.", "tr": "kānit mabsūṭa." },
+      { "id": "kn3", "prompt": "Say: There was no time.", "answer": "ما كان في وَقت.", "tr": "mā kān fī waʔt." }
+    ], "verified": false },
+    { "id": "possessive", "title": "My, your, his: endings on nouns", "body": [
+      "Possession is an ending: **-i** my · **-ak** your (m) · **-ik** your (f) · **-o** his · **-a** her · **-na** our · **-kon** your (pl) · **-hon** their. bēt → bēti, bētak, bēto…",
+      "Words ending in ة take a **t** before the ending: ʕēle → **ʕēlti** (my family), sayyāra → **sayyārto** (his car)."
+    ], "examples": [
+      { "text": "بَيتي زْغير، بَس بَيتو كْبير.", "tr": "bēti zghīr, bass bēto kbīr.", "en": "My house is small, but his house is big." },
+      { "text": "عيلْتي بِأَميركا.", "tr": "ʕēlti b-ʔamērka.", "en": "My family is in America." }
+    ], "drills": [
+      { "id": "po1", "prompt": "Say: my house", "answer": "بَيتي", "tr": "bēti" },
+      { "id": "po2", "prompt": "Say: your (m) book", "answer": "كْتابَك", "tr": "ktābak" },
+      { "id": "po3", "prompt": "Say: her mother", "answer": "إمّا", "tr": "imma" },
+      { "id": "po4", "prompt": "Say: our family", "answer": "عيلِتنا", "tr": "ʕēlitna" },
+      { "id": "po5", "prompt": "Say: My friend is from Lebanon.", "answer": "صاحْبي مِن لُبنان.", "tr": "ṣāḥbi min Libnān." }
+    ], "verified": false },
+    { "id": "idafa", "title": "X of Y: noun + noun (iḍāfa)", "concept": "construct", "body": [
+      "'Layla's house' = **bēt Layla** (house Layla). 'The teacher's book' = **ktāb il-mudarris**. The first noun never takes il-.",
+      "A first noun ending in ة is said **-it**: jāmʕa → **jāmʕit Hopkins**, maktabe → **maktabit il-jāmʕa**."
+    ], "examples": [
+      { "text": "هادا كْتاب المُدَرِّس.", "tr": "hāda ktāb il-mudarris.", "en": "This is the teacher's book." },
+      { "text": "مَكتَبِة الجامْعة كْبيرة.", "tr": "maktabit il-jāmʕa kbīre.", "en": "The university library is big." }
+    ], "drills": [
+      { "id": "id1", "prompt": "Say: Layla's house", "answer": "بَيت ليلى", "tr": "bēt Layla" },
+      { "id": "id2", "prompt": "Say: the teacher's book", "answer": "كْتاب المُدَرِّس", "tr": "ktāb il-mudarris" },
+      { "id": "id3", "prompt": "Say: the university library", "answer": "مَكتَبِة الجامْعة", "tr": "maktabit il-jāmʕa" }
+    ], "verified": false },
+    { "id": "numbers", "title": "Numbers 1–10 with nouns", "body": [
+      "**1**: noun + wāḥad (ktāb wāḥad) or just the noun. **2**: the dual -ēn (ktābēn) or tnēn + plural.",
+      "**3–10**: use the short form + plural noun: **tlat** kutub, **ʔarbaʕ** snīn, **khams** līrāt, **ʕashr** daʔāyeʔ.",
+      "Prices: b- = 'for': **b-khams līrāt** = for five pounds."
+    ], "examples": [
+      { "text": "عِندي تْلات صُفوف وأَربَع اِمتِحانات.", "tr": "ʕindi tlat ṣfūf w ʔarbaʕ imtiḥānāt.", "en": "I have three classes and four exams." }
+    ], "drills": [
+      { "id": "nm1", "prompt": "Say: two coffees", "answer": "تْنين قَهوة", "tr": "tnēn ʔahwe" },
+      { "id": "nm2", "prompt": "Say: three classes", "answer": "تْلات صُفوف", "tr": "tlat ṣfūf" },
+      { "id": "nm3", "prompt": "Say: for five pounds", "answer": "بْخَمس لِيرات", "tr": "b-khams līrāt" },
+      { "id": "nm4", "prompt": "Say: It's eight o'clock.", "answer": "السّاعة تْمانية.", "tr": "is-sāʕa tmēne." }
+    ], "verified": false },
+    { "id": "article", "title": "il- 'the' and the sun letters", "concept": "definiteness", "body": [
+      "'The' is the prefix **il-** (MSA al-). Before 'sun letters' (t th d dh r z s sh ṣ ḍ ṭ ẓ l n), the l sounds like the next letter: **ish-shāy**, **iṭ-ṭālib**, **is-sūʔ**. Before 'moon letters' you hear l: **il-ʔahwe**, **il-ktāb**.",
+      "Adjectives copy il-: **il-bēt il-kbīr** = the big house. Without il- on the adjective it's a sentence: **il-bēt kbīr** = the house is big."
+    ], "examples": [
+      { "text": "الشّاي هون طَيِّب.", "tr": "ish-shāy hōn ṭayyib.", "en": "The tea here is good." },
+      { "text": "البَيت الكْبير غالي.", "tr": "il-bēt il-kbīr ghāli.", "en": "The big house is expensive." }
+    ], "drills": [
+      { "id": "ar1", "prompt": "Say: the big house", "answer": "البَيت الكْبير", "tr": "il-bēt il-kbīr" },
+      { "id": "ar2", "prompt": "Say: The house is big.", "answer": "البَيت كْبير.", "tr": "il-bēt kbīr." },
+      { "id": "ar3", "prompt": "Say: the tea (sun letter!)", "answer": "الشّاي", "tr": "ish-shāy" },
+      { "id": "ar4", "prompt": "Say: the student (sun letter!)", "answer": "الطّالِب", "tr": "iṭ-ṭālib" }
+    ], "verified": false }
+  ],
+  "texts": [
+    { "id": "d05", "title": "In the library", "level": "U5", "v": "lev", "kind": "dialogue", "lines": [
+      { "sp": "You", "text": "مَرحَبا، المَكتَبة مَفتوحة؟", "tr": "marḥaba, il-maktabe maftūḥa?", "en": "Hi, is the library open?" },
+      { "sp": "Librarian", "text": "إي، مَفتوحة كِل يَوم. شو بِدَّك؟", "tr": "ʔē, maftūḥa kill yōm. shū biddak?", "en": "Yes, it's open every day. What do you need?" },
+      { "sp": "You", "text": "بِدّي كْتاب عَرَبي لِلصَّفّ.", "tr": "biddi ktāb ʕarabi liṣ-ṣaff.", "en": "I need an Arabic book for class." },
+      { "sp": "Librarian", "text": "في كْتير كُتُب هونيك. مين المُدَرِّس؟", "tr": "fī ktīr kutub hōnīk. mīn il-mudarris?", "en": "There are lots of books over there. Who's the teacher?" },
+      { "sp": "You", "text": "المُدَرِّس سوري، وهُوِّ كاتِب كَمان.", "tr": "il-mudarris sūri, w huwwe kātib kamān.", "en": "The teacher is Syrian, and he's a writer too." },
+      { "sp": "Librarian", "text": "عِندَك اِمتِحان؟", "tr": "ʕindak imtiḥān?", "en": "Do you have an exam?" },
+      { "sp": "You", "text": "إي، بُكرا. عِندي سُؤال: وين المَكتَب؟", "tr": "ʔē, bukra. ʕindi suʔāl: wēn il-maktab?", "en": "Yes, tomorrow. I have a question: where's the office?" },
+      { "sp": "Librarian", "text": "هونيك. يَلّا، بِالتَّوفيق!", "tr": "hōnīk. yalla, bit-tawfīʔ!", "en": "Over there. Good luck!" }
+    ], "verified": false },
+    { "id": "d06", "title": "What did you do yesterday?", "level": "U6", "v": "lev", "kind": "dialogue", "names": ["ليلى"], "lines": [
+      { "sp": "Layla", "text": "شو عْمِلت مْبارِح؟", "tr": "shū ʕmilt mbāriḥ?", "en": "What did you do yesterday?" },
+      { "sp": "Venu", "text": "الصُّبح رِحت عالجامْعة، وبَعدين رِحت عالمَكتَبة.", "tr": "iṣ-ṣubḥ riḥt ʕal-jāmʕa, w baʕdēn riḥt ʕal-maktabe.", "en": "In the morning I went to the university, and then I went to the library." },
+      { "sp": "Layla", "text": "وشو أَكَلت؟", "tr": "w shū ʔakalt?", "en": "And what did you eat?" },
+      { "sp": "Venu", "text": "أَكَلت خِبز وشْرِبت قَهوة. ما كان في وَقت.", "tr": "ʔakalt khibz w shribt ʔahwe. mā kān fī waʔt.", "en": "I ate bread and drank coffee. There was no time." },
+      { "sp": "Layla", "text": "وبَعد الصَّفّ؟", "tr": "w baʕd iṣ-ṣaff?", "en": "And after class?" },
+      { "sp": "Venu", "text": "حَكيت مَع إمّي، وبِالمَسا دَرَست شْوَي.", "tr": "ḥakēt maʕ immi, w bil-masa darast shwayy.", "en": "I talked with my mom, and in the evening I studied a bit." },
+      { "sp": "Layla", "text": "وهَلَّق؟", "tr": "w hallaʔ?", "en": "And now?" },
+      { "sp": "Venu", "text": "هَلَّق لِسّا عِندي شُغل. بَعدين بْنام!", "tr": "hallaʔ lissa ʕindi shughl. baʕdēn bnām!", "en": "Now I still have work. Then I'll sleep!" }
+    ], "verified": false },
+    { "id": "d07", "title": "My family", "level": "U7", "v": "lev", "kind": "reading", "names": ["لبنان"], "lines": [
+      { "text": "عيلْتي مِش كْبيرة.", "tr": "ʕēlti mish kbīre.", "en": "My family isn't big." },
+      { "text": "عِندي أَخ واحِد وأُخت وحدة.", "tr": "ʕindi ʔakh wāḥad w ʔukht waḥde.", "en": "I have one brother and one sister." },
+      { "text": "أَخي طالِب كَمان، وهُوِّ مِتجَوِّز.", "tr": "ʔakhi ṭālib kamān, w huwwe mitjawwez.", "en": "My brother is a student too, and he's married." },
+      { "text": "أُختي زْغيرة، بِتروح عالمَدرَسة.", "tr": "ʔukhti zghīre, btrūḥ ʕal-madrase.", "en": "My sister is young; she goes to school." },
+      { "text": "إمّي حَكيمة، وبَيّي عِندو شُغل بِمَكتَب.", "tr": "immi ḥakīme, w bayyi ʕindo shughl b-maktab.", "en": "My mom is a doctor, and my dad works in an office." },
+      { "text": "تيتا وجِدّو ساكنين بِلُبنان.", "tr": "tēta w jiddo sāknīn b-Libnān.", "en": "Grandma and grandpa live in Lebanon." },
+      { "text": "بحِبّ عيلْتي كْتير.", "tr": "bḥibb ʕēlti ktīr.", "en": "I love my family a lot." }
+    ], "verified": false },
+    { "id": "d08", "title": "In the souk", "level": "U8", "v": "lev", "kind": "dialogue", "lines": [
+      { "sp": "You", "text": "مَرحَبا، قَدّيش هادا؟", "tr": "marḥaba, ʔaddēsh hāda?", "en": "Hi, how much is this?" },
+      { "sp": "Seller", "text": "هادا بْعَشرة.", "tr": "hāda b-ʕashara.", "en": "This one's ten." },
+      { "sp": "You", "text": "عَشرة؟ غالي كْتير!", "tr": "ʕashara? ghāli ktīr!", "en": "Ten? That's very expensive!" },
+      { "sp": "Seller", "text": "لأ، مِش غالي. هادا مْنيح كْتير.", "tr": "laʔ, mish ghāli. hāda mnīḥ ktīr.", "en": "No, it's not expensive. This is very good." },
+      { "sp": "You", "text": "بِدّي تْنين. بْسَبعة الواحِد؟", "tr": "biddi tnēn. b-sabʕa il-wāḥad?", "en": "I want two. Seven each?" },
+      { "sp": "Seller", "text": "لأ، بْتِسعة.", "tr": "laʔ, b-tisʕa.", "en": "No, nine." },
+      { "sp": "You", "text": "طَيِّب، تْمانية؟", "tr": "ṭayyib, tmēne?", "en": "OK, eight?" },
+      { "sp": "Seller", "text": "يَلّا، عادي. صَحتين!", "tr": "yalla, ʕādi. ṣaḥtēn!", "en": "Fine, OK. Enjoy!" },
+      { "sp": "You", "text": "باخُد تْنين. شُكرًا!", "tr": "bākhud tnēn. shukran!", "en": "I'll take two. Thanks!" }
+    ], "verified": false }
+  ]
+}
