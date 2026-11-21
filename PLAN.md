@@ -1,6 +1,6 @@
 # Plan: free, research-backed language app (PWA)
 
-Status: **approved 2026-11-20.** Stage 3 (engine + Arabic pack) built.
+Status: **approved 2026-11-20.** Stage 3 (engine + Arabic pack) built. Stage 4: Latin pack built 2026-11-21.
 
 Decisions so far:
 - Arabic: Levantine for speaking and listening, MSA for reading.

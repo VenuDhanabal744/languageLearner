@@ -100,7 +100,7 @@ export function showTranslit(s: Settings, p: Pack, prog: Progress, side: 'prompt
 // ---------- cards ----------
 export function cardsForRef(lang: string, p: Pack, ref: string): { id: string; kind: string; ref: string }[] {
   const [k, id] = parseRef(ref)
-  if (k === 'word') return [{ id: `${lang}:produce:${id}`, kind: 'produce', ref: id }, { id: `${lang}:listen:${id}`, kind: 'listen', ref: id }]
+  if (k === 'word') return (p.wordCards ?? ['produce', 'listen']).map(kind => ({ id: `${lang}:${kind}:${id}`, kind, ref: id }))
   if (k === 'grammar') return (grammarById(p, id)?.drills ?? []).map(d => ({ id: `${lang}:drill:${id}/${d.id}`, kind: 'drill', ref: `${id}/${d.id}` }))
   if (k === 'script') return (scriptById(p, id)?.letters ?? []).map(l => ({ id: `${lang}:script:${l.id}`, kind: 'script', ref: l.id }))
   return []

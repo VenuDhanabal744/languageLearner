@@ -4,7 +4,7 @@ import type { ComponentChildren } from 'preact'
 import type { World } from '../logic'
 import { logEvent } from '../logic'
 import type { Pack } from '../packs/types'
-import { stripVowels } from '../engine/text'
+import { stripVowels, respell } from '../engine/text'
 import { speak, voicesFor } from '../audio/tts'
 import { startRecording, playBlob, type ActiveRecording, type Recording } from '../audio/recorder'
 import { addFlag } from '../store/db'
@@ -35,7 +35,7 @@ export function Speak({ pack, text, label = '▶︎', rate, onDone }: { pack: Pa
     <button class="btn speak" aria-label={`Play audio`} disabled={busy} title={has ? '' : 'No voice installed for this language'}
       onClick={async () => {
         setBusy(true)
-        const secs = await speak(text, pack.tts, { rate })
+        const secs = await speak(respell(pack, text), pack.tts, { rate })
         setBusy(false)
         if (secs > 0) logEvent({ lang: pack.id, type: 'listen', seconds: secs })
         onDone?.(secs)
@@ -78,7 +78,7 @@ export function RecordCompare({ pack, text, onRecorded }: { pack: Pack; text: st
           onRecorded?.(r)
         }}>■ Stop</button>
       )}
-      {mine && <button class="btn" onClick={async () => { await speak(text, pack.tts); await playBlob(mine.blob) }}>▶︎ Model + me</button>}
+      {mine && <button class="btn" onClick={async () => { await speak(respell(pack, text), pack.tts); await playBlob(mine.blob) }}>▶︎ Model + me</button>}
       {mine && <button class="btn" onClick={() => playBlob(mine.blob)}>▶︎ Me</button>}
       {err && <p class="warn small">{err}</p>}
     </div>

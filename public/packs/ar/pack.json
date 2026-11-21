@@ -16,6 +16,7 @@
     "prefixes": ["و", "ف", "ب", "ل", "ال", "وال", "بال", "فال", "لل", "عال", "ع", "وب", "ول", "ما"],
     "suffixes": ["ي", "ا", "ك", "ه", "ها", "نا", "كن", "كم", "هن", "هم", "و", "ني", "ات", "ين", "ون"]
   },
+  "chat": { "name": "Levantine Arabic (Shami, Damascus/Beirut)", "translit": true },
   "translit": { "name": "Simplified: ʔ = glottal stop, ʕ = ʿayn, ḥ ṣ ḍ ṭ ẓ = emphatic/pharyngeal, ā ī ū ē ō = long vowels" },
   "frequency": {
     "file": "frequency.txt",

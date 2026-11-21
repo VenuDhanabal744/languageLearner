@@ -1,14 +1,565 @@
 [
-  { "id": "root-ktb", "type": "root", "note": "Writing", "items": [ { "lang": "ar", "text": "كتب", "tr": "k-t-b", "en": "write" }, { "lang": "he", "text": "כתב", "tr": "k-t-v", "en": "write" } ] },
-  { "id": "root-slm", "type": "root", "note": "Peace / wholeness", "items": [ { "lang": "ar", "text": "سلم", "tr": "s-l-m", "en": "peace: salām, maʕ is-salāme" }, { "lang": "he", "text": "שלם", "tr": "sh-l-m", "en": "peace: shalom, shalem" } ] },
-  { "id": "root-drs", "type": "root", "note": "Study / seek", "items": [ { "lang": "ar", "text": "درس", "tr": "d-r-s", "en": "study: madrase 'school'" }, { "lang": "he", "text": "דרש", "tr": "d-r-sh", "en": "seek, expound: midrash" } ] },
-  { "id": "bayt", "type": "cognate", "note": "House", "items": [ { "lang": "ar", "text": "بيت", "tr": "bēt", "en": "house" }, { "lang": "he", "text": "בית", "tr": "bayit", "en": "house" } ] },
-  { "id": "root-ywm", "type": "cognate", "note": "Day", "items": [ { "lang": "ar", "text": "يوم", "tr": "yōm", "en": "day" }, { "lang": "he", "text": "יום", "tr": "yom", "en": "day" } ] },
-  { "id": "root-ʕyn", "type": "cognate", "note": "Eye / spring", "items": [ { "lang": "ar", "text": "عين", "tr": "ʕēn", "en": "eye" }, { "lang": "he", "text": "עין", "tr": "ʕayin", "en": "eye" } ] },
-  { "id": "root-kll", "type": "cognate", "note": "All / every", "items": [ { "lang": "ar", "text": "كل", "tr": "kill", "en": "all, every" }, { "lang": "he", "text": "כל", "tr": "kol", "en": "all, every" } ] },
-  { "id": "root-bn", "type": "cognate", "note": "Son", "items": [ { "lang": "ar", "text": "ابن", "tr": "ibn", "en": "son" }, { "lang": "he", "text": "בן", "tr": "ben", "en": "son" } ] },
-  { "id": "root-ʔkl", "type": "root", "note": "Eat", "items": [ { "lang": "ar", "text": "أكل", "tr": "ʔ-k-l", "en": "eat" }, { "lang": "he", "text": "אכל", "tr": "ʔ-k-l", "en": "eat" } ] },
-  { "id": "root-ftḥ", "type": "root", "note": "Open", "items": [ { "lang": "ar", "text": "فتح", "tr": "f-t-ḥ", "en": "open" }, { "lang": "he", "text": "פתח", "tr": "p-t-ḥ", "en": "open" } ] },
-  { "id": "root-ʕlm", "type": "root", "note": "Know / world", "items": [ { "lang": "ar", "text": "علم", "tr": "ʕ-l-m", "en": "know: ʕilm 'science', ʕālam 'world'" }, { "lang": "he", "text": "עולם", "tr": "ʕ-l-m", "en": "olam 'world, eternity'" } ] },
-  { "id": "num-3", "type": "cognate", "note": "Three", "items": [ { "lang": "ar", "text": "تلاتة", "tr": "tlēte", "en": "three" }, { "lang": "he", "text": "שלוש", "tr": "shalosh", "en": "three" } ] }
+  {
+    "id": "root-ktb",
+    "type": "root",
+    "note": "Writing",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "كتب",
+        "tr": "k-t-b",
+        "en": "write"
+      },
+      {
+        "lang": "he",
+        "text": "כתב",
+        "tr": "k-t-v",
+        "en": "write"
+      }
+    ]
+  },
+  {
+    "id": "root-slm",
+    "type": "root",
+    "note": "Peace / wholeness",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "سلم",
+        "tr": "s-l-m",
+        "en": "peace: salām, maʕ is-salāme"
+      },
+      {
+        "lang": "he",
+        "text": "שלם",
+        "tr": "sh-l-m",
+        "en": "peace: shalom, shalem"
+      }
+    ]
+  },
+  {
+    "id": "root-drs",
+    "type": "root",
+    "note": "Study / seek",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "درس",
+        "tr": "d-r-s",
+        "en": "study: madrase 'school'"
+      },
+      {
+        "lang": "he",
+        "text": "דרש",
+        "tr": "d-r-sh",
+        "en": "seek, expound: midrash"
+      }
+    ]
+  },
+  {
+    "id": "bayt",
+    "type": "cognate",
+    "note": "House",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "بيت",
+        "tr": "bēt",
+        "en": "house"
+      },
+      {
+        "lang": "he",
+        "text": "בית",
+        "tr": "bayit",
+        "en": "house"
+      }
+    ]
+  },
+  {
+    "id": "root-ywm",
+    "type": "cognate",
+    "note": "Day",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "يوم",
+        "tr": "yōm",
+        "en": "day"
+      },
+      {
+        "lang": "he",
+        "text": "יום",
+        "tr": "yom",
+        "en": "day"
+      }
+    ]
+  },
+  {
+    "id": "root-ʕyn",
+    "type": "cognate",
+    "note": "Eye / spring",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "عين",
+        "tr": "ʕēn",
+        "en": "eye"
+      },
+      {
+        "lang": "he",
+        "text": "עין",
+        "tr": "ʕayin",
+        "en": "eye"
+      }
+    ]
+  },
+  {
+    "id": "root-kll",
+    "type": "cognate",
+    "note": "All / every",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "كل",
+        "tr": "kill",
+        "en": "all, every"
+      },
+      {
+        "lang": "he",
+        "text": "כל",
+        "tr": "kol",
+        "en": "all, every"
+      }
+    ]
+  },
+  {
+    "id": "root-bn",
+    "type": "cognate",
+    "note": "Son",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "ابن",
+        "tr": "ibn",
+        "en": "son"
+      },
+      {
+        "lang": "he",
+        "text": "בן",
+        "tr": "ben",
+        "en": "son"
+      }
+    ]
+  },
+  {
+    "id": "root-ʔkl",
+    "type": "root",
+    "note": "Eat",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "أكل",
+        "tr": "ʔ-k-l",
+        "en": "eat"
+      },
+      {
+        "lang": "he",
+        "text": "אכל",
+        "tr": "ʔ-k-l",
+        "en": "eat"
+      }
+    ]
+  },
+  {
+    "id": "root-ftḥ",
+    "type": "root",
+    "note": "Open",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "فتح",
+        "tr": "f-t-ḥ",
+        "en": "open"
+      },
+      {
+        "lang": "he",
+        "text": "פתח",
+        "tr": "p-t-ḥ",
+        "en": "open"
+      }
+    ]
+  },
+  {
+    "id": "root-ʕlm",
+    "type": "root",
+    "note": "Know / world",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "علم",
+        "tr": "ʕ-l-m",
+        "en": "know: ʕilm 'science', ʕālam 'world'"
+      },
+      {
+        "lang": "he",
+        "text": "עולם",
+        "tr": "ʕ-l-m",
+        "en": "olam 'world, eternity'"
+      }
+    ]
+  },
+  {
+    "id": "num-3",
+    "type": "cognate",
+    "note": "Three",
+    "items": [
+      {
+        "lang": "ar",
+        "text": "تلاتة",
+        "tr": "tlēte",
+        "en": "three"
+      },
+      {
+        "lang": "he",
+        "text": "שלוש",
+        "tr": "shalosh",
+        "en": "three"
+      }
+    ]
+  },
+  {
+    "id": "ie-father",
+    "type": "cognate",
+    "note": "Father (Proto-Indo-European *ph₂tḗr)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "pater",
+        "tr": "pater",
+        "en": "father"
+      },
+      {
+        "lang": "grc",
+        "text": "πατήρ",
+        "tr": "patḗr",
+        "en": "father"
+      },
+      {
+        "lang": "es",
+        "text": "padre",
+        "tr": "padre",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "पितृ",
+        "tr": "pitṛ",
+        "en": "father"
+      }
+    ]
+  },
+  {
+    "id": "ie-mother",
+    "type": "cognate",
+    "note": "Mother (*méh₂tēr)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "māter",
+        "tr": "māter",
+        "en": "mother"
+      },
+      {
+        "lang": "grc",
+        "text": "μήτηρ",
+        "tr": "mḗtēr",
+        "en": "mother"
+      },
+      {
+        "lang": "es",
+        "text": "madre",
+        "tr": "madre",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "मातृ",
+        "tr": "mātṛ",
+        "en": "mother"
+      }
+    ]
+  },
+  {
+    "id": "ie-brother",
+    "type": "cognate",
+    "note": "Brother (*bʰréh₂tēr)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "frāter",
+        "tr": "frāter",
+        "en": "brother"
+      },
+      {
+        "lang": "grc",
+        "text": "φράτηρ",
+        "tr": "phrátēr",
+        "en": "clan member"
+      },
+      {
+        "lang": "es",
+        "text": "fraterno",
+        "tr": "fraterno",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "भ्रातृ",
+        "tr": "bhrātṛ",
+        "en": "brother"
+      }
+    ]
+  },
+  {
+    "id": "ie-night",
+    "type": "cognate",
+    "note": "Night (*nókʷts)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "nox",
+        "tr": "nox",
+        "en": "night"
+      },
+      {
+        "lang": "grc",
+        "text": "νύξ",
+        "tr": "núx",
+        "en": "night"
+      },
+      {
+        "lang": "es",
+        "text": "noche",
+        "tr": "noche",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "नक्त",
+        "tr": "nakta",
+        "en": "night"
+      }
+    ]
+  },
+  {
+    "id": "ie-two",
+    "type": "cognate",
+    "note": "Two (*dwóh₁)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "duo",
+        "tr": "duo",
+        "en": "two"
+      },
+      {
+        "lang": "grc",
+        "text": "δύο",
+        "tr": "dúo",
+        "en": "two"
+      },
+      {
+        "lang": "es",
+        "text": "dos",
+        "tr": "dos",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "द्वि",
+        "tr": "dvi",
+        "en": "two"
+      }
+    ]
+  },
+  {
+    "id": "ie-three",
+    "type": "cognate",
+    "note": "Three (*tréyes)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "trēs",
+        "tr": "trēs",
+        "en": "three"
+      },
+      {
+        "lang": "grc",
+        "text": "τρεῖς",
+        "tr": "treîs",
+        "en": "three"
+      },
+      {
+        "lang": "es",
+        "text": "tres",
+        "tr": "tres",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "त्रि",
+        "tr": "tri",
+        "en": "three"
+      }
+    ]
+  },
+  {
+    "id": "ie-new",
+    "type": "cognate",
+    "note": "New (*néwos)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "novus",
+        "tr": "novus",
+        "en": "new"
+      },
+      {
+        "lang": "grc",
+        "text": "νέος",
+        "tr": "néos",
+        "en": "new"
+      },
+      {
+        "lang": "es",
+        "text": "nuevo",
+        "tr": "nuevo",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "नव",
+        "tr": "nava",
+        "en": "new"
+      }
+    ]
+  },
+  {
+    "id": "ie-house",
+    "type": "cognate",
+    "note": "House (*dṓm)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "domus",
+        "tr": "domus",
+        "en": "house"
+      },
+      {
+        "lang": "grc",
+        "text": "δόμος",
+        "tr": "dómos",
+        "en": "house"
+      },
+      {
+        "lang": "es",
+        "text": "doméstico",
+        "tr": "doméstico",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "दम",
+        "tr": "dama",
+        "en": "house"
+      }
+    ]
+  },
+  {
+    "id": "ie-be",
+    "type": "cognate",
+    "note": "To be (*h₁és-)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "est",
+        "tr": "est",
+        "en": "is"
+      },
+      {
+        "lang": "grc",
+        "text": "ἐστί",
+        "tr": "estí",
+        "en": "is"
+      },
+      {
+        "lang": "es",
+        "text": "es",
+        "tr": "es",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "अस्ति",
+        "tr": "asti",
+        "en": "is"
+      }
+    ]
+  },
+  {
+    "id": "ie-i",
+    "type": "cognate",
+    "note": "I (*h₁eǵ)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "ego",
+        "tr": "ego",
+        "en": "I"
+      },
+      {
+        "lang": "grc",
+        "text": "ἐγώ",
+        "tr": "egṓ",
+        "en": "I"
+      },
+      {
+        "lang": "es",
+        "text": "yo",
+        "tr": "yo",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "अहम्",
+        "tr": "aham",
+        "en": "I"
+      }
+    ]
+  },
+  {
+    "id": "latin-deus",
+    "type": "cognate",
+    "note": "God: Latin deus is related to Sanskrit deva, but NOT to Greek θεός (a famous false friend)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "deus",
+        "tr": "deus",
+        "en": "god"
+      },
+      {
+        "lang": "sa",
+        "text": "देव",
+        "tr": "deva",
+        "en": "god"
+      },
+      {
+        "lang": "es",
+        "text": "dios",
+        "tr": "dios",
+        "en": "Spanish descendant"
+      }
+    ]
+  }
 ]

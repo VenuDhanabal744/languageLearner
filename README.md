@@ -1,7 +1,7 @@
 # Polyglot: a free, research-backed language app for iPhone
 
-A home-screen web app (PWA) for learning Arabic (Levantine + MSA) now, with Hebrew, Mandarin, Tamil, Latin, Ancient
-Greek and Sanskrit to come. It costs $0 forever: no server, no accounts, no paid APIs. Your progress stays on your phone.
+A home-screen web app (PWA) for learning Arabic (Levantine + MSA) and Latin (Classical) now, with Hebrew, Mandarin,
+Tamil, Ancient Greek and Sanskrit to come. It costs $0 forever: no server, no accounts, no paid APIs. Your progress stays on your phone.
 
 **Live app:** https://venudhanabal744.github.io/languageLearner/
 
@@ -16,6 +16,9 @@ What it does differently from tap-the-word apps:
 
 The research behind each feature, with evidence levels, is in the app under *Library → Why it works* (source:
 `public/packs/shared/research.json`) and in [PLAN.md](PLAN.md).
+
+## Turn on Latin
+Settings → Languages → set **Latin** to *active*. Sessions then split your time between Arabic and Latin.
 
 ## Install on your iPhone
 1. Open the live app link in **Safari**.
@@ -64,7 +67,7 @@ with the pack file to get fixes.
 |---|---|
 | Storage | Persistent in the home-screen app (iOS 17+ grants persistence automatically). Back up anyway. |
 | Microphone + recording | Works (MediaRecorder, with a WAV fallback). iOS may ask for mic permission again after relaunching. |
-| Text-to-speech | Uses your phone's voices. Arabic (Majed) speaks **MSA**, so Levantine lines are approximate. Sanskrit, Latin and Ancient Greek have no suitable voice. |
+| Text-to-speech | Uses your phone's voices. Arabic (Majed) speaks **MSA**, so Levantine lines are approximate. Latin borrows the Italian voice with respelling. Sanskrit and Ancient Greek have no suitable voice. |
 | Speech recognition | Not used: unreliable in home-screen apps. Use keyboard dictation instead. There is no automatic pronunciation scoring. |
 | Notifications | Web Push needs a server, so the reminder is a one-tap repeating **calendar event** (or an iOS Shortcuts automation). |
 | Offline | A small service worker caches what you've opened; best-effort. |
@@ -76,7 +79,8 @@ with the pack file to get fixes.
 | Hebrew | Carmit | good |
 | Mandarin | ~10 voices | good, with real multi-talker tone training |
 | Tamil | Vani | weak to moderate |
-| Sanskrit, Latin, Ancient Greek | none | **weak**: recordings only |
+| Latin | none; uses the Italian voice with Latin respelled toward Classical sounds | **weak**: rough guide only (vowel length and some stress are wrong) |
+| Sanskrit, Ancient Greek | none | **weak**: recordings only |
 
 Fix weak audio for free with **Library → Sounds → Add a speaker**: a native-speaker friend records the word lists once
 on your phone.

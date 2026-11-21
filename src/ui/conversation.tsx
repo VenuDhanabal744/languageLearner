@@ -19,9 +19,9 @@ export function Conversation({ lang }: { lang: string }) {
   const grammar = prog.introduced.filter(r => r.startsWith('grammar:')).slice(-5).map(r => grammarById(pack, parseRef(r)[1])?.title ?? '')
   const words = [...known].reverse().map(id => wordById(pack, id)).filter(Boolean).map(x => ({ text: x!.text, tr: x!.tr, en: x!.en }))
   const prompt = buildConversationPrompt({
-    language: pack.id === 'ar' ? 'Levantine Arabic (Shami, Damascus/Beirut)' : pack.name,
+    language: pack.chat?.name ?? pack.name,
     level: `beginner, unit ${unit + 1} of ${pack.units.length} (“${pack.units[unit]?.title}”), about ${known.length} words learned`,
-    showTranslit: showTranslit(w.settings, pack, prog, 'prompt'), knownWords: words, grammar, scenario: sc,
+    showTranslit: (pack.chat?.translit ?? true) && showTranslit(w.settings, pack, prog, 'prompt'), knownWords: words, grammar, scenario: sc,
   })
   const copy = async () => {
     try { await navigator.clipboard.writeText(prompt); setCopied(true) } catch {

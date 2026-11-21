@@ -1,0 +1,101 @@
+{
+  "id": "la",
+  "name": "Latin (Classical, active method)",
+  "version": "0.1.0",
+  "dir": "ltr",
+  "tts": "it",
+  "ttsNote": "There is no Latin voice on iPhone. Audio uses the Italian voice with Latin respelled toward Classical sounds (hard c and g, v → w, ae → 'eye'). Vowel length and some stress are only approximate, so treat it as a rough guide and trust the stress marks and macrons on the page.",
+  "ttsRespell": [
+    ["[̄̆]", ""],
+    ["ae", "ai"],
+    ["oe", "oi"],
+    ["c(?=[eiy])", "ch"],
+    ["g(?=[eiy])", "gh"],
+    ["v", "u"],
+    ["j", "i"],
+    ["y", "i"],
+    ["ph", "f"],
+    ["th", "t"]
+  ],
+  "wordCards": ["read", "produce"],
+  "chat": { "name": "simple spoken Classical Latin (active-Latin style; mark long vowels with macrons)", "translit": false },
+  "vowelToggle": { "label": "Macrons (long vowels)", "strip": "̄", "nfd": true },
+  "normalize": { "strip": "̄̆", "nfd": true, "map": { "j": "i", "v": "u" } },
+  "clitics": {
+    "enclitics": ["que", "ne", "ve"],
+    "stems": true,
+    "suffixes": ["a", "ae", "am", "as", "arum", "is", "ibus", "us", "um", "i", "o", "os", "orum", "e", "em", "es", "ebus", "ei", "u", "uum", "ua", "ia", "ium", "ius", "eo", "io", "at", "ant", "amus", "atis", "et", "ent", "emus", "etis", "it", "unt", "iunt", "imus", "itis", "nt", "mus", "tis", "re", "are", "ere", "ire", "ur", "tur", "ntur", "atur", "antur", "itur", "untur", "bam", "bat", "bant", "bas", "bamus", "batis", "abam", "abat", "abant", "ebam", "ebat", "ebant", "iebam", "iebat", "iebant", "aui", "auit", "auerunt", "auisti", "ui", "uit", "uerunt", "isti", "erunt", "ens", "entis", "ans", "antis", "atus", "ata", "atum", "itus", "ita", "itum"]
+  },
+  "translit": { "name": "Stress guide: CAPITALS mark the stressed syllable, · separates syllables, macrons (ā) mark long vowels" },
+  "includes": ["units/u01-04.json", "units/u05-08.json", "units/u09-12.json", "units/readers.json"],
+  "notes": [
+    { "title": "How this pack works: reading first, active Latin", "body": [
+      "Your goal is reading real Latin without a dictionary. The fastest route is lots of easy Latin you can understand, so this pack is built like Ørberg's method: texts that explain themselves, grammar introduced a little at a time, and Latin used actively. You say and write simple sentences, and you can hold a simple conversation with Claude.",
+      "Ørberg's own books are copyrighted, so the readers here are original. Authentic texts (Caesar, the Vulgate, an adapted Phaedrus fable) appear from Unit 11 on.",
+      "Each word gets a **reading card** (Latin sentence → meaning) and a **production card** (English → Latin). Shadowing and reading aloud keep a light oral habit, which research on active methods suggests helps reading."
+    ]},
+    { "title": "Your Spanish is a superpower", "body": [
+      "Most Latin words have a Spanish descendant that follows regular sound changes: ĕ → ie (terra → tierra), ŏ → ue (porta → puerta), f- → h- (fīlius → hijo), -ct- → -ch- (noctem → noche), cl/pl/fl → ll (pluvia → lluvia), p/t/c between vowels → b/d/g (lupus → lobo).",
+      "Words show Spanish and English relatives. Spanish nouns usually come from the Latin **accusative** (noctem → noche, partem → parte), which is a handy way to remember the stem."
+    ]},
+    { "title": "Classical pronunciation", "body": [
+      "You chose **Classical** (restored) pronunciation, the standard in universities and the active-Latin community: c and g are always hard, v sounds like English w, ae sounds like 'eye', and vowel length matters (mālum 'apple' vs malum 'evil').",
+      "Stress falls on the second-to-last syllable when it's long, otherwise on the third-to-last. The stress guide under each word shows it in CAPITALS."
+    ]},
+    { "title": "Unverified content", "body": [
+      "The Latin was written by Claude and checked against standard grammar, but not yet by a human Latinist, so it is marked unverified. Tap ⚑ Flag error on anything that looks wrong."
+    ]}
+  ],
+  "scriptLessons": [
+    { "id": "p1", "title": "Pronunciation 1: vowels, length, stress", "note": "Latin vowels are pure, like Spanish ones. A macron (ā) means the vowel is held about twice as long. Length can change meaning.", "letters": [
+      { "id": "v-a", "char": "a ā", "name": "short a / long ā", "tr": "a / ā", "sound": "Short a as in 'idea'; long ā as in 'father'. malum 'evil' vs mālum 'apple'.", "connects": false, "ex": { "text": "mālum", "tr": "MĀ·lum", "en": "apple" } },
+      { "id": "v-e", "char": "e ē", "name": "short e / long ē", "tr": "e / ē", "sound": "Short e as in 'pet'; long ē like Spanish e, held longer.", "connects": false, "ex": { "text": "bene", "tr": "BE·ne", "en": "well" } },
+      { "id": "v-i", "char": "i ī", "name": "short i / long ī", "tr": "i / ī", "sound": "Short i as in 'sit'; long ī as in 'machine'.", "connects": false, "ex": { "text": "vīta", "tr": "WĪ·ta", "en": "life" } },
+      { "id": "v-o", "char": "o ō", "name": "short o / long ō", "tr": "o / ō", "sound": "Short o as in British 'pot'; long ō a pure 'o' as in Spanish 'no', held longer.", "connects": false, "ex": { "text": "nōmen", "tr": "NŌ·men", "en": "name" } },
+      { "id": "v-u", "char": "u ū", "name": "short u / long ū", "tr": "u / ū", "sound": "Short u as in 'put'; long ū as in 'rule'.", "connects": false, "ex": { "text": "ūnus", "tr": "Ū·nus", "en": "one" } },
+      { "id": "v-ae", "char": "ae", "name": "diphthong ae", "tr": "ai", "sound": "Like English 'eye': Caesar = KAI-sar.", "connects": false, "ex": { "text": "Caesar", "tr": "KAE·sar", "en": "Caesar" } },
+      { "id": "v-oe-au", "char": "oe au", "name": "diphthongs oe, au", "tr": "oi / au", "sound": "oe like 'oy' in 'boy'; au like 'ow' in 'how'.", "connects": false, "ex": { "text": "aurum", "tr": "AU·rum", "en": "gold" } },
+      { "id": "stress", "char": "´", "name": "the stress rule", "tr": "pen·UL·ti·mate", "sound": "Two syllables: stress the first (RŌ·ma). Longer words: stress the second-to-last syllable if it is long (a·MĪ·cus), otherwise the third-to-last (FĒ·mi·na).", "connects": false, "ex": { "text": "fēmina", "tr": "FĒ·mi·na", "en": "woman" } }
+    ]},
+    { "id": "p2", "title": "Pronunciation 2: consonants (Classical)", "note": "Forget Church and Spanish habits for c, g and v. Everything else is close to Spanish.", "letters": [
+      { "id": "c-c", "char": "c", "name": "c is always k", "tr": "k", "sound": "Always hard: Cicerō = KI-ke-rō, centum = KEN-tum. Never Spanish z/s or Italian ch.", "connects": false, "ex": { "text": "Cicerō", "tr": "KI·ke·rō", "en": "Cicero" } },
+      { "id": "c-g", "char": "g", "name": "g is always hard", "tr": "g", "sound": "Always as in 'get': legiō = LE-gi-ō.", "connects": false, "ex": { "text": "legiō", "tr": "LE·gi·ō", "en": "legion" } },
+      { "id": "c-v", "char": "v", "name": "v is w", "tr": "w", "sound": "Like English w: vīnum = WEE-num; vēnī, vīdī, vīcī = WAY-nee, WEE-dee, WEE-kee.", "connects": false, "ex": { "text": "vīnum", "tr": "WĪ·num", "en": "wine" } },
+      { "id": "c-i", "char": "i (j)", "name": "consonantal i", "tr": "y", "sound": "Before a vowel at the start of a word, i is y: iam = yam, Iūlius = YOO-li-us. Some books write it j.", "connects": false, "ex": { "text": "iam", "tr": "yam", "en": "already" } },
+      { "id": "c-qu", "char": "qu", "name": "qu and ngu", "tr": "kw / gw", "sound": "qu = kw (aqua = A-kwa); gu after n = gw (lingua = LIN-gwa).", "connects": false, "ex": { "text": "aqua", "tr": "A·kwa", "en": "water" } },
+      { "id": "c-r-s", "char": "r s", "name": "r and s", "tr": "r / s", "sound": "r is tapped or trilled as in Spanish; s is always hissed, never z (rosa = RO-sa).", "connects": false, "ex": { "text": "rosa", "tr": "RO·sa", "en": "rose" } },
+      { "id": "c-double", "char": "ll tt", "name": "double consonants", "tr": "held", "sound": "Hold double consonants, as in Italian: puella = pu-EL-la, annus = AN-nus.", "connects": false, "ex": { "text": "puella", "tr": "pu·EL·la", "en": "girl" } },
+      { "id": "c-ph", "char": "ph th ch", "name": "Greek aspirates", "tr": "pʰ tʰ kʰ", "sound": "In Greek loanwords: p, t, k with a puff of air. Commonly said as f, t, k.", "connects": false, "ex": { "text": "philosophia", "tr": "phi·lo·SO·phi·a", "en": "philosophy" } },
+      { "id": "c-x", "char": "x", "name": "x", "tr": "ks", "sound": "Always ks: rēx = RAYKS.", "connects": false, "ex": { "text": "rēx", "tr": "rēks", "en": "king" } }
+    ]}
+  ],
+  "contrasts": [],
+  "speaking": [
+    { "id": "p-intro", "level": "U1", "en": "Introduce yourself in Latin: your name, that you're a student, how you are.", "hints": ["Salvē!", "Mihi nōmen est …", "Discipulus sum.", "Bene valeō."], "fluency": true },
+    { "id": "p-geo", "level": "U2", "en": "Say where five places are and whether they are big or small.", "hints": ["… in Eurōpā est.", "… magna est.", "… nōn parva est."] },
+    { "id": "p-family", "level": "U3", "en": "Describe your family: who is who, and whose son/daughter/brother you are.", "hints": ["Pater meus …", "Fīlius … sum.", "Frātrem / sorōrem habeō."], "fluency": true },
+    { "id": "p-day", "level": "U4", "en": "Say what you do often, always and never.", "hints": ["Saepe …", "Semper …", "Numquam …"], "fluency": true },
+    { "id": "p-house", "level": "U5", "en": "Describe a house and garden, saying where things are (in + ablative).", "hints": ["In hortō …", "Ante vīllam …", "Cum amīcō …"] },
+    { "id": "p-gifts", "level": "U6", "en": "Say who gives what to whom (dative).", "hints": ["Pater fīliō … dat.", "Mihi … grātum est."] },
+    { "id": "p-class", "level": "U7", "en": "Be the teacher: give five classroom commands.", "hints": ["Audīte!", "Aperīte librōs!", "Tacēte!", "Lege, quaesō!"] },
+    { "id": "p-city", "level": "U8", "en": "Describe Rome or Baltimore: city, river, people, night.", "hints": ["Urbs magna est.", "Flūmen …", "Nocte …"] },
+    { "id": "p-doctor", "level": "U9", "en": "Tell a doctor what hurts and since when.", "hints": ["Caput mihi dolet.", "Febrem habeō.", "Ab herī."], "fluency": true },
+    { "id": "p-yesterday", "level": "U10", "en": "Tell what you did yesterday, in order (perfect tense).", "hints": ["Herī …", "Prīmum …", "Deinde …", "Tandem …"], "fluency": true },
+    { "id": "p-fable", "level": "U11", "en": "Retell the fable of the wolf and the lamb in your own words.", "hints": ["Ōlim lupus et agnus …", "Lupus dīxit: …"], "fluency": true },
+    { "id": "p-caesar", "level": "U12", "en": "Read Caesar's first sentence aloud, then explain it in simple Latin.", "hints": ["Gallia in trēs partēs dīvīsa est.", "Belgae ūnam partem incolunt …"] }
+  ],
+  "scenarios": [
+    { "id": "sc-meet", "title": "Meeting a Roman student", "setup": "You meet a student in a Roman school (ludus) and introduce yourselves.", "you": "a student from America", "partner": "Marcus, a friendly Roman student", "grammar": ["esse", "questions with -ne"] },
+    { "id": "sc-familia", "title": "Family dinner", "setup": "A Roman family invites you to dinner and asks about your family.", "you": "a guest", "partner": "Aemilia, the mother of the house", "grammar": ["genitive", "possessives"] },
+    { "id": "sc-forum", "title": "Shopping in the forum", "setup": "You want to buy bread, wine and a book in the Roman forum.", "you": "a shopper", "partner": "a shopkeeper", "grammar": ["accusative", "numbers"] },
+    { "id": "sc-iter", "title": "Lost in Rome", "setup": "You ask the way from the forum to the river Tiber.", "you": "a lost visitor", "partner": "a helpful citizen", "grammar": ["prepositions", "imperative"] },
+    { "id": "sc-schola", "title": "In class", "setup": "The teacher asks you questions about a story you read.", "you": "a pupil", "partner": "a strict but kind magister", "grammar": ["present tense", "imperative"] },
+    { "id": "sc-medicus", "title": "At the Roman doctor's", "setup": "You have a headache and a fever since yesterday.", "you": "a patient", "partner": "a Greek doctor practising in Rome", "grammar": ["dolet + dative", "body parts"] },
+    { "id": "sc-heri", "title": "What did you do yesterday?", "setup": "A friend asks about your day yesterday.", "you": "yourself", "partner": "Iulia, a curious friend", "grammar": ["perfect tense"] },
+    { "id": "sc-fabula", "title": "Telling a story", "setup": "Tell a child a simple fable, and answer their questions about it.", "you": "the storyteller", "partner": "a curious child", "grammar": ["imperfect and perfect", "relative pronoun"] }
+  ],
+  "units": [],
+  "words": [],
+  "grammar": [],
+  "texts": []
+}

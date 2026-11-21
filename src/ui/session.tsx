@@ -7,7 +7,7 @@ import {
   showTranslit, learnedWordIds, type World,
 } from '../logic'
 import { getScheduler, previewSrs, formatInterval, type Grade } from '../engine/scheduler'
-import { answerMatches, buildLexicon, lookup, tokenize } from '../engine/text'
+import { answerMatches, buildLexicon, lookup, tokenize, respell, stripVowels, normalize } from '../engine/text'
 import { textCoverage } from '../engine/coverage'
 import { speak, voicesFor } from '../audio/tts'
 import { startRecording, playBlob, type ActiveRecording, type Recording } from '../audio/recorder'
@@ -130,7 +130,7 @@ function CardView({ w, card, onGraded }: { w: World; card: CardRow; onGraded: (c
   const doGrade = async (g: Grade) => onGraded(await grade(w, card, g))
   let prompt: preact.ComponentChildren = null, answer: preact.ComponentChildren = null, audio = '', expected = '', flagRef = card.id
 
-  if (card.kind === 'produce' || card.kind === 'listen') {
+  if (card.kind === 'produce' || card.kind === 'listen' || card.kind === 'read') {
     const word = wordById(pack, card.ref)
     if (!word) return <Missing onSkip={() => onGraded(card)} />
     audio = word.ex.text; expected = word.text; flagRef = 'word:' + word.id
@@ -139,8 +139,11 @@ function CardView({ w, card, onGraded }: { w: World; card: CardRow; onGraded: (c
       <p><T pack={pack} text={word.ex.text} /></p>
       <p class="tr">{word.ex.tr}</p><p class="muted">{word.ex.en}</p>
       {word.root && <p class="muted small">root {word.root}</p>}
+      <Cognates c={word.cognates} />
     </>
-    prompt = card.kind === 'produce'
+    prompt = card.kind === 'read'
+      ? <><p class="muted small">Read it aloud. What does it mean?</p><p><T pack={pack} text={word.ex.text} big /></p></>
+      : card.kind === 'produce'
       ? <><p class="muted small">Say it in {pack.name.split(':')[0].split(' ')[0]}, out loud:</p><p class="big">{word.en}</p><p class="muted">in: “{word.ex.en}”</p></>
       : <><p class="muted small">Listen. What does it mean?</p><Speak pack={pack} text={word.ex.text} label="▶︎ Listen" /><Speak pack={pack} text={word.ex.text} label="🐢 Slow" rate={0.6} /></>
   } else if (card.kind === 'drill') {
@@ -167,9 +170,9 @@ function CardView({ w, card, onGraded }: { w: World; card: CardRow; onGraded: (c
   return (
     <div class="card">
       <div class="prompt">{prompt}</div>
-      {!shown && card.kind !== 'listen' && card.kind !== 'script' && expected && <TypeBox pack={pack} value={typed} onInput={setTyped} />}
+      {!shown && card.kind !== 'listen' && card.kind !== 'read' && card.kind !== 'script' && expected && <TypeBox pack={pack} value={typed} onInput={setTyped} />}
       {!shown ? (
-        <button class="btn primary big" onClick={() => { setShown(true); if (audio) speak(audio, pack.tts).then(s => s && logEvent({ lang: pack.id, type: 'listen', seconds: s })) }}>Show answer</button>
+        <button class="btn primary big" onClick={() => { setShown(true); if (audio) speak(respell(pack, audio), pack.tts).then(s => s && logEvent({ lang: pack.id, type: 'listen', seconds: s })) }}>Show answer</button>
       ) : (
         <>
           <div class="answer">{answer}</div>
@@ -181,6 +184,12 @@ function CardView({ w, card, onGraded }: { w: World; card: CardRow; onGraded: (c
       )}
     </div>
   )
+}
+
+const LANG_NAME: Record<string, string> = { es: 'Spanish', en: 'English', it: 'Italian', fr: 'French', grc: 'Greek', sa: 'Sanskrit', ar: 'Arabic', he: 'Hebrew' }
+function Cognates({ c }: { c?: Record<string, string> }) {
+  if (!c) return null
+  return <p class="small">≈ {Object.entries(c).map(([l, t], i) => <span key={l}>{i ? ' · ' : ''}{LANG_NAME[l] ?? l} <i>{t}</i></span>)}</p>
 }
 
 function Missing({ onSkip }: { onSkip: () => void }) {
@@ -218,7 +227,7 @@ export function Intro({ w, pack, refStr, onDone }: { w: World; pack: Pack; refSt
   const btn = onDone && <button class="btn primary big" onClick={onDone}>Got it →</button>
   if (k === 'word') {
     const wd = wordById(pack, id)!
-    const links = w.links.filter(l => l.items.some(x => x.lang === pack.id && (wd.root ? x.tr === wd.root || x.text === wd.root.replace(/-/g, '') : false)))
+    const links = w.links.filter(l => l.items.some(x => x.lang === pack.id && ((wd.root && x.tr === wd.root) || normalize(pack, x.text) === normalize(pack, wd.text))))
     return (
       <div class="card">
         <p><T pack={pack} text={wd.text} big /> <Speak pack={pack} text={wd.text} /></p>
@@ -226,8 +235,9 @@ export function Intro({ w, pack, refStr, onDone }: { w: World; pack: Pack; refSt
         <p class="big">{wd.en}</p>
         {wd.root && <p class="small">Root <b>{wd.root}</b>{wd.pattern && <> · pattern {wd.pattern}</>}</p>}
         {wd.msa && <p class="small">MSA: <T pack={pack} text={wd.msa.text} /> {wd.msa.tr && <span class="tr">{wd.msa.tr}</span>} {wd.msa.note && <span class="muted">({wd.msa.note})</span>}</p>}
+        <Cognates c={wd.cognates} />
         {wd.note && <p class="small muted">{wd.note}</p>}
-        {links.map(l => <p class="small" key={l.id}>🔗 {l.note}: {l.items.map(x => <span key={x.lang}>{x.lang} <span lang={x.lang}>{x.text}</span> ({x.tr}) </span>)}</p>)}
+        {links.map(l => <p class="small" key={l.id}>🔗 {l.note}: {l.items.filter(x => x.lang !== pack.id).map(x => <span key={x.lang}>{LANG_NAME[x.lang] ?? x.lang} <span lang={x.lang}>{x.text}</span> ({x.tr}) </span>)}</p>)}
         <hr />
         <p class="muted small">In a sentence. Listen, then shadow it (say it with or right after the model):</p>
         <p><T pack={pack} text={wd.ex.text} /></p>
@@ -340,7 +350,7 @@ export function ReaderView({ w, pack, text }: { w: World; pack: Pack; text: Text
           {l.sp && <span class="sp">{l.sp}: </span>}
           <span lang={pack.id} dir={pack.dir} class={`tl tl-${pack.id}`}>
             {l.text.split(/([\p{L}\p{M}\p{N}]+)/u).map((part, k) => tokenize(part).length
-              ? <span key={k} class={`tok ${lookup(pack, buildLexiconCache(pack, learned), part) ? '' : 'new'}`} onClick={() => setGloss({ tok: part, id: lookup(pack, lexAll, part) })}>{w.settings.vowels ? part : part.replace(new RegExp(`[${pack.vowelToggle?.strip ?? ''}]`, 'gu'), '')}</span>
+              ? <span key={k} class={`tok ${lookup(pack, buildLexiconCache(pack, learned), part) ? '' : 'new'}`} onClick={() => setGloss({ tok: part, id: lookup(pack, lexAll, part) })}>{w.settings.vowels ? part : stripVowels(pack, part)}</span>
               : <span key={k}>{part}</span>)}
           </span>
           <div class="line-tools">
@@ -398,15 +408,15 @@ async function talkersFor(pack: Pack, contrastId: string): Promise<Talker[]> {
   const out: Talker[] = []
   const voices = voicesFor(pack.tts)
   // shortcut: one iOS voice gives word variability but not true talker variability; recorded speakers fix that
-  for (const v of voices.slice(0, 4)) for (const rate of [0.75, 1]) out.push({ name: `${v.name}${rate !== 1 ? ' (slow)' : ''}`, play: async (_id, text) => { await speak(text, pack.tts, { voice: v, rate }) } })
-  if (!voices.length) out.push({ name: 'default voice', play: async (_id, text) => { await speak(text, pack.tts) } })
+  for (const v of voices.slice(0, 4)) for (const rate of [0.75, 1]) out.push({ name: `${v.name}${rate !== 1 ? ' (slow)' : ''}`, play: async (_id, text) => { await speak(respell(pack, text), pack.tts, { voice: v, rate }) } })
+  if (!voices.length) out.push({ name: 'default voice', play: async (_id, text) => { await speak(respell(pack, text), pack.tts) } })
   const contrast = pack.contrasts.find(c => c.id === contrastId)!
   const recs = (await Promise.all(contrast.items.map(it => store.getRecordingsByRef(`hvpt:${contrastId}:${it.id}`)))).flat()
   const names = [...new Set(recs.map(r => r.talker!).filter(Boolean))]
   for (const n of names) out.push({
     name: n, play: async (itemId, text) => {
       const r = recs.find(x => x.talker === n && x.ref.endsWith(':' + itemId))
-      if (r) await playBlob(r.blob); else await speak(text, pack.tts)
+      if (r) await playBlob(r.blob); else await speak(respell(pack, text), pack.tts)
     },
   })
   return out

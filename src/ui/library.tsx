@@ -13,6 +13,7 @@ export function Library({ lang }: { lang?: string }) {
   const prog = w.progress[l]
   return (
     <Screen title="Library">
+      {Object.keys(w.packs).length > 1 && <div class="chips">{Object.values(w.packs).map(p => <button key={p.id} class={`btn small ${p.id === l ? 'primary' : ''}`} onClick={() => nav({ name: 'library', lang: p.id })}>{p.name.split(' (')[0].split(':')[0]}</button>)}</div>}
       <p class="muted small">{pack.name} · v{pack.version}</p>
       <div class="grid2">
         <button class="btn" onClick={() => nav({ name: 'browse', lang: l, what: 'grammar' })}>Grammar</button>

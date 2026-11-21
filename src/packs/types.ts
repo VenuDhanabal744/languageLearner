@@ -12,7 +12,7 @@ export interface Word {
   forms?: string[]        // other surface forms counted as this word for coverage
   v?: string              // variety id, defaults to pack.defaultVariety
   msa?: { text: string; tr?: string; note?: string } // formal/literary counterpart when it differs
-  es?: string             // Spanish cognate/hint (Latin etc.)
+  cognates?: Record<string, string> // e.g. { "es": "noche", "en": "nocturnal" }
   ex: Example             // every word is taught inside a sentence
   note?: string
   verified: boolean
@@ -72,9 +72,12 @@ export interface Pack {
   font?: string                       // CSS font-family stack override
   defaultVariety?: string
   varieties?: Record<string, string>
-  vowelToggle?: { label: string; strip: string } // strip = regex character class of marks to hide
-  normalize?: { strip?: string; map?: Record<string, string> } // for matching typed answers & coverage
-  clitics?: { prefixes?: string[]; suffixes?: string[] }
+  vowelToggle?: { label: string; strip: string; nfd?: boolean } // strip = regex character class of marks to hide
+  normalize?: { strip?: string; map?: Record<string, string>; nfd?: boolean } // for matching typed answers & coverage
+  clitics?: { prefixes?: string[]; enclitics?: string[]; suffixes?: string[]; stems?: boolean }
+  ttsRespell?: [string, string][]      // regex → replacement, applied before speaking (borrowed voices)
+  wordCards?: ('produce' | 'listen' | 'read')[] // cards made per word; default produce + listen
+  chat?: { name: string; translit: boolean } // how the conversation prompt names the language
   translit: { name: string }
   frequency?: { file: string; source: string; note: string }
   includes?: string[]                 // extra JSON files merged into this pack (arrays concatenated)

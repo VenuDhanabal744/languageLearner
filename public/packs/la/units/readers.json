@@ -1,0 +1,22 @@
+{
+  "texts": [
+    { "id": "x01", "title": "Reader: Mārcus et canis", "level": "U8", "kind": "reading", "names": ["Mārcus", "Mārcī", "Iūlia"], "lines": [
+      { "text": "Mārcus canem magnum habet. Canis in hortō vīllae habitat.", "en": "Marcus has a big dog. The dog lives in the villa's garden." },
+      { "text": "Māne Mārcus ad scholam ambulat, et canis cum puerō currit.", "en": "In the morning Marcus walks to school, and the dog runs with the boy." },
+      { "text": "Sed canis in scholā nōn est grātus. Magister canem nōn amat!", "en": "But the dog is not welcome at school. The teacher doesn't like the dog!" },
+      { "text": "Canis igitur ante portam sedet et discipulōs spectat.", "en": "So the dog sits in front of the gate and watches the students." },
+      { "text": "Post scholam Mārcus et canis per viās urbis ad vīllam currunt.", "en": "After school Marcus and the dog run through the city streets to the villa." },
+      { "text": "Iūlia rīdet: “Canis tuus discipulus bonus est; semper in scholā est!”", "en": "Julia laughs: “Your dog is a good student; he's always at school!”" },
+      { "text": "Nocte canis sub mēnsā dormit, et Mārcus in lectō dormit.", "en": "At night the dog sleeps under the table, and Marcus sleeps in bed." }
+    ], "verified": false },
+    { "id": "x02", "title": "Reader: Medicus Graecus", "level": "U10", "kind": "reading", "names": ["Galēnus", "Graecus", "Pergamum", "Rōmam", "Rōmae"], "lines": [
+      { "text": "Galēnus medicus Graecus erat. Ōlim in oppidō Pergamō habitābat.", "en": "Galen was a Greek doctor. Once he lived in the town of Pergamum." },
+      { "text": "Prīmum gladiātōrēs cūrābat, quī saepe vulnera gravia habēbant.", "en": "At first he treated gladiators, who often had serious wounds." },
+      { "text": "Deinde Rōmam vēnit. Rōmae multōs aegrōs cūrāvit.", "en": "Then he came to Rome. In Rome he treated many sick people." },
+      { "text": "Galēnus dē corpore hominis multōs librōs scrīpsit.", "en": "Galen wrote many books about the human body." },
+      { "text": "Dīcēbat: sanguis in corpore est, et cor magnum est.", "en": "He used to say: blood is in the body, and the heart is important." },
+      { "text": "Medicī librōs eius per multōs annōs lēgērunt.", "en": "Doctors read his books for many years." },
+      { "text": "Hodiē quoque discipulī medicīnae nōmen Galēnī sciunt.", "en": "Today too, medical students know Galen's name." }
+    ], "verified": false }
+  ]
+}

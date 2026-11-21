@@ -1,0 +1,243 @@
+{
+  "units": [
+    { "id": "u01", "title": "1 · Salvē!", "goal": "Greet people, say who you are, ask simple questions.", "items": [
+      "script:p1", "word:salve", "word:vale", "word:ego", "word:tu", "word:sum", "grammar:esse", "word:nomen", "word:mihi", "word:tibi", "word:quis", "word:quid",
+      "word:ago", "word:bene", "grammar:questions", "word:et", "word:non", "word:ita", "word:minime", "word:gratias", "word:quaeso", "word:discipulus", "word:romanus", "text:d01" ] },
+    { "id": "u02", "title": "2 · Rōma et Hispānia", "goal": "Say where places are; nouns in -a, -us, -um, singular and plural.", "items": [
+      "script:p2", "word:ubi", "word:in", "word:italia", "word:europa", "word:hispania", "word:graecia", "word:terra", "word:insula", "grammar:decl12", "word:oppidum",
+      "word:fluvius", "word:magnus", "word:parvus", "word:multus", "word:unus", "word:duo", "word:tres", "grammar:sound1", "word:sed", "word:quoque", "word:lingua", "word:latinus", "text:r01" ] },
+    { "id": "u03", "title": "3 · Familia", "goal": "Describe a family; say whose something is (genitive).", "items": [
+      "word:familia", "word:pater", "word:mater", "word:filius", "word:filia", "word:liberi", "grammar:genitive", "word:frater", "word:soror", "word:puer", "word:puella",
+      "word:vir", "word:femina", "word:amicus", "word:meus", "word:tuus", "grammar:possessive", "word:bonus", "word:pulcher", "word:habeo", "word:cuius", "word:domus", "text:r02" ] },
+    { "id": "u04", "title": "4 · Quid facit?", "goal": "Say what people do (present tense) and to whom/what (accusative).", "items": [
+      "word:amo", "word:voco", "word:laboro", "word:habito", "word:ambulo", "word:canto", "grammar:present12", "word:specto", "word:video", "word:timeo", "word:rideo",
+      "word:respondeo", "word:sedeo", "word:doceo", "grammar:accusative", "word:hodie", "word:saepe", "word:semper", "word:numquam", "word:nunc", "word:cur", "word:quia", "word:ibi", "word:etiam", "text:d02" ] }
+  ],
+  "words": [
+    { "id": "salve", "text": "salvē", "tr": "SAL·wē", "en": "hello (to one person; to several: salvēte)", "pos": "interj", "forms": ["salvēte"], "cognates": { "es": "salve", "en": "salvation" }, "ex": { "text": "Salvē, Mārce!", "en": "Hello, Marcus!" }, "verified": false },
+    { "id": "vale", "text": "valē", "tr": "WA·lē", "en": "goodbye (lit. 'be well'); valeō = I am well", "pos": "interj", "forms": ["valēte", "valeō", "valēs", "valet"], "cognates": { "es": "valer", "en": "valid" }, "ex": { "text": "Valē, amīce!", "en": "Goodbye, friend!" }, "verified": false },
+    { "id": "ego", "text": "ego", "tr": "E·go", "en": "I (mē = me)", "pos": "pron", "forms": ["mē", "mēcum"], "cognates": { "es": "yo", "grc": "ἐγώ", "sa": "aham" }, "ex": { "text": "Ego sum Mārcus.", "en": "I am Marcus." }, "verified": false },
+    { "id": "tu", "text": "tū", "tr": "tū", "en": "you (one person; tē = you as object)", "pos": "pron", "forms": ["tē", "tēcum"], "cognates": { "es": "tú" }, "ex": { "text": "Quis es tū?", "en": "Who are you?" }, "verified": false },
+    { "id": "sum", "text": "sum", "tr": "sum", "en": "I am (esse = to be)", "pos": "verb", "forms": ["es", "est", "sumus", "estis", "sunt", "esse", "eram", "erās", "erat", "erāmus", "erant", "erit", "fuī", "fuit", "fuērunt", "esset", "estne", "esne"], "cognates": { "es": "soy / es", "grc": "εἰμί / ἐστί", "sa": "asmi / asti" }, "ex": { "text": "Ego discipulus sum.", "en": "I am a student." }, "verified": false },
+    { "id": "nomen", "text": "nōmen", "tr": "NŌ·men", "en": "name (gen. nōminis)", "pos": "noun", "forms": ["nōminis", "nōmine", "nōmina"], "cognates": { "es": "nombre", "en": "noun, nominate" }, "ex": { "text": "Quod nōmen tibi est?", "en": "What is your name? (lit. what name is to you?)" }, "verified": false },
+    { "id": "mihi", "text": "mihi", "tr": "MI·hi", "en": "to me, for me", "pos": "pron", "ex": { "text": "Mihi nōmen est Venu.", "en": "My name is Venu. (lit. to me the name is Venu)" }, "verified": false },
+    { "id": "tibi", "text": "tibi", "tr": "TI·bi", "en": "to you, for you", "pos": "pron", "ex": { "text": "Grātiās tibi agō!", "en": "Thank you! (lit. I give thanks to you)" }, "verified": false },
+    { "id": "quis", "text": "quis", "tr": "kwis", "en": "who? (quem = whom)", "pos": "q", "forms": ["quem", "cui", "quō", "quōmodo"], "cognates": { "es": "quién" }, "ex": { "text": "Quis es tū?", "en": "Who are you?" }, "verified": false },
+    { "id": "quid", "text": "quid", "tr": "kwid", "en": "what?", "pos": "q", "cognates": { "es": "qué" }, "ex": { "text": "Quid est hoc?", "en": "What is this?" }, "verified": false },
+    { "id": "ago", "text": "agō", "tr": "A·gō", "en": "I do, act, drive; quid agis? = how are you?", "pos": "verb", "forms": ["agis", "agit", "agimus", "agunt", "agere", "ēgī", "ēgit", "age", "agite"], "cognates": { "es": "actuar", "en": "act, agent" }, "ex": { "text": "Quid agis, Iūlia?", "en": "How are you, Julia?" }, "verified": false },
+    { "id": "bene", "text": "bene", "tr": "BE·ne", "en": "well", "pos": "adv", "cognates": { "es": "bien (ĕ → ie)", "en": "benefit" }, "ex": { "text": "Bene valeō, grātiās.", "en": "I'm well, thanks." }, "verified": false },
+    { "id": "et", "text": "et", "tr": "et", "en": "and; also", "pos": "conj", "cognates": { "es": "y" }, "ex": { "text": "Mārcus et Iūlia amīcī sunt.", "en": "Marcus and Julia are friends." }, "verified": false },
+    { "id": "non", "text": "nōn", "tr": "nōn", "en": "not", "pos": "adv", "cognates": { "es": "no" }, "ex": { "text": "Nōn sum Rōmānus.", "en": "I am not Roman." }, "verified": false },
+    { "id": "ita", "text": "ita", "tr": "I·ta", "en": "yes; so, thus", "pos": "adv", "ex": { "text": "Esne discipulus? Ita.", "en": "Are you a student? Yes." }, "verified": false },
+    { "id": "minime", "text": "minimē", "tr": "MI·ni·mē", "en": "no (not at all)", "pos": "adv", "cognates": { "en": "minimum" }, "ex": { "text": "Esne Rōmānus? Minimē!", "en": "Are you Roman? Not at all!" }, "verified": false },
+    { "id": "gratias", "text": "grātiās", "tr": "GRĀ·ti·ās", "en": "thanks (grātiās agō = I give thanks)", "pos": "noun", "forms": ["grātia", "grātiam"], "cognates": { "es": "gracias" }, "ex": { "text": "Grātiās, amīce.", "en": "Thanks, friend." }, "verified": false },
+    { "id": "quaeso", "text": "quaesō", "tr": "KWAE·sō", "en": "please", "pos": "interj", "ex": { "text": "Aquam, quaesō.", "en": "Water, please." }, "verified": false },
+    { "id": "discipulus", "text": "discipulus", "tr": "dis·KI·pu·lus", "en": "student, pupil (f. discipula)", "pos": "noun", "forms": ["discipula", "discipulī", "discipulae", "discipulōs", "discipulīs"], "cognates": { "es": "discípulo", "en": "disciple" }, "ex": { "text": "Iūlia discipula est.", "en": "Julia is a student." }, "verified": false },
+    { "id": "romanus", "text": "Rōmānus", "tr": "rō·MĀ·nus", "en": "Roman", "pos": "adj", "forms": ["Rōmāna", "Rōmānī", "Rōmānum", "Rōmānae"], "cognates": { "es": "romano" }, "ex": { "text": "Mārcus Rōmānus est.", "en": "Marcus is Roman." }, "verified": false },
+
+    { "id": "ubi", "text": "ubi", "tr": "U·bi", "en": "where? (also: when)", "pos": "q", "cognates": { "en": "ubiquitous" }, "ex": { "text": "Ubi est Rōma?", "en": "Where is Rome?" }, "verified": false },
+    { "id": "in", "text": "in", "tr": "in", "en": "in, on (+abl.); into (+acc.)", "pos": "prep", "cognates": { "es": "en" }, "ex": { "text": "Baltimora in Americā est.", "en": "Baltimore is in America." }, "verified": false },
+    { "id": "italia", "text": "Italia", "tr": "i·TA·li·a", "en": "Italy", "pos": "noun", "forms": ["Italiā", "Italiae", "Italiam"], "ex": { "text": "Rōma in Italiā est.", "en": "Rome is in Italy." }, "verified": false },
+    { "id": "europa", "text": "Eurōpa", "tr": "eu·RŌ·pa", "en": "Europe", "pos": "noun", "forms": ["Eurōpā", "Eurōpae", "Eurōpam"], "ex": { "text": "Italia in Eurōpā est.", "en": "Italy is in Europe." }, "verified": false },
+    { "id": "hispania", "text": "Hispānia", "tr": "his·PĀ·ni·a", "en": "Spain", "pos": "noun", "forms": ["Hispāniā", "Hispāniae", "Hispāniam"], "ex": { "text": "Hispānia terra magna est.", "en": "Spain is a big country." }, "verified": false },
+    { "id": "graecia", "text": "Graecia", "tr": "GRAE·ki·a", "en": "Greece", "pos": "noun", "forms": ["Graeciā", "Graeciae", "Graeciam"], "ex": { "text": "Graecia quoque in Eurōpā est.", "en": "Greece is also in Europe." }, "verified": false },
+    { "id": "terra", "text": "terra", "tr": "TER·ra", "en": "land, earth, country", "pos": "noun", "forms": ["terrae", "terram", "terrā", "terrās"], "cognates": { "es": "tierra (ĕ → ie)", "en": "terrain" }, "ex": { "text": "Terra magna est.", "en": "The land is big." }, "verified": false },
+    { "id": "insula", "text": "īnsula", "tr": "ĪN·su·la", "en": "island", "pos": "noun", "forms": ["īnsulae", "īnsulam", "īnsulā", "īnsulās", "īnsulīs"], "cognates": { "es": "isla", "en": "insular, peninsula" }, "ex": { "text": "Sicilia īnsula est.", "en": "Sicily is an island." }, "verified": false },
+    { "id": "oppidum", "text": "oppidum", "tr": "OP·pi·dum", "en": "town", "pos": "noun", "forms": ["oppida", "oppidī", "oppidō", "oppidīs"], "ex": { "text": "In Italiā multa oppida sunt.", "en": "In Italy there are many towns." }, "verified": false },
+    { "id": "fluvius", "text": "fluvius", "tr": "FLU·wi·us", "en": "river", "pos": "noun", "forms": ["fluviī", "fluvium", "fluviō", "fluviōs"], "cognates": { "es": "fluvial", "en": "fluid" }, "ex": { "text": "Tiberis fluvius est.", "en": "The Tiber is a river." }, "verified": false },
+    { "id": "magnus", "text": "magnus", "tr": "MAG·nus", "en": "big, great", "pos": "adj", "forms": ["magna", "magnum", "magnī", "magnae", "magnam", "magnō", "magnā", "magnōs", "magnās"], "cognates": { "es": "magno", "en": "magnify" }, "ex": { "text": "Rōma magna est.", "en": "Rome is big." }, "verified": false },
+    { "id": "parvus", "text": "parvus", "tr": "PAR·wus", "en": "small", "pos": "adj", "forms": ["parva", "parvum", "parvī", "parvae", "parvam"], "ex": { "text": "Īnsula parva est.", "en": "The island is small." }, "verified": false },
+    { "id": "multus", "text": "multus", "tr": "MUL·tus", "en": "much; (plural) many", "pos": "adj", "forms": ["multa", "multum", "multī", "multae", "multōs", "multās", "multīs"], "cognates": { "es": "mucho (-lt- → -ch-)", "en": "multiple" }, "ex": { "text": "In Hispāniā multī fluviī sunt.", "en": "In Spain there are many rivers." }, "verified": false },
+    { "id": "unus", "text": "ūnus", "tr": "Ū·nus", "en": "one", "pos": "num", "forms": ["ūna", "ūnum", "ūnam", "ūnā"], "cognates": { "es": "uno" }, "ex": { "text": "Ūna īnsula parva est.", "en": "One island is small." }, "verified": false },
+    { "id": "duo", "text": "duo", "tr": "DU·o", "en": "two", "pos": "num", "forms": ["duae", "duōs", "duās", "duōbus"], "cognates": { "es": "dos", "grc": "δύο", "sa": "dvau" }, "ex": { "text": "Duo fluviī in Italiā sunt.", "en": "There are two rivers in Italy." }, "verified": false },
+    { "id": "tres", "text": "trēs", "tr": "trēs", "en": "three", "pos": "num", "forms": ["tria", "trium", "tribus"], "cognates": { "es": "tres", "grc": "τρεῖς", "sa": "trayaḥ" }, "ex": { "text": "Trēs īnsulae magnae sunt.", "en": "Three islands are big." }, "verified": false },
+    { "id": "sed", "text": "sed", "tr": "sed", "en": "but", "pos": "conj", "ex": { "text": "Rōma magna est, sed īnsula parva est.", "en": "Rome is big, but the island is small." }, "verified": false },
+    { "id": "quoque", "text": "quoque", "tr": "KWO·kwe", "en": "also, too (after the word it stresses)", "pos": "adv", "ex": { "text": "Ego quoque discipulus sum.", "en": "I too am a student." }, "verified": false },
+    { "id": "lingua", "text": "lingua", "tr": "LIN·gwa", "en": "tongue, language", "pos": "noun", "forms": ["linguā", "linguae", "linguam", "linguās", "linguīs"], "cognates": { "es": "lengua", "en": "linguistics" }, "ex": { "text": "Lingua Latīna pulchra est.", "en": "The Latin language is beautiful." }, "verified": false },
+    { "id": "latinus", "text": "Latīnus", "tr": "la·TĪ·nus", "en": "Latin (Latīnē = in Latin)", "pos": "adj", "forms": ["Latīna", "Latīnum", "Latīnam", "Latīnē"], "ex": { "text": "Latīnē, quaesō!", "en": "In Latin, please!" }, "verified": false },
+
+    { "id": "familia", "text": "familia", "tr": "fa·MI·li·a", "en": "family, household", "pos": "noun", "forms": ["familiā", "familiae", "familiam"], "cognates": { "es": "familia" }, "ex": { "text": "Familia mea nōn magna est.", "en": "My family isn't big." }, "verified": false },
+    { "id": "pater", "text": "pater", "tr": "PA·ter", "en": "father (gen. patris)", "pos": "noun", "forms": ["patris", "patrem", "patre", "patrī", "patrēs"], "cognates": { "es": "padre", "grc": "πατήρ", "sa": "pitṛ", "en": "paternal" }, "ex": { "text": "Pater meus medicus est.", "en": "My father is a doctor." }, "verified": false },
+    { "id": "mater", "text": "māter", "tr": "MĀ·ter", "en": "mother (gen. mātris)", "pos": "noun", "forms": ["mātris", "mātrem", "mātre", "mātrī"], "cognates": { "es": "madre", "grc": "μήτηρ", "sa": "mātṛ", "en": "maternal" }, "ex": { "text": "Māter mea in Americā est.", "en": "My mother is in America." }, "verified": false },
+    { "id": "filius", "text": "fīlius", "tr": "FĪ·li·us", "en": "son", "pos": "noun", "forms": ["fīliī", "fīlium", "fīliō", "fīliōs", "fīlī"], "cognates": { "es": "hijo (f → h, -li- → j)", "en": "filial" }, "ex": { "text": "Mārcus fīlius Iūliī est.", "en": "Marcus is the son of Julius." }, "verified": false },
+    { "id": "filia", "text": "fīlia", "tr": "FĪ·li·a", "en": "daughter", "pos": "noun", "forms": ["fīliae", "fīliam", "fīliā"], "cognates": { "es": "hija" }, "ex": { "text": "Iūlia fīlia Iūliī est.", "en": "Julia is the daughter of Julius." }, "verified": false },
+    { "id": "liberi", "text": "līberī", "tr": "LĪ·be·rī", "en": "children (plural only)", "pos": "noun", "forms": ["līberōs", "līberōrum", "līberīs"], "ex": { "text": "Iūlius trēs līberōs habet.", "en": "Julius has three children." }, "verified": false },
+    { "id": "frater", "text": "frāter", "tr": "FRĀ·ter", "en": "brother (gen. frātris)", "pos": "noun", "forms": ["frātris", "frātrem", "frātrī", "frātre", "frātrēs"], "cognates": { "es": "fraterno (Sp. hermano is from germānus)", "sa": "bhrātṛ", "en": "fraternal, brother" }, "ex": { "text": "Frāter meus discipulus est.", "en": "My brother is a student." }, "verified": false },
+    { "id": "soror", "text": "soror", "tr": "SO·ror", "en": "sister (gen. sorōris)", "pos": "noun", "forms": ["sorōris", "sorōrem", "sorōrī", "sorōrēs"], "cognates": { "en": "sorority" }, "ex": { "text": "Soror mea parva est.", "en": "My sister is little." }, "verified": false },
+    { "id": "puer", "text": "puer", "tr": "PU·er", "en": "boy (gen. puerī)", "pos": "noun", "forms": ["puerī", "puerum", "puerō", "puerōs", "puerōrum", "puerīs"], "cognates": { "en": "puerile" }, "ex": { "text": "Puer in hortō est.", "en": "The boy is in the garden." }, "verified": false },
+    { "id": "puella", "text": "puella", "tr": "pu·EL·la", "en": "girl", "pos": "noun", "forms": ["puellae", "puellam", "puellā", "puellās", "puellārum", "puellīs"], "ex": { "text": "Iūlia puella Rōmāna est.", "en": "Julia is a Roman girl." }, "verified": false },
+    { "id": "vir", "text": "vir", "tr": "wir", "en": "man (gen. virī)", "pos": "noun", "forms": ["virī", "virum", "virō", "virōs", "virōrum", "virīs"], "cognates": { "en": "virile, virtue" }, "ex": { "text": "Iūlius vir Rōmānus est.", "en": "Julius is a Roman man." }, "verified": false },
+    { "id": "femina", "text": "fēmina", "tr": "FĒ·mi·na", "en": "woman", "pos": "noun", "forms": ["fēminae", "fēminam", "fēminā", "fēminās"], "cognates": { "es": "hembra", "en": "feminine" }, "ex": { "text": "Aemilia fēmina Rōmāna est.", "en": "Aemilia is a Roman woman." }, "verified": false },
+    { "id": "amicus", "text": "amīcus", "tr": "a·MĪ·kus", "en": "friend (f. amīca)", "pos": "noun", "forms": ["amīca", "amīcī", "amīcae", "amīcum", "amīcam", "amīcō", "amīcōs", "amīcīs", "amīce"], "cognates": { "es": "amigo (c → g)" }, "ex": { "text": "Mārcus amīcus meus est.", "en": "Marcus is my friend." }, "verified": false },
+    { "id": "meus", "text": "meus", "tr": "ME·us", "en": "my, mine", "pos": "adj", "forms": ["mea", "meum", "meī", "meae", "meam", "meō", "meā", "meōs", "meās", "meīs"], "cognates": { "es": "mío" }, "ex": { "text": "Ubi est liber meus?", "en": "Where is my book?" }, "verified": false },
+    { "id": "tuus", "text": "tuus", "tr": "TU·us", "en": "your, yours (one person)", "pos": "adj", "forms": ["tua", "tuum", "tuī", "tuae", "tuam", "tuō", "tuā", "tuōs", "tuās"], "cognates": { "es": "tuyo" }, "ex": { "text": "Ubi est māter tua?", "en": "Where is your mother?" }, "verified": false },
+    { "id": "bonus", "text": "bonus", "tr": "BO·nus", "en": "good", "pos": "adj", "forms": ["bona", "bonum", "bonī", "bonae", "bonam", "bonō", "bonōs"], "cognates": { "es": "bueno (ŏ → ue)", "en": "bonus" }, "ex": { "text": "Pater meus vir bonus est.", "en": "My father is a good man." }, "verified": false },
+    { "id": "pulcher", "text": "pulcher", "tr": "PUL·kher", "en": "beautiful, handsome (f. pulchra)", "pos": "adj", "forms": ["pulchra", "pulchrum", "pulchrī", "pulchrae", "pulchram", "pulchrā"], "ex": { "text": "Rōma urbs pulchra est.", "en": "Rome is a beautiful city." }, "verified": false },
+    { "id": "habeo", "text": "habeō", "tr": "HA·be·ō", "en": "I have", "pos": "verb", "forms": ["habēs", "habet", "habēmus", "habētis", "habent", "habēre", "habuī", "habuit", "habēbant", "habēbat"], "cognates": { "es": "haber", "en": "habit" }, "ex": { "text": "Mārcus ūnam sorōrem habet.", "en": "Marcus has one sister." }, "verified": false },
+    { "id": "cuius", "text": "cuius", "tr": "KU·yus", "en": "whose?", "pos": "q", "ex": { "text": "Cuius fīlius est Mārcus?", "en": "Whose son is Marcus?" }, "verified": false },
+    { "id": "domus", "text": "domus", "tr": "DO·mus", "en": "house, home (domum = homeward, domī = at home)", "pos": "noun", "forms": ["domum", "domī", "domō", "domūs"], "cognates": { "es": "doméstico", "grc": "δόμος", "en": "domestic" }, "ex": { "text": "Domus mea in Americā est.", "en": "My home is in America." }, "verified": false },
+
+    { "id": "amo", "text": "amō", "tr": "A·mō", "en": "I love, like", "pos": "verb", "forms": ["amās", "amat", "amāmus", "amātis", "amant", "amāre", "amāvī", "amāvit", "amābat", "amābant"], "cognates": { "es": "amar", "en": "amorous" }, "ex": { "text": "Māter fīliam amat.", "en": "The mother loves her daughter." }, "verified": false },
+    { "id": "voco", "text": "vocō", "tr": "WO·kō", "en": "I call", "pos": "verb", "forms": ["vocat", "vocant", "vocās", "vocāre", "vocāvit"], "cognates": { "es": "vocal", "en": "vocation" }, "ex": { "text": "Māter Mārcum vocat.", "en": "Mother calls Marcus." }, "verified": false },
+    { "id": "laboro", "text": "labōrō", "tr": "la·BŌ·rō", "en": "I work", "pos": "verb", "forms": ["labōrat", "labōrant", "labōrās", "labōrāmus", "labōrāre"], "cognates": { "es": "laborar", "en": "labor" }, "ex": { "text": "Pater in oppidō labōrat.", "en": "Father works in the town." }, "verified": false },
+    { "id": "habito", "text": "habitō", "tr": "HA·bi·tō", "en": "I live (dwell)", "pos": "verb", "forms": ["habitat", "habitant", "habitās", "habitāre", "habitābat"], "cognates": { "es": "habitar", "en": "inhabit" }, "ex": { "text": "Ubi habitās? In Americā habitō.", "en": "Where do you live? I live in America." }, "verified": false },
+    { "id": "ambulo", "text": "ambulō", "tr": "AM·bu·lō", "en": "I walk", "pos": "verb", "forms": ["ambulat", "ambulant", "ambulāmus", "ambulās", "ambulāre"], "cognates": { "en": "ambulance, amble" }, "ex": { "text": "Puer in viā ambulat.", "en": "The boy walks in the street." }, "verified": false },
+    { "id": "canto", "text": "cantō", "tr": "KAN·tō", "en": "I sing", "pos": "verb", "forms": ["cantat", "cantant", "cantās", "cantāre", "cantāvimus"], "cognates": { "es": "cantar", "en": "chant" }, "ex": { "text": "Puella cantat.", "en": "The girl sings." }, "verified": false },
+    { "id": "specto", "text": "spectō", "tr": "SPEK·tō", "en": "I look at, watch", "pos": "verb", "forms": ["spectat", "spectant", "spectāre"], "cognates": { "en": "spectator" }, "ex": { "text": "Mārcus puellam spectat.", "en": "Marcus looks at the girl." }, "verified": false },
+    { "id": "video", "text": "videō", "tr": "WI·de·ō", "en": "I see", "pos": "verb", "forms": ["vidēs", "videt", "vidēmus", "vident", "vidēre", "vīdī", "vīdit"], "cognates": { "es": "ver", "en": "video, vision" }, "ex": { "text": "Quid vidēs? Fluvium videō.", "en": "What do you see? I see a river." }, "verified": false },
+    { "id": "timeo", "text": "timeō", "tr": "TI·me·ō", "en": "I fear", "pos": "verb", "forms": ["timet", "timent", "timēre", "timēbat", "nōlī"], "cognates": { "es": "temer", "en": "timid" }, "ex": { "text": "Puer canem timet.", "en": "The boy is afraid of the dog." }, "verified": false },
+    { "id": "rideo", "text": "rīdeō", "tr": "RĪ·de·ō", "en": "I laugh, smile", "pos": "verb", "forms": ["rīdēs", "rīdet", "rīdent", "rīdēre", "rīsit", "rīdēbāmus"], "cognates": { "es": "reír", "en": "ridiculous" }, "ex": { "text": "Cūr rīdēs?", "en": "Why are you laughing?" }, "verified": false },
+    { "id": "respondeo", "text": "respondeō", "tr": "re·SPON·de·ō", "en": "I answer", "pos": "verb", "forms": ["respondet", "respondent", "respondēre", "respondit", "respondē"], "cognates": { "es": "responder" }, "ex": { "text": "Mārcus nōn respondet.", "en": "Marcus doesn't answer." }, "verified": false },
+    { "id": "sedeo", "text": "sedeō", "tr": "SE·de·ō", "en": "I sit", "pos": "verb", "forms": ["sedet", "sedent", "sedēre", "sēdit"], "cognates": { "en": "sedentary" }, "ex": { "text": "Pater in hortō sedet.", "en": "Father is sitting in the garden." }, "verified": false },
+    { "id": "doceo", "text": "doceō", "tr": "DO·ke·ō", "en": "I teach", "pos": "verb", "forms": ["docet", "docent", "docēre"], "cognates": { "en": "doctor, docent" }, "ex": { "text": "Magister discipulōs docet.", "en": "The teacher teaches the students." }, "verified": false },
+    { "id": "hodie", "text": "hodiē", "tr": "HO·di·ē", "en": "today", "pos": "adv", "cognates": { "es": "hoy" }, "ex": { "text": "Hodiē labōrō.", "en": "Today I'm working." }, "verified": false },
+    { "id": "saepe", "text": "saepe", "tr": "SAE·pe", "en": "often", "pos": "adv", "ex": { "text": "Mārcus saepe rīdet.", "en": "Marcus often laughs." }, "verified": false },
+    { "id": "semper", "text": "semper", "tr": "SEM·per", "en": "always", "pos": "adv", "cognates": { "es": "siempre (ĕ → ie)" }, "ex": { "text": "Māter semper labōrat.", "en": "Mother is always working." }, "verified": false },
+    { "id": "numquam", "text": "numquam", "tr": "NUM·kwam", "en": "never", "pos": "adv", "cognates": { "es": "nunca" }, "ex": { "text": "Pater numquam cantat.", "en": "Father never sings." }, "verified": false },
+    { "id": "nunc", "text": "nunc", "tr": "nunk", "en": "now", "pos": "adv", "ex": { "text": "Nunc ambulāmus.", "en": "Now we are walking." }, "verified": false },
+    { "id": "cur", "text": "cūr", "tr": "kūr", "en": "why?", "pos": "q", "ex": { "text": "Cūr nōn cantās?", "en": "Why don't you sing?" }, "verified": false },
+    { "id": "quia", "text": "quia", "tr": "KWI·a", "en": "because", "pos": "conj", "ex": { "text": "Rīdeō quia laetus sum.", "en": "I laugh because I am happy." }, "verified": false },
+    { "id": "ibi", "text": "ibi", "tr": "I·bi", "en": "there", "pos": "adv", "ex": { "text": "Rōma magna est; ibi multī habitant.", "en": "Rome is big; many people live there." }, "verified": false },
+    { "id": "etiam", "text": "etiam", "tr": "E·ti·am", "en": "also, even", "pos": "adv", "ex": { "text": "Ego etiam labōrō.", "en": "I work too." }, "verified": false }
+  ],
+  "grammar": [
+    { "id": "esse", "title": "esse 'to be': sum, es, est…", "concept": "copula-zero", "body": [
+      "**sum** I am · **es** you are · **est** he/she/it is · **sumus** we are · **estis** you (pl.) are · **sunt** they are. Compare Spanish soy, eres, es, somos, sois, son.",
+      "Latin drops subject pronouns as Spanish does: **sum Mārcus** = I am Marcus. The verb usually comes last: **Mārcus Rōmānus est**."
+    ], "examples": [
+      { "text": "Discipulī sumus.", "en": "We are students." },
+      { "text": "Mārcus et Iūlia Rōmānī sunt.", "en": "Marcus and Julia are Romans." }
+    ], "drills": [
+      { "id": "es1", "prompt": "Say: I am Marcus.", "answer": "Sum Mārcus." },
+      { "id": "es2", "prompt": "Say: We are students.", "answer": "Discipulī sumus." },
+      { "id": "es3", "prompt": "Say: They are not Romans.", "answer": "Nōn sunt Rōmānī." },
+      { "id": "es4", "prompt": "Say: You are a student (to one person).", "answer": "Discipulus es." }
+    ], "verified": false },
+    { "id": "questions", "title": "Questions: quis, quid, -ne", "body": [
+      "Question words: **quis** who · **quid** what · **ubi** where · **cūr** why.",
+      "Yes/no questions add **-ne** to the first word: **Esne Rōmānus?** Are you Roman? Answer **ita** (yes) or **minimē** (not at all), or repeat the verb: **sum** / **nōn sum**."
+    ], "examples": [
+      { "text": "Esne discipulus? Ita, discipulus sum.", "en": "Are you a student? Yes, I am a student." },
+      { "text": "Quid agis? Bene valeō.", "en": "How are you? I'm well." }
+    ], "drills": [
+      { "id": "qu1", "prompt": "Ask: Who are you?", "answer": "Quis es?" },
+      { "id": "qu2", "prompt": "Ask: Are you Roman? (-ne)", "answer": "Esne Rōmānus?" },
+      { "id": "qu3", "prompt": "Ask: How are you?", "answer": "Quid agis?" },
+      { "id": "qu4", "prompt": "Answer: Not at all, I am not Roman.", "answer": "Minimē, nōn sum Rōmānus." }
+    ], "verified": false },
+    { "id": "decl12", "title": "Nouns in -a, -us, -um (singular and plural)", "concept": "gender", "body": [
+      "Most nouns in **-a** are feminine (īnsula), most in **-us** masculine (fluvius), in **-um** neuter (oppidum). Plurals: **-a → -ae**, **-us → -ī**, **-um → -a**.",
+      "Adjectives agree, like Spanish: **īnsula parva**, **fluvius magnus**, **oppidum parvum**; plural **īnsulae parvae, fluviī magnī, oppida parva**."
+    ], "examples": [
+      { "text": "Īnsulae parvae sunt, sed fluviī magnī sunt.", "en": "The islands are small, but the rivers are big." }
+    ], "drills": [
+      { "id": "d1", "prompt": "Say: The island is small.", "answer": "Īnsula parva est." },
+      { "id": "d2", "prompt": "Say: The islands are small.", "answer": "Īnsulae parvae sunt." },
+      { "id": "d3", "prompt": "Say: The rivers are big.", "answer": "Fluviī magnī sunt." },
+      { "id": "d4", "prompt": "Say: The towns are small.", "answer": "Oppida parva sunt." }
+    ], "verified": false },
+    { "id": "sound1", "title": "From Latin to Spanish (1): vowels and f-", "body": [
+      "Stressed short **ĕ → ie**: terra → tierra, bene → bien, semper → siempre, tempus → tiempo.",
+      "Stressed short **ŏ → ue**: porta → puerta, bonus → bueno, hortus → huerto, mors → muerte.",
+      "Initial **f- → h-**: fīlius → hijo, facere → hacer, fābulārī → hablar, fēmina → hembra.",
+      "Use it backwards: when a Latin word looks strange, undo the change and you'll often recognise it."
+    ], "examples": [
+      { "text": "Terra bona est.", "en": "The land is good. (tierra buena)" }
+    ], "drills": [
+      { "id": "s1", "prompt": "Spanish 'tierra' comes from Latin…", "answer": "terra" },
+      { "id": "s2", "prompt": "Spanish 'bueno' comes from Latin…", "answer": "bonus" },
+      { "id": "s3", "prompt": "Spanish 'hijo' comes from Latin…", "answer": "fīlius" },
+      { "id": "s4", "prompt": "Spanish 'siempre' comes from Latin…", "answer": "semper" }
+    ], "verified": false },
+    { "id": "genitive", "title": "Whose? The genitive: -ae, -ī, -is", "concept": "cases", "body": [
+      "The genitive means 'of': **fīlius Iūliī** = the son of Julius; **māter puellae** = the girl's mother; **familia Mārcī** = Marcus's family.",
+      "Endings: **-a → -ae**, **-us/-um → -ī**, third declension **-is** (pater → patris). Dictionaries list the genitive second because it shows the stem: pater, **patris**."
+    ], "examples": [
+      { "text": "Mārcus frāter Iūliae est.", "en": "Marcus is Julia's brother." },
+      { "text": "Domus patris magna est.", "en": "Father's house is big." }
+    ], "drills": [
+      { "id": "g1", "prompt": "Say: the son of Julius", "answer": "fīlius Iūliī" },
+      { "id": "g2", "prompt": "Say: the girl's mother", "answer": "māter puellae" },
+      { "id": "g3", "prompt": "Say: Marcus's family", "answer": "familia Mārcī" },
+      { "id": "g4", "prompt": "Ask: Whose daughter is Julia?", "answer": "Cuius fīlia est Iūlia?" }
+    ], "verified": false },
+    { "id": "possessive", "title": "My, your: meus, tuus", "body": [
+      "**meus, mea, meum** = my; **tuus, tua, tuum** = your (one person). They agree with the thing owned and usually follow it: **māter mea**, **pater meus**, **domus mea** (domus is feminine).",
+      "Spanish keeps both orders: mi madre / la madre mía."
+    ], "examples": [
+      { "text": "Frāter meus et soror mea discipulī sunt.", "en": "My brother and my sister are students." }
+    ], "drills": [
+      { "id": "p1", "prompt": "Say: my mother", "answer": "māter mea" },
+      { "id": "p2", "prompt": "Say: my father", "answer": "pater meus" },
+      { "id": "p3", "prompt": "Say: your brother", "answer": "frāter tuus" },
+      { "id": "p4", "prompt": "Say: my house", "answer": "domus mea" }
+    ], "verified": false },
+    { "id": "present12", "title": "Present tense: amō, videō", "body": [
+      "1st conjugation: **amō, amās, amat, amāmus, amātis, amant**. Spanish: amo, amas, ama, amamos, amáis, aman.",
+      "2nd conjugation: **videō, vidēs, videt, vidēmus, vidētis, vident**.",
+      "Negate with **nōn** before the verb: **nōn cantō**."
+    ], "examples": [
+      { "text": "Labōrāmus, sed nōn cantāmus.", "en": "We work, but we don't sing." }
+    ], "drills": [
+      { "id": "pr1", "prompt": "Say: She sings.", "answer": "Cantat." },
+      { "id": "pr2", "prompt": "Say: We work.", "answer": "Labōrāmus." },
+      { "id": "pr3", "prompt": "Say: They see the river.", "answer": "Fluvium vident." },
+      { "id": "pr4", "prompt": "Say: I don't laugh.", "answer": "Nōn rīdeō." },
+      { "id": "pr5", "prompt": "Ask: Do you live in America? (-ne)", "answer": "Habitāsne in Americā?" }
+    ], "verified": false },
+    { "id": "accusative", "title": "The object: accusative -am, -um, -ās, -ōs", "concept": "cases", "body": [
+      "The direct object takes the accusative: **-a → -am**, **-us → -um**, plural **-ās, -ōs**, neuter stays **-um / -a**.",
+      "Because the ending marks the object, word order is free: **Māter puellam vocat** = **Puellam māter vocat** = the mother calls the girl. The verb usually comes last.",
+      "Spanish nouns come from the accusative: noctem → noche, partem → parte."
+    ], "examples": [
+      { "text": "Puer puellam videt, et puella puerum videt.", "en": "The boy sees the girl, and the girl sees the boy." }
+    ], "drills": [
+      { "id": "ac1", "prompt": "Say: The mother calls the girl.", "answer": "Māter puellam vocat." },
+      { "id": "ac2", "prompt": "Say: Marcus sees the boys.", "answer": "Mārcus puerōs videt." },
+      { "id": "ac3", "prompt": "Say: The boy loves the girl.", "answer": "Puer puellam amat." },
+      { "id": "ac4", "prompt": "Say: Julia sees the towns.", "answer": "Iūlia oppida videt." }
+    ], "verified": false }
+  ],
+  "texts": [
+    { "id": "d01", "title": "Salvē! Quis es?", "level": "U1", "kind": "dialogue", "names": ["Mārcus", "Mārce", "Venu"], "lines": [
+      { "sp": "Mārcus", "text": "Salvē! Quis es tū?", "en": "Hello! Who are you?" },
+      { "sp": "Venu", "text": "Salvē! Mihi nōmen est Venu. Et tū?", "en": "Hello! My name is Venu. And you?" },
+      { "sp": "Mārcus", "text": "Ego sum Mārcus. Quid agis?", "en": "I am Marcus. How are you?" },
+      { "sp": "Venu", "text": "Bene, grātiās. Et tū?", "en": "Well, thanks. And you?" },
+      { "sp": "Mārcus", "text": "Bene valeō. Esne Rōmānus?", "en": "I'm well. Are you Roman?" },
+      { "sp": "Venu", "text": "Minimē! Nōn sum Rōmānus. Discipulus sum.", "en": "Not at all! I'm not Roman. I'm a student." },
+      { "sp": "Mārcus", "text": "Et ego discipulus sum!", "en": "I'm a student too!" },
+      { "sp": "Venu", "text": "Valē, Mārce!", "en": "Goodbye, Marcus!" },
+      { "sp": "Mārcus", "text": "Valē!", "en": "Goodbye!" }
+    ], "verified": false },
+    { "id": "r01", "title": "Rōma et Hispānia", "level": "U2", "kind": "reading", "names": ["Rōma", "Sicilia", "Tiberis", "Baltimora", "Americā"], "lines": [
+      { "text": "Rōma in Italiā est. Italia in Eurōpā est.", "en": "Rome is in Italy. Italy is in Europe." },
+      { "text": "Hispānia quoque in Eurōpā est. Hispānia terra magna est.", "en": "Spain is also in Europe. Spain is a big country." },
+      { "text": "Graecia in Eurōpā est, sed Graecia nōn magna est.", "en": "Greece is in Europe, but Greece is not big." },
+      { "text": "In Graeciā multae īnsulae sunt.", "en": "In Greece there are many islands." },
+      { "text": "Sicilia īnsula est. Sicilia nōn parva est; Sicilia īnsula magna est.", "en": "Sicily is an island. Sicily is not small; Sicily is a big island." },
+      { "text": "Tiberis fluvius est. Tiberis in Italiā est.", "en": "The Tiber is a river. The Tiber is in Italy." },
+      { "text": "Ubi est Baltimora? Baltimora nōn in Eurōpā est. Baltimora in Americā est!", "en": "Where is Baltimore? Baltimore is not in Europe. Baltimore is in America!" }
+    ], "verified": false },
+    { "id": "r02", "title": "Familia Iūliī", "level": "U3", "kind": "reading", "names": ["Iūlius", "Iūliī", "Aemilia", "Mārcus", "Mārcī", "Quīntus", "Iūlia", "Iūliae"], "lines": [
+      { "text": "Iūlius vir Rōmānus est. Aemilia fēmina Rōmāna est.", "en": "Julius is a Roman man. Aemilia is a Roman woman." },
+      { "text": "Iūlius pater est, Aemilia māter est.", "en": "Julius is the father, Aemilia is the mother." },
+      { "text": "Mārcus et Quīntus fīliī sunt; Iūlia fīlia est.", "en": "Marcus and Quintus are the sons; Julia is the daughter." },
+      { "text": "Mārcus puer est, Iūlia puella est.", "en": "Marcus is a boy, Julia is a girl." },
+      { "text": "Mārcus frāter Iūliae est, et Iūlia soror Mārcī est.", "en": "Marcus is Julia's brother, and Julia is Marcus's sister." },
+      { "text": "Iūlius trēs līberōs habet: duōs fīliōs et ūnam fīliam.", "en": "Julius has three children: two sons and one daughter." },
+      { "text": "Familia Iūliī magna et bona est. Domus familiae in Italiā est.", "en": "Julius's family is big and good. The family's house is in Italy." }
+    ], "verified": false },
+    { "id": "d02", "title": "Ubi habitās?", "level": "U4", "kind": "dialogue", "names": ["Venu", "Iūlia", "Baltimorā", "Americā"], "lines": [
+      { "sp": "Iūlia", "text": "Salvē, Venu! Ubi habitās?", "en": "Hi, Venu! Where do you live?" },
+      { "sp": "Venu", "text": "In Americā habitō, in oppidō Baltimorā.", "en": "I live in America, in the town of Baltimore." },
+      { "sp": "Iūlia", "text": "Quid ibi agis?", "en": "What do you do there?" },
+      { "sp": "Venu", "text": "Discipulus sum. Multum labōrō.", "en": "I'm a student. I work a lot." },
+      { "sp": "Iūlia", "text": "Labōrāsne semper?", "en": "Do you always work?" },
+      { "sp": "Venu", "text": "Minimē! Saepe ambulō et cantō.", "en": "Not at all! I often walk and sing." },
+      { "sp": "Iūlia", "text": "Cantāsne? Ego numquam cantō!", "en": "You sing? I never sing!" },
+      { "sp": "Venu", "text": "Cūr nōn cantās?", "en": "Why don't you sing?" },
+      { "sp": "Iūlia", "text": "Quia frāter meus semper rīdet!", "en": "Because my brother always laughs!" }
+    ], "verified": false }
+  ]
+}

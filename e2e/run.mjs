@@ -130,6 +130,59 @@ try {
   check('import restores progress', Number(learning) > 0, `${learning} words learning`)
   await shot('11-progress')
 
+  // ---- Latin: activate, two-language session, reader ----
+  await page.getByRole('button', { name: /Settings/ }).last().click()
+  await btn(/Choose active/).click()
+  await page.locator('.row', { hasText: 'Latin' }).locator('select').selectOption('active')
+  await page.getByRole('button', { name: /Today/ }).last().click()
+  check('Latin card appears on Today', await page.getByText('Latin (Classical, active method)').first().waitFor({ timeout: 8000 }).then(() => true, () => false))
+  await btn(/^15\s*min/).click()
+  await page.getByText('New material').first().waitFor()
+  const planText = await page.locator('.plan').innerText()
+  check('15-min plan covers both active languages', planText.includes('Arabic') && planText.includes('Latin'))
+  await btn('Start', true).click()
+  let lsteps = 0, sawRead = false, sawPron = false
+  while (lsteps++ < 140) {
+    if (await visible(btn('Back to Today'))) break
+    try {
+      if (await visible(btn('Got it →'))) {
+        if (!sawPron && await visible(page.getByText('Pronunciation 1'))) { await shot('13-latin-pronunciation'); sawPron = true }
+        await btn('Got it →').click({ timeout: 3000 }); continue
+      }
+      if (await visible(btn('Show answer'))) {
+        if (!sawRead && await visible(page.getByText('Read it aloud. What does it mean?'))) { await shot('14-latin-read-card'); sawRead = true }
+        await btn('Show answer').click({ timeout: 3000 }); await page.locator('.grade.good').click({ timeout: 3000 }); continue
+      }
+      if (await visible(btn('Next →'))) { await btn('Next →').click({ timeout: 3000 }); continue }
+      if (await visible(btn('Done →'))) { await btn('Done →').click({ timeout: 3000 }); continue }
+      if (await visible(btn(/Finished reading/))) { await btn(/Finished reading/).click({ timeout: 3000 }); continue }
+      if (await visible(btn('▶︎ Start'))) { await btn('Skip this part').click({ timeout: 3000 }); continue }
+    } catch (e) { console.log('  (retrying step: ' + e.message.split('\n')[0] + ')') }
+    await page.waitForTimeout(250)
+  }
+  check('two-language session runs to the end', await visible(btn('Back to Today')), `${lsteps} steps`)
+  check('Latin pronunciation lesson shown', sawPron)
+  check('Latin reading card shown', sawRead)
+  await btn('Back to Today').click()
+  await page.getByRole('button', { name: /Library/ }).last().click()
+  await btn('Latin', true).click()
+  await btn('Readers').click()
+  await page.getByRole('button', { name: /Caesar, Dē Bellō/ }).click()
+  await page.locator('.reader').waitFor()
+  const laDir = await page.locator('.line .tl-la').first().evaluate(el => getComputedStyle(el).direction)
+  check('Latin renders left-to-right', laDir === 'ltr', laDir)
+  await shot('15-latin-caesar')
+  await page.getByRole('button', { name: /Settings/ }).last().click()
+  await page.getByText('Show vowel marks').click()
+  await page.getByRole('button', { name: /Library/ }).last().click()
+  await btn('Latin', true).click()
+  await btn('Readers').click()
+  await page.getByRole('button', { name: /Rōma et Hispānia|Roma et Hispania/ }).click()
+  const plain = await page.locator('.line .tl-la').first().innerText()
+  check('macron toggle hides macrons', !/[āēīōū]/.test(plain), plain.slice(0, 30))
+  await page.getByRole('button', { name: /Settings/ }).last().click()
+  await page.getByText('Show vowel marks').click()
+
   // ---- dark mode + manifest ----
   await page.emulateMedia({ colorScheme: 'dark' })
   await page.getByRole('button', { name: /Today/ }).last().click()

@@ -1,0 +1,239 @@
+{
+  "units": [
+    { "id": "u09", "title": "9 · Corpus et medicus", "goal": "Body and health; adjectives of all types; Latin in medicine.", "items": [
+      "word:corpus", "word:caput", "word:oculus", "word:auris", "word:nasus", "word:os-oris", "word:manus", "word:pes", "word:cor", "grammar:adjectives", "word:sanguis", "word:os-ossis",
+      "word:medicus", "word:curo", "word:morbus", "word:dolor", "word:doleo", "word:febris", "grammar:medicine", "word:aeger", "word:sanus", "word:fortis", "word:gravis", "word:bibo", "text:d04" ] },
+    { "id": "u10", "title": "10 · Herī", "goal": "Tell stories in the past: perfect and imperfect.", "items": [
+      "word:heri", "word:cras", "word:iam", "word:tum", "word:deinde", "word:primus", "grammar:perfect", "word:vinco", "word:eo", "word:postquam", "word:dies", "word:annus", "word:hora",
+      "grammar:imperfect", "word:olim", "word:mox", "word:tandem", "word:subito", "word:fugio", "text:r06" ] },
+    { "id": "u11", "title": "11 · Hic, ille, quī", "goal": "Pronouns and relative clauses; your first adapted classical text.", "items": [
+      "word:hic", "word:ille", "word:is", "grammar:demonstratives", "word:qui", "word:se", "word:nos", "word:vos", "grammar:relative", "word:omnis", "word:nihil", "word:alius",
+      "word:nullus", "word:totus", "word:solus", "word:ipse", "word:quod", "word:malus", "word:lupus", "word:agnus", "word:rivus", "word:sitis", "word:fluo", "word:cupio", "word:clamo", "text:r07" ] },
+    { "id": "u12", "title": "12 · Ad auctōrēs", "goal": "Participles and reading strategies; read Caesar and the Vulgate in the original.", "items": [
+      "word:gallia", "word:pars", "word:divido", "grammar:participle", "word:incolo", "word:appello", "word:tertius", "word:institutum", "word:lex", "word:inter", "word:differo",
+      "grammar:reading", "text:a01", "word:principium", "word:creo", "word:caelum", "word:autem", "word:vacuus", "word:tenebrae", "word:super", "word:facies", "word:spiritus",
+      "word:fero", "word:vesper", "word:mane", "text:a02" ] }
+  ],
+  "words": [
+    { "id": "corpus", "text": "corpus", "tr": "KOR·pus", "en": "body (gen. corporis)", "pos": "noun", "forms": ["corporis", "corpore", "corpora"], "cognates": { "es": "cuerpo", "en": "corporal, corpse" }, "ex": { "text": "Corpus sānum est.", "en": "The body is healthy." }, "verified": false },
+    { "id": "caput", "text": "caput", "tr": "KA·put", "en": "head (gen. capitis)", "pos": "noun", "forms": ["capitis", "capite", "capita"], "cognates": { "es": "cabeza", "en": "capital, decapitate" }, "ex": { "text": "Caput mihi dolet.", "en": "My head hurts. (lit. the head hurts to me)" }, "verified": false },
+    { "id": "oculus", "text": "oculus", "tr": "O·ku·lus", "en": "eye", "pos": "noun", "forms": ["oculī", "oculum", "oculōs", "oculīs"], "cognates": { "es": "ojo (-cul- → j)", "en": "ocular" }, "ex": { "text": "Oculī tuī pulchrī sunt.", "en": "Your eyes are beautiful." }, "verified": false },
+    { "id": "auris", "text": "auris", "tr": "AU·ris", "en": "ear (gen. auris)", "pos": "noun", "forms": ["aurēs", "aurem", "auribus"], "cognates": { "es": "oreja", "en": "aural" }, "ex": { "text": "Aurēs audiunt, oculī vident.", "en": "Ears hear, eyes see." }, "verified": false },
+    { "id": "nasus", "text": "nāsus", "tr": "NĀ·sus", "en": "nose", "pos": "noun", "forms": ["nāsum", "nāsō"], "cognates": { "es": "nariz", "en": "nasal" }, "ex": { "text": "Nāsus meus parvus est.", "en": "My nose is small." }, "verified": false },
+    { "id": "os-oris", "text": "ōs", "tr": "ōs", "en": "mouth (gen. ōris; long ō)", "pos": "noun", "forms": ["ōris", "ōre", "ōra"], "cognates": { "en": "oral" }, "ex": { "text": "Ōs aperī, quaesō.", "en": "Open your mouth, please." }, "verified": false },
+    { "id": "manus", "text": "manus", "tr": "MA·nus", "en": "hand (4th decl., feminine)", "pos": "noun", "forms": ["manum", "manū", "manūs", "manibus"], "cognates": { "es": "mano", "en": "manual" }, "ex": { "text": "Manus mea dolet.", "en": "My hand hurts." }, "verified": false },
+    { "id": "pes", "text": "pēs", "tr": "pēs", "en": "foot (gen. pedis)", "pos": "noun", "forms": ["pedis", "pedem", "pede", "pedēs", "pedibus"], "cognates": { "es": "pie", "en": "pedal" }, "ex": { "text": "Pēs meus dolet.", "en": "My foot hurts." }, "verified": false },
+    { "id": "cor", "text": "cor", "tr": "kor", "en": "heart (gen. cordis)", "pos": "noun", "forms": ["cordis", "corde"], "cognates": { "es": "corazón", "en": "cordial, core" }, "ex": { "text": "Cor sānum est.", "en": "The heart is healthy." }, "verified": false },
+    { "id": "sanguis", "text": "sanguis", "tr": "SAN·gwis", "en": "blood (gen. sanguinis)", "pos": "noun", "forms": ["sanguinis", "sanguinem", "sanguine"], "cognates": { "es": "sangre", "en": "sanguine" }, "ex": { "text": "Sanguis per corpus fluit.", "en": "Blood flows through the body." }, "verified": false },
+    { "id": "os-ossis", "text": "os", "tr": "os", "en": "bone (gen. ossis; short o)", "pos": "noun", "forms": ["ossis", "ossa", "ossibus"], "cognates": { "en": "osseous, ossify" }, "ex": { "text": "In corpore multa ossa sunt.", "en": "There are many bones in the body." }, "verified": false },
+    { "id": "medicus", "text": "medicus", "tr": "ME·di·kus", "en": "doctor (f. medica)", "pos": "noun", "forms": ["medicī", "medicum", "medicō", "medica", "medice"], "cognates": { "es": "médico", "en": "medical" }, "ex": { "text": "Medicus aegrum cūrat.", "en": "The doctor treats the sick man." }, "verified": false },
+    { "id": "curo", "text": "cūrō", "tr": "KŪ·rō", "en": "I care for, treat, heal", "pos": "verb", "forms": ["cūrat", "cūrant", "cūrāre", "cūrā"], "cognates": { "es": "curar", "en": "cure" }, "ex": { "text": "Medica puerum cūrat.", "en": "The (female) doctor treats the boy." }, "verified": false },
+    { "id": "morbus", "text": "morbus", "tr": "MOR·bus", "en": "disease, illness", "pos": "noun", "forms": ["morbī", "morbum", "morbō"], "cognates": { "en": "morbid" }, "ex": { "text": "Morbus nōn gravis est.", "en": "The illness is not serious." }, "verified": false },
+    { "id": "dolor", "text": "dolor", "tr": "DO·lor", "en": "pain (gen. dolōris)", "pos": "noun", "forms": ["dolōris", "dolōrem", "dolōre"], "cognates": { "es": "dolor" }, "ex": { "text": "Dolor magnus est.", "en": "The pain is great." }, "verified": false },
+    { "id": "doleo", "text": "doleō", "tr": "DO·le·ō", "en": "I hurt, feel pain; (mihi) dolet = it hurts (me)", "pos": "verb", "forms": ["dolet", "dolent", "dolēre"], "cognates": { "es": "doler" }, "ex": { "text": "Quid tibi dolet?", "en": "What hurts (you)?" }, "verified": false },
+    { "id": "febris", "text": "febris", "tr": "FE·bris", "en": "fever", "pos": "noun", "forms": ["febrem", "febrī"], "cognates": { "es": "fiebre", "en": "febrile, fever" }, "ex": { "text": "Febrem habeō.", "en": "I have a fever." }, "verified": false },
+    { "id": "aeger", "text": "aeger", "tr": "AE·ger", "en": "sick (f. aegra); a patient", "pos": "adj", "forms": ["aegra", "aegrum", "aegrī", "aegrōs"], "ex": { "text": "Puer aeger est.", "en": "The boy is sick." }, "verified": false },
+    { "id": "sanus", "text": "sānus", "tr": "SĀ·nus", "en": "healthy, sound", "pos": "adj", "forms": ["sāna", "sānum", "sānō"], "cognates": { "es": "sano", "en": "sane" }, "ex": { "text": "Mēns sāna in corpore sānō.", "en": "A healthy mind in a healthy body. (Juvenal)" }, "verified": false },
+    { "id": "fortis", "text": "fortis", "tr": "FOR·tis", "en": "strong, brave (neut. forte)", "pos": "adj", "forms": ["forte", "fortēs", "fortem"], "cognates": { "es": "fuerte (ŏ → ue)", "en": "fortify" }, "ex": { "text": "Mīles fortis est.", "en": "The soldier is brave." }, "verified": false },
+    { "id": "gravis", "text": "gravis", "tr": "GRA·wis", "en": "heavy, serious (neut. grave)", "pos": "adj", "forms": ["grave", "gravēs", "gravem"], "cognates": { "es": "grave", "en": "gravity" }, "ex": { "text": "Dolor gravis est.", "en": "The pain is severe." }, "verified": false },
+    { "id": "bibo", "text": "bibō", "tr": "BI·bō", "en": "I drink", "pos": "verb", "forms": ["bibis", "bibit", "bibunt", "bibere", "bibe"], "cognates": { "es": "beber", "en": "imbibe, beverage" }, "ex": { "text": "Aquam bibō.", "en": "I drink water." }, "verified": false },
+
+    { "id": "heri", "text": "herī", "tr": "HE·rī", "en": "yesterday", "pos": "adv", "ex": { "text": "Herī in scholā eram.", "en": "Yesterday I was at school." }, "verified": false },
+    { "id": "cras", "text": "crās", "tr": "krās", "en": "tomorrow", "pos": "adv", "cognates": { "en": "procrastinate" }, "ex": { "text": "Crās ad urbem eō.", "en": "Tomorrow I'm going to the city." }, "verified": false },
+    { "id": "iam", "text": "iam", "tr": "yam", "en": "already, now", "pos": "adv", "cognates": { "es": "ya" }, "ex": { "text": "Iam nox est.", "en": "It is already night." }, "verified": false },
+    { "id": "tum", "text": "tum", "tr": "tum", "en": "then (at that time)", "pos": "adv", "ex": { "text": "Tum Mārcus rīsit.", "en": "Then Marcus laughed." }, "verified": false },
+    { "id": "deinde", "text": "deinde", "tr": "DE·in·de", "en": "then, next", "pos": "adv", "ex": { "text": "Prīmum legō, deinde scrībō.", "en": "First I read, then I write." }, "verified": false },
+    { "id": "primus", "text": "prīmus", "tr": "PRĪ·mus", "en": "first (prīmum = first, adv.)", "pos": "adj", "forms": ["prīma", "prīmum"], "cognates": { "es": "primero", "en": "prime" }, "ex": { "text": "Rōmulus prīmus rēx erat.", "en": "Romulus was the first king." }, "verified": false },
+    { "id": "vinco", "text": "vincō", "tr": "WIN·kō", "en": "I conquer, win", "pos": "verb", "forms": ["vincit", "vincere", "vīcī", "vīcit"], "cognates": { "es": "vencer", "en": "victory, invincible" }, "ex": { "text": "Vēnī, vīdī, vīcī.", "en": "I came, I saw, I conquered. (Caesar)" }, "verified": false },
+    { "id": "eo", "text": "eō", "tr": "E·ō", "en": "I go (īre)", "pos": "verb", "forms": ["īs", "it", "īmus", "ītis", "eunt", "īre", "iī", "īvī", "iit", "ībat", "ībō"], "cognates": { "es": "ir", "en": "exit" }, "ex": { "text": "Quō īs? Ad scholam eō.", "en": "Where are you going? I'm going to school." }, "verified": false },
+    { "id": "postquam", "text": "postquam", "tr": "POST·kwam", "en": "after (conj.)", "pos": "conj", "ex": { "text": "Postquam Mārcus vēnit, cantāvimus.", "en": "After Marcus came, we sang." }, "verified": false },
+    { "id": "dies", "text": "diēs", "tr": "DI·ēs", "en": "day (5th decl.)", "pos": "noun", "forms": ["diem", "diē", "diērum"], "cognates": { "es": "día", "en": "diary" }, "ex": { "text": "Diēs longus erat.", "en": "The day was long." }, "verified": false },
+    { "id": "annus", "text": "annus", "tr": "AN·nus", "en": "year", "pos": "noun", "forms": ["annī", "annum", "annō", "annōs"], "cognates": { "es": "año", "en": "annual" }, "ex": { "text": "Annus novus est.", "en": "It is a new year." }, "verified": false },
+    { "id": "hora", "text": "hōra", "tr": "HŌ·ra", "en": "hour", "pos": "noun", "forms": ["hōram", "hōrā", "hōrae"], "cognates": { "es": "hora", "en": "hour" }, "ex": { "text": "Ūnam hōram dormīvī.", "en": "I slept for one hour." }, "verified": false },
+    { "id": "olim", "text": "ōlim", "tr": "Ō·lim", "en": "once (upon a time)", "pos": "adv", "ex": { "text": "Ōlim rēx in urbe habitābat.", "en": "Once upon a time a king lived in the city." }, "verified": false },
+    { "id": "mox", "text": "mox", "tr": "moks", "en": "soon", "pos": "adv", "ex": { "text": "Mox veniam.", "en": "I'll come soon." }, "verified": false },
+    { "id": "tandem", "text": "tandem", "tr": "TAN·dem", "en": "at last, finally", "pos": "adv", "ex": { "text": "Tandem domum vēnit.", "en": "At last he came home." }, "verified": false },
+    { "id": "subito", "text": "subitō", "tr": "SU·bi·tō", "en": "suddenly", "pos": "adv", "cognates": { "es": "súbito" }, "ex": { "text": "Subitō canis currit.", "en": "Suddenly the dog runs." }, "verified": false },
+    { "id": "fugio", "text": "fugiō", "tr": "FU·gi·ō", "en": "I flee, run away", "pos": "verb", "forms": ["fugit", "fugere", "fūgī", "fūgit"], "cognates": { "en": "fugitive" }, "ex": { "text": "Agnus ā lupō fugit.", "en": "The lamb flees from the wolf." }, "verified": false },
+
+    { "id": "hic", "text": "hic", "tr": "hik", "en": "this (haec, hoc)", "pos": "pron", "forms": ["haec", "hoc", "huius", "huic", "hunc", "hanc", "hōc", "hāc", "hī", "hae", "hōs", "hās", "hōrum", "hīs"], "ex": { "text": "Hic liber meus est.", "en": "This book is mine." }, "verified": false },
+    { "id": "ille", "text": "ille", "tr": "IL·le", "en": "that; he (illa, illud)", "pos": "pron", "forms": ["illa", "illud", "illīus", "illī", "illum", "illam", "illō", "illā", "illōs", "illās", "illōrum"], "cognates": { "es": "él, el, la (the article comes from ille/illa!)" }, "ex": { "text": "Ille vir rēx est.", "en": "That man is the king." }, "verified": false },
+    { "id": "is", "text": "is", "tr": "is", "en": "he; this/that (ea, id)", "pos": "pron", "forms": ["ea", "id", "eius", "eī", "eum", "eam", "eō", "eā", "iī", "eae", "eōs", "eās", "eōrum", "eārum", "eīs"], "ex": { "text": "Eum videō.", "en": "I see him." }, "verified": false },
+    { "id": "qui", "text": "quī", "tr": "kwī", "en": "who, which, that (quae, quod)", "pos": "pron", "forms": ["quae", "cui", "quam", "quōs", "quās", "quōrum", "quārum", "quibus"], "ex": { "text": "Puella quae cantat soror mea est.", "en": "The girl who is singing is my sister." }, "verified": false },
+    { "id": "se", "text": "sē", "tr": "sē", "en": "himself, herself, themselves (reflexive); suus = his/her/their own", "pos": "pron", "forms": ["suī", "sibi", "sēsē", "suus", "sua", "suum"], "ex": { "text": "Mārcus sē in aquā videt.", "en": "Marcus sees himself in the water." }, "verified": false },
+    { "id": "nos", "text": "nōs", "tr": "nōs", "en": "we, us (noster = our)", "pos": "pron", "forms": ["nōbīs", "noster", "nostra", "nostrum", "nostrā", "nostrī"], "cognates": { "es": "nosotros, nuestro" }, "ex": { "text": "Nōs Rōmānī sumus.", "en": "We are Romans." }, "verified": false },
+    { "id": "vos", "text": "vōs", "tr": "wōs", "en": "you (plural; vester = your)", "pos": "pron", "forms": ["vōbīs", "vester", "vestra", "vestrum"], "cognates": { "es": "vosotros, vuestro" }, "ex": { "text": "Vōs discipulī estis.", "en": "You are students." }, "verified": false },
+    { "id": "omnis", "text": "omnis", "tr": "OM·nis", "en": "every; (pl.) all", "pos": "adj", "forms": ["omne", "omnēs", "omnia", "omnium", "omnibus"], "cognates": { "en": "omnipotent, omnibus" }, "ex": { "text": "Omnēs viae Rōmam dūcunt.", "en": "All roads lead to Rome." }, "verified": false },
+    { "id": "nihil", "text": "nihil", "tr": "NI·hil", "en": "nothing", "pos": "pron", "cognates": { "en": "nihilism" }, "ex": { "text": "Nihil sciō.", "en": "I know nothing." }, "verified": false },
+    { "id": "alius", "text": "alius", "tr": "A·li·us", "en": "other, another", "pos": "adj", "forms": ["alia", "aliud", "aliī", "aliae", "aliam", "aliōs"], "cognates": { "en": "alien, alias" }, "ex": { "text": "Alius puer in hortō est.", "en": "Another boy is in the garden." }, "verified": false },
+    { "id": "nullus", "text": "nūllus", "tr": "NŪL·lus", "en": "no, not any", "pos": "adj", "forms": ["nūlla", "nūllum", "nūllī"], "cognates": { "es": "nulo", "en": "null" }, "ex": { "text": "Nūllum cibum habeō.", "en": "I have no food." }, "verified": false },
+    { "id": "totus", "text": "tōtus", "tr": "TŌ·tus", "en": "whole, entire", "pos": "adj", "forms": ["tōta", "tōtum", "tōtam", "tōtīus"], "cognates": { "es": "todo", "en": "total" }, "ex": { "text": "Tōtam noctem dormīvī.", "en": "I slept the whole night." }, "verified": false },
+    { "id": "solus", "text": "sōlus", "tr": "SŌ·lus", "en": "alone, only", "pos": "adj", "forms": ["sōla", "sōlum"], "cognates": { "es": "solo" }, "ex": { "text": "Sōlus in vīllā sum.", "en": "I am alone in the villa." }, "verified": false },
+    { "id": "ipse", "text": "ipse", "tr": "IP·se", "en": "himself, itself (emphatic: the very…)", "pos": "pron", "forms": ["ipsa", "ipsum", "ipsī", "ipsōrum"], "ex": { "text": "Rēx ipse vēnit.", "en": "The king himself came." }, "verified": false },
+    { "id": "quod", "text": "quod", "tr": "kwod", "en": "because; which (neuter of quī)", "pos": "conj", "ex": { "text": "Rīdeō quod laetus sum.", "en": "I laugh because I am happy." }, "verified": false },
+    { "id": "malus", "text": "malus", "tr": "MA·lus", "en": "bad, evil (short a; mālum = apple)", "pos": "adj", "forms": ["mala", "malum", "malī", "malam"], "cognates": { "es": "malo", "en": "malice" }, "ex": { "text": "Lupus malus est.", "en": "The wolf is bad." }, "verified": false },
+    { "id": "lupus", "text": "lupus", "tr": "LU·pus", "en": "wolf", "pos": "noun", "forms": ["lupī", "lupum", "lupō"], "cognates": { "es": "lobo (p → b)", "en": "lupine" }, "ex": { "text": "Lupus agnum videt.", "en": "The wolf sees the lamb." }, "verified": false },
+    { "id": "agnus", "text": "agnus", "tr": "AG·nus", "en": "lamb", "pos": "noun", "forms": ["agnī", "agnum", "agnō"], "ex": { "text": "Agnus parvus est.", "en": "The lamb is small." }, "verified": false },
+    { "id": "rivus", "text": "rīvus", "tr": "RĪ·wus", "en": "stream, brook", "pos": "noun", "forms": ["rīvum", "rīvō"], "cognates": { "en": "rival (people sharing a stream)" }, "ex": { "text": "Aqua in rīvō est.", "en": "There is water in the stream." }, "verified": false },
+    { "id": "sitis", "text": "sitis", "tr": "SI·tis", "en": "thirst", "pos": "noun", "forms": ["sitim", "sitī"], "ex": { "text": "Agnus sitim habet.", "en": "The lamb is thirsty." }, "verified": false },
+    { "id": "fluo", "text": "fluō", "tr": "FLU·ō", "en": "I flow", "pos": "verb", "forms": ["fluit", "fluunt", "fluēbat"], "cognates": { "es": "fluir", "en": "fluid" }, "ex": { "text": "Aqua in rīvō fluit.", "en": "Water flows in the stream." }, "verified": false },
+    { "id": "cupio", "text": "cupiō", "tr": "KU·pi·ō", "en": "I desire, want", "pos": "verb", "forms": ["cupit", "cupere", "cupiēbat", "cupīvit"], "cognates": { "en": "cupidity, Cupid" }, "ex": { "text": "Lupus agnum capere cupit.", "en": "The wolf wants to catch the lamb." }, "verified": false },
+    { "id": "clamo", "text": "clāmō", "tr": "KLĀ·mō", "en": "I shout", "pos": "verb", "forms": ["clāmat", "clāmant", "clāmāvit"], "cognates": { "es": "llamar (cl → ll)", "en": "exclaim" }, "ex": { "text": "Puer clāmat: “Lupus!”", "en": "The boy shouts: “Wolf!”" }, "verified": false },
+
+    { "id": "gallia", "text": "Gallia", "tr": "GAL·li·a", "en": "Gaul (Gallī = the Gauls)", "pos": "noun", "forms": ["Galliā", "Galliae", "Galliam", "Gallī", "Gallōrum"], "ex": { "text": "Gallia in Eurōpā est.", "en": "Gaul is in Europe." }, "verified": false },
+    { "id": "pars", "text": "pars", "tr": "pars", "en": "part (gen. partis)", "pos": "noun", "forms": ["partis", "partem", "parte", "partēs", "partium"], "cognates": { "es": "parte", "en": "part" }, "ex": { "text": "Pars librī longa est.", "en": "Part of the book is long." }, "verified": false },
+    { "id": "divido", "text": "dīvidō", "tr": "DĪ·wi·dō", "en": "I divide", "pos": "verb", "forms": ["dīvidit", "dīvīsī", "dīvīsit", "dīvīsa", "dīvīsum", "dīvīsus"], "cognates": { "es": "dividir", "en": "divide" }, "ex": { "text": "Magister discipulōs in duās partēs dīvidit.", "en": "The teacher divides the students into two parts." }, "verified": false },
+    { "id": "incolo", "text": "incolō", "tr": "IN·ko·lō", "en": "I inhabit, live in", "pos": "verb", "forms": ["incolit", "incolunt"], "ex": { "text": "Gallī Galliam incolunt.", "en": "The Gauls inhabit Gaul." }, "verified": false },
+    { "id": "appello", "text": "appellō", "tr": "ap·PEL·lō", "en": "I call, name (appellantur = they are called)", "pos": "verb", "forms": ["appellat", "appellant", "appellantur", "appellāvit", "appellāvitque"], "cognates": { "es": "apellido", "en": "appellation" }, "ex": { "text": "Mē Venu appellant.", "en": "They call me Venu." }, "verified": false },
+    { "id": "tertius", "text": "tertius", "tr": "TER·ti·us", "en": "third", "pos": "adj", "forms": ["tertia", "tertiam", "tertium"], "cognates": { "es": "tercero" }, "ex": { "text": "Tertia pars parva est.", "en": "The third part is small." }, "verified": false },
+    { "id": "institutum", "text": "īnstitūtum", "tr": "īn·sti·TŪ·tum", "en": "custom, institution", "pos": "noun", "forms": ["īnstitūta", "īnstitūtīs"], "cognates": { "en": "institution" }, "ex": { "text": "Īnstitūta Gallōrum nova nōn erant.", "en": "The customs of the Gauls were not new." }, "verified": false },
+    { "id": "lex", "text": "lēx", "tr": "lēks", "en": "law (gen. lēgis)", "pos": "noun", "forms": ["lēgis", "lēgem", "lēge", "lēgēs", "lēgibus"], "cognates": { "es": "ley", "en": "legal" }, "ex": { "text": "Lēx omnibus cīvibus est.", "en": "The law is for all citizens." }, "verified": false },
+    { "id": "inter", "text": "inter", "tr": "IN·ter", "en": "between, among (+acc.)", "pos": "prep", "cognates": { "es": "entre", "en": "inter-" }, "ex": { "text": "Inter amīcōs sum.", "en": "I am among friends." }, "verified": false },
+    { "id": "differo", "text": "differō", "tr": "DIF·fe·rō", "en": "I differ", "pos": "verb", "forms": ["differt", "differunt"], "cognates": { "en": "differ" }, "ex": { "text": "Linguae inter sē differunt.", "en": "The languages differ from one another." }, "verified": false },
+    { "id": "principium", "text": "prīncipium", "tr": "prīn·KI·pi·um", "en": "beginning", "pos": "noun", "forms": ["prīncipiō", "prīncipiī"], "cognates": { "es": "principio" }, "ex": { "text": "In prīncipiō erat lūx.", "en": "In the beginning there was light." }, "verified": false },
+    { "id": "creo", "text": "creō", "tr": "KRE·ō", "en": "I create", "pos": "verb", "forms": ["creat", "creāvit", "creāre"], "cognates": { "es": "crear" }, "ex": { "text": "Deus caelum creāvit.", "en": "God created the sky." }, "verified": false },
+    { "id": "caelum", "text": "caelum", "tr": "KAE·lum", "en": "sky, heaven", "pos": "noun", "forms": ["caelī", "caelō"], "cognates": { "es": "cielo", "en": "celestial" }, "ex": { "text": "Caelum pulchrum est.", "en": "The sky is beautiful." }, "verified": false },
+    { "id": "autem", "text": "autem", "tr": "AU·tem", "en": "but, however, moreover (comes second in the sentence)", "pos": "conj", "ex": { "text": "Ego autem nōn sciō.", "en": "I, however, don't know." }, "verified": false },
+    { "id": "vacuus", "text": "vacuus", "tr": "WA·ku·us", "en": "empty", "pos": "adj", "forms": ["vacua", "vacuum"], "cognates": { "en": "vacuum, vacant" }, "ex": { "text": "Vīlla vacua est.", "en": "The villa is empty." }, "verified": false },
+    { "id": "tenebrae", "text": "tenebrae", "tr": "TE·ne·brae", "en": "darkness (plural form)", "pos": "noun", "forms": ["tenebrās", "tenebrīs", "tenebrārum"], "cognates": { "es": "tinieblas" }, "ex": { "text": "Nocte tenebrae sunt.", "en": "At night there is darkness." }, "verified": false },
+    { "id": "super", "text": "super", "tr": "SU·per", "en": "over, above, upon (+acc.)", "pos": "prep", "cognates": { "es": "sobre", "en": "super-" }, "ex": { "text": "Sōl super terram est.", "en": "The sun is above the earth." }, "verified": false },
+    { "id": "facies", "text": "faciēs", "tr": "FA·ki·ēs", "en": "face, surface (5th decl.)", "pos": "noun", "forms": ["faciem", "faciē"], "cognates": { "es": "faz", "en": "face, facial" }, "ex": { "text": "Faciēs puellae pulchra est.", "en": "The girl's face is beautiful." }, "verified": false },
+    { "id": "spiritus", "text": "spīritus", "tr": "SPĪ·ri·tus", "en": "breath, spirit (4th decl.)", "pos": "noun", "forms": ["spīritum", "spīrituī", "spīritū"], "cognates": { "es": "espíritu", "en": "spirit, respiratory" }, "ex": { "text": "Spīritus Deī super aquās erat.", "en": "The spirit of God was over the waters." }, "verified": false },
+    { "id": "fero", "text": "ferō", "tr": "FE·rō", "en": "I carry, bear (irregular; ferēbātur = was being carried, moved)", "pos": "verb", "forms": ["fers", "fert", "ferunt", "ferre", "tulī", "tulit", "ferēbātur", "fertur"], "cognates": { "en": "transfer, fertile" }, "ex": { "text": "Puer librum fert.", "en": "The boy carries a book." }, "verified": false },
+    { "id": "vesper", "text": "vesper", "tr": "WES·per", "en": "evening (vespere = in the evening)", "pos": "noun", "forms": ["vespere", "vesperī", "vesperum"], "cognates": { "es": "víspera", "en": "vespers" }, "ex": { "text": "Vespere domum veniō.", "en": "In the evening I come home." }, "verified": false },
+    { "id": "mane", "text": "māne", "tr": "MĀ·ne", "en": "in the morning; morning", "pos": "adv", "cognates": { "es": "mañana" }, "ex": { "text": "Māne in scholā sum.", "en": "In the morning I am at school." }, "verified": false }
+  ],
+  "grammar": [
+    { "id": "adjectives", "title": "Adjectives of every type", "concept": "gender", "body": [
+      "Type 1 (bonus, bona, bonum) you know. Type 2 is third-declension: **fortis** (m./f.), **forte** (n.); gen. **fortis**; abl. **fortī**; plural **fortēs, fortia**.",
+      "Adjectives agree in gender, number and case, not in ending shape: **vir fortis**, **fēmina fortis**, **corpus forte**, **morbus gravis**."
+    ], "examples": [
+      { "text": "Medicus fortis aegrōs gravēs cūrat.", "en": "The brave doctor treats seriously ill patients." }
+    ], "drills": [
+      { "id": "adj1", "prompt": "Say: a strong man", "answer": "vir fortis" },
+      { "id": "adj2", "prompt": "Say: a brave woman", "answer": "fēmina fortis" },
+      { "id": "adj3", "prompt": "Say: a serious disease", "answer": "morbus gravis" },
+      { "id": "adj4", "prompt": "Say: healthy bodies", "answer": "corpora sāna" }
+    ], "verified": false },
+    { "id": "medicine", "title": "Latin in medicine", "body": [
+      "Anatomy is still named in Latin (Terminologia Anatomica): **os femoris** (bone of the thigh), **vena cava** (hollow vein), **musculus biceps brachiī** (two-headed muscle of the arm), **corpus callōsum**.",
+      "Clinical English is full of Latin: **ocular, oral, manual, pedal, cordial, sanguine, febrile, morbid**. Greek supplies the rest (cardio-, gastro-, -itis); that comes with the Greek pack.",
+      "Health talk uses the dative: **caput mihi dolet** = my head hurts (lit. the head hurts to me)."
+    ], "examples": [
+      { "text": "Ubi tibi dolet? Pēs mihi dolet.", "en": "Where does it hurt? My foot hurts." }
+    ], "drills": [
+      { "id": "med1", "prompt": "Say: My head hurts.", "answer": "Caput mihi dolet." },
+      { "id": "med2", "prompt": "Ask: What hurts (you)?", "answer": "Quid tibi dolet?" },
+      { "id": "med3", "prompt": "Say: I have a fever.", "answer": "Febrem habeō." },
+      { "id": "med4", "prompt": "Say: The doctor treats the sick man.", "answer": "Medicus aegrum cūrat." }
+    ], "verified": false },
+    { "id": "perfect", "title": "Perfect tense: vēnī, vīdī, vīcī", "concept": "aspect", "body": [
+      "The perfect is a completed past: **-ī, -istī, -it, -imus, -istis, -ērunt** on the perfect stem: amāv-ī, vīd-ī, vēn-ī, dīx-ī, fēc-ī, scrīps-ī, fu-ī (I was).",
+      "Learn the perfect with the verb (the dictionary's third form). Spanish preterite comes from it: amāvī → amé, vīdī → vi, fēcī → hice, dīxī → dije."
+    ], "examples": [
+      { "text": "Herī Mārcus epistulam scrīpsit et ad urbem iit.", "en": "Yesterday Marcus wrote a letter and went to the city." }
+    ], "drills": [
+      { "id": "pf1", "prompt": "Say: I came, I saw, I conquered.", "answer": "Vēnī, vīdī, vīcī." },
+      { "id": "pf2", "prompt": "Ask: What did you do?", "answer": "Quid fēcistī?" },
+      { "id": "pf3", "prompt": "Say: Marcus wrote a letter.", "answer": "Mārcus epistulam scrīpsit." },
+      { "id": "pf4", "prompt": "Say: They came.", "answer": "Vēnērunt." },
+      { "id": "pf5", "prompt": "Say: Yesterday I was at school.", "answer": "Herī in scholā fuī." }
+    ], "verified": false },
+    { "id": "imperfect", "title": "Imperfect: was …-ing, used to", "concept": "aspect", "body": [
+      "The imperfect describes ongoing or repeated past: **-bam, -bās, -bat, -bāmus, -bātis, -bant**: amābam, vidēbam, dīcēbam, audiēbam. 'To be': **eram, erās, erat, erāmus, erātis, erant**.",
+      "Spanish -aba/-ía is the same tense: amābat → amaba. Stories set the scene in the imperfect and move the action in the perfect: **Lupus bibēbat; subitō agnus vēnit**."
+    ], "examples": [
+      { "text": "Ōlim rēx in urbe habitābat; cīvēs eum amābant.", "en": "Once a king lived in the city; the citizens loved him." }
+    ], "drills": [
+      { "id": "ipf1", "prompt": "Say: He used to live in Rome.", "answer": "Rōmae habitābat." },
+      { "id": "ipf2", "prompt": "Say: There was a king.", "answer": "Rēx erat." },
+      { "id": "ipf3", "prompt": "Say: We were laughing.", "answer": "Rīdēbāmus." }
+    ], "verified": false },
+    { "id": "demonstratives", "title": "this, that, he: hic, ille, is", "body": [
+      "**hic, haec, hoc** = this (near me) · **ille, illa, illud** = that (over there) · **is, ea, id** = he, she, it / that one (just mentioned).",
+      "Spanish turned **ille, illa** into the articles **el, la** and the pronoun **él**; **iste** became **este**."
+    ], "examples": [
+      { "text": "Hic puer Mārcus est; ille vir pater eius est.", "en": "This boy is Marcus; that man is his father." }
+    ], "drills": [
+      { "id": "dm1", "prompt": "Say: this book", "answer": "hic liber" },
+      { "id": "dm2", "prompt": "Say: that girl", "answer": "illa puella" },
+      { "id": "dm3", "prompt": "Say: I see him.", "answer": "Eum videō." },
+      { "id": "dm4", "prompt": "Say: this gift", "answer": "hoc dōnum" }
+    ], "verified": false },
+    { "id": "relative", "title": "who, which: quī, quae, quod", "body": [
+      "The relative pronoun takes its **gender and number** from the noun it refers to and its **case** from its own clause: **puella quae cantat** (subject → nom.), **liber quem legō** (object → acc.), **puer cuius pater medicus est** (whose → gen.).",
+      "Spanish 'que' and 'quien' come from it."
+    ], "examples": [
+      { "text": "Agnus quem lupus videt parvus est.", "en": "The lamb which the wolf sees is small." }
+    ], "drills": [
+      { "id": "rl1", "prompt": "Say: The girl who is singing is my sister.", "answer": "Puella quae cantat soror mea est." },
+      { "id": "rl2", "prompt": "Say: The book which I am reading is new.", "answer": "Liber quem legō novus est." },
+      { "id": "rl3", "prompt": "Say: the boy whose father is a doctor", "answer": "puer cuius pater medicus est" }
+    ], "verified": false },
+    { "id": "participle", "title": "Participles: dīvīsa, facta, scrīpta", "concept": "participle", "body": [
+      "The perfect passive participle (4th dictionary form) is an adjective meaning 'having been …-ed': **dīvīsus, -a, -um** = divided; **factus** = made; **scrīptus** = written; **amātus** = loved. Spanish: dividido, hecho, escrito, amado.",
+      "With **est/sunt** it makes the passive perfect: **epistula scrīpta est** = the letter was written; **facta est lūx** = light was made.",
+      "Greek has even more participles; the Greek pack links back here."
+    ], "examples": [
+      { "text": "Gallia in partēs trēs dīvīsa est.", "en": "Gaul has been divided into three parts." }
+    ], "drills": [
+      { "id": "pt1", "prompt": "Say: divided (feminine)", "answer": "dīvīsa" },
+      { "id": "pt2", "prompt": "Say: The letter was written.", "answer": "Epistula scrīpta est." },
+      { "id": "pt3", "prompt": "Say: Light was made.", "answer": "Facta est lūx." }
+    ], "verified": false },
+    { "id": "reading", "title": "How to read real Latin", "body": [
+      "1 · Real texts have **no macrons**. Turn macrons off in Settings now and then to practise.",
+      "2 · Find the **verb** (often at the end), then its **subject** (nominative), then the **object** (accusative). Everything else hangs on these.",
+      "3 · **-que** means 'and' joined to the second word: **Dīxitque** = and he said. **est** is often left out: **Gallia dīvīsa** = Gaul (is) divided.",
+      "4 · Read each sentence twice: once for gist, once for structure. Don't translate word by word into English; picture it."
+    ], "examples": [
+      { "text": "Dīxitque Deus: fīat lūx.", "en": "And God said: let there be light." }
+    ], "drills": [
+      { "id": "rd1", "prompt": "Latin for 'and he said' (with -que)", "answer": "dīxitque" },
+      { "id": "rd2", "prompt": "Say: Gaul (is) divided into three parts.", "answer": "Gallia dīvīsa in partēs trēs." }
+    ], "verified": false }
+  ],
+  "texts": [
+    { "id": "d04", "title": "Apud medicum", "level": "U9", "kind": "dialogue", "names": ["Venu"], "lines": [
+      { "sp": "Medicus", "text": "Salvē! Quid tibi dolet?", "en": "Hello! What hurts?" },
+      { "sp": "Venu", "text": "Caput mihi dolet, et febrem habeō.", "en": "My head hurts, and I have a fever." },
+      { "sp": "Medicus", "text": "Ex quō tempore?", "en": "Since when?" },
+      { "sp": "Venu", "text": "Ab herī.", "en": "Since yesterday." },
+      { "sp": "Medicus", "text": "Ōs aperī, quaesō. Bene. Cor sānum est.", "en": "Open your mouth, please. Good. Your heart is healthy." },
+      { "sp": "Venu", "text": "Estne morbus gravis?", "en": "Is the illness serious?" },
+      { "sp": "Medicus", "text": "Minimē! Nōn gravis est. Dormī multum et aquam bibe.", "en": "Not at all! It's not serious. Sleep a lot and drink water." },
+      { "sp": "Venu", "text": "Grātiās tibi agō, medice!", "en": "Thank you, doctor!" },
+      { "sp": "Medicus", "text": "Valē, et cūrā tē!", "en": "Goodbye, and take care of yourself!" }
+    ], "verified": false },
+    { "id": "r06", "title": "Herī", "level": "U10", "kind": "reading", "names": ["Venu", "Caesar", "Caesare", "Asiam", "Rōmam"], "lines": [
+      { "text": "Herī diēs longus erat.", "en": "Yesterday was a long day." },
+      { "text": "Prīmum Venu in scholā fuit; magister fābulam dē Caesare nārrāvit.", "en": "First Venu was at school; the teacher told a story about Caesar." },
+      { "text": "Caesar dux Rōmānus erat. Ōlim ad Asiam vēnit et hostēs celeriter vīcit.", "en": "Caesar was a Roman general. Once he came to Asia and quickly defeated the enemy." },
+      { "text": "Tum Caesar Rōmam epistulam mīsit: “Vēnī, vīdī, vīcī.”", "en": "Then Caesar sent a letter to Rome: “I came, I saw, I conquered.”" },
+      { "text": "Postquam Venu domum vēnit, aquam bibit et librum lēgit.", "en": "After Venu came home, he drank water and read a book." },
+      { "text": "Deinde epistulam ad mātrem scrīpsit. Tandem nocte dormīvit.", "en": "Then he wrote a letter to his mother. At last, at night, he slept." },
+      { "text": "Crās iterum in scholā erit!", "en": "Tomorrow he'll be at school again!" }
+    ], "verified": false },
+    { "id": "r07", "title": "Lupus et agnus (after Phaedrus)", "level": "U11", "kind": "reading", "source": "Simplified retelling of Phaedrus, Fābulae 1.1 (public domain), by Claude", "lines": [
+      { "text": "Ōlim lupus et agnus ad rīvum vēnērunt, quod sitim habēbant.", "en": "Once a wolf and a lamb came to a stream, because they were thirsty." },
+      { "text": "Aqua ā lupō ad agnum fluēbat.", "en": "The water flowed from the wolf to the lamb." },
+      { "text": "Lupus, quī agnum capere cupiēbat, clāmāvit: “Cūr aquam meam malam facis?”", "en": "The wolf, who wanted to catch the lamb, shouted: “Why are you making my water bad?”" },
+      { "text": "Agnus timēbat, sed respondit: “Quōmodo hoc faciō? Aqua ā tē ad mē fluit!”", "en": "The lamb was afraid, but answered: “How am I doing that? The water flows from you to me!”" },
+      { "text": "Lupus iterum dīxit: “Ante sex mēnsēs dē mē mala dīxistī!”", "en": "The wolf spoke again: “Six months ago you said bad things about me!”" },
+      { "text": "Agnus respondit: “Tum nōndum nātus eram.”", "en": "The lamb answered: “Then I had not yet been born.”" },
+      { "text": "“Pater ergō tuus dē mē mala dīxit!” clāmāvit lupus, et agnum cēpit.", "en": "“Then your father said bad things about me!” shouted the wolf, and he seized the lamb." },
+      { "text": "Haec fābula dē hominibus est quī sine causā aliōs opprimunt.", "en": "This fable is about people who oppress others without cause." }
+    ], "verified": false },
+    { "id": "a01", "title": "Caesar, Dē Bellō Gallicō 1.1", "level": "U12", "kind": "authentic", "names": ["Belgae", "Aquitani", "Celtae", "Galli"], "source": "C. Iulius Caesar, Commentarii de Bello Gallico 1.1, opening (public domain). Shown without macrons, as in real editions.", "lines": [
+      { "text": "Gallia est omnis divisa in partes tres, quarum unam incolunt Belgae, aliam Aquitani, tertiam qui ipsorum lingua Celtae, nostra Galli appellantur.", "en": "Gaul as a whole is divided into three parts, of which the Belgae inhabit one, the Aquitani another, and the third those who in their own language are called Celts, in ours Gauls." },
+      { "text": "Hi omnes lingua, institutis, legibus inter se differunt.", "en": "All these differ from one another in language, customs and laws." }
+    ], "verified": false },
+    { "id": "a02", "title": "Vulgate, Genesis 1:1–5", "level": "U12", "kind": "authentic", "source": "Biblia Sacra Vulgata, Genesis 1:1–5 (public domain). Shown without macrons.", "lines": [
+      { "text": "In principio creavit Deus caelum et terram.", "en": "In the beginning God created the heaven and the earth." },
+      { "text": "Terra autem erat inanis et vacua, et tenebrae erant super faciem abyssi, et spiritus Dei ferebatur super aquas.", "en": "The earth was without form and empty, and darkness was upon the face of the deep, and the spirit of God moved over the waters." },
+      { "text": "Dixitque Deus: Fiat lux. Et facta est lux.", "en": "And God said: Let there be light. And there was light." },
+      { "text": "Et vidit Deus lucem quod esset bona, et divisit lucem a tenebris.", "en": "And God saw the light, that it was good, and he divided the light from the darkness." },
+      { "text": "Appellavitque lucem Diem, et tenebras Noctem. Factumque est vespere et mane, dies unus.", "en": "And he called the light Day, and the darkness Night. And there was evening and morning, one day." }
+    ], "verified": false }
+  ]
+}

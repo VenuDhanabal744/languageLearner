@@ -19,10 +19,14 @@ readable errors. The TypeScript source of truth is `src/packs/types.ts`.
   "tts": "he",                        // BCP-47 prefix for picking an iPhone voice
   "ttsNote": "Built-in voice: Carmit (Modern Hebrew).",
   "defaultVariety": "modern", "varieties": { "modern": "Modern Hebrew", "biblical": "Biblical Hebrew" },
-  "vowelToggle": { "label": "Niqqud", "strip": "֑-ׇ" },   // regex character class hidden when vowels are off
-  "normalize": { "strip": "֑-ׇ", "map": { "ך": "כ" } },  // for matching typed answers and coverage
+  "vowelToggle": { "label": "Niqqud", "strip": "\\u0591-\\u05C7" },  // character class hidden when vowels are off; add "nfd": true for precomposed marks like Latin ā
+  "normalize": { "strip": "\\u0591-\\u05C7", "map": { "ך": "כ" } },  // for matching typed answers and coverage ("nfd": true as above)
   "clitics": { "prefixes": ["ו", "ה", "ב", "ל", "מ", "ש"], "suffixes": [] },
+  // inflecting languages: "enclitics": ["que"], "stems": true indexes word stems so endings are recognised (see la/pack.json)
   "translit": { "name": "Simplified romanisation" },
+  "chat": { "name": "Modern Hebrew", "translit": true },          // how the conversation prompt names the language
+  "wordCards": ["produce", "listen"],    // cards per word: produce (EN → say/type), listen (audio → meaning), read (text → meaning)
+  "ttsRespell": [["ae", "ai"]],          // optional: regex → replacement before speaking, for packs borrowing another language's voice
   "frequency": { "file": "frequency.txt", "source": "…", "note": "…" },  // optional "form count" per line
   "includes": ["units/u01-04.json"],  // merged in: arrays are concatenated
   "notes": [{ "title": "…", "body": ["paragraph", "**bold** allowed"] }],
@@ -42,7 +46,7 @@ the colours at once). Each item is a typed reference: `word:`, `grammar:`, `scri
 ```json
 { "id": "kitab", "text": "كِتاب", "tr": "kitāb", "en": "book", "pos": "noun",
   "root": "k-t-b", "pattern": "CiCāC", "forms": ["الكتاب", "كتب"],
-  "msa": { "text": "…", "tr": "…", "note": "…" }, "es": "(Spanish hint, Latin packs)",
+  "msa": { "text": "…", "tr": "…", "note": "…" }, "cognates": { "es": "noche", "en": "nocturnal" },
   "ex": { "text": "هادا كْتاب.", "tr": "hāda ktāb.", "en": "This is a book." },
   "note": "optional", "verified": false }
 ```
@@ -50,7 +54,7 @@ the colours at once). Each item is a typed reference: `word:`, `grammar:`, `scri
 - `ex` is required: every word is taught and reviewed inside a sentence, and the test checks the sentence contains the word.
 - `forms` lists other surface forms (conjugations, plurals) so text coverage recognises them.
 - `verified` is `false` until a fluent speaker or reference has checked it.
-- Each word creates two cards: **produce** (English → say/type it) and **listen** (audio → meaning).
+- Each word creates the cards listed in the pack's `wordCards` (default: **produce** and **listen**; Latin uses **read** and **produce**).
 
 ## Grammar
 ```json

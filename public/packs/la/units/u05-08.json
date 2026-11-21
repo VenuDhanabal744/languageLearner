@@ -1,0 +1,237 @@
+{
+  "units": [
+    { "id": "u05", "title": "5 · In vīllā", "goal": "Say where things are and with whom: prepositions and the ablative.", "items": [
+      "word:villa", "word:hortus", "word:via", "word:aqua", "word:cibus", "word:mensa", "word:liber", "grammar:ablative", "word:cum", "word:sine", "word:ab", "word:ex", "word:de",
+      "word:ad", "word:per", "word:sub", "word:ante", "word:post", "grammar:in-acc-abl", "word:schola", "word:magister", "word:porta", "word:laetus", "text:r03" ] },
+    { "id": "u06", "title": "6 · Dōna", "goal": "Say who gives what to whom (dative).", "items": [
+      "word:do", "word:monstro", "word:narro", "word:fabula", "word:epistula", "word:donum", "grammar:dative", "word:pecunia", "word:rosa", "word:malum", "word:nauta", "word:poeta",
+      "word:agricola", "grammar:masc-a", "word:regina", "word:deus", "word:dea", "word:carus", "word:gratus", "word:longus", "word:novus", "grammar:sound2", "text:r04" ] },
+    { "id": "u07", "title": "7 · In scholā", "goal": "Use 3rd and 4th conjugation verbs; give classroom commands.", "items": [
+      "word:dico", "word:lego", "word:scribo", "word:disco", "grammar:present34", "word:curro", "word:mitto", "word:pono", "word:duco", "word:venio", "word:audio",
+      "word:dormio", "word:scio", "word:facio", "word:capio", "word:intellego", "word:aperio", "grammar:imperative", "word:iterum", "word:lente", "word:tace", "text:d03" ] },
+    { "id": "u08", "title": "8 · Urbs", "goal": "Third-declension nouns: rēx, nox, urbs, nōmen.", "items": [
+      "word:rex", "word:homo", "word:nox", "word:lux", "word:sol", "grammar:decl3", "word:mare", "word:urbs", "word:civis", "word:canis", "word:tempus", "word:mons",
+      "word:altus", "word:flumen", "word:pax", "word:vox", "word:miles", "word:dux", "word:mors", "text:r05" ] }
+  ],
+  "words": [
+    { "id": "villa", "text": "vīlla", "tr": "WĪL·la", "en": "country house, villa", "pos": "noun", "forms": ["vīllae", "vīllam", "vīllā"], "ex": { "text": "Familia in vīllā habitat.", "en": "The family lives in a villa." }, "verified": false },
+    { "id": "hortus", "text": "hortus", "tr": "HOR·tus", "en": "garden", "pos": "noun", "forms": ["hortī", "hortum", "hortō"], "cognates": { "es": "huerto (ŏ → ue)", "en": "horticulture" }, "ex": { "text": "Pater in hortō labōrat.", "en": "Father works in the garden." }, "verified": false },
+    { "id": "via", "text": "via", "tr": "WI·a", "en": "road, street, way", "pos": "noun", "forms": ["viae", "viam", "viā", "viās", "viīs"], "cognates": { "es": "vía", "en": "via" }, "ex": { "text": "In viā multī virī sunt.", "en": "There are many men in the street." }, "verified": false },
+    { "id": "aqua", "text": "aqua", "tr": "A·kwa", "en": "water", "pos": "noun", "forms": ["aquae", "aquam", "aquā", "aquās"], "cognates": { "es": "agua (qu → g)", "en": "aquatic" }, "ex": { "text": "Aqua in fluviō est.", "en": "There is water in the river." }, "verified": false },
+    { "id": "cibus", "text": "cibus", "tr": "KI·bus", "en": "food", "pos": "noun", "forms": ["cibī", "cibum", "cibō"], "ex": { "text": "Cibus in mēnsā est.", "en": "The food is on the table." }, "verified": false },
+    { "id": "mensa", "text": "mēnsa", "tr": "MĒN·sa", "en": "table", "pos": "noun", "forms": ["mēnsae", "mēnsam", "mēnsā"], "cognates": { "es": "mesa" }, "ex": { "text": "Liber in mēnsā est.", "en": "The book is on the table." }, "verified": false },
+    { "id": "liber", "text": "liber", "tr": "LI·ber", "en": "book (gen. librī)", "pos": "noun", "forms": ["librī", "librum", "librō", "librōs", "librōrum", "librīs"], "cognates": { "es": "libro", "en": "library" }, "note": "Don't confuse with līber 'free' and līberī 'children' (long ī).", "ex": { "text": "Discipulus librum habet.", "en": "The student has a book." }, "verified": false },
+    { "id": "cum", "text": "cum", "tr": "kum", "en": "with (+abl.)", "pos": "prep", "cognates": { "es": "con" }, "ex": { "text": "Mārcus cum amīcō ambulat.", "en": "Marcus walks with a friend." }, "verified": false },
+    { "id": "sine", "text": "sine", "tr": "SI·ne", "en": "without (+abl.)", "pos": "prep", "cognates": { "es": "sin" }, "ex": { "text": "Pater sine cibō labōrat.", "en": "Father works without food." }, "verified": false },
+    { "id": "ab", "text": "ab", "tr": "ab / ā", "en": "from, away from; by (+abl.; ā before consonants)", "pos": "prep", "forms": ["ā"], "ex": { "text": "Mārcus ā vīllā ambulat.", "en": "Marcus walks away from the villa." }, "verified": false },
+    { "id": "ex", "text": "ex", "tr": "eks / ē", "en": "out of, from (+abl.; ē before consonants)", "pos": "prep", "forms": ["ē"], "cognates": { "en": "exit" }, "ex": { "text": "Puer ex vīllā ambulat.", "en": "The boy walks out of the villa." }, "verified": false },
+    { "id": "de", "text": "dē", "tr": "dē", "en": "about, concerning; down from (+abl.)", "pos": "prep", "cognates": { "es": "de" }, "ex": { "text": "Liber dē Rōmā est.", "en": "The book is about Rome." }, "verified": false },
+    { "id": "ad", "text": "ad", "tr": "ad", "en": "to, toward (+acc.)", "pos": "prep", "cognates": { "es": "a" }, "ex": { "text": "Mārcus ad scholam ambulat.", "en": "Marcus walks to school." }, "verified": false },
+    { "id": "per", "text": "per", "tr": "per", "en": "through (+acc.)", "pos": "prep", "cognates": { "es": "por" }, "ex": { "text": "Per hortum ambulāmus.", "en": "We walk through the garden." }, "verified": false },
+    { "id": "sub", "text": "sub", "tr": "sub", "en": "under (+abl.)", "pos": "prep", "cognates": { "en": "submarine" }, "ex": { "text": "Canis sub mēnsā est.", "en": "The dog is under the table." }, "verified": false },
+    { "id": "ante", "text": "ante", "tr": "AN·te", "en": "before, in front of (+acc.)", "pos": "prep", "cognates": { "es": "ante" }, "ex": { "text": "Ante vīllam hortus est.", "en": "In front of the villa there is a garden." }, "verified": false },
+    { "id": "post", "text": "post", "tr": "post", "en": "after, behind (+acc.)", "pos": "prep", "cognates": { "en": "post-mortem, postpone" }, "ex": { "text": "Post scholam ambulō.", "en": "After school I go for a walk." }, "verified": false },
+    { "id": "schola", "text": "schola", "tr": "SKHO·la", "en": "school", "pos": "noun", "forms": ["scholae", "scholam", "scholā"], "cognates": { "es": "escuela", "en": "school" }, "ex": { "text": "Discipulī in scholā sunt.", "en": "The students are at school." }, "verified": false },
+    { "id": "magister", "text": "magister", "tr": "ma·GIS·ter", "en": "teacher, master (f. magistra)", "pos": "noun", "forms": ["magistrī", "magistrum", "magistrō", "magistra", "magistrīs"], "cognates": { "es": "maestro", "en": "master" }, "ex": { "text": "Magister in scholā est.", "en": "The teacher is at school." }, "verified": false },
+    { "id": "porta", "text": "porta", "tr": "POR·ta", "en": "gate, door", "pos": "noun", "forms": ["portae", "portam", "portā"], "cognates": { "es": "puerta (ŏ → ue)", "en": "portal" }, "ex": { "text": "Porta vīllae magna est.", "en": "The villa's gate is big." }, "verified": false },
+    { "id": "laetus", "text": "laetus", "tr": "LAE·tus", "en": "happy, glad", "pos": "adj", "forms": ["laeta", "laetum", "laetī", "laetae"], "ex": { "text": "Familia laeta est.", "en": "The family is happy." }, "verified": false },
+
+    { "id": "do", "text": "dō", "tr": "dō", "en": "I give", "pos": "verb", "forms": ["dās", "dat", "damus", "datis", "dant", "dare", "dedī", "dedit", "dedērunt"], "cognates": { "es": "dar", "en": "donate, data" }, "ex": { "text": "Puella poētae rosam dat.", "en": "The girl gives the poet a rose." }, "verified": false },
+    { "id": "monstro", "text": "mōnstrō", "tr": "MŌN·strō", "en": "I show", "pos": "verb", "forms": ["mōnstrat", "mōnstrant", "mōnstrāre"], "cognates": { "es": "mostrar", "en": "demonstrate" }, "ex": { "text": "Magister discipulīs viam mōnstrat.", "en": "The teacher shows the students the way." }, "verified": false },
+    { "id": "narro", "text": "nārrō", "tr": "NĀR·rō", "en": "I tell, narrate", "pos": "verb", "forms": ["nārrat", "nārrant", "nārrāre", "nārrāvit"], "cognates": { "en": "narrate" }, "ex": { "text": "Māter fīliae fābulam nārrat.", "en": "The mother tells her daughter a story." }, "verified": false },
+    { "id": "fabula", "text": "fābula", "tr": "FĀ·bu·la", "en": "story, tale", "pos": "noun", "forms": ["fābulae", "fābulam", "fābulās", "fābulā"], "cognates": { "es": "fábula, habla", "en": "fable" }, "ex": { "text": "Fābula longa est.", "en": "The story is long." }, "verified": false },
+    { "id": "epistula", "text": "epistula", "tr": "e·PIS·tu·la", "en": "letter (mail)", "pos": "noun", "forms": ["epistulae", "epistulam", "epistulā"], "cognates": { "en": "epistle" }, "ex": { "text": "Epistula ā Mārcō est.", "en": "The letter is from Marcus." }, "verified": false },
+    { "id": "donum", "text": "dōnum", "tr": "DŌ·num", "en": "gift", "pos": "noun", "forms": ["dōna", "dōnō", "dōnī"], "cognates": { "es": "don", "en": "donation" }, "ex": { "text": "Dōnum pulchrum est.", "en": "The gift is beautiful." }, "verified": false },
+    { "id": "pecunia", "text": "pecūnia", "tr": "pe·KŪ·ni·a", "en": "money", "pos": "noun", "forms": ["pecūniae", "pecūniam", "pecūniā"], "cognates": { "en": "pecuniary" }, "ex": { "text": "Pater fīliō pecūniam dat.", "en": "Father gives his son money." }, "verified": false },
+    { "id": "rosa", "text": "rosa", "tr": "RO·sa", "en": "rose", "pos": "noun", "forms": ["rosae", "rosam", "rosās", "rosīs"], "cognates": { "es": "rosa" }, "ex": { "text": "Mārcus Iūliae rosam dat.", "en": "Marcus gives Julia a rose." }, "verified": false },
+    { "id": "malum", "text": "mālum", "tr": "MĀ·lum", "en": "apple (long ā; malum with short a = evil)", "pos": "noun", "forms": ["māla", "mālō", "mālī"], "ex": { "text": "Puer mālum habet.", "en": "The boy has an apple." }, "verified": false },
+    { "id": "nauta", "text": "nauta", "tr": "NAU·ta", "en": "sailor (masculine!)", "pos": "noun", "forms": ["nautae", "nautam", "nautā", "nautīs"], "cognates": { "en": "nautical" }, "ex": { "text": "Nauta in īnsulā habitat.", "en": "The sailor lives on an island." }, "verified": false },
+    { "id": "poeta", "text": "poēta", "tr": "po·Ē·ta", "en": "poet (masculine)", "pos": "noun", "forms": ["poētae", "poētam", "poētīs"], "cognates": { "es": "poeta" }, "ex": { "text": "Poēta fābulās nārrat.", "en": "The poet tells stories." }, "verified": false },
+    { "id": "agricola", "text": "agricola", "tr": "a·GRI·co·la", "en": "farmer (masculine)", "pos": "noun", "forms": ["agricolae", "agricolam", "agricolīs"], "cognates": { "en": "agriculture" }, "ex": { "text": "Agricola in terrā labōrat.", "en": "The farmer works the land." }, "verified": false },
+    { "id": "regina", "text": "rēgīna", "tr": "rē·GĪ·na", "en": "queen", "pos": "noun", "forms": ["rēgīnae", "rēgīnam", "rēgīnā"], "cognates": { "es": "reina" }, "ex": { "text": "Rēgīna pulchra est.", "en": "The queen is beautiful." }, "verified": false },
+    { "id": "deus", "text": "deus", "tr": "DE·us", "en": "god", "pos": "noun", "forms": ["deī", "deum", "deō", "dī", "deōrum", "Deus", "Deī"], "cognates": { "es": "dios", "sa": "deva" }, "ex": { "text": "Iuppiter deus Rōmānus est.", "en": "Jupiter is a Roman god." }, "verified": false },
+    { "id": "dea", "text": "dea", "tr": "DE·a", "en": "goddess", "pos": "noun", "forms": ["deae", "deam"], "ex": { "text": "Minerva dea est.", "en": "Minerva is a goddess." }, "verified": false },
+    { "id": "carus", "text": "cārus", "tr": "KĀ·rus", "en": "dear", "pos": "adj", "forms": ["cāra", "cārum", "cārī"], "cognates": { "es": "caro (dear/expensive)", "en": "cherish" }, "ex": { "text": "Soror mea mihi cāra est.", "en": "My sister is dear to me." }, "verified": false },
+    { "id": "gratus", "text": "grātus", "tr": "GRĀ·tus", "en": "pleasing; grateful", "pos": "adj", "forms": ["grāta", "grātum"], "cognates": { "es": "grato", "en": "grateful" }, "ex": { "text": "Dōnum tuum mihi grātum est.", "en": "Your gift pleases me." }, "verified": false },
+    { "id": "longus", "text": "longus", "tr": "LON·gus", "en": "long", "pos": "adj", "forms": ["longa", "longum"], "cognates": { "es": "luengo", "en": "long" }, "ex": { "text": "Via longa est.", "en": "The road is long." }, "verified": false },
+    { "id": "novus", "text": "novus", "tr": "NO·wus", "en": "new", "pos": "adj", "forms": ["nova", "novum", "novī", "novam"], "cognates": { "es": "nuevo", "grc": "νέος", "sa": "nava" }, "ex": { "text": "Liber novus est.", "en": "The book is new." }, "verified": false },
+
+    { "id": "dico", "text": "dīcō", "tr": "DĪ·kō", "en": "I say, tell", "pos": "verb", "forms": ["dīcis", "dīcit", "dīcimus", "dīcunt", "dīcere", "dīxī", "dīxit", "dīxistī", "dīc", "dīxitque"], "cognates": { "es": "decir", "en": "diction" }, "ex": { "text": "Quid dīcis?", "en": "What are you saying?" }, "verified": false },
+    { "id": "lego", "text": "legō", "tr": "LE·gō", "en": "I read; I choose", "pos": "verb", "forms": ["legis", "legit", "legimus", "legunt", "legere", "lēgī", "lēgit", "lege"], "cognates": { "es": "leer", "en": "legible, lecture" }, "ex": { "text": "Librum Latīnum legō.", "en": "I am reading a Latin book." }, "verified": false },
+    { "id": "scribo", "text": "scrībō", "tr": "SKRĪ·bō", "en": "I write", "pos": "verb", "forms": ["scrībis", "scrībit", "scrībunt", "scrībere", "scrīpsī", "scrīpsit", "scrībe", "scrīpta", "scrīptum"], "cognates": { "es": "escribir", "en": "scribe" }, "ex": { "text": "Mārcus epistulam scrībit.", "en": "Marcus is writing a letter." }, "verified": false },
+    { "id": "disco", "text": "discō", "tr": "DIS·kō", "en": "I learn", "pos": "verb", "forms": ["discis", "discit", "discimus", "discunt", "discere", "didicī"], "cognates": { "en": "disciple" }, "ex": { "text": "Linguam Latīnam discō.", "en": "I am learning Latin." }, "verified": false },
+    { "id": "curro", "text": "currō", "tr": "KUR·rō", "en": "I run", "pos": "verb", "forms": ["currit", "currunt", "currere", "cucurrit"], "cognates": { "es": "correr", "en": "current" }, "ex": { "text": "Puerī in hortō currunt.", "en": "The boys run in the garden." }, "verified": false },
+    { "id": "mitto", "text": "mittō", "tr": "MIT·tō", "en": "I send", "pos": "verb", "forms": ["mittit", "mittunt", "mittere", "mīsī", "mīsit"], "cognates": { "en": "mission, transmit" }, "ex": { "text": "Māter epistulam mittit.", "en": "Mother sends a letter." }, "verified": false },
+    { "id": "pono", "text": "pōnō", "tr": "PŌ·nō", "en": "I put, place", "pos": "verb", "forms": ["pōnit", "pōnunt", "pōnere", "posuī", "posuit", "pōne"], "cognates": { "es": "poner", "en": "position" }, "ex": { "text": "Cibum in mēnsā pōnō.", "en": "I put the food on the table." }, "verified": false },
+    { "id": "duco", "text": "dūcō", "tr": "DŪ·kō", "en": "I lead", "pos": "verb", "forms": ["dūcit", "dūcunt", "dūcere", "dūxī", "dūxit"], "cognates": { "es": "conducir", "en": "conduct, duke" }, "ex": { "text": "Magister discipulōs in scholam dūcit.", "en": "The teacher leads the students into the school." }, "verified": false },
+    { "id": "venio", "text": "veniō", "tr": "WE·ni·ō", "en": "I come", "pos": "verb", "forms": ["venīs", "venit", "venīmus", "veniunt", "venīre", "vēnī", "vēnit", "vēnērunt", "venī", "venīte", "veniam"], "cognates": { "es": "venir", "en": "convene" }, "ex": { "text": "Venī, Mārce!", "en": "Come, Marcus!" }, "verified": false },
+    { "id": "audio", "text": "audiō", "tr": "AU·di·ō", "en": "I hear, listen", "pos": "verb", "forms": ["audīs", "audit", "audīmus", "audiunt", "audīre", "audīvī", "audīvit", "audī", "audīte"], "cognates": { "es": "oír", "en": "audio" }, "ex": { "text": "Audīsne mē?", "en": "Do you hear me?" }, "verified": false },
+    { "id": "dormio", "text": "dormiō", "tr": "DOR·mi·ō", "en": "I sleep", "pos": "verb", "forms": ["dormit", "dormiunt", "dormīre", "dormīvī", "dormīvit", "dormī"], "cognates": { "es": "dormir", "en": "dormitory" }, "ex": { "text": "Canis sub mēnsā dormit.", "en": "The dog sleeps under the table." }, "verified": false },
+    { "id": "scio", "text": "sciō", "tr": "SKI·ō", "en": "I know", "pos": "verb", "forms": ["scīs", "scit", "scīmus", "sciunt", "scīre", "scīvī"], "cognates": { "en": "science" }, "ex": { "text": "Nōn sciō.", "en": "I don't know." }, "verified": false },
+    { "id": "facio", "text": "faciō", "tr": "FA·ki·ō", "en": "I do, make", "pos": "verb", "forms": ["facis", "facit", "facimus", "faciunt", "facere", "fēcī", "fēcit", "fēcistī", "fac", "factum", "facta", "factus", "fīat", "factumque"], "cognates": { "es": "hacer (f → h)", "en": "fact, factory" }, "ex": { "text": "Quid facis?", "en": "What are you doing?" }, "verified": false },
+    { "id": "capio", "text": "capiō", "tr": "KA·pi·ō", "en": "I take, seize", "pos": "verb", "forms": ["capit", "capiunt", "capere", "cēpī", "cēpit", "cape"], "cognates": { "en": "capture" }, "ex": { "text": "Mārcus librum capit.", "en": "Marcus takes the book." }, "verified": false },
+    { "id": "intellego", "text": "intellegō", "tr": "in·TEL·le·gō", "en": "I understand", "pos": "verb", "forms": ["intellegis", "intellegit", "intellegere", "intellēxī", "intellegisne"], "cognates": { "en": "intelligent" }, "ex": { "text": "Intellegisne? Ita, intellegō!", "en": "Do you understand? Yes, I understand!" }, "verified": false },
+    { "id": "aperio", "text": "aperiō", "tr": "a·PE·ri·ō", "en": "I open", "pos": "verb", "forms": ["aperit", "aperīre", "aperuit", "aperī", "aperīte"], "cognates": { "es": "abrir", "en": "aperture" }, "ex": { "text": "Aperīte librōs!", "en": "Open your books!" }, "verified": false },
+    { "id": "iterum", "text": "iterum", "tr": "I·te·rum", "en": "again", "pos": "adv", "cognates": { "en": "iterate" }, "ex": { "text": "Iterum, quaesō!", "en": "Again, please!" }, "verified": false },
+    { "id": "lente", "text": "lentē", "tr": "LEN·tē", "en": "slowly", "pos": "adv", "cognates": { "es": "lento" }, "ex": { "text": "Lentē, quaesō!", "en": "Slowly, please!" }, "verified": false },
+    { "id": "tace", "text": "tacē", "tr": "TA·kē", "en": "be quiet! (taceō = I am silent)", "pos": "verb", "forms": ["taceō", "tacet", "tacēte"], "cognates": { "en": "tacit" }, "ex": { "text": "Tacēte, discipulī!", "en": "Be quiet, students!" }, "verified": false },
+
+    { "id": "rex", "text": "rēx", "tr": "rēks", "en": "king (gen. rēgis)", "pos": "noun", "forms": ["rēgis", "rēgem", "rēge", "rēgī", "rēgēs", "rēgum"], "cognates": { "es": "rey", "sa": "rājan", "en": "regal" }, "ex": { "text": "Rōmulus rēx Rōmānus erat.", "en": "Romulus was a Roman king." }, "verified": false },
+    { "id": "homo", "text": "homō", "tr": "HO·mō", "en": "human being, person (gen. hominis)", "pos": "noun", "forms": ["hominis", "hominem", "homine", "hominēs", "hominum", "hominibus"], "cognates": { "es": "hombre", "en": "human, homicide" }, "ex": { "text": "Homō sum.", "en": "I am human." }, "verified": false },
+    { "id": "nox", "text": "nox", "tr": "noks", "en": "night (gen. noctis)", "pos": "noun", "forms": ["noctis", "noctem", "nocte", "noctēs"], "cognates": { "es": "noche (-ct- → -ch-)", "grc": "νύξ", "en": "nocturnal" }, "ex": { "text": "Nox est; puer dormit.", "en": "It is night; the boy is sleeping." }, "verified": false },
+    { "id": "lux", "text": "lūx", "tr": "lūks", "en": "light (gen. lūcis)", "pos": "noun", "forms": ["lūcis", "lūcem", "lūce"], "cognates": { "es": "luz", "en": "lucid" }, "ex": { "text": "Lūx in vīllā est.", "en": "There is light in the villa." }, "verified": false },
+    { "id": "sol", "text": "sōl", "tr": "sōl", "en": "sun (gen. sōlis)", "pos": "noun", "forms": ["sōlis", "sōlem", "sōle"], "cognates": { "es": "sol", "en": "solar" }, "ex": { "text": "Sōl magnus est.", "en": "The sun is big." }, "verified": false },
+    { "id": "mare", "text": "mare", "tr": "MA·re", "en": "sea (gen. maris)", "pos": "noun", "forms": ["maris", "marī", "maria"], "cognates": { "es": "mar", "en": "marine" }, "ex": { "text": "Sicilia in marī est.", "en": "Sicily is in the sea." }, "verified": false },
+    { "id": "urbs", "text": "urbs", "tr": "urbs", "en": "city (gen. urbis)", "pos": "noun", "forms": ["urbis", "urbem", "urbe", "urbēs", "urbium"], "cognates": { "en": "urban" }, "ex": { "text": "Rōma urbs magna est.", "en": "Rome is a big city." }, "verified": false },
+    { "id": "civis", "text": "cīvis", "tr": "KĪ·wis", "en": "citizen", "pos": "noun", "forms": ["cīvēs", "cīvem", "cīvium", "cīvibus"], "cognates": { "es": "civil", "en": "civic" }, "ex": { "text": "Cīvis Rōmānus sum.", "en": "I am a Roman citizen." }, "verified": false },
+    { "id": "canis", "text": "canis", "tr": "KA·nis", "en": "dog", "pos": "noun", "forms": ["canem", "canēs", "canī", "cane"], "cognates": { "es": "can", "en": "canine" }, "ex": { "text": "Canis in hortō currit.", "en": "The dog runs in the garden." }, "verified": false },
+    { "id": "tempus", "text": "tempus", "tr": "TEM·pus", "en": "time (gen. temporis)", "pos": "noun", "forms": ["temporis", "tempore", "tempora"], "cognates": { "es": "tiempo (ĕ → ie)", "en": "temporal" }, "ex": { "text": "Tempus fugit.", "en": "Time flies." }, "verified": false },
+    { "id": "mons", "text": "mōns", "tr": "mōns", "en": "mountain (gen. montis)", "pos": "noun", "forms": ["montis", "montem", "monte", "montēs"], "cognates": { "es": "monte", "en": "mount" }, "ex": { "text": "Vesuvius mōns est.", "en": "Vesuvius is a mountain." }, "verified": false },
+    { "id": "altus", "text": "altus", "tr": "AL·tus", "en": "high, tall, deep", "pos": "adj", "forms": ["alta", "altum"], "cognates": { "es": "alto", "en": "altitude" }, "ex": { "text": "Mōns altus est.", "en": "The mountain is high." }, "verified": false },
+    { "id": "flumen", "text": "flūmen", "tr": "FLŪ·men", "en": "river (gen. flūminis)", "pos": "noun", "forms": ["flūminis", "flūmine", "flūmina"], "ex": { "text": "Tiberis flūmen Rōmae est.", "en": "The Tiber is Rome's river." }, "verified": false },
+    { "id": "pax", "text": "pāx", "tr": "pāks", "en": "peace (gen. pācis)", "pos": "noun", "forms": ["pācis", "pācem", "pāce"], "cognates": { "es": "paz", "en": "peace" }, "ex": { "text": "Pāx tēcum!", "en": "Peace be with you!" }, "verified": false },
+    { "id": "vox", "text": "vōx", "tr": "wōks", "en": "voice (gen. vōcis)", "pos": "noun", "forms": ["vōcis", "vōcem", "vōce"], "cognates": { "es": "voz", "en": "vocal" }, "ex": { "text": "Puella vōce pulchrā cantat.", "en": "The girl sings with a beautiful voice." }, "verified": false },
+    { "id": "miles", "text": "mīles", "tr": "MĪ·les", "en": "soldier (gen. mīlitis)", "pos": "noun", "forms": ["mīlitis", "mīlitem", "mīlitēs", "mīlitum"], "cognates": { "en": "military" }, "ex": { "text": "Mīles in viā ambulat.", "en": "A soldier walks in the street." }, "verified": false },
+    { "id": "dux", "text": "dux", "tr": "duks", "en": "leader, general (gen. ducis)", "pos": "noun", "forms": ["ducis", "ducem", "duce"], "cognates": { "es": "duque", "en": "duke" }, "ex": { "text": "Caesar dux Rōmānus erat.", "en": "Caesar was a Roman general." }, "verified": false },
+    { "id": "mors", "text": "mors", "tr": "mors", "en": "death (gen. mortis)", "pos": "noun", "forms": ["mortis", "mortem", "morte"], "cognates": { "es": "muerte (ŏ → ue)", "en": "mortal" }, "ex": { "text": "Post mortem rēgis Rōma trīstis erat.", "en": "After the king's death Rome was sad." }, "verified": false }
+  ],
+  "grammar": [
+    { "id": "ablative", "title": "With, from, in: the ablative", "concept": "cases", "body": [
+      "After **in** (in/on), **cum** (with), **sine** (without), **ab/ā** (from), **ex/ē** (out of), **dē** (about), **sub** (under), nouns take the ablative: **-a → -ā**, **-us/-um → -ō**, plural **-īs**.",
+      "The ablative also works alone for 'by/with/at': **vōce pulchrā** = with a beautiful voice, **nocte** = at night."
+    ], "examples": [
+      { "text": "Mārcus cum amīcō in hortō ambulat.", "en": "Marcus walks in the garden with a friend." },
+      { "text": "Puer ex vīllā sine cibō currit.", "en": "The boy runs out of the villa without food." }
+    ], "drills": [
+      { "id": "ab1", "prompt": "Say: with a friend", "answer": "cum amīcō" },
+      { "id": "ab2", "prompt": "Say: without water", "answer": "sine aquā" },
+      { "id": "ab3", "prompt": "Say: in the garden", "answer": "in hortō" },
+      { "id": "ab4", "prompt": "Say: out of the villa", "answer": "ex vīllā" },
+      { "id": "ab5", "prompt": "Say: about Rome", "answer": "dē Rōmā" }
+    ], "verified": false },
+    { "id": "in-acc-abl", "title": "in + ablative (where) vs in + accusative (where to)", "concept": "cases", "body": [
+      "**in hortō** = in the garden (location, ablative). **in hortum** = into the garden (motion, accusative). Spanish uses 'en' and 'a' for this; Latin uses the ending.",
+      "**ad, per, ante, post** always take the accusative: **ad scholam**, **per hortum**, **ante vīllam**."
+    ], "examples": [
+      { "text": "Puer in vīllam currit; nunc in vīllā est.", "en": "The boy runs into the villa; now he is in the villa." }
+    ], "drills": [
+      { "id": "ia1", "prompt": "Say: in the villa", "answer": "in vīllā" },
+      { "id": "ia2", "prompt": "Say: into the villa", "answer": "in vīllam" },
+      { "id": "ia3", "prompt": "Say: to the school", "answer": "ad scholam" },
+      { "id": "ia4", "prompt": "Say: through the garden", "answer": "per hortum" }
+    ], "verified": false },
+    { "id": "dative", "title": "To whom? The dative", "concept": "dative", "body": [
+      "The person something is given, shown or told to takes the dative: **-a → -ae**, **-us → -ō**, plural **-īs**, third declension **-ī** (patrī).",
+      "**Puella poētae rosam dat** = the girl gives the poet a rose (Spanish: le da una rosa al poeta). Also 'dear/pleasing to': **mihi cāra est**."
+    ], "examples": [
+      { "text": "Pater fīliō pecūniam dat.", "en": "Father gives money to his son." },
+      { "text": "Magister discipulīs fābulam nārrat.", "en": "The teacher tells the students a story." }
+    ], "drills": [
+      { "id": "da1", "prompt": "Say: The girl gives the poet a rose.", "answer": "Puella poētae rosam dat." },
+      { "id": "da2", "prompt": "Say: Father gives his son money.", "answer": "Pater fīliō pecūniam dat." },
+      { "id": "da3", "prompt": "Say: The teacher shows the students the way.", "answer": "Magister discipulīs viam mōnstrat." },
+      { "id": "da4", "prompt": "Say: My sister is dear to me.", "answer": "Soror mea mihi cāra est." }
+    ], "verified": false },
+    { "id": "masc-a", "title": "Masculine nouns in -a", "concept": "gender", "body": [
+      "A few -a nouns are masculine because they name men's jobs: **nauta** (sailor), **poēta**, **agricola**. They decline like puella but take masculine adjectives: **nauta bonus**, **poētae bonī**.",
+      "Gender is about agreement, not about the ending; the same is true in Spanish (el poeta, el día)."
+    ], "examples": [
+      { "text": "Nauta bonus et poēta laetus amīcī sunt.", "en": "The good sailor and the happy poet are friends." }
+    ], "drills": [
+      { "id": "ma1", "prompt": "Say: a good sailor", "answer": "nauta bonus" },
+      { "id": "ma2", "prompt": "Say: the good poets", "answer": "poētae bonī" },
+      { "id": "ma3", "prompt": "Say: The farmer is happy.", "answer": "Agricola laetus est." }
+    ], "verified": false },
+    { "id": "sound2", "title": "From Latin to Spanish (2): consonants", "body": [
+      "**-ct- → -ch-**: noctem → noche, lactem → leche, octō → ocho, factum → hecho.",
+      "**cl-, pl-, fl- → ll-**: clāmāre → llamar, plēnus → lleno, pluvia → lluvia, flamma → llama.",
+      "**p, t, c between vowels → b, d, g**: lupus → lobo, vīta → vida, amīcus → amigo, aqua → agua.",
+      "**-li-, -c(u)l- → j**: fīlius → hijo, oculus → ojo, folium → hoja."
+    ], "examples": [
+      { "text": "Nocte lupus in viā est.", "en": "At night a wolf is on the road. (noche, lobo, vía)" }
+    ], "drills": [
+      { "id": "sc1", "prompt": "Spanish 'noche' comes from Latin… (accusative)", "answer": "noctem" },
+      { "id": "sc2", "prompt": "Spanish 'amigo' comes from Latin…", "answer": "amīcus" },
+      { "id": "sc3", "prompt": "Spanish 'ojo' comes from Latin…", "answer": "oculus" },
+      { "id": "sc4", "prompt": "Spanish 'lluvia' comes from Latin…", "answer": "pluvia" },
+      { "id": "sc5", "prompt": "Spanish 'lobo' comes from Latin…", "answer": "lupus" }
+    ], "verified": false },
+    { "id": "present34", "title": "Present tense: dīcō, audiō, faciō", "body": [
+      "3rd conjugation: **dīcō, dīcis, dīcit, dīcimus, dīcitis, dīcunt** (Spanish digo, dices, dice…).",
+      "4th conjugation: **audiō, audīs, audit, audīmus, audītis, audiunt**.",
+      "Mixed (-iō): **faciō, facis, facit, facimus, facitis, faciunt**. The dictionary form's infinitive tells you the group: amāre, vidēre, dīcere, audīre."
+    ], "examples": [
+      { "text": "Discipulī legunt, magister scrībit, canis dormit.", "en": "The students read, the teacher writes, the dog sleeps." }
+    ], "drills": [
+      { "id": "p34a", "prompt": "Ask: What are you saying?", "answer": "Quid dīcis?" },
+      { "id": "p34b", "prompt": "Say: We are reading a book.", "answer": "Librum legimus." },
+      { "id": "p34c", "prompt": "Say: They are coming.", "answer": "Veniunt." },
+      { "id": "p34d", "prompt": "Say: I hear the teacher.", "answer": "Magistrum audiō." },
+      { "id": "p34e", "prompt": "Say: She is writing a letter.", "answer": "Epistulam scrībit." }
+    ], "verified": false },
+    { "id": "imperative", "title": "Commands", "body": [
+      "One person: the bare stem: **amā!** **vidē!** **lege!** **audī!** **venī!** **aperī!** Short irregulars: **dīc!** **fac!** **dūc!**",
+      "Several people: add **-te**: **amāte, vidēte, legite, audīte, venīte, tacēte**.",
+      "Don't…!: **nōlī** (to several: **nōlīte**) + infinitive: **nōlī timēre!** = don't be afraid!"
+    ], "examples": [
+      { "text": "Audīte, discipulī! Aperīte librōs et legite!", "en": "Listen, students! Open your books and read!" }
+    ], "drills": [
+      { "id": "im1", "prompt": "Say: Come, Marcus!", "answer": "Venī, Mārce!" },
+      { "id": "im2", "prompt": "Say: Listen, students!", "answer": "Audīte, discipulī!" },
+      { "id": "im3", "prompt": "Say (to one person): Read the book!", "answer": "Lege librum!" },
+      { "id": "im4", "prompt": "Say: Don't be afraid! (to one person)", "answer": "Nōlī timēre!" }
+    ], "verified": false },
+    { "id": "decl3", "title": "Third declension: rēx, rēgis", "concept": "cases", "body": [
+      "The nominative is unpredictable, but the genitive (-is) shows the stem: **rēx, rēgis**; **nox, noctis**; **homō, hominis**; **tempus, temporis**. Always learn both.",
+      "Endings on the stem: acc. **-em**, gen. **-is**, dat. **-ī**, abl. **-e**; plural nom./acc. **-ēs**, gen. **-um/-ium**, dat./abl. **-ibus**.",
+      "Neuters (**nōmen, tempus, mare, flūmen**): nominative = accusative; plural **-a** (tempora, flūmina)."
+    ], "examples": [
+      { "text": "Rēx urbem videt; cīvēs rēgem vident.", "en": "The king sees the city; the citizens see the king." }
+    ], "drills": [
+      { "id": "d3a", "prompt": "Say: the king's daughter", "answer": "fīlia rēgis" },
+      { "id": "d3b", "prompt": "Say: at night (ablative)", "answer": "nocte" },
+      { "id": "d3c", "prompt": "Say: I see the city.", "answer": "Urbem videō." },
+      { "id": "d3d", "prompt": "Say: The citizens love peace.", "answer": "Cīvēs pācem amant." }
+    ], "verified": false }
+  ],
+  "texts": [
+    { "id": "r03", "title": "Vīlla", "level": "U5", "kind": "reading", "names": ["Iūliī", "Mārcus"], "lines": [
+      { "text": "Familia Iūliī in vīllā habitat. Vīlla magna et pulchra est.", "en": "Julius's family lives in a villa. The villa is big and beautiful." },
+      { "text": "Ante vīllam hortus est. In hortō multae rosae sunt.", "en": "In front of the villa is a garden. In the garden there are many roses." },
+      { "text": "Pater in hortō labōrat; māter cum fīliā in vīllā est.", "en": "Father works in the garden; mother is in the villa with her daughter." },
+      { "text": "Mārcus ā vīllā ad scholam ambulat. Liber in manū puerī est.", "en": "Marcus walks from the villa to school. A book is in the boy's hand." },
+      { "text": "In scholā magister discipulōs docet.", "en": "At school the teacher teaches the students." },
+      { "text": "Post scholam Mārcus cum amīcīs per viam ad vīllam ambulat.", "en": "After school Marcus walks along the road to the villa with his friends." },
+      { "text": "In mēnsā cibus et aqua sunt. Familia laeta est.", "en": "On the table there is food and water. The family is happy." }
+    ], "verified": false },
+    { "id": "r04", "title": "Dōna", "level": "U6", "kind": "reading", "names": ["Iūlia", "Iūliae", "Mārcus", "Mārcō"], "lines": [
+      { "text": "Hodiē Iūlia laeta est. Māter Iūliae dōnum dat: librum novum.", "en": "Today Julia is happy. Her mother gives Julia a gift: a new book." },
+      { "text": "In librō multae fābulae sunt.", "en": "In the book there are many stories." },
+      { "text": "Iūlia frātrī fābulam nārrat, fābulam dē nautā et rēgīnā.", "en": "Julia tells her brother a story, a story about a sailor and a queen." },
+      { "text": "Nauta rēgīnae rosam dat. Rēgīna laeta est; rosa eī grāta est.", "en": "The sailor gives the queen a rose. The queen is happy; the rose pleases her." },
+      { "text": "Mārcus rīdet: “Fābula longa est, sed bona!”", "en": "Marcus laughs: “The story is long, but good!”" },
+      { "text": "Deinde pater Mārcō mālum dat, et Mārcus sorōrī mālum dat.", "en": "Then father gives Marcus an apple, and Marcus gives his sister the apple." }
+    ], "verified": false },
+    { "id": "d03", "title": "In scholā", "level": "U7", "kind": "dialogue", "names": ["Iūlia", "Mārce", "Mārcus", "Venu"], "lines": [
+      { "sp": "Magister", "text": "Salvēte, discipulī!", "en": "Hello, students!" },
+      { "sp": "Discipulī", "text": "Salvē, magister!", "en": "Hello, teacher!" },
+      { "sp": "Magister", "text": "Hodiē fābulam legimus. Aperīte librōs!", "en": "Today we are reading a story. Open your books!" },
+      { "sp": "Venu", "text": "Magister, quid dīcis? Nōn intellegō.", "en": "Teacher, what are you saying? I don't understand." },
+      { "sp": "Magister", "text": "Aperīte librōs! Intellegisne nunc?", "en": "Open your books! Do you understand now?" },
+      { "sp": "Venu", "text": "Ita, intellegō. Grātiās!", "en": "Yes, I understand. Thanks!" },
+      { "sp": "Magister", "text": "Iūlia, lege, quaesō. Lentē!", "en": "Julia, read, please. Slowly!" },
+      { "sp": "Iūlia", "text": "Nauta in īnsulā habitat…", "en": "A sailor lives on an island…" },
+      { "sp": "Magister", "text": "Bene! Mārce, cūr nōn audīs? Mārcus dormit!", "en": "Good! Marcus, why aren't you listening? Marcus is asleep!" },
+      { "sp": "Discipulī", "text": "Discipulī rīdent.", "en": "The students laugh." }
+    ], "verified": false },
+    { "id": "r05", "title": "Urbs Rōma", "level": "U8", "kind": "reading", "names": ["Rōma", "Tiberis", "Rōmae", "Rōmam", "Rōmulus", "Remus"], "lines": [
+      { "text": "Rōma urbs magna et pulchra est. In urbe multī hominēs habitant.", "en": "Rome is a big and beautiful city. Many people live in the city." },
+      { "text": "Tiberis flūmen Rōmae est; per urbem fluit.", "en": "The Tiber is Rome's river; it flows through the city." },
+      { "text": "Prīmus rēx Rōmae Rōmulus erat. Rōmulus et Remus frātrēs erant.", "en": "The first king of Rome was Romulus. Romulus and Remus were brothers." },
+      { "text": "In urbe cīvēs, mīlitēs, nautae, agricolae et poētae sunt.", "en": "In the city there are citizens, soldiers, sailors, farmers and poets." },
+      { "text": "Nocte urbs dormit; lūx sōlis nōn est.", "en": "At night the city sleeps; there is no sunlight." },
+      { "text": "Sed canēs in viīs currunt!", "en": "But dogs run in the streets!" },
+      { "text": "Omnēs viae Rōmam dūcunt.", "en": "All roads lead to Rome." }
+    ], "verified": false }
+  ]
+}
