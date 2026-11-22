@@ -1,0 +1,261 @@
+{
+  "units": [
+    { "id": "u09", "title": "9 · Παρὰ τῷ ἰατρῷ", "goal": "Tell a doctor what hurts; the middle voice; 'I want to / I can'.", "items": [
+      "word:iatros", "word:soma", "word:kephale", "word:ophthalmos", "word:ous", "word:stoma", "grammar:middle", "word:cheir", "word:pous", "word:kardia", "word:haima", "word:nosos",
+      "word:algeo", "word:pyretos", "word:pascho", "word:psyche", "word:boulomai", "word:gignomai", "grammar:infinitive", "word:erchomai", "word:dynamai", "word:dei", "word:dokeo", "word:hygies",
+      "word:asthenes", "word:pharmakon", "text:d04" ] },
+    { "id": "u10", "title": "10 · Χθές", "goal": "Tell what happened (aorist and imperfect); read Hippocrates.", "items": [
+      "word:chthes", "word:aurion", "word:proton", "word:epeita", "grammar:aorist", "word:telos", "word:ede", "word:hysteron", "word:proi", "word:hespera", "word:egeiro", "word:baino",
+      "word:leipo", "grammar:aorist2", "word:heurisko", "word:apothnesko", "word:nikao", "word:machomai", "word:pheugo", "word:bios", "word:techne", "word:brachys", "word:oxys", "word:krisis",
+      "word:kairos", "word:peira", "text:r06", "text:a00" ] },
+    { "id": "u11", "title": "11 · Ὁ λύκος καὶ ὁ ἀρήν", "goal": "Read a fable: participles, 'this/that', and 'who/which'.", "items": [
+      "word:mythos", "word:lykos", "word:aren", "word:houtos", "word:ekeinos", "grammar:demonstr", "word:hos", "word:gar", "word:phemi", "word:pote", "word:tote", "word:epei",
+      "grammar:participle", "word:hote", "word:hos2", "word:me", "word:adikeo", "word:dikaios", "word:kakos", "word:aitia", "word:rheo", "word:prophasis", "word:deloo", "word:tholoo", "text:r07" ] },
+    { "id": "u12", "title": "12 · Ξενοφῶν καὶ Πλάτων", "goal": "Read real Greek prose: Xenophon, Plato and John.", "items": [
+      "word:men", "word:oun", "grammar:men-de", "word:hama", "word:hate", "word:tropos", "word:heorte", "word:theaomai", "word:proseuchomai", "word:ago", "word:arche", "word:teleute",
+      "word:pareimi", "grammar:aorpart", "word:amphoteroi", "word:hypopteuo", "word:zoe", "word:skotia", "word:choris", "word:oude", "text:a01", "text:a02", "text:a03" ] }
+  ],
+  "words": [
+    { "id": "iatros", "text": "ἰατρός", "tr": "iātrós", "en": "doctor", "pos": "noun", "forms": ["ἰατροῦ", "ἰατρῷ", "ἰατρόν", "ἰατρέ", "ἰατροί", "ἰατρῶν", "ἰατρική"], "cognates": { "en": "psychiatry, pediatrics (-iatry = 'healing'), iatrogenic" }, "ex": { "text": "Ὁ ἰατρὸς ἐν τῇ οἰκίᾳ ἐστίν.", "en": "The doctor is in the house." }, "verified": false },
+    { "id": "soma", "text": "σῶμα", "tr": "sôma", "en": "body", "pos": "noun", "forms": ["σώματος", "σώματι", "σώματα", "σωμάτων"], "cognates": { "en": "somatic, chromosome ('colour body'), psychosomatic" }, "ex": { "text": "Τὸ σῶμα ὑγιές ἐστιν.", "en": "The body is healthy." }, "verified": false },
+    { "id": "kephale", "text": "κεφαλή", "tr": "kephalḗ", "en": "head", "pos": "noun", "forms": ["κεφαλῆς", "κεφαλῇ", "κεφαλήν"], "cognates": { "en": "encephalitis, cephalic, hydrocephalus" }, "ex": { "text": "Τὴν κεφαλὴν ἀλγῶ.", "en": "My head hurts." }, "verified": false },
+    { "id": "ophthalmos", "text": "ὀφθαλμός", "tr": "ophthalmós", "en": "eye", "pos": "noun", "forms": ["ὀφθαλμοῦ", "ὀφθαλμῷ", "ὀφθαλμόν", "ὀφθαλμοί", "ὀφθαλμῶν", "ὀφθαλμοῖς", "ὀφθαλμούς"], "cognates": { "en": "ophthalmology" }, "ex": { "text": "Τοῖς ὀφθαλμοῖς ὁρῶμεν.", "en": "We see with our eyes." }, "verified": false },
+    { "id": "ous", "text": "οὖς", "tr": "oûs", "en": "ear", "pos": "noun", "forms": ["ὠτός", "ὠτί", "ὦτα", "ὤτων", "ὠσί", "ὠσίν"], "cognates": { "la": "auris (same root)", "en": "otitis, otolaryngology (ear, nose and throat)" }, "ex": { "text": "Τοῖς ὠσὶν ἀκούομεν.", "en": "We hear with our ears." }, "verified": false },
+    { "id": "stoma", "text": "στόμα", "tr": "stóma", "en": "mouth", "pos": "noun", "forms": ["στόματος", "στόματι", "στόματα"], "cognates": { "en": "stomach, stomatitis, stoma" }, "ex": { "text": "Τῷ στόματι ἐσθίομεν καὶ λέγομεν.", "en": "We eat and speak with our mouth." }, "verified": false },
+    { "id": "cheir", "text": "χείρ", "tr": "kheír", "en": "hand", "pos": "noun", "forms": ["χειρός", "χειρί", "χεῖρα", "χεῖρες", "χειρῶν", "χερσί", "χερσίν", "χεῖρας"], "cognates": { "en": "chiropractor; surgery (χειρουργία 'hand-work')" }, "ex": { "text": "Τῇ χειρὶ γράφω.", "en": "I write with my hand." }, "verified": false },
+    { "id": "pous", "text": "πούς", "tr": "poús", "en": "foot", "pos": "noun", "forms": ["ποδός", "ποδί", "πόδα", "πόδες", "ποδῶν", "ποσί", "ποσίν", "πόδας"], "cognates": { "la": "pēs, pedis (same root)", "es": "pie", "en": "foot (same root), podiatry, octopus ('eight-foot')" }, "ex": { "text": "Τοῖς ποσὶ τρέχομεν.", "en": "We run with our feet." }, "verified": false },
+    { "id": "kardia", "text": "καρδία", "tr": "kardíā", "en": "heart", "pos": "noun", "forms": ["καρδίας", "καρδίᾳ", "καρδίαν"], "cognates": { "la": "cor, cordis (same root)", "en": "heart (same root), cardiology, tachycardia" }, "ex": { "text": "Ἡ καρδία ταχέως πάλλεται.", "en": "The heart is beating fast." }, "verified": false },
+    { "id": "haima", "text": "αἷμα", "tr": "haîma", "en": "blood", "pos": "noun", "forms": ["αἵματος", "αἵματι", "αἵματα"], "cognates": { "en": "hematology, anemia ('without blood'), hemorrhage" }, "ex": { "text": "Τὸ αἷμα ἐν τῷ σώματι ῥεῖ.", "en": "The blood flows in the body." }, "verified": false },
+    { "id": "nosos", "text": "νόσος", "tr": "nósos", "en": "disease, illness (feminine)", "pos": "noun", "forms": ["νόσου", "νόσῳ", "νόσον", "νόσοι", "νόσων"], "cognates": { "en": "nosocomial (hospital-acquired), nosology" }, "ex": { "text": "Ἡ νόσος χαλεπή ἐστιν.", "en": "The disease is severe." }, "verified": false },
+    { "id": "algeo", "text": "ἀλγέω", "tr": "algéō", "en": "feel pain, hurt (τὴν κεφαλὴν ἀλγῶ = my head hurts)", "pos": "verb", "forms": ["ἀλγῶ", "ἀλγεῖς", "ἀλγεῖ", "ἀλγοῦμεν", "ἀλγοῦσι", "ἀλγοῦσιν", "ἤλγει"], "cognates": { "en": "analgesic ('no pain'), neuralgia, myalgia" }, "ex": { "text": "Τὸν πόδα ἀλγῶ.", "en": "My foot hurts." }, "verified": false },
+    { "id": "pyretos", "text": "πυρετός", "tr": "pyretós", "en": "fever", "pos": "noun", "forms": ["πυρετοῦ", "πυρετῷ", "πυρετόν"], "cognates": { "en": "antipyretic (a fever reducer), pyrexia" }, "ex": { "text": "Πυρετὸν ἔχω.", "en": "I have a fever." }, "verified": false },
+    { "id": "pascho", "text": "πάσχω", "tr": "páskhō", "en": "suffer, experience (aorist ἔπαθον; τί πάσχεις; = what's wrong?)", "pos": "verb", "forms": ["πάσχεις", "πάσχει", "πάσχομεν", "πάσχουσι", "πάσχουσιν", "πάσχειν", "ἔπασχον", "ἔπαθον", "ἔπαθε", "ἔπαθεν", "παθεῖν"], "cognates": { "en": "pathology, sympathy, empathy (πάθος 'suffering, feeling')" }, "ex": { "text": "Τί πάσχεις;", "en": "What's wrong with you? (lit. what are you suffering?)" }, "verified": false },
+    { "id": "psyche", "text": "ψυχή", "tr": "psykhḗ", "en": "soul; life, breath", "pos": "noun", "forms": ["ψυχῆς", "ψυχῇ", "ψυχήν", "ψυχαί"], "cognates": { "en": "psychology, psychiatry" }, "ex": { "text": "Ἡ ψυχὴ καὶ τὸ σῶμα.", "en": "Soul and body." }, "verified": false },
+    { "id": "boulomai", "text": "βούλομαι", "tr": "boúlomai", "en": "want, wish (+ infinitive)", "pos": "verb", "forms": ["βούλει", "βούλῃ", "βούλεται", "βουλόμεθα", "βούλεσθε", "βούλονται", "βούλεσθαι", "ἐβουλόμην", "ἐβούλετο", "ἐβούλοντο", "βουλόμενος", "βουλομένη", "βουλόμενοι", "ἠβουλήθη"], "ex": { "text": "Ὕδωρ πίνειν βούλομαι.", "en": "I want to drink water." }, "verified": false },
+    { "id": "gignomai", "text": "γίγνομαι", "tr": "gígnomai", "en": "become, happen; be born (aorist ἐγενόμην)", "pos": "verb", "forms": ["γίγνῃ", "γίγνεται", "γιγνόμεθα", "γίγνονται", "γίγνεσθαι", "ἐγίγνετο", "ἐγενόμην", "ἐγένετο", "ἐγένοντο", "γενέσθαι", "γενόμενος", "γέγονα", "γέγονε", "γέγονεν", "γενήσομαι", "γίνεται"], "cognates": { "la": "gignō, genus (same root)", "en": "genesis, gene, genetics" }, "ex": { "text": "Ὁ παῖς μέγας γίγνεται.", "en": "The child is growing big." }, "verified": false },
+    { "id": "erchomai", "text": "ἔρχομαι", "tr": "érkhomai", "en": "come, go (aorist ἦλθον)", "pos": "verb", "forms": ["ἔρχῃ", "ἔρχεται", "ἐρχόμεθα", "ἔρχεσθε", "ἔρχονται", "ἔρχεσθαι", "ἔρχου", "ἦλθον", "ἦλθε", "ἦλθεν", "ἐλθεῖν", "ἐλθών", "ἐλθοῦσα", "ἐξῆλθον", "ἐξῆλθε", "εἰσῆλθε", "ἐλήλυθα"], "ex": { "text": "Ὁ ἰατρὸς ἔρχεται.", "en": "The doctor is coming." }, "verified": false },
+    { "id": "dynamai", "text": "δύναμαι", "tr": "dýnamai", "en": "be able, can (+ infinitive)", "pos": "verb", "forms": ["δύνασαι", "δύναται", "δυνάμεθα", "δύνασθε", "δύνανται", "δύνασθαι", "ἐδύνατο", "ἐδυνάμην"], "cognates": { "en": "dynamic, dynamite, dynasty" }, "ex": { "text": "Οὐ δύναμαι καθεύδειν.", "en": "I can't sleep." }, "verified": false },
+    { "id": "dei", "text": "δεῖ", "tr": "deî", "en": "it is necessary, one must (+ infinitive; δεῖ με = I must)", "pos": "verb", "forms": ["ἔδει", "δέον"], "ex": { "text": "Δεῖ πολὺ ὕδωρ πίνειν.", "en": "You must drink a lot of water." }, "verified": false },
+    { "id": "dokeo", "text": "δοκέω", "tr": "dokéō", "en": "seem; think (δοκεῖ μοι = it seems to me, I think)", "pos": "verb", "forms": ["δοκῶ", "δοκεῖς", "δοκεῖ", "δοκοῦσι", "δοκοῦσιν", "ἐδόκει", "ἔδοξε", "ἔδοξεν"], "cognates": { "en": "dogma, orthodox, paradox ('against expectation')" }, "ex": { "text": "Δοκεῖ μοι ὁ ἰατρὸς ἀγαθὸς εἶναι.", "en": "I think the doctor is good." }, "verified": false },
+    { "id": "hygies", "text": "ὑγιής", "tr": "hygiḗs", "en": "healthy, sound (ὑγιαίνω = be healthy)", "pos": "adj", "forms": ["ὑγιές", "ὑγιοῦς", "ὑγιεῖ", "ὑγιᾶ", "ὑγιεῖς", "ὑγιαίνω", "ὑγιαίνει"], "cognates": { "en": "hygiene (via Hygieia, goddess of health)" }, "ex": { "text": "Νῦν ὑγιής εἰμι.", "en": "Now I'm healthy." }, "verified": false },
+    { "id": "asthenes", "text": "ἀσθενής", "tr": "asthenḗs", "en": "weak; sick (ἀσθενέω = be sick)", "pos": "adj", "forms": ["ἀσθενές", "ἀσθενοῦς", "ἀσθενεῖς", "ἀσθενέω", "ἀσθενεῖ", "ἠσθένει", "ἠσθένησε"], "cognates": { "en": "asthenia; myasthenia gravis ('grave muscle weakness')" }, "ex": { "text": "Ὁ γέρων ἀσθενής ἐστιν.", "en": "The old man is sick." }, "verified": false },
+    { "id": "pharmakon", "text": "φάρμακον", "tr": "phármakon", "en": "drug, remedy; poison", "pos": "noun", "forms": ["φαρμάκου", "φαρμάκῳ", "φάρμακα", "φαρμάκων"], "cognates": { "en": "pharmacy, pharmacology" }, "ex": { "text": "Τοῦτο τὸ φάρμακον λάμβανε.", "en": "Take this medicine." }, "verified": false },
+
+    { "id": "chthes", "text": "χθές", "tr": "khthés", "en": "yesterday", "pos": "adv", "forms": ["ἐχθές"], "ex": { "text": "Χθὲς εἰς τὴν ἀγορὰν ἦλθον.", "en": "Yesterday I went to the agora." }, "verified": false },
+    { "id": "aurion", "text": "αὔριον", "tr": "aúrion", "en": "tomorrow", "pos": "adv", "ex": { "text": "Αὔριον πάλιν ἔρχομαι.", "en": "I'm coming again tomorrow." }, "verified": false },
+    { "id": "proton", "text": "πρῶτον", "tr": "prôton", "en": "first, at first (πρῶτος = first)", "pos": "adv", "forms": ["πρῶτος", "πρώτη", "πρώτου", "πρώτῃ", "πρώτην", "πρῶτοι"], "cognates": { "en": "prototype, protein, protozoa" }, "ex": { "text": "Πρῶτον ἄρτον ἠγόρασα.", "en": "First I bought bread." }, "verified": false },
+    { "id": "epeita", "text": "ἔπειτα", "tr": "épeita", "en": "then, next", "pos": "adv", "ex": { "text": "Ἔπειτα τὸν φίλον εἶδον.", "en": "Then I saw my friend." }, "verified": false },
+    { "id": "telos", "text": "τέλος", "tr": "télos", "en": "end, goal; (as adverb) finally", "pos": "noun", "forms": ["τέλους", "τέλει", "τέλη"], "cognates": { "en": "teleology, telomere ('end part')" }, "ex": { "text": "Τέλος εἰς τὴν οἰκίαν ἦλθον.", "en": "Finally I came home." }, "verified": false },
+    { "id": "ede", "text": "ἤδη", "tr": "ḗdē", "en": "already; now", "pos": "adv", "ex": { "text": "Ἤδη νύξ ἐστιν.", "en": "It's already night." }, "verified": false },
+    { "id": "hysteron", "text": "ὕστερον", "tr": "hýsteron", "en": "later, afterwards", "pos": "adv", "cognates": { "en": "hysteron proteron ('the later first'), a figure of speech" }, "ex": { "text": "Ὕστερον εἰς τὴν σχολὴν ἦλθον.", "en": "Later I went to school." }, "verified": false },
+    { "id": "proi", "text": "πρῴ", "tr": "prṓi", "en": "early in the morning", "pos": "adv", "ex": { "text": "Πρῴ ἐκ τῆς οἰκίας ἐξῆλθον.", "en": "Early in the morning I went out of the house." }, "verified": false },
+    { "id": "hespera", "text": "ἑσπέρα", "tr": "hespérā", "en": "evening (ἑσπέρας = in the evening)", "pos": "noun", "forms": ["ἑσπέρας", "ἑσπέρᾳ", "ἑσπέραν"], "cognates": { "la": "vesper (the same Indo-European word)", "en": "vespers, Hesperides" }, "ex": { "text": "Ἑσπέρας ὁ ἥλιος οὐ φαίνει.", "en": "In the evening the sun doesn't shine." }, "verified": false },
+    { "id": "egeiro", "text": "ἐγείρω", "tr": "egeírō", "en": "wake (someone) up; middle/passive: wake up", "pos": "verb", "forms": ["ἐγείρει", "ἐγείρεται", "ἐγείρομαι", "ἐγείρου", "ἤγειρα", "ἤγειρε", "ἠγέρθην", "ἠγέρθη", "ἐξηγέρθην"], "ex": { "text": "Ἡ μήτηρ τὸν παῖδα ἐγείρει.", "en": "The mother wakes the child." }, "verified": false },
+    { "id": "baino", "text": "βαίνω", "tr": "baínō", "en": "go, walk (aorist ἔβην); ἀναβαίνω go up, καταβαίνω go down", "pos": "verb", "forms": ["βαίνει", "βαίνουσι", "βαίνουσιν", "ἔβην", "ἔβη", "βῆναι", "ἀναβαίνω", "ἀναβαίνει", "ἀναβαίνουσι", "ἀνέβην", "ἀνέβη", "καταβαίνω", "καταβαίνει", "κατέβην", "κατέβη"], "cognates": { "la": "veniō (same root)", "en": "basis, acrobat ('walking on tiptoe'), Anabasis ('march up')" }, "ex": { "text": "Εἰς τὴν ἀγορὰν ἔβην.", "en": "I went to the agora." }, "verified": false },
+    { "id": "leipo", "text": "λείπω", "tr": "leípō", "en": "leave (aorist ἔλιπον)", "pos": "verb", "forms": ["λείπεις", "λείπει", "λείπουσι", "λείπουσιν", "λείπειν", "ἔλειπον", "ἔλιπον", "ἔλιπε", "ἔλιπεν", "λιπεῖν"], "cognates": { "en": "eclipse ('a leaving out'), ellipsis" }, "ex": { "text": "Τὸ βιβλίον ἐν τῇ σχολῇ ἔλιπον.", "en": "I left the book at school." }, "verified": false },
+    { "id": "heurisko", "text": "εὑρίσκω", "tr": "heurískō", "en": "find (aorist ηὗρον / εὗρον; εὕρηκα = I have found)", "pos": "verb", "forms": ["εὑρίσκεις", "εὑρίσκει", "εὑρίσκουσι", "εὑρίσκουσιν", "εὑρίσκειν", "ηὗρον", "εὗρον", "ηὗρε", "ηὗρεν", "εὗρε", "εὗρεν", "εὑρεῖν", "εὑρών", "εὕρηκα"], "cognates": { "en": "eureka ('I have found it!'), heuristic" }, "ex": { "text": "Ἐν τῇ ὁδῷ βιβλίον ηὗρον.", "en": "I found a book on the road." }, "verified": false },
+    { "id": "apothnesko", "text": "ἀποθνῄσκω", "tr": "apothnḗiskō", "en": "die (aorist ἀπέθανον)", "pos": "verb", "forms": ["ἀποθνῄσκει", "ἀποθνῄσκουσι", "ἀποθνῄσκουσιν", "ἀπέθνῃσκε", "ἀπέθανον", "ἀπέθανε", "ἀπέθανεν", "ἀποθανεῖν", "τέθνηκε", "τέθνηκεν"], "cognates": { "en": "euthanasia ('a good death'), thanatology" }, "ex": { "text": "Ὁ γέρων ἀπέθανεν.", "en": "The old man died." }, "verified": false },
+    { "id": "nikao", "text": "νικάω", "tr": "nikáō", "en": "win, conquer, defeat (νίκη = victory)", "pos": "verb", "forms": ["νικῶ", "νικᾷς", "νικᾷ", "νικῶμεν", "νικῶσι", "νικῶσιν", "ἐνίκα", "ἐνίκησα", "ἐνίκησε", "ἐνίκησαν", "νίκη"], "cognates": { "la": "vincō (not related, same meaning)", "en": "Nike, Nicholas ('victory of the people')" }, "ex": { "text": "Οἱ Ἀθηναῖοι τοὺς Πέρσας ἐνίκησαν.", "en": "The Athenians defeated the Persians." }, "verified": false },
+    { "id": "machomai", "text": "μάχομαι", "tr": "mákhomai", "en": "fight (μάχη = battle)", "pos": "verb", "forms": ["μάχῃ", "μάχεται", "μαχόμεθα", "μάχονται", "μάχεσθαι", "ἐμάχετο", "ἐμάχοντο", "ἐμαχέσαντο", "μάχη"], "cognates": { "en": "logomachy ('a war of words')" }, "ex": { "text": "Οἱ στρατιῶται μάχονται.", "en": "The soldiers are fighting." }, "verified": false },
+    { "id": "pheugo", "text": "φεύγω", "tr": "pheúgō", "en": "flee, run away (aorist ἔφυγον)", "pos": "verb", "forms": ["φεύγεις", "φεύγει", "φεύγουσι", "φεύγουσιν", "φεύγειν", "ἔφευγον", "ἔφυγον", "ἔφυγε", "ἔφυγεν", "φυγεῖν"], "cognates": { "la": "fugiō (same root)", "en": "fugitive (via Latin)" }, "ex": { "text": "Ὁ κύων ἐκ τοῦ κήπου ἔφυγεν.", "en": "The dog ran away from the garden." }, "verified": false },
+    { "id": "bios", "text": "βίος", "tr": "bíos", "en": "life, way of life; livelihood", "pos": "noun", "forms": ["βίου", "βίῳ", "βίον"], "cognates": { "en": "biology, biography, antibiotic" }, "ex": { "text": "Ὁ βίος τοῦ ἰατροῦ χαλεπός ἐστιν.", "en": "A doctor's life is hard." }, "verified": false },
+    { "id": "techne", "text": "τέχνη", "tr": "tékhnē", "en": "skill, art, craft (ἡ ἰατρικὴ τέχνη = the art of medicine)", "pos": "noun", "forms": ["τέχνης", "τέχνῃ", "τέχνην", "τέχναι"], "cognates": { "en": "technique, technology" }, "ex": { "text": "Ἡ ἰατρικὴ τέχνη καλή ἐστιν.", "en": "The art of medicine is a fine thing." }, "verified": false },
+    { "id": "brachys", "text": "βραχύς", "tr": "brakhýs", "en": "short, brief", "pos": "adj", "forms": ["βραχεῖα", "βραχύ", "βραχέος", "βραχεῖς"], "cognates": { "en": "brachycephalic; brachytherapy (radiation from close by)" }, "ex": { "text": "Ἡ ἡμέρα βραχεῖά ἐστιν.", "en": "The day is short." }, "verified": false },
+    { "id": "oxys", "text": "ὀξύς", "tr": "oxýs", "en": "sharp, keen; quick", "pos": "adj", "forms": ["ὀξεῖα", "ὀξύ", "ὀξέος", "ὀξεῖς"], "cognates": { "en": "oxygen ('acid-maker'), oxymoron ('sharp-dull')" }, "ex": { "text": "Ὁ λίθος ὀξύς ἐστιν.", "en": "The stone is sharp." }, "verified": false },
+    { "id": "krisis", "text": "κρίσις", "tr": "krísis", "en": "judgement, decision; turning point (of a disease)", "pos": "noun", "forms": ["κρίσεως", "κρίσει", "κρίσιν"], "cognates": { "en": "crisis, critical, criterion" }, "ex": { "text": "Ἡ κρίσις χαλεπή ἐστιν.", "en": "The decision is difficult." }, "verified": false },
+    { "id": "kairos", "text": "καιρός", "tr": "kairós", "en": "the right moment, opportunity", "pos": "noun", "forms": ["καιροῦ", "καιρῷ", "καιρόν"], "ex": { "text": "Νῦν καιρός ἐστιν.", "en": "Now is the right time." }, "verified": false },
+    { "id": "peira", "text": "πεῖρα", "tr": "peîra", "en": "trial, attempt; experience", "pos": "noun", "forms": ["πείρας", "πείρᾳ", "πεῖραν"], "cognates": { "en": "empirical (ἐμπειρία 'experience'), pirate ('one who makes attempts')" }, "ex": { "text": "Ἡ πεῖρα πολλὰ διδάσκει.", "en": "Experience teaches many things." }, "verified": false },
+
+    { "id": "mythos", "text": "μῦθος", "tr": "mŷthos", "en": "story, fable; word", "pos": "noun", "forms": ["μύθου", "μύθῳ", "μῦθον", "μῦθοι", "μύθων"], "cognates": { "en": "myth, mythology" }, "ex": { "text": "Μῦθον λέγε, ὦ πάτερ.", "en": "Tell a story, father." }, "verified": false },
+    { "id": "lykos", "text": "λύκος", "tr": "lýkos", "en": "wolf", "pos": "noun", "forms": ["λύκου", "λύκῳ", "λύκον", "λύκε", "λύκοι"], "cognates": { "la": "lupus (the same Indo-European word)", "es": "lobo", "en": "wolf (same root), lycanthrope ('wolf-man')" }, "ex": { "text": "Ὁ λύκος τὸν ἄρνα ὁρᾷ.", "en": "The wolf sees the lamb." }, "verified": false },
+    { "id": "aren", "text": "ἀρήν", "tr": "arḗn", "en": "lamb (gen. ἀρνός)", "pos": "noun", "forms": ["ἀρνός", "ἀρνί", "ἄρνα", "ἄρνες", "ἀρνῶν", "ἄρνας"], "ex": { "text": "Ὁ ἀρὴν ἐκ τοῦ ποταμοῦ πίνει.", "en": "The lamb drinks from the river." }, "verified": false },
+    { "id": "houtos", "text": "οὗτος", "tr": "hoûtos", "en": "this (one); he (αὕτη she, τοῦτο this thing)", "pos": "pron", "forms": ["αὕτη", "τοῦτο", "τούτου", "ταύτης", "τούτῳ", "ταύτῃ", "τοῦτον", "ταύτην", "οὗτοι", "αὗται", "ταῦτα", "τούτων", "τούτοις", "ταύταις", "τούτους", "ταύτας"], "ex": { "text": "Οὗτος ὁ μῦθος ἡδύς ἐστιν.", "en": "This story is sweet." }, "verified": false },
+    { "id": "ekeinos", "text": "ἐκεῖνος", "tr": "ekeînos", "en": "that (one); he", "pos": "pron", "forms": ["ἐκείνη", "ἐκεῖνο", "ἐκείνου", "ἐκείνης", "ἐκείνῳ", "ἐκείνῃ", "ἐκεῖνον", "ἐκείνην", "ἐκεῖνοι", "ἐκεῖναι", "ἐκεῖνα", "ἐκείνων"], "ex": { "text": "Ἐκείνη ἡ ναῦς μεγάλη ἐστίν.", "en": "That ship is big." }, "verified": false },
+    { "id": "hos", "text": "ὅς", "tr": "hós", "en": "who, which, that (relative: ὅς m., ἥ f., ὅ n.)", "pos": "pron", "forms": ["ἥ", "ὅ", "οὗ", "ἧς", "ᾧ", "ᾗ", "ὅν", "ἥν", "οἵ", "αἵ", "ἅ", "ὧν", "οἷς", "αἷς", "οὕς", "ἅς"], "cognates": { "la": "quī, quae, quod (same job)" }, "ex": { "text": "Ὁ ἀνὴρ ὃν ὁρᾷς ἰατρός ἐστιν.", "en": "The man whom you see is a doctor." }, "verified": false },
+    { "id": "gar", "text": "γάρ", "tr": "gár", "en": "for, because (second word in its clause)", "pos": "conj", "ex": { "text": "Καθεύδω· ἀσθενὴς γάρ εἰμι.", "en": "I'm sleeping, for I'm sick." }, "verified": false },
+    { "id": "phemi", "text": "φημί", "tr": "phēmí", "en": "say (ἔφη = he/she said)", "pos": "verb", "forms": ["φῄς", "φησί", "φησίν", "φαμέν", "φασί", "φασίν", "ἔφην", "ἔφη", "φάναι"], "cognates": { "la": "fārī, fābula, fāma (same root)", "en": "prophet ('one who speaks for'), euphemism" }, "ex": { "text": "«Χαῖρε», ἔφη ὁ λύκος.", "en": "\"Hello,\" said the wolf." }, "verified": false },
+    { "id": "pote", "text": "ποτέ", "tr": "poté", "en": "once, at some time; ever", "pos": "adv", "forms": ["ποτε"], "ex": { "text": "Λύκος ποτὲ ἐν τῷ ὄρει ᾤκει.", "en": "Once a wolf lived on the mountain." }, "verified": false },
+    { "id": "tote", "text": "τότε", "tr": "tóte", "en": "then, at that time", "pos": "adv", "ex": { "text": "Τότε ἐγὼ μικρὸς ἦν.", "en": "Back then I was small." }, "verified": false },
+    { "id": "epei", "text": "ἐπεί", "tr": "epeí", "en": "when, after; since, because", "pos": "conj", "ex": { "text": "Ἐπεὶ ἦλθεν ὁ ἰατρός, ἐχαίρομεν.", "en": "When the doctor came, we were glad." }, "verified": false },
+    { "id": "hote", "text": "ὅτε", "tr": "hóte", "en": "when (at the time when)", "pos": "conj", "ex": { "text": "Ὅτε παῖς ἦν, ἐν Ἀθήναις ᾤκουν.", "en": "When I was a child, I lived in Athens." }, "verified": false },
+    { "id": "hos2", "text": "ὡς", "tr": "hōs", "en": "as, like; how!; that; (with numbers) about", "pos": "adv", "ex": { "text": "Ὡς καλὴ ἡ θάλαττα!", "en": "How beautiful the sea is!" }, "verified": false },
+    { "id": "me", "text": "μή", "tr": "mḗ", "en": "not (in commands, wishes and conditions, and with infinitives)", "pos": "adv", "ex": { "text": "Μὴ τρέχε!", "en": "Don't run!" }, "verified": false },
+    { "id": "adikeo", "text": "ἀδικέω", "tr": "adikéō", "en": "wrong (someone), do injustice", "pos": "verb", "forms": ["ἀδικῶ", "ἀδικεῖς", "ἀδικεῖ", "ἀδικοῦσι", "ἀδικοῦσιν", "ἀδικεῖν", "ἠδίκει", "ἠδίκησα", "ἠδίκησε", "ἠδίκησεν"], "ex": { "text": "Οὐκ ἀδικῶ σε.", "en": "I'm not wronging you." }, "verified": false },
+    { "id": "dikaios", "text": "δίκαιος", "tr": "díkaios", "en": "just, fair (ἄδικος = unjust)", "pos": "adj", "forms": ["δικαία", "δίκαιον", "δικαίου", "δίκαιοι", "ἄδικος", "ἄδικον", "ἀδίκου", "ἄδικοι"], "ex": { "text": "Ὁ βασιλεὺς οὐ δίκαιός ἐστιν.", "en": "The king is not just." }, "verified": false },
+    { "id": "kakos", "text": "κακός", "tr": "kakós", "en": "bad, evil (κακῶς = badly)", "pos": "adj", "forms": ["κακή", "κακόν", "κακοῦ", "κακῷ", "κακοί", "κακαί", "κακά", "κακῶν", "κακοῖς", "κακούς", "κακῶς"], "cognates": { "en": "cacophony ('bad sound')" }, "ex": { "text": "Ὁ λύκος κακός ἐστιν.", "en": "The wolf is wicked." }, "verified": false },
+    { "id": "aitia", "text": "αἰτία", "tr": "aitíā", "en": "cause, reason; charge, blame", "pos": "noun", "forms": ["αἰτίας", "αἰτίᾳ", "αἰτίαν", "αἰτίαι"], "cognates": { "en": "etiology (aetiology), the cause of a disease" }, "ex": { "text": "Τίς ἡ αἰτία τῆς νόσου;", "en": "What is the cause of the disease?" }, "verified": false },
+    { "id": "rheo", "text": "ῥέω", "tr": "rhéō", "en": "flow", "pos": "verb", "forms": ["ῥεῖ", "ῥέουσι", "ῥέουσιν", "ῥεῖν", "ἔρρει", "ῥέων"], "cognates": { "en": "rheumatism; diarrhea ('flowing through'); rhythm" }, "ex": { "text": "Ὁ ποταμὸς εἰς τὴν θάλατταν ῥεῖ.", "en": "The river flows into the sea." }, "verified": false },
+    { "id": "prophasis", "text": "πρόφασις", "tr": "próphasis", "en": "pretext, excuse", "pos": "noun", "forms": ["προφάσεως", "προφάσει", "πρόφασιν"], "ex": { "text": "Πρόφασιν ζητεῖ.", "en": "He's looking for an excuse." }, "verified": false },
+    { "id": "deloo", "text": "δηλόω", "tr": "dēlóō", "en": "show, make clear (δηλοῖ = it shows)", "pos": "verb", "forms": ["δηλῶ", "δηλοῖς", "δηλοῖ", "δηλοῦσι", "δηλοῦσιν", "ἐδήλου", "ἐδήλωσε"], "ex": { "text": "Τί δηλοῖ ὁ μῦθος;", "en": "What does the fable show?" }, "verified": false },
+    { "id": "tholoo", "text": "θολόω", "tr": "tholóō", "en": "make muddy, stir up", "pos": "verb", "forms": ["θολῶ", "θολοῖς", "θολοῖ", "θολοῦσι", "ἐθόλου", "θολοῦντα"], "ex": { "text": "Σὺ τὸ ὕδωρ θολοῖς.", "en": "You are muddying the water." }, "verified": false },
+
+    { "id": "men", "text": "μέν", "tr": "mén", "en": "(marks the first of two contrasting items: μέν … δέ = on the one hand … on the other)", "pos": "conj", "ex": { "text": "Ὁ μὲν πατὴρ γέρων ἐστίν, ὁ δὲ υἱὸς νέος.", "en": "The father is old, the son young." }, "verified": false },
+    { "id": "oun", "text": "οὖν", "tr": "oûn", "en": "so, therefore, then (second word in its clause)", "pos": "conj", "ex": { "text": "Ὁ ἰατρὸς οὖν ἦλθεν.", "en": "So the doctor came." }, "verified": false },
+    { "id": "hama", "text": "ἅμα", "tr": "háma", "en": "at the same time; (+ dative) together with", "pos": "adv", "ex": { "text": "Ἅμα τρέχει καὶ λέγει.", "en": "He runs and talks at the same time." }, "verified": false },
+    { "id": "hate", "text": "ἅτε", "tr": "háte", "en": "since, inasmuch as (+ participle)", "pos": "conj", "ex": { "text": "Ἅτε νέος ὤν, ταχέως τρέχει.", "en": "Being young, he runs fast." }, "verified": false },
+    { "id": "tropos", "text": "τρόπος", "tr": "trópos", "en": "way, manner; character", "pos": "noun", "forms": ["τρόπου", "τρόπῳ", "τρόπον", "τρόποι"], "cognates": { "en": "trope, tropic ('turning'), psychotropic" }, "ex": { "text": "Τίνα τρόπον τοῦτο ποιεῖς;", "en": "In what way do you do this?" }, "verified": false },
+    { "id": "heorte", "text": "ἑορτή", "tr": "heortḗ", "en": "festival", "pos": "noun", "forms": ["ἑορτῆς", "ἑορτῇ", "ἑορτήν", "ἑορταί"], "ex": { "text": "Σήμερον ἑορτή ἐστιν.", "en": "Today is a festival." }, "verified": false },
+    { "id": "theaomai", "text": "θεάομαι", "tr": "theáomai", "en": "watch, gaze at (θέατρον = a place for watching)", "pos": "verb", "forms": ["θεῶμαι", "θεᾶται", "θεώμεθα", "θεῶνται", "θεᾶσθαι", "ἐθεᾶτο", "ἐθεασάμην", "ἐθεάσατο", "θεάσασθαι", "θεασάμενος"], "cognates": { "en": "theater, theory ('a looking at')" }, "ex": { "text": "Τὴν ἑορτὴν θεώμεθα.", "en": "We are watching the festival." }, "verified": false },
+    { "id": "proseuchomai", "text": "προσεύχομαι", "tr": "proseúkhomai", "en": "pray (to someone: + dative)", "pos": "verb", "forms": ["προσεύχεται", "προσευχόμεθα", "προσεύχονται", "προσεύχεσθαι", "προσηύξατο", "προσευξόμενος", "προσευχόμενος"], "ex": { "text": "Οἱ πολῖται τοῖς θεοῖς προσεύχονται.", "en": "The citizens pray to the gods." }, "verified": false },
+    { "id": "ago", "text": "ἄγω", "tr": "ágō", "en": "lead, bring; celebrate (a festival)", "pos": "verb", "forms": ["ἄγεις", "ἄγει", "ἄγομεν", "ἄγουσι", "ἄγουσιν", "ἄγειν", "ἄγε", "ἦγον", "ἦγε", "ἤγαγον", "ἤγαγε", "ἄγων", "ἄγοντες"], "cognates": { "la": "agō (same root)", "en": "pedagogue ('child-leader'), demagogue, synagogue" }, "ex": { "text": "Οἱ Ἀθηναῖοι τὴν ἑορτὴν ἄγουσιν.", "en": "The Athenians are celebrating the festival." }, "verified": false },
+    { "id": "arche", "text": "ἀρχή", "tr": "arkhḗ", "en": "beginning; rule, power; province", "pos": "noun", "forms": ["ἀρχῆς", "ἀρχῇ", "ἀρχήν", "ἀρχαί"], "cognates": { "en": "archaic, archetype; monarchy, anarchy" }, "ex": { "text": "Ἐν ἀρχῇ ἦν ὁ λόγος.", "en": "In the beginning was the Word." }, "verified": false },
+    { "id": "teleute", "text": "τελευτή", "tr": "teleutḗ", "en": "end; death", "pos": "noun", "forms": ["τελευτῆς", "τελευτῇ", "τελευτήν"], "ex": { "text": "Ἡ τελευτὴ τοῦ μύθου κακή ἐστιν.", "en": "The end of the story is sad." }, "verified": false },
+    { "id": "pareimi", "text": "πάρειμι", "tr": "páreimi", "en": "be present, be here", "pos": "verb", "forms": ["πάρει", "πάρεστι", "πάρεστιν", "πάρεσμεν", "πάρεισι", "πάρεισιν", "παρεῖναι", "παρῆν", "παρών", "παροῦσα", "παρόντες"], "ex": { "text": "Ὁ ἰατρὸς πάρεστιν.", "en": "The doctor is here." }, "verified": false },
+    { "id": "amphoteroi", "text": "ἀμφότεροι", "tr": "amphóteroi", "en": "both", "pos": "adj", "forms": ["ἀμφότερος", "ἀμφοτέρα", "ἀμφότερα", "ἀμφοτέρων", "ἀμφοτέροις", "ἀμφοτέρους", "ἀμφοτέρω"], "cognates": { "en": "amphibian ('living both ways'), amphitheater" }, "ex": { "text": "Ἀμφότεροι οἱ ἀδελφοὶ πάρεισιν.", "en": "Both brothers are here." }, "verified": false },
+    { "id": "hypopteuo", "text": "ὑποπτεύω", "tr": "hypopteúō", "en": "suspect", "pos": "verb", "forms": ["ὑποπτεύει", "ὑποπτεύουσι", "ὑπώπτευε", "ὑπώπτευεν", "ὑπώπτευσα"], "ex": { "text": "Ὁ ἀρὴν τὸν λύκον ὑποπτεύει.", "en": "The lamb suspects the wolf." }, "verified": false },
+    { "id": "zoe", "text": "ζωή", "tr": "zōḗ", "en": "life", "pos": "noun", "forms": ["ζωῆς", "ζωῇ", "ζωήν"], "cognates": { "en": "zoology, Zoe; zoo" }, "ex": { "text": "Ἡ ζωὴ καλή ἐστιν.", "en": "Life is beautiful." }, "verified": false },
+    { "id": "skotia", "text": "σκοτία", "tr": "skotíā", "en": "darkness (Attic usually σκότος)", "pos": "noun", "forms": ["σκοτίας", "σκοτίᾳ", "σκοτίαν", "σκότος", "σκότου", "σκότῳ"], "cognates": { "en": "scotoma (a blind spot in the visual field)" }, "ex": { "text": "Ἐν τῇ σκοτίᾳ οὐδὲν ὁρῶμεν.", "en": "In the dark we see nothing." }, "verified": false },
+    { "id": "choris", "text": "χωρίς", "tr": "khōrís", "en": "without, apart from (+ genitive)", "pos": "prep", "ex": { "text": "Χωρὶς ὕδατος οὐ ζῶμεν.", "en": "Without water we don't live." }, "verified": false },
+    { "id": "oude", "text": "οὐδέ", "tr": "oudé", "en": "and not, nor; not even (οὐδὲ ἕν = not even one; οὐδείς, οὐδέν = no one, nothing)", "pos": "adv", "forms": ["οὐδ", "οὐδέν", "οὐδείς", "οὐδεμία", "οὐδενός"], "ex": { "text": "Οὐδὲ ἓν βιβλίον ἔχω.", "en": "I don't have even one book." }, "verified": false }
+  ],
+  "grammar": [
+    { "id": "middle", "title": "The middle voice: -ομαι, -ῃ, -εται…", "body": [
+      "Besides active and passive, Greek has a **middle** voice: the subject acts on or for itself (λούομαι 'I wash myself, bathe'). Many everyday verbs exist only in the middle but mean something ordinary: **βούλομαι** I want, **ἔρχομαι** I come, **γίγνομαι** I become, **δύναμαι** I can, **ἀποκρίνομαι** I answer. Latin's deponents (sequor, loquor) are the same idea.",
+      "Endings: **-ομαι · -ῃ (-ει) · -εται · -όμεθα · -εσθε · -ονται**; infinitive **-εσθαι**. Compare Latin -or, -ris, -tur, -mur, -minī, -ntur."
+    ], "examples": [
+      { "text": "Ὁ ἰατρὸς ἔρχεται.", "en": "The doctor is coming." },
+      { "text": "Τί βούλεσθε;", "en": "What do you (pl.) want?" }
+    ], "drills": [
+      { "id": "mi1", "prompt": "Say: I want water.", "answer": "Ὕδωρ βούλομαι." },
+      { "id": "mi2", "prompt": "Say: The doctor is coming.", "answer": "Ὁ ἰατρὸς ἔρχεται." },
+      { "id": "mi3", "prompt": "Ask several people: What do you want?", "answer": "Τί βούλεσθε;" },
+      { "id": "mi4", "prompt": "Say: The children are coming.", "answer": "Οἱ παῖδες ἔρχονται." }
+    ], "verified": false },
+    { "id": "infinitive", "title": "Infinitives: βούλομαι πίνειν, δεῖ καθεύδειν", "body": [
+      "Present infinitive: active **-ειν** (λέγειν 'to speak'), middle **-εσθαι** (ἔρχεσθαι 'to come'); contract verbs **-εῖν / -ᾶν** (ποιεῖν, ὁρᾶν); 'to be' **εἶναι**.",
+      "Use them after βούλομαι, δύναμαι, **δεῖ** ('one must') and δοκεῖ: **δεῖ πολὺ ὕδωρ πίνειν** 'you must drink a lot of water'. Exactly like Latin volō bibere, possum dīcere."
+    ], "examples": [
+      { "text": "Οὐ δύναμαι καθεύδειν.", "en": "I can't sleep." },
+      { "text": "Δεῖ πολὺ ὕδωρ πίνειν.", "en": "You must drink a lot of water." }
+    ], "drills": [
+      { "id": "in1", "prompt": "Say: I want to sleep.", "answer": "Καθεύδειν βούλομαι." },
+      { "id": "in2", "prompt": "Say: I can't eat.", "answer": "Οὐ δύναμαι ἐσθίειν." },
+      { "id": "in3", "prompt": "Ask: What must I do?", "answer": "Τί δεῖ με ποιεῖν;" },
+      { "id": "in4", "prompt": "Say: I want to be healthy.", "answer": "Ὑγιὴς εἶναι βούλομαι." }
+    ], "verified": false },
+    { "id": "aorist", "title": "The aorist: the simple past (ἔγραψα)", "concept": "aspect", "body": [
+      "The **aorist** reports an event as a whole: **ἔγραψα** 'I wrote', **ἠγόρασα** 'I bought'. The **imperfect** paints an ongoing or repeated past: **ἔγραφον** 'I was writing, used to write'. Latin's perfect vs imperfect (scrīpsī / scrībēbam) is the same contrast, called aspect on the shared concept page.",
+      "Signs of the past: an **augment** ἐ- in front (γράφω → **ἔ**γραφον; a first vowel lengthens: ἀκούω → **ἤ**κουσα), and for most verbs **-σα** endings: ἔγραψ**α**, ἔγραψ**ας**, ἔγραψ**ε(ν)**, ἐγράψ**αμεν**, ἐγράψ**ατε**, ἔγραψ**αν**."
+    ], "examples": [
+      { "text": "Χθὲς ἐπιστολὴν ἔγραψα.", "en": "Yesterday I wrote a letter." },
+      { "text": "Ὁ φίλος ἐκάθευδεν, ὅτε ἦλθον.", "en": "My friend was sleeping when I came." }
+    ], "drills": [
+      { "id": "ao1", "prompt": "Say: Yesterday I wrote a letter.", "answer": "Χθὲς ἐπιστολὴν ἔγραψα." },
+      { "id": "ao2", "prompt": "Say: I bought bread.", "answer": "Ἄρτον ἠγόρασα." },
+      { "id": "ao3", "prompt": "Say: I heard many words.", "answer": "Πολλοὺς λόγους ἤκουσα." },
+      { "id": "ao4", "prompt": "Say (imperfect): The dog was sleeping.", "answer": "Ὁ κύων ἐκάθευδεν." }
+    ], "verified": false },
+    { "id": "aorist2", "title": "Second aorists: learn them like irregular verbs", "body": [
+      "Many everyday verbs form the aorist from a different stem: **ὁράω → εἶδον** I saw, **ἔρχομαι → ἦλθον** I came, **λέγω → εἶπον** I said, **λαμβάνω → ἔλαβον** I took, **ἐσθίω → ἔφαγον** I ate, **πίνω → ἔπιον** I drank, **φεύγω → ἔφυγον** I fled, **εὑρίσκω → ηὗρον** I found, **βαίνω → ἔβην** I went.",
+      "Spanish does the same (ir → fui, ver → vi), and so does English (go → went). They're the most frequent verbs, so reading drills them fast. Caesar's vēnī, vīdī, vīcī was quoted in Greek as **ἦλθον, εἶδον, ἐνίκησα**."
+    ], "examples": [
+      { "text": "Εἶδον τὸν φίλον καὶ εἶπον «χαῖρε».", "en": "I saw my friend and said \"hello\"." },
+      { "text": "Ἦλθον, εἶδον, ἐνίκησα.", "en": "I came, I saw, I conquered." }
+    ], "drills": [
+      { "id": "a2a", "prompt": "Say: I saw my friend.", "answer": "Τὸν φίλον μου εἶδον." },
+      { "id": "a2b", "prompt": "Say: I came home.", "answer": "Οἴκαδε ἦλθον." },
+      { "id": "a2c", "prompt": "Say: I came, I saw, I conquered.", "answer": "Ἦλθον, εἶδον, ἐνίκησα." },
+      { "id": "a2d", "prompt": "Say: The dog ran away.", "answer": "Ὁ κύων ἔφυγεν." }
+    ], "verified": false },
+    { "id": "demonstr", "title": "οὗτος 'this', ἐκεῖνος 'that', ὅς 'who / which'", "body": [
+      "**οὗτος, αὕτη, τοῦτο** 'this'; **ἐκεῖνος, ἐκείνη, ἐκεῖνο** 'that'. They stand *outside* the article group: **οὗτος ὁ ἀνήρ** 'this man', **ἡ ναῦς ἐκείνη** 'that ship'. On their own they often just mean 'he, she': **οὗτος ἔφη** 'he said'.",
+      "The relative pronoun **ὅς, ἥ, ὅ** 'who, which' looks like the article with an accent and a rough breathing: **ὁ ἀνὴρ ὃν ὁρᾷς** 'the man whom you see'. Its case comes from its own clause, as with Latin quī, quae, quod."
+    ], "examples": [
+      { "text": "Οὗτος ὁ μῦθος ἡδύς ἐστιν.", "en": "This story is sweet." },
+      { "text": "Ὁ ἀνὴρ ὃν ὁρᾷς ἰατρός ἐστιν.", "en": "The man whom you see is a doctor." }
+    ], "drills": [
+      { "id": "de1", "prompt": "Say: this book", "answer": "τοῦτο τὸ βιβλίον" },
+      { "id": "de2", "prompt": "Say: that ship", "answer": "ἐκείνη ἡ ναῦς" },
+      { "id": "de3", "prompt": "Say: the man whom I see", "answer": "ὁ ἀνὴρ ὃν ὁρῶ" },
+      { "id": "de4", "prompt": "Say: This story is sweet.", "answer": "Οὗτος ὁ μῦθος ἡδύς ἐστιν." }
+    ], "verified": false },
+    { "id": "participle", "title": "Participles: τρέχων 'running', πίνοντα 'drinking'", "concept": "participle", "body": [
+      "A participle is a verb-adjective, like Latin amāns. Present active: **-ων, -ουσα, -ον** (gen. **-οντος**): **ὁ παῖς τρέχων** 'the boy (while) running'; **ἄρνα πίνοντα** 'a lamb drinking'. Middle: **-όμενος, -ομένη, -όμενον**: **βουλόμενος** 'wanting'.",
+      "Greek uses participles where English says 'when', 'because', 'while' or 'who': **ὁ λύκος, ἐσθίειν βουλόμενος, αἰτίαν ἐζήτει** 'the wolf, *because he wanted* to eat, looked for a reason'. Reading participles is the biggest single step toward reading Greek, and it pays off in Latin too."
+    ], "examples": [
+      { "text": "Εἶδον τὸν παῖδα τρέχοντα.", "en": "I saw the boy running." },
+      { "text": "Ὁ λύκος, ἐσθίειν βουλόμενος, αἰτίαν ἐζήτει.", "en": "The wolf, wanting to eat, looked for a reason." }
+    ], "drills": [
+      { "id": "pt1", "prompt": "Say: the running dog", "answer": "ὁ τρέχων κύων" },
+      { "id": "pt2", "prompt": "Say: I saw the lamb drinking.", "answer": "Τὸν ἄρνα εἶδον πίνοντα." },
+      { "id": "pt3", "prompt": "Say: Wanting to sleep, I went home.", "answer": "Καθεύδειν βουλόμενος οἴκαδε ἦλθον." },
+      { "id": "pt4", "prompt": "Say: the children playing in the garden", "answer": "οἱ παῖδες οἱ ἐν τῷ κήπῳ παίζοντες" }
+    ], "verified": false },
+    { "id": "men-de", "title": "μέν … δέ, and the little words (particles)", "body": [
+      "Greek loves to set things side by side: **ὁ μὲν πρεσβύτερος, ὁ δὲ νεώτερος** 'the one older, the other younger'. **μέν** marks the first item, **δέ** the second; English usually needs no word at all.",
+      "Particles you now know: **γάρ** for, **οὖν** so, **τε … καί** both … and, **ἅμα** at the same time. They stand second in their clause and show how sentences connect: when a long sentence confuses you, find the particles first."
+    ], "examples": [
+      { "text": "Ὁ μὲν πατὴρ γέρων ἐστίν, ὁ δὲ υἱὸς νέος.", "en": "The father is old, the son young." },
+      { "text": "Οἱ μὲν παίζουσιν, οἱ δὲ μανθάνουσιν.", "en": "Some play, others learn." }
+    ], "drills": [
+      { "id": "md1", "prompt": "Say with μέν … δέ: The father is old, the son young.", "answer": "Ὁ μὲν πατὴρ γέρων, ὁ δὲ υἱὸς νέος." },
+      { "id": "md2", "prompt": "Say: Some play, others learn.", "answer": "Οἱ μὲν παίζουσιν, οἱ δὲ μανθάνουσιν." },
+      { "id": "md3", "prompt": "Say: So I came home.", "answer": "Οἴκαδε οὖν ἦλθον." },
+      { "id": "md4", "prompt": "Say: I'm sleeping, for I am sick.", "answer": "Καθεύδω· ἀσθενὴς γάρ εἰμι." }
+    ], "verified": false },
+    { "id": "aorpart", "title": "Aorist participles: λαβών 'having taken', ἐλθών 'having come'", "concept": "participle", "body": [
+      "The aorist participle reports an action completed before the main verb: **λαβὼν τὸ βιβλίον ἀνέβη** 'having taken the book, he went up', i.e. 'he took the book and went up'. First aorists: **-σας, -σασα, -σαν** (ἀκούσας 'having heard'); second aorists put -ών on the aorist stem: **λαβών, ἐλθών, ἰδών, εὑρών**.",
+      "Latin's perfect participle and ablative absolute do similar work; Greek simply has active participles in every tense. In Xenophon: **ἀναβαίνει ὁ Κῦρος λαβὼν Τισσαφέρνην** 'Cyrus goes up, taking Tissaphernes with him'."
+    ], "examples": [
+      { "text": "Λαβὼν τὸ βιβλίον εἰς τὴν σχολὴν ἦλθον.", "en": "I took the book and went to school." },
+      { "text": "Ἰδὼν τὸν λύκον ὁ ἀρὴν ἔφυγεν.", "en": "Seeing the wolf, the lamb ran away." }
+    ], "drills": [
+      { "id": "ap1", "prompt": "Say: Having seen the wolf, the lamb fled.", "answer": "Ἰδὼν τὸν λύκον ὁ ἀρὴν ἔφυγεν." },
+      { "id": "ap2", "prompt": "Say: Having taken the book, I went home.", "answer": "Λαβὼν τὸ βιβλίον οἴκαδε ἦλθον." },
+      { "id": "ap3", "prompt": "Say (one word): having come", "answer": "ἐλθών" },
+      { "id": "ap4", "prompt": "Say: Having heard the story, the children slept.", "answer": "Ἀκούσαντες τὸν μῦθον οἱ παῖδες ἐκάθευδον." }
+    ], "verified": false }
+  ],
+  "texts": [
+    { "id": "d04", "title": "Παρὰ τῷ ἰατρῷ", "level": "U9", "kind": "dialogue", "names": ["Βένου"], "lines": [
+      { "sp": "Ἰατρός", "text": "Χαῖρε. Τί πάσχεις;", "en": "Hello. What's wrong?" },
+      { "sp": "Βένου", "text": "Τὴν κεφαλὴν ἀλγῶ, καὶ πυρετὸν ἔχω.", "en": "My head hurts, and I have a fever." },
+      { "sp": "Ἰατρός", "text": "Πόσον χρόνον;", "en": "For how long?" },
+      { "sp": "Βένου", "text": "Τρεῖς ἡμέρας. Οὐ δύναμαι καθεύδειν.", "en": "Three days. I can't sleep." },
+      { "sp": "Ἰατρός", "text": "Δεῖξόν μοι τὴν χεῖρα. Ὁ πυρετὸς μέγας ἐστίν.", "en": "Show me your hand. The fever is high." },
+      { "sp": "Βένου", "text": "Ἆρα νόσον χαλεπὴν ἔχω;", "en": "Do I have a serious illness?" },
+      { "sp": "Ἰατρός", "text": "Οὔ· οὐ χαλεπὴ ἡ νόσος. Τοῦτο τὸ φάρμακον λάμβανε, καὶ δεῖ πολὺ ὕδωρ πίνειν.", "en": "No, the illness isn't serious. Take this medicine, and you must drink a lot of water." },
+      { "sp": "Βένου", "text": "Τί δεῖ με ποιεῖν;", "en": "What must I do?" },
+      { "sp": "Ἰατρός", "text": "Καθεῦδε πολύ, καὶ ταχέως ὑγιὴς ἔσῃ.", "en": "Sleep a lot, and you'll soon be healthy." },
+      { "sp": "Βένου", "text": "Χάριν ἔχω, ὦ ἰατρέ.", "en": "Thank you, doctor." }
+    ], "verified": false },
+    { "id": "r06", "title": "Χθές", "level": "U10", "kind": "reading", "lines": [
+      { "text": "Χθὲς πρῴ ἐκ τῆς οἰκίας ἐξῆλθον καὶ εἰς τὴν ἀγορὰν ἔβην.", "en": "Yesterday early in the morning I went out of the house and walked to the agora." },
+      { "text": "Πρῶτον ἄρτον ἠγόρασα, ἔπειτα τὸν φίλον μου εἶδον.", "en": "First I bought bread, then I saw my friend." },
+      { "text": "Ὁ φίλος ἐν τῇ ἀγορᾷ ἐκάθευδεν· «Ἐγείρου!» εἶπον.", "en": "My friend was sleeping in the agora. \"Wake up!\" I said." },
+      { "text": "Ὕστερον εἰς τὴν σχολὴν ἀνέβην καὶ πολλοὺς λόγους ἤκουσα.", "en": "Later I went up to school and heard many talks." },
+      { "text": "Ἐν τῇ ὁδῷ βιβλίον καλὸν ηὗρον· «Εὕρηκα!» εἶπον.", "en": "On the road I found a beautiful book. \"I've found it!\" I said." },
+      { "text": "Ἑσπέρας ἤδη οἴκαδε ἦλθον, καὶ ἡ μήτηρ «Πόθεν;» ἠρώτησεν.", "en": "In the evening I finally came home, and my mother asked, \"Where from?\"" },
+      { "text": "Τέλος ἐκάθευδον· αὔριον πάλιν εἰς τὴν σχολὴν ἔρχομαι.", "en": "Finally I slept; tomorrow I go to school again." }
+    ], "verified": false },
+    { "id": "a00", "title": "Ἱπποκράτης, Ἀφορισμοί 1.1", "level": "U10", "kind": "authentic", "source": "Hippocrates, Aphorisms 1.1 (Ionic Greek, public domain): the most famous sentence in medicine, known in Latin as 'Ars longa, vita brevis'. Typed from the standard text; check against Perseus.", "lines": [
+      { "text": "Ὁ βίος βραχύς, ἡ δὲ τέχνη μακρή, ὁ δὲ καιρὸς ὀξύς, ἡ δὲ πεῖρα σφαλερή, ἡ δὲ κρίσις χαλεπή.", "en": "Life is short, the art long, opportunity fleeting, experience treacherous, judgement difficult." }
+    ], "verified": false },
+    { "id": "r07", "title": "Ὁ λύκος καὶ ὁ ἀρήν (after Aesop)", "level": "U11", "kind": "reading", "source": "Simplified retelling of Aesop's fable 'The Wolf and the Lamb' (Perry 155; the Greek original is public domain), by Claude.", "lines": [
+      { "text": "Λύκος ποτὲ ἄρνα εἶδεν ἐκ ποταμοῦ πίνοντα.", "en": "Once a wolf saw a lamb drinking from a river." },
+      { "text": "Ὁ λύκος, ἐσθίειν τὸν ἄρνα βουλόμενος, αἰτίαν ἐζήτει.", "en": "The wolf, wanting to eat the lamb, looked for a reason." },
+      { "text": "«Σύ», ἔφη, «τὸ ὕδωρ μου θολοῖς.»", "en": "\"You,\" he said, \"are muddying my water.\"" },
+      { "text": "Ὁ δὲ ἀρὴν ἀπεκρίνατο· «Πῶς; Τὸ γὰρ ὕδωρ ἀπὸ σοῦ πρὸς ἐμὲ ῥεῖ.»", "en": "The lamb answered: \"How? The water flows from you to me.\"" },
+      { "text": "Ὁ λύκος πάλιν ἔφη· «Ἀλλὰ πρὸ ἑνὸς ἔτους τὸν πατέρα μου κακῶς ἔλεγες.»", "en": "The wolf said again: \"But a year ago you insulted my father.\"" },
+      { "text": "Ὁ ἀρὴν εἶπεν· «Ἀλλ᾽ οὔπω τότε ἐγενόμην.»", "en": "The lamb said: \"But I wasn't even born then.\"" },
+      { "text": "Ὁ δὲ λύκος· «Σὺ μὲν εὖ λέγεις, ἐγὼ δὲ ἐσθίειν βούλομαι.» Καὶ τὸν ἄρνα κατέφαγεν.", "en": "And the wolf: \"You argue well, but I want to eat.\" And he devoured the lamb." },
+      { "text": "Ὁ μῦθος δηλοῖ ὅτι οἱ κακοὶ ἀεὶ πρόφασιν εὑρίσκουσιν.", "en": "The fable shows that the wicked always find an excuse." }
+    ], "verified": false },
+    { "id": "a01", "title": "Ξενοφῶν, Κύρου Ἀνάβασις 1.1.1–2", "level": "U12", "kind": "authentic", "names": ["Δαρείου", "Παρυσάτιδος", "Ἀρταξέρξης", "Κῦρος", "Κῦρον", "Δαρεῖος", "Καστωλοῦ", "Τισσαφέρνην", "Ξενίαν", "Παρράσιον"], "source": "Xenophon, Anabasis 1.1.1–2 (public domain): the opening of the classic first Attic author. Typed from the standard text; check against Perseus.", "lines": [
+      { "text": "Δαρείου καὶ Παρυσάτιδος γίγνονται παῖδες δύο, πρεσβύτερος μὲν Ἀρταξέρξης, νεώτερος δὲ Κῦρος.", "en": "Darius and Parysatis had two sons, the elder Artaxerxes, the younger Cyrus." },
+      { "text": "ἐπεὶ δὲ ἠσθένει Δαρεῖος καὶ ὑπώπτευε τελευτὴν τοῦ βίου, ἐβούλετο τὼ παῖδε ἀμφοτέρω παρεῖναι.", "en": "When Darius was ill and suspected the end of his life was near, he wanted both his sons to be with him." },
+      { "text": "ὁ μὲν οὖν πρεσβύτερος παρὼν ἐτύγχανε· Κῦρον δὲ μεταπέμπεται ἀπὸ τῆς ἀρχῆς ἧς αὐτὸν σατράπην ἐποίησε, καὶ στρατηγὸν δὲ αὐτὸν ἀπέδειξε πάντων ὅσοι εἰς Καστωλοῦ πεδίον ἀθροίζονται.", "en": "The elder happened to be there already; Cyrus he sent for from the province he had made him satrap of, and he had also appointed him general of all the troops who muster in the plain of Castolus." },
+      { "text": "ἀναβαίνει οὖν ὁ Κῦρος λαβὼν Τισσαφέρνην ὡς φίλον, καὶ τῶν Ἑλλήνων ἔχων ὁπλίτας ἀνέβη τριακοσίους, ἄρχοντα δὲ αὐτῶν Ξενίαν Παρράσιον.", "en": "So Cyrus went up, taking Tissaphernes as a friend, and he went up with three hundred Greek hoplites, commanded by Xenias of Parrhasia." }
+    ], "verified": false },
+    { "id": "a02", "title": "Πλάτων, Πολιτεία 327a", "level": "U12", "kind": "authentic", "names": ["Πειραιᾶ", "Γλαύκωνος", "Ἀρίστωνος"], "source": "Plato, Republic 327a (public domain): the opening sentence. Typed from the standard text; check against Perseus.", "lines": [
+      { "text": "Κατέβην χθὲς εἰς Πειραιᾶ μετὰ Γλαύκωνος τοῦ Ἀρίστωνος προσευξόμενός τε τῇ θεῷ καὶ ἅμα τὴν ἑορτὴν βουλόμενος θεάσασθαι τίνα τρόπον ποιήσουσιν ἅτε νῦν πρῶτον ἄγοντες.", "en": "I went down yesterday to the Piraeus with Glaucon, son of Ariston, to pray to the goddess, and also because I wanted to see how they would hold the festival, since they were celebrating it for the first time." }
+    ], "verified": false },
+    { "id": "a03", "title": "Κατὰ Ἰωάννην 1:1–5", "level": "U12", "kind": "authentic", "source": "Gospel of John 1:1–5 (public domain). Koine Greek, about four centuries after Plato, and very readable once you know Attic. Typed from the standard text.", "lines": [
+      { "text": "Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος.", "en": "In the beginning was the Word, and the Word was with God, and the Word was God." },
+      { "text": "οὗτος ἦν ἐν ἀρχῇ πρὸς τὸν θεόν.", "en": "He was in the beginning with God." },
+      { "text": "πάντα δι᾽ αὐτοῦ ἐγένετο, καὶ χωρὶς αὐτοῦ ἐγένετο οὐδὲ ἓν ὃ γέγονεν.", "en": "All things came into being through him, and without him not one thing came into being that has come into being." },
+      { "text": "ἐν αὐτῷ ζωὴ ἦν, καὶ ἡ ζωὴ ἦν τὸ φῶς τῶν ἀνθρώπων·", "en": "In him was life, and the life was the light of men;" },
+      { "text": "καὶ τὸ φῶς ἐν τῇ σκοτίᾳ φαίνει, καὶ ἡ σκοτία αὐτὸ οὐ κατέλαβεν.", "en": "and the light shines in the darkness, and the darkness has not overcome it." }
+    ], "verified": false }
+  ]
+}

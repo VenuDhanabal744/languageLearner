@@ -63,7 +63,7 @@ export function SettingsScreen() {
       <button class="btn" onClick={() => nav({ name: 'languages' })}>Choose active / maintenance / queued</button>
 
       <h2>Study</h2>
-      <label class="check"><input type="checkbox" checked={s.vowels} onChange={e => set({ vowels: (e.target as HTMLInputElement).checked })} /> Show vowel marks (harakat / niqqud)</label>
+      <label class="check"><input type="checkbox" checked={s.vowels} onChange={e => set({ vowels: (e.target as HTMLInputElement).checked })} /> Show vowel marks (harakat, niqqud, Latin macrons, Greek accents)</label>
       <label>Transliteration <select value={s.translit} onChange={e => set({ translit: (e.target as HTMLSelectElement).value as any })}>
         <option value="auto">Fade out after the script course</option><option value="always">Always</option><option value="never">Never</option></select></label>
       <label>Target retention: {Math.round(s.retention * 100)}% <input type="range" min="0.8" max="0.95" step="0.01" value={s.retention} onChange={e => set({ retention: Number((e.target as HTMLInputElement).value) })} /></label>

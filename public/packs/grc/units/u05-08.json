@@ -1,0 +1,244 @@
+{
+  "units": [
+    { "id": "u05", "title": "5 · Ἐν τῷ κήπῳ", "goal": "Say where things are and where they go: prepositions and the dative.", "items": [
+      "word:kepos", "word:agros", "word:hodos", "word:dendron", "word:hippos", "word:lithos", "grammar:preps", "word:eis", "word:ek", "word:apo", "word:pros", "word:syn", "word:meta",
+      "word:hypo", "grammar:dative", "word:peri", "word:para", "word:dia", "word:epi", "word:pro", "word:anti", "word:hyper", "word:phero", "word:makros", "text:r03" ] },
+    { "id": "u06", "title": "6 · Δῶρα", "goal": "Say who gives what to whom; shop in the agora; where adjectives go.", "items": [
+      "word:didomi", "word:doron", "word:epistole", "word:biblion", "word:artos", "word:oinos", "grammar:indirect", "word:hydor", "word:melon", "word:argyrion", "word:chrysos", "word:pempo",
+      "word:deiknymi", "grammar:attributive", "word:chairo", "word:lambano", "word:theos", "word:doulos", "word:hedys", "word:agora", "word:agorazo", "word:posos", "text:r04" ] },
+    { "id": "u07", "title": "7 · Ἐν τῇ σχολῇ", "goal": "Classroom Greek: commands, questions, and verbs in -άω / -έω.", "items": [
+      "word:schole", "word:thyra", "word:anoigo", "word:kleio", "word:sigao", "grammar:imperative", "word:horao", "word:oida", "word:erotao", "word:apokrinomai", "word:timao", "word:zeteo",
+      "grammar:contract", "word:gignosko", "word:logos", "word:palin", "word:bradeos", "word:tacheos", "word:kalos2", "word:chalepos", "word:rhadios", "word:gramma", "word:seautou", "text:d03" ] },
+    { "id": "u08", "title": "8 · Ἡ πόλις", "goal": "Describe a city, day and night; third-declension nouns.", "items": [
+      "word:polis", "word:polites", "word:basileus", "grammar:decl3", "word:nyx", "word:hemera", "word:helios", "word:phos", "word:naus", "word:oros", "word:stratiotes", "word:strategos",
+      "word:polemos", "word:eirene", "grammar:neutpl", "word:chronos", "word:etos", "word:teichos", "word:pas", "word:aster", "word:ouranos", "word:selene", "word:phaino", "text:r05" ] }
+  ],
+  "words": [
+    { "id": "kepos", "text": "κῆπος", "tr": "kêpos", "en": "garden", "pos": "noun", "forms": ["κήπου", "κήπῳ", "κῆπον", "κῆποι", "κήπων", "κήποις"], "ex": { "text": "Ἐν τῷ κήπῳ πολλὰ δένδρα ἐστίν.", "en": "There are many trees in the garden." }, "verified": false },
+    { "id": "agros", "text": "ἀγρός", "tr": "agrós", "en": "field; the countryside", "pos": "noun", "forms": ["ἀγροῦ", "ἀγρῷ", "ἀγρόν", "ἀγροί", "ἀγρῶν", "ἀγρούς"], "cognates": { "la": "ager (the same word)", "en": "agriculture (via Latin ager)" }, "ex": { "text": "Ὁ πατὴρ ἐν τῷ ἀγρῷ ἐστιν.", "en": "Father is in the field." }, "verified": false },
+    { "id": "hodos", "text": "ὁδός", "tr": "hodós", "en": "road, way (feminine)", "pos": "noun", "forms": ["ὁδοῦ", "ὁδῷ", "ὁδόν", "ὁδοί", "ὁδῶν", "ὁδούς"], "cognates": { "en": "exodus ('way out'), method, odometer" }, "ex": { "text": "Ἡ ὁδὸς ἐκ τῆς πόλεως εἰς τὸν ἀγρὸν φέρει.", "en": "The road leads from the city into the countryside." }, "verified": false },
+    { "id": "dendron", "text": "δένδρον", "tr": "déndron", "en": "tree", "pos": "noun", "forms": ["δένδρου", "δένδρῳ", "δένδρα", "δένδρων", "δένδροις"], "cognates": { "en": "rhododendron ('rose tree'), dendrite (the branches of a nerve cell)" }, "ex": { "text": "Ὑπὸ τῷ δένδρῳ ὁ κύων καθεύδει.", "en": "The dog sleeps under the tree." }, "verified": false },
+    { "id": "hippos", "text": "ἵππος", "tr": "híppos", "en": "horse", "pos": "noun", "forms": ["ἵππου", "ἵππῳ", "ἵππον", "ἵπποι", "ἵππων", "ἵπποις", "ἵππους"], "cognates": { "la": "equus (the same Indo-European word)", "en": "hippopotamus, Philip ('horse-lover'), hippocampus" }, "ex": { "text": "Ὁ ἵππος ἐν τῷ ἀγρῷ τρέχει.", "en": "The horse runs in the field." }, "verified": false },
+    { "id": "lithos", "text": "λίθος", "tr": "líthos", "en": "stone", "pos": "noun", "forms": ["λίθου", "λίθῳ", "λίθον", "λίθοι", "λίθων", "λίθοις", "λίθους"], "cognates": { "en": "monolith, lithium; nephrolithiasis (kidney stones)" }, "ex": { "text": "Ἐν τῇ ὁδῷ πολλοὶ λίθοι εἰσίν.", "en": "There are many stones on the road." }, "verified": false },
+    { "id": "eis", "text": "εἰς", "tr": "eis", "en": "into, to (+ accusative)", "pos": "prep", "ex": { "text": "Ὁ Νικίας εἰς τὸν κῆπον τρέχει.", "en": "Nicias runs into the garden." }, "verified": false },
+    { "id": "ek", "text": "ἐκ", "tr": "ek", "en": "out of, from (+ genitive; ἐξ before a vowel)", "pos": "prep", "forms": ["ἐξ"], "cognates": { "la": "ex", "en": "exodus, ecstasy, ectopic" }, "ex": { "text": "Ὁ κύων ἐκ τῆς οἰκίας τρέχει.", "en": "The dog runs out of the house." }, "verified": false },
+    { "id": "apo", "text": "ἀπό", "tr": "apó", "en": "away from (+ genitive)", "pos": "prep", "forms": ["ἀπ", "ἀφ"], "cognates": { "la": "ab", "en": "apostle ('one sent away'), apoptosis" }, "ex": { "text": "Ὁ πατὴρ ἀπὸ τοῦ ἀγροῦ ἔρχεται.", "en": "Father is coming from the field." }, "verified": false },
+    { "id": "pros", "text": "πρός", "tr": "prós", "en": "toward, to (+ accusative); at, near (+ dative)", "pos": "prep", "cognates": { "en": "prosthesis, prosody" }, "ex": { "text": "Ὁ παῖς πρὸς τὴν μητέρα τρέχει.", "en": "The child runs toward his mother." }, "verified": false },
+    { "id": "syn", "text": "σύν", "tr": "sýn", "en": "with, together with (+ dative)", "pos": "prep", "cognates": { "en": "synthesis, sympathy, synapse, syndrome ('running together')" }, "ex": { "text": "Σὺν τῷ ἀδελφῷ παίζω.", "en": "I'm playing with my brother." }, "verified": false },
+    { "id": "meta", "text": "μετά", "tr": "metá", "en": "with (+ genitive); after (+ accusative)", "pos": "prep", "forms": ["μετ", "μεθ"], "cognates": { "en": "metaphysics ('after the Physics'), metabolism, metastasis" }, "ex": { "text": "Μετὰ τοῦ φίλου ἐν τῷ κήπῳ παίζω.", "en": "I play in the garden with my friend." }, "verified": false },
+    { "id": "hypo", "text": "ὑπό", "tr": "hypó", "en": "under (+ dative or accusative); by (+ genitive, with passive verbs)", "pos": "prep", "forms": ["ὑπ", "ὑφ"], "cognates": { "la": "sub (related)", "en": "hypodermic, hypothermia, hypothesis" }, "ex": { "text": "Ὑπὸ τῷ λίθῳ μικρὸν δῶρόν ἐστιν.", "en": "Under the stone there is a small gift." }, "verified": false },
+    { "id": "peri", "text": "περί", "tr": "perí", "en": "about, concerning (+ genitive); around (+ accusative)", "pos": "prep", "cognates": { "la": "per (related)", "en": "perimeter, pericardium, periodontist" }, "ex": { "text": "Περὶ τῆς Ἑλλάδος λέγομεν.", "en": "We are talking about Greece." }, "verified": false },
+    { "id": "para", "text": "παρά", "tr": "pará", "en": "from (+ gen.); beside, at the house of (+ dat.); to, along (+ acc.)", "pos": "prep", "forms": ["παρ"], "cognates": { "en": "parallel, paramedic, parasite ('one who eats beside')" }, "ex": { "text": "Παρὰ τῷ ποταμῷ οἰκοῦμεν.", "en": "We live by the river." }, "verified": false },
+    { "id": "dia", "text": "διά", "tr": "diá", "en": "through (+ genitive); because of (+ accusative)", "pos": "prep", "forms": ["δι"], "cognates": { "en": "diameter, diagnosis ('knowing through'), diarrhea ('flowing through')" }, "ex": { "text": "Ὁ ποταμὸς διὰ τῆς χώρας ῥεῖ.", "en": "The river flows through the country." }, "verified": false },
+    { "id": "epi", "text": "ἐπί", "tr": "epí", "en": "on, upon (+ gen. or dat.); to, against (+ acc.)", "pos": "prep", "forms": ["ἐπ", "ἐφ"], "cognates": { "en": "epidermis ('upon the skin'), epidemic, epiglottis" }, "ex": { "text": "Ὁ λίθος ἐπὶ τῆς ὁδοῦ ἐστιν.", "en": "The stone is on the road." }, "verified": false },
+    { "id": "pro", "text": "πρό", "tr": "pró", "en": "before, in front of (+ genitive)", "pos": "prep", "cognates": { "la": "prō", "en": "prologue, prognosis" }, "ex": { "text": "Πρὸ τῆς οἰκίας κῆπός ἐστιν.", "en": "In front of the house there is a garden." }, "verified": false },
+    { "id": "anti", "text": "ἀντί", "tr": "antí", "en": "instead of, against (+ genitive)", "pos": "prep", "cognates": { "la": "ante (related)", "en": "antibiotic, antidote, antibody" }, "ex": { "text": "Ἀντὶ οἴνου ὕδωρ πίνω.", "en": "I drink water instead of wine." }, "verified": false },
+    { "id": "hyper", "text": "ὑπέρ", "tr": "hypér", "en": "over, above; on behalf of (+ gen.); beyond (+ acc.)", "pos": "prep", "cognates": { "la": "super (related)", "en": "hypertension, hyperactive" }, "ex": { "text": "Ὁ ἥλιος ὑπὲρ τῶν ὀρῶν ἐστιν.", "en": "The sun is above the mountains." }, "verified": false },
+    { "id": "phero", "text": "φέρω", "tr": "phérō", "en": "carry, bring; (of a road) lead", "pos": "verb", "forms": ["φέρεις", "φέρει", "φέρομεν", "φέρουσι", "φέρουσιν", "φέρειν", "φέρε", "ἔφερον", "ἔφερε", "ἔφερεν", "ἤνεγκα", "ἤνεγκε", "ἤνεγκεν", "οἴσω", "φέρων"], "cognates": { "la": "ferō", "es": "(trans)ferir", "en": "bear (same root), Christopher ('Christ-bearer')" }, "ex": { "text": "Ὁ παῖς τὸ βιβλίον φέρει.", "en": "The boy carries the book." }, "verified": false },
+    { "id": "makros", "text": "μακρός", "tr": "makrós", "en": "long", "pos": "adj", "forms": ["μακρά", "μακρόν", "μακροῦ", "μακρᾶς", "μακρῷ", "μακρᾷ", "μακράν", "μακροί", "μακραί", "μακρή"], "cognates": { "en": "macro-, macroscopic" }, "ex": { "text": "Ἡ ὁδὸς μακρά ἐστιν.", "en": "The road is long." }, "verified": false },
+
+    { "id": "didomi", "text": "δίδωμι", "tr": "dídōmi", "en": "give", "pos": "verb", "forms": ["δίδως", "δίδωσι", "δίδωσιν", "δίδομεν", "δίδοτε", "διδόασι", "διδόασιν", "διδόναι", "ἐδίδου", "ἔδωκα", "ἔδωκε", "ἔδωκεν", "δός", "δότε", "δοῦναι", "δώσω", "ἔδωκαν"], "cognates": { "la": "dō, dare (same root)", "en": "dose, antidote ('given against')" }, "ex": { "text": "Ἡ μήτηρ τῷ παιδὶ ἄρτον δίδωσιν.", "en": "The mother gives the child bread." }, "verified": false },
+    { "id": "doron", "text": "δῶρον", "tr": "dôron", "en": "gift", "pos": "noun", "forms": ["δώρου", "δώρῳ", "δῶρα", "δώρων", "δώροις"], "cognates": { "en": "Theodore ('gift of God'), Dorothy, Pandora" }, "ex": { "text": "Τὸ δῶρον καλόν ἐστιν.", "en": "The gift is beautiful." }, "verified": false },
+    { "id": "epistole", "text": "ἐπιστολή", "tr": "epistolḗ", "en": "letter (a message)", "pos": "noun", "forms": ["ἐπιστολῆς", "ἐπιστολῇ", "ἐπιστολήν", "ἐπιστολαί", "ἐπιστολάς"], "cognates": { "la": "epistula (borrowed from Greek)", "en": "epistle" }, "ex": { "text": "Ὁ φίλος ἐπιστολὴν γράφει.", "en": "My friend is writing a letter." }, "verified": false },
+    { "id": "biblion", "text": "βιβλίον", "tr": "biblíon", "en": "book", "pos": "noun", "forms": ["βιβλίου", "βιβλίῳ", "βιβλία", "βιβλίων", "βιβλίοις"], "cognates": { "en": "Bible, bibliography" }, "ex": { "text": "Τὸ βιβλίον ἐμόν ἐστιν.", "en": "The book is mine." }, "verified": false },
+    { "id": "artos", "text": "ἄρτος", "tr": "ártos", "en": "bread, a loaf", "pos": "noun", "forms": ["ἄρτου", "ἄρτῳ", "ἄρτον", "ἄρτοι", "ἄρτους"], "ex": { "text": "Ὁ πατὴρ ἄρτον ἀγοράζει.", "en": "Father is buying bread." }, "verified": false },
+    { "id": "oinos", "text": "οἶνος", "tr": "oînos", "en": "wine", "pos": "noun", "forms": ["οἴνου", "οἴνῳ", "οἶνον"], "cognates": { "la": "vīnum (related)", "en": "oenology; wine (related)" }, "ex": { "text": "Ὁ οἶνος ἡδύς ἐστιν.", "en": "The wine is sweet." }, "verified": false },
+    { "id": "hydor", "text": "ὕδωρ", "tr": "hýdōr", "en": "water", "pos": "noun", "forms": ["ὕδατος", "ὕδατι", "ὕδατα"], "cognates": { "en": "hydro-, dehydration; water (same root)" }, "ex": { "text": "Ὕδωρ πίνω, οὐκ οἶνον.", "en": "I drink water, not wine." }, "verified": false },
+    { "id": "melon", "text": "μῆλον", "tr": "mêlon", "en": "apple; fruit", "pos": "noun", "forms": ["μήλου", "μήλῳ", "μῆλα", "μήλων"], "cognates": { "en": "melon (from μηλοπέπων 'apple-gourd')" }, "ex": { "text": "Ὁ παῖς μῆλα ἐσθίει.", "en": "The boy is eating apples." }, "verified": false },
+    { "id": "argyrion", "text": "ἀργύριον", "tr": "argýrion", "en": "silver; money", "pos": "noun", "forms": ["ἀργυρίου", "ἀργυρίῳ"], "cognates": { "la": "argentum (same root)", "en": "Argentina, argyria" }, "ex": { "text": "Ἀργύριον οὐκ ἔχω.", "en": "I don't have money." }, "verified": false },
+    { "id": "chrysos", "text": "χρυσός", "tr": "khrysós", "en": "gold", "pos": "noun", "forms": ["χρυσοῦ", "χρυσῷ", "χρυσόν"], "cognates": { "en": "chrysanthemum ('golden flower'), chrysalis" }, "ex": { "text": "Ὁ βασιλεὺς πολὺν χρυσὸν ἔχει.", "en": "The king has much gold." }, "verified": false },
+    { "id": "pempo", "text": "πέμπω", "tr": "pémpō", "en": "send (μεταπέμπομαι = send for)", "pos": "verb", "forms": ["πέμπεις", "πέμπει", "πέμπομεν", "πέμπουσι", "πέμπουσιν", "πέμπειν", "πέμπε", "ἔπεμπον", "ἔπεμψα", "ἔπεμψε", "ἔπεμψεν", "πέμψω", "μεταπέμπεται"], "cognates": { "en": "pomp (via πομπή 'a sending, a procession')" }, "ex": { "text": "Τῷ φίλῳ ἐπιστολὴν πέμπω.", "en": "I'm sending a letter to my friend." }, "verified": false },
+    { "id": "deiknymi", "text": "δείκνυμι", "tr": "deíknymi", "en": "show, point out (ἀποδείκνυμι = appoint)", "pos": "verb", "forms": ["δείκνυσι", "δείκνυσιν", "δεικνύναι", "ἐδείκνυ", "ἔδειξα", "ἔδειξε", "ἔδειξεν", "δεῖξον", "δείξω", "ἀπέδειξε", "ἀπέδειξεν"], "cognates": { "la": "dīcō, indicō (same root)", "en": "paradigm, deictic" }, "ex": { "text": "Ὁ διδάσκαλος τὴν ὁδὸν δείκνυσιν.", "en": "The teacher shows the way." }, "verified": false },
+    { "id": "chairo", "text": "χαίρω", "tr": "khaírō", "en": "be glad, rejoice (χαῖρε 'be glad!' is the greeting)", "pos": "verb", "forms": ["χαίρεις", "χαίρει", "χαίρομεν", "χαίρουσι", "χαίρουσιν", "χαίρειν", "ἔχαιρε", "ἔχαιρεν"], "ex": { "text": "Ὁ παῖς τῷ δώρῳ χαίρει.", "en": "The child is happy with the gift." }, "verified": false },
+    { "id": "lambano", "text": "λαμβάνω", "tr": "lambánō", "en": "take, receive, catch (aorist ἔλαβον)", "pos": "verb", "forms": ["λαμβάνεις", "λαμβάνει", "λαμβάνομεν", "λαμβάνουσι", "λαμβάνουσιν", "λαμβάνειν", "λάμβανε", "ἐλάμβανε", "ἔλαβον", "ἔλαβε", "ἔλαβεν", "λαβεῖν", "λαβών", "λαβοῦσα", "κατέλαβε", "κατέλαβεν"], "cognates": { "en": "epilepsy ('a seizing'), syllable ('taken together')" }, "ex": { "text": "Ὁ Νικίας τὴν ἐπιστολὴν λαμβάνει.", "en": "Nicias receives the letter." }, "verified": false },
+    { "id": "theos", "text": "θεός", "tr": "theós", "en": "god; ἡ θεός = goddess", "pos": "noun", "forms": ["θεοῦ", "θεῷ", "θεόν", "θεέ", "θεοί", "θεῶν", "θεοῖς", "θεούς", "θεά", "θεᾶς", "θεᾷ", "θεάν"], "cognates": { "en": "theology, atheist, enthusiasm ('having a god inside')" }, "note": "Not related to Latin deus, despite the look-alike.", "ex": { "text": "Ἡ Ἀθηνᾶ θεός ἐστιν.", "en": "Athena is a goddess." }, "verified": false },
+    { "id": "doulos", "text": "δοῦλος", "tr": "doûlos", "en": "slave", "pos": "noun", "forms": ["δούλου", "δούλῳ", "δοῦλον", "δοῦλε", "δοῦλοι", "δούλων", "δούλοις", "δούλους"], "ex": { "text": "Ὁ δοῦλος ὕδωρ φέρει.", "en": "The slave carries water." }, "verified": false },
+    { "id": "hedys", "text": "ἡδύς", "tr": "hēdýs", "en": "sweet, pleasant (ἡδέως = gladly)", "pos": "adj", "forms": ["ἡδεῖα", "ἡδύ", "ἡδέος", "ἡδείας", "ἡδεῖς", "ἡδέα", "ἡδέως"], "cognates": { "en": "hedonism (ἡδονή 'pleasure'); sweet (same root)" }, "ex": { "text": "Τὸ μῆλον ἡδύ ἐστιν.", "en": "The apple is sweet." }, "verified": false },
+    { "id": "agora", "text": "ἀγορά", "tr": "agorā́", "en": "marketplace, the agora; assembly", "pos": "noun", "forms": ["ἀγορᾶς", "ἀγορᾷ", "ἀγοράν"], "cognates": { "en": "agoraphobia" }, "ex": { "text": "Ἐν τῇ ἀγορᾷ πολλοὶ ἄνθρωποί εἰσιν.", "en": "There are many people in the agora." }, "verified": false },
+    { "id": "agorazo", "text": "ἀγοράζω", "tr": "agorázō", "en": "buy (in the market)", "pos": "verb", "forms": ["ἀγοράζεις", "ἀγοράζει", "ἀγοράζομεν", "ἀγοράζουσι", "ἀγοράζουσιν", "ἀγοράζειν", "ἠγόραζε", "ἠγόρασα", "ἠγόρασε", "ἠγόρασεν"], "ex": { "text": "Ἐν τῇ ἀγορᾷ ἄρτον ἀγοράζω.", "en": "I buy bread in the agora." }, "verified": false },
+    { "id": "posos", "text": "πόσος", "tr": "pósos", "en": "how much? how many? (πόσου; = for how much?)", "pos": "q", "forms": ["πόση", "πόσον", "πόσου", "πόσοι", "πόσα"], "ex": { "text": "Πόσου τὸ βιβλίον;", "en": "How much is the book?" }, "verified": false },
+
+    { "id": "schole", "text": "σχολή", "tr": "skholḗ", "en": "leisure; school (leisure spent learning)", "pos": "noun", "forms": ["σχολῆς", "σχολῇ", "σχολήν", "σχολαί"], "cognates": { "la": "schola (borrowed from Greek)", "es": "escuela", "en": "school, scholar" }, "ex": { "text": "Οἱ παῖδες ἐν τῇ σχολῇ εἰσιν.", "en": "The children are at school." }, "verified": false },
+    { "id": "thyra", "text": "θύρα", "tr": "thýrā", "en": "door", "pos": "noun", "forms": ["θύρας", "θύρᾳ", "θύραν", "θύραι"], "cognates": { "en": "door (same Indo-European word); thyroid (from θυρεός, a door-shaped shield)" }, "ex": { "text": "Ἡ θύρα μεγάλη ἐστίν.", "en": "The door is big." }, "verified": false },
+    { "id": "anoigo", "text": "ἀνοίγω", "tr": "anoígō", "en": "open", "pos": "verb", "forms": ["ἀνοίγεις", "ἀνοίγει", "ἀνοίγομεν", "ἀνοίγουσι", "ἀνοίγουσιν", "ἀνοίγειν", "ἄνοιγε", "ἀνοίγετε", "ἀνέῳξα", "ἀνέῳξε"], "ex": { "text": "Ὁ δοῦλος τὴν θύραν ἀνοίγει.", "en": "The slave opens the door." }, "verified": false },
+    { "id": "kleio", "text": "κλείω", "tr": "kleíō", "en": "shut, close", "pos": "verb", "forms": ["κλείεις", "κλείει", "κλείομεν", "κλείουσι", "κλείουσιν", "κλεῖε", "κλείετε", "ἔκλεισα", "ἔκλεισε"], "ex": { "text": "Κλεῖε τὴν θύραν.", "en": "Shut the door." }, "verified": false },
+    { "id": "sigao", "text": "σιγάω", "tr": "sigáō", "en": "be silent (σίγα! = quiet!)", "pos": "verb", "forms": ["σιγῶ", "σιγᾷς", "σιγᾷ", "σιγῶμεν", "σιγᾶτε", "σιγῶσι", "σιγῶσιν", "σιγᾶν", "σίγα", "ἐσίγα"], "ex": { "text": "Σιγᾶτε, ὦ παῖδες!", "en": "Quiet, children!" }, "verified": false },
+    { "id": "horao", "text": "ὁράω", "tr": "horáō", "en": "see (aorist εἶδον, future ὄψομαι)", "pos": "verb", "forms": ["ὁρῶ", "ὁρᾷς", "ὁρᾷ", "ὁρῶμεν", "ὁρᾶτε", "ὁρῶσι", "ὁρῶσιν", "ὁρᾶν", "ἑώρα", "ἑώρων", "εἶδον", "εἶδε", "εἶδεν", "ἰδεῖν", "ἰδών", "ἰδού", "ὄψομαι"], "cognates": { "en": "panorama ('seeing all'); idea (from εἶδον); optic (from ὄψομαι)" }, "ex": { "text": "Ἆρα τὸν ποταμὸν ὁρᾷς;", "en": "Do you see the river?" }, "verified": false },
+    { "id": "oida", "text": "οἶδα", "tr": "oîda", "en": "I know (perfect form, present meaning)", "pos": "verb", "forms": ["οἶσθα", "οἶδε", "οἶδεν", "ἴσμεν", "ἴστε", "ἴσασι", "ἴσασιν", "εἰδέναι", "ᾔδει", "εἰδώς", "ᾔδεσαν"], "cognates": { "la": "videō (same root: 'I have seen' = 'I know')", "en": "wit, wise; idea" }, "ex": { "text": "Οὐκ οἶδα.", "en": "I don't know." }, "verified": false },
+    { "id": "erotao", "text": "ἐρωτάω", "tr": "erōtáō", "en": "ask (a question)", "pos": "verb", "forms": ["ἐρωτῶ", "ἐρωτᾷς", "ἐρωτᾷ", "ἐρωτῶμεν", "ἐρωτῶσι", "ἐρωτῶσιν", "ἐρώτα", "ἠρώτα", "ἠρώτησε", "ἠρώτησεν"], "ex": { "text": "Ὁ διδάσκαλος τοὺς μαθητὰς ἐρωτᾷ.", "en": "The teacher asks the students." }, "verified": false },
+    { "id": "apokrinomai", "text": "ἀποκρίνομαι", "tr": "apokrínomai", "en": "answer (middle voice; there is no active form)", "pos": "verb", "forms": ["ἀποκρίνῃ", "ἀποκρίνεται", "ἀποκρινόμεθα", "ἀποκρίνονται", "ἀποκρίνεσθαι", "ἀποκρίνου", "ἀπεκρίνατο", "ἀπεκρίνετο", "ἀποκρινάμενος", "ἀπεκρίναντο", "ἀπεκρίνοντο"], "ex": { "text": "Ὁ μαθητὴς καλῶς ἀποκρίνεται.", "en": "The student answers well." }, "verified": false },
+    { "id": "timao", "text": "τιμάω", "tr": "timáō", "en": "honour, value", "pos": "verb", "forms": ["τιμῶ", "τιμᾷς", "τιμᾷ", "τιμῶμεν", "τιμᾶτε", "τιμῶσι", "τιμῶσιν", "τιμᾶν", "τίμα", "ἐτίμα"], "cognates": { "en": "Timothy ('honouring God'), timocracy" }, "ex": { "text": "Οἱ Ἕλληνες τοὺς θεοὺς τιμῶσιν.", "en": "The Greeks honour the gods." }, "verified": false },
+    { "id": "zeteo", "text": "ζητέω", "tr": "zētéō", "en": "seek, look for", "pos": "verb", "forms": ["ζητῶ", "ζητεῖς", "ζητεῖ", "ζητοῦμεν", "ζητοῦσι", "ζητοῦσιν", "ζητεῖν", "ζήτει", "ἐζήτει", "ἐζήτουν"], "ex": { "text": "Τί ζητεῖς; Τὸ βιβλίον μου ζητῶ.", "en": "What are you looking for? I'm looking for my book." }, "verified": false },
+    { "id": "gignosko", "text": "γιγνώσκω", "tr": "gignṓskō", "en": "get to know, recognise (aorist ἔγνων; γνῶθι = know!)", "pos": "verb", "forms": ["γιγνώσκεις", "γιγνώσκει", "γιγνώσκομεν", "γιγνώσκουσι", "γιγνώσκουσιν", "γιγνώσκειν", "ἔγνων", "ἔγνω", "γνῶναι", "γνῶθι", "γινώσκω"], "cognates": { "la": "(g)nōscō (same root)", "en": "know (same root), diagnosis, prognosis, agnostic" }, "ex": { "text": "Τὸν φίλον γιγνώσκω.", "en": "I recognise my friend." }, "verified": false },
+    { "id": "logos", "text": "λόγος", "tr": "lógos", "en": "word, speech; story; reason", "pos": "noun", "forms": ["λόγου", "λόγῳ", "λόγον", "λόγοι", "λόγων", "λόγοις", "λόγους"], "cognates": { "en": "logic, -logy (biology, cardiology), dialogue" }, "ex": { "text": "Ὁ λόγος τοῦ διδασκάλου μακρός ἐστιν.", "en": "The teacher's speech is long." }, "verified": false },
+    { "id": "palin", "text": "πάλιν", "tr": "pálin", "en": "again; back", "pos": "adv", "cognates": { "en": "palindrome ('running back'), palimpsest" }, "ex": { "text": "Πάλιν λέγε, ὦ φίλε.", "en": "Say it again, friend." }, "verified": false },
+    { "id": "bradeos", "text": "βραδέως", "tr": "bradéōs", "en": "slowly (βραδύς = slow)", "pos": "adv", "forms": ["βραδύς", "βραδεῖα", "βραδύ"], "cognates": { "en": "bradycardia (a slow heart rate)" }, "ex": { "text": "Βραδέως λέγε, ὦ διδάσκαλε.", "en": "Speak slowly, teacher." }, "verified": false },
+    { "id": "tacheos", "text": "ταχέως", "tr": "takhéōs", "en": "quickly (ταχύς = fast)", "pos": "adv", "forms": ["ταχύς", "ταχεῖα", "ταχύ"], "cognates": { "en": "tachycardia (a fast heart rate), tachometer" }, "ex": { "text": "Ὁ ἵππος ταχέως τρέχει.", "en": "The horse runs fast." }, "verified": false },
+    { "id": "kalos2", "text": "καλῶς", "tr": "kalôs", "en": "well, nicely; (as a reply) good!", "pos": "adv", "ex": { "text": "Καλῶς λέγεις.", "en": "Well said." }, "verified": false },
+    { "id": "chalepos", "text": "χαλεπός", "tr": "khalepós", "en": "difficult, harsh", "pos": "adj", "forms": ["χαλεπή", "χαλεπόν", "χαλεποῦ", "χαλεπῆς", "χαλεποί", "χαλεπά"], "ex": { "text": "Ἡ Ἑλληνικὴ γλῶττα οὐ χαλεπή ἐστιν.", "en": "The Greek language is not difficult." }, "verified": false },
+    { "id": "rhadios", "text": "ῥᾴδιος", "tr": "rhā́idios", "en": "easy (ῥᾳδίως = easily)", "pos": "adj", "forms": ["ῥᾳδία", "ῥᾴδιον", "ῥᾳδίου", "ῥᾴδια", "ῥᾳδίως"], "ex": { "text": "Τὸ βιβλίον ῥᾴδιόν ἐστιν.", "en": "The book is easy." }, "verified": false },
+    { "id": "gramma", "text": "γράμμα", "tr": "grámma", "en": "letter (of the alphabet); (plural) writing, learning", "pos": "noun", "forms": ["γράμματος", "γράμματι", "γράμματα", "γραμμάτων", "γράμμασι"], "cognates": { "en": "grammar, telegram, kilogram" }, "ex": { "text": "Τὰ γράμματα μανθάνομεν.", "en": "We are learning the letters." }, "verified": false },
+    { "id": "seautou", "text": "σεαυτοῦ", "tr": "seautoû", "en": "(of) yourself (σεαυτόν = yourself; also σαυτόν)", "pos": "pron", "forms": ["σεαυτόν", "σαυτόν", "σεαυτῷ", "σαυτοῦ"], "ex": { "text": "Γνῶθι σεαυτόν.", "en": "Know yourself. (written at Delphi)" }, "verified": false },
+
+    { "id": "polis", "text": "πόλις", "tr": "pólis", "en": "city, city-state", "pos": "noun", "forms": ["πόλεως", "πόλει", "πόλιν", "πόλεις", "πόλεων", "πόλεσι", "πόλεσιν"], "cognates": { "en": "politics, metropolis, police" }, "ex": { "text": "Αἱ Ἀθῆναι πόλις μεγάλη ἐστίν.", "en": "Athens is a big city." }, "verified": false },
+    { "id": "polites", "text": "πολίτης", "tr": "polítēs", "en": "citizen", "pos": "noun", "forms": ["πολίτου", "πολίτῃ", "πολίτην", "πολῖτα", "πολῖται", "πολιτῶν", "πολίταις", "πολίτας"], "cognates": { "en": "politics, cosmopolitan" }, "ex": { "text": "Πολλοὶ πολῖται ἐν τῇ ἀγορᾷ εἰσιν.", "en": "Many citizens are in the agora." }, "verified": false },
+    { "id": "basileus", "text": "βασιλεύς", "tr": "basileús", "en": "king", "pos": "noun", "forms": ["βασιλέως", "βασιλεῖ", "βασιλέα", "βασιλεῦ", "βασιλῆς", "βασιλεῖς", "βασιλέων", "βασιλεῦσι"], "cognates": { "en": "Basil ('royal'), basilica, basilisk" }, "ex": { "text": "Ὁ βασιλεὺς τῶν Περσῶν πολὺν χρυσὸν ἔχει.", "en": "The king of the Persians has much gold." }, "verified": false },
+    { "id": "nyx", "text": "νύξ", "tr": "nýx", "en": "night (νυκτός = at night)", "pos": "noun", "forms": ["νυκτός", "νυκτί", "νύκτα", "νύκτες", "νυκτῶν"], "cognates": { "la": "nox, noctis", "es": "noche", "en": "night (same root), nocturnal" }, "ex": { "text": "Νυκτὸς οἱ ἀστέρες φαίνουσιν.", "en": "At night the stars shine." }, "verified": false },
+    { "id": "hemera", "text": "ἡμέρα", "tr": "hēmérā", "en": "day (ἡμέρας = by day)", "pos": "noun", "forms": ["ἡμέρας", "ἡμέρᾳ", "ἡμέραν", "ἡμέραι", "ἡμερῶν", "ἡμέραις"], "cognates": { "en": "ephemeral ('lasting a day')" }, "ex": { "text": "Ἡ ἡμέρα καλή ἐστιν.", "en": "The day is beautiful." }, "verified": false },
+    { "id": "helios", "text": "ἥλιος", "tr": "hḗlios", "en": "sun", "pos": "noun", "forms": ["ἡλίου", "ἡλίῳ", "ἥλιον"], "cognates": { "la": "sōl (the same Indo-European word)", "en": "helium, heliocentric" }, "ex": { "text": "Ὁ ἥλιος μέγας ἐστίν.", "en": "The sun is big." }, "verified": false },
+    { "id": "phos", "text": "φῶς", "tr": "phôs", "en": "light", "pos": "noun", "forms": ["φωτός", "φωτί", "φῶτα"], "cognates": { "en": "photo-, photosynthesis, phosphorus ('light-bringer')" }, "ex": { "text": "Τὸ φῶς τοῦ ἡλίου καλόν ἐστιν.", "en": "The light of the sun is beautiful." }, "verified": false },
+    { "id": "naus", "text": "ναῦς", "tr": "naûs", "en": "ship", "pos": "noun", "forms": ["νεώς", "νηί", "ναῦν", "νῆες", "νεῶν", "ναυσί", "ναυσίν"], "cognates": { "la": "nāvis (same root)", "en": "nautical; nausea ('seasickness')" }, "ex": { "text": "Ἐν τῇ θαλάττῃ ναῦς μεγάλη ἐστίν.", "en": "There is a big ship on the sea." }, "verified": false },
+    { "id": "oros", "text": "ὄρος", "tr": "óros", "en": "mountain", "pos": "noun", "forms": ["ὄρους", "ὄρει", "ὄρη", "ὀρῶν", "ὄρεσι"], "cognates": { "en": "orogeny (mountain-building)" }, "ex": { "text": "Ἐκ τοῦ ὄρους τὴν θάλατταν ὁρῶμεν.", "en": "From the mountain we see the sea." }, "verified": false },
+    { "id": "stratiotes", "text": "στρατιώτης", "tr": "stratiṓtēs", "en": "soldier", "pos": "noun", "forms": ["στρατιώτου", "στρατιώτῃ", "στρατιώτην", "στρατιῶται", "στρατιωτῶν", "στρατιώταις", "στρατιώτας"], "ex": { "text": "Οἱ στρατιῶται εἰς τὸν πόλεμον ἔρχονται.", "en": "The soldiers are going to war." }, "verified": false },
+    { "id": "strategos", "text": "στρατηγός", "tr": "stratēgós", "en": "general", "pos": "noun", "forms": ["στρατηγοῦ", "στρατηγῷ", "στρατηγόν", "στρατηγέ", "στρατηγοί", "στρατηγῶν"], "cognates": { "en": "strategy, strategic" }, "ex": { "text": "Ὁ στρατηγὸς τοὺς στρατιώτας ἄγει.", "en": "The general leads the soldiers." }, "verified": false },
+    { "id": "polemos", "text": "πόλεμος", "tr": "pólemos", "en": "war", "pos": "noun", "forms": ["πολέμου", "πολέμῳ", "πόλεμον", "πόλεμοι"], "cognates": { "en": "polemic" }, "ex": { "text": "Ὁ πόλεμος κακός ἐστιν.", "en": "War is bad." }, "verified": false },
+    { "id": "eirene", "text": "εἰρήνη", "tr": "eirḗnē", "en": "peace", "pos": "noun", "forms": ["εἰρήνης", "εἰρήνῃ", "εἰρήνην"], "cognates": { "en": "Irene, irenic" }, "ex": { "text": "Οἱ πολῖται εἰρήνην φιλοῦσιν.", "en": "The citizens love peace." }, "verified": false },
+    { "id": "chronos", "text": "χρόνος", "tr": "khrónos", "en": "time", "pos": "noun", "forms": ["χρόνου", "χρόνῳ", "χρόνον", "χρόνοι"], "cognates": { "en": "chronic, chronology, synchronize" }, "ex": { "text": "Πολὺν χρόνον ἐν Ἀθήναις οἰκῶ.", "en": "I've lived in Athens a long time." }, "verified": false },
+    { "id": "etos", "text": "ἔτος", "tr": "étos", "en": "year", "pos": "noun", "forms": ["ἔτους", "ἔτει", "ἔτη", "ἐτῶν", "ἔτεσι"], "ex": { "text": "Τρία ἔτη ἐν τῇ πόλει οἰκῶ.", "en": "I've lived in the city for three years." }, "verified": false },
+    { "id": "teichos", "text": "τεῖχος", "tr": "teîkhos", "en": "wall (of a city)", "pos": "noun", "forms": ["τείχους", "τείχει", "τείχη", "τειχῶν"], "ex": { "text": "Περὶ τὴν πόλιν τείχη μακρά ἐστιν.", "en": "Around the city there are long walls." }, "verified": false },
+    { "id": "pas", "text": "πᾶς", "tr": "pâs", "en": "all, every, the whole", "pos": "adj", "forms": ["πᾶσα", "πᾶν", "παντός", "πάσης", "παντί", "πάσῃ", "πάντα", "πᾶσαν", "πάντες", "πᾶσαι", "πάντων", "πασῶν", "πᾶσι", "πᾶσιν", "πάσαις", "πάσας"], "cognates": { "en": "pan-, pandemic ('of all the people'), panacea ('cure-all')" }, "ex": { "text": "Πάντες οἱ μαθηταὶ ἐν τῇ σχολῇ εἰσιν.", "en": "All the students are at school." }, "verified": false },
+    { "id": "aster", "text": "ἀστήρ", "tr": "astḗr", "en": "star", "pos": "noun", "forms": ["ἀστέρος", "ἀστέρι", "ἀστέρα", "ἀστέρες", "ἀστέρων", "ἀστράσι", "ἀστέρας"], "cognates": { "la": "stella (related)", "en": "star (same root), astronomy, asterisk" }, "ex": { "text": "Νυκτὸς πολλοὺς ἀστέρας ὁρῶμεν.", "en": "At night we see many stars." }, "verified": false },
+    { "id": "ouranos", "text": "οὐρανός", "tr": "ouranós", "en": "sky, heaven", "pos": "noun", "forms": ["οὐρανοῦ", "οὐρανῷ", "οὐρανόν", "οὐρανοί"], "cognates": { "en": "Uranus" }, "ex": { "text": "Ἐν τῷ οὐρανῷ ὁ ἥλιος φαίνει.", "en": "The sun shines in the sky." }, "verified": false },
+    { "id": "selene", "text": "σελήνη", "tr": "selḗnē", "en": "moon", "pos": "noun", "forms": ["σελήνης", "σελήνῃ", "σελήνην"], "cognates": { "en": "selenium" }, "ex": { "text": "Ἡ σελήνη νυκτὸς φαίνει.", "en": "The moon shines at night." }, "verified": false },
+    { "id": "phaino", "text": "φαίνω", "tr": "phaínō", "en": "shine; show (φαίνομαι = appear, seem)", "pos": "verb", "forms": ["φαίνεις", "φαίνει", "φαίνουσι", "φαίνουσιν", "φαίνειν", "φαίνεται", "φαίνονται", "ἔφαινε", "ἔφηνε"], "cognates": { "en": "phenomenon ('thing that appears'), phenotype, phantom" }, "ex": { "text": "Ὁ ἥλιος φαίνει.", "en": "The sun is shining." }, "verified": false }
+  ],
+  "grammar": [
+    { "id": "preps", "title": "Prepositions and their cases", "concept": "cases", "body": [
+      "Greek prepositions take a case, and some change meaning with it, as in Latin: **ἐν τῷ κήπῳ** in the garden (dative: where?), **εἰς τὸν κῆπον** into the garden (accusative: where to?), **ἐκ τοῦ κήπου** out of the garden (genitive: where from?).",
+      "Many are cousins of Latin ones: ἐν / in, ἐκ / ex, ἀπό / ab, ὑπό / sub, ὑπέρ / super, πρό / prō. And most English medical prefixes are Greek prepositions: **ἐπι**dermis, **ὑπο**dermic, **περι**cardium, **δια**gnosis, **ἀντι**biotic."
+    ], "examples": [
+      { "text": "Ἐκ τῆς οἰκίας εἰς τὸν κῆπον τρέχω.", "en": "I run out of the house into the garden." },
+      { "text": "Μετὰ τοῦ φίλου παίζω.", "en": "I play with my friend." }
+    ], "drills": [
+      { "id": "pp1", "prompt": "Say: into the house", "answer": "εἰς τὴν οἰκίαν" },
+      { "id": "pp2", "prompt": "Say: out of the house", "answer": "ἐκ τῆς οἰκίας" },
+      { "id": "pp3", "prompt": "Say: The dog sleeps under the tree.", "answer": "Ὁ κύων ὑπὸ τῷ δένδρῳ καθεύδει." },
+      { "id": "pp4", "prompt": "Say: I play with my brother.", "answer": "Σὺν τῷ ἀδελφῷ μου παίζω." }
+    ], "verified": false },
+    { "id": "dative", "title": "The dative: in, with, by (τῷ, τῇ)", "concept": "dative", "body": [
+      "The dative answers 'where?' after ἐν (**ἐν τῷ κήπῳ**), 'with whom?' after σύν (**σὺν τῷ φίλῳ**), and 'with what? by what means?' on its own (**λίθῳ** 'with a stone'). Latin splits these jobs between its dative and ablative.",
+      "Endings: **-ῳ** (2nd decl.), **-ᾳ / -ῃ** (1st), **-ι** (3rd); plural **-οις, -αις, -σι(ν)**. The little iota under ᾳ ῃ ῳ (the iota subscript) is the mark of the dative singular."
+    ], "examples": [
+      { "text": "Ἐν τῇ θαλάττῃ πολλαὶ νῆσοί εἰσιν.", "en": "There are many islands in the sea." },
+      { "text": "Παρὰ τῷ ποταμῷ οἰκοῦμεν.", "en": "We live by the river." }
+    ], "drills": [
+      { "id": "dt1", "prompt": "Say: in the garden", "answer": "ἐν τῷ κήπῳ" },
+      { "id": "dt2", "prompt": "Say: in the field", "answer": "ἐν τῷ ἀγρῷ" },
+      { "id": "dt3", "prompt": "Say: with my friends", "answer": "σὺν τοῖς φίλοις μου" },
+      { "id": "dt4", "prompt": "Say: We live by the river.", "answer": "Παρὰ τῷ ποταμῷ οἰκοῦμεν." }
+    ], "verified": false },
+    { "id": "indirect", "title": "The dative of the person: 'to / for someone'", "concept": "dative", "body": [
+      "Whoever receives something goes in the dative, exactly as in Latin: **δίδωμι τῷ φίλῳ τὸ βιβλίον** = dō amīcō librum, 'I give the book to my friend'. Also: **ἐπιστολὴν πέμπω τῇ μητρί** 'I send a letter to my mother'.",
+      "Two objects, two cases: the thing in the accusative, the person in the dative. δίδωμι belongs to a small group of verbs in -μι (δίδωμι, δίδως, δίδωσι(ν)); learn its forms as you meet them."
+    ], "examples": [
+      { "text": "Ἡ μήτηρ τῷ παιδὶ μῆλα δίδωσιν.", "en": "The mother gives the child apples." },
+      { "text": "Τῷ φίλῳ ἐπιστολὴν πέμπω.", "en": "I send a letter to my friend." }
+    ], "drills": [
+      { "id": "io1", "prompt": "Say: I give the book to my friend.", "answer": "Τῷ φίλῳ μου τὸ βιβλίον δίδωμι." },
+      { "id": "io2", "prompt": "Say: The mother gives the child an apple.", "answer": "Ἡ μήτηρ τῷ παιδὶ μῆλον δίδωσιν." },
+      { "id": "io3", "prompt": "Say: I'm sending a letter to my sister.", "answer": "Τῇ ἀδελφῇ μου ἐπιστολὴν πέμπω." },
+      { "id": "io4", "prompt": "Ask: How much is the bread?", "answer": "Πόσου ὁ ἄρτος;" }
+    ], "verified": false },
+    { "id": "attributive", "title": "Where the adjective goes: ὁ καλὸς ἵππος vs καλὸς ὁ ἵππος", "body": [
+      "Greek tells 'the beautiful horse' from 'the horse is beautiful' by position. Inside the article group, it describes: **ὁ καλὸς ἵππος** or **ὁ ἵππος ὁ καλός** 'the beautiful horse'.",
+      "Outside the article group, it makes a statement: **καλὸς ὁ ἵππος** or **ὁ ἵππος καλός** 'the horse is beautiful', with no ἐστί needed. Watch for this in every sentence: it's how Greek packs a lot into few words."
+    ], "examples": [
+      { "text": "Ὁ ἡδὺς οἶνος.", "en": "The sweet wine." },
+      { "text": "Ἡδὺς ὁ οἶνος.", "en": "The wine is sweet." }
+    ], "drills": [
+      { "id": "at1", "prompt": "Say: the beautiful gift", "answer": "τὸ καλὸν δῶρον" },
+      { "id": "at2", "prompt": "Say (without a verb): The gift is beautiful.", "answer": "Καλὸν τὸ δῶρον." },
+      { "id": "at3", "prompt": "Say: the sweet wine", "answer": "ὁ ἡδὺς οἶνος" },
+      { "id": "at4", "prompt": "Say (without a verb): The water is sweet.", "answer": "Ἡδὺ τὸ ὕδωρ." }
+    ], "verified": false },
+    { "id": "imperative", "title": "Commands: λέγε, λέγετε", "body": [
+      "To one person, drop the -ω and add **-ε**: **λέγε!** speak! **γράφε!** write! To several, add **-ετε**: **λέγετε! ἀκούετε!** Compare Latin dīc / dīcite, audī / audīte.",
+      "'Don't!' = **μή** + the command: **μὴ λέγε** 'don't speak'. Short ones to know by heart: **σίγα** quiet!, **ἰδού** look!, **γνῶθι σεαυτόν** know yourself!"
+    ], "examples": [
+      { "text": "Ἀκούετε, ὦ παῖδες.", "en": "Listen, children." },
+      { "text": "Πάλιν λέγε.", "en": "Say it again." }
+    ], "drills": [
+      { "id": "im1", "prompt": "Say to one person: Write!", "answer": "Γράφε." },
+      { "id": "im2", "prompt": "Say to the class: Listen!", "answer": "Ἀκούετε." },
+      { "id": "im3", "prompt": "Say to one person: Open the door.", "answer": "Ἄνοιγε τὴν θύραν." },
+      { "id": "im4", "prompt": "Say to one person: Speak slowly.", "answer": "Βραδέως λέγε." }
+    ], "verified": false },
+    { "id": "contract", "title": "Contract verbs: ποιέω → ποιῶ, ὁράω → ὁρῶ", "body": [
+      "Verbs whose stem ends in ε or α squeeze that vowel into the ending: ποιέ-ω → **ποιῶ**, ποιέ-εις → **ποιεῖς**, ποιέ-ει → **ποιεῖ**, ποιέ-ομεν → **ποιοῦμεν**, ποιέ-ουσι → **ποιοῦσι**. Dictionaries list them uncontracted (ποιέω) so you can see the stem.",
+      "α-verbs give α and ω sounds: ὁρά-ω → **ὁρῶ**, ὁρά-εις → **ὁρᾷς**, ὁρά-ει → **ὁρᾷ**, ὁρά-ομεν → **ὁρῶμεν**, ὁρά-ουσι → **ὁρῶσι**. Rule of thumb: ε+ε → ει, ε+ο → ου, α+ε → α, α+ο → ω. Latin did the same (amā-ō → amō)."
+    ], "examples": [
+      { "text": "Ἆρα ὁρᾷς τὴν θάλατταν; Ὁρῶ.", "en": "Do you see the sea? I do." },
+      { "text": "Οἱ Ἕλληνες τοὺς θεοὺς τιμῶσιν.", "en": "The Greeks honour the gods." }
+    ], "drills": [
+      { "id": "ct1", "prompt": "Say: I see the sea.", "answer": "Ὁρῶ τὴν θάλατταν." },
+      { "id": "ct2", "prompt": "Ask: What are you doing?", "answer": "Τί ποιεῖς;" },
+      { "id": "ct3", "prompt": "Say: We love the sea.", "answer": "Τὴν θάλατταν φιλοῦμεν." },
+      { "id": "ct4", "prompt": "Say: They are looking for the book.", "answer": "Τὸ βιβλίον ζητοῦσιν." }
+    ], "verified": false },
+    { "id": "decl3", "title": "Third declension: find the stem in the genitive", "concept": "cases", "body": [
+      "Many nouns hide their stem in the nominative: **νύξ**, gen. **νυκτ-ός**; **παῖς, παιδ-ός**; **ὄνομα, ὀνόματ-ος**. Learn the genitive with the noun, just like Latin nox, noct-is and rēx, rēg-is.",
+      "Endings on the stem: gen. **-ος**, dat. **-ι**, acc. **-α** (or -ν); plural **-ες, -ων, -σι(ν), -ας**. Two common types shift their vowel: **πόλις, πόλεως, πόλει, πόλιν; πόλεις** and **βασιλεύς, βασιλέως, βασιλεῖ, βασιλέα**. Neuters in -ος: **ὄρος, ὄρους, ὄρει; ὄρη**."
+    ], "examples": [
+      { "text": "Ἡ σελήνη νυκτὸς φαίνει.", "en": "The moon shines at night." },
+      { "text": "Ἐν τῇ πόλει πολλοὶ πολῖταί εἰσιν.", "en": "There are many citizens in the city." }
+    ], "drills": [
+      { "id": "d3a", "prompt": "Say: in the city", "answer": "ἐν τῇ πόλει" },
+      { "id": "d3b", "prompt": "Say: the king's ship", "answer": "ἡ ναῦς τοῦ βασιλέως" },
+      { "id": "d3c", "prompt": "Say (one word): at night", "answer": "νυκτός" },
+      { "id": "d3d", "prompt": "Say: We see the mountains.", "answer": "Τὰ ὄρη ὁρῶμεν." }
+    ], "verified": false },
+    { "id": "neutpl", "title": "Neuter plurals take a singular verb; time expressions", "body": [
+      "A quirk of Greek: a neuter plural subject takes a **singular** verb: **τὰ δένδρα καλά ἐστιν** 'the trees are beautiful', **τὰ τείχη εἰς τὴν θάλατταν φέρει** 'the walls lead to the sea'. The plural is felt as one collective mass.",
+      "Time: the **genitive** says 'during' (**νυκτός** at night, **ἡμέρας** by day); the **accusative** says 'for how long' (**τρία ἔτη** for three years); the **dative** says 'at' a point in time (**ταύτῃ τῇ ἡμέρᾳ** on that day)."
+    ], "examples": [
+      { "text": "Τὰ δῶρα καλά ἐστιν.", "en": "The gifts are beautiful." },
+      { "text": "Τρία ἔτη ἐν Ἀθήναις οἰκῶ.", "en": "I've lived in Athens for three years." }
+    ], "drills": [
+      { "id": "np1", "prompt": "Say: The gifts are beautiful.", "answer": "Τὰ δῶρα καλά ἐστιν." },
+      { "id": "np2", "prompt": "Say: The trees are big.", "answer": "Τὰ δένδρα μεγάλα ἐστίν." },
+      { "id": "np3", "prompt": "Say: by day and by night", "answer": "ἡμέρας καὶ νυκτός" },
+      { "id": "np4", "prompt": "Say: for three years", "answer": "τρία ἔτη" }
+    ], "verified": false }
+  ],
+  "texts": [
+    { "id": "r03", "title": "Ὁ κῆπος", "level": "U5", "kind": "reading", "names": ["Νικίου", "Νικίας"], "lines": [
+      { "text": "Ἡ οἰκία τοῦ Νικίου μικρά ἐστιν, ὁ δὲ κῆπος μέγας.", "en": "Nicias' house is small, but the garden is big." },
+      { "text": "Ἐν τῷ κήπῳ πολλὰ δένδρα ἐστίν, καὶ ὑπὸ τῷ δένδρῳ ὁ κύων καθεύδει.", "en": "There are many trees in the garden, and under the tree the dog sleeps." },
+      { "text": "Ὁ Νικίας ἐκ τῆς οἰκίας εἰς τὸν κῆπον τρέχει καὶ μετὰ τοῦ ἀδελφοῦ παίζει.", "en": "Nicias runs out of the house into the garden and plays with his brother." },
+      { "text": "Ὁ δὲ πατὴρ οὐκ ἐν τῷ κήπῳ ἐστίν, ἀλλ᾽ ἐν τῷ ἀγρῷ σὺν τοῖς ἵπποις.", "en": "Father is not in the garden, but in the field with the horses." },
+      { "text": "Ἀπὸ τοῦ ἀγροῦ ὁδὸς μακρὰ εἰς τὰς Ἀθήνας φέρει.", "en": "From the field a long road leads to Athens." },
+      { "text": "Ἐπὶ τῆς ὁδοῦ πολλοὶ λίθοι εἰσίν, καὶ παρὰ τῇ ὁδῷ ποταμός.", "en": "On the road there are many stones, and beside the road a river." },
+      { "text": "Ὁ πατὴρ τοὺς ἵππους εἰς τὸν ἀγρὸν φέρει, καὶ οἱ παῖδες περὶ τὸν κῆπον τρέχουσιν.", "en": "Father brings the horses into the field, and the children run around the garden." }
+    ], "verified": false },
+    { "id": "r04", "title": "Δῶρα", "level": "U6", "kind": "reading", "names": ["Νικίᾳ", "Νικίας", "Νικίου"], "lines": [
+      { "text": "Σήμερον ἡ μήτηρ τῷ Νικίᾳ βιβλίον καλὸν δίδωσιν.", "en": "Today his mother gives Nicias a beautiful book." },
+      { "text": "Ὁ Νικίας χαίρει καὶ τῇ ἀδελφῇ μῆλα φέρει.", "en": "Nicias is glad and brings his sister apples." },
+      { "text": "Ὁ δὲ πατὴρ ἐν τῇ ἀγορᾷ ἄρτον καὶ οἶνον ἀγοράζει.", "en": "And father buys bread and wine in the agora." },
+      { "text": "«Πόσου ὁ οἶνος;» «Πολλοῦ ἀργυρίου.»", "en": "\"How much is the wine?\" \"A lot of money.\"" },
+      { "text": "Ὁ πατὴρ τῷ δούλῳ ἀργύριον δίδωσιν· ὁ δοῦλος τὸν ἄρτον εἰς τὴν οἰκίαν φέρει.", "en": "Father gives the slave money; the slave carries the bread into the house." },
+      { "text": "Ὁ φίλος τοῦ Νικίου ἐπιστολὴν πέμπει· ὁ Νικίας τὴν ἐπιστολὴν λαμβάνει καὶ χαίρει.", "en": "Nicias' friend sends a letter; Nicias receives the letter and is glad." },
+      { "text": "Ἡδεῖα ἡ ἐπιστολή, καλὸν τὸ δῶρον.", "en": "The letter is sweet, the gift beautiful." }
+    ], "verified": false },
+    { "id": "d03", "title": "Ἐν τῇ σχολῇ", "level": "U7", "kind": "dialogue", "names": ["Νικία", "Νικίας", "Βένου"], "lines": [
+      { "sp": "Διδάσκαλος", "text": "Χαίρετε, ὦ παῖδες. Σιγᾶτε καὶ ἀκούετε.", "en": "Hello, children. Be quiet and listen." },
+      { "sp": "Παῖδες", "text": "Χαῖρε, ὦ διδάσκαλε.", "en": "Hello, teacher." },
+      { "sp": "Διδάσκαλος", "text": "Ἄνοιγε τὴν θύραν, ὦ Νικία.", "en": "Open the door, Nicias." },
+      { "sp": "Νικίας", "text": "Ἰδού, ἀνοίγω.", "en": "Look, I'm opening it." },
+      { "sp": "Διδάσκαλος", "text": "Τί ὁρᾶτε ἐν τῷ βιβλίῳ;", "en": "What do you see in the book?" },
+      { "sp": "Νικίας", "text": "Γράμματα ὁρῶμεν καὶ λόγους.", "en": "We see letters and words." },
+      { "sp": "Διδάσκαλος", "text": "Καλῶς. Ἆρα ἡ Ἑλληνικὴ γλῶττα χαλεπή ἐστιν, ὦ Βένου;", "en": "Good. Is the Greek language difficult, Venu?" },
+      { "sp": "Βένου", "text": "Οὐ χαλεπή, ἀλλὰ ῥᾳδία· βραδέως δὲ λέγω.", "en": "Not difficult, but easy; I speak slowly, though." },
+      { "sp": "Διδάσκαλος", "text": "Πάλιν λέγε, ἀλλὰ ταχέως.", "en": "Say it again, but fast." },
+      { "sp": "Βένου", "text": "Οὐκ οἶδα, ὦ διδάσκαλε.", "en": "I don't know (how), teacher." },
+      { "sp": "Διδάσκαλος", "text": "Ζήτει, ἐρώτα, ἀποκρίνου, καὶ γνῶθι σεαυτόν!", "en": "Seek, ask, answer, and know yourself!" }
+    ], "verified": false },
+    { "id": "r05", "title": "Αἱ Ἀθῆναι", "level": "U8", "kind": "reading", "lines": [
+      { "text": "Αἱ Ἀθῆναι πόλις μεγάλη καὶ καλή ἐστιν, καὶ ἐν τῇ πόλει πολλοὶ πολῖται οἰκοῦσιν.", "en": "Athens is a big and beautiful city, and many citizens live in the city." },
+      { "text": "Περὶ τὴν πόλιν τείχη ἐστίν· τὰ μακρὰ τείχη ἀπὸ τῆς πόλεως εἰς τὴν θάλατταν φέρει.", "en": "Around the city there are walls; the Long Walls lead from the city to the sea." },
+      { "text": "Ἐν τῇ θαλάττῃ πολλαὶ νῆές εἰσιν, καὶ ἐν ταῖς ναυσὶ στρατιῶται.", "en": "On the sea there are many ships, and soldiers on the ships." },
+      { "text": "Ἡμέρας ὁ ἥλιος φαίνει, νυκτὸς δὲ ἡ σελήνη καὶ οἱ ἀστέρες.", "en": "By day the sun shines, and at night the moon and the stars." },
+      { "text": "Ἐκ τοῦ ὄρους πᾶσαν τὴν πόλιν καὶ τὴν θάλατταν ὁρῶμεν.", "en": "From the mountain we see the whole city and the sea." },
+      { "text": "Πάντες οἱ πολῖται εἰρήνην φιλοῦσιν, οὐ πόλεμον· ἀλλὰ πολὺν χρόνον πόλεμος ἦν.", "en": "All the citizens love peace, not war; but for a long time there was war." }
+    ], "verified": false }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "grc",
+  "name": "Ancient Greek (Attic, active method)",
+  "version": "0.1.0",
+  "dir": "ltr",
+  "tts": "el",
+  "wordWriting": "segment",
+  "writingFonts": ["Noto Serif", "Noto Sans", "GFS Didot", "Gentium Plus"],
+  "ttsNote": "There is no Ancient Greek voice. Audio uses the Modern Greek voice (Melina) with spelling adjusted toward reconstructed Attic: β δ γ as b d g, θ φ χ as t p k, η and ει as e, αι and οι as two vowels, υ as 'oo'. It can't do vowel length, aspiration or the pitch accent (it stresses the accented syllable instead). Use it as a rough guide.",
+  "ttsRespell": [
+    ["[̓̔ͅ]", ""],
+    ["[̀͂]", "́"],
+    ["ει", "ε"],
+    ["η", "ε"],
+    ["ω", "ο"],
+    ["αυ", "αου"],
+    ["ευ", "εου"],
+    ["αι", "αϊ"],
+    ["οι", "οϊ"],
+    ["(?<![αεο])υ", "ου"],
+    ["θ", "τ"],
+    ["φ", "π"],
+    ["χ", "κ"],
+    ["β", "μπ"],
+    ["δ", "ντ"],
+    ["ζ", "ζντ"],
+    ["γγ", "γκ"],
+    ["γ(?=[αεηιοωυ])", "γκ"]
+  ],
+  "wordCards": ["read", "produce"],
+  "chat": { "name": "simple Attic Greek (active-method style; write with accents and breathings)", "translit": true },
+  "vowelToggle": { "label": "Accents and breathings", "strip": "̀́͂̓̔", "nfd": true },
+  "normalize": { "strip": "̀-ͯ", "nfd": true, "map": { "ς": "σ" } },
+  "clitics": {
+    "stems": true,
+    "suffixes": ["ος", "ου", "ω", "ον", "οι", "ων", "οις", "ους", "ε", "α", "ας", "αν", "αι", "η", "ης", "ην", "αις", "ι", "ες", "σι", "σιν", "εως", "ει", "εις", "ομεν", "ετε", "ουσι", "ουσιν", "ειν", "ομαι", "εται", "ομεθα", "εσθε", "ονται", "εσθαι", "σα", "σας", "σε", "σεν", "σαμεν", "σατε", "σαν", "σαι", "οντος", "οντι", "οντα", "οντες", "οντων", "ουσα", "ουσης", "μενος", "μενη", "μενον", "μενου", "μενοι", "θη", "θην", "θηναι", "κα", "κε", "κεν", "ματος", "ματι", "ματα"]
+  },
+  "translit": { "name": "Transliteration: ē/ō = long e/o (η, ω), kh/th/ph = k/t/p with a puff of air, h = rough breathing; accents mark the pitch accent" },
+  "includes": ["units/u01-04.json", "units/u05-08.json", "units/u09-12.json", "units/readers.json"],
+  "notes": [
+    { "title": "How this pack works: reading first, active Greek", "body": [
+      "The goal is reading real Greek (Plato, Xenophon, the New Testament, Hippocrates) without a dictionary. As with Latin, the route is lots of easy Greek you understand, a little grammar at a time, and using the language actively: saying and writing simple sentences, and talking with Claude.",
+      "The readers are original, in the spirit of Rouse's direct-method *A Greek Boy at Home* (1909). From Unit 9 on you read authentic texts: a Hippocratic aphorism, Xenophon, Plato and the Gospel of John.",
+      "Each word gets a **reading card** (Greek sentence → meaning) and a **production card** (English → Greek)."
+    ]},
+    { "title": "Reconstructed Attic pronunciation, briefly", "body": [
+      "This is how Athenians of Plato's time spoke, as reconstructed from spelling mistakes in inscriptions, ancient grammarians, Latin loans and animal noises in comedy (sheep say βῆ βῆ, so η was 'e', not Modern Greek 'i').",
+      "Key points: β γ δ are b g d; θ φ χ are t p k **with a puff of air** (as in English 'top, pot, cat'), while τ π κ have none (as in 'stop, spot, scat'); ζ is 'zd'; η is a long open e, ω a long open o; ει is a long closed e and ου a long u; υ is French u (lips rounded, say 'ee'); the rough breathing ( ῾ ) is h.",
+      "The accents mark **pitch**, not stress: acute = the voice rises, circumflex = rises and falls on a long vowel. Most learners stress the accented syllable; that's fine for now.",
+      "Modern Greek pronunciation differs a lot (β = v, η = i, θ = th). The audio here is a Modern Greek voice with respelling, so it can only approximate."
+    ]},
+    { "title": "Greek and Latin reinforce each other", "body": [
+      "You already know the hard part from Latin: **cases** (Greek has five: no ablative; its jobs go to the genitive and dative), agreement, and free word order. Shared concept pages (cases, dative, participles, aspect) explain each idea once for both languages.",
+      "New in Greek: the **article** ὁ ἡ τό ('the'), which Latin lacks; the **middle voice**; and many more **participles**, which Greek uses constantly.",
+      "Many words are Indo-European cousins of Latin ones (πατήρ / pater, ὄνομα / nōmen, φέρω / ferō, πούς / pēs), and English medicine is mostly Greek: cardiology, gastritis, pediatrics. Word cards show both."
+    ]},
+    { "title": "Unverified content", "body": [
+      "The Greek was written by Claude and checked against standard grammar, but not yet by a human Hellenist, so it is marked unverified. Accents in particular are easy to get slightly wrong. Tap ⚑ Flag error on anything that looks wrong. The authentic passages were typed from the standard texts and should be checked against Perseus."
+    ]}
+  ],
+  "scriptLessons": [
+    { "id": "g1", "title": "Letters 1: Α Β Γ Δ Ε Ζ", "note": "Greek has 24 letters, most of which you half-know from math and science. Each has a capital and a small form; texts are written almost entirely in small letters.", "letters": [
+      { "id": "alpha", "char": "Α α", "name": "alpha", "tr": "a", "sound": "a as in 'father' (long) or 'idea' (short).", "connects": false, "ex": { "text": "ἀδελφός", "tr": "adelphós", "en": "brother" } },
+      { "id": "beta", "char": "Β β", "name": "bēta", "tr": "b", "sound": "b as in 'bed' (Modern Greek says v).", "connects": false, "ex": { "text": "βιβλίον", "tr": "biblíon", "en": "book" } },
+      { "id": "gamma", "char": "Γ γ", "name": "gamma", "tr": "g", "sound": "Hard g as in 'get'. Before γ κ χ ξ it is 'ng': ἄγγελος = áng-gelos.", "connects": false, "ex": { "text": "γλῶττα", "tr": "glôtta", "en": "tongue, language" } },
+      { "id": "delta", "char": "Δ δ", "name": "delta", "tr": "d", "sound": "d as in 'dog'.", "connects": false, "ex": { "text": "δῶρον", "tr": "dôron", "en": "gift" } },
+      { "id": "epsilon", "char": "Ε ε", "name": "e psīlón", "tr": "e", "sound": "Short e as in 'pet'.", "connects": false, "ex": { "text": "ἐγώ", "tr": "egṓ", "en": "I" } },
+      { "id": "zeta", "char": "Ζ ζ", "name": "zēta", "tr": "z (zd)", "sound": "zd as in 'wisdom'.", "connects": false, "ex": { "text": "ζωή", "tr": "zōḗ", "en": "life" } }
+    ]},
+    { "id": "g2", "title": "Letters 2: Η Θ Ι Κ Λ Μ", "note": "Η is a vowel (long e), not h, and Θ is one sound.", "letters": [
+      { "id": "eta", "char": "Η η", "name": "ēta", "tr": "ē", "sound": "Long open e, like 'air' without the r. Sheep in Greek comedy say βῆ βῆ.", "connects": false, "ex": { "text": "ἡμέρα", "tr": "hēmérā", "en": "day" } },
+      { "id": "theta", "char": "Θ θ", "name": "thēta", "tr": "th", "sound": "t with a puff of air, as in 'top' (later and in Modern Greek: th as in 'thin').", "connects": false, "ex": { "text": "θεός", "tr": "theós", "en": "god" } },
+      { "id": "iota", "char": "Ι ι", "name": "iōta", "tr": "i", "sound": "i as in 'machine' (long) or 'sit' (short).", "connects": false, "ex": { "text": "ἵππος", "tr": "híppos", "en": "horse" } },
+      { "id": "kappa", "char": "Κ κ", "name": "kappa", "tr": "k", "sound": "k without a puff of air, as in 'skin'.", "connects": false, "ex": { "text": "καλός", "tr": "kalós", "en": "beautiful" } },
+      { "id": "lambda", "char": "Λ λ", "name": "lambda", "tr": "l", "sound": "l as in 'let'.", "connects": false, "ex": { "text": "λόγος", "tr": "lógos", "en": "word" } },
+      { "id": "mu", "char": "Μ μ", "name": "mū", "tr": "m", "sound": "m as in 'me'.", "connects": false, "ex": { "text": "μῦθος", "tr": "mŷthos", "en": "story" } }
+    ]},
+    { "id": "g3", "title": "Letters 3: Ν Ξ Ο Π Ρ Σ", "note": "Watch out for false friends from the Latin alphabet: Ν ν is n, Ρ ρ is r, and small ν looks like a v.", "letters": [
+      { "id": "nu", "char": "Ν ν", "name": "nū", "tr": "n", "sound": "n as in 'net'. Small ν looks like a v but is n.", "connects": false, "ex": { "text": "νύξ", "tr": "nýx", "en": "night" } },
+      { "id": "xi", "char": "Ξ ξ", "name": "xeî", "tr": "x", "sound": "ks as in 'box'.", "connects": false, "ex": { "text": "ξένος", "tr": "xénos", "en": "stranger, guest" } },
+      { "id": "omicron", "char": "Ο ο", "name": "o mīkrón", "tr": "o", "sound": "Short o, as in Spanish 'no' but short.", "connects": false, "ex": { "text": "ὄνομα", "tr": "ónoma", "en": "name" } },
+      { "id": "pi", "char": "Π π", "name": "peî", "tr": "p", "sound": "p without a puff of air, as in 'spin'.", "connects": false, "ex": { "text": "πατήρ", "tr": "patḗr", "en": "father" } },
+      { "id": "rho", "char": "Ρ ρ", "name": "rhō", "tr": "r", "sound": "Rolled r as in Spanish 'perro'. At the start of a word it is breathy: ῥ = rh.", "connects": false, "ex": { "text": "ῥέω", "tr": "rhéō", "en": "flow" } },
+      { "id": "sigma", "char": "Σ σ ς", "name": "sigma", "tr": "s", "sound": "s as in 'sun', never z. Written ς at the end of a word, σ elsewhere.", "connects": false, "ex": { "text": "σῶμα", "tr": "sôma", "en": "body" } }
+    ]},
+    { "id": "g4", "title": "Letters 4: Τ Υ Φ Χ Ψ Ω", "note": "Φ and Χ are p and k with a puff of air in Attic; later Greek turned them into f and the German ch.", "letters": [
+      { "id": "tau", "char": "Τ τ", "name": "tau", "tr": "t", "sound": "t without a puff of air, as in 'stop'.", "connects": false, "ex": { "text": "τέχνη", "tr": "tékhnē", "en": "skill, art" } },
+      { "id": "upsilon", "char": "Υ υ", "name": "ŷ psīlón", "tr": "y (u)", "sound": "French u: say 'ee' with rounded lips. In ου, αυ, ευ it is u.", "connects": false, "ex": { "text": "ὕδωρ", "tr": "hýdōr", "en": "water" } },
+      { "id": "phi", "char": "Φ φ", "name": "pheî", "tr": "ph", "sound": "p with a puff of air, as in 'pot' (later f).", "connects": false, "ex": { "text": "φίλος", "tr": "phílos", "en": "friend" } },
+      { "id": "chi", "char": "Χ χ", "name": "kheî", "tr": "kh (ch)", "sound": "k with a puff of air, as in 'cat' (later like German Bach).", "connects": false, "ex": { "text": "χείρ", "tr": "kheír", "en": "hand" } },
+      { "id": "psi", "char": "Ψ ψ", "name": "pseî", "tr": "ps", "sound": "ps as in 'lapse'.", "connects": false, "ex": { "text": "ψυχή", "tr": "psykhḗ", "en": "soul, life" } },
+      { "id": "omega", "char": "Ω ω", "name": "ō méga", "tr": "ō", "sound": "Long open o, as in 'awe'.", "connects": false, "ex": { "text": "ᾠδή", "tr": "ōidḗ", "en": "song, ode" } }
+    ]},
+    { "id": "g5", "title": "Breathings, accents, diphthongs", "note": "Every word starting with a vowel has a breathing mark; most words have one accent. Neither changes the letter.", "letters": [
+      { "id": "breathing", "char": "ἀ ἁ", "name": "smooth and rough breathing", "tr": "a / ha", "sound": "Over a first vowel (or ρ): ᾿ smooth = nothing; ῾ rough = h. ἡμέρα = hēmérā. On a diphthong it sits on the second vowel: οἱ = hoi.", "connects": false, "ex": { "text": "ἡμέρα", "tr": "hēmérā", "en": "day" } },
+      { "id": "accents", "char": "ά ὰ ᾶ", "name": "acute, grave, circumflex", "tr": "pitch", "sound": "Acute ´: the pitch rises. Circumflex ῀ (long vowels only): rises and falls. Grave `: replaces an acute on a last syllable before another word.", "connects": false, "ex": { "text": "φῶς", "tr": "phôs", "en": "light" } },
+      { "id": "ai-oi", "char": "αι οι", "name": "diphthongs αι, οι", "tr": "ai / oi", "sound": "αι as in 'aisle', οι as in 'boy'.", "connects": false, "ex": { "text": "παῖς", "tr": "paîs", "en": "child" } },
+      { "id": "ei-ou", "char": "ει ου", "name": "spellings ει, ου", "tr": "ē / ū", "sound": "Not diphthongs in Attic: ει is a long closed e (as in 'they' without the y), ου a long u as in 'food'.", "connects": false, "ex": { "text": "οὐρανός", "tr": "ouranós", "en": "sky" } },
+      { "id": "au-eu", "char": "αυ ευ", "name": "diphthongs αυ, ευ", "tr": "au / eu", "sound": "αυ as in 'how'; ευ is e + u run together.", "connects": false, "ex": { "text": "αὐτός", "tr": "autós", "en": "self, he" } },
+      { "id": "iota-sub", "char": "ᾳ ῃ ῳ", "name": "iota subscript", "tr": "āi / ēi / ōi", "sound": "A small ι under a long vowel: once pronounced (a long diphthong), silent in later Greek. Common in the dative: τῷ, τῇ.", "connects": false, "ex": { "text": "ἐν τῷ κήπῳ", "tr": "en tôi kḗpōi", "en": "in the garden" } },
+      { "id": "punct", "char": "; ·", "name": "question mark and raised dot", "tr": "? / ;", "sound": "The Greek question mark looks like our semicolon (;), and the raised dot (·) works like a colon or semicolon.", "connects": false, "ex": { "text": "Τίς εἶ;", "tr": "Tís eî?", "en": "Who are you?" } }
+    ]}
+  ],
+  "contrasts": [],
+  "speaking": [
+    { "id": "p-intro", "level": "U1", "en": "Introduce yourself in Greek: greet, give your name, say you're a student and how you are.", "hints": ["Χαῖρε!", "Ὄνομά μοι …", "Μαθητής εἰμι.", "Εὖ ἔχω."], "fluency": true },
+    { "id": "p-geo", "level": "U2", "en": "Say where five places are and whether they are big or small.", "hints": ["… ἐν τῇ Ἑλλάδι ἐστίν.", "… μεγάλη ἐστίν.", "… οὐ μικρά ἐστιν."] },
+    { "id": "p-family", "level": "U3", "en": "Describe your family: who is older, who is younger, whose child you are.", "hints": ["Ὁ πατήρ μου …", "Ἀδελφὸν ἔχω …", "… πρεσβύτερός ἐστιν."], "fluency": true },
+    { "id": "p-day", "level": "U4", "en": "Say what you do always, often and never.", "hints": ["Ἀεὶ …", "Πολλάκις …", "Οὐδέποτε …"], "fluency": true },
+    { "id": "p-garden", "level": "U5", "en": "Describe a garden or campus, saying where things are with ἐν, ὑπό, εἰς, ἐκ.", "hints": ["Ἐν τῷ κήπῳ …", "Ὑπὸ τῷ δένδρῳ …", "Ἐκ τῆς οἰκίας …"] },
+    { "id": "p-gifts", "level": "U6", "en": "Say who gives what to whom (dative).", "hints": ["Ἡ μήτηρ τῷ παιδὶ … δίδωσιν.", "Τῷ φίλῳ ἐπιστολὴν πέμπω."] },
+    { "id": "p-class", "level": "U7", "en": "Be the teacher: give five classroom commands.", "hints": ["Σιγᾶτε!", "Ἀκούετε!", "Ἄνοιγε τὴν θύραν.", "Πάλιν λέγε."] },
+    { "id": "p-city", "level": "U8", "en": "Describe Athens or Baltimore: city, citizens, sea, day and night.", "hints": ["Ἡ πόλις μεγάλη ἐστίν.", "Πολλοὶ πολῖται …", "Νυκτὸς …"] },
+    { "id": "p-doctor", "level": "U9", "en": "Tell a doctor what hurts, for how long, and ask what to do. You're pre-med: use the Greek behind the medical words.", "hints": ["Τὴν κεφαλὴν ἀλγῶ.", "Πυρετὸν ἔχω.", "Τί δεῖ ποιεῖν;"], "fluency": true },
+    { "id": "p-yesterday", "level": "U10", "en": "Tell what you did yesterday, in order (aorist).", "hints": ["Χθὲς …", "Πρῶτον …", "Ἔπειτα …", "Τέλος …"], "fluency": true },
+    { "id": "p-fable", "level": "U11", "en": "Retell the fable of the wolf and the lamb in your own words.", "hints": ["Λύκος ποτὲ ἄρνα εἶδεν …", "Ὁ λύκος ἔφη …"], "fluency": true },
+    { "id": "p-xenophon", "level": "U12", "en": "Read Xenophon's first sentence aloud, then explain it in simple Greek.", "hints": ["Δαρεῖος δύο παῖδας εἶχεν.", "Ὁ μὲν πρεσβύτερος …, ὁ δὲ νεώτερος …"] }
+  ],
+  "scenarios": [
+    { "id": "sc-meet", "title": "Meeting an Athenian student", "setup": "You meet a student in the agora of Athens and introduce yourselves.", "you": "a student from America", "partner": "Nikias, a friendly Athenian student", "grammar": ["εἰμί", "questions"] },
+    { "id": "sc-family", "title": "Dinner in an Athenian house", "setup": "An Athenian family invites you to dinner and asks about your family.", "you": "a guest", "partner": "Aspasia, the mother of the house", "grammar": ["genitive", "possessives"] },
+    { "id": "sc-agora", "title": "Shopping in the agora", "setup": "You want to buy bread, wine and a book in the agora.", "you": "a shopper", "partner": "a merchant", "grammar": ["accusative", "πόσου; (how much?)"] },
+    { "id": "sc-way", "title": "Lost in Athens", "setup": "You ask the way from the agora to the Acropolis and to the harbour (Piraeus).", "you": "a lost visitor", "partner": "a helpful citizen", "grammar": ["prepositions", "imperative"] },
+    { "id": "sc-school", "title": "In class with a strict teacher", "setup": "The teacher asks you questions about a story you read.", "you": "a pupil", "partner": "a strict but kind διδάσκαλος", "grammar": ["present tense", "imperative"] },
+    { "id": "sc-doctor", "title": "At the Hippocratic doctor's", "setup": "You have a headache and fever. The doctor, a student of Hippocrates, examines you and gives advice.", "you": "a patient", "partner": "a doctor from Cos", "grammar": ["middle voice", "body parts"] },
+    { "id": "sc-yesterday", "title": "What did you do yesterday?", "setup": "A friend asks about your day yesterday.", "you": "yourself", "partner": "Nikias", "grammar": ["aorist"] },
+    { "id": "sc-fable", "title": "Telling a fable", "setup": "Tell a child one of Aesop's fables and answer their questions about it.", "you": "the storyteller", "partner": "a curious child", "grammar": ["participles", "relative ὅς"] }
+  ],
+  "units": [],
+  "words": [],
+  "grammar": [],
+  "texts": []
+}

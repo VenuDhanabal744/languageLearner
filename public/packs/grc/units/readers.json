@@ -1,0 +1,22 @@
+{
+  "texts": [
+    { "id": "x01", "title": "Reader: Ὁ Ἱπποκράτης", "level": "U10", "kind": "reading", "names": ["Ἱπποκράτης", "Κῷ"], "lines": [
+      { "text": "Ἱπποκράτης ἰατρὸς Ἕλλην ἦν· ἐν τῇ νήσῳ Κῷ ᾤκει.", "en": "Hippocrates was a Greek doctor; he lived on the island of Cos." },
+      { "text": "Πολλοὶ ἄνθρωποι ἀσθενεῖς πρὸς αὐτὸν ἦλθον, καὶ ὁ Ἱπποκράτης πολλὰ φάρμακα αὐτοῖς ἔδωκεν.", "en": "Many sick people came to him, and Hippocrates gave them many remedies." },
+      { "text": "Ἔλεγεν ὅτι αἱ νόσοι οὐκ ἐκ τῶν θεῶν εἰσιν, ἀλλ᾽ ἐκ τοῦ σώματος καὶ τοῦ βίου.", "en": "He used to say that diseases do not come from the gods, but from the body and the way of life." },
+      { "text": "Πρῶτον τὸν ἄνθρωπον ἐρωτᾷ· «Τί πάσχεις; Πόσον χρόνον ἀλγεῖς;»", "en": "First he asks the patient: \"What's wrong? How long have you been in pain?\"" },
+      { "text": "Ἔπειτα τὸ σῶμα βλέπει, καὶ τὴν καρδίαν καὶ τοὺς ὀφθαλμούς.", "en": "Then he looks at the body, and the heart and the eyes." },
+      { "text": "Οἱ ἰατροὶ καὶ νῦν τὸ ὄνομα αὐτοῦ γιγνώσκουσιν.", "en": "Doctors still know his name today." },
+      { "text": "«Ὁ βίος βραχύς, ἡ δὲ τέχνη μακρή.»", "en": "\"Life is short, the art long.\"" }
+    ], "verified": false },
+    { "id": "x02", "title": "Reader: Σωκράτης ἐν τῇ ἀγορᾷ", "level": "U12", "kind": "reading", "names": ["Σωκράτης", "Ἀθηναῖος", "Ἀθηναῖοι", "Πλάτων"], "lines": [
+      { "text": "Σωκράτης Ἀθηναῖος ἦν· οὐ πολὺ ἀργύριον εἶχεν, ἀλλὰ πολλοὺς φίλους.", "en": "Socrates was an Athenian; he didn't have much money, but he had many friends." },
+      { "text": "Πᾶσαν τὴν ἡμέραν ἐν τῇ ἀγορᾷ ἦν καὶ τοὺς πολίτας ἠρώτα.", "en": "All day long he was in the agora, questioning the citizens." },
+      { "text": "«Τί ἐστι τὸ καλόν; Τί ἐστι τὸ δίκαιον;»", "en": "\"What is the beautiful? What is the just?\"" },
+      { "text": "Οἱ μὲν πολῖται ἀπεκρίναντο, ὁ δὲ Σωκράτης πάλιν ἠρώτα, καὶ τέλος οὐδὲν ᾔδεσαν.", "en": "The citizens answered, but Socrates asked again, and in the end they knew nothing." },
+      { "text": "«Ἓν οἶδα», ἔφη ὁ Σωκράτης, «ὅτι οὐδὲν οἶδα.»", "en": "\"One thing I know,\" said Socrates, \"that I know nothing.\"" },
+      { "text": "Ὕστερον οἱ Ἀθηναῖοι αὐτῷ φάρμακον ἔδωκαν, καὶ ὁ Σωκράτης ἀπέθανεν.", "en": "Later the Athenians gave him poison, and Socrates died." },
+      { "text": "Ὁ δὲ μαθητὴς αὐτοῦ Πλάτων πολλοὺς λόγους περὶ αὐτοῦ ἔγραψεν.", "en": "And his student Plato wrote many dialogues about him." }
+    ], "verified": false }
+  ]
+}

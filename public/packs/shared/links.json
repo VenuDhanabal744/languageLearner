@@ -482,27 +482,27 @@
     "items": [
       {
         "lang": "la",
-        "text": "est",
-        "tr": "est",
-        "en": "is"
+        "text": "sum",
+        "tr": "sum / est",
+        "en": "I am / is"
       },
       {
         "lang": "grc",
-        "text": "ἐστί",
-        "tr": "estí",
-        "en": "is"
+        "text": "εἰμί",
+        "tr": "eimí / estí",
+        "en": "I am / is"
       },
       {
         "lang": "es",
-        "text": "es",
-        "tr": "es",
+        "text": "soy",
+        "tr": "soy / es",
         "en": "Spanish descendant"
       },
       {
         "lang": "sa",
-        "text": "अस्ति",
-        "tr": "asti",
-        "en": "is"
+        "text": "अस्मि",
+        "tr": "asmi / asti",
+        "en": "I am / is"
       }
     ]
   },
@@ -977,6 +977,693 @@
         "text": "שוק",
         "tr": "shuk",
         "en": "market"
+      }
+    ]
+  },
+  {
+    "id": "ie-name",
+    "type": "cognate",
+    "note": "Name (*h₁nómn̥)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "nōmen",
+        "tr": "nōmen",
+        "en": "name"
+      },
+      {
+        "lang": "grc",
+        "text": "ὄνομα",
+        "tr": "ónoma",
+        "en": "name"
+      },
+      {
+        "lang": "es",
+        "text": "nombre",
+        "tr": "nombre",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "नामन्",
+        "tr": "nāman",
+        "en": "name"
+      }
+    ]
+  },
+  {
+    "id": "ie-ago",
+    "type": "cognate",
+    "note": "Drive, lead (*h₂eǵ-)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "agō",
+        "tr": "agō",
+        "en": "do, drive"
+      },
+      {
+        "lang": "grc",
+        "text": "ἄγω",
+        "tr": "ágō",
+        "en": "lead"
+      },
+      {
+        "lang": "sa",
+        "text": "अजति",
+        "tr": "ajati",
+        "en": "drives"
+      }
+    ]
+  },
+  {
+    "id": "ie-weid",
+    "type": "cognate",
+    "note": "See → know (*weyd-): 'I have seen' = 'I know'",
+    "items": [
+      {
+        "lang": "la",
+        "text": "videō",
+        "tr": "videō",
+        "en": "I see"
+      },
+      {
+        "lang": "grc",
+        "text": "οἶδα",
+        "tr": "oîda",
+        "en": "I know"
+      },
+      {
+        "lang": "sa",
+        "text": "वेद",
+        "tr": "veda",
+        "en": "knowledge; I know"
+      },
+      {
+        "lang": "en",
+        "text": "wit",
+        "tr": "wit",
+        "en": "English cousin"
+      }
+    ]
+  },
+  {
+    "id": "ie-bher",
+    "type": "cognate",
+    "note": "Carry (*bʰer-)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "ferō",
+        "tr": "ferō",
+        "en": "carry"
+      },
+      {
+        "lang": "grc",
+        "text": "φέρω",
+        "tr": "phérō",
+        "en": "carry"
+      },
+      {
+        "lang": "sa",
+        "text": "भरति",
+        "tr": "bharati",
+        "en": "carries"
+      },
+      {
+        "lang": "en",
+        "text": "bear",
+        "tr": "bear",
+        "en": "English cousin"
+      }
+    ]
+  },
+  {
+    "id": "ie-heart",
+    "type": "cognate",
+    "note": "Heart (*ḱérd)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "cor",
+        "tr": "cor",
+        "en": "heart"
+      },
+      {
+        "lang": "grc",
+        "text": "καρδία",
+        "tr": "kardía",
+        "en": "heart"
+      },
+      {
+        "lang": "sa",
+        "text": "हृद्",
+        "tr": "hṛd",
+        "en": "heart"
+      },
+      {
+        "lang": "en",
+        "text": "heart",
+        "tr": "heart",
+        "en": "English cousin"
+      }
+    ]
+  },
+  {
+    "id": "ie-foot",
+    "type": "cognate",
+    "note": "Foot (*pṓds)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "pēs",
+        "tr": "pēs",
+        "en": "foot"
+      },
+      {
+        "lang": "grc",
+        "text": "πούς",
+        "tr": "poús",
+        "en": "foot"
+      },
+      {
+        "lang": "es",
+        "text": "pie",
+        "tr": "pie",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "पद्",
+        "tr": "pad",
+        "en": "foot"
+      }
+    ]
+  },
+  {
+    "id": "ie-give",
+    "type": "cognate",
+    "note": "Give (*deh₃-)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "dō",
+        "tr": "dō",
+        "en": "give"
+      },
+      {
+        "lang": "grc",
+        "text": "δίδωμι",
+        "tr": "dídōmi",
+        "en": "give"
+      },
+      {
+        "lang": "sa",
+        "text": "ददाति",
+        "tr": "dadāti",
+        "en": "gives"
+      }
+    ]
+  },
+  {
+    "id": "ie-sun",
+    "type": "cognate",
+    "note": "Sun (*sóh₂wl̥)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "sōl",
+        "tr": "sōl",
+        "en": "sun"
+      },
+      {
+        "lang": "grc",
+        "text": "ἥλιος",
+        "tr": "hḗlios",
+        "en": "sun"
+      },
+      {
+        "lang": "sa",
+        "text": "सूर्य",
+        "tr": "sūrya",
+        "en": "sun"
+      },
+      {
+        "lang": "es",
+        "text": "sol",
+        "tr": "sol",
+        "en": "Spanish descendant"
+      }
+    ]
+  },
+  {
+    "id": "ie-dog",
+    "type": "cognate",
+    "note": "Dog (*ḱwṓ)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "canis",
+        "tr": "canis",
+        "en": "dog"
+      },
+      {
+        "lang": "grc",
+        "text": "κύων",
+        "tr": "kýōn",
+        "en": "dog"
+      },
+      {
+        "lang": "sa",
+        "text": "श्वन्",
+        "tr": "śvan",
+        "en": "dog"
+      },
+      {
+        "lang": "en",
+        "text": "hound",
+        "tr": "hound",
+        "en": "English cousin"
+      }
+    ]
+  },
+  {
+    "id": "ie-you",
+    "type": "cognate",
+    "note": "You, singular (*túh₂)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "tū",
+        "tr": "tū",
+        "en": "you"
+      },
+      {
+        "lang": "grc",
+        "text": "σύ",
+        "tr": "sý",
+        "en": "you"
+      },
+      {
+        "lang": "es",
+        "text": "tú",
+        "tr": "tú",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "त्वम्",
+        "tr": "tvam",
+        "en": "you"
+      }
+    ]
+  },
+  {
+    "id": "ie-who",
+    "type": "cognate",
+    "note": "Who? (*kʷis)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "quis",
+        "tr": "quis",
+        "en": "who?"
+      },
+      {
+        "lang": "grc",
+        "text": "τίς",
+        "tr": "tís",
+        "en": "who?"
+      },
+      {
+        "lang": "es",
+        "text": "quién",
+        "tr": "quién",
+        "en": "Spanish descendant"
+      }
+    ]
+  },
+  {
+    "id": "ie-ear",
+    "type": "cognate",
+    "note": "Ear (*h₂ṓws)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "auris",
+        "tr": "auris",
+        "en": "ear"
+      },
+      {
+        "lang": "grc",
+        "text": "οὖς",
+        "tr": "oûs",
+        "en": "ear"
+      },
+      {
+        "lang": "en",
+        "text": "ear",
+        "tr": "ear",
+        "en": "English cousin"
+      }
+    ]
+  },
+  {
+    "id": "ie-leg",
+    "type": "cognate",
+    "note": "Gather → count → tell (*leǵ-)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "legō",
+        "tr": "legō",
+        "en": "gather, read"
+      },
+      {
+        "lang": "grc",
+        "text": "λέγω",
+        "tr": "légō",
+        "en": "say"
+      }
+    ]
+  },
+  {
+    "id": "ie-come",
+    "type": "cognate",
+    "note": "Come, go (*gʷem-)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "veniō",
+        "tr": "veniō",
+        "en": "come"
+      },
+      {
+        "lang": "grc",
+        "text": "βαίνω",
+        "tr": "baínō",
+        "en": "go"
+      },
+      {
+        "lang": "sa",
+        "text": "गच्छति",
+        "tr": "gacchati",
+        "en": "goes"
+      }
+    ]
+  },
+  {
+    "id": "ie-wolf",
+    "type": "cognate",
+    "note": "Wolf (*wĺ̥kʷos)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "lupus",
+        "tr": "lupus",
+        "en": "wolf"
+      },
+      {
+        "lang": "grc",
+        "text": "λύκος",
+        "tr": "lýkos",
+        "en": "wolf"
+      },
+      {
+        "lang": "es",
+        "text": "lobo",
+        "tr": "lobo",
+        "en": "Spanish descendant"
+      },
+      {
+        "lang": "sa",
+        "text": "वृक",
+        "tr": "vṛka",
+        "en": "wolf"
+      }
+    ]
+  },
+  {
+    "id": "ie-evening",
+    "type": "cognate",
+    "note": "Evening (*wesperos)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "vesper",
+        "tr": "vesper",
+        "en": "evening"
+      },
+      {
+        "lang": "grc",
+        "text": "ἑσπέρα",
+        "tr": "hespéra",
+        "en": "evening"
+      }
+    ]
+  },
+  {
+    "id": "ie-flee",
+    "type": "cognate",
+    "note": "Flee (*bʰewg-)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "fugiō",
+        "tr": "fugiō",
+        "en": "flee"
+      },
+      {
+        "lang": "grc",
+        "text": "φεύγω",
+        "tr": "pheúgō",
+        "en": "flee"
+      }
+    ]
+  },
+  {
+    "id": "ie-horse",
+    "type": "cognate",
+    "note": "Horse (*h₁éḱwos)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "equus",
+        "tr": "equus",
+        "en": "horse"
+      },
+      {
+        "lang": "grc",
+        "text": "ἵππος",
+        "tr": "híppos",
+        "en": "horse"
+      },
+      {
+        "lang": "sa",
+        "text": "अश्व",
+        "tr": "aśva",
+        "en": "horse"
+      }
+    ]
+  },
+  {
+    "id": "ie-field",
+    "type": "cognate",
+    "note": "Field (*h₂éǵros)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "ager",
+        "tr": "ager",
+        "en": "field"
+      },
+      {
+        "lang": "grc",
+        "text": "ἀγρός",
+        "tr": "agrós",
+        "en": "field"
+      },
+      {
+        "lang": "sa",
+        "text": "अज्र",
+        "tr": "ajra",
+        "en": "plain"
+      }
+    ]
+  },
+  {
+    "id": "ie-in",
+    "type": "cognate",
+    "note": "In (*h₁én)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "in",
+        "tr": "in",
+        "en": "in"
+      },
+      {
+        "lang": "grc",
+        "text": "ἐν",
+        "tr": "en",
+        "en": "in"
+      },
+      {
+        "lang": "es",
+        "text": "en",
+        "tr": "en",
+        "en": "Spanish descendant"
+      }
+    ]
+  },
+  {
+    "id": "ie-ex",
+    "type": "cognate",
+    "note": "Out of (*h₁eǵʰs)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "ex",
+        "tr": "ex",
+        "en": "out of"
+      },
+      {
+        "lang": "grc",
+        "text": "ἐκ",
+        "tr": "ek",
+        "en": "out of"
+      }
+    ]
+  },
+  {
+    "id": "ie-ab",
+    "type": "cognate",
+    "note": "Away from (*h₂epó)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "ab",
+        "tr": "ab",
+        "en": "from"
+      },
+      {
+        "lang": "grc",
+        "text": "ἀπό",
+        "tr": "apó",
+        "en": "from"
+      },
+      {
+        "lang": "en",
+        "text": "of, off",
+        "tr": "of",
+        "en": "English cousins"
+      }
+    ]
+  },
+  {
+    "id": "ie-sub",
+    "type": "cognate",
+    "note": "Under (*upó)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "sub",
+        "tr": "sub",
+        "en": "under"
+      },
+      {
+        "lang": "grc",
+        "text": "ὑπό",
+        "tr": "hypó",
+        "en": "under"
+      }
+    ]
+  },
+  {
+    "id": "ie-super",
+    "type": "cognate",
+    "note": "Over (*upér)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "super",
+        "tr": "super",
+        "en": "over"
+      },
+      {
+        "lang": "grc",
+        "text": "ὑπέρ",
+        "tr": "hypér",
+        "en": "over"
+      },
+      {
+        "lang": "en",
+        "text": "over",
+        "tr": "over",
+        "en": "English cousin"
+      }
+    ]
+  },
+  {
+    "id": "ie-ante",
+    "type": "cognate",
+    "note": "Facing, before (*h₂ent-)",
+    "items": [
+      {
+        "lang": "la",
+        "text": "ante",
+        "tr": "ante",
+        "en": "before"
+      },
+      {
+        "lang": "grc",
+        "text": "ἀντί",
+        "tr": "antí",
+        "en": "against, instead of"
+      }
+    ]
+  },
+  {
+    "id": "loan-schola",
+    "type": "loan",
+    "note": "Latin borrowed it from Greek: 'leisure' → 'school'",
+    "items": [
+      {
+        "lang": "grc",
+        "text": "σχολή",
+        "tr": "skholḗ",
+        "en": "leisure, school"
+      },
+      {
+        "lang": "la",
+        "text": "schola",
+        "tr": "schola",
+        "en": "school"
+      },
+      {
+        "lang": "es",
+        "text": "escuela",
+        "tr": "escuela",
+        "en": "Spanish descendant"
+      }
+    ]
+  },
+  {
+    "id": "loan-epistula",
+    "type": "loan",
+    "note": "Latin borrowed it from Greek",
+    "items": [
+      {
+        "lang": "grc",
+        "text": "ἐπιστολή",
+        "tr": "epistolḗ",
+        "en": "letter"
+      },
+      {
+        "lang": "la",
+        "text": "epistula",
+        "tr": "epistula",
+        "en": "letter"
       }
     ]
   }

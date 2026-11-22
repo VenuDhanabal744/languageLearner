@@ -256,6 +256,65 @@ try {
   await page.locator('.choice').first().click()
   check('Hebrew HVPT trial gives feedback', await page.getByText(/Right|Not quite/).first().waitFor({ timeout: 5000 }).then(() => true, () => false))
 
+  // ---- Ancient Greek: activate (Hebrew to maintenance), session, polytonic reader, accents toggle, Latin link, audio respell ----
+  await page.getByRole('button', { name: /Settings/ }).last().click()
+  await btn(/Choose active/).click()
+  await page.locator('.row', { hasText: 'Hebrew' }).locator('select').selectOption('maintenance')
+  await page.locator('.row', { hasText: 'Ancient Greek' }).locator('select').selectOption('active')
+  await page.getByRole('button', { name: /Today/ }).last().click()
+  check('Greek card appears on Today', await page.getByText('Ancient Greek (Attic, active method)').first().waitFor({ timeout: 8000 }).then(() => true, () => false))
+  await btn(/^15\s*min/).click()
+  await page.getByText('New material').first().waitFor()
+  check('15-min plan includes Greek', (await page.locator('.plan').innerText()).includes('Ancient Greek'))
+  await btn('Start', true).click()
+  let gsteps = 0, sawGrScript = false, sawGrRead = false
+  while (gsteps++ < 220) {
+    if (await visible(btn('Back to Today'))) break
+    try {
+      if (await visible(btn('Got it →'))) {
+        if (!sawGrScript && await visible(page.getByText(/Letters 1: Α Β Γ/))) { await shot('20-greek-letters'); sawGrScript = true }
+        await btn('Got it →').click({ timeout: 3000 }); continue
+      }
+      if (await visible(btn('Show answer'))) {
+        if (!sawGrRead && await visible(page.locator('.prompt .tl-grc'))) { await shot('21-greek-card'); sawGrRead = true }
+        await btn('Show answer').click({ timeout: 3000 }); await page.locator('.grade.good').click({ timeout: 3000 }); continue
+      }
+      if (await visible(btn('Next →'))) { await btn('Next →').click({ timeout: 3000 }); continue }
+      if (await visible(btn('Done →'))) { await btn('Done →').click({ timeout: 3000 }); continue }
+      if (await visible(btn(/Finished reading/))) { await btn(/Finished reading/).click({ timeout: 3000 }); continue }
+      if (await visible(btn('▶︎ Start')) || await visible(page.locator('.rec'))) { await btn('Skip this part').click({ timeout: 3000 }); continue }
+    } catch (e) { console.log('  (retrying step: ' + e.message.split('\n')[0] + ')') }
+    await page.waitForTimeout(250)
+  }
+  check('Arabic + Greek session runs to the end', await visible(btn('Back to Today')), `${gsteps} steps`)
+  check('Greek alphabet lesson shown', sawGrScript)
+  check('Greek card shown in polytonic script', sawGrRead)
+  await btn('Back to Today').click()
+  await page.getByRole('button', { name: /Library/ }).last().click()
+  await btn('Ancient Greek', true).click()
+  await btn('Readers').click()
+  await page.getByRole('button', { name: /Ἰωάννην/ }).click()
+  await page.locator('.reader').waitFor()
+  const grText = await page.locator('.line .tl-grc').first().innerText()
+  check('Greek reader shows polytonic text left-to-right', grText.includes('ἀρχῇ') && await page.locator('.line .tl-grc').first().evaluate(el => getComputedStyle(el).direction) === 'ltr', grText.slice(0, 24))
+  await shot('22-greek-john')
+  await page.getByRole('button', { name: /Settings/ }).last().click()
+  await page.getByText('Show vowel marks').click()
+  await page.getByRole('button', { name: /Library/ }).last().click()
+  await btn('Ancient Greek', true).click()
+  await btn('Readers').click()
+  await page.getByRole('button', { name: /Ἰωάννην/ }).click()
+  const bare = await page.locator('.line .tl-grc').first().innerText()
+  check('accent toggle hides Greek accents and breathings, keeps iota subscript', /εν αρχῃ ην ο λογος/i.test(bare), bare.slice(0, 24))
+  await page.getByRole('button', { name: /Settings/ }).last().click()
+  await page.getByText('Show vowel marks').click()
+  await page.getByRole('button', { name: /Library/ }).last().click()
+  await btn('Ancient Greek', true).click()
+  await btn('Words', true).click()
+  await page.getByRole('button', { name: /^ὄνομα/ }).first().click()
+  check('Greek word shows its Latin cousin', await page.getByText(/Latin nōmen/).first().waitFor({ timeout: 5000 }).then(() => true, () => false))
+  await shot('23-greek-latin-link')
+
   // ---- cross-device sync, against a fake GitHub contents API shared by two "devices" ----
   const gh = { file: null, sha: 0, puts: 0 }
   const CORS = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'Authorization, Content-Type, X-GitHub-Api-Version', 'access-control-allow-methods': 'GET, PUT' }

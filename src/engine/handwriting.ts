@@ -157,7 +157,7 @@ export function judge(scores: { char: string; score: number }[], target: string)
 export function writableChars(entry: string, plainElsewhere: Set<string>): string[] {
   const toks = entry.split(/\s+/).filter(Boolean)
   const letters = (s: string) => (s.match(/\p{L}/gu) ?? []).length
-  const plain = toks.filter(t => letters(t) === 1 && !/\p{M}/u.test(t))
+  const plain = toks.filter(t => letters(t) === 1 && !/\p{M}/u.test(t.normalize('NFD'))) // NFD: ἁ is one precomposed code point
   if (plain.length) return plain
   const bases = [...new Set(toks.map(t => t.normalize('NFD').replace(/\p{M}/gu, '')).filter(t => letters(t) === 1))]
   return bases.filter(b => !plainElsewhere.has(b))
@@ -182,3 +182,6 @@ export function addSample(store: Record<string, Sample[]>, ch: string, x: Sample
   const list = (store[ch] ?? []).filter(y => key(y) !== key(x))
   return { ...store, [ch]: [...list, x].slice(-MAX_SAMPLES) }
 }
+
+/** Letters only compete with letters of the same case: a small ρ is never judged against capital Ρ. */
+export const caseOf = (c: string) => (c.toLowerCase() === c.toUpperCase() ? 'none' : c === c.toLowerCase() ? 'lower' : 'upper')

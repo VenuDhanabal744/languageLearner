@@ -213,7 +213,7 @@ function CardView({ w, card, onGraded }: { w: World; card: CardRow; onGraded: (c
   )
 }
 
-const LANG_NAME: Record<string, string> = { es: 'Spanish', en: 'English', it: 'Italian', fr: 'French', grc: 'Greek', sa: 'Sanskrit', ar: 'Arabic', he: 'Hebrew' }
+const LANG_NAME: Record<string, string> = { es: 'Spanish', en: 'English', it: 'Italian', fr: 'French', grc: 'Greek', la: 'Latin', sa: 'Sanskrit', ar: 'Arabic', he: 'Hebrew', zh: 'Chinese', ta: 'Tamil' }
 function Cognates({ c }: { c?: Record<string, string> }) {
   if (!c) return null
   return <p class="small">≈ {Object.entries(c).map(([l, t], i) => <span key={l}>{i ? ' · ' : ''}{LANG_NAME[l] ?? l} <i>{t}</i></span>)}</p>

@@ -53,7 +53,7 @@ On iPad, handwriting is on by default (Settings → Study turns it on or off per
   it without the guide and tap **Check**. Every other letter review asks you to *write* the letter instead of reading it.
   The checker runs on the iPad, offline once its template fonts are cached. It compares your ink with every letter of
   the script, so it can say "that looks more like ب". After the first time you've used the Pencil, the pad ignores your palm.
-- **Words and sentences are checked letter by letter** (Hebrew now; Greek and Tamil as their packs arrive). On word,
+- **Words and sentences are checked letter by letter** (Hebrew and Ancient Greek now; Tamil when its pack arrives). On word,
   drill and mistake cards a wide pad opens: write the answer on one line, without vowel points, then tap Show answer.
   The app splits your writing into letters, lines them up with the expected answer (it notices a missing letter,
   extra marks, a letter written in two pieces, or two letters touching), and checks each one: green = right,
@@ -66,6 +66,8 @@ On iPad, handwriting is on by default (Settings → Study turns it on or off per
 - **How accurate is it?** It's tested on fonts, not yet on your handwriting. For single letters it picks the right one about
   81% of the time for Hebrew, and about 90% for Arabic in plain fonts. For 120 Hebrew words in 5 fonts it accepts 63% of correctly
   written words and catches 84% of one-letter mistakes. After learning one sample of each letter, that rises to 82% and 85%.
+  For 80 Greek words (small letters) in 5 fonts: 74% accepted, 81% of one-letter mistakes caught. Small letters are only ever
+  compared with small letters, capitals with capitals.
   Expect your first sessions to need a few "I wrote these right" taps. Sentences must fit on one line for now.
 
 ## Back up and restore
@@ -117,7 +119,8 @@ with the pack file to get fixes.
 | Mandarin | ~10 voices | good, with real multi-talker tone training |
 | Tamil | Vani | weak to moderate |
 | Latin | none; uses the Italian voice with Latin respelled toward Classical sounds | **weak**: rough guide only (vowel length and some stress are wrong) |
-| Sanskrit, Ancient Greek | none | **weak**: recordings only |
+| Ancient Greek | none; uses the Modern Greek voice (Melina) with spelling respelled toward reconstructed Attic | **weak**: rough guide only (no vowel length, aspiration or pitch accent; no sound training) |
+| Sanskrit | none | **weak**: recordings only |
 
 Fix weak audio for free with **Library → Sounds → Add a speaker**: a native-speaker friend records the word lists once
 on your phone.

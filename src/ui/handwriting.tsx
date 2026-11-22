@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'preact/hooks'
 import type { Pack } from '../packs/types'
-import { bitmap, shape, compare, judge, writableChars, packShape, unpackShape, addSample, type Bitmap, type Shape, type Verdict, type Sample } from '../engine/handwriting'
+import { bitmap, shape, compare, judge, writableChars, caseOf, packShape, unpackShape, addSample, type Bitmap, type Shape, type Verdict, type Sample } from '../engine/handwriting'
 import { kvGet, kvSet } from '../store/db'
 import { checkWordInk, answerLetters, type WordResult } from '../engine/wordwriting'
 import { T } from './common'
@@ -88,7 +88,7 @@ export const warmTemplates = (pack: Pack) => { void templatesFor(pack) }
 
 const entriesOf = (pack: Pack) => (pack.scriptLessons ?? []).flatMap(s => s.letters.map(l => l.char))
 // letters the course shows unpointed somewhere (so a pointed-only entry like 'בַ בָ' adds nothing new)
-const plainLetters = (pack: Pack) => new Set(entriesOf(pack).flatMap(e => e.split(/\s+/)).filter(t => (t.match(/\p{L}/gu) ?? []).length === 1 && !/\p{M}/u.test(t)))
+const plainLetters = (pack: Pack) => new Set(entriesOf(pack).flatMap(e => e.split(/\s+/)).filter(t => (t.match(/\p{L}/gu) ?? []).length === 1 && !/\p{M}/u.test(t.normalize('NFD'))))
 /** The letters of one script-lesson entry that can be practised by hand ("כּ כ ך" → כ ך; "שׁ שׂ" → ש; vowel-sign entries → none). */
 export const lettersOf = (pack: Pack, entry: string) => writableChars(entry, plainLetters(pack))
 /** Every letter of the pack's script course that can be practised by hand. */
@@ -109,7 +109,7 @@ export async function checkLetter(pack: Pack, target: string, strokes: Stroke[])
   return scoreLetter(await templatesFor(pack), pack, ink, target)
 }
 function scoreLetter(t: Templates, pack: Pack, ink: Shape, target: string): Verdict {
-  const scores = packLetters(pack).map(char => ({ char, score: Math.min(...[...glyphShapes(t, char), ...(t.mine.get(char) ?? [])].map(g => compare(ink, g))) }))
+  const scores = packLetters(pack).filter(c => caseOf(c) === caseOf(target)).map(char => ({ char, score: Math.min(...[...glyphShapes(t, char), ...(t.mine.get(char) ?? [])].map(g => compare(ink, g))) }))
   return judge(scores, target)
 }
 

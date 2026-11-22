@@ -4,6 +4,6 @@
   { "id": "zh", "name": "Mandarin (Simplified)", "native": "中文", "kind": "living", "status": "planned" },
   { "id": "ta", "name": "Tamil (spoken first)", "native": "தமிழ்", "kind": "living", "status": "planned" },
   { "id": "la", "name": "Latin (Classical)", "native": "Lingua Latīna", "kind": "classical", "status": "available", "path": "packs/la" },
-  { "id": "grc", "name": "Ancient Greek (Attic)", "native": "Ἑλληνική", "kind": "classical", "status": "planned" },
+  { "id": "grc", "name": "Ancient Greek (Attic)", "native": "Ἑλληνική", "kind": "classical", "status": "available", "path": "packs/grc" },
   { "id": "sa", "name": "Sanskrit", "native": "संस्कृतम्", "kind": "classical", "status": "planned" }
 ]

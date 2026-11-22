@@ -48,6 +48,8 @@ describe('handwriting checker (pure parts)', () => {
     expect(writableChars('בַ בָ', new Set(['ב']))).toEqual([])
     expect(writableChars('Α α', new Set())).toEqual(['Α', 'α'])
     expect(writableChars('ae', new Set())).toEqual([])
+    expect(writableChars('ἀ ἁ', new Set(['α']))).toEqual([])   // precomposed breathings are marks too
+    expect(writableChars('ᾳ ῃ ῳ', new Set(['α', 'η', 'ω']))).toEqual([])
   })
   it('an empty pad has no shape', () => { expect(shape(bitmap(128, 128))).toBeNull() })
 })

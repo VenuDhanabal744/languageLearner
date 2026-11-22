@@ -15,6 +15,8 @@ online on 2026-11-20, and "to verify" means it must be confirmed before that sou
 | Hebrew pack text (words, dialogues, readers, grammar notes, niqqud) | Written for this app by Claude (Anthropic) | CC BY-SA 4.0 (this repo) | **all marked `verified: false`** |
 | Hebrew Bible passage | Genesis 1:1–5, Masoretic text (e.g. Westminster Leningrad Codex, public domain), pointed, without cantillation | Public domain | typed from the standard text; check against a WLC copy |
 | Latin pack text (words, readers, dialogues, grammar notes) | Written for this app by Claude (Anthropic); method inspired by Ørberg, but no Ørberg text used | CC BY-SA 4.0 (this repo) | **all marked `verified: false`** |
+| Ancient Greek pack text (words, readers, dialogues, grammar notes, Aesop retelling) | Written for this app by Claude (Anthropic); direct-method spirit of Rouse (1909), no modern textbook text used | CC BY-SA 4.0 (this repo) | **all marked `verified: false`** |
+| Ancient Greek authentic passages | Hippocrates, *Aphorisms* 1.1; Xenophon, *Anabasis* 1.1.1–2; Plato, *Republic* 327a; Gospel of John 1:1–5 | Public domain | typed from the standard texts; check against Perseus |
 | Latin authentic passages | Caesar, *De Bello Gallico* 1.1 (opening); *Biblia Sacra Vulgata*, Genesis 1:1–5; a simplified retelling of Phaedrus 1.1 | Public domain (ancient texts; retelling CC BY-SA 4.0) | text typed from standard editions; check against Perseus |
 | Audio | On-device iOS voices via the Web Speech API (Latin borrows the Italian voice); your own recordings | n/a (nothing distributed) | — |
 | Fonts | iOS system fonts | n/a (nothing distributed) | — |

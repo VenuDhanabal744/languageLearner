@@ -1,0 +1,247 @@
+{
+  "units": [
+    { "id": "u01", "title": "1 · Χαῖρε!", "goal": "Greet people, say who you are, ask simple questions.", "items": [
+      "script:g1", "script:g2", "word:chaire", "word:ego", "word:sy", "word:eimi", "grammar:eimi", "word:onoma", "word:tis", "word:ti", "word:kai", "word:ou", "word:nai",
+      "grammar:questions", "word:de", "word:alla", "word:mathetes", "word:hellen", "word:philos", "word:eu", "word:echo", "word:pos", "word:pou", "word:ara", "word:o-voc", "word:charis", "text:d01" ] },
+    { "id": "u02", "title": "2 · Ἡ Ἑλλάς", "goal": "Say where places are; the article; nouns in -ος, -ον, -η, -α.", "items": [
+      "script:g3", "script:g4", "word:ho", "grammar:article", "word:en", "word:athenai", "word:hellas", "word:rhome", "word:chora", "word:nesos", "word:thalatta", "word:potamos",
+      "grammar:decl12", "word:megas", "word:mikros", "word:polys", "word:heis", "word:dyo", "word:treis", "word:glotta", "word:hellenikos", "word:kalos", "word:ekei", "word:enthade", "word:manthano", "text:r01" ] },
+    { "id": "u03", "title": "3 · Ἡ οἰκία", "goal": "Describe a family; say whose something is (genitive).", "items": [
+      "script:g5", "word:oikia", "word:pater", "word:meter", "word:hyios", "word:thygater", "grammar:genitive", "word:adelphos", "word:adelphe", "word:pais", "word:aner", "word:gyne",
+      "word:anthropos", "word:emos", "word:sos", "grammar:possessive", "word:autos", "word:hemeis", "word:hymeis", "word:agathos", "word:neos", "word:geron", "word:presbyteros", "word:kyon", "word:te", "text:r02" ] },
+    { "id": "u04", "title": "4 · Τί ποιεῖς;", "goal": "Say what people do (present tense) and to what (accusative).", "items": [
+      "word:lego", "word:grapho", "grammar:present", "word:akouo", "word:blepo", "word:didasko", "word:didaskalos", "word:paizo", "word:trecho", "word:oikeo", "grammar:accusative",
+      "word:poieo", "word:phileo", "word:esthio", "word:pino", "word:katheudo", "word:semeron", "word:aei", "word:pollakis", "word:oudepote", "word:nyn", "word:dia-ti", "word:hoti", "text:d02" ] }
+  ],
+  "words": [
+    { "id": "chaire", "text": "χαῖρε", "tr": "khaîre", "en": "hello; goodbye (to one person; to several: χαίρετε)", "pos": "interj", "forms": ["χαίρετε"], "cognates": { "en": "charisma (same root as χάρις)" }, "ex": { "text": "Χαῖρε, ὦ Νικία!", "en": "Hello, Nicias!" }, "verified": false },
+    { "id": "ego", "text": "ἐγώ", "tr": "egṓ", "en": "I (ἐμέ / με = me)", "pos": "pron", "forms": ["ἐμέ", "με", "ἐμοῦ", "μου", "ἐμοί", "μοι"], "cognates": { "la": "ego", "es": "yo", "en": "ego" }, "ex": { "text": "Ἐγὼ Βένου εἰμί.", "en": "I am Venu." }, "verified": false },
+    { "id": "sy", "text": "σύ", "tr": "sý", "en": "you (one person; σέ = you as object)", "pos": "pron", "forms": ["σέ", "σε", "σοῦ", "σου", "σοί", "σοι"], "cognates": { "la": "tū", "es": "tú" }, "ex": { "text": "Τίς εἶ σύ;", "en": "Who are you?" }, "verified": false },
+    { "id": "eimi", "text": "εἰμί", "tr": "eimí", "en": "I am (εἶναι = to be)", "pos": "verb", "forms": ["εἶ", "ἐστί", "ἐστίν", "ἐσμέν", "ἐστέ", "εἰσί", "εἰσίν", "εἶναι", "ἦν", "ἦσθα", "ἦμεν", "ἦσαν", "ἔσται", "ἔσομαι", "ἔσῃ", "ὤν", "οὖσα", "ὄν", "ὄντος", "ὄντες"], "cognates": { "la": "sum / est", "es": "soy / es", "en": "is" }, "ex": { "text": "Μαθητής εἰμι.", "en": "I am a student." }, "verified": false },
+    { "id": "onoma", "text": "ὄνομα", "tr": "ónoma", "en": "name", "pos": "noun", "forms": ["ὀνόματος", "ὀνόματι", "ὀνόματα", "ὀνομάτων"], "cognates": { "la": "nōmen", "es": "nombre", "en": "anonymous, synonym" }, "ex": { "text": "Ὄνομά μοι Βένου.", "en": "My name is Venu. (lit. name to me Venu)" }, "verified": false },
+    { "id": "tis", "text": "τίς", "tr": "tís", "en": "who? which? (τίνος; = whose?)", "pos": "q", "forms": ["τίνος", "τίνι", "τίνα", "τίνες", "τίνων", "τίσι"], "cognates": { "la": "quis" }, "ex": { "text": "Τίς ἐστιν ὁ φίλος σου;", "en": "Who is your friend?" }, "verified": false },
+    { "id": "ti", "text": "τί", "tr": "tí", "en": "what? also: why?", "pos": "q", "cognates": { "la": "quid" }, "ex": { "text": "Τί ἐστι τοῦτο;", "en": "What is this?" }, "verified": false },
+    { "id": "kai", "text": "καί", "tr": "kaí", "en": "and; also, even", "pos": "conj", "ex": { "text": "Νικίας καὶ Βένου φίλοι εἰσίν.", "en": "Nicias and Venu are friends." }, "verified": false },
+    { "id": "ou", "text": "οὐ", "tr": "ou", "en": "not (οὐκ before a smooth vowel, οὐχ before a rough one); οὔ / οὐχί = no", "pos": "adv", "forms": ["οὐκ", "οὐχ", "οὐχί", "οὔ", "οὔπω"], "ex": { "text": "Οὐκ εἰμὶ Ἕλλην.", "en": "I am not Greek." }, "verified": false },
+    { "id": "nai", "text": "ναί", "tr": "naí", "en": "yes", "pos": "adv", "ex": { "text": "Ἆρα μαθητὴς εἶ; Ναί.", "en": "Are you a student? Yes." }, "verified": false },
+    { "id": "de", "text": "δέ", "tr": "dé", "en": "and, but (never first in its clause)", "pos": "conj", "forms": ["δ"], "ex": { "text": "Ἐγὼ Νικίας εἰμί· σὺ δὲ τίς εἶ;", "en": "I'm Nicias; and who are you?" }, "verified": false },
+    { "id": "alla", "text": "ἀλλά", "tr": "allá", "en": "but", "pos": "conj", "forms": ["ἀλλ"], "ex": { "text": "Οὐχ Ἕλλην εἰμί, ἀλλὰ μαθητής.", "en": "I'm not a Greek, but a student." }, "verified": false },
+    { "id": "mathetes", "text": "μαθητής", "tr": "mathētḗs", "en": "student, learner", "pos": "noun", "forms": ["μαθητοῦ", "μαθητῇ", "μαθητήν", "μαθηταί", "μαθητῶν", "μαθηταῖς", "μαθητάς", "μαθητά"], "cognates": { "en": "mathematics (μάθημα 'thing learned')" }, "ex": { "text": "Βένου μαθητής ἐστιν.", "en": "Venu is a student." }, "verified": false },
+    { "id": "hellen", "text": "Ἕλλην", "tr": "Héllēn", "en": "a Greek (person)", "pos": "noun", "forms": ["Ἕλληνος", "Ἕλληνι", "Ἕλληνα", "Ἕλληνες", "Ἑλλήνων", "Ἕλλησι", "Ἕλλησιν", "Ἕλληνας"], "cognates": { "en": "Hellenic, Hellenistic" }, "ex": { "text": "Νικίας Ἕλλην ἐστίν.", "en": "Nicias is a Greek." }, "verified": false },
+    { "id": "philos", "text": "φίλος", "tr": "phílos", "en": "friend; (adj.) dear", "pos": "noun", "forms": ["φίλου", "φίλῳ", "φίλον", "φίλε", "φίλοι", "φίλων", "φίλοις", "φίλους", "φίλη", "φίλαι"], "cognates": { "es": "filosofía", "en": "philosophy, Philadelphia" }, "ex": { "text": "Νικίας φίλος ἐστίν.", "en": "Nicias is a friend." }, "verified": false },
+    { "id": "eu", "text": "εὖ", "tr": "eû", "en": "well", "pos": "adv", "cognates": { "en": "euphoria, eulogy" }, "ex": { "text": "Εὖ ἔχω.", "en": "I'm well." }, "verified": false },
+    { "id": "echo", "text": "ἔχω", "tr": "ékhō", "en": "I have, hold; with an adverb, I am (εὖ ἔχω = I'm well)", "pos": "verb", "forms": ["ἔχεις", "ἔχει", "ἔχομεν", "ἔχετε", "ἔχουσι", "ἔχουσιν", "ἔχειν", "εἶχον", "εἶχε", "εἶχεν", "ἔσχον", "ἔχων", "ἔχοντες"], "ex": { "text": "Πῶς ἔχεις; Εὖ ἔχω.", "en": "How are you? I'm well." }, "verified": false },
+    { "id": "pos", "text": "πῶς", "tr": "pôs", "en": "how?", "pos": "q", "ex": { "text": "Πῶς ἔχεις, ὦ φίλε;", "en": "How are you, friend?" }, "verified": false },
+    { "id": "pou", "text": "ποῦ", "tr": "poû", "en": "where?", "pos": "q", "ex": { "text": "Ποῦ ἐστιν ὁ Νικίας;", "en": "Where is Nicias?" }, "verified": false },
+    { "id": "ara", "text": "ἆρα", "tr": "âra", "en": "(starts a yes/no question)", "pos": "q", "ex": { "text": "Ἆρα Ἕλλην εἶ;", "en": "Are you Greek?" }, "verified": false },
+    { "id": "o-voc", "text": "ὦ", "tr": "ô", "en": "O (used when addressing someone; usually left untranslated)", "pos": "interj", "ex": { "text": "Χαῖρε, ὦ φίλε.", "en": "Hello, friend." }, "verified": false },
+    { "id": "charis", "text": "χάρις", "tr": "kháris", "en": "grace, favour, thanks (χάριν ἔχω = I'm grateful, thank you)", "pos": "noun", "forms": ["χάριτος", "χάριτι", "χάριν", "χάριτες"], "cognates": { "en": "charisma" }, "ex": { "text": "Χάριν ἔχω, ὦ φίλε.", "en": "Thank you, my friend." }, "verified": false },
+
+    { "id": "ho", "text": "ὁ", "tr": "ho", "en": "the (ὁ masc., ἡ fem., τό neut.)", "pos": "art", "forms": ["ἡ", "τό", "τοῦ", "τῆς", "τῷ", "τῇ", "τόν", "τήν", "οἱ", "αἱ", "τά", "τῶν", "τοῖς", "ταῖς", "τούς", "τάς", "τώ"], "ex": { "text": "Ὁ φίλος καὶ ἡ φίλη ἐν τῇ χώρᾳ εἰσίν.", "en": "The (male) friend and the (female) friend are in the country." }, "verified": false },
+    { "id": "en", "text": "ἐν", "tr": "en", "en": "in, on, among (+ dative)", "pos": "prep", "cognates": { "la": "in", "es": "en" }, "ex": { "text": "Ἀθῆναι ἐν τῇ Ἑλλάδι εἰσίν.", "en": "Athens is in Greece." }, "verified": false },
+    { "id": "athenai", "text": "Ἀθῆναι", "tr": "Athênai", "en": "Athens (plural in Greek; Ἀθήνησι = in Athens)", "pos": "noun", "forms": ["Ἀθηνῶν", "Ἀθήναις", "Ἀθήνας", "Ἀθήνησι", "Ἀθήνησιν", "Ἀθήναζε"], "ex": { "text": "Ἀθῆναι καλαί εἰσιν.", "en": "Athens is beautiful." }, "verified": false },
+    { "id": "hellas", "text": "Ἑλλάς", "tr": "Hellás", "en": "Greece", "pos": "noun", "forms": ["Ἑλλάδος", "Ἑλλάδι", "Ἑλλάδα"], "ex": { "text": "Ἡ Ἑλλὰς πολλὰς νήσους ἔχει.", "en": "Greece has many islands." }, "verified": false },
+    { "id": "rhome", "text": "Ῥώμη", "tr": "Rhṓmē", "en": "Rome", "pos": "noun", "forms": ["Ῥώμης", "Ῥώμῃ", "Ῥώμην"], "cognates": { "la": "Rōma" }, "ex": { "text": "Ἡ Ῥώμη οὐκ ἐν τῇ Ἑλλάδι ἐστίν.", "en": "Rome is not in Greece." }, "verified": false },
+    { "id": "chora", "text": "χώρα", "tr": "khṓrā", "en": "land, country, place", "pos": "noun", "forms": ["χώρας", "χώρᾳ", "χώραν", "χῶραι", "χωρῶν"], "ex": { "text": "Ἡ χώρα μεγάλη ἐστίν.", "en": "The country is big." }, "verified": false },
+    { "id": "nesos", "text": "νῆσος", "tr": "nêsos", "en": "island (feminine, though it ends in -ος)", "pos": "noun", "forms": ["νήσου", "νήσῳ", "νῆσον", "νῆσοι", "νήσων", "νήσοις", "νήσους"], "cognates": { "en": "Peloponnese ('island of Pelops'), Polynesia" }, "ex": { "text": "Ἐν τῇ θαλάττῃ πολλαὶ νῆσοί εἰσιν.", "en": "There are many islands in the sea." }, "verified": false },
+    { "id": "thalatta", "text": "θάλαττα", "tr": "thálatta", "en": "sea (θάλασσα outside Athens)", "pos": "noun", "forms": ["θαλάττης", "θαλάττῃ", "θάλατταν", "θάλασσα", "θαλάσσης"], "cognates": { "en": "thalassemia (a blood disorder first described around the Mediterranean)" }, "ex": { "text": "Ἡ θάλαττα μεγάλη ἐστίν.", "en": "The sea is big." }, "verified": false },
+    { "id": "potamos", "text": "ποταμός", "tr": "potamós", "en": "river", "pos": "noun", "forms": ["ποταμοῦ", "ποταμῷ", "ποταμόν", "ποταμοί", "ποταμῶν", "ποταμούς"], "cognates": { "en": "hippopotamus ('river horse'), Mesopotamia" }, "ex": { "text": "Ἐν τῇ χώρᾳ ποταμός ἐστιν.", "en": "There is a river in the country." }, "verified": false },
+    { "id": "megas", "text": "μέγας", "tr": "mégas", "en": "big, great", "pos": "adj", "forms": ["μεγάλη", "μέγα", "μεγάλου", "μεγάλης", "μεγάλῳ", "μεγάλῃ", "μέγαν", "μεγάλην", "μεγάλοι", "μεγάλαι", "μεγάλα", "μεγάλων"], "cognates": { "la": "magnus (related)", "en": "mega-, megaphone" }, "ex": { "text": "Ὁ ποταμὸς μέγας ἐστίν.", "en": "The river is big." }, "verified": false },
+    { "id": "mikros", "text": "μικρός", "tr": "mikrós", "en": "small", "pos": "adj", "forms": ["μικρά", "μικρόν", "μικροῦ", "μικρᾶς", "μικρῷ", "μικρᾷ", "μικράν", "μικροί", "μικραί"], "cognates": { "en": "micro-, microscope" }, "ex": { "text": "Ἡ νῆσος μικρά ἐστιν.", "en": "The island is small." }, "verified": false },
+    { "id": "polys", "text": "πολύς", "tr": "polýs", "en": "much; (plural) many", "pos": "adj", "forms": ["πολλή", "πολύ", "πολλοῦ", "πολλῆς", "πολλῷ", "πολλῇ", "πολύν", "πολλήν", "πολλοί", "πολλαί", "πολλά", "πολλῶν", "πολλοῖς", "πολλαῖς", "πολλούς", "πολλάς"], "cognates": { "en": "poly-, polyglot" }, "ex": { "text": "Ἐν Ἀθήναις πολλοὶ ἄνθρωποί εἰσιν.", "en": "There are many people in Athens." }, "verified": false },
+    { "id": "heis", "text": "εἷς", "tr": "heîs", "en": "one (μία fem., ἕν neut.)", "pos": "num", "forms": ["μία", "ἕν", "ἑνός", "μιᾶς", "ἑνί", "μιᾷ", "ἕνα", "μίαν"], "cognates": { "en": "henotheism; hyphen (ὑφ᾽ ἕν 'into one')" }, "ex": { "text": "Μία θάλαττα, πολλαὶ νῆσοι.", "en": "One sea, many islands." }, "verified": false },
+    { "id": "dyo", "text": "δύο", "tr": "dýo", "en": "two", "pos": "num", "cognates": { "la": "duo", "es": "dos", "en": "dual" }, "ex": { "text": "Δύο ποταμοὶ ἐν τῇ χώρᾳ εἰσίν.", "en": "There are two rivers in the country." }, "verified": false },
+    { "id": "treis", "text": "τρεῖς", "tr": "treîs", "en": "three (τρία neut.)", "pos": "num", "forms": ["τρία", "τριῶν", "τρισί", "τρισίν"], "cognates": { "la": "trēs", "es": "tres" }, "ex": { "text": "Τρεῖς νῆσοι μικραί εἰσιν.", "en": "Three islands are small." }, "verified": false },
+    { "id": "glotta", "text": "γλῶττα", "tr": "glôtta", "en": "tongue; language (γλῶσσα outside Athens)", "pos": "noun", "forms": ["γλώττης", "γλώττῃ", "γλῶτταν", "γλῶτται", "γλώττας", "γλῶσσα"], "cognates": { "en": "polyglot, glottis" }, "ex": { "text": "Ἡ Ἑλληνικὴ γλῶττα καλή ἐστιν.", "en": "The Greek language is beautiful." }, "verified": false },
+    { "id": "hellenikos", "text": "Ἑλληνικός", "tr": "Hellēnikós", "en": "Greek (adjective); ἑλληνιστί = in Greek", "pos": "adj", "forms": ["Ἑλληνική", "Ἑλληνικόν", "Ἑλληνικῆς", "Ἑλληνικῇ", "Ἑλληνικήν", "Ἑλληνικοί", "ἑλληνιστί"], "ex": { "text": "Τὴν Ἑλληνικὴν γλῶτταν μανθάνω.", "en": "I am learning the Greek language." }, "verified": false },
+    { "id": "kalos", "text": "καλός", "tr": "kalós", "en": "beautiful; fine, good", "pos": "adj", "forms": ["καλή", "καλόν", "καλοῦ", "καλῆς", "καλῷ", "καλῇ", "καλήν", "καλοί", "καλαί", "καλά", "καλῶν"], "cognates": { "en": "calligraphy, kaleidoscope" }, "ex": { "text": "Ἡ Ἑλλὰς χώρα καλή ἐστιν.", "en": "Greece is a beautiful country." }, "verified": false },
+    { "id": "ekei", "text": "ἐκεῖ", "tr": "ekeî", "en": "there", "pos": "adv", "ex": { "text": "Ἐκεῖ ἡ θάλαττα.", "en": "There's the sea." }, "verified": false },
+    { "id": "enthade", "text": "ἐνθάδε", "tr": "entháde", "en": "here", "pos": "adv", "ex": { "text": "Ἐνθάδε ὁ ποταμός, ἐκεῖ ἡ θάλαττα.", "en": "Here is the river, there the sea." }, "verified": false },
+    { "id": "manthano", "text": "μανθάνω", "tr": "manthánō", "en": "learn; understand", "pos": "verb", "forms": ["μανθάνεις", "μανθάνει", "μανθάνομεν", "μανθάνετε", "μανθάνουσι", "μανθάνουσιν", "μανθάνειν", "ἔμαθον", "ἔμαθε", "ἔμαθεν", "μαθεῖν"], "cognates": { "en": "mathematics (same root)" }, "ex": { "text": "Ἐγὼ πολλὰ μανθάνω.", "en": "I learn many things." }, "verified": false },
+
+    { "id": "oikia", "text": "οἰκία", "tr": "oikíā", "en": "house; household, family", "pos": "noun", "forms": ["οἰκίας", "οἰκίᾳ", "οἰκίαν", "οἰκίαι", "οἰκιῶν", "οἶκος", "οἴκοι", "οἴκαδε"], "cognates": { "en": "economy, ecology (οἶκος 'house')" }, "ex": { "text": "Ἡ οἰκία μικρὰ ἀλλὰ καλή ἐστιν.", "en": "The house is small but beautiful." }, "verified": false },
+    { "id": "pater", "text": "πατήρ", "tr": "patḗr", "en": "father", "pos": "noun", "forms": ["πατρός", "πατρί", "πατέρα", "πάτερ", "πατέρες", "πατέρων", "πατράσι", "πατέρας"], "cognates": { "la": "pater", "es": "padre", "en": "patriarch" }, "ex": { "text": "Ὁ πατὴρ ἐν τῇ οἰκίᾳ ἐστίν.", "en": "Father is in the house." }, "verified": false },
+    { "id": "meter", "text": "μήτηρ", "tr": "mḗtēr", "en": "mother", "pos": "noun", "forms": ["μητρός", "μητρί", "μητέρα", "μῆτερ", "μητέρες"], "cognates": { "la": "māter", "es": "madre", "en": "metropolis ('mother city')" }, "ex": { "text": "Ἡ μήτηρ τοῦ Νικίου καλή ἐστιν.", "en": "Nicias' mother is beautiful." }, "verified": false },
+    { "id": "hyios", "text": "υἱός", "tr": "hyiós", "en": "son", "pos": "noun", "forms": ["υἱοῦ", "υἱῷ", "υἱόν", "υἱέ", "υἱοί", "υἱῶν"], "ex": { "text": "Νικίας υἱός ἐστι τοῦ Νικηράτου.", "en": "Nicias is the son of Niceratus." }, "verified": false },
+    { "id": "thygater", "text": "θυγάτηρ", "tr": "thygátēr", "en": "daughter", "pos": "noun", "forms": ["θυγατρός", "θυγατρί", "θυγατέρα", "θύγατερ", "θυγατέρες", "θυγατέρων"], "cognates": { "en": "daughter (the same Indo-European word)" }, "ex": { "text": "Ἡ θυγάτηρ φίλη ἐστὶ τῆς μητρός.", "en": "The daughter is her mother's friend." }, "verified": false },
+    { "id": "adelphos", "text": "ἀδελφός", "tr": "adelphós", "en": "brother", "pos": "noun", "forms": ["ἀδελφοῦ", "ἀδελφῷ", "ἀδελφόν", "ἀδελφέ", "ἀδελφοί", "ἀδελφῶν", "ἀδελφούς"], "cognates": { "en": "Philadelphia ('brotherly love')" }, "ex": { "text": "Ὁ ἀδελφός μου πρεσβύτερός ἐστιν.", "en": "My brother is older." }, "verified": false },
+    { "id": "adelphe", "text": "ἀδελφή", "tr": "adelphḗ", "en": "sister", "pos": "noun", "forms": ["ἀδελφῆς", "ἀδελφῇ", "ἀδελφήν", "ἀδελφαί", "ἀδελφῶν"], "ex": { "text": "Ἡ ἀδελφὴ τοῦ Νικίου νεωτέρα ἐστίν.", "en": "Nicias' sister is younger." }, "verified": false },
+    { "id": "pais", "text": "παῖς", "tr": "paîs", "en": "child; boy, girl", "pos": "noun", "forms": ["παιδός", "παιδί", "παῖδα", "παῖ", "παῖδες", "παίδων", "παισί", "παισίν", "παῖδας", "παῖδε"], "cognates": { "en": "pediatrics; encyclopedia (παιδεία 'education')" }, "ex": { "text": "Ὁ πατὴρ δύο παῖδας ἔχει.", "en": "The father has two children." }, "verified": false },
+    { "id": "aner", "text": "ἀνήρ", "tr": "anḗr", "en": "man; husband", "pos": "noun", "forms": ["ἀνδρός", "ἀνδρί", "ἄνδρα", "ἄνερ", "ἄνδρες", "ἀνδρῶν", "ἀνδράσι", "ἀνδράσιν", "ἄνδρας"], "cognates": { "en": "android, polyandry" }, "ex": { "text": "Ὁ ἀνὴρ τῆς γυναικὸς ἀγαθός ἐστιν.", "en": "The woman's husband is good." }, "verified": false },
+    { "id": "gyne", "text": "γυνή", "tr": "gynḗ", "en": "woman; wife", "pos": "noun", "forms": ["γυναικός", "γυναικί", "γυναῖκα", "γύναι", "γυναῖκες", "γυναικῶν", "γυναιξί", "γυναιξίν", "γυναῖκας"], "cognates": { "en": "gynecology" }, "ex": { "text": "Ἡ γυνὴ τοῦ ἀνδρὸς καλή ἐστιν.", "en": "The man's wife is beautiful." }, "verified": false },
+    { "id": "anthropos", "text": "ἄνθρωπος", "tr": "ánthrōpos", "en": "human being, person", "pos": "noun", "forms": ["ἀνθρώπου", "ἀνθρώπῳ", "ἄνθρωπον", "ἄνθρωπε", "ἄνθρωποι", "ἀνθρώπων", "ἀνθρώποις", "ἀνθρώπους"], "cognates": { "en": "anthropology, philanthropy" }, "ex": { "text": "Ἐν τῇ οἰκίᾳ πέντε ἄνθρωποί εἰσιν.", "en": "There are five people in the house." }, "verified": false },
+    { "id": "emos", "text": "ἐμός", "tr": "emós", "en": "my, mine", "pos": "adj", "forms": ["ἐμή", "ἐμόν", "ἐμῷ", "ἐμῇ", "ἐμήν", "ἐμαί", "ἐμά", "ἐμῶν"], "ex": { "text": "Ἡ ἐμὴ μήτηρ ἐν τῇ οἰκίᾳ ἐστίν.", "en": "My mother is in the house." }, "verified": false },
+    { "id": "sos", "text": "σός", "tr": "sós", "en": "your, yours (one person)", "pos": "adj", "forms": ["σή", "σόν", "σῷ", "σῇ", "σήν", "σαί", "σά"], "ex": { "text": "Ποῦ ἐστιν ὁ σὸς ἀδελφός;", "en": "Where is your brother?" }, "verified": false },
+    { "id": "autos", "text": "αὐτός", "tr": "autós", "en": "him, her, it (not as subject); -self; ὁ αὐτός = the same", "pos": "pron", "forms": ["αὐτή", "αὐτό", "αὐτοῦ", "αὐτῆς", "αὐτῷ", "αὐτῇ", "αὐτόν", "αὐτήν", "αὐτοί", "αὐταί", "αὐτά", "αὐτῶν", "αὐτοῖς", "αὐταῖς", "αὐτούς", "αὐτάς"], "cognates": { "en": "auto-, autonomy, autopsy ('seeing for oneself')" }, "ex": { "text": "Ὁ πατὴρ αὐτοῦ ἀγαθός ἐστιν.", "en": "His father is good." }, "verified": false },
+    { "id": "hemeis", "text": "ἡμεῖς", "tr": "hēmeîs", "en": "we (ἡμᾶς = us, ἡμῶν = our)", "pos": "pron", "forms": ["ἡμῶν", "ἡμῖν", "ἡμᾶς"], "ex": { "text": "Ἡμεῖς μαθηταί ἐσμεν.", "en": "We are students." }, "verified": false },
+    { "id": "hymeis", "text": "ὑμεῖς", "tr": "hymeîs", "en": "you (plural)", "pos": "pron", "forms": ["ὑμῶν", "ὑμῖν", "ὑμᾶς"], "ex": { "text": "Ἆρα ὑμεῖς ἀδελφοί ἐστε;", "en": "Are you brothers?" }, "verified": false },
+    { "id": "agathos", "text": "ἀγαθός", "tr": "agathós", "en": "good; brave", "pos": "adj", "forms": ["ἀγαθή", "ἀγαθόν", "ἀγαθοῦ", "ἀγαθῆς", "ἀγαθῷ", "ἀγαθήν", "ἀγαθοί", "ἀγαθαί", "ἀγαθά", "ἀγαθῶν"], "cognates": { "en": "Agatha" }, "ex": { "text": "Ὁ κύων ἀγαθός ἐστιν.", "en": "The dog is good." }, "verified": false },
+    { "id": "neos", "text": "νέος", "tr": "néos", "en": "young; new (νεώτερος = younger)", "pos": "adj", "forms": ["νέα", "νέον", "νέου", "νέᾳ", "νέοι", "νέαι", "νέων", "νεώτερος", "νεωτέρα", "νεώτεροι", "νεωτέρου"], "cognates": { "la": "novus", "es": "nuevo", "en": "neo-, neonatal" }, "ex": { "text": "Ἡ ἀδελφή μου νέα ἐστίν.", "en": "My sister is young." }, "verified": false },
+    { "id": "geron", "text": "γέρων", "tr": "gérōn", "en": "old man; (adj.) old", "pos": "noun", "forms": ["γέροντος", "γέροντι", "γέροντα", "γέροντες", "γερόντων"], "cognates": { "en": "gerontology, geriatrics" }, "ex": { "text": "Ὁ πατὴρ τοῦ πατρός μου γέρων ἐστίν.", "en": "My father's father is old." }, "verified": false },
+    { "id": "presbyteros", "text": "πρεσβύτερος", "tr": "presbýteros", "en": "older, elder", "pos": "adj", "forms": ["πρεσβυτέρα", "πρεσβύτερον", "πρεσβυτέρου", "πρεσβύτεροι", "πρέσβυς"], "cognates": { "en": "presbyter, priest (via Latin presbyter), presbyopia" }, "ex": { "text": "Ὁ ἀδελφὸς πρεσβύτερός ἐστιν.", "en": "The brother is older." }, "verified": false },
+    { "id": "kyon", "text": "κύων", "tr": "kýōn", "en": "dog", "pos": "noun", "forms": ["κυνός", "κυνί", "κύνα", "κύον", "κύνες", "κυνῶν", "κυσί", "κύνας"], "cognates": { "la": "canis (the same Indo-European word)", "en": "cynic ('doglike')" }, "ex": { "text": "Ὁ κύων ἐν τῇ οἰκίᾳ καθεύδει.", "en": "The dog sleeps in the house." }, "verified": false },
+    { "id": "te", "text": "τε", "tr": "te", "en": "and (τε … καί = both … and; τε follows its word)", "pos": "conj", "forms": ["τ"], "cognates": { "la": "-que (same word)" }, "ex": { "text": "Ὁ πατήρ τε καὶ ἡ μήτηρ ἐν τῇ οἰκίᾳ εἰσίν.", "en": "Both father and mother are in the house." }, "verified": false },
+
+    { "id": "lego", "text": "λέγω", "tr": "légō", "en": "say, speak, tell (aorist εἶπον = I said)", "pos": "verb", "forms": ["λέγεις", "λέγει", "λέγομεν", "λέγετε", "λέγουσι", "λέγουσιν", "λέγειν", "λέγε", "ἔλεγον", "ἔλεγε", "ἔλεγες", "ἔλεγεν", "εἶπον", "εἶπε", "εἶπεν", "εἰπέ", "εἰπεῖν", "λέγων"], "cognates": { "la": "legō 'gather, read' (same root: pick out → count → tell)", "en": "lexicon, dialogue" }, "ex": { "text": "Τί λέγεις;", "en": "What are you saying?" }, "verified": false },
+    { "id": "grapho", "text": "γράφω", "tr": "gráphō", "en": "write; draw", "pos": "verb", "forms": ["γράφεις", "γράφει", "γράφομεν", "γράφετε", "γράφουσι", "γράφουσιν", "γράφειν", "γράφε", "ἔγραφον", "ἔγραφε", "ἔγραφεν", "ἔγραψα", "ἔγραψε", "ἔγραψεν"], "cognates": { "en": "graph, biography, cardiogram" }, "ex": { "text": "Βένου ἑλληνιστὶ γράφει.", "en": "Venu writes in Greek." }, "verified": false },
+    { "id": "akouo", "text": "ἀκούω", "tr": "akoúō", "en": "hear, listen (to)", "pos": "verb", "forms": ["ἀκούεις", "ἀκούει", "ἀκούομεν", "ἀκούετε", "ἀκούουσι", "ἀκούουσιν", "ἀκούειν", "ἄκουε", "ἤκουον", "ἤκουσα", "ἤκουσε", "ἤκουσεν"], "cognates": { "en": "acoustic" }, "ex": { "text": "Ἆρα ἀκούεις;", "en": "Are you listening?" }, "verified": false },
+    { "id": "blepo", "text": "βλέπω", "tr": "blépō", "en": "look, see", "pos": "verb", "forms": ["βλέπεις", "βλέπει", "βλέπομεν", "βλέπετε", "βλέπουσι", "βλέπουσιν", "βλέπειν", "βλέπε", "ἔβλεπον", "ἔβλεπε"], "ex": { "text": "Βλέπω τὴν θάλατταν.", "en": "I see the sea." }, "verified": false },
+    { "id": "didasko", "text": "διδάσκω", "tr": "didáskō", "en": "teach", "pos": "verb", "forms": ["διδάσκεις", "διδάσκει", "διδάσκομεν", "διδάσκουσι", "διδάσκουσιν", "διδάσκειν", "ἐδίδασκε", "ἐδίδασκεν"], "cognates": { "en": "didactic" }, "ex": { "text": "Ὁ διδάσκαλος τοὺς παῖδας διδάσκει.", "en": "The teacher teaches the children." }, "verified": false },
+    { "id": "didaskalos", "text": "διδάσκαλος", "tr": "didáskalos", "en": "teacher", "pos": "noun", "forms": ["διδασκάλου", "διδασκάλῳ", "διδάσκαλον", "διδάσκαλε", "διδάσκαλοι"], "ex": { "text": "Ὁ διδάσκαλος ἀγαθός ἐστιν.", "en": "The teacher is good." }, "verified": false },
+    { "id": "paizo", "text": "παίζω", "tr": "paízō", "en": "play", "pos": "verb", "forms": ["παίζεις", "παίζει", "παίζομεν", "παίζουσι", "παίζουσιν", "παίζειν", "ἔπαιζον", "ἔπαιζε", "ἔπαιζεν"], "ex": { "text": "Οἱ παῖδες ἐν τῇ οἰκίᾳ παίζουσιν.", "en": "The children are playing in the house." }, "verified": false },
+    { "id": "trecho", "text": "τρέχω", "tr": "trékhō", "en": "run (aorist ἔδραμον)", "pos": "verb", "forms": ["τρέχεις", "τρέχει", "τρέχομεν", "τρέχουσι", "τρέχουσιν", "τρέχειν", "ἔτρεχον", "ἔτρεχε", "ἔδραμον", "ἔδραμε", "τρέχων"], "cognates": { "en": "dromedary, hippodrome (from the aorist ἔδραμον)" }, "ex": { "text": "Ὁ κύων τρέχει καὶ παίζει.", "en": "The dog runs and plays." }, "verified": false },
+    { "id": "oikeo", "text": "οἰκέω", "tr": "oikéō", "en": "live, dwell (οἰκῶ = I live)", "pos": "verb", "forms": ["οἰκῶ", "οἰκεῖς", "οἰκεῖ", "οἰκοῦμεν", "οἰκεῖτε", "οἰκοῦσι", "οἰκοῦσιν", "οἰκεῖν", "ᾤκει", "ᾤκουν"], "cognates": { "en": "ecumenical ('of the inhabited world')" }, "ex": { "text": "Ποῦ οἰκεῖς;", "en": "Where do you live?" }, "verified": false },
+    { "id": "poieo", "text": "ποιέω", "tr": "poiéō", "en": "make, do", "pos": "verb", "forms": ["ποιῶ", "ποιεῖς", "ποιεῖ", "ποιοῦμεν", "ποιεῖτε", "ποιοῦσι", "ποιοῦσιν", "ποιεῖν", "ποίει", "ἐποίει", "ἐποίησα", "ἐποίησε", "ἐποίησεν", "ποιήσουσι", "ποιήσουσιν"], "cognates": { "en": "poet, poem (ποιητής 'maker')" }, "ex": { "text": "Τί ποιεῖς;", "en": "What are you doing?" }, "verified": false },
+    { "id": "phileo", "text": "φιλέω", "tr": "philéō", "en": "love, like; kiss (φιλῶ = I love)", "pos": "verb", "forms": ["φιλῶ", "φιλεῖς", "φιλεῖ", "φιλοῦμεν", "φιλεῖτε", "φιλοῦσι", "φιλοῦσιν", "φιλεῖν", "ἐφίλει", "ἐφίλησε"], "cognates": { "en": "philosophy ('love of wisdom'), hemophilia" }, "ex": { "text": "Φιλῶ τὴν θάλατταν.", "en": "I love the sea." }, "verified": false },
+    { "id": "esthio", "text": "ἐσθίω", "tr": "esthíō", "en": "eat (aorist ἔφαγον)", "pos": "verb", "forms": ["ἐσθίεις", "ἐσθίει", "ἐσθίομεν", "ἐσθίουσι", "ἐσθίουσιν", "ἐσθίειν", "ἤσθιον", "ἤσθιε", "ἔφαγον", "ἔφαγε", "ἔφαγεν", "φαγεῖν", "κατεσθίει", "κατέφαγε", "κατέφαγεν"], "cognates": { "en": "esophagus ('eat-carrier'), sarcophagus ('flesh-eater')" }, "ex": { "text": "Ὁ κύων ἄρτον ἐσθίει.", "en": "The dog eats bread." }, "verified": false },
+    { "id": "pino", "text": "πίνω", "tr": "pínō", "en": "drink (aorist ἔπιον)", "pos": "verb", "forms": ["πίνεις", "πίνει", "πίνομεν", "πίνουσι", "πίνουσιν", "πίνειν", "πῖνε", "ἔπινον", "ἔπινε", "ἔπιον", "ἔπιε", "ἔπιεν", "πιεῖν", "πίνων", "πίνοντα", "πίνοντες"], "cognates": { "en": "symposium ('drinking together', from the same root)" }, "ex": { "text": "Οἱ παῖδες ὕδωρ πίνουσιν.", "en": "The children drink water." }, "verified": false },
+    { "id": "katheudo", "text": "καθεύδω", "tr": "katheúdō", "en": "sleep", "pos": "verb", "forms": ["καθεύδεις", "καθεύδει", "καθεύδομεν", "καθεύδουσι", "καθεύδουσιν", "καθεύδειν", "ἐκάθευδον", "ἐκάθευδε", "ἐκάθευδεν"], "ex": { "text": "Ὁ κύων καθεύδει.", "en": "The dog is sleeping." }, "verified": false },
+    { "id": "semeron", "text": "σήμερον", "tr": "sḗmeron", "en": "today", "pos": "adv", "ex": { "text": "Σήμερον οὐ μανθάνω.", "en": "Today I'm not studying." }, "verified": false },
+    { "id": "aei", "text": "ἀεί", "tr": "aeí", "en": "always", "pos": "adv", "ex": { "text": "Ὁ διδάσκαλος ἀεὶ λέγει.", "en": "The teacher is always talking." }, "verified": false },
+    { "id": "pollakis", "text": "πολλάκις", "tr": "pollákis", "en": "often", "pos": "adv", "ex": { "text": "Πολλάκις τὴν θάλατταν βλέπω.", "en": "I often look at the sea." }, "verified": false },
+    { "id": "oudepote", "text": "οὐδέποτε", "tr": "oudépote", "en": "never", "pos": "adv", "ex": { "text": "Ὁ κύων οὐδέποτε καθεύδει.", "en": "The dog never sleeps." }, "verified": false },
+    { "id": "nyn", "text": "νῦν", "tr": "nŷn", "en": "now", "pos": "adv", "cognates": { "la": "nunc", "en": "now (same root)" }, "ex": { "text": "Νῦν μανθάνω.", "en": "Now I'm studying." }, "verified": false },
+    { "id": "dia-ti", "text": "διὰ τί", "tr": "dià tí", "en": "why? (lit. because of what?)", "pos": "q", "ex": { "text": "Διὰ τί γράφεις;", "en": "Why are you writing?" }, "verified": false },
+    { "id": "hoti", "text": "ὅτι", "tr": "hóti", "en": "because; that (he said that …)", "pos": "conj", "ex": { "text": "Γράφω, ὅτι μαθητής εἰμι.", "en": "I write because I'm a student." }, "verified": false }
+  ],
+  "grammar": [
+    { "id": "eimi", "title": "εἰμί 'to be': εἰμί, εἶ, ἐστί…", "concept": "copula-zero", "body": [
+      "**εἰμί** I am · **εἶ** you are · **ἐστί(ν)** he/she/it is · **ἐσμέν** we are · **ἐστέ** you (pl.) are · **εἰσί(ν)** they are. Compare Latin sum, es, est, sumus, estis, sunt: it's the same Indo-European verb.",
+      "As in Latin, the pronoun is usually dropped: **μαθητής εἰμι** = I am a student. In short sentences Greek often leaves out ἐστί altogether: **σοφὸς ὁ ἀνήρ** '(is) wise, the man'. That's the zero copula you know from Arabic and Hebrew.",
+      "Most present forms of εἰμί lean on the word before them and lose their accent (μαθητής εἰμι). The accent rules can wait; reading comes first."
+    ], "examples": [
+      { "text": "Μαθηταί ἐσμεν.", "en": "We are students." },
+      { "text": "Νικίας καὶ Βένου φίλοι εἰσίν.", "en": "Nicias and Venu are friends." }
+    ], "drills": [
+      { "id": "ei1", "prompt": "Say: I am a student.", "answer": "Μαθητής εἰμι." },
+      { "id": "ei2", "prompt": "Say: We are friends.", "answer": "Φίλοι ἐσμέν." },
+      { "id": "ei3", "prompt": "Say: You are not a Greek (to one person).", "answer": "Οὐχ Ἕλλην εἶ." },
+      { "id": "ei4", "prompt": "Say: They are students.", "answer": "Μαθηταί εἰσιν." }
+    ], "verified": false },
+    { "id": "questions", "title": "Questions (and the Greek question mark ;)", "body": [
+      "Greek writes the question mark as **;** (it looks like our semicolon), and the raised dot **·** works like a colon or semicolon.",
+      "A yes/no question can start with **ἆρα**, or just use your voice: **ἆρα Ἕλλην εἶ;** Question words: **τίς;** who? **τί;** what? why? **πῶς;** how? **ποῦ;** where? Answers: **ναί** yes, **οὔ / οὐχί** no."
+    ], "examples": [
+      { "text": "Πῶς ἔχεις; Εὖ ἔχω.", "en": "How are you? I'm well." },
+      { "text": "Ποῦ ἐστιν ὁ φίλος;", "en": "Where is the friend?" }
+    ], "drills": [
+      { "id": "q1", "prompt": "Ask: Who are you?", "answer": "Τίς εἶ σύ;" },
+      { "id": "q2", "prompt": "Ask: How are you?", "answer": "Πῶς ἔχεις;" },
+      { "id": "q3", "prompt": "Ask: Are you a student?", "answer": "Ἆρα μαθητὴς εἶ;" },
+      { "id": "q4", "prompt": "Say: Thank you, my friend.", "answer": "Χάριν ἔχω, ὦ φίλε." }
+    ], "verified": false },
+    { "id": "article", "title": "ὁ, ἡ, τό: Greek has 'the'", "concept": "definiteness", "body": [
+      "Latin has no word for 'the'; Greek does, and uses it a lot, even with names (ὁ Νικίας) and abstract nouns (ἡ σοφία 'wisdom'). It changes for gender, number and case, so it is the best clue to a noun's case.",
+      "Nominative: **ὁ** (m) · **ἡ** (f) · **τό** (n); plural **οἱ · αἱ · τά**. Every noun has a gender, shown by its article: **ὁ ποταμός**, **ἡ θάλαττα**, **τὸ δῶρον**, but also **ἡ νῆσος**, a feminine word in -ος."
+    ], "examples": [
+      { "text": "Ὁ ποταμὸς καὶ ἡ θάλαττα.", "en": "The river and the sea." },
+      { "text": "Αἱ νῆσοι μικραί εἰσιν.", "en": "The islands are small." }
+    ], "drills": [
+      { "id": "ar1", "prompt": "Say: The river is big.", "answer": "Ὁ ποταμὸς μέγας ἐστίν." },
+      { "id": "ar2", "prompt": "Say: The island is small.", "answer": "Ἡ νῆσος μικρά ἐστιν." },
+      { "id": "ar3", "prompt": "Say: The islands are small.", "answer": "Αἱ νῆσοι μικραί εἰσιν." },
+      { "id": "ar4", "prompt": "Say: Greece is a beautiful country.", "answer": "Ἡ Ἑλλὰς χώρα καλή ἐστιν." }
+    ], "verified": false },
+    { "id": "decl12", "title": "Nouns in -ος, -ον, -η, -α", "concept": "gender", "body": [
+      "Second declension (Latin -us / -um): **ὁ ποταμός → οἱ ποταμοί**; **τὸ δῶρον → τὰ δῶρα**. First declension (Latin -a): **ἡ χώρα → αἱ χῶραι**; **ἡ τέχνη → αἱ τέχναι**.",
+      "Greek -ος, -ον are Latin -us, -um before sound changes; Latin even borrowed Greek nouns this way (φιλόσοφος → philosophus). Plural -οι is Latin -ī; -αι is Latin -ae.",
+      "Adjectives match their noun: **μέγας ποταμός**, **μεγάλη θάλαττα**, **καλὸν δῶρον**."
+    ], "examples": [
+      { "text": "Οἱ ποταμοὶ μεγάλοι εἰσίν.", "en": "The rivers are big." },
+      { "text": "Αἱ χῶραι καλαί εἰσιν.", "en": "The lands are beautiful." }
+    ], "drills": [
+      { "id": "d12a", "prompt": "Say: The rivers are big.", "answer": "Οἱ ποταμοὶ μεγάλοι εἰσίν." },
+      { "id": "d12b", "prompt": "Say: three small islands", "answer": "τρεῖς νῆσοι μικραί" },
+      { "id": "d12c", "prompt": "Say: The Greek language is beautiful.", "answer": "Ἡ Ἑλληνικὴ γλῶττα καλή ἐστιν." },
+      { "id": "d12d", "prompt": "Say: There are many islands in the sea.", "answer": "Ἐν τῇ θαλάττῃ πολλαὶ νῆσοί εἰσιν." }
+    ], "verified": false },
+    { "id": "genitive", "title": "The genitive: 'of' (τοῦ, τῆς)", "concept": "cases", "body": [
+      "The genitive means 'of': **ἡ οἰκία τοῦ πατρός** 'the house of the father, the father's house'. Endings: **-ου** (2nd decl.), **-ας / -ης** (1st), **-ος** (3rd: πατρ**ός**, παιδ**ός**). Article: **τοῦ** (m/n), **τῆς** (f); plural **τῶν**.",
+      "Latin: domus patr**is**, fīlia mātr**is**. Greek also likes to put the genitive between the article and its noun: **ἡ τοῦ πατρὸς οἰκία**. To ask 'whose?': **τίνος;**"
+    ], "examples": [
+      { "text": "Ἡ οἰκία τοῦ πατρός.", "en": "The father's house." },
+      { "text": "Τίνος ὁ κύων; Τοῦ Νικίου.", "en": "Whose is the dog? Nicias'." }
+    ], "drills": [
+      { "id": "ge1", "prompt": "Say: the father's house", "answer": "ἡ οἰκία τοῦ πατρός" },
+      { "id": "ge2", "prompt": "Say: the mother's son", "answer": "ὁ υἱὸς τῆς μητρός" },
+      { "id": "ge3", "prompt": "Ask: Whose is the dog?", "answer": "Τίνος ἐστὶν ὁ κύων;" },
+      { "id": "ge4", "prompt": "Say: the children's dog", "answer": "ὁ κύων τῶν παίδων" }
+    ], "verified": false },
+    { "id": "possessive", "title": "My, your, his: ἐμός, σός, αὐτοῦ", "body": [
+      "Two ways to say 'my father': **ὁ ἐμὸς πατήρ** (adjective, between article and noun) or **ὁ πατήρ μου** (genitive of ἐγώ after the noun). 'Your': **ὁ σὸς πατήρ** / **ὁ πατήρ σου**.",
+      "'His / her / their' use the genitive of αὐτός: **ὁ πατὴρ αὐτοῦ** 'his father', **αὐτῆς** 'her', **αὐτῶν** 'their'. Greek keeps the article where English drops it: **ὁ ἐμὸς ἀδελφός**, literally 'the my brother'."
+    ], "examples": [
+      { "text": "Ὁ ἐμὸς ἀδελφὸς πρεσβύτερός ἐστιν.", "en": "My brother is older." },
+      { "text": "Ἡ μήτηρ αὐτῆς καλή ἐστιν.", "en": "Her mother is beautiful." }
+    ], "drills": [
+      { "id": "po1", "prompt": "Say: My father is old.", "answer": "Ὁ πατήρ μου γέρων ἐστίν." },
+      { "id": "po2", "prompt": "Ask: Where is your sister?", "answer": "Ποῦ ἐστιν ἡ σὴ ἀδελφή;" },
+      { "id": "po3", "prompt": "Say: his mother", "answer": "ἡ μήτηρ αὐτοῦ" },
+      { "id": "po4", "prompt": "Say: Our house is small.", "answer": "Ἡ οἰκία ἡμῶν μικρά ἐστιν." }
+    ], "verified": false },
+    { "id": "present", "title": "Present tense: -ω, -εις, -ει, -ομεν, -ετε, -ουσι(ν)", "body": [
+      "**λέγω** I say · **λέγεις** you say · **λέγει** he/she says · **λέγομεν** we say · **λέγετε** you (pl.) say · **λέγουσι(ν)** they say. Infinitive: **λέγειν** 'to say'.",
+      "Latin: dīc**ō**, dīci**s**, dīci**t**, dīci**mus**, dīci**tis**, dīcu**nt**. Same idea, related endings. The (ν) on -σι(ν) is added before a vowel or at the end of a sentence; you'll see both."
+    ], "examples": [
+      { "text": "Ἡμεῖς γράφομεν, ὑμεῖς δὲ ἀκούετε.", "en": "We write, and you listen." },
+      { "text": "Οἱ παῖδες παίζουσιν.", "en": "The children are playing." }
+    ], "drills": [
+      { "id": "pr1", "prompt": "Say: I am writing.", "answer": "Γράφω." },
+      { "id": "pr2", "prompt": "Say: We are learning the Greek language.", "answer": "Τὴν Ἑλληνικὴν γλῶτταν μανθάνομεν." },
+      { "id": "pr3", "prompt": "Ask several people: What are you saying?", "answer": "Τί λέγετε;" },
+      { "id": "pr4", "prompt": "Say: The children are playing.", "answer": "Οἱ παῖδες παίζουσιν." }
+    ], "verified": false },
+    { "id": "accusative", "title": "The accusative: the object (τόν, τήν, τό)", "concept": "cases", "body": [
+      "The direct object takes the accusative: **βλέπω τὸν ποταμόν, τὴν θάλατταν, τὸ δῶρον**. Endings: **-ον**, **-ην / -αν**, **-α** (3rd decl.); plural **-ους**, **-ας**, **-α**. Articles: **τόν, τήν, τό**; **τούς, τάς, τά**.",
+      "Latin: videō fluvi**um**, terr**am**, dōn**um**. Greek -ον / -ην is Latin -um / -am. As in Latin, word order is free: **τὴν θάλατταν φιλῶ** puts the focus on the sea."
+    ], "examples": [
+      { "text": "Τὸν διδάσκαλον ἀκούομεν.", "en": "We are listening to the teacher." },
+      { "text": "Ὁ κύων τὸν ἄρτον ἐσθίει.", "en": "The dog is eating the bread." }
+    ], "drills": [
+      { "id": "ac1", "prompt": "Say: I see the sea.", "answer": "Βλέπω τὴν θάλατταν." },
+      { "id": "ac2", "prompt": "Say: The teacher teaches the children.", "answer": "Ὁ διδάσκαλος τοὺς παῖδας διδάσκει." },
+      { "id": "ac3", "prompt": "Say: I love my sister.", "answer": "Φιλῶ τὴν ἀδελφήν μου." },
+      { "id": "ac4", "prompt": "Say: The dog is eating the bread.", "answer": "Ὁ κύων τὸν ἄρτον ἐσθίει." }
+    ], "verified": false }
+  ],
+  "texts": [
+    { "id": "d01", "title": "Χαῖρε! Τίς εἶ;", "level": "U1", "kind": "dialogue", "names": ["Νικίας", "Νικία", "Βένου"], "lines": [
+      { "sp": "Νικίας", "text": "Χαῖρε! Τίς εἶ σύ;", "en": "Hello! Who are you?" },
+      { "sp": "Βένου", "text": "Χαῖρε καὶ σύ! Ὄνομά μοι Βένου. Σὺ δὲ τίς εἶ;", "en": "Hello to you too! My name is Venu. And who are you?" },
+      { "sp": "Νικίας", "text": "Ἐγὼ Νικίας εἰμί. Πῶς ἔχεις;", "en": "I am Nicias. How are you?" },
+      { "sp": "Βένου", "text": "Εὖ ἔχω, χάριν ἔχω. Καὶ σὺ πῶς ἔχεις;", "en": "I'm well, thanks. And how are you?" },
+      { "sp": "Νικίας", "text": "Καὶ ἐγὼ εὖ ἔχω. Ἆρα Ἕλλην εἶ;", "en": "I'm well too. Are you Greek?" },
+      { "sp": "Βένου", "text": "Οὐχ Ἕλλην εἰμί, ἀλλὰ μαθητής.", "en": "I'm not Greek, but a student." },
+      { "sp": "Νικίας", "text": "Καὶ ἐγὼ μαθητής εἰμι! Χαῖρε, ὦ φίλε.", "en": "I'm a student too! Goodbye, friend." },
+      { "sp": "Βένου", "text": "Χαῖρε.", "en": "Goodbye." }
+    ], "verified": false },
+    { "id": "r01", "title": "Ἡ Ἑλλάς", "level": "U2", "kind": "reading", "names": ["Ἰταλίᾳ", "Λατινική"], "lines": [
+      { "text": "Ἡ Ἑλλὰς χώρα καλή ἐστιν, καὶ ἐν τῇ θαλάττῃ πολλαὶ νῆσοί εἰσιν.", "en": "Greece is a beautiful country, and in the sea there are many islands." },
+      { "text": "Αἱ νῆσοι μικραί εἰσιν, ἡ δὲ θάλαττα μεγάλη.", "en": "The islands are small, but the sea is big." },
+      { "text": "Ἀθῆναι ἐν τῇ Ἑλλάδι εἰσίν· ἐκεῖ πολλοὶ Ἕλληνές εἰσιν.", "en": "Athens is in Greece; there are many Greeks there." },
+      { "text": "Ἡ δὲ Ῥώμη οὐκ ἐν τῇ Ἑλλάδι ἐστίν, ἀλλ᾽ ἐν τῇ Ἰταλίᾳ.", "en": "Rome is not in Greece but in Italy." },
+      { "text": "Ἐν τῇ Ἑλλάδι ἡ Ἑλληνικὴ γλῶττα, ἐν δὲ τῇ Ἰταλίᾳ ἡ Λατινική.", "en": "In Greece (they speak) the Greek language, and in Italy Latin." },
+      { "text": "Ἐγὼ δύο γλώττας μανθάνω· ἡ Ἑλληνικὴ καλή ἐστιν, καὶ ἡ Λατινικὴ καλή.", "en": "I'm learning two languages: Greek is beautiful, and Latin is beautiful too." }
+    ], "verified": false },
+    { "id": "r02", "title": "Ἡ οἰκία τοῦ Νικίου", "level": "U3", "kind": "reading", "names": ["Νικίου", "Νικίας"], "lines": [
+      { "text": "Ἡ τοῦ Νικίου οἰκία ἐν Ἀθήναις ἐστίν.", "en": "Nicias' house is in Athens." },
+      { "text": "Ὁ πατὴρ αὐτοῦ γέρων ἐστίν, ἡ δὲ μήτηρ καλή τε καὶ ἀγαθή.", "en": "His father is old, and his mother beautiful and good." },
+      { "text": "Νικίας ἀδελφόν τε καὶ ἀδελφὴν ἔχει.", "en": "Nicias has a brother and a sister." },
+      { "text": "Ὁ ἀδελφὸς πρεσβύτερός ἐστιν, ἡ δὲ ἀδελφὴ νεωτέρα.", "en": "The brother is older, and the sister younger." },
+      { "text": "Ἐν τῇ οἰκίᾳ καὶ κύων ἐστίν· ὁ κύων φίλος ἐστὶ τῶν παίδων.", "en": "There is also a dog in the house; the dog is the children's friend." },
+      { "text": "«Τίνος ἐστὶν ὁ κύων;» «Τοῦ Νικίου.»", "en": "\"Whose is the dog?\" \"Nicias'.\"" },
+      { "text": "Οἱ ἄνθρωποι τῆς οἰκίας ἀγαθοί εἰσιν, καὶ ὁ κύων ἀγαθός.", "en": "The people of the house are good, and the dog is good." }
+    ], "verified": false },
+    { "id": "d02", "title": "Τί ποιεῖς;", "level": "U4", "kind": "dialogue", "names": ["Βένου", "Νικίας", "Βαλτιμόρῃ", "Ἀμερικῇ"], "lines": [
+      { "sp": "Νικίας", "text": "Χαῖρε, ὦ Βένου. Τί νῦν ποιεῖς;", "en": "Hello, Venu. What are you doing now?" },
+      { "sp": "Βένου", "text": "Τὴν Ἑλληνικὴν γλῶτταν μανθάνω. Ἀεὶ γράφω καὶ λέγω.", "en": "I'm learning Greek. I'm always writing and speaking." },
+      { "sp": "Νικίας", "text": "Ποῦ οἰκεῖς;", "en": "Where do you live?" },
+      { "sp": "Βένου", "text": "Ἐν Βαλτιμόρῃ οἰκῶ, ἐν τῇ Ἀμερικῇ.", "en": "I live in Baltimore, in America." },
+      { "sp": "Νικίας", "text": "Ἆρα τὴν θάλατταν φιλεῖς;", "en": "Do you love the sea?" },
+      { "sp": "Βένου", "text": "Ναί· πολλάκις τὴν θάλατταν βλέπω. Σὺ δὲ τί ποιεῖς σήμερον;", "en": "Yes; I often look at the sea. And what are you doing today?" },
+      { "sp": "Νικίας", "text": "Σήμερον παίζω καὶ τρέχω· οὐδέποτε μανθάνω!", "en": "Today I play and run; I never study!" },
+      { "sp": "Βένου", "text": "Διὰ τί;", "en": "Why?" },
+      { "sp": "Νικίας", "text": "Ὅτι ὁ διδάσκαλος καθεύδει!", "en": "Because the teacher is asleep!" }
+    ], "verified": false }
+  ]
+}
