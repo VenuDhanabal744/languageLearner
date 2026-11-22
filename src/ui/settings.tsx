@@ -8,6 +8,7 @@ import { startRecording, playBlob } from '../audio/recorder'
 import { useApp, Screen } from './common'
 import { isStandalone } from './today'
 import { getSyncConfig, setSyncConfig, syncNow, type SyncConfig } from '../sync'
+import { handwritingOn, setHandwriting } from './handwriting'
 
 async function shareOrDownload(name: string, type: string, text: string) {
   const file = new File([text], name, { type })
@@ -68,6 +69,8 @@ export function SettingsScreen() {
       <label>Target retention: {Math.round(s.retention * 100)}% <input type="range" min="0.8" max="0.95" step="0.01" value={s.retention} onChange={e => set({ retention: Number((e.target as HTMLInputElement).value) })} /></label>
       <p class="muted small">Higher = more reviews. 90% is the usual sweet spot. Maintenance languages use {Math.round(s.maintenanceRetention * 100)}%.</p>
       <label>New words per day (max): <input type="number" min="0" max="50" value={s.newWordCap} onChange={e => set({ newWordCap: Number((e.target as HTMLInputElement).value) || 0 })} /></label>
+      <label class="check"><input type="checkbox" checked={handwritingOn()} onChange={e => { setHandwriting((e.target as HTMLInputElement).checked); refresh() }} /> Handwriting practice (Apple Pencil or finger). This device only; on by default on iPad.</label>
+      <p class="muted small">Letters are checked automatically against the script course. Whole words are shown next to the answer so you can compare them yourself. On iPad, Arabic and Latin answer boxes also accept Pencil writing directly (Scribble); for Arabic, add the Arabic keyboard in iPad Settings → General → Keyboard.</p>
 
       <h2>Daily reminder</h2>
       <p class="small">Web push needs a server (not free), so the reminder is a repeating calendar event on your phone.</p>

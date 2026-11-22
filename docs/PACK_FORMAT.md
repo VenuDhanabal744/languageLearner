@@ -27,6 +27,7 @@ readable errors. The TypeScript source of truth is `src/packs/types.ts`.
   "chat": { "name": "Modern Hebrew", "translit": true },          // how the conversation prompt names the language
   "wordCards": ["produce", "listen"],    // cards per word: produce (EN → say/type), listen (audio → meaning), read (text → meaning)
   "ttsRespell": [["ae", "ai"]],          // optional: regex → replacement before speaking, for packs borrowing another language's voice
+  "writingFonts": ["Noto Sans Hebrew"],  // optional: Google Fonts used as extra templates by the handwriting checker
   "frequency": { "file": "frequency.txt", "source": "…", "note": "…" },  // optional "form count" per line
   "includes": ["units/u01-04.json"],  // merged in: arrays are concatenated
   "notes": [{ "title": "…", "body": ["paragraph", "**bold** allowed"] }],
@@ -82,7 +83,9 @@ reading, offered once your coverage reaches 90% or more. `names` are excluded fr
   { "id": "ba", "char": "ب", "name": "bāʔ", "tr": "b", "sound": "b as in bed", "connects": true,
     "ex": { "text": "بَيت", "tr": "bēt", "en": "house" } } ] }
 ```
-For Arabic, joining forms are generated automatically when `connects` is true.
+For Arabic, joining forms are generated automatically when `connects` is true. Every plain single letter in `char`
+(space-separated forms, e.g. `"כּ כ ך"` → כ and ך) can be practised by hand and is checked against the pack's
+other letters, so list final forms and upper/lower case as separate forms.
 
 ## Sound contrasts (HVPT)
 ```json

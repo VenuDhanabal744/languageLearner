@@ -76,6 +76,8 @@ export interface Pack {
   normalize?: { strip?: string; map?: Record<string, string>; nfd?: boolean } // for matching typed answers & coverage
   clitics?: { prefixes?: string[]; enclitics?: string[]; suffixes?: string[]; stems?: boolean }
   ttsRespell?: [string, string][]      // regex → replacement, applied before speaking (borrowed voices)
+  /** OFL fonts from Google Fonts used as extra templates by the handwriting checker (loaded only when writing). */
+  writingFonts?: string[]
   wordCards?: ('produce' | 'listen' | 'read')[] // cards made per word; default produce + listen
   chat?: { name: string; translit: boolean } // how the conversation prompt names the language
   translit: { name: string }

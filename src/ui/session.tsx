@@ -13,6 +13,8 @@ import { speak, voicesFor } from '../audio/tts'
 import { startRecording, playBlob, type ActiveRecording, type Recording } from '../audio/recorder'
 import * as store from '../store/db'
 import { T, Speak, Flag, RecordCompare, Screen, Rich, Why, useApp, useTimer } from './common'
+import { WritePad, WriteLetter, VerdictLine, checkLetter, lettersOf, handwritingOn, warmTemplates, SCRIBBLE, type Stroke } from './handwriting'
+import type { Verdict } from '../engine/handwriting'
 
 const ACT_LABEL: Record<Activity['type'], string> = {
   review: 'Review (spaced retrieval)', learn: 'New material', shadow: 'Shadowing (speak)', read: 'Reading (input)',
@@ -118,7 +120,7 @@ function GradeButtons({ card, onGrade }: { card: CardRow; onGrade: (g: Grade) =>
 
 function TypeBox({ pack, value, onInput }: { pack: Pack; value: string; onInput: (s: string) => void }) {
   return <input class="type" lang={pack.id} dir={pack.dir} autocapitalize="off" autocomplete="off" spellcheck={false}
-    placeholder="Say it aloud, then type it (optional)" value={value} onInput={e => onInput((e.target as HTMLInputElement).value)} />
+    placeholder={handwritingOn() && SCRIBBLE.has(pack.id) ? 'Say it aloud, then write it here with Apple Pencil or type it' : 'Say it aloud, then type it (optional)'} value={value} onInput={e => onInput((e.target as HTMLInputElement).value)} />
 }
 
 function CardView({ w, card, onGraded }: { w: World; card: CardRow; onGraded: (c: CardRow) => void }) {
@@ -126,7 +128,12 @@ function CardView({ w, card, onGraded }: { w: World; card: CardRow; onGraded: (c
   const prog = w.progress[card.lang]
   const [shown, setShown] = useState(false)
   const [typed, setTyped] = useState('')
+  const [strokes, setStrokes] = useState<Stroke[]>([])
+  const [writing, setWriting] = useState(false)
+  const [verdict, setVerdict] = useState<Verdict | null>(null)
   if (!pack) return <p>Pack for {card.lang} isn't loaded.</p>
+  const hw = handwritingOn()
+  let writeTarget = ''
   const doGrade = async (g: Grade) => onGraded(await grade(w, card, g))
   let prompt: preact.ComponentChildren = null, answer: preact.ComponentChildren = null, audio = '', expected = '', flagRef = card.id
 
@@ -158,8 +165,15 @@ function CardView({ w, card, onGraded }: { w: World; card: CardRow; onGraded: (c
     audio = x.l.ex.text; flagRef = 'script:' + x.s.id
     const forms = letterForms(x.l.char, x.l.connects)
     const f = forms[card.srs.reps % forms.length]
-    prompt = <><p class="muted small">What sound is this letter? Say it.</p><p><T pack={pack} text={f} big className="letter" /></p></>
-    answer = <><p><b>{x.l.name}</b> · <span class="tr">{x.l.tr}</span></p><p class="small">{x.l.sound}</p><p><T pack={pack} text={x.l.ex.text} /> <span class="tr">{x.l.ex.tr}</span> · {x.l.ex.en}</p></>
+    // with handwriting on, every other review asks you to write the letter instead of reading it
+    const wchars = hw ? lettersOf(pack, x.l.char) : []
+    if (wchars.length && card.srs.reps % 2 === 1) { writeTarget = wchars[(card.srs.reps >> 1) % wchars.length]; warmTemplates(pack) }
+    prompt = writeTarget
+      ? <><p class="muted small">Write this letter:</p><p class="big"><b>{x.l.name}</b> · <span class="tr">{x.l.tr}</span></p><p class="small">{x.l.sound}</p>
+          <WritePad pack={pack} strokes={strokes} onChange={setStrokes} readOnly={shown} /></>
+      : <><p class="muted small">What sound is this letter? Say it.</p><p><T pack={pack} text={f} big className="letter" /></p></>
+    answer = <>{writeTarget && <><VerdictLine pack={pack} v={verdict} /><p><T pack={pack} text={writeTarget} big className="letter" /></p></>}
+      <p><b>{x.l.name}</b> · <span class="tr">{x.l.tr}</span></p><p class="small">{x.l.sound}</p><p><T pack={pack} text={x.l.ex.text} /> <span class="tr">{x.l.ex.tr}</span> · {x.l.ex.en}</p></>
   } else if (card.kind === 'mistake') {
     const e = card.extra ?? {}
     audio = e.correct ?? ''; expected = e.correct ?? ''
@@ -171,8 +185,11 @@ function CardView({ w, card, onGraded }: { w: World; card: CardRow; onGraded: (c
     <div class="card">
       <div class="prompt">{prompt}</div>
       {!shown && card.kind !== 'listen' && card.kind !== 'read' && card.kind !== 'script' && expected && <TypeBox pack={pack} value={typed} onInput={setTyped} />}
+      {hw && expected && card.kind !== 'listen' && card.kind !== 'read' && (writing
+        ? <><WritePad pack={pack} strokes={strokes} onChange={setStrokes} readOnly={shown} />{shown && <p class="muted small">Compare your writing with the answer below.</p>}</>
+        : !shown && <button class="btn small" onClick={() => setWriting(true)}>✍︎ Write it by hand</button>)}
       {!shown ? (
-        <button class="btn primary big" onClick={() => { setShown(true); if (audio) speak(respell(pack, audio), pack.tts).then(s => s && logEvent({ lang: pack.id, type: 'listen', seconds: s })) }}>Show answer</button>
+        <button class="btn primary big" onClick={async () => { if (writeTarget) setVerdict(await checkLetter(pack, writeTarget, strokes)); setShown(true); if (audio) speak(respell(pack, audio), pack.tts).then(s => s && logEvent({ lang: pack.id, type: 'listen', seconds: s })) }}>Show answer</button>
       ) : (
         <>
           <div class="answer">{answer}</div>
@@ -280,6 +297,7 @@ export function Intro({ w, pack, refStr, onDone }: { w: World; pack: Pack; refSt
               <p class="small">{l.sound}</p>
               <p><T pack={pack} text={l.ex.text} /> <Speak pack={pack} text={l.ex.text} /></p>
               <p class="small"><span class="tr">{l.ex.tr}</span> · {l.ex.en}</p>
+              {handwritingOn() && lettersOf(pack, l.char).length > 0 && <WriteToggle pack={pack} chars={lettersOf(pack, l.char)} />}
             </div>
           ))}
         </div>
@@ -293,6 +311,11 @@ export function Intro({ w, pack, refStr, onDone }: { w: World; pack: Pack; refSt
     return <div><ReaderView w={w} pack={pack} text={t} /><p class="muted small">Read it, tap words you don't know, listen, and shadow a line or two.</p>{btn}</div>
   }
   return null
+}
+
+function WriteToggle({ pack, chars }: { pack: Pack; chars: string[] }) {
+  const [open, setOpen] = useState(false)
+  return open ? <WriteLetter pack={pack} chars={chars} /> : <button class="btn small" onClick={() => setOpen(true)}>✍︎ Practise writing</button>
 }
 
 // ---------------- shadowing ----------------

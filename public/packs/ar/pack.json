@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "dir": "rtl",
   "tts": "ar",
+  "writingFonts": ["Noto Naskh Arabic", "Noto Kufi Arabic", "Aref Ruqaa", "Noto Sans Arabic"],
   "ttsNote": "The built-in iOS Arabic voice speaks MSA. Levantine lines are read with MSA sounds (e.g. ق as q, not the glottal stop Shami speakers use), so treat dialect audio as an approximation. Use 'Add a speaker' to record a native speaker.",
   "defaultVariety": "lev",
   "varieties": { "lev": "Levantine (Shami)", "msa": "Modern Standard Arabic" },

@@ -107,3 +107,10 @@ details { margin: 8px 0; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; } .chips .btn { margin: 0; }
 .tl-la { font-family: "Iowan Old Style", "Palatino", "Georgia", serif; font-size: 1.12em; }
+
+/* handwriting */
+.writepad { margin: 8px 0; }
+.writepad .pad { display: block; margin: 0 auto; width: min(100%, 320px); aspect-ratio: 1; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); color: var(--fg); touch-action: none; -webkit-user-select: none; user-select: none; }
+.hwrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 6px; }
+.letter-card:has(.writeletter) { grid-column: 1 / -1; }
+.writeletter { margin-top: 8px; }

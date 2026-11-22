@@ -47,6 +47,19 @@ device count as done, and the most recently changed settings win. The token stay
 and never in backup files. Voice recordings stay on the device that made them. The repo holds one compressed file,
 `polyglot-sync.json.gz`. Every sync is a commit, so the repo's history is also a backup trail.
 
+## Handwriting (iPad + Apple Pencil)
+On iPad, handwriting is on by default (Settings → Study turns it on or off per device; a finger works too).
+- **Letters are checked automatically.** In every script lesson, tap **✍︎ Practise writing**: trace the letter, then write
+  it without the guide and tap **Check**. Every other letter review asks you to *write* the letter instead of reading it.
+  The checker runs on the iPad, offline once its template fonts are cached. It compares your ink with every letter of
+  the script, so it can say "that looks more like ب". After the first time you've used the Pencil, the pad ignores your palm.
+- **Words are compared by you.** Word and sentence cards have **✍︎ Write it by hand**: your writing stays on screen
+  next to the answer. For **Arabic** (and Latin) you can also write straight into the answer box with the Pencil
+  (iPad's Scribble), and the app checks it like typing. For Arabic, add the Arabic keyboard first.
+- **How accurate is it?** I tested it by "writing" each letter in other fonts and checking whether the app picked the right one: about 81% for
+  Hebrew, and about 90% for Arabic in plain fonts (63% including calligraphic ones). It passes a letter only when it's the
+  best match. Your own handwriting hasn't been tested yet, so if it's wrong, tap ⚑ Flag error.
+
 ## Back up and restore
 - **Back up:** Settings → **Export backup** opens the share sheet. Choose *Save to Files* (iCloud Drive is a good spot).
   The file contains all cards, review history, settings and flags, plus any speaker recordings for sound training.

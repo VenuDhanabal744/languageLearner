@@ -18,6 +18,8 @@ online on 2026-11-20, and "to verify" means it must be confirmed before that sou
 | Latin authentic passages | Caesar, *De Bello Gallico* 1.1 (opening); *Biblia Sacra Vulgata*, Genesis 1:1–5; a simplified retelling of Phaedrus 1.1 | Public domain (ancient texts; retelling CC BY-SA 4.0) | text typed from standard editions; check against Perseus |
 | Audio | On-device iOS voices via the Web Speech API (Latin borrows the Italian voice); your own recordings | n/a (nothing distributed) | — |
 | Fonts | iOS system fonts | n/a (nothing distributed) | — |
+| Handwriting templates (loaded from Google Fonts only when you practise writing; not redistributed) | Noto Naskh Arabic, Noto Kufi Arabic, Noto Sans Arabic, Aref Ruqaa; Noto Sans Hebrew, Noto Serif Hebrew, Frank Ruhl Libre, Amatic SC, Rubik | SIL OFL 1.1 | from memory; confirm on each font's Google Fonts page |
+| Sync storage | Your own private GitHub repo via the GitHub REST API | GitHub free plan | checked (API allows browser requests with a token) |
 
 ## Planned sources (later packs)
 

@@ -321,6 +321,28 @@ try {
     const ok = await pg.getByText(/rejected the token/).waitFor({ timeout: 8000 }).then(() => true, () => false)
     await c.close(); return ok
   })())
+  // ---- handwriting on iPad (on by default there) ----
+  await ipad.getByRole('button', { name: /Library/ }).last().click()
+  await ipad.getByRole('button', { name: 'Arabic', exact: true }).click().catch(() => {})
+  await ipad.getByText(/^1 · Hello/).first().click()
+  await ipad.getByText(/Letters 1:/).first().click()
+  await ipad.getByRole('button', { name: '✍︎ Practise writing' }).first().click()
+  const pad = ipad.getByLabel('Writing area: draw the letter here')
+  const stroke = async (pts) => {
+    const b = await pad.boundingBox()
+    await ipad.mouse.move(b.x + pts[0][0] * b.width, b.y + pts[0][1] * b.height); await ipad.mouse.down()
+    for (const [x, y] of pts.slice(1)) await ipad.mouse.move(b.x + x * b.width, b.y + y * b.height, { steps: 8 })
+    await ipad.mouse.up()
+  }
+  await stroke([[0.53, 0.38], [0.52, 0.72]])   // alif: one vertical stroke
+  await ipad.getByRole('button', { name: 'Check', exact: true }).click()
+  check('iPad: a written alif is accepted', await ipad.getByText("✓ That's it.").waitFor({ timeout: 10000 }).then(() => true, () => false))
+  await ipad.screenshot({ path: SHOTS + '15-ipad-write-alif.png', fullPage: false })
+  await ipad.getByRole('button', { name: 'Clear', exact: true }).click()
+  await stroke([[0.1, 0.6], [0.9, 0.6]]); await stroke([[0.5, 0.83], [0.51, 0.84]])  // a bā' shape
+  await ipad.getByRole('button', { name: 'Check', exact: true }).click()
+  check('iPad: a bā\' written for alif is caught and named', await ipad.getByText(/looks more like|could be read as/).waitFor({ timeout: 10000 }).then(() => true, () => false))
+  await ipad.screenshot({ path: SHOTS + '16-ipad-write-wrong.png', fullPage: false })
   await ipadCtx.close()
 
   // ---- dark mode + manifest ----
