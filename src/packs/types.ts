@@ -78,6 +78,9 @@ export interface Pack {
   ttsRespell?: [string, string][]      // regex → replacement, applied before speaking (borrowed voices)
   /** OFL fonts from Google Fonts used as extra templates by the handwriting checker (loaded only when writing). */
   writingFonts?: string[]
+  /** How handwritten words are checked: 'segment' = split into letters and check each (printed scripts);
+   *  'scribble' = iPad turns Pencil writing into text in the answer box (Arabic, Latin, Chinese). */
+  wordWriting?: 'segment' | 'scribble'
   wordCards?: ('produce' | 'listen' | 'read')[] // cards made per word; default produce + listen
   chat?: { name: string; translit: boolean } // how the conversation prompt names the language
   translit: { name: string }

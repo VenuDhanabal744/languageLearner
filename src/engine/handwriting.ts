@@ -135,7 +135,10 @@ export type Verdict = { ok: true } | { ok: false; reason: 'other' | 'close'; loo
 
 /** Calibrated in a browser by "writing" each letter in other fonts and matching against the templates:
  *  target scores sit below ~0.06 (Hebrew) / ~0.10 (Arabic) at the 97th percentile. Real handwriting is messier. */
-export const T = { maxOk: 0.12, close: 1.05 }
+// close: within 10% of the best match counts as 'could be read as X' (passes inside words, flagged orange).
+// Calibrated on 120 Hebrew words "written" in 5 other fonts: 63% of correct words accepted, 84% of one-letter swaps
+// caught; after learning one sample of each letter in that font: 82% / 85%. Tighter margins catch more but reject more.
+export const T = { maxOk: 0.12, close: 1.1 }
 
 /** Pass only when the target is the best match: letting near-ties pass would accept ד for ר about 1 time in 3. */
 export function judge(scores: { char: string; score: number }[], target: string): Verdict {
@@ -158,4 +161,24 @@ export function writableChars(entry: string, plainElsewhere: Set<string>): strin
   if (plain.length) return plain
   const bases = [...new Set(toks.map(t => t.normalize('NFD').replace(/\p{M}/gu, '')).filter(t => letters(t) === 1))]
   return bases.filter(b => !plainElsewhere.has(b))
+}
+
+// ---- the learner's own handwriting, kept as extra templates (small: a 48×48 skeleton is 288 bytes) ----
+export interface Sample { s: string; box: Box; marks: { above: number; below: number } }
+export function packShape(sh: Shape): Sample {
+  const bytes = new Uint8Array(Math.ceil(sh.skel.d.length / 8))
+  sh.skel.d.forEach((v, i) => { if (v) bytes[i >> 3] |= 1 << (i & 7) })
+  return { s: btoa(String.fromCharCode(...bytes)), box: sh.box, marks: sh.marks }
+}
+export function unpackShape(x: Sample): Shape {
+  const bytes = Uint8Array.from(atob(x.s), c => c.charCodeAt(0)), skel = bitmap(GRID, GRID)
+  for (let i = 0; i < skel.d.length; i++) skel.d[i] = (bytes[i >> 3] >> (i & 7)) & 1
+  return { skel, dist: distanceMap(skel), box: x.box, marks: x.marks }
+}
+/** Keep at most this many of your own samples per letter (newest win). */
+export const MAX_SAMPLES = 6
+export function addSample(store: Record<string, Sample[]>, ch: string, x: Sample): Record<string, Sample[]> {
+  const key = (y: Sample) => y.s + JSON.stringify(y.box)
+  const list = (store[ch] ?? []).filter(y => key(y) !== key(x))
+  return { ...store, [ch]: [...list, x].slice(-MAX_SAMPLES) }
 }

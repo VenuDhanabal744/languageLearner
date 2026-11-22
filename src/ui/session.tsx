@@ -13,7 +13,8 @@ import { speak, voicesFor } from '../audio/tts'
 import { startRecording, playBlob, type ActiveRecording, type Recording } from '../audio/recorder'
 import * as store from '../store/db'
 import { T, Speak, Flag, RecordCompare, Screen, Rich, Why, useApp, useTimer } from './common'
-import { WritePad, WriteLetter, VerdictLine, checkLetter, lettersOf, handwritingOn, warmTemplates, SCRIBBLE, type Stroke } from './handwriting'
+import { WritePad, WriteLetter, WriteWord, VerdictLine, WordVerdict, checkLetter, checkWord, lettersOf, handwritingOn, warmTemplates, WORD_ASPECT, type Stroke } from './handwriting'
+import type { WordResult } from '../engine/wordwriting'
 import type { Verdict } from '../engine/handwriting'
 
 const ACT_LABEL: Record<Activity['type'], string> = {
@@ -120,7 +121,7 @@ function GradeButtons({ card, onGrade }: { card: CardRow; onGrade: (g: Grade) =>
 
 function TypeBox({ pack, value, onInput }: { pack: Pack; value: string; onInput: (s: string) => void }) {
   return <input class="type" lang={pack.id} dir={pack.dir} autocapitalize="off" autocomplete="off" spellcheck={false}
-    placeholder={handwritingOn() && SCRIBBLE.has(pack.id) ? 'Say it aloud, then write it here with Apple Pencil or type it' : 'Say it aloud, then type it (optional)'} value={value} onInput={e => onInput((e.target as HTMLInputElement).value)} />
+    placeholder={handwritingOn() && pack.wordWriting === 'scribble' ? 'Say it aloud, then write it here with Apple Pencil or type it' : 'Say it aloud, then type it (optional)'} value={value} onInput={e => onInput((e.target as HTMLInputElement).value)} />
 }
 
 function CardView({ w, card, onGraded }: { w: World; card: CardRow; onGraded: (c: CardRow) => void }) {
@@ -131,9 +132,12 @@ function CardView({ w, card, onGraded }: { w: World; card: CardRow; onGraded: (c
   const [strokes, setStrokes] = useState<Stroke[]>([])
   const [writing, setWriting] = useState(false)
   const [verdict, setVerdict] = useState<Verdict | null>(null)
+  const [wordRes, setWordRes] = useState<WordResult | null | undefined>(undefined)
   if (!pack) return <p>Pack for {card.lang} isn't loaded.</p>
   const hw = handwritingOn()
   let writeTarget = ''
+  if (hw && pack.wordWriting === 'segment') warmTemplates(pack)
+  const wordPad = () => hw && !!expected && pack.wordWriting !== 'scribble' && (card.kind === 'produce' || card.kind === 'drill' || card.kind === 'mistake')
   const doGrade = async (g: Grade) => onGraded(await grade(w, card, g))
   let prompt: preact.ComponentChildren = null, answer: preact.ComponentChildren = null, audio = '', expected = '', flagRef = card.id
 
@@ -185,13 +189,19 @@ function CardView({ w, card, onGraded }: { w: World; card: CardRow; onGraded: (c
     <div class="card">
       <div class="prompt">{prompt}</div>
       {!shown && card.kind !== 'listen' && card.kind !== 'read' && card.kind !== 'script' && expected && <TypeBox pack={pack} value={typed} onInput={setTyped} />}
-      {hw && expected && card.kind !== 'listen' && card.kind !== 'read' && (writing
-        ? <><WritePad pack={pack} strokes={strokes} onChange={setStrokes} readOnly={shown} />{shown && <p class="muted small">Compare your writing with the answer below.</p>}</>
+      {wordPad() && (writing || pack.wordWriting === 'segment'
+        ? <><WritePad pack={pack} strokes={strokes} onChange={setStrokes} readOnly={shown} aspect={WORD_ASPECT} />
+            {!shown && pack.wordWriting === 'segment' && <p class="muted small">Write it on one line, without vowel points. It's checked letter by letter when you show the answer.</p>}
+            {shown && pack.wordWriting !== 'segment' && <p class="muted small">Compare your writing with the answer below.</p>}</>
         : !shown && <button class="btn small" onClick={() => setWriting(true)}>✍︎ Write it by hand</button>)}
       {!shown ? (
-        <button class="btn primary big" onClick={async () => { if (writeTarget) setVerdict(await checkLetter(pack, writeTarget, strokes)); setShown(true); if (audio) speak(respell(pack, audio), pack.tts).then(s => s && logEvent({ lang: pack.id, type: 'listen', seconds: s })) }}>Show answer</button>
+        <button class="btn primary big" onClick={async () => {
+          if (writeTarget) setVerdict(await checkLetter(pack, writeTarget, strokes))
+          if (wordPad() && pack.wordWriting === 'segment' && strokes.length) setWordRes(await checkWord(pack, expected, strokes, WORD_ASPECT))
+          setShown(true); if (audio) speak(respell(pack, audio), pack.tts).then(s => s && logEvent({ lang: pack.id, type: 'listen', seconds: s })) }}>Show answer</button>
       ) : (
         <>
+          {wordRes !== undefined && <WordVerdict pack={pack} r={wordRes} />}
           <div class="answer">{answer}</div>
           {typed && expected && <p class={answerMatches(pack, typed, expected) ? 'ok' : 'warn'}>{answerMatches(pack, typed, expected) ? '✓ Your typing matches' : 'Your typing differs (vowel marks ignored)'}: <T pack={pack} text={typed} /></p>}
           {audio && <Speak pack={pack} text={audio} label="▶︎ Again" />}
@@ -260,6 +270,7 @@ export function Intro({ w, pack, refStr, onDone }: { w: World; pack: Pack; refSt
         <p><T pack={pack} text={wd.ex.text} /></p>
         <p class="tr">{wd.ex.tr}</p><p class="muted">{wd.ex.en}</p>
         <RecordCompare pack={pack} text={wd.ex.text} />
+        {handwritingOn() && pack.wordWriting === 'segment' && <WriteWord pack={pack} text={wd.text} en={wd.en} />}
         {!wd.verified && <p class="muted small">Unverified content.</p>}
         <Flag lang={pack.id} refId={refStr} text={wd.ex.text} />
         {btn}

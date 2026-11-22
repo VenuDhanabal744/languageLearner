@@ -51,3 +51,23 @@ describe('handwriting checker (pure parts)', () => {
   })
   it('an empty pad has no shape', () => { expect(shape(bitmap(128, 128))).toBeNull() })
 })
+
+describe('your own handwriting samples', async () => {
+  const { packShape, unpackShape, addSample, MAX_SAMPLES } = await import('../src/engine/handwriting')
+  const { mergeKv } = await import('../src/engine/sync')
+  it('a stored sample compares exactly like the original ink', () => {
+    const a = shape(draw([0.3, 0.2, 0.3, 0.8], [0.3, 0.8, 0.7, 0.8]))!, b = shape(draw([0.5, 0.2, 0.5, 0.8]))!
+    const back = unpackShape(packShape(a))
+    expect(compare(back, b)).toBeCloseTo(compare(a, b), 10)
+    expect(JSON.stringify(packShape(a)).length).toBeLessThan(600)
+  })
+  it('keeps the newest few per letter and merges across devices', () => {
+    const sh = (y: number) => packShape(shape(draw([0.5, 0.2, 0.5, y]))!)
+    let st: Record<string, any> = {}
+    for (let i = 0; i < MAX_SAMPLES + 2; i++) st = addSample(st, 'ב', sh(0.5 + i * 0.04))
+    expect(st['ב']).toHaveLength(MAX_SAMPLES)
+    const merged = mergeKv('hw:he', { 'ו': [sh(0.6)] }, { 'ו': [sh(0.6), sh(0.7)], 'ז': [sh(0.8)] })
+    expect(merged['ו']).toHaveLength(2)
+    expect(merged['ז']).toHaveLength(1)
+  })
+})

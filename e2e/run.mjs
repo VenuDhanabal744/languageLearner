@@ -343,6 +343,24 @@ try {
   await ipad.getByRole('button', { name: 'Check', exact: true }).click()
   check('iPad: a bā\' written for alif is caught and named', await ipad.getByText(/looks more like|could be read as/).waitFor({ timeout: 10000 }).then(() => true, () => false))
   await ipad.screenshot({ path: SHOTS + '16-ipad-write-wrong.png', fullPage: false })
+  // whole word, checked letter by letter (Hebrew)
+  await ipad.getByRole('button', { name: /Library/ }).last().click()
+  await ipad.getByRole('button', { name: 'Hebrew', exact: true }).click()
+  await ipad.getByText(/^1 · /).first().click()
+  await ipad.getByText('hello; goodbye; peace').first().click()
+  await ipad.getByRole('button', { name: '✍︎ Write this from memory' }).click()
+  const wpad = ipad.getByLabel('Writing area: write the answer here')
+  const wstroke = async pts => { const b = await wpad.boundingBox(); await ipad.mouse.move(b.x + pts[0][0] * b.width, b.y + pts[0][1] * b.height); await ipad.mouse.down(); for (const [x, y] of pts.slice(1)) await ipad.mouse.move(b.x + x * b.width, b.y + y * b.height, { steps: 6 }); await ipad.mouse.up() }
+  // four rough letter shapes, right to left: ש ל ו ם
+  await wstroke([[0.72, 0.35], [0.74, 0.7], [0.82, 0.7], [0.84, 0.35]]); await wstroke([[0.78, 0.35], [0.78, 0.68]])
+  await wstroke([[0.6, 0.2], [0.6, 0.5], [0.67, 0.5], [0.64, 0.7]])
+  await wstroke([[0.52, 0.36], [0.52, 0.7]])
+  await wstroke([[0.38, 0.36], [0.46, 0.36], [0.46, 0.7], [0.38, 0.7], [0.38, 0.36]])
+  await ipad.getByRole('button', { name: 'Check', exact: true }).click()
+  check('iPad: a written word gets a letter-by-letter result', await ipad.locator('.wordverdict .hwl').first().waitFor({ timeout: 10000 }).then(() => true, () => false),
+    await ipad.locator('.wordverdict').innerText().catch(() => ''))
+  check('iPad: word result shows all 4 letters of שלום', (await ipad.locator('.wordverdict .hwl').count()) === 4)
+  await ipad.locator('.writeword').screenshot({ path: SHOTS + '17-ipad-write-word.png' })
   await ipadCtx.close()
 
   // ---- dark mode + manifest ----

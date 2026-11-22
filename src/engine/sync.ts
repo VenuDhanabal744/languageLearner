@@ -1,5 +1,6 @@
 // Pure merge rules for cross-device sync. Nothing is ever deleted by a merge: the union of both sides wins.
 import type { BackupData, CardRow, LogRow, EventRow, FlagRow } from './backup'
+import { addSample } from './handwriting'
 
 /** kv keys starting with this stay on the device: never synced, never in backup files (holds the sync token). */
 export const DEVICE_KV = 'device:'
@@ -21,6 +22,11 @@ export function mergeKv(key: string, a: any, b: any): any {
   if (a === undefined) return b
   if (b === undefined) return a
   if (key === 'settings') return (b.updatedAt ?? 0) > (a.updatedAt ?? 0) ? b : a
+  if (key.startsWith('hw:')) {   // your handwriting samples: union per letter, capped
+    let out = { ...a }
+    for (const ch in b) for (const x of b[ch]) out = addSample(out, ch, x)
+    return out
+  }
   if (key.startsWith('progress:')) {
     const max = (x: Record<string, number> = {}, y: Record<string, number> = {}) => {
       const o = { ...x }; for (const k in y) o[k] = Math.max(o[k] ?? 0, y[k]); return o

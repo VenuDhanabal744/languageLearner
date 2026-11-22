@@ -114,3 +114,7 @@ details { margin: 8px 0; }
 .hwrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 6px; }
 .letter-card:has(.writeletter) { grid-column: 1 / -1; }
 .writeletter { margin-top: 8px; }
+.writepad .pad.wide { width: 100%; max-width: 680px; }
+.wordverdict .hwl { font-size: 1.6em; padding: 0 2px; border-bottom: 3px solid transparent; }
+.hwl.ok { color: var(--ok); } .hwl.close { color: var(--warn); border-color: var(--warn); }
+.hwl.other, .hwl.unclear { color: #d0453a; border-color: #d0453a; } .hwl.missing { opacity: .45; border-bottom: 3px dashed #d0453a; }

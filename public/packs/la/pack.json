@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "dir": "ltr",
   "tts": "it",
+  "wordWriting": "scribble",
   "ttsNote": "There is no Latin voice on iPhone. Audio uses the Italian voice with Latin respelled toward Classical sounds (hard c and g, v → w, ae → 'eye'). Vowel length and some stress are only approximate, so treat it as a rough guide and trust the stress marks and macrons on the page.",
   "ttsRespell": [
     ["[̄̆]", ""],

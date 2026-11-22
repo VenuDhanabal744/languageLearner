@@ -28,6 +28,8 @@ readable errors. The TypeScript source of truth is `src/packs/types.ts`.
   "wordCards": ["produce", "listen"],    // cards per word: produce (EN → say/type), listen (audio → meaning), read (text → meaning)
   "ttsRespell": [["ae", "ai"]],          // optional: regex → replacement before speaking, for packs borrowing another language's voice
   "writingFonts": ["Noto Sans Hebrew"],  // optional: Google Fonts used as extra templates by the handwriting checker
+  "wordWriting": "segment",              // handwritten words: "segment" = split into letters and check each (printed
+                                         // scripts), "scribble" = iPad turns Pencil writing into text (Arabic, Latin, Chinese)
   "frequency": { "file": "frequency.txt", "source": "…", "note": "…" },  // optional "form count" per line
   "includes": ["units/u01-04.json"],  // merged in: arrays are concatenated
   "notes": [{ "title": "…", "body": ["paragraph", "**bold** allowed"] }],

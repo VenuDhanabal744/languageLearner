@@ -53,12 +53,20 @@ On iPad, handwriting is on by default (Settings → Study turns it on or off per
   it without the guide and tap **Check**. Every other letter review asks you to *write* the letter instead of reading it.
   The checker runs on the iPad, offline once its template fonts are cached. It compares your ink with every letter of
   the script, so it can say "that looks more like ب". After the first time you've used the Pencil, the pad ignores your palm.
-- **Words are compared by you.** Word and sentence cards have **✍︎ Write it by hand**: your writing stays on screen
-  next to the answer. For **Arabic** (and Latin) you can also write straight into the answer box with the Pencil
-  (iPad's Scribble), and the app checks it like typing. For Arabic, add the Arabic keyboard first.
-- **How accurate is it?** I tested it by "writing" each letter in other fonts and checking whether the app picked the right one: about 81% for
-  Hebrew, and about 90% for Arabic in plain fonts (63% including calligraphic ones). It passes a letter only when it's the
-  best match. Your own handwriting hasn't been tested yet, so if it's wrong, tap ⚑ Flag error.
+- **Words and sentences are checked letter by letter** (Hebrew now; Greek and Tamil as their packs arrive). On word,
+  drill and mistake cards a wide pad opens: write the answer on one line, without vowel points, then tap Show answer.
+  The app splits your writing into letters, lines them up with the expected answer (it notices a missing letter,
+  extra marks, a letter written in two pieces, or two letters touching), and checks each one: green = right,
+  orange = readable but close to another letter (ו/ז, ד/ר), red = a different letter or missing. Every word page also has
+  **✍︎ Write this from memory**.
+- **Arabic and Latin** are joined-up or Latin-alphabet, so they use iPad's own handwriting recognition (Scribble): write
+  straight into the answer box with the Pencil and the app checks the text. For Arabic, add the Arabic keyboard first.
+- **It learns your handwriting.** Clean letters you write from memory are saved as templates, and when it misreads a
+  letter you wrote correctly, tap **I wrote these letters right**. Up to 6 samples per letter, synced across devices.
+- **How accurate is it?** It's tested on fonts, not yet on your handwriting. For single letters it picks the right one about
+  81% of the time for Hebrew, and about 90% for Arabic in plain fonts. For 120 Hebrew words in 5 fonts it accepts 63% of correctly
+  written words and catches 84% of one-letter mistakes. After learning one sample of each letter, that rises to 82% and 85%.
+  Expect your first sessions to need a few "I wrote these right" taps. Sentences must fit on one line for now.
 
 ## Back up and restore
 - **Back up:** Settings → **Export backup** opens the share sheet. Choose *Save to Files* (iCloud Drive is a good spot).
