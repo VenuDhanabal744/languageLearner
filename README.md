@@ -33,6 +33,20 @@ recommends one living language plus at most one classical language active at a t
 5. In the app: **Settings → Diagnostics** shows whether the mic works, which voices your phone has, whether storage is
    persistent, and how every script renders.
 
+## Use it on iPhone, iPad and Mac (sync)
+Install it the same way on each device (iPad: Safari → Share → Add to Home Screen; Mac: Safari → File → Add to Dock, or
+just a browser tab). Then link the devices once through a **private GitHub repo you own**. It's free, and there's no server of ours in between:
+1. Create a **private** repo named `polyglot-data` at <https://github.com/new>.
+2. Create a fine-grained token at <https://github.com/settings/personal-access-tokens/new>: *Only select repositories →
+   polyglot-data*, permission **Contents: Read and write**, long expiry.
+3. In the app on each device: **Settings → Sync across devices**, paste the token, **Connect and sync**.
+
+The app syncs when it opens, when you leave it, after each session, and on **Sync now**. Both sides are merged, never
+overwritten: each card keeps its most recent review, review history and minutes are combined, the lessons you've done on any
+device count as done, and the most recently changed settings win. The token stays on the device: it's never synced
+and never in backup files. Voice recordings stay on the device that made them. The repo holds one compressed file,
+`polyglot-sync.json.gz`. Every sync is a commit, so the repo's history is also a backup trail.
+
 ## Back up and restore
 - **Back up:** Settings → **Export backup** opens the share sheet. Choose *Save to Files* (iCloud Drive is a good spot).
   The file contains all cards, review history, settings and flags, plus any speaker recordings for sound training.

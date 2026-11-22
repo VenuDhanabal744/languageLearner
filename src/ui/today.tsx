@@ -4,13 +4,15 @@ import type { CardRow } from '../engine/backup'
 import { dueCount, currentUnitIndex } from '../logic'
 import { computeMetrics } from '../engine/metrics'
 import { useApp, Screen } from './common'
+import { getSyncConfig, type SyncConfig } from '../sync'
 
 export const isStandalone = () => (navigator as any).standalone === true || matchMedia('(display-mode: standalone)').matches
 
 export function Today() {
   const { w, nav } = useApp()
   const [cards, setCards] = useState<CardRow[]>([])
-  useEffect(() => { getAllCards().then(setCards) }, [])
+  const [sync, setSync] = useState<SyncConfig | undefined>()
+  useEffect(() => { getAllCards().then(setCards); getSyncConfig().then(setSync) }, [w])
   const active = Object.keys(w.packs).filter(l => w.settings.langs[l] === 'active')
   const maint = Object.keys(w.packs).filter(l => w.settings.langs[l] === 'maintenance')
   const daysSinceBackup = w.settings.lastBackup ? (Date.now() - +new Date(w.settings.lastBackup)) / 864e5 : Infinity
@@ -22,7 +24,9 @@ export function Today() {
           ordinary tab after 7 days without use, and the home-screen app keeps separate storage, so start using it from the icon.
         </div>
       )}
-      {cards.length > 20 && daysSinceBackup > 7 && (
+      {sync?.lastError && <div class="card warnbox small">Sync: {sync.lastError} <button class="link" onClick={() => nav({ name: 'settings' })}>Settings</button></div>}
+      {sync?.lastSync && !sync.lastError && <p class="muted small">↻ Synced {new Date(sync.lastSync).toLocaleString([], { weekday: 'short', hour: 'numeric', minute: '2-digit' })}</p>}
+      {!sync && cards.length > 20 && daysSinceBackup > 7 && (
         <div class="card soft small">It's been {daysSinceBackup === Infinity ? 'a while' : `${Math.floor(daysSinceBackup)} days`} since your last backup.{' '}
           <button class="link" onClick={() => nav({ name: 'settings' })}>Back up now</button></div>
       )}

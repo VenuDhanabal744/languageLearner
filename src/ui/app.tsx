@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'preact/hooks'
+import { useEffect, useRef, useState } from 'preact/hooks'
 import { loadWorld, type World } from '../logic'
 import { loadVoices } from '../audio/tts'
+import { syncNow } from '../sync'
 import { AppCtx, type Route } from './common'
 import { Today } from './today'
 import { SessionScreen } from './session'
@@ -14,11 +15,28 @@ export function App() {
   const [err, setErr] = useState('')
   const [stack, setStack] = useState<Route[]>([{ name: 'today' }])
   const [, setTick] = useState(0)
+  const routeName = useRef('today')
+  const lastSync = useRef(0)
+  // sync, then reload the world if another device's progress came in; never mid-session (its state lives in memory)
+  const sync = () => {
+    if (routeName.current === 'session') return
+    lastSync.current = Date.now()
+    syncNow().then(r => { if (r?.pulled && routeName.current !== 'session') loadWorld().then(setW) }).catch(() => {}) // error is shown in Settings/Today
+  }
   useEffect(() => {
-    loadWorld().then(setW).catch(e => setErr(String(e?.message ?? e)))
+    loadWorld().then(w => { setW(w); sync() }).catch(e => setErr(String(e?.message ?? e)))
     loadVoices()
     navigator.storage?.persist?.() // iOS 17+ grants this automatically for home-screen apps
+    const onVis = () => { if (document.visibilityState === 'hidden' || Date.now() - lastSync.current > 60_000) sync() }
+    document.addEventListener('visibilitychange', onVis)
+    return () => document.removeEventListener('visibilitychange', onVis)
   }, [])
+  const current = stack[stack.length - 1].name
+  useEffect(() => {
+    const was = routeName.current
+    routeName.current = current
+    if (was === 'session' && current !== 'session') sync() // push the session you just finished
+  }, [current])
   if (err) return <main class="screen"><h1>Couldn't start</h1><pre class="small">{err}</pre></main>
   if (!w) return <main class="screen"><p>Loading…</p></main>
   const route = stack[stack.length - 1]

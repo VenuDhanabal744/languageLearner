@@ -7,6 +7,7 @@ import { loadVoices, voicesFor, speak } from '../audio/tts'
 import { startRecording, playBlob } from '../audio/recorder'
 import { useApp, Screen } from './common'
 import { isStandalone } from './today'
+import { getSyncConfig, setSyncConfig, syncNow, type SyncConfig } from '../sync'
 
 async function shareOrDownload(name: string, type: string, text: string) {
   const file = new File([text], name, { type })
@@ -47,8 +48,10 @@ export function SettingsScreen() {
 
   return (
     <Screen title="Settings">
+      <SyncSection />
+
       <h2>Backup</h2>
-      <p class="small">Your progress lives only on this phone. Export a file and keep it in Files / iCloud Drive.</p>
+      <p class="small">Your progress lives on this device (and in your private sync repo if you set one up). A backup file is a second copy: keep it in Files / iCloud Drive.</p>
       <label class="check"><input type="checkbox" checked={withRec} onChange={e => setWithRec((e.target as HTMLInputElement).checked)} /> include my shadowing recordings (bigger file; friends' speaker recordings are always included)</label>
       <button class="btn primary" onClick={exportNow}>⬆︎ Export backup</button>
       <label class="btn">⬇︎ Import backup<input type="file" accept="application/json,.json" hidden onChange={e => { const f = (e.target as HTMLInputElement).files?.[0]; if (f) importFile(f) }} /></label>
@@ -162,4 +165,59 @@ export function Diagnostics() {
       <p class="muted small">Loaded packs: {Object.keys(w.packs).join(', ')}</p>
     </Screen>
   )
+}
+
+function SyncSection() {
+  const [cfg, setCfg] = useState<SyncConfig | undefined>()
+  const [repo, setRepo] = useState('VenuDhanabal744/polyglot-data')
+  const [token, setToken] = useState('')
+  const [msg, setMsg] = useState('')
+  const [busy, setBusy] = useState(false)
+  useEffect(() => { getSyncConfig().then(setCfg) }, [])
+  const go = async (first: boolean) => {
+    setBusy(true); setMsg('Syncing…')
+    try {
+      const r = await syncNow()
+      setCfg(await getSyncConfig())
+      setMsg(r ? `✓ Synced: ${r.pulled} change${r.pulled === 1 ? '' : 's'} from other devices${r.pushed ? ', this device\'s progress saved' : ''}.` : '')
+      if (r?.pulled) setTimeout(() => location.reload(), 900)
+    } catch (e) {
+      if (first) { await setSyncConfig(undefined); setCfg(undefined) } else setCfg(await getSyncConfig())
+      setMsg('✗ ' + (e as Error).message)
+    }
+    setBusy(false)
+  }
+  const connect = async () => {
+    const r = repo.trim().replace(/^https:\/\/github\.com\//, '').replace(/\/$/, '')
+    if (!/^[\w.-]+\/[\w.-]+$/.test(r)) { setMsg('✗ Repo should look like owner/name.'); return }
+    if (!token.trim()) { setMsg('✗ Paste the token first.'); return }
+    await setSyncConfig({ repo: r, token: token.trim() }); setToken('')
+    await go(true)
+  }
+  return (<>
+    <h2>Sync across devices</h2>
+    {cfg ? (<>
+      <p class="small">This device syncs with your private repo <b>{cfg.repo}</b> when the app opens, when you leave it, and after each session.
+        Reviews from every device are merged; nothing is overwritten. Voice recordings stay on the device that made them.</p>
+      {cfg.lastSync && <p class="muted small">Last sync: {new Date(cfg.lastSync).toLocaleString()}</p>}
+      {cfg.lastError && <p class="warn small">Last attempt failed: {cfg.lastError}</p>}
+      <button class="btn primary" disabled={busy} onClick={() => go(false)}>↻ Sync now</button>
+      <button class="btn" disabled={busy} onClick={async () => {
+        if (!confirm('Stop syncing on this device? Its progress stays here and in the repo; the token is deleted from this device.')) return
+        await setSyncConfig(undefined); setCfg(undefined); setMsg('Disconnected.')
+      }}>Disconnect this device</button>
+    </>) : (<>
+      <p class="small">Free, through a private GitHub repo you own. Set it up once, then paste the token on each device (iPhone, iPad, Mac):</p>
+      <ol class="small">
+        <li>Create a <b>private</b> repo named <b>polyglot-data</b>: <a href="https://github.com/new" target="_blank" rel="noopener">github.com/new</a>.</li>
+        <li>Create a fine-grained token: <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → Settings → Developer settings → Fine-grained tokens</a>.
+          Repository access: <b>Only select repositories → polyglot-data</b>. Permissions: <b>Contents → Read and write</b>. Pick a long expiry.</li>
+        <li>Paste it here. It's stored only on this device and is never included in backup files or the synced data.</li>
+      </ol>
+      <label class="small">Repo <input value={repo} autocapitalize="off" autocorrect="off" spellcheck={false} onInput={e => setRepo((e.target as HTMLInputElement).value)} /></label>
+      <label class="small">Token <input type="password" value={token} autocomplete="off" placeholder="github_pat_…" onInput={e => setToken((e.target as HTMLInputElement).value)} /></label>
+      <button class="btn primary" disabled={busy} onClick={connect}>Connect and sync</button>
+    </>)}
+    {msg && <p class="small">{msg}</p>}
+  </>)
 }

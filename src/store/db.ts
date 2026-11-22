@@ -1,5 +1,6 @@
 import { openDB, type IDBPDatabase } from 'idb'
 import type { CardRow, EventRow, FlagRow, LogRow, RecordingRow, BackupData } from '../engine/backup'
+import { DEVICE_KV, newerCard, mergeKv, logKey, eventKey, flagKey } from '../engine/sync'
 
 let dbp: Promise<IDBPDatabase> | null = null
 export function db() {
@@ -53,11 +54,11 @@ function b64ToBlob(b64: string, mime: string): Blob {
 }
 
 /** Gather everything for a backup. Speaker recordings (for HVPT) are always kept; shadowing attempts only if asked. */
-export async function collectBackup(includeShadowing: boolean): Promise<BackupData> {
+export async function collectBackup(includeShadowing: boolean, recordings = true): Promise<BackupData> {
   const d = await db()
-  const kvKeys = (await d.getAllKeys('kv')) as string[]
+  const kvKeys = ((await d.getAllKeys('kv')) as string[]).filter(k => !k.startsWith(DEVICE_KV)) // the sync token stays on the device
   const kv: [string, unknown][] = await Promise.all(kvKeys.map(async k => [k, await d.get('kv', k)] as [string, unknown]))
-  const recs = (await getAllRecordings()).filter(r => r.talker || includeShadowing)
+  const recs = recordings ? (await getAllRecordings()).filter(r => r.talker || includeShadowing) : []
   return {
     cards: await getAllCards(), logs: await getLogs(), events: await getEvents(), flags: await getFlags(), kv,
     recordings: await Promise.all(recs.map(async ({ blob, ...meta }) => ({ ...meta, b64: await blobToB64(blob) }))),
@@ -69,7 +70,8 @@ export async function restoreBackup(b: BackupData) {
   const d = await db()
   const stores = ['cards', 'logs', 'events', 'flags', 'kv', 'recordings'] as const
   const tx = d.transaction(stores as unknown as string[], 'readwrite')
-  for (const s of stores) tx.objectStore(s).clear()
+  for (const s of stores) if (s !== 'kv') tx.objectStore(s).clear()
+  for (const k of (await tx.objectStore('kv').getAllKeys()) as string[]) if (!k.startsWith(DEVICE_KV)) tx.objectStore('kv').delete(k)
   for (const c of b.cards) tx.objectStore('cards').put(c)
   for (const l of b.logs) tx.objectStore('logs').put(l)
   for (const e of b.events) tx.objectStore('events').put(e)
@@ -77,4 +79,32 @@ export async function restoreBackup(b: BackupData) {
   for (const [k, v] of b.kv) tx.objectStore('kv').put(v, k)
   for (const { b64, ...r } of b.recordings) tx.objectStore('recordings').put({ ...r, blob: b64ToBlob(b64, r.mime) })
   await tx.done
+}
+
+/** Merge another device's data into this one, in one transaction, re-checking against what is stored right now
+ *  so a review made while the network call was in flight is never overwritten. Returns how many things changed. */
+export async function mergeIn(b: BackupData): Promise<number> {
+  const tx = (await db()).transaction(['cards', 'logs', 'events', 'flags', 'kv'], 'readwrite')
+  let n = 0
+  const cards = tx.objectStore('cards')
+  for (const c of b.cards) {
+    const cur = await cards.get(c.id) as CardRow | undefined
+    if (!cur || (newerCard(cur, c) === c && JSON.stringify(cur.srs) !== JSON.stringify(c.srs))) { await cards.put(c); n++ }
+  }
+  const addMissing = async <T extends { id?: number }>(store: 'logs' | 'events' | 'flags', rows: T[], key: (x: T) => string) => {
+    const have = new Set(((await tx.objectStore(store).getAll()) as T[]).map(key))
+    for (const { id, ...r } of rows) if (!have.has(key(r as T))) { await tx.objectStore(store).add(r); have.add(key(r as T)); n++ }
+  }
+  await addMissing('logs', b.logs, logKey)
+  await addMissing('events', b.events, eventKey)
+  await addMissing('flags', b.flags, flagKey)
+  const kv = tx.objectStore('kv')
+  for (const [k, v] of b.kv) {
+    if (k.startsWith(DEVICE_KV)) continue
+    const cur = await kv.get(k)
+    const m = mergeKv(k, cur, v)
+    if (JSON.stringify(m) !== JSON.stringify(cur)) { await kv.put(m, k); n++ }
+  }
+  await tx.done
+  return n
 }

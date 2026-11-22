@@ -18,6 +18,7 @@ export interface Settings {
   langs: Record<string, LangStatus>
   reminder: { hour: number; minute: number }
   lastBackup?: string
+  updatedAt?: number                        // for last-write-wins sync between devices
 }
 export interface Progress {
   introduced: string[]                      // unit item refs taught so far, in order
@@ -67,7 +68,7 @@ export async function ensurePack(w: World, lang: string) {
 }
 export const frequencyUrl = (lang: string, file: string) => PACKS + lang + '/' + file
 
-export const saveSettings = (s: Settings) => store.kvSet('settings', s)
+export const saveSettings = (s: Settings) => { s.updatedAt = Date.now(); return store.kvSet('settings', s) }
 export const saveProgress = (lang: string, p: Progress) => store.kvSet('progress:' + lang, p)
 
 // ---------- lookups ----------

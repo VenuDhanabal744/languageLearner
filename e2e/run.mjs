@@ -4,6 +4,7 @@ import { webkit, devices } from 'playwright'
 import http from 'node:http'
 import { readFile, mkdir, writeFile } from 'node:fs/promises'
 import { extname, join, normalize } from 'node:path'
+import { gunzipSync } from 'node:zlib'
 
 const DIST = new URL('../dist/', import.meta.url).pathname
 const SHOTS = new URL('./shots/', import.meta.url).pathname
@@ -25,12 +26,14 @@ const results = []
 const check = (name, ok, detail = '') => { results.push({ name, ok, detail }); console.log(`${ok ? '✓' : '✗'} ${name}${detail ? ' (' + detail + ')' : ''}`) }
 
 const browser = await webkit.launch()
-const ctx = await browser.newContext({ ...devices['iPhone 13'], acceptDownloads: true })
+// serviceWorkers: 'block' so the fake GitHub routes below see every request (the app's SW ignores cross-origin anyway)
+const ctx = await browser.newContext({ ...devices['iPhone 13'], acceptDownloads: true, serviceWorkers: 'block' })
 // headless WebKit has no share sheet; force the download fallback (on iPhone the share sheet is used)
 await ctx.addInitScript(() => { delete Navigator.prototype.share; delete Navigator.prototype.canShare })
 const page = await ctx.newPage()
 page.on('pageerror', e => errors.push('pageerror: ' + e.message))
-page.on('console', m => { if (m.type() === 'error') errors.push('console: ' + m.text()) })
+// a 404 from the (fake) GitHub API is expected on the first sync: the sync file doesn't exist yet
+page.on('console', m => { if (m.type() === 'error' && !m.location().url.startsWith('https://api.github.com/')) errors.push('console: ' + m.text()) })
 page.on('dialog', d => d.accept())
 const shot = name => page.screenshot({ path: SHOTS + name + '.png', fullPage: true })
 const btn = (name, exact = false) => page.getByRole('button', { name, exact })
@@ -252,6 +255,73 @@ try {
   await btn('▶︎ Start').click()
   await page.locator('.choice').first().click()
   check('Hebrew HVPT trial gives feedback', await page.getByText(/Right|Not quite/).first().waitFor({ timeout: 5000 }).then(() => true, () => false))
+
+  // ---- cross-device sync, against a fake GitHub contents API shared by two "devices" ----
+  const gh = { file: null, sha: 0, puts: 0 }
+  const CORS = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'Authorization, Content-Type, X-GitHub-Api-Version', 'access-control-allow-methods': 'GET, PUT' }
+  const fakeGitHub = async route => {
+    const req = route.request(), url = new URL(req.url())
+    const f = route.fulfill.bind(route); route = { fulfill: o => f({ ...o, headers: CORS }) }
+    if (req.method() === 'OPTIONS') return route.fulfill({ status: 204 })
+    if (req.headers()['authorization'] !== 'Bearer test-token') return route.fulfill({ status: 401, body: '{}' })
+    if (url.pathname === '/repos/test/polyglot-data') return route.fulfill({ status: 200, contentType: 'application/json', body: '{}' })
+    if (url.pathname !== '/repos/test/polyglot-data/contents/polyglot-sync.json.gz') return route.fulfill({ status: 404, body: '{}' })
+    if (req.method() === 'GET') return gh.file ? route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ content: gh.file, sha: 's' + gh.sha }) }) : route.fulfill({ status: 404, body: '{}' })
+    const body = JSON.parse(req.postData())
+    if (gh.file && body.sha !== 's' + gh.sha) return route.fulfill({ status: 409, body: '{}' })
+    gh.file = body.content; gh.sha++; gh.puts++
+    return route.fulfill({ status: 200, contentType: 'application/json', body: '{}' })
+  }
+  const countCards = pg => pg.evaluate(() => new Promise(res => { const r = indexedDB.open('polyglot'); r.onsuccess = () => { const q = r.result.transaction('cards').objectStore('cards').count(); q.onsuccess = () => res(q.result) } }))
+  const connect = async pg => {
+    await pg.getByRole('button', { name: /Settings/ }).last().click()
+    await pg.getByLabel('Repo').fill('test/polyglot-data')
+    await pg.getByLabel('Token').fill('test-token')
+    await pg.getByRole('button', { name: 'Connect and sync' }).click()
+    return pg.getByText(/✓ Synced/).waitFor({ timeout: 8000 }).then(() => true, () => false)
+  }
+  await ctx.route('https://api.github.com/**', fakeGitHub)
+  check('phone connects to sync and uploads', await connect(page) && gh.puts === 1)
+  await shot('13-sync-settings')
+  const synced = gunzipSync(Buffer.from(gh.file, 'base64')).toString()
+  check('synced file is a valid backup without the token', JSON.parse(synced).format === 'polyglot-backup' && !synced.includes('test-token'))
+  const phoneCards = await countCards(page)
+
+  const ipadCtx = await browser.newContext({ ...devices['iPad Pro 11'], serviceWorkers: 'block' })
+  await ipadCtx.route('https://api.github.com/**', fakeGitHub)
+  const ipad = await ipadCtx.newPage()
+  ipad.on('pageerror', e => errors.push('ipad pageerror: ' + e.message))
+  ipad.on('dialog', d => d.accept())
+  await ipad.goto(`http://localhost:4321${PREFIX}`)
+  await ipad.getByRole('heading', { name: 'Today' }).waitFor({ timeout: 10000 })
+  check('a fresh iPad starts empty', (await countCards(ipad)) === 0)
+  check('iPad connects and pulls the phone\'s progress', await connect(ipad))
+  await ipad.getByRole('heading', { name: 'Today' }).waitFor({ timeout: 10000 }) // it reloads after pulling
+  await ipad.waitForTimeout(500)
+  check('iPad has every phone card', (await countCards(ipad)) === phoneCards, `${phoneCards} cards`)
+  check('iPad picked up the phone\'s languages', await ipad.getByText('Hebrew (Modern, with a bridge to Biblical)').first().waitFor({ timeout: 8000 }).then(() => true, () => false))
+  await ipad.screenshot({ path: SHOTS + '14-ipad-after-sync.png', fullPage: true })
+
+  // a change on the iPad (turn vowel marks off) reaches the phone
+  await ipad.getByRole('button', { name: /Settings/ }).last().click()
+  const vowelBox = ipad.getByLabel(/Show vowel marks/)
+  const before = await vowelBox.isChecked()
+  await vowelBox.click()
+  await ipad.getByRole('button', { name: '↻ Sync now' }).click()
+  await ipad.getByText(/✓ Synced/).waitFor({ timeout: 8000 })
+  await page.getByRole('button', { name: '↻ Sync now' }).click()
+  await page.getByText(/✓ Synced/).waitFor({ timeout: 8000 })
+  await page.waitForTimeout(1500) // reloads after pulling
+  await page.getByRole('button', { name: /Settings/ }).last().click()
+  check('a setting changed on the iPad reaches the phone', (await page.getByLabel(/Show vowel marks/).isChecked()) === !before)
+  check('bad token gives a readable error', await (async () => {
+    const c = await browser.newContext({ serviceWorkers: 'block' }); await c.route('https://api.github.com/**', fakeGitHub); const pg = await c.newPage()
+    await pg.goto(`http://localhost:4321${PREFIX}`); await pg.getByRole('button', { name: /Settings/ }).last().click()
+    await pg.getByLabel('Repo').fill('test/polyglot-data'); await pg.getByLabel('Token').fill('wrong'); await pg.getByRole('button', { name: 'Connect and sync' }).click()
+    const ok = await pg.getByText(/rejected the token/).waitFor({ timeout: 8000 }).then(() => true, () => false)
+    await c.close(); return ok
+  })())
+  await ipadCtx.close()
 
   // ---- dark mode + manifest ----
   await page.emulateMedia({ colorScheme: 'dark' })
