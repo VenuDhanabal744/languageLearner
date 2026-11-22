@@ -4,6 +4,12 @@
   "version": "0.1.0",
   "dir": "rtl",
   "tts": "ar",
+  "ttsRespell": [
+    ["\u0650(\\p{M}*)(?![\\p{L}\\p{M}])", "$1\u064a"],
+    ["\u064f(\\p{M}*)(?![\\p{L}\\p{M}])", "$1\u0648"],
+    ["\u064e\u0651(?![\\p{L}\\p{M}])", "\u0651\u0627"],
+    ["\u064e(\\p{M}*)(?![\\p{L}\\p{M}])", "$1\u0629"]
+  ],
   "wordWriting": "scribble",
   "writingFonts": ["Noto Naskh Arabic", "Noto Kufi Arabic", "Aref Ruqaa", "Noto Sans Arabic"],
   "ttsNote": "The built-in iOS Arabic voice speaks MSA. Levantine lines are read with MSA sounds (e.g. ق as q, not the glottal stop Shami speakers use), so treat dialect audio as an approximation. Use 'Add a speaker' to record a native speaker.",
